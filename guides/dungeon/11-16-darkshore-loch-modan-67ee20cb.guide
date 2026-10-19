@@ -188,7 +188,7 @@ step
   note "Use [Tharnariun's Hope] on a Rabid Thistle Bear --. It can be used from any range as long as you're targeting the Bear"
   note "You can waste the trap and make the quest impossible to complete! If it happens to you you need to return to the questgiver and ask for another trap"
   kill 2164 x1 quest 2118.1 @36.371,50.92 map 1439 -- Rabid Thistle Bear Captured (1)
-  use 7586 @36.371,50.92 map 1439
+  use 7586 @36.371,50.92 map 1439 quest 2118.1
 step
   label FurlbogCamp
   zone map 1439
@@ -211,7 +211,7 @@ step
   note "Use [Tharnariun's Hope] on a Rabid Thistle Bear --. It can be used from any range as long as you're targeting the bear"
   note "You can waste the trap and make the quest impossible to complete! If it happens to you you need to return to the questgiver and ask for another trap"
   kill 2164 x1 quest 2118.1 -- Rabid Thistle Bear Captured (1)
-  use 7586 @39.129,59.176 map 1439
+  use 7586 @39.129,59.176 map 1439 quest 2118.1
 step
   only NightElf
   zone map 1439
@@ -238,7 +238,7 @@ step
   note "Use [Tharnariun's Hope] on a Rabid Thistle Bear --. It can be used from any range as long as you're targeting the bear"
   note "You can waste the trap and make the quest impossible to complete! If it happens to you you need to return to the questgiver and ask for another trap"
   kill 2164 x1 quest 2118.1 -- Rabid Thistle Bear Captured (1)
-  use 7586 @39.129,59.176 map 1439
+  use 7586 @39.129,59.176 map 1439 quest 2118.1
 step
   label invisThistle
   note "Review this source step manually."
@@ -367,7 +367,7 @@ step
   zone map 1439
   note "Use the [Empty Water Tube] at the Auberdine moonwell"
   collect 14339 x1 quest 4812.1 -- Moonwell Water Tube (1)
-  use 14338 @37.767,44.001 map 1439
+  use 14338 @37.767,44.001 map 1439 quest 4812.1
 step
   along until next_47
   zone map 1439
@@ -873,28 +873,28 @@ step
   zone map 1439
   note "Use the [Empty Water Tube] at the Auberdine moonwell"
   collect 14339 x1 quest 4812.1 -- Moonwell Water Tube (1)
-  use 14338 @37.767,44.001 map 1439
+  use 14338 @37.767,44.001 map 1439 quest 4812.1
 step
   only Hunter
   when turnedin 4811
   zone map 1439
   note "Use the [Empty Water Tube] at the Auberdine moonwell"
   collect 14339 x1 quest 4812.1 -- Moonwell Water Tube (1)
-  use 14338 @37.767,44.001 map 1439
+  use 14338 @37.767,44.001 map 1439 quest 4812.1
 step
   only Druid
   when turnedin 4811
   zone map 1439
   note "Use the [Empty Water Tube] at the Auberdine moonwell"
   collect 14339 x1 quest 4812.1 -- Moonwell Water Tube (1)
-  use 14338 @37.767,44.001 map 1439
+  use 14338 @37.767,44.001 map 1439 quest 4812.1
 step
   only Warrior
   when turnedin 4811
   zone map 1439
   note "Use the [Empty Water Tube] at the Auberdine moonwell"
   collect 14339 x1 quest 4812.1 -- Moonwell Water Tube (1)
-  use 14338 @37.767,44.001 map 1439
+  use 14338 @37.767,44.001 map 1439 quest 4812.1
 step
   only NightElf
   when turnedin 4811
@@ -1640,7 +1640,7 @@ step
   zone map 1439
   note "Use the [Empty Water Tube] at the Auberdine moonwell"
   collect 14339 x1 quest 4812.1 -- Moonwell Water Tube (1)
-  use 14338 @37.767,44.001 map 1439
+  use 14338 @37.767,44.001 map 1439 quest 4812.1
 step
   when complete 2138
   zone map 1439
@@ -2468,7 +2468,7 @@ step
   goto 36.026,41.374 map 1450 r 8 optional
   note "Use the [Shrine Bauble] at the Shrine of Remulos tree"
   interact 15885 quest 29.1 -- Complete the Trial of the Lake.
-  use 15877 @36.026,41.374 map 1450
+  use 15877 @36.026,41.374 map 1450 quest 29.1
 step
   only Druid
   when onquest 29

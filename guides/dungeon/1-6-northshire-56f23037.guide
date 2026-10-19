@@ -105,7 +105,7 @@ step
   goto 48.845,35.066 map 1429 r 45
   goto 47.569,34.967 map 1429 r 45
   note "Kill Kobold Vermins. Loot them for the [Nibbled-On Book]"
-  use 247834 @47.569,34.967 map 1429 -- Use the [Nibbled-On Book] to start the quest
+  use 247834 @47.569,34.967 map 1429 quest 7.1 -- Use the [Nibbled-On Book] to start the quest
   note "It is important to turn in this quest as soon as you get the [Nibbled-On Book] drop"
   collect 247834 x1 optional -- Nibbled-On Book (1)
   accept 91741 -- Accept Nibbled-On Book
@@ -769,7 +769,7 @@ step
   when onquest 91772
   along until RnR
   zone map 1429
-  use 247970 @45.563026,47.741947 map 1429
+  use 247970 @45.563026,47.741947 map 1429 quest 91772.1
   interact 563442 quest 91772.1 -- Followed Kobold Tracks 6/6
 step
   label RnR

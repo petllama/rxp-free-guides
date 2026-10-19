@@ -185,7 +185,7 @@ step
   note "A Simple Compass (1)"
 step
   zone map 1436
-  use 254545 @46.070486,38.181434 map 1436 -- Use the [Well Water Sample Kit] at the Molsen Farm well
+  use 254545 @46.070486,38.181434 map 1436 quest 92742.2 -- Use the [Well Water Sample Kit] at the Molsen Farm well
   collect 254547 x1 quest 92742.2 -- Molsen Farm Water Sample
 step
   along until bennytime
@@ -237,7 +237,7 @@ step
   collect 1528 x8 quest 151.1 @57.229914,19.77986 map 1436 -- Handful of Oats (8)
 step
   zone map 1436
-  use 254545 @56.610486,18.647188 map 1436 -- Use the [Well Water Sample Kit] at the Jansen Stead well
+  use 254545 @56.610486,18.647188 map 1436 quest 92742.1 -- Use the [Well Water Sample Kit] at the Jansen Stead well
   collect 254546 x1 quest 92742.1 -- Jansen Stead Water Sample
 step
   only Warlock,Human

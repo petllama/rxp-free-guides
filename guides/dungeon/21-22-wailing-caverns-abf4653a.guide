@@ -632,7 +632,7 @@ step
   zone map 1454
   note "Kill the Summoned Succubus"
   kill 5677 x1 quest 1513.1 -- Kill Summoned Succubus (1)
-  use 6626 @49.659669,50.149559 map 1454
+  use 6626 @49.659669,50.149559 map 1454 quest 1513.1
 step
   only Warlock
   when onquest 1513

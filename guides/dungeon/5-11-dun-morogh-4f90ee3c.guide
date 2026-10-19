@@ -1409,7 +1409,7 @@ step
   label SpyMap
   zone map 1426
   note "Kill Dark Iron Spies. Loot them for the [Dark Iron Map]"
-  use 274268 @77.899959,62.299998 map 1426 -- Use the [Dark Iron Map] to start the quest
+  use 274268 @77.899959,62.299998 map 1426 quest 96390.1 -- Use the [Dark Iron Map] to start the quest
   kill 6123 x10 quest 96390.1 @77.899959,62.299998 map 1426 -- Dark Iron Spy slain 10/10
   collect 274268 x1 @77.899959,62.299998 map 1426 optional -- Dark Iron Map (1)
   accept 96391 -- Accept Underground Map

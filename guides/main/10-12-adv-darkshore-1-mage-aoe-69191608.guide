@@ -224,7 +224,7 @@ step
   note "Use [Tharnariun's Hope] on a Rabid Thistle Bear. It has a 50-yard range"
   note "Be careful as they cast [Rabies] (Instant Melee: Reduces ALL health regen by 50% for 10 Minutes)"
   kill 2164 x1 quest 2118.1 @38.230031,52.839924 map 1439 -- Rabid Thistle Bear Captured (1)
-  use 7586 @38.230031,52.839924 map 1439
+  use 7586 @38.230031,52.839924 map 1439 quest 2118.1
 step
   label next_27
   zone map 1439
@@ -237,7 +237,7 @@ step
   note "Use [Tharnariun's Hope] on a Rabid Thistle Bear. It has a 50-yard range"
   note "Be careful as they cast [Rabies] (Instant Melee: Reduces ALL health regen by 50% for 10 Minutes)"
   kill 2164 x1 quest 2118.1 @38.570031,66.390079 map 1439 -- Rabid Thistle Bear Captured (1)
-  use 7586 @38.570031,66.390079 map 1439
+  use 7586 @38.570031,66.390079 map 1439 quest 2118.1
 step
   zone map 1439
   note "Talk to Tysha"

@@ -71,7 +71,7 @@ step
 step
   label RabidThistle
   zone map 1439
-  use 7586 @38.47,57.92 map 1439 -- Use [Tharnariun's Hope] on a Rabid Thistle Bear
+  use 7586 @38.47,57.92 map 1439 quest 2118.1 -- Use [Tharnariun's Hope] on a Rabid Thistle Bear
   kill 2164 x1 quest 2118.1 @38.47,57.92 map 1439
 step
   zone map 1439
@@ -229,7 +229,7 @@ step
   accept 4725 -- Accept Beached Sea Turtle
 step
   zone map 1439
-  use 12350 @50.81,25.5 map 1439 -- Use the [Empty Sampling Tube] at the base of the Cliffspring River
+  use 12350 @50.81,25.5 map 1439 quest 4762.1 -- Use the [Empty Sampling Tube] at the base of the Cliffspring River
   collect 12349 x1 quest 4762.1 @50.81,25.5 map 1439
 step
   along until bears1
@@ -521,7 +521,7 @@ step
   collect 12347 x1 @37.78,44.06 map 1439 optional
 step
   zone map 1439
-  use 14338 @37.78,44.06 map 1439 -- Use the [Empty Water Tube] at the Auberdine Moonwell
+  use 14338 @37.78,44.06 map 1439 quest 4812.1 -- Use the [Empty Water Tube] at the Auberdine Moonwell
   collect 14339 x1 quest 4812.1
 step
   zone map 1448

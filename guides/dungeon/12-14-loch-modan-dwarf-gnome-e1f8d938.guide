@@ -166,7 +166,7 @@ step
 step
   label next_18
   zone map 1432
-  use 279380 @19.599882,63.10017 map 1432 -- Use the [Ceramic Jar] while standing on the snowy patch to collect the [Jar of Snow]
+  use 279380 @19.599882,63.10017 map 1432 quest 86667.1 -- Use the [Ceramic Jar] while standing on the snowy patch to collect the [Jar of Snow]
   collect 279379 x1 quest 86667.1 @19.599882,63.10017 map 1432 -- Jar of Snow 1/1
 step
   only Shaman

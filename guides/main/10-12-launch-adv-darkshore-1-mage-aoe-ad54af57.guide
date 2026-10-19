@@ -190,7 +190,7 @@ step
   note "If you find a Rabid Thistle Bear, use [Tharnariun's Hope] then aggro it"
   note "Be careful as they cast [Rabies] (Instant Melee: Reduces ALL health regen by 50% for 10 Minutes)"
   kill 2164 x1 quest 2118.1 @46.710031,34.639998 map 1439 -- Rabid Thistle Bear Captured (1)
-  use 7586 @46.710031,34.639998 map 1439
+  use 7586 @46.710031,34.639998 map 1439 quest 2118.1
 step
   along until Bash1
   note "Kite 2-3 Vile Sprites toward Asterion (Remember to use [Frost Nova]) Kill them when you accept the quest"

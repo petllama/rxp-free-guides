@@ -130,7 +130,7 @@ step
   zone map 1439
   note "Use the [Empty Sampling Tube] in the water"
   collect 12349 x1 quest 4762.1 @50.770031,25.429996 map 1439 -- Cliffspring River Sample (1)
-  use 12350 @50.770031,25.429996 map 1439
+  use 12350 @50.770031,25.429996 map 1439 quest 4762.1
 step
   along until RedC
   zone map 1439

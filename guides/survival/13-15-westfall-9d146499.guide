@@ -423,7 +423,7 @@ step
   only Druid
   label next_63
   zone map 1450
-  use 15877 @36.026,41.374 map 1450 -- Use the [Shrine Bauble] at the Shrine of Remulos tree
+  use 15877 @36.026,41.374 map 1450 quest 29.1 -- Use the [Shrine Bauble] at the Shrine of Remulos tree
   interact 15885 quest 29.1 -- Complete the Trial of the Lake.
 step
   only Druid

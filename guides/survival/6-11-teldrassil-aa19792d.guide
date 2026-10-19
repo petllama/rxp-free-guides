@@ -291,7 +291,7 @@ step
   label next_47
   zone map 1438
   note "Kill Ferocitas the Dream Eater. Loot him for the [Gnarlpine Necklace]"
-  use 8049 @69.37,53.41 map 1438 -- Use the [Gnarlpine Necklace] to loot Tallonkai's Jewel
+  use 8049 @69.37,53.41 map 1438 quest 2459.2 -- Use the [Gnarlpine Necklace] to loot Tallonkai's Jewel
   collect 8050 x1 quest 2459.2 -- Collect Tallonkai's Jewel (x1)
 step
   label jewel
@@ -352,7 +352,7 @@ step
 step
   label spiderLegs
   zone map 1438
-  use 5621 @42.41,67.07 map 1438 -- Use the [Tourmaline Phial] at the Pools of Arlithrien moonwell
+  use 5621 @42.41,67.07 map 1438 quest 933.1 -- Use the [Tourmaline Phial] at the Pools of Arlithrien moonwell
   collect 5645 x1 quest 933.1
 step
   when !turnedin 4161
@@ -411,7 +411,7 @@ step
   accept 937 -- Accept The Enchanted Glade
 step
   zone map 1438
-  use 18152 @38.43,34.03 map 1438 -- Use the [Amethyst Phial] at The Oracle Glade moonwell
+  use 18152 @38.43,34.03 map 1438 quest 7383.1 -- Use the [Amethyst Phial] at The Oracle Glade moonwell
   collect 18151 x1 quest 7383.1 -- Collect Filled Amethyst Phial (x1)
 step
   label harpies
@@ -942,7 +942,7 @@ step
   accept 2520 -- Accept Sathrah's Sacrifice
 step
   zone map 1457
-  use 8155 @39.7,85.8 map 1457 -- Use [Sathrah's Sacrifice] at the fountain
+  use 8155 @39.7,85.8 map 1457 quest 2520.1 -- Use [Sathrah's Sacrifice] at the fountain
   interact 138498 quest 2520.1 -- Offer the sacrifice at the fountain
 step
   label end

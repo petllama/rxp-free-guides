@@ -700,7 +700,7 @@ step
 step
   label IshamuhalesFang
   zone map 1413
-  use 10338 @59.710032,30.329991 map 1413 -- Use the [Fresh Zhevra Carcass] at the dead tree to summon Ishamuhale. Kill and loot him for his Fang
+  use 10338 @59.710032,30.329991 map 1413 quest 882.1 -- Use the [Fresh Zhevra Carcass] at the dead tree to summon Ishamuhale. Kill and loot him for his Fang
   note "The Carcass only has a 30 minute duration!"
   collect 5101 x1 quest 882.1 -- Ishamuhale's Fang (1)
 step
@@ -1122,7 +1122,7 @@ step
 step
   only Shaman
   zone map 1413
-  use 7766 @44.219967,76.749972 map 1413 -- Fill your [Empty Brown Waterskin] in the watering hole below Brine's hut
+  use 7766 @44.219967,76.749972 map 1413 quest 1535.1 -- Fill your [Empty Brown Waterskin] in the watering hole below Brine's hut
   collect 7769 x1 quest 1535.1 -- Filled Brown Waterskin (1)
 step
   only Shaman
@@ -1405,7 +1405,7 @@ step
   goto 36.399861,42.009817 map 1450 r 8 optional
   note "Use the [Shrine Bauble] at the Shrine of Remulos"
   interact 15885 quest 28.1 -- Complete the Trial of the Lake
-  use 15877 @36.399861,42.009817 map 1450
+  use 15877 @36.399861,42.009817 map 1450 quest 28.1
 step
   only Druid
   when onquest 28
@@ -2376,7 +2376,7 @@ step
   zone map 1454
   note "Kill the Summoned Succubus"
   kill 5677 x1 quest 1513.1 -- Kill Summoned Succubus (1)
-  use 6626 @49.659669,50.149559 map 1454
+  use 6626 @49.659669,50.149559 map 1454 quest 1513.1
 step
   only Warlock
   when onquest 1513

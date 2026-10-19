@@ -1459,7 +1459,7 @@ step
   zone map 1458
   note "Kill the Summoned Voidwalker"
   kill 5676 x1 quest 1471.1 -- Kill Summoned Voidwalker (1)
-  use 6284 @86.640052,27.099503 map 1458
+  use 6284 @86.640052,27.099503 map 1458 quest 1471.1
 step
   only Warlock
   when onquest 1471

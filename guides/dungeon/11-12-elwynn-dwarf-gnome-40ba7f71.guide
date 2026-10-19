@@ -323,7 +323,7 @@ step
   only Warlock
   label next_46
   zone map 1453
-  use 6928 @25.154247,77.40569 map 1453 -- Kill the Summoned Voidwalker
+  use 6928 @25.154247,77.40569 map 1453 quest 1689.1 -- Kill the Summoned Voidwalker
   kill 5676 x1 quest 1689.1 -- Kill Summoned Voidwalker (x1)
 step
   only Warlock

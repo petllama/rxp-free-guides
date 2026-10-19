@@ -558,7 +558,7 @@ step
   label next_80
   zone map 1438
   note "Kill Ferocitas the Dream Eater. Loot him for the [Gnarlpine Necklace]. Be careful as he can [Thrash] hitting you up to three times at once"
-  use 8049 @69.370084,53.409945 map 1438 -- Use the [Gnarlpine Necklace] to loot Tallonkai's Jewel
+  use 8049 @69.370084,53.409945 map 1438 quest 2459.2 -- Use the [Gnarlpine Necklace] to loot Tallonkai's Jewel
   collect 8050 x1 quest 2459.2 -- Collect Tallonkai's Jewel (x1)
 step
   label jewel
@@ -610,7 +610,7 @@ step
 step
   label next_90
   zone map 1438
-  use 5621 @42.40995,67.070055 map 1438 -- Use the [Tourmaline Phial] at the Pools of Arlithrien moonwell
+  use 5621 @42.40995,67.070055 map 1438 quest 933.1 -- Use the [Tourmaline Phial] at the Pools of Arlithrien moonwell
   collect 5645 x1 quest 933.1
 step
   when !turnedin 4161
@@ -839,7 +839,7 @@ step
   accept 937 -- Accept The Enchanted Glade
 step
   zone map 1438
-  use 18152 @38.429917,34.029908 map 1438 -- Use the [Amethyst Phial] at The Oracle Glade moonwell
+  use 18152 @38.429917,34.029908 map 1438 quest 7383.1 -- Use the [Amethyst Phial] at The Oracle Glade moonwell
   collect 18151 x1 quest 7383.1 -- Collect Filled Amethyst Phial (x1)
 step
   only Druid
@@ -1631,7 +1631,7 @@ step
   zone map 1457
   note "Go to the Gates of Darnassus and use the [Lunar Pendant]"
   kill 270421 x1 quest 98067.4
-  use 279378 @87.804406,35.667374 map 1457
+  use 279378 @87.804406,35.667374 map 1457 quest 98067.4
 step
   only Hunter
   along
@@ -1729,7 +1729,7 @@ step
   zone map 1457
   note "Go to the Gates of Darnassus and use the [Lunar Pendant]"
   kill 270421 x1 quest 98067.4
-  use 279378 @87.804406,35.667374 map 1457
+  use 279378 @87.804406,35.667374 map 1457 quest 98067.4
 step
   only Paladin,Hunter,Rogue,Priest,Shaman,Mage,Warlock,Druid
   zone map 1457
@@ -1758,7 +1758,7 @@ step
   zone map 1457
   note "Go to the Gates of Darnassus and use the [Lunar Pendant]"
   kill 270421 x1 quest 98067.4
-  use 279378 @87.804406,35.667374 map 1457
+  use 279378 @87.804406,35.667374 map 1457 quest 98067.4
 step
   only Warrior
   along until next_251
@@ -1788,7 +1788,7 @@ step
   zone map 1457
   note "Go to the Darnassus Inn and use the [Lunar Pendant]"
   kill 270420 x1 quest 98067.3
-  use 279378 @65.977627,16.623378 map 1457
+  use 279378 @65.977627,16.623378 map 1457 quest 98067.3
 step
   only Druid,NightElf
   when onquest 5931
@@ -1823,7 +1823,7 @@ step
   zone map 1457
   note "Go to the Cenarion Hold entrance and use the [Lunar Pendant]"
   kill 270418 x1 quest 98067.1
-  use 279378 @33.927223,15.489798 map 1457
+  use 279378 @33.927223,15.489798 map 1457 quest 98067.1
 step
   only Rogue
   when onquest 2242
@@ -1839,7 +1839,7 @@ step
   zone map 1457
   note "Go to the Darnassus Bank and use the [Lunar Pendant]"
   kill 270419 x1 quest 98067.2
-  use 279378 @41.429588,43.319036 map 1457
+  use 279378 @41.429588,43.319036 map 1457 quest 98067.2
 step
   when onquest 98067
   zone map 1457
@@ -1854,7 +1854,7 @@ step
   accept 2520 -- Accept Sathrah's Sacrifice
 step
   zone map 1457
-  use 8155 @39.700453,85.800073 map 1457 -- Use [Sathrah's Sacrifice] at the fountain
+  use 8155 @39.700453,85.800073 map 1457 quest 2520.1 -- Use [Sathrah's Sacrifice] at the fountain
   interact 138498 quest 2520.1 -- Offer the sacrifice at the fountain
 step
   label end

@@ -855,7 +855,7 @@ step
   zone map 1455
   note "Use the [Rat Catcher's Flute] on the Deeprun Rats in the Deeprun Tram"
   kill 13016 x5 quest 6661.1 @76.410308,51.219947 map 1455 -- Rats Captured (x5)
-  use 17117 @76.410308,51.219947 map 1455
+  use 17117 @76.410308,51.219947 map 1455 quest 6661.1
 step
   when !zone "Stormwind City"
   zone map 1455

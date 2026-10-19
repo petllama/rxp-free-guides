@@ -233,7 +233,7 @@ step
   collect 2874 x1 @40.678,79.578 map 1415 optional -- An Unsent Letter (1)
   collect 3637 x1 quest 166.1 -- Head of VanCleef (1)
   accept 373 -- Accept The Unsent Letter
-  use 2874 @40.678,79.578 map 1415 -- An Unsent Letter
+  use 2874 @40.678,79.578 map 1415 quest 166.1 -- An Unsent Letter
 step
   along until next_39
   zone map 1436

@@ -545,7 +545,7 @@ step
   zone map 1411
   note "Use the [Foreman's Blackjack] on sleeping Lazy Peons"
   kill 10556 x5 quest 5441.1 @47.37,65.67 map 1411 -- Peons Awoken (5)
-  use 16114 @47.37,65.67 map 1411
+  use 16114 @47.37,65.67 map 1411 quest 5441.1
 step
   only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
   along until Imps
@@ -646,7 +646,7 @@ step
   goto 38.83,61.84 map 1411 r 25
   note "Use the [Foreman's Blackjack] on sleeping Lazy Peons"
   kill 10556 x5 quest 5441.1 -- Peons Awoken (5)
-  use 16114 @38.83,61.84 map 1411
+  use 16114 @38.83,61.84 map 1411 quest 5441.1
 step
   zone map 1411
   goto 41.3,65.03 map 1411 r 1 optional

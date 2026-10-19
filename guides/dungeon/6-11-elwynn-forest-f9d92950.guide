@@ -3080,7 +3080,7 @@ step
   only Warlock
   label next_304
   zone map 1453
-  use 6928 @25.154247,77.40569 map 1453 -- Kill the Summoned Voidwalker
+  use 6928 @25.154247,77.40569 map 1453 quest 1689.1 -- Kill the Summoned Voidwalker
   kill 5676 x1 quest 1689.1 -- Kill Summoned Voidwalker (x1)
 step
   only Warlock
@@ -3231,7 +3231,7 @@ step
   zone map 1453
   note "Use the [Rat Catcher's Flute] on Deeprun Rats inside the Deeprun Tram"
   kill 13016 x5 quest 6661.1 @63.898696,8.1719945 map 1453 -- Rats Captured (x5)
-  use 17117 @63.898696,8.1719945 map 1453
+  use 17117 @63.898696,8.1719945 map 1453 quest 6661.1
 step
   zone map 1453
   note "Talk to Monty inside the Deeprun Tram"
@@ -3612,7 +3612,7 @@ step
   label SpyMap
   zone map 1426
   note "Kill Dark Iron Spies. Loot them for the [Dark Iron Map]"
-  use 274268 @77.899959,62.299998 map 1426 -- Use the [Dark Iron Map] to start the quest
+  use 274268 @77.899959,62.299998 map 1426 quest 96390.1 -- Use the [Dark Iron Map] to start the quest
   kill 6123 x10 quest 96390.1 @77.899959,62.299998 map 1426 -- Dark Iron Spy slain 10/10
   collect 274268 x1 @77.899959,62.299998 map 1426 optional -- Dark Iron Map (1)
   accept 96391 -- Accept Underground Map

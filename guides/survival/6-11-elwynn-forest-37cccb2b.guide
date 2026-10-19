@@ -1098,7 +1098,7 @@ step
   only Warlock
   label next_174
   zone map 1429
-  use 6928 @42.105,65.927 map 1429 -- Kill the Summoned Voidwalker
+  use 6928 @42.105,65.927 map 1429 quest 1689.1 -- Kill the Summoned Voidwalker
   kill 5676 x1 quest 1689.1 -- Kill Summoned Voidwalker (x1)
 step
   only Warlock
@@ -1195,7 +1195,7 @@ step
   accept 6661 @42.105,65.927 map 1429 -- Accept Deeprun Rat Roundup
 step
   zone map 1429
-  use 17117 @42.105,65.927 map 1429 -- Use the [Rat Catcher's Flute] on Deeprun Rats
+  use 17117 @42.105,65.927 map 1429 quest 6661.1 -- Use the [Rat Catcher's Flute] on Deeprun Rats
   kill 13016 x5 quest 6661.1 @42.105,65.927 map 1429 -- Rats Captured (x5)
 step
   zone map 1429

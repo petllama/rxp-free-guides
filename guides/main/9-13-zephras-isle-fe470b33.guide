@@ -367,7 +367,7 @@ step
   note "*Repeatedly cast [Polymorph] and use the swatter on the same Flutterfly for extra dust." only Mage
   note "*cast [Entangling Roots] and use the swatter on the same Flutterfly for extra dust." only Druid
   collect 253595 x5 quest 92683.1 @48.92,84.441 map 2521 -- 5/5 Flutterfly Dust
-  use 253666 @48.92,84.441 map 2521 -- Flutterfly Swatter
+  use 253666 @48.92,84.441 map 2521 quest 92683.1 -- Flutterfly Swatter
 step
   label WhatIsMyPurposeA
   zone map 2521
@@ -395,7 +395,7 @@ step
   note "*Repeatedly cast [Polymorph] and use the swatter on the same Flutterfly for extra dust." only Mage
   note "*cast [Entangling Roots] and use the swatter on the same Flutterfly for extra dust." only Druid
   collect 253595 x5 quest 92683.1 @49.24,81.79 map 2521 -- 5/5 Flutterfly Dust
-  use 253666 @49.24,81.79 map 2521 -- Flutterfly Swatter
+  use 253666 @49.24,81.79 map 2521 quest 92683.1 -- Flutterfly Swatter
 step
   label GalestriderTenderloinA
   zone map 2521
@@ -426,7 +426,7 @@ step
   note "Kill Bandit Highwaymen::252820. Loot them for the [Blood-Stained Bandit Masks]."
   note "*Watch for stealthed enemies in the apple orchard."
   collect 253596 x7 quest 92685.1 @45.73,80.86 map 2521 -- 7/7 Blood-Stained Bandit Mask
-  use 263329 @45.73,80.86 map 2521 only Rogue -- Flutterfly Swatter
+  use 263329 @45.73,80.86 map 2521 only Rogue quest 92685.1 -- Flutterfly Swatter
 step
   label next_57
   zone map 2521
@@ -434,7 +434,7 @@ step
   note "Kill Bandit Highwaymen::252820. Loot them for the [Blood-Stained Bandit Masks]."
   note "*Watch for stealthed enemies in the apple orchard."
   collect 253596 x7 quest 92685.1 @45.73,80.86 map 2521 -- 7/7 Blood-Stained Bandit Mask
-  use 263329 @45.73,80.86 map 2521 only Rogue -- Flutterfly Swatter
+  use 263329 @45.73,80.86 map 2521 only Rogue quest 92685.1 -- Flutterfly Swatter
 step
   loop
   zone map 2521
@@ -482,7 +482,7 @@ step
   note "Follow Aamelia Windfield::252800. Wait for the roleplay."
   note "*When Aamelia stops, place a Campfire if you have one and none is nearby. Start cooking for skillups."
   kill 252863 x1 quest 92693.2 -- Follow Aamelia and make your final stand
-  use 279981 @47.51,78.44 map 2521 -- Basic Campfire Kit
+  use 279981 @47.51,78.44 map 2521 quest 92693.2 -- Basic Campfire Kit
 step
   only Alliance
   when onquest 92693
@@ -820,7 +820,7 @@ step
   goto 46.55,71.7 map 2521 r 30 optional
   note "Click on the Crystals"
   interact 697118 quest 92840.1 -- Gather Data on Elemental Currents
-  use 254584 @46.55,71.7 map 2521 -- Index Esoteria
+  use 254584 @46.55,71.7 map 2521 quest 92840.1 -- Index Esoteria
 step
   label next_96
   only Alliance
@@ -831,7 +831,7 @@ step
   goto 46.55,71.7 map 2521 r 30 optional
   note "Click on the Crystals"
   interact 697118 quest 92840.1 -- Gather Data on Elemental Currents
-  use 254584 @46.55,71.7 map 2521 -- Index Esoteria
+  use 254584 @46.55,71.7 map 2521 quest 92840.1 -- Index Esoteria
 step
   only Alliance
   zone map 2521
@@ -843,7 +843,7 @@ step
   note "Click on the Crystals"
   note "*Do not use [Walk on Air] during this step."
   interact 697118 quest 92840.1 -- Gather Data on Elemental Currents
-  use 254584 @48.13,70.15 map 2521 -- Index Esoteria
+  use 254584 @48.13,70.15 map 2521 quest 92840.1 -- Index Esoteria
 step
   only Mage
   when onquest 93797

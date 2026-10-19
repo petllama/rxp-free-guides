@@ -65,7 +65,7 @@ step
   note "Use the [Horn of Echeyakee] to summon Echeyakee"
   note "Kill Echeyakee. Loot him for Echeyakee's Hide"
   collect 5100 x1 quest 881.1 -- Echeyakee's Hide (1)
-  use 10327 @55.799967,17.030009 map 1413
+  use 10327 @55.799967,17.030009 map 1413 quest 881.1
 step
   only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Skyborne
   when onquest 894
@@ -740,7 +740,7 @@ step
 step
   label IshamuhalesFang
   zone map 1413
-  use 10338 @59.710032,30.329991 map 1413 -- Use the [Fresh Zhevra Carcass] at the dead tree to summon Ishamuhale. Kill and loot him for his Fang
+  use 10338 @59.710032,30.329991 map 1413 quest 882.1 -- Use the [Fresh Zhevra Carcass] at the dead tree to summon Ishamuhale. Kill and loot him for his Fang
   note "The Carcass only has a 30 minute duration!"
   collect 5101 x1 quest 882.1 -- Ishamuhale's Fang (1)
 step
@@ -1529,7 +1529,7 @@ step
   goto 36.399861,42.009817 map 1450 r 8 optional
   note "Use the [Shrine Bauble] at the Shrine of Remulos"
   interact 15885 quest 28.1 -- Complete the Trial of the Lake
-  use 15877 @36.399861,42.009817 map 1450
+  use 15877 @36.399861,42.009817 map 1450 quest 28.1
 step
   only Druid
   when onquest 28

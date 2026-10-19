@@ -421,7 +421,7 @@ step
   accept 6661 @74.4,51.1 map 1455 -- Accept Deeprun Rat Roundup
 step
   zone map 1455
-  use 17117 @74.4,51.1 map 1455 -- Use the [Rat Catcher's Flute] on Deeprun Rats
+  use 17117 @74.4,51.1 map 1455 quest 6661.1 -- Use the [Rat Catcher's Flute] on Deeprun Rats
   kill 13016 x5 quest 6661.1 @74.4,51.1 map 1455 -- Rats Captured (x5)
 step
   zone map 1455

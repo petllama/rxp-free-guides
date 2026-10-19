@@ -313,7 +313,7 @@ step
   label Xabraxxis
   zone map 1439
   note "Kill Xabraxxis. Open the Xabraxxis' Demon Bag he drops on the ground. Loot it for the Talisman of Corruption"
-  use 12347 @52.379954,33.390074 map 1439
+  use 12347 @52.379954,33.390074 map 1439 quest 4763.1
   collect 12355 x1 quest 4763.1 @52.379954,33.390074 map 1439 -- Talisman of Corruption (1)
 step
   zone map 1439

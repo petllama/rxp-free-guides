@@ -1976,7 +1976,7 @@ step
   note "Kill Echeyakee. Loot him for Echeyakee's Hide"
   note "If Echeyakee doesn't spawn after using the [Horn of Echeyakee] or you didn't get the tag when it did spawn, skip this step"
   collect 5100 x1 quest 881.1 -- Echeyakee's Hide (1)
-  use 10327 @55.799967,17.030009 map 1413
+  use 10327 @55.799967,17.030009 map 1413 quest 881.1
 step
   when !has 5100
   zone map 1413
@@ -1987,7 +1987,7 @@ step
   note "Use the [Horn of Echeyakee] to summon Echeyakee"
   note "Kill Echeyakee. Loot him for Echeyakee's Hide"
   collect 5100 x1 quest 881.1 -- Echeyakee's Hide (1)
-  use 10327 @55.799967,17.030009 map 1413
+  use 10327 @55.799967,17.030009 map 1413 quest 881.1
 step
   zone map 1413
   note "Talk to Sergra"

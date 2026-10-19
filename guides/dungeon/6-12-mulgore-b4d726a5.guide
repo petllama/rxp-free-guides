@@ -271,7 +271,7 @@ step
   only Tauren
   along until next_45
   zone map 1412
-  use 33009 "Tender Strider Meat" @48.57999,67.370015 map 1412 -- Find Kyle. Use the [Tender Strider Meat] to feed him
+  use 33009 "Tender Strider Meat" @48.57999,67.370015 map 1412 quest 99411.1 -- Find Kyle. Use the [Tender Strider Meat] to feed him
   note "He runs clockwise in circles around Bloodhoof Village"
   kill 277154 x1 quest 99411.1 -- Kyle fed
 step
@@ -311,7 +311,7 @@ step
 step
   along until KyleFed
   zone map 1412
-  use 33009 "Tender Strider Meat" @54.060088,66.400088 map 1412 -- Find Kyle. Use the [Tender Strider Meat] to feed him
+  use 33009 "Tender Strider Meat" @54.060088,66.400088 map 1412 quest 99411.1 -- Find Kyle. Use the [Tender Strider Meat] to feed him
   note "He runs clockwise in circles around Bloodhoof Village"
   kill 277154 x1 quest 99411.1 -- Kyle fed
 step
@@ -592,7 +592,7 @@ step
 step
   along until KyleFed2
   zone map 1412
-  use 33009 "Tender Strider Meat" @30.524905,60.525051 map 1412 -- Find Kyle. Use the [Tender Strider Meat] to feed him
+  use 33009 "Tender Strider Meat" @30.524905,60.525051 map 1412 quest 99411.1 -- Find Kyle. Use the [Tender Strider Meat] to feed him
   note "He runs clockwise in circles around Bloodhoof Village"
   kill 277154 x1 quest 99411.1 -- Kyle fed
 step
@@ -781,7 +781,7 @@ step
   goto 48.399358,61.73965 map 1412 r 30
   goto 49.427095,59.970307 map 1412 r 30
   goto 48.996925,57.900234 map 1412 r 30
-  use 33009 "Tender Strider Meat" @48.996925,57.900234 map 1412 -- Find Kyle. Use the [Tender Strider Meat] to feed him
+  use 33009 "Tender Strider Meat" @48.996925,57.900234 map 1412 quest 99411.1 -- Find Kyle. Use the [Tender Strider Meat] to feed him
   note "He runs clockwise in circles around Bloodhoof Village"
   kill 277154 x1 quest 99411.1 -- Kyle fed
 step
@@ -811,7 +811,7 @@ step
 step
   zone map 1412
   note "Kill Bael'dun Diggers and Bael'dun Appraisers. Loot them for their Prospector's Picks"
-  use 4702 @31.270015,49.869869 map 1412 -- Smash the [Picks] at the Forge
+  use 4702 @31.270015,49.869869 map 1412 quest 746.1 -- Smash the [Picks] at the Forge
   note "Be careful as Bael'dun Appraisers cast [Lesser Heal] (Ranged Cast: Heals themselves or a nearby mob below 50% health for about 75 health)"
   collect 4703 x5 quest 746.1 @31.270015,49.869869 map 1412 -- Broken Tools (5)
 step
@@ -1780,7 +1780,7 @@ step
 step
   only Druid,Tauren
   zone map 1413
-  use 15710 @41.999968,60.859944 map 1413 -- Use [Cenarion Lunardust] at the Moonkin Stone
+  use 15710 @41.999968,60.859944 map 1413 quest 6002.1 -- Use [Cenarion Lunardust] at the Moonkin Stone
   note "Kill Lunaclaw as he spawns. Talk to the Lunaclaw Spirit afterwards"
   note "Be careful! Lunaclaw casts [Thrash] (Charges 2 extra attacks every 10 seconds)"
   note "Steer clear of the Thunderheads in the area"

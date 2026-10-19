@@ -199,7 +199,7 @@ step
 step
   label RabidThistle
   zone map 1439
-  use 7586 @38.47,57.92 map 1439 -- Use [Tharnariun's Hope] on a Rabid Thistle Bear
+  use 7586 @38.47,57.92 map 1439 quest 2118.1 -- Use [Tharnariun's Hope] on a Rabid Thistle Bear
   kill 2164 x1 quest 2118.1 @38.47,57.92 map 1439
 step
   zone map 1439

@@ -116,6 +116,14 @@
     "dropped": "money >= 200"
    },
    {
+    "line": 0,
+    "goal": "use counted by objective 5441.1: use 16114 @47.37,65.67 map 1411 quest 5441.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 5441.1: use 16114 @38.83,61.84 map 1411 quest 5441.1"
+   },
+   {
     "line": 44,
     "goal": "along waypoint dropped: goto 41.52,68.36 map 1411 r 12 optional"
    },
@@ -153,6 +161,22 @@
    }
   ],
   "1-6-shadowglen-093c0de2.guide": [
+   {
+    "line": 0,
+    "goal": "use counted by objective 921.1: use 5185 @59.9,33 map 1438 quest 921.1 -- Use the [Crystal Phial] at the Moonwell"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 921.1: use 5185 @59.9,33 map 1438 quest 921.1 -- Use the [Crystal Phial] at the Moonwell"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 921.1: use 5185 @59.9,33 map 1438 quest 921.1 -- Use the [Crystal Phial] at the Moonwell"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 921.1: use 5185 @59.9,33 map 1438 quest 921.1 -- Use the [Crystal Phial] at the Moonwell"
+   },
    {
     "line": 22,
     "goal": "along goal that never checks off, as a note: Buy 3 stacks of [Rough Arrows]"
@@ -296,6 +320,10 @@
   ],
   "10-11-elwynn-dwarf-gnome-1419a546.guide": [
    {
+    "line": 0,
+    "goal": "use counted by objective 1689.1: use 6928 @53.612,59.764 map 1453 quest 1689.1 -- Kill the Summoned Voidwalker"
+   },
+   {
     "line": 69,
     "goal": "along step with no goal left dropped"
    }
@@ -320,6 +348,10 @@
    {
     "step": 77,
     "dropped": "skill Cooking >= 10"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 2118.1: use 7586 @38.47,57.92 map 1439 quest 2118.1 -- Use [Tharnariun's Hope] on a Rabid Thistle Bear"
    }
   ],
   "11-13-loch-modan-10b9df58.guide": [
@@ -368,6 +400,12 @@
    {
     "line": 19,
     "goal": "along step with no goal left dropped"
+   }
+  ],
+  "13-13-loch-modan-night-elf-90fe2434.guide": [
+   {
+    "line": 0,
+    "goal": "use counted by objective 6661.1: use 17117 @74.4,51.1 map 1455 quest 6661.1 -- Use the [Rat Catcher's Flute] on Deeprun Rats"
    }
   ],
   "13-15-silverpine-forest-5cc233ec.guide": [
@@ -466,6 +504,10 @@
     "goal": "note \"1\" dropped"
    },
    {
+    "line": 0,
+    "goal": "use counted by objective 29.1: use 15877 @36.026,41.374 map 1450 quest 29.1 -- Use the [Shrine Bauble] at the Shrine of Remulos tree"
+   },
+   {
     "line": 1,
     "goal": "along waypoint dropped: goto 19,81 map 1429 r 8"
    },
@@ -494,6 +536,18 @@
    {
     "line": 777,
     "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 2118.1: use 7586 @38.47,57.92 map 1439 quest 2118.1 -- Use [Tharnariun's Hope] on a Rabid Thistle Bear"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 4762.1: use 12350 @50.81,25.5 map 1439 quest 4762.1 -- Use the [Empty Sampling Tube] at the base of the Cliffspring River"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 4812.1: use 14338 @37.78,44.06 map 1439 quest 4812.1 -- Use the [Empty Water Tube] at the Auberdine Moonwell"
    },
    {
     "line": 82,
@@ -576,6 +630,14 @@
    {
     "step": 210,
     "dropped": "skill \"First Aid\" >= 1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 881.1: use 10327 @55.8,17.03 map 1413 quest 881.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 881.1: use 10327 @55.8,17.03 map 1413 quest 881.1"
    },
    {
     "line": 12,
@@ -846,6 +908,26 @@
     "dropped": "money >= 5808"
    },
    {
+    "line": 0,
+    "goal": "use counted by objective 882.1: use 10338 @59.71,30.33 map 1413 quest 882.1 -- Use the [Fresh Zhevra Carcass] at the dead tree to summon Ishamuhale. Kill and loot him for his Fang"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 1535.1: use 7766 @44.22,76.75 map 1413 quest 1535.1 -- Fill your [Empty Brown Waterskin] in the watering hole below Brine's hut"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 28.1: use 15877 @36.4,42.01 map 1450 quest 28.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 1513.1: use 6626 @49.66,50.15 map 1454 quest 1513.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 3924.1: use 6626 @61.51,4.43 map 1413 quest 3924.1"
+   },
+   {
     "line": 74,
     "goal": "along step with no goal left dropped"
    },
@@ -902,6 +984,10 @@
    {
     "line": 316,
     "goal": "objective 5321.2 kept as a note"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 4763.1: use 12347 @52.38,33.39 map 1439 quest 4763.1"
    },
    {
     "line": 3,
@@ -988,6 +1074,10 @@
    {
     "line": 960,
     "goal": "objective 287.2 kept as a note"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 6661.1: use 17117 @78,52 map 1455 quest 6661.1 -- Use the [Rat Catcher's Flute] on Deeprun Rats"
    }
   ],
   "6-11-elwynn-forest-37cccb2b.guide": [
@@ -1050,6 +1140,14 @@
    {
     "line": 1298,
     "goal": "objective 287.2 kept as a note"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 1689.1: use 6928 @42.105,65.927 map 1429 quest 1689.1 -- Kill the Summoned Voidwalker"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 6661.1: use 17117 @42.105,65.927 map 1429 quest 6661.1 -- Use the [Rat Catcher's Flute] on Deeprun Rats"
    }
   ],
   "6-11-teldrassil-aa19792d.guide": [
@@ -1068,6 +1166,22 @@
    {
     "step": 184,
     "dropped": "money >= 2023"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 2459.2: use 8049 @69.37,53.41 map 1438 quest 2459.2 -- Use the [Gnarlpine Necklace] to loot Tallonkai's Jewel"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 933.1: use 5621 @42.41,67.07 map 1438 quest 933.1 -- Use the [Tourmaline Phial] at the Pools of Arlithrien moonwell"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 7383.1: use 18152 @38.43,34.03 map 1438 quest 7383.1 -- Use the [Amethyst Phial] at The Oracle Glade moonwell"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 2520.1: use 8155 @39.7,85.8 map 1457 quest 2520.1 -- Use [Sathrah's Sacrifice] at the fountain"
    },
    {
     "line": 80,
@@ -1384,6 +1498,10 @@
     "dropped": "money >= 3022"
    },
    {
+    "line": 0,
+    "goal": "use counted by objective 1471.1: use 6284 @86.64,27.1 map 1458 quest 1471.1"
+   },
+   {
     "line": 108,
     "goal": "along goal that never checks off, as a note: Use item 3131"
    },
@@ -1640,6 +1758,14 @@
    {
     "step": 341,
     "dropped": "money >= 3022"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 746.1: use 4702 @31.27,49.87 map 1412 quest 746.1 -- Smash the [Picks] at the Forge"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 6002.1: use 15710 @42,60.86 map 1413 quest 6002.1 -- Use [Cenarion Lunardust] at the Moonkin Stone"
    },
    {
     "line": 109,
@@ -1906,6 +2032,10 @@
    {
     "step": 376,
     "dropped": "money >= 3022"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 1471.1: use 6284 @86.64,27.1 map 1458 quest 1471.1"
    },
    {
     "line": 133,

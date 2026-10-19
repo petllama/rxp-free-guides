@@ -613,7 +613,7 @@ step
 step
   zone map 1412
   note "Kill Bael'dun Diggers and Bael'dun Appraisers. Loot them for their Prospector's Picks"
-  use 4702 @31.27,49.87 map 1412 -- Smash the [Picks] at the Forge
+  use 4702 @31.27,49.87 map 1412 quest 746.1 -- Smash the [Picks] at the Forge
   note "Be careful as Bael'dun Appraisers cast [Lesser Heal] (Ranged Cast: Heals themselves or a nearby mob below 50% health for about 75 health)"
   collect 4703 x5 quest 746.1 @31.27,49.87 map 1412 -- Broken Tools (5)
 step
@@ -1295,7 +1295,7 @@ step
   only Druid
   label next_154
   zone map 1413
-  use 15710 @42,60.86 map 1413 -- Use [Cenarion Lunardust] at the Moonkin Stone
+  use 15710 @42,60.86 map 1413 quest 6002.1 -- Use [Cenarion Lunardust] at the Moonkin Stone
   note "Kill Lunaclaw as he spawns. Talk to the Lunaclaw Spirit afterwards"
   note "Be careful! Lunaclaw casts [Thrash] (Charges 2 extra attacks every 10 seconds)"
   note "Steer clear of the Thunderheads in the area"

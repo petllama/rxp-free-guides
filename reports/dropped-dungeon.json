@@ -134,6 +134,14 @@
     "dropped": "money >= 200"
    },
    {
+    "line": 0,
+    "goal": "use counted by objective 5441.1: use 16114 @47.370024,65.669872 map 1411 quest 5441.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 5441.1: use 16114 @38.830071,61.840085 map 1411 quest 5441.1"
+   },
+   {
     "line": 42,
     "goal": "along step with no goal left dropped"
    }
@@ -190,6 +198,14 @@
   ],
   "1-6-northshire-56f23037.guide": [
    {
+    "line": 0,
+    "goal": "use counted by objective 7.1: use 247834 @47.569,34.967 map 1429 quest 7.1 -- Use the [Nibbled-On Book] to start the quest"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 91772.1: use 247970 @45.563026,47.741947 map 1429 quest 91772.1"
+   },
+   {
     "line": 98,
     "goal": "along waypoint dropped: goto 47.629964,32.07001 map 1429 r 20 -- Enter the Echo Ridge Mine"
    },
@@ -199,6 +215,22 @@
    }
   ],
   "1-6-shadowglen-88ca374a.guide": [
+   {
+    "line": 0,
+    "goal": "use counted by objective 921.1: use 5185 @59.899903,33.000074 map 1438 quest 921.1 -- Use the [Crystal Phial] at the Moonwell"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 921.1: use 5185 @59.899903,33.000074 map 1438 quest 921.1 -- Use the [Crystal Phial] at the Moonwell"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 921.1: use 5185 @59.899903,33.000074 map 1438 quest 921.1 -- Use the [Crystal Phial] at the Moonwell"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 921.1: use 5185 @59.899903,33.000074 map 1438 quest 921.1 -- Use the [Crystal Phial] at the Moonwell"
+   },
    {
     "line": 50,
     "goal": "along waypoint dropped: goto 59.305991,41.091123 map 1438 r 8"
@@ -3446,6 +3478,10 @@
     "dropped": "money >= 800"
    },
    {
+    "line": 0,
+    "goal": "use counted by objective 1471.1: use 6284 @86.640052,27.099503 map 1458 quest 1471.1"
+   },
+   {
     "line": 3,
     "goal": "along step with no goal left dropped"
    },
@@ -3468,6 +3504,12 @@
    {
     "line": 66,
     "goal": "along step with no goal left dropped"
+   }
+  ],
+  "11-12-elwynn-dwarf-gnome-40ba7f71.guide": [
+   {
+    "line": 0,
+    "goal": "use counted by objective 1689.1: use 6928 @25.154247,77.40569 map 1453 quest 1689.1 -- Kill the Summoned Voidwalker"
    }
   ],
   "11-13-loch-modan-e2a43473.guide": [
@@ -3542,6 +3584,10 @@
    {
     "step": 89,
     "dropped": "money >= 3815"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 86667.1: use 279380 @19.599882,63.10017 map 1432 quest 86667.1 -- Use the [Ceramic Jar] while standing on the snowy patch to collect the [Jar of Snow]"
    }
   ],
   "11-13-loch-modan-hunter-e84d167f.guide": [
@@ -3552,6 +3598,10 @@
    {
     "step": 48,
     "dropped": "skill Cooking < 50"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 6661.1: use 17117 @78.00019,51.400006 map 1455 quest 6661.1 -- Use the [Rat Catcher's Flute] on Deeprun Rats"
    }
   ],
   "11-16-darkshore-loch-modan-67ee20cb.guide": [
@@ -3634,6 +3684,46 @@
    {
     "step": 170,
     "dropped": "skill Cooking >= 10"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 2118.1: use 7586 @36.371,50.92 map 1439 quest 2118.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 2118.1: use 7586 @39.129,59.176 map 1439 quest 2118.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 2118.1: use 7586 @39.129,59.176 map 1439 quest 2118.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 4812.1: use 14338 @37.767,44.001 map 1439 quest 4812.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 4812.1: use 14338 @37.767,44.001 map 1439 quest 4812.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 4812.1: use 14338 @37.767,44.001 map 1439 quest 4812.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 4812.1: use 14338 @37.767,44.001 map 1439 quest 4812.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 4812.1: use 14338 @37.767,44.001 map 1439 quest 4812.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 4812.1: use 14338 @37.767,44.001 map 1439 quest 4812.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 29.1: use 15877 @36.026,41.374 map 1450 quest 29.1"
    },
    {
     "line": 92,
@@ -3720,6 +3810,10 @@
    {
     "step": 132,
     "dropped": "money >= 3340"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 86667.1: use 279380 @19.599882,63.10017 map 1432 quest 86667.1 -- Use the [Ceramic Jar] while standing on the snowy patch to collect the [Jar of Snow]"
    },
    {
     "line": 132,
@@ -3870,6 +3964,22 @@
     "dropped": "money >= 3815"
    },
    {
+    "line": 0,
+    "goal": "use counted by objective 881.1: use 10327 @55.799967,17.030009 map 1413 quest 881.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 881.1: use 10327 @55.799967,17.030009 map 1413 quest 881.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 881.1: use 10327 @55.799967,17.030009 map 1413 quest 881.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 881.1: use 10327 @55.799967,17.030009 map 1413 quest 881.1"
+   },
+   {
     "line": 139,
     "goal": "along goal that never checks off, as a note: Use item 2030"
    },
@@ -3976,6 +4086,14 @@
     "dropped": "skill \"First Aid\" >= 1"
    },
    {
+    "line": 0,
+    "goal": "use counted by objective 92742.1: use 254545 @56.610486,18.647188 map 1436 quest 92742.1 -- Use the [Well Water Sample Kit] at the Jansen Stead well"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92742.2: use 254545 @46.070486,38.181434 map 1436 quest 92742.2 -- Use the [Well Water Sample Kit] at the Molsen Farm well"
+   },
+   {
     "line": 69,
     "goal": "along waypoint dropped: goto 56.549914,52.64015 map 1436 r 8"
    },
@@ -4016,6 +4134,26 @@
    {
     "step": 102,
     "dropped": "skill Cooking >= 10"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 2118.1: use 7586 @36.371,50.92 map 1439 quest 2118.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 2118.1: use 7586 @39.129,59.176 map 1439 quest 2118.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 2118.1: use 7586 @39.129,59.176 map 1439 quest 2118.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 4812.1: use 14338 @37.767,44.001 map 1439 quest 4812.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 4762.1: use 12350 @50.810031,25.500073 map 1439 quest 4762.1"
    },
    {
     "line": 55,
@@ -4170,6 +4308,18 @@
     "dropped": "money >= 5643"
    },
    {
+    "line": 0,
+    "goal": "use counted by objective 881.1: use 10327 @55.799967,17.030009 map 1413 quest 881.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 882.1: use 10338 @59.710032,30.329991 map 1413 quest 882.1 -- Use the [Fresh Zhevra Carcass] at the dead tree to summon Ishamuhale. Kill and loot him for his Fang"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 28.1: use 15877 @36.399861,42.009817 map 1450 quest 28.1"
+   },
+   {
     "line": 7,
     "goal": "along waypoint dropped: goto 52.229967,31.000037 map 1413 r 8"
    },
@@ -4232,6 +4382,10 @@
     "dropped": "skill \"First Aid\" >= 1"
    },
    {
+    "line": 0,
+    "goal": "use counted by objective 166.1: use 2874 @40.678,79.578 map 1415 quest 166.1 -- An Unsent Letter"
+   },
+   {
     "line": 103,
     "goal": "along step with no goal left dropped"
    }
@@ -4256,6 +4410,10 @@
    {
     "line": 655,
     "goal": "objective 5321.2 kept as a note"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 4763.1: use 12347 @52.379954,33.390074 map 1439 quest 4763.1"
    },
    {
     "line": 65,
@@ -4302,6 +4460,10 @@
    {
     "step": 103,
     "dropped": "money >= 5808"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 1513.1: use 6626 @49.659669,50.149559 map 1454 quest 1513.1"
    },
    {
     "line": 77,
@@ -4448,6 +4610,10 @@
    {
     "line": 691,
     "goal": "objective 287.2 kept as a note"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 96390.1: use 274268 @77.899959,62.299998 map 1426 quest 96390.1 -- Use the [Dark Iron Map] to start the quest"
    },
    {
     "line": 27,
@@ -5218,6 +5384,18 @@
     "dropped": "knows 2575"
    },
    {
+    "line": 0,
+    "goal": "use counted by objective 1689.1: use 6928 @25.154247,77.40569 map 1453 quest 1689.1 -- Kill the Summoned Voidwalker"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 6661.1: use 17117 @63.898696,8.1719945 map 1453 quest 6661.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 96390.1: use 274268 @77.899959,62.299998 map 1426 quest 96390.1 -- Use the [Dark Iron Map] to start the quest"
+   },
+   {
     "line": 41,
     "goal": "along goal that never checks off, as a note: Use item 2946"
    },
@@ -5322,6 +5500,46 @@
    {
     "step": 320,
     "dropped": "money >= 600"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 2459.2: use 8049 @69.370084,53.409945 map 1438 quest 2459.2 -- Use the [Gnarlpine Necklace] to loot Tallonkai's Jewel"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 933.1: use 5621 @42.40995,67.070055 map 1438 quest 933.1 -- Use the [Tourmaline Phial] at the Pools of Arlithrien moonwell"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 7383.1: use 18152 @38.429917,34.029908 map 1438 quest 7383.1 -- Use the [Amethyst Phial] at The Oracle Glade moonwell"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 98067.4: use 279378 @87.804406,35.667374 map 1457 quest 98067.4"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 98067.4: use 279378 @87.804406,35.667374 map 1457 quest 98067.4"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 98067.4: use 279378 @87.804406,35.667374 map 1457 quest 98067.4"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 98067.3: use 279378 @65.977627,16.623378 map 1457 quest 98067.3"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 98067.1: use 279378 @33.927223,15.489798 map 1457 quest 98067.1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 98067.2: use 279378 @41.429588,43.319036 map 1457 quest 98067.2"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 2520.1: use 8155 @39.700453,85.800073 map 1457 quest 2520.1 -- Use [Sathrah's Sacrifice] at the fountain"
    },
    {
     "line": 108,
@@ -5440,6 +5658,30 @@
    {
     "step": 236,
     "dropped": "skill Skinning >= 1"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 99411.1: use 33009 \"Tender Strider Meat\" @48.57999,67.370015 map 1412 quest 99411.1 -- Find Kyle. Use the [Tender Strider Meat] to feed him"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 99411.1: use 33009 \"Tender Strider Meat\" @54.060088,66.400088 map 1412 quest 99411.1 -- Find Kyle. Use the [Tender Strider Meat] to feed him"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 99411.1: use 33009 \"Tender Strider Meat\" @30.524905,60.525051 map 1412 quest 99411.1 -- Find Kyle. Use the [Tender Strider Meat] to feed him"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 99411.1: use 33009 \"Tender Strider Meat\" @48.996925,57.900234 map 1412 quest 99411.1 -- Find Kyle. Use the [Tender Strider Meat] to feed him"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 746.1: use 4702 @31.270015,49.869869 map 1412 quest 746.1 -- Smash the [Picks] at the Forge"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 6002.1: use 15710 @41.999968,60.859944 map 1413 quest 6002.1 -- Use [Cenarion Lunardust] at the Moonkin Stone"
    },
    {
     "line": 212,
@@ -5570,6 +5812,10 @@
    {
     "step": 320,
     "dropped": "not knows 2652"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 1471.1: use 6284 @86.640052,27.099503 map 1458 quest 1471.1"
    },
    {
     "line": 170,
@@ -5852,6 +6098,42 @@
    {
     "line": 1168,
     "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92683.1: use 253666 @48.416,80.537 map 2521 quest 92683.1 -- Flutterfly Swatter"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92683.1: use 253666 @49.24,81.79 map 2521 quest 92683.1 -- Flutterfly Swatter"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92685.1: use 263329 @51.241,86.193 map 2521 only Rogue quest 92685.1 -- Flutterfly Swatter"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92685.1: use 263329 @51.241,86.193 map 2521 only Rogue quest 92685.1 -- Flutterfly Swatter"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 97257.1: use 277329 @51.265,85.927 map 2521 quest 97257.1 -- Torch of Eternal Flame"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92683.1: use 253666 @49.24,81.79 map 2521 quest 92683.1 -- Flutterfly Swatter"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92685.1: use 263329 @51.241,86.193 map 2521 only Rogue quest 92685.1 -- Flutterfly Swatter"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92685.1: use 263329 @51.241,86.193 map 2521 only Rogue quest 92685.1 -- Flutterfly Swatter"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 97257.1: use 277329 @51.265,85.927 map 2521 quest 97257.1 -- Torch of Eternal Flame"
    },
    {
     "line": 11,
@@ -6794,6 +7076,66 @@
    {
     "line": 1818,
     "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92683.1: use 253666 @48.92,84.441 map 2521 quest 92683.1 -- Flutterfly Swatter"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92683.1: use 253666 @49.24,81.79 map 2521 quest 92683.1 -- Flutterfly Swatter"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92685.1: use 263329 @45.73,80.86 map 2521 only Rogue quest 92685.1 -- Flutterfly Swatter"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92685.1: use 263329 @45.73,80.86 map 2521 only Rogue quest 92685.1 -- Flutterfly Swatter"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92693.2: use 279981 @47.51,78.44 map 2521 quest 92693.2 -- Basic Campfire Kit"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92840.1: use 254584 @46.55,71.7 map 2521 quest 92840.1 -- Index Esoteria"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92840.1: use 254584 @46.55,71.7 map 2521 quest 92840.1 -- Index Esoteria"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92840.1: use 254584 @48.13,70.15 map 2521 quest 92840.1 -- Index Esoteria"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92683.1: use 253666 @49.24,81.79 map 2521 quest 92683.1 -- Flutterfly Swatter"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92685.1: use 263329 @45.73,80.86 map 2521 only Rogue quest 92685.1 -- Flutterfly Swatter"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92685.1: use 263329 @45.73,80.86 map 2521 only Rogue quest 92685.1 -- Flutterfly Swatter"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92693.2: use 279981 @47.51,78.44 map 2521 quest 92693.2 -- Basic Campfire Kit"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92840.1: use 254584 @46.55,71.7 map 2521 quest 92840.1 -- Index Esoteria"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92840.1: use 254584 @46.55,71.7 map 2521 quest 92840.1 -- Index Esoteria"
+   },
+   {
+    "line": 0,
+    "goal": "use counted by objective 92840.1: use 254584 @48.13,70.15 map 2521 quest 92840.1 -- Index Esoteria"
    },
    {
     "line": 20,

@@ -242,14 +242,14 @@ step
   kill 1985 x7 quest 457.2 @59.8,34.1 map 1438 -- Kill Thistle Boar (x7)
 step
   zone map 1438
-  use 5185 @59.9,33 map 1438 -- Use the [Crystal Phial] at the Moonwell
+  use 5185 @59.9,33 map 1438 quest 921.1 -- Use the [Crystal Phial] at the Moonwell
   collect 5184 x1 quest 921.1 -- Collect Filled Crystal Phial (x1)
 step
   along until next_42
   note "Die and respawn at the Spirit Healer"
 step
   zone map 1438
-  use 5185 @59.9,33 map 1438 -- Use the [Crystal Phial] at the Moonwell
+  use 5185 @59.9,33 map 1438 quest 921.1 -- Use the [Crystal Phial] at the Moonwell
   collect 5184 x1 quest 921.1 -- Collect Filled Crystal Phial (x1)
 step
   only Hunter
@@ -259,7 +259,7 @@ step
   turnin 457 -- Turn in The Balance of Nature
 step
   zone map 1438
-  use 5185 @59.9,33 map 1438 -- Use the [Crystal Phial] at the Moonwell
+  use 5185 @59.9,33 map 1438 quest 921.1 -- Use the [Crystal Phial] at the Moonwell
   collect 5184 x1 quest 921.1 -- Collect Filled Crystal Phial (x1)
 step
   only Priest
@@ -268,7 +268,7 @@ step
   accept 5622 -- Accept In Favor of Elune
 step
   zone map 1438
-  use 5185 @59.9,33 map 1438 -- Use the [Crystal Phial] at the Moonwell
+  use 5185 @59.9,33 map 1438 quest 921.1 -- Use the [Crystal Phial] at the Moonwell
   collect 5184 x1 quest 921.1 -- Collect Filled Crystal Phial (x1)
 step
   zone map 1438

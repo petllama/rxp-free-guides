@@ -1,0 +1,498 @@
+guide rxp-free/13-13-loch-modan-night-elf-90fe2434
+title "13-13 Loch Modan (Night Elf)"
+levels 13-13
+zone map 1432
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · RXP Survival Guide 1-20"
+next rxp-free/13-15-westfall-9d146499
+step
+  when !zone "Ironforge"
+  zone map 1415
+  zone map 1436
+  goto 44.72,49.2 map 1415 r 60 optional -- Wetlands to Westfall Swim
+  goto 43.162,49.946 map 1415 r 60 optional
+  goto 42.564,50.884 map 1415 r 20 optional
+  goto 42.363,50.812 map 1415 r 20 optional
+  goto 41.682,50.232 map 1415 r 20 optional
+  goto 40.959,50.142 map 1415 r 20 optional
+  goto 39.818,51.078 map 1415 r 20 optional
+  goto 39.778,51.615 map 1415 r 30 optional
+  goto 39.505,52.636 map 1415 r 30 optional
+  goto 40.16,54.451 map 1415 r 20 optional
+  goto 40.505,54.507 map 1415 r 20 optional
+  goto 41.37,57.126 map 1415 r 40 optional
+  goto 41.988,59.434 map 1415 r 30 optional
+  goto 41.342,61.214 map 1415 r 30 optional
+  goto 41.309,61.938 map 1415 r 20 optional
+  goto 40.545,64.111 map 1415 r 30 optional
+  goto 41.066,65.878 map 1415 r 20 optional
+  goto 41.349,66.265 map 1415 r 30 optional
+  goto 41.363,66.995 map 1415 r 30 optional
+  goto 41.625,67.689 map 1415 r 30 optional
+  goto 42.024,70.98 map 1436 r 8
+step
+  when !zone "Ironforge"
+  when !zone "Stormwind City"
+  zone map 1436
+  zone map 1429
+  goto 54.28,9.26 map 1436 r 50 optional
+  goto 55.12,14.64 map 1436 r 40 optional
+  goto 56.36,17.81 map 1436 r 65 optional
+  goto 23.24,77.8 map 1429 r 8
+step
+  when !zone "Ironforge"
+  zone map 1429
+  goto 36.809,72.429 map 1429 r 100
+step
+  when !zone "Ironforge"
+  note "Talk to Keldric Boucher"
+  vendor 1257 -- Buy [Lesser Healing Potion] if in stock
+step
+  when !zone "Ironforge"
+  zone map 1429
+  note "Talk to Dungar Longdrink"
+  getfp "Stormwind" @36.809,72.429 map 1429 optional -- Get the Stormwind City flight path
+step
+  when !zone "Ironforge"
+  zone map 1429
+  note "Get on the Tram once it arrives. Get off on the other side and look for Monty on the middle platform"
+  note "Cast [Summon Voidwalker] and [Create Healthstone] while waiting" only Warlock
+  note "Talk to Monty"
+  accept 6661 @36.809,72.429 map 1429 optional -- Accept Deeprun Rat Roundup
+step
+  when !zone "Ironforge"
+  zone map 1429
+  use 17117 @36.809,72.429 map 1429 optional -- Use the [Rat Catcher's Flute] on Deeprun Rats
+  kill 13016 x5 quest 6661.1 @36.809,72.429 map 1429 optional -- Rats Captured (x5)
+step
+  when !zone "Ironforge"
+  zone map 1429
+  note "Talk to Monty"
+  turnin 6661 @36.809,72.429 map 1429 optional -- Turn in Deeprun Rat Roundup
+  accept 6662 @36.809,72.429 map 1429 optional -- Accept Me Brother, Nipsy
+step
+  along until next_10
+  zone map 1455
+  goto 77,51 map 1455 r 8
+step
+  only Warrior
+  label next_10
+  zone map 1455
+  note "Talk to Muren Stormpike"
+  accept 1680 -- Accept Tormus Deepforge
+step
+  zone map 1455
+  note "Talk to Gryth Thurden"
+  getfp "Ironforge" @55.491,47.751 map 1455 -- Get the Ironforge flight path
+step
+  only Warrior
+  when onquest 1680
+  zone map 1455
+  note "Talk to Tormus Deepforge"
+  turnin 1680 -- Turn in Tormus Deepforge
+step
+  when !turnedin 418
+  zone map 1455
+  note "Talk to an Ironforge Auctioneer"
+  note "Buy the following items for a faster turn in at Loch Modan shortly"
+  note "This will save you time as you won't need to run around looking for mobs to kill. Skip this step if you wish to not buy any"
+  note "[Boar Intestines]"
+  note "[Bear Meat]"
+  note "[Spider Ichor]"
+  collect 3172 x3 @23.8,71.8 map 1455 -- Boar Intestines (3)
+  collect 3173 x3 @23.8,71.8 map 1455 -- Bear Meat (3)
+  collect 3174 x3 @23.8,71.8 map 1455 -- Spider Ichor (3)
+step
+  zone map 1426
+  goto 53.305,35.112 map 1426 r 10
+step
+  zone map 1426
+  note "Talk to Rudra Amberstill"
+  goto 56.503,47.923 map 1426 r 100 optional
+  accept 314 -- Accept Protecting the Herd
+step
+  along until next_17
+  zone map 1426
+  goto 62.3,50.3 map 1426 r 14 optional
+  goto 62.2,49.4 map 1426 r 10 optional -- Run up this part of the mountain
+step
+  label next_17
+  zone map 1426
+  note "Kill Vagash. Loot him for his Fang"
+  note "This quest is difficult. Find a group for him if needed. Skip this step if you're unable to find a group or solo him"
+  note "Watch the video below before you attempt to kill Vagash. It can be soloed on any class"
+  collect 3627 x1 quest 314.1 -- Collect Fang of Vagash (1)
+step
+  zone map 1426
+  note "Talk to Rudra Amberstill"
+  turnin 314 -- Turn in Protecting the Herd
+step
+  along until next_20
+  zone map 1426
+  goto 68.614,54.643 map 1426 r 8
+  note "Talk to Kazan Mogosh"
+  vendor 1237 only Warrior -- Buy [Freshly Baked Bread] if needed
+  vendor 1237 only Rogue -- Buy [Freshly Baked Bread] if needed
+  vendor 1237 only !Warrior,!Rogue -- Buy [Freshly Baked Bread] and [Ice Cold Milk] if needed
+step
+  label next_20
+  zone map 1426
+  note "Talk to Senator Mehr Stonehallow and Foreman Stonebrow"
+  accept 433 -- Accept The Public Servant
+  accept 432 -- Accept Those Blasted Troggs!
+  goto 69.084,56.33 map 1426 r 8 optional
+step
+  only Warrior
+  zone map 1426
+  note "Talk to Dank Drizzlecut"
+  goto 69.324,55.456 map 1426 r 8
+  learn 2575 "Mining"
+step
+  only Paladin
+  zone map 1426
+  note "Talk to Dank Drizzlecut"
+  goto 69.324,55.456 map 1426 r 8
+  learn 2575 "Mining"
+step
+  only Rogue
+  zone map 1426
+  note "Talk to Dank Drizzlecut"
+  goto 69.324,55.456 map 1426 r 8
+  learn 2575 "Mining"
+step
+  only Warrior
+  note "Cast [Find Minerals]"
+step
+  only Paladin
+  note "Cast [Find Minerals]"
+step
+  only Rogue
+  note "Cast [Find Minerals]"
+step
+  zone map 1426
+  note "Kill Rockjaw Skullthumpers and Rockjaw Bonesnappers"
+  kill 1115 x6 quest 432.1 @70.7,56.4 map 1426 -- Kill Rockjaw Skullthumper (x6)
+  kill 1117 x10 quest 433.1 @70.7,56.4 map 1426 -- Kill Rockjaw Bonesnapper (x10)
+step
+  zone map 1426
+  note "Talk to Foreman Stonebrow and Senator Mehr Stonehallow"
+  turnin 432 -- Turn in Those Blasted Troggs!
+  turnin 433 -- Turn in The Public Servant
+  goto 68.671,55.969 map 1426 r 8 optional
+step
+  zone map 1426
+  note "Talk to Pilot Hammerfoot"
+  accept 419 -- Accept The Lost Pilot
+step
+  zone map 1426
+  note "Click the Dwarven Corpse"
+  turnin 419 -- Turn in The Lost Pilot
+  accept 417 -- Accept A Pilot's Revenge
+step
+  zone map 1426
+  note "Kill Mangeclaw. Loot him for his Claw"
+  collect 3183 x1 quest 417.1 -- Collect Mangy Claw (x1)
+step
+  zone map 1426
+  note "Talk to Pilot Hammerfoot"
+  note "Choose the [Craftsman's Dagger] as your reward. Equip it in your Off-Hand" only Rogue
+  turnin 417 -- Turn in A Pilot's Revenge
+step
+  along until next_30
+  zone map 1426
+  goto 84.4,31.1 map 1426 r 25 -- Travel to Loch Modan
+step
+  label next_30
+  along until next_31
+  zone map 1432
+  note "Talk to Gothor Brumn"
+  vendor 1362 -- Vendor and repair if needed
+step
+  label next_31
+  along until ThelsamarFirst
+  zone map 1432
+  note "Kill Elder Black Bears. Loot them for their Bear Meat"
+  note "Kill Mountain Boars. Loot them for their Boar Intestines"
+  note "Kill Forest Lurkers. Loot them for their Ichor"
+  collect 3172 x3 @24.764,18.397 map 1432 optional -- Collect Boar Intestines (x3)
+  collect 3173 x3 @24.764,18.397 map 1432 optional -- Collect Bear Meat (x3)
+  collect 3174 x3 @24.764,18.397 map 1432 optional -- Collect Spider Ichor (x3)
+  note "Save any [Chunks of Boar Meat] to use for leveling [Cooking] later"
+step
+  along until ThelsamarFirst
+  zone map 1432
+  goto 34.828,49.283 map 1432 r 130 -- Travel to Thelsamar
+step
+  label ThelsamarFirst
+  zone map 1432
+  note "Talk to Vidra Hearthstove"
+  accept 418 -- Accept Thelsamar Blood Sausages
+step
+  when onquest 1338
+  along until StormpikeO
+  note "Abandon Stormpike's Order. This is to unlock Mountaineer Stormpike's Task which will give a free 550xp turn in"
+step
+  along until StormpikeO
+  zone map 1432
+  note "Talk to Yanni Stoutheart"
+  vendor 1682 -- Buy 1 or 2 [Small Brown Pouches] if needed
+step
+  label StormpikeO
+  zone map 1432
+  goto 35.534,48.404 map 1432 r 8
+  note "Talk to Innkeeper Hearthstove"
+  vendor 6734 only Warrior -- Buy [Freshly Baked Bread]. Aim to have about 40
+  vendor 6734 only Rogue -- Buy [Freshly Baked Bread]. Aim to have about 40
+  vendor 6734 only !Warrior,!Rogue -- Buy [Freshly Baked Bread] and [Ice Cold Milk]. Aim to have about 20 [Freshly Baked Bread] and 40 [Ice Cold Milk]
+step
+  zone map 1432
+  note "Talk to Mountaineer Kadrell"
+  note "Mountaineer Kadrell patrols the road through Thelsamar"
+  accept 416 -- Accept Rat Catching
+  accept 1339 -- Accept Mountaineer Stormpike's Task
+step
+  along until StormpikeStop
+  zone map 1432
+  note "Kill Elder Black Bears. Loot them for their Bear Meat"
+  note "Kill Mountain Boars. Loot them for their Boar Intestines"
+  note "Kill Forest Lurkers. Loot them for their Ichor"
+  collect 3172 x3 @36.77,46.2 map 1432 optional -- Collect Boar Intestines (x3)
+  collect 3173 x3 @36.77,46.2 map 1432 optional -- Collect Bear Meat (x3)
+  collect 3174 x3 @36.77,46.2 map 1432 optional -- Collect Spider Ichor (x3)
+step
+  only Paladin
+  label BraveSoul
+  zone map 1432
+  note "Talk to Nillen Andemar"
+  vendor 222 -- Nillen Andemar sells [Heavy Spiked Mace] which is a limited supply item
+  note "Check to see if it's available and buy it if you can. If you can't afford it, then grind money from the nearby Tunnel Rats until you have enough"
+  note "Do this quickly as another player may purchase it before you do"
+step
+  only Warrior
+  zone map 1432
+  note "Talk to Nillen Andemar"
+  vendor 222 -- Nillen Andemar sells [Heavy Spiked Mace] which is a limited supply item
+  note "Check to see if it's available and buy it if you can. If you can't afford it, then grind money from the nearby Tunnel Rats until you have enough"
+  note "Do this quickly as another player may purchase it before you do"
+step
+  zone map 1432
+  note "Kill Tunnel Rats. Loot them for their Ears"
+  note "Ensure you have 10 [Linen Cloth] for your upcoming Paladin class quest" only Paladin
+  note "Tunnel Rats can spawn throughout Loch Modan. Check your World Map for their locations"
+  collect 3110 x12 quest 416.1 @35.48,16.82 map 1432 -- Collect Tunnel Rat Ear (x12)
+  collect 2589 x10 @35.48,16.82 map 1432 optional only Paladin -- Linen Cloth (10)
+step
+  label StormpikeStop
+  along until StormpikeDelivery
+  zone map 1432
+  note "Talk to Gothor Brumn"
+  vendor 1362 -- Vendor and repair if needed
+step
+  label StormpikeDelivery
+  zone map 1432
+  note "Talk to Mountaineer Stormpike"
+  turnin 1339 -- Turn in Mountaineer Stormpike's Task
+  accept 1338 -- Accept Stormpike's Order
+step
+  when !turnedin 418
+  zone map 1432
+  note "Kill Elder Black Bears. Loot them for their Bear Meat"
+  note "Kill Mountain Boars. Loot them for their Boar Intestines"
+  note "Kill Forest Lurkers. Loot them for their Ichor"
+  collect 3173 x3 @24.77,18.4 map 1432 -- Bear Meat (3)
+  collect 3172 x3 @26.9,10.7 map 1432 -- Boar Intestines (3)
+  collect 3174 x3 @38,34.9 map 1432 -- Spider Ichor (3)
+  goto 31.9,16.4 map 1432 r 90 optional
+  goto 28,20.6 map 1432 r 90 optional
+  goto 33.8,40.5 map 1432 r 90 optional
+  goto 36.2,30.9 map 1432 r 90 optional
+  goto 39,32.1 map 1432 r 90 optional
+  goto 31.9,16.4 map 1432 r 90 optional
+  goto 28,20.6 map 1432 r 90 optional
+  goto 33.8,40.5 map 1432 r 90 optional
+  goto 36.2,30.9 map 1432 r 90 optional
+  goto 39,32.1 map 1432 r 90 optional
+  goto 31.9,16.4 map 1432 r 8 optional
+step
+  zone map 1432
+  note "Talk to Mountaineer Kadrell"
+  note "Mountaineer Kadrell patrols the road through Thelsamar"
+  turnin 416 -- Turn in Rat Catching
+step
+  zone map 1432
+  note "Talk to Vidra Hearthstove"
+  turnin 418 -- Turn in Thelsamar Blood Sausages
+step
+  zone map 1432
+  note "Talk to Yanni Stoutheart"
+  note "Buy a [Flint and Tinder] along with 1 [Simple Wood]. Buy any[Small Brown Pouches] if needed"
+  collect 4470 x1 @34.757,48.618 map 1432 -- Simple Wood (1)
+  collect 4471 x1 @34.757,48.618 map 1432 -- Flint and Tinder (1)
+step
+  zone map 1432
+  note "Talk to Thorgrum Borrelson"
+  getfp "Thelsamar" @33.938,50.954 map 1432 -- Get the Thelsamar flight path
+step
+  zone map 1432
+  note "Talk to Mountaineer Cobbleflint"
+  accept 224 -- Accept In Defense of the King's Lands
+step
+  zone map 1432
+  note "Talk to Captain Rugelfuss in the bunker"
+  accept 267 -- Accept The Trogg Threat
+step
+  along until next_58
+  zone map 1432
+  goto 29.9,68.2 map 1432 r 45 optional
+  goto 30.76,69.97 map 1432 r 20 optional -- Travel to Stonesplinter Valley
+step
+  label next_58
+  zone map 1432
+  note "Kill Stonesplinter Troggs and Stonesplinter Scouts. Loot them for their Teeth"
+  note "Ensure you have 10 [Linen Cloth] for your upcoming Paladin class quest" only Paladin
+  kill 1161 x10 quest 224.1 @33.88,76.58 map 1432 -- Kill Stonesplinter Trogg (x10)
+  kill 1162 x10 quest 224.2 @33.88,76.58 map 1432 -- Kill Stonesplinter Scout (x10)
+  collect 2536 x8 quest 267.1 @33.88,76.58 map 1432 -- Collect Trogg Stone Tooth (x8)
+  collect 2589 x10 @33.88,76.58 map 1432 optional only Paladin -- Linen Cloth (10)
+step
+  zone map 1432
+  note "Talk to Mountaineer Cobbleflint"
+  turnin 224 -- Turn in In Defense of the King's Lands
+step
+  label TroggT
+  zone map 1432
+  note "Talk to Captain Rugelfuss"
+  turnin 267 -- Turn in The Trogg Threat
+step
+  zone map 1432
+  goto 33.938,50.954 map 1432 r 8
+  note "Talk to Thorgrum Borrelson"
+  fly "Ironforge" -- Fly to Ironforge
+step
+  only Priest
+  zone map 1455
+  note "Talk to Harick Boulderdrum"
+  note "Buy a [Smoldering Wand]. Equip it when you are 15 if you aren't already"
+  collect 5208 x1 @23.141,15.922 map 1455 -- Smoldering Wand (1)
+step
+  only Priest
+  zone map 1455
+  note "Talk to Toldren Deepiron"
+  train 5143 -- Train your class spells
+step
+  only Rogue
+  zone map 1455
+  note "Talk to Fenthwick"
+  train 5167 -- Train your class spells
+step
+  only Rogue
+  zone map 1455
+  goto 61.17,89.539 map 1455 r 8
+  note "Talk to Buliwyf Stonehand"
+  learn 198 "1h Maces"
+step
+  only Hunter
+  zone map 1455
+  note "Talk to Regnus Thundergranite"
+  train 5117 -- Train your class spells
+step
+  only Warrior
+  zone map 1455
+  note "Talk to Bilban Tosslespanner"
+  train 5114 -- Train your class spells
+step
+  only Warrior
+  zone map 1455
+  goto 61.17,89.539 map 1455 r 8
+  note "Talk to Buliwyf Stonehand"
+  learn 199 "2h Maces"
+step
+  only Warrior
+  zone map 1455
+  note "Talk to Kelomir Ironhand"
+  vendor 5121 -- Buy [Rock Hammer] if you can afford it
+step
+  zone map 1455
+  note "Enter the Deeprun Tram"
+  note "Talk to Monty on the middle platform"
+  accept 6661 @74.4,51.1 map 1455 -- Accept Deeprun Rat Roundup
+step
+  zone map 1455
+  use 17117 @74.4,51.1 map 1455 -- Use the [Rat Catcher's Flute] on Deeprun Rats
+  kill 13016 x5 quest 6661.1 @74.4,51.1 map 1455 -- Rats Captured (x5)
+step
+  zone map 1455
+  note "Talk to Monty"
+  turnin 6661 @74.4,51.1 map 1455 -- Turn in Deeprun Rat Roundup
+  accept 6662 @74.4,51.1 map 1455 -- Accept Me Brother, Nipsy
+step
+  along until next_74
+  note "Level your [First Aid] and [Cooking] if needed while waiting for the Tram"
+  note "You will need your [First Aid] to be 80 for a quest at level 24" only Rogue,Human,Gnome,NightElf,Orc,Troll,Tauren,Undead,Skyborne
+step
+  label next_74
+  zone map 1455
+  note "Talk to Nipsy when you get off the Tram"
+  note "Nipsy is on the center platform"
+  turnin 6662 @74.4,51.1 map 1455 -- Turn in Me Brother, Nipsy
+step
+  label next_76
+  note "Talk to Grimand Elmore"
+  accept 353 -- Accept Stormpike's Delivery
+step
+  note "Talk to Furen Longbeard"
+  turnin 1338 -- Turn in Stormpike's Order
+step
+  only Druid
+  note "Talk to Sheldras Moontree"
+  train 5504 -- Train your class spells
+step
+  only Druid
+  zone map 1453
+  goto 53.612,59.764 map 1453 r 8
+  note "Talk to Auctioneer Jaxon"
+  note "If you don't plan to take [Herbalism] as a primary profession, buy 5 [Earthroot] for a future quest"
+  note "Buy the following items for faster turn ins at Westfall shortly"
+  note "This will save you time as you won't need to run around looking for mobs to kill. Skip this step if you wish to not buy any"
+  note "[Stringy Vulture Meat]"
+  note "[Murloc Eye]"
+  note "[Goretusk Snout]"
+  note "[Okra]"
+  note "[Goretusk Liver]"
+  note "[Flask of Oil]"
+  collect 2449 x5 @53.612,59.764 map 1453 optional -- Earthroot (5)
+  collect 729 x3 @53.612,59.764 map 1453 optional -- Stringy Vulture Meat (3)
+  collect 730 x3 @53.612,59.764 map 1453 optional -- Murloc Eye (3)
+  collect 731 x3 @53.612,59.764 map 1453 optional -- Goretusk Snout (3)
+  collect 732 x3 @53.612,59.764 map 1453 optional -- Okra (3)
+  collect 723 x8 @53.612,59.764 map 1453 optional -- Goretusk Liver (8)
+  collect 814 x5 @53.612,59.764 map 1453 optional -- Flask of Oil (5)
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Warlock
+  zone map 1453
+  goto 53.612,59.764 map 1453 r 8
+  note "Talk to Auctioneer Jaxon"
+  note "Buy the following items for faster turn ins at Westfall shortly"
+  note "This will save you time as you won't need to run around looking for mobs to kill. Skip this step if you wish to not buy any"
+  note "[Stringy Vulture Meat]"
+  note "[Murloc Eye]"
+  note "[Goretusk Snout]"
+  note "[Okra]"
+  note "[Goretusk Liver]"
+  note "[Flask of Oil]"
+  collect 729 x3 @53.612,59.764 map 1453 optional -- Stringy Vulture Meat (3)
+  collect 730 x3 @53.612,59.764 map 1453 optional -- Murloc Eye (3)
+  collect 731 x3 @53.612,59.764 map 1453 optional -- Goretusk Snout (3)
+  collect 732 x3 @53.612,59.764 map 1453 optional -- Okra (3)
+  collect 723 x8 @53.612,59.764 map 1453 optional -- Goretusk Liver (8)
+  collect 814 x5 @53.612,59.764 map 1453 optional -- Flask of Oil (5)
+step
+  note "Talk to Keldric Boucher"
+  vendor 1257 -- Buy [Lesser Healing Potion] if in stock
+step
+  zone map 1453
+  note "Talk to Dungar Longdrink"
+  getfp "Stormwind" @53.612,59.764 map 1453 -- Get the Stormwind City flight path

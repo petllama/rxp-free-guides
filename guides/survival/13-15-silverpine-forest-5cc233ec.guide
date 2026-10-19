@@ -1,0 +1,794 @@
+guide rxp-free/13-15-silverpine-forest-5cc233ec
+title "13-15 Silverpine Forest"
+levels 13-15
+zone map 1421
+coords era
+faction Horde
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · RXP Survival Guide 1-20"
+next rxp-free/15-19-the-barrens-b6e37e17
+step
+  only Rogue,Undead
+  along until RotHideCluesTurnIn
+  note "If you see Astor, talk to him and kill him. Loot him for the letter. He patrols the road between Brill and The Sepulcher"
+  note "Astor's Letter of Introduction (1)"
+step
+  label WorgHearts
+  along until next_2
+  note "Kill Worgs as you travel toward Erland. Loot them for their Hearts"
+  collect 3164 x6 optional -- Collect Discolored Worg Heart (x6)
+step
+  label next_2
+  zone map 1421
+  note "Talk to Erland"
+  note "Make sure you are full health/mana before starting this quest!"
+  accept 435 -- Accept Escorting Erland
+step
+  along until next_4
+  zone map 1421
+  note "Kill Worgs. Loot them for their Hearts"
+  collect 3164 x6 @56.18,9.18 map 1421 optional -- Collect Discolored Worg Heart (x6)
+step
+  label next_4
+  zone map 1421
+  goto 56.25,10.27 map 1421 r 30 optional
+  goto 56.25,11.43 map 1421 r 30 optional
+  goto 56.17,12.62 map 1421 r 30 optional
+  goto 53.46,13.45 map 1421 r 8
+  note "Escort Erland safely to Rane Yorick"
+  note "Be careful! Worgs can spawn on top of each other, eat and drink whenever you are able to"
+  complete 435 -- Erland must reach Rane Yorick (1)
+step
+  zone map 1421
+  note "Talk to Rane Yorick"
+  turnin 435 -- Turn in Escorting Erland
+  accept 429 -- Accept Wild Hearts
+  accept 449 -- Accept The Deathstalkers' Report
+step
+  when !turnedin 429
+  loop
+  zone map 1421
+  goto 57.72,10.07 map 1421 r 1
+  goto 55.96,16.18 map 1421 r 50
+  goto 58.37,15.56 map 1421 r 50
+  goto 59.4,13.58 map 1421 r 50
+  goto 60.11,10.51 map 1421 r 50
+  goto 57.72,10.07 map 1421 r 50
+  note "Kill Worgs. Loot them for their Hearts"
+  collect 3164 x6 -- Collect Discolored Worg Heart (x6)
+step
+  along until next_8
+  zone map 1421
+  goto 49.77,28.66 map 1421 r 50 optional
+  goto 49.77,33.05 map 1421 r 50 optional
+  goto 49.64,37.84 map 1421 r 100 optional
+  goto 45.51,41.26 map 1421 r 100 optional -- Travel to The Sepulcher
+step
+  label next_8
+  zone map 1421
+  note "Talk to Dalar"
+  accept 421 -- Accept Prove Your Worth
+step
+  only Warrior,Paladin,Hunter,Rogue,Shaman,Warlock,Druid
+  zone map 1421
+  note "Talk to Gwyn"
+  vendor 5886 -- Buy [Red-speckled Mushroom] from him
+  collect 4605 x20 @44.05,39.78 map 1421 optional -- Red-speckled Mushroom (20)
+step
+  zone map 1421
+  note "Talk to Edwin"
+  note "Buy [Ice Cold Milk] from him" only Mage
+  note "Buy [Ice Cold Milk] from him" only Warlock
+  note "Buy [Ice Cold Milk] from him" only Priest
+  note "Buy [Ice Cold Milk] from him" only Shaman
+  note "Buy [Ice Cold Milk] from him" only Druid
+  vendor 2140 -- Buy [Lesser Healing Potions] from him if they're up
+  collect 1179 x20 @43.98,39.89 map 1421 optional only Mage -- Ice Cold Milk (20)
+  collect 1179 x20 @43.98,39.89 map 1421 optional only Warlock -- Ice Cold Milk (20)
+  collect 1179 x20 @43.98,39.89 map 1421 optional only Priest -- Ice Cold Milk (20)
+  collect 1179 x20 @43.98,39.89 map 1421 optional only Shaman -- Ice Cold Milk (20)
+  collect 1179 x20 @43.98,39.89 map 1421 optional only Druid -- Ice Cold Milk (20)
+step
+  only Undead
+  zone map 1421
+  note "Talk to Allister and Podrig"
+  accept 477 -- Accept Border Crossings
+  accept 6321 -- Accept Supplying the Sepulcher
+  goto 43.43,41.67 map 1421 r 8 optional
+step
+  label BorderCrossings
+  zone map 1421
+  note "Talk to Allister"
+  accept 477 -- Accept Border Crossings
+step
+  along until next_14
+  zone map 1421
+  goto 43.09,41.33 map 1421 r 8 optional
+  goto 42.75,41.3 map 1421 r 8 optional
+  goto 42.76,40.9 map 1421 r 8 optional
+  goto 43.43,40.87 map 1421 r 2 optional -- Enter the crypt
+step
+  label next_14
+  zone map 1421
+  note "Talk to Hadrec in the crypt"
+  turnin 449 -- Turn in The Deathstalkers' Report
+  accept 3221 -- Accept Speak with Renferrel
+  accept 437 -- Accept The Dead Fields
+step
+  when onquest 445
+  turnin 445 -- Turn in Delivery to Silverpine Forest
+step
+  zone map 1421
+  note "Talk to Renferrel"
+  turnin 429 -- Turn in Wild Hearts
+  turnin 3221 -- Turn in Speak with Renferrel
+  accept 1359 -- Accept Zinge's Delivery
+  accept 447 -- Accept A Recipe For Death
+  accept 430 -- Accept Return to Quinn
+step
+  loop
+  zone map 1421
+  goto 49.12,36.72 map 1421 r 1
+  goto 50.32,39.22 map 1421 r 50
+  goto 51.86,41.56 map 1421 r 50
+  goto 51.53,43.06 map 1421 r 50
+  goto 51.62,44.85 map 1421 r 50
+  goto 51.8,46.6 map 1421 r 50
+  goto 50.83,47.74 map 1421 r 50
+  goto 49.12,36.72 map 1421 r 50
+  note "Kill Moonrage Whitescalps"
+  kill 1769 x5 quest 421.1 -- Moonrage Whitescalp (5)
+step
+  zone map 1421
+  note "Talk to Dalar"
+  turnin 421 -- Turn in Prove Your Worth
+  accept 422 -- Accept Arugal's Folly
+step
+  along until Remedy
+  zone map 1421
+  goto 52.74,27.7 map 1421 r 80 -- Travel to Valgan's Field
+step
+  label Remedy
+  zone map 1421
+  note "Enter the house and go to the second floor. Loot the Dusty Spellbooks on the ground"
+  collect 3155 x1 quest 422.1 @52.83,28.56 map 1421 -- Remedy of Arugal (1)
+step
+  along until QuinnYorick
+  zone map 1421
+  goto 53.39,13.32 map 1421 r 80 -- Travel to The Ivar Patch
+step
+  label QuinnYorick
+  zone map 1421
+  note "Talk to Quinn Yorick on the second floor of the house"
+  turnin 430 -- Turn in Return to Quinn
+step
+  zone map 1421
+  note "Talk to Rane Yorick outside"
+  accept 425 -- Accept Ivar the Foul
+step
+  zone map 1421
+  note "Kill Ivar the Foul. Loot him for his Head"
+  note "Be careful! Clear the entire front area of the barn and pull the Ravenclaw Slaves outside one by one."
+  note "Ivar is protected by two Ravenclaw Slaves inside the barn. You can solopull one of them as he patrols forward"
+  note "They are immune to fear!" only Priest
+  note "They are immune to fear!" only Warlock
+  collect 3621 x1 quest 425.1 -- Ivar's Head (1)
+step
+  zone map 1421
+  note "Talk to Rane Yorick"
+  turnin 425 -- Turn in Ivar the Foul
+step
+  along until ArugalTurnin
+  note "Be careful! There may be a Son of Arugal in the area! This is a level 25 elite, steer clear from him!"
+step
+  along until Nightlash
+  zone map 1421
+  note "Kill Bears. Loot them for their Hearts"
+  collect 3253 x6 quest 447.1 @53.46,13.45 map 1421 -- Grizzled Bear Heart (6)
+step
+  label Nightlash
+  zone map 1421
+  note "Kill Rot Hide Gnolls around The Dead Field until Nightlash spawns. Kill and loot her for her Essence"
+  note "They are immune to fear!" only Priest
+  note "They are immune to fear!" only Warlock
+  collect 3622 x1 quest 437.1 @45.44,21.01 map 1421 -- Enter the Dead Fields (1)
+  note "Essence of Nightlash (1)"
+step
+  along until KillianVendor
+  zone map 1421
+  note "Kill Bears. Loot them for their Hearts"
+  collect 3253 x6 quest 447.1 @45.44,21.01 map 1421 -- Grizzled Bear Heart (6)
+step
+  along until KillianVendor
+  zone map 1421
+  note "Kill Spiders. Loot them for their Blood"
+  note "Be careful if Krethis Shadowspinner is up, SHE WILL KILL YOU! She has a 130 damage shield on a 15s cooldown, and 110 damage instant shock ability"
+  collect 3254 x6 quest 447.2 @45.44,21.01 map 1421 -- Skittering Blood (6)
+step
+  when onquest 447
+  label KillianVendor
+  zone map 1421
+  note "Talk to Killian"
+  vendor 5748 -- Vendor trash
+step
+  loop
+  zone map 1421
+  goto 36.33,14.2 map 1421 r 1
+  goto 37.25,15.99 map 1421 r 50
+  goto 35.67,16.01 map 1421 r 50
+  goto 34.96,16.34 map 1421 r 50
+  goto 33.99,17.24 map 1421 r 50
+  goto 34.14,15.26 map 1421 r 50
+  goto 35.06,14.5 map 1421 r 50
+  goto 35.85,13.83 map 1421 r 50
+  goto 36.33,14.2 map 1421 r 50
+  note "Kill Spiders. Loot them for their Blood"
+  note "Be careful if Krethis Shadowspinner is up, SHE WILL KILL YOU! She has a 130 damage shield on a 15s cooldown, and 110 damage instant shock ability"
+  collect 3254 x6 quest 447.2 -- Skittering Blood (6)
+step
+  loop
+  zone map 1421
+  goto 41.6,21.65 map 1421 r 1
+  goto 41.37,19.64 map 1421 r 50
+  goto 41.6,21.65 map 1421 r 50
+  goto 42.36,23.77 map 1421 r 50
+  goto 44.67,24.84 map 1421 r 50
+  goto 46.08,26.62 map 1421 r 50
+  note "Finish killing Bears. Loot them for their Hearts"
+  collect 3253 x6 quest 447.1 -- Grizzled Bear Heart (6)
+step
+  along until ArugalTurnin
+  zone map 1421
+  goto 45.51,41.26 map 1421 r 100 optional -- Travel back to The Sepulcher
+step
+  label ArugalTurnin
+  zone map 1421
+  note "Talk to Dalar"
+  turnin 422 -- Turn in Arugal's Folly
+  accept 423 -- Accept Arugal's Folly
+step
+  along until next_36
+  zone map 1421
+  goto 43.09,41.33 map 1421 r 8 optional
+  goto 42.75,41.3 map 1421 r 8 optional
+  goto 42.76,40.9 map 1421 r 8 optional
+  goto 43.43,40.87 map 1421 r 2 optional -- Enter the crypt
+step
+  label next_36
+  zone map 1421
+  note "Talk to Hadrec in the crypt"
+  turnin 437 -- Turn in The Dead Fields
+  accept 438 -- Accept The Decrepit Ferry
+step
+  only Warrior,Paladin,Hunter,Rogue,Shaman,Warlock,Druid
+  zone map 1421
+  note "Talk to Gwyn"
+  note "Buy [Red-speckled Mushrooms] from her"
+  vendor 5886 -- Vendor trash
+  collect 4605 x20 @44.05,39.78 map 1421 optional -- Red-speckled Mushroom (20)
+step
+  zone map 1421
+  note "Talk to Edwin"
+  note "Buy [Ice Cold Milk] from him" only Warlock
+  note "Buy [Ice Cold Milk] from him" only Priest
+  note "Buy [Ice Cold Milk] from him" only Shaman
+  note "Buy [Ice Cold Milk] from him" only Druid
+  vendor 2140 -- Buy [Lesser Healing Potions] from him if they're up
+  collect 1179 x20 @43.98,39.89 map 1421 optional only Warlock -- Ice Cold Milk (20)
+  collect 1179 x20 @43.98,39.89 map 1421 optional only Priest -- Ice Cold Milk (20)
+  collect 1179 x20 @43.98,39.89 map 1421 optional only Shaman -- Ice Cold Milk (20)
+  collect 1179 x20 @43.98,39.89 map 1421 optional only Druid -- Ice Cold Milk (20)
+step
+  only Warlock
+  zone map 1421
+  note "Talk to Andrea"
+  vendor 3554 -- Buy [Wise Man's Belt] from her if they're up
+step
+  only Mage
+  zone map 1421
+  note "Talk to Andrea"
+  vendor 3554 -- Buy [Wise Man's Belt] from her if they're up
+step
+  only Priest
+  zone map 1421
+  note "Talk to Andrea"
+  vendor 3554 -- Buy [Wise Man's Belt] from her if they're up
+step
+  only Hunter
+  zone map 1421
+  goto 45.01,39.3 map 1421 r 8
+  note "Talk to Nadia"
+  note "Buy a [Fine Longbow] from her if it's up"
+  collect 11304 x1 @45.01,39.3 map 1421 optional -- Fine Longbow (1)
+  collect 2515 x1200 @45.01,39.3 map 1421 optional only Hunter -- Sharp Arrow (1200)
+step
+  only Hunter
+  zone map 1421
+  note "Talk to Alexandre"
+  vendor 3552 -- Buy [Agile Boots] from her if they're up
+step
+  only Rogue
+  zone map 1421
+  note "Talk to Alexandre"
+  vendor 3552 -- Buy [Agile Boots] from her if they're up
+step
+  only Shaman
+  zone map 1421
+  note "Talk to Alexandre"
+  vendor 3552 -- Buy [Agile Boots] or [Stable Boots] from her if one of them is up
+step
+  only Warrior
+  zone map 1421
+  note "Talk to Alexandre"
+  vendor 3552 -- Buy [Agile Boots] or [Stable Boots] from her if one of them is up
+step
+  only Druid
+  zone map 1421
+  note "Talk to Alexandre"
+  vendor 3552 -- Buy [Agile Boots] or [Stable Boots] from her if one of them is up
+step
+  only Warlock
+  when has 4786
+  when level>=15
+  along until Shackles
+  zone map 1421
+  note "Equip the [Wise Man's Belt]"
+  use 4786 @44.61,39.11 map 1421
+step
+  only Mage
+  when has 4786
+  when level>=15
+  along until Shackles
+  zone map 1421
+  note "Equip the [Wise Man's Belt]"
+  use 4786 @44.61,39.11 map 1421
+step
+  only Priest
+  when has 4786
+  when level>=15
+  along until Shackles
+  zone map 1421
+  note "Equip the [Wise Man's Belt]"
+  use 4786 @44.61,39.11 map 1421
+step
+  only Hunter
+  when has 11304
+  when level>=14
+  along until Shackles
+  zone map 1421
+  note "Equip the [Fine Longbow]"
+  use 11304 @44.61,39.11 map 1421
+step
+  only Hunter
+  when has 4788
+  when level>=15
+  along until Shackles
+  zone map 1421
+  note "Equip the [Agile Boots]"
+  use 4788 @44.61,39.11 map 1421
+step
+  only Rogue
+  when has 4788
+  when level>=15
+  along until Shackles
+  zone map 1421
+  note "Equip the [Agile Boots]"
+  use 4788 @44.61,39.11 map 1421
+step
+  only Shaman
+  when has 4788
+  when level>=15
+  along until Shackles
+  zone map 1421
+  note "Equip the [Agile Boots]"
+  use 4788 @44.61,39.11 map 1421
+step
+  only Warrior
+  when has 4788
+  when level>=15
+  along until Shackles
+  zone map 1421
+  note "Equip the [Agile Boots]"
+  use 4788 @44.61,39.11 map 1421
+step
+  only Druid
+  when has 4788
+  when level>=15
+  along until Shackles
+  zone map 1421
+  note "Equip the [Agile Boots]"
+  use 4788 @44.61,39.11 map 1421
+step
+  only Shaman
+  when has 4789
+  along until Shackles
+  zone map 1421
+  note "Equip the [Stable Boots]"
+  use 4789 @44.61,39.11 map 1421
+step
+  only Warrior
+  when has 4789
+  along until Shackles
+  zone map 1421
+  note "Equip the [Stable Boots]"
+  use 4789 @44.61,39.11 map 1421
+step
+  only Druid
+  when has 4789
+  along until Shackles
+  zone map 1421
+  note "Equip the [Stable Boots]"
+  use 4789 @44.61,39.11 map 1421
+step
+  along until Shackles
+  zone map 1421
+  goto 44.2,38.17 map 1421 r 15 optional
+  goto 44.46,36.65 map 1421 r 15 optional
+  goto 44.91,33.14 map 1421 r 30 optional -- Travel down the hill
+step
+  along until DecrepitFerry
+  note "Be careful! There may be a Son of Arugal in the area! This is a level 25 elite, steer clear from him!"
+step
+  label Shackles
+  loop
+  zone map 1421
+  goto 43.83,31 map 1421 r 1
+  goto 44.22,31.55 map 1421 r 50
+  goto 43.51,32.38 map 1421 r 50
+  goto 42.61,31.12 map 1421 r 50
+  goto 41.28,30.25 map 1421 r 50
+  goto 39.7,30.24 map 1421 r 50
+  goto 38.96,29.15 map 1421 r 50
+  goto 38.28,27.1 map 1421 r 50
+  goto 37.6,24.16 map 1421 r 50
+  goto 38.07,23.13 map 1421 r 50
+  goto 38.56,21.93 map 1421 r 50
+  goto 39.73,23.26 map 1421 r 50
+  goto 41.49,23.51 map 1421 r 50
+  goto 41.14,25.5 map 1421 r 50
+  goto 41.17,28.26 map 1421 r 50
+  goto 42.01,29.27 map 1421 r 50
+  goto 43.83,31 map 1421 r 50
+  note "Kill Moonrage Gluttons and Moonrage Darksouls. Loot them for their Shackles"
+  note "Be careful! Moonrage Darksouls enrage when they are below 25% health. Kill them quickly when they are low"
+  collect 3156 x6 quest 423.1 -- Glutton Shackle (6)
+  collect 3157 x3 quest 423.2 -- Darksoul Shackle (3)
+step
+  label DecrepitFerry
+  zone map 1421
+  note "Click the Boat at the side of the docks"
+  note "Be careful! Hands of Ravenclaw are up to level 16 and have a 5 second melee range stun ability"
+  turnin 438 -- Turn in The Decrepit Ferry
+  accept 439 -- Accept Rot Hide Clues
+step
+  zone map 1421
+  note "Click the Crate in the camp"
+  note "Be careful! These mobs cast [Frostbolt] and flee at low health. Pull them back and kill them one by one until you can safely click on the crate"
+  turnin 477 -- Turn in Border Crossings
+  accept 478 -- Accept Maps and Runes
+step
+  along until next_54
+  zone map 1421
+  goto 45.51,41.26 map 1421 r 100 optional -- Travel back to The Sepulcher
+step
+  label next_54
+  zone map 1421
+  note "Talk to Allister and Dalar"
+  turnin 478 -- Turn in Maps and Runes
+  accept 481 -- Accept Dalar's Analysis
+  turnin 423 -- Turn in Arugal's Folly
+  accept 482 -- Accept Dalaran's Intentions
+  goto 44.2,39.73 map 1421 r 8 optional
+step
+  zone map 1421
+  note "Talk to Allister"
+  turnin 482 -- Turn in Dalaran's Intentions
+step
+  zone map 1421
+  note "Talk to Allister"
+  turnin 482 -- Turn in Dalaran's Intentions
+step
+  along until RotHideCluesTurnIn
+  zone map 1421
+  goto 43.09,41.33 map 1421 r 8 optional
+  goto 42.75,41.3 map 1421 r 8 optional
+  goto 42.76,40.9 map 1421 r 8 optional
+  goto 43.43,40.87 map 1421 r 2 optional -- Enter the crypt
+step
+  label RotHideCluesTurnIn
+  zone map 1421
+  note "Talk to Hadrec in the crypt"
+  turnin 439 -- Turn in Rot Hide Clues
+  accept 440 -- Accept The Engraved Ring
+step
+  only Undead
+  when onquest 6321
+  turnin 6321 -- Turn in Supplying the Sepulcher
+step
+  only Undead
+  zone map 1421
+  note "Talk to Karos"
+  accept 6323 -- Accept Ride to the Undercity
+step
+  when !zone "Undercity"
+  along until ZingeAndFaranell
+  zone map 1421
+  goto 45.62,42.58 map 1421 r 8
+  note "Talk to Karos"
+  getfp "Sepulcher" @45.62,42.58 map 1421 only Human,Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Skyborne -- Get the Sepulcher flight path
+  fly "Undercity" -- Fly to the Undercity
+step
+  only Undead
+  when onquest 6323
+  turnin 6323 -- Turn in Ride to the Undercity
+step
+  only Undead
+  zone map 1458
+  note "Talk to Gordon"
+  accept 6322 -- Accept Michael Garrett
+step
+  only Warrior,Troll
+  zone map 1458
+  goto 61.15,40.89 map 1458 r 8
+  note "Talk to Louis. Buy a [Gnarled Staff] from him"
+  collect 2030 x1 @61.15,40.89 map 1458 optional -- Collect Gnarled Staff (1)
+step
+  only Warrior,Troll
+  when has 2030
+  along until GrimsonthePale
+  zone map 1458
+  note "Equip the [Gnarled Staff]"
+  use 2030 @61.15,40.89 map 1458 optional
+step
+  only Warrior,Orc
+  zone map 1458
+  goto 61.15,40.89 map 1458 r 8
+  note "Talk to Louis. Buy a [Bearded Axe] from him"
+  collect 2025 x1 @61.15,40.89 map 1458 optional -- Collect Bearded Axe (1)
+step
+  only Warrior,Orc
+  when has 2025
+  along until GrimsonthePale
+  zone map 1458
+  note "Equip the [Bearded Axe]"
+  use 2025 @61.15,40.89 map 1458 optional
+step
+  only Warrior,Tauren
+  zone map 1458
+  goto 61.15,40.89 map 1458 r 8
+  note "Talk to Louis. Buy a [Rock Hammer] from him"
+  collect 2026 x1 @61.15,40.89 map 1458 optional -- Collect Rock Hammer (1)
+step
+  only Warrior,Tauren
+  when has 2026
+  along until GrimsonthePale
+  zone map 1458
+  note "Equip the [Rock Hammer] when you are level 16"
+  use 2026 @61.15,40.89 map 1458 optional
+step
+  only Shaman
+  zone map 1458
+  goto 61.15,40.89 map 1458 r 8
+  note "Talk to Louis. Buy a [Gnarled Staff] from him"
+  collect 2030 x1 @61.15,40.89 map 1458 optional -- Collect Gnarled Staff (1)
+step
+  only Shaman
+  when has 2030
+  along until GrimsonthePale
+  zone map 1458
+  note "Equip the [Gnarled Staff]"
+  use 2030 @61.15,40.89 map 1458 optional
+step
+  only Rogue
+  zone map 1458
+  goto 61.15,40.89 map 1458 r 8
+  note "Talk to Louis. Buy a [Scimitar] from him."
+  collect 2027 x1 @61.15,40.89 map 1458 optional -- Collect Scimitar (1)
+step
+  only Rogue
+  when has 2027
+  along until GrimsonthePale
+  zone map 1458
+  note "Equip the [Scimitar]"
+  use 2027 @61.15,40.89 map 1458 optional
+step
+  along until ZingeAndFaranell
+  zone map 1458
+  goto 47.2,59.69 map 1458 r 1 optional
+  goto 47.2,59.69 map 1458 r 12 optional
+  goto 43.55,68.11 map 1458 r 12 optional
+  goto 45.2,71.67 map 1458 r 12 optional -- Travel toward Zinge and Faranell
+step
+  zone map 1458
+  note "Talk to Faranell and Zinge in The Apothecarium"
+  turnin 447 -- Turn in A Recipe For Death
+  turnin 1359 -- Turn in Zinge's Delivery
+  accept 1358 -- Accept Sample for Helbrim
+  goto 50.16,67.97 map 1458 r 8 optional
+step
+  label ZingeAndFaranell
+  note "Review this source step manually."
+step
+  only Mage
+  when level>=14
+  when level<16
+  zone map 1458
+  goto 85.14,10.02 map 1458 r 8
+  note "Talk to Anastasia"
+  learn 2137 "your class spells"
+step
+  only Mage
+  when level>=16
+  zone map 1458
+  goto 85.14,10.02 map 1458 r 8
+  note "Talk to Anastasia"
+  learn 2120 "your class spells"
+step
+  only Rogue
+  when level>=14
+  when level<16
+  zone map 1458
+  goto 83.86,72.06 map 1458 r 8
+  note "Talk to Carolyn"
+  learn 1758 "your class spells"
+step
+  only Rogue
+  when level>=16
+  zone map 1458
+  goto 83.86,72.06 map 1458 r 8
+  note "Talk to Carolyn"
+  learn 6761 "your class spells"
+step
+  only Priest
+  zone map 1458
+  goto 69.54,26.93 map 1458 r 8
+  note "Talk to Zane. Buy a [Smoldering Wand] from him"
+  collect 5208 x1 @69.54,26.93 map 1458 optional -- Smoldering Wand (1)
+step
+  only Mage
+  zone map 1458
+  goto 69.54,26.93 map 1458 r 8
+  note "Talk to Zane. Buy a [Smoldering Wand] from him"
+  collect 5208 x1 @69.54,26.93 map 1458 optional -- Smoldering Wand (1)
+step
+  only Warlock
+  zone map 1458
+  goto 69.54,26.93 map 1458 r 8
+  note "Talk to Zane. Buy a [Smoldering Wand] from him"
+  collect 5208 x1 @69.54,26.93 map 1458 optional -- Smoldering Wand (1)
+step
+  only Rogue,Undead
+  when complete 1886
+  when onquest 1886
+  zone map 1458
+  note "Talk to Mennet"
+  turnin 1886 -- Turn in The Deathstalkers
+step
+  only Rogue,Undead
+  when turnedin 1886
+  zone map 1458
+  note "Talk to Mennet"
+  accept 1898 -- Accept The Deathstalkers
+step
+  only Rogue,Undead
+  when turnedin 1886
+  when onquest 1898
+  turnin 1898 -- Turn in The Deathstalkers
+step
+  only Rogue,Undead
+  when turnedin 1886
+  zone map 1458
+  note "Talk to Andron"
+  accept 1899 -- Accept The Deathstalkers
+step
+  only Rogue,Undead
+  when turnedin 1886
+  zone map 1458
+  note "Loot Andron's Bookshelf behind Andron"
+  collect 7294 x1 quest 1899.1 -- Andron's Ledger (1)
+step
+  only Rogue,Undead
+  when turnedin 1886
+  when onquest 1899
+  turnin 1899 -- Turn in The Deathstalkers
+step
+  only Rogue,Undead
+  when turnedin 1886
+  zone map 1458
+  note "Talk to Mennet"
+  accept 1978 -- Accept The Deathstalkers
+step
+  only Rogue,Undead
+  when turnedin 1886
+  when onquest 1978
+  zone map 1420
+  goto 58.86,78.76 map 1420 r 40 optional
+  goto 59.75,84.64 map 1420 r 8 optional
+  note "Talk to Varimathras"
+  turnin 1978 -- Turn in The Deathstalkers
+step
+  zone map 1458
+  goto 73.19,55.17 map 1458 r 8
+  note "Talk to Mary"
+  learn 3276 "Heavy Linen Bandage"
+step
+  zone map 1458
+  goto 73.19,55.17 map 1458 r 8
+  note "Talk to Mary"
+  learn 3274 "Journeyman First Aid"
+step
+  only Warrior
+  when level>=14
+  when level<16
+  zone map 1458
+  goto 48.32,15.98 map 1458 r 8
+  note "Talk to Angela"
+  learn 1160 "your class spells"
+step
+  only Warrior
+  when level>=16
+  zone map 1458
+  goto 48.32,15.98 map 1458 r 8
+  note "Talk to Angela"
+  learn 285 "your class spells"
+step
+  only Rogue,Undead
+  when onquest 1886
+  along until GrimsonthePale
+  note "Abandon The Deathstalkers, there's no opportunity left to do it"
+step
+  only Undead
+  when onquest 6322
+  turnin 6322 -- Turn in Michael Garrett
+step
+  only Undead
+  zone map 1458
+  note "Talk to Michael"
+  accept 6324 -- Accept Return to Podrig
+step
+  only Undead
+  when !zone "Silverpine Forest"
+  along until next_102
+  zone map 1458
+  goto 63.27,48.55 map 1458 r 8
+  note "Talk to Michael"
+  fly "The Supulcher" -- Fly to The Sepulcher
+step
+  only Undead
+  when onquest 6324
+  label next_102
+  zone map 1421
+  note "Talk to Podrig"
+  turnin 6324 -- Turn in Return to Podrig
+step
+  only Druid
+  label GrimsonthePale
+  along until next_124
+  note "Cast [Teleport: Moonglade]"
+step
+  only Druid
+  label next_124
+  zone map 1450
+  note "Talk to Loganaar"
+  train 12042 -- Train your class spells
+step
+  only Tauren
+  zone map 1450
+  hearth "The Crossroads" optional -- Hearth to The Crossroads
+  use 6948 @52.53,40.58 map 1450 optional
+step
+  only Shaman
+  zone map 1450
+  hearth "The Crossroads" optional -- Hearth to The Crossroads
+  use 6948 @52.53,40.58 map 1450 optional
+step
+  only Hunter
+  zone map 1450
+  hearth "The Crossroads" optional -- Hearth to The Crossroads
+  use 6948 @52.53,40.58 map 1450 optional
+step
+  only Warrior,Paladin,Rogue,Priest,Mage,Warlock,Druid,Human,Dwarf,Gnome,NightElf,Orc,Troll,Undead,Skyborne
+  zone map 1450
+  hearth "Razor Hill" optional -- Hearth to Razor Hill
+  use 6948 @52.53,40.58 map 1450 optional

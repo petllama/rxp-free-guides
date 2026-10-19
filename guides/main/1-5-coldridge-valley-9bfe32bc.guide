@@ -1,0 +1,851 @@
+guide rxp-free/1-5-coldridge-valley-9bfe32bc
+title "1-5 Coldridge Valley"
+levels 1-5
+zone map 1426
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+next rxp-free/5-11-dun-morogh-0723e2c4
+step
+  only Human,NightElf,Orc,Troll,Tauren,Undead,Skyborne
+  along until next_1
+  note "You have selected a guide meant for Gnomes and Dwarves. You should choose the same starter zone that you start in"
+step
+  only Paladin,Hunter,Rogue,Priest,Mage,Druid
+  when has 6948
+  label next_1
+  along until WolfMeat
+  note "Delete the [Hearthstone] from your bags, as it's no longer needed"
+step
+  zone map 1426
+  note "Talk to Sten Stoutarm"
+  accept 179 -- Accept Dwarven Outfitters
+step
+  only Warrior
+  along until next_4
+  zone map 1426
+  goto 28.533,72.587 map 1426 r 50 optional
+  goto 28.239,71.707 map 1426 r 50 optional
+  note "Kill and loot Ragged Young Wolves until you have 10 copper or more of vendor trash"
+  note "Unequip your [Acolyte's Robe], [Acolyte's Shirt], [Acolyte's Pants], and [Acolyte's Shoes] so you can vendor them for 4 copper" only Warlock
+  note "Unequip your [Recruit's Shirt], [Recruit's Pants], and [Recruit's Boots] so you can vendor them for 3 copper" only Warrior
+  collect 750 x8 quest 179.1 @28.239,71.707 map 1426 optional -- Tough Wolf Meat (8)
+step
+  only Warlock
+  along until next_4
+  zone map 1426
+  goto 28.533,72.587 map 1426 r 50 optional
+  goto 28.239,71.707 map 1426 r 50 optional
+  note "Kill and loot Ragged Young Wolves until you have 10 copper or more of vendor trash"
+  note "Unequip your [Acolyte's Robe], [Acolyte's Shirt], [Acolyte's Pants], and [Acolyte's Shoes] so you can vendor them for 4 copper" only Warlock
+  note "Unequip your [Recruit's Shirt], [Recruit's Pants], and [Recruit's Boots] so you can vendor them for 3 copper" only Warrior
+  collect 750 x8 quest 179.1 @28.239,71.707 map 1426 optional -- Tough Wolf Meat (8)
+step
+  only Shaman
+  along until next_4
+  zone map 1426
+  goto 28.533,72.587 map 1426 r 50 optional
+  goto 28.239,71.707 map 1426 r 50 optional
+  note "Kill and loot Ragged Young Wolves until you have 10 copper or more of vendor trash"
+  note "Unequip your [Acolyte's Robe], [Acolyte's Shirt], [Acolyte's Pants], and [Acolyte's Shoes] so you can vendor them for 4 copper" only Warlock
+  note "Unequip your [Recruit's Shirt], [Recruit's Pants], and [Recruit's Boots] so you can vendor them for 3 copper" only Warrior
+  collect 750 x8 quest 179.1 @28.239,71.707 map 1426 optional -- Tough Wolf Meat (8)
+step
+  only Warrior
+  label next_4
+  along until next_5
+  zone map 1426
+  goto 28.792,68.804 map 1426 r 12 optional
+  goto 28.939,68.387 map 1426 r 12 optional -- Enter Anvilmar
+step
+  only Warlock
+  along until next_5
+  zone map 1426
+  goto 28.792,68.804 map 1426 r 12 optional
+  goto 28.939,68.387 map 1426 r 12 optional -- Enter Anvilmar
+step
+  only Shaman
+  along until next_5
+  zone map 1426
+  goto 28.792,68.804 map 1426 r 12 optional
+  goto 28.939,68.387 map 1426 r 12 optional -- Enter Anvilmar
+step
+  only Warrior
+  label next_5
+  zone map 1426
+  note "Talk to Grundel Harkin inside"
+  vendor 1104 -- Vendor Trash
+step
+  only Warlock
+  zone map 1426
+  note "Talk to Grundel Harkin inside"
+  vendor 1104 -- Vendor Trash
+step
+  only Shaman
+  zone map 1426
+  note "Talk to Grundel Harkin inside"
+  vendor 1104 -- Vendor Trash
+step
+  only Warrior
+  zone map 1426
+  goto 28.831,67.238 map 1426 r 8
+  note "Talk to Thran Khorman inside"
+  learn 6673 "Battle Shout"
+step
+  only Warlock
+  zone map 1426
+  note "Talk to Alamar Grimm inside"
+  learn 348 "Immolate"
+  accept 1599 -- Accept Beginnings
+step
+  only Shaman
+  zone map 1426
+  goto 28.795594,66.189337 map 1426 r 8
+  note "Talk to Teo Hammerstorm inside"
+  learn 8017 "Rockbiter Weapon"
+step
+  only Warrior
+  label WarriorHS
+  along until WolfMeat
+  hearth "Coldridge Valley" optional -- Hearth to Coldridge Valley
+step
+  only Warlock
+  along until WolfMeat
+  hearth "Coldridge Valley" optional -- Hearth to Coldridge Valley
+step
+  only Warrior
+  hearth "Coldridge Valley" optional -- Hearth to Coldridge Valley
+step
+  only Warlock
+  hearth "Coldridge Valley" optional -- Hearth to Coldridge Valley
+step
+  only Warrior
+  when has 6948
+  along until WolfMeat
+  note "Delete the [Hearthstone] from your bags, as it's no longer needed"
+step
+  only Warlock
+  when has 6948
+  along until WolfMeat
+  note "Delete the [Hearthstone] from your bags, as it's no longer needed"
+step
+  label WolfMeat
+  zone map 1426
+  note "Kill Ragged Young Wolves. Loot them for their Tough Wolf Meat"
+  collect 750 x8 quest 179.1 @28.557,72.487 map 1426 -- Collect Tough Wolf Meat (x8)
+step
+  zone map 1426
+  goto 29.529,73.286 map 1426 r 1 optional
+  goto 28.117,75.088 map 1426 r 1 optional
+  goto 28.557,72.487 map 1426 r 1 optional
+  goto 29.529,73.286 map 1426 r 60 optional
+  goto 29.054,74.608 map 1426 r 60 optional
+  goto 28.558,75.781 map 1426 r 60 optional
+  goto 28.117,75.088 map 1426 r 60 optional
+  goto 27.562,74.331 map 1426 r 60 optional
+  goto 27.793,73.123 map 1426 r 60 optional
+  goto 28.557,72.487 map 1426 r 60 optional
+  level 2 -- Grind to level 2
+step
+  only Priest
+  when level<6
+  zone map 1426
+  goto 30.086964,71.563143 map 1426 r 8
+  note "Talk to Adlin Pridedrift"
+  note "Vendor Trash"
+  note "Buy 15 [Refreshing Spring Water] from him" only !Shaman
+  note "Buy 10 [Refreshing Spring Water] from him" only Shaman
+  note "Grind extra Ragged Young Wolves if you don't have enough money"
+  collect 159 x15 @30.086964,71.563143 map 1426 only !Shaman -- Collect Refreshing Spring Water (x15)
+  collect 159 x10 @30.086964,71.563143 map 1426 only Shaman -- Collect Refreshing Spring Water (x15)
+step
+  only Mage
+  when level<6
+  zone map 1426
+  goto 30.086964,71.563143 map 1426 r 8
+  note "Talk to Adlin Pridedrift"
+  note "Vendor Trash"
+  note "Buy 15 [Refreshing Spring Water] from him" only !Shaman
+  note "Buy 10 [Refreshing Spring Water] from him" only Shaman
+  note "Grind extra Ragged Young Wolves if you don't have enough money"
+  collect 159 x15 @30.086964,71.563143 map 1426 only !Shaman -- Collect Refreshing Spring Water (x15)
+  collect 159 x10 @30.086964,71.563143 map 1426 only Shaman -- Collect Refreshing Spring Water (x15)
+step
+  only Warlock
+  when level<6
+  zone map 1426
+  goto 30.086964,71.563143 map 1426 r 8
+  note "Talk to Adlin Pridedrift"
+  note "Vendor Trash"
+  note "Buy 15 [Refreshing Spring Water] from him" only !Shaman
+  note "Buy 10 [Refreshing Spring Water] from him" only Shaman
+  note "Grind extra Ragged Young Wolves if you don't have enough money"
+  collect 159 x15 @30.086964,71.563143 map 1426 only !Shaman -- Collect Refreshing Spring Water (x15)
+  collect 159 x10 @30.086964,71.563143 map 1426 only Shaman -- Collect Refreshing Spring Water (x15)
+step
+  only Shaman
+  when level<6
+  zone map 1426
+  goto 30.086964,71.563143 map 1426 r 8
+  note "Talk to Adlin Pridedrift"
+  note "Vendor Trash"
+  note "Buy 15 [Refreshing Spring Water] from him" only !Shaman
+  note "Buy 10 [Refreshing Spring Water] from him" only Shaman
+  note "Grind extra Ragged Young Wolves if you don't have enough money"
+  collect 159 x15 @30.086964,71.563143 map 1426 only !Shaman -- Collect Refreshing Spring Water (x15)
+  collect 159 x10 @30.086964,71.563143 map 1426 only Shaman -- Collect Refreshing Spring Water (x15)
+step
+  only Warrior,Paladin,Hunter,Rogue,Druid
+  when level<6
+  zone map 1426
+  goto 30.086964,71.563143 map 1426 r 8
+  note "Talk to Adlin Pridedrift"
+  note "Buy 600 [Light Shots] from him" only Hunter
+  vendor 829 only !Hunter -- Vendor trash
+  collect 2516 x600 @30.086964,71.563143 map 1426 only Hunter -- Light Shot (600)
+step
+  zone map 1426
+  note "Talk to Sten Stoutarm"
+  turnin 179 -- Turn in Dwarven Outfitters
+  accept 233 -- Accept Coldridge Valley Mail Delivery
+  accept 3106 only Dwarf,Warrior -- Accept Simple Rune
+  accept 3107 only Dwarf,Paladin -- Accept Consecrated Rune
+  accept 3108 only Dwarf,Hunter -- Accept Etched Rune
+  accept 3109 only Dwarf,Rogue -- Accept Encrypted Rune
+  accept 3110 only Dwarf,Priest -- Accept Hallowed Rune
+  accept 3112 only Gnome,Warrior -- Accept Simple Memorandum
+  accept 3113 only Gnome,Rogue -- Accept Encrypted Memorandum
+  accept 3114 only Gnome,Mage -- Accept Glyphic Memorandum
+  accept 3115 only Gnome,Warlock -- Accept Tainted Memorandum
+  accept 98574 only Gnome,Priest -- Accept Hallowed Memorandum
+  accept 98581 only Dwarf,Shaman -- Accept Archaic Rune
+step
+  only Warlock
+  label FrostmaneC
+  along until Feathers
+  zone map 1426
+  goto 26.85001,79.830045 map 1426 r 20 -- Enter the Frostmane Cave
+step
+  only Warlock
+  zone map 1426
+  goto 26.85001,79.830045 map 1426 r 20 -- Enter the Frostmane Cave
+step
+  only Warlock
+  along until Feathers
+  zone map 1426
+  goto 27.095,80.702 map 1426 r 20 optional
+  goto 27.265,80.848 map 1426 r 20 optional
+  goto 27.857,81.067 map 1426 r 20 optional
+  goto 28.696,83.148 map 1426 r 50 optional -- Travel toward the Frostmane Novices inside
+step
+  only Warlock
+  when onquest 1599
+  label Feathers
+  zone map 1426
+  note "Kill Frostmane Novices inside. Loot them for their Feather Charms"
+  collect 6753 x3 quest 1599.1 @30.216,80.254 map 1426 -- Collect Feather Charm (x3)
+step
+  only Warlock
+  label BeginningsHS_2
+  along until BeginningsEnd
+  note "Die and respawn at the Spirit Healer"
+step
+  only Warlock
+  along until BeginningsEnd
+  zone map 1426
+  goto 28.792,68.804 map 1426 r 12 optional
+  goto 28.939,68.387 map 1426 r 12 optional only Warlock -- Enter Anvilmar
+step
+  only Warlock
+  when onquest 1599
+  label BeginningsEnd
+  zone map 1426
+  note "Talk to Alamar Grimm upstairs"
+  turnin 1599 -- Turn in Beginnings
+  note "Quest not in Forever reference: .turnin -3115. Turn in Tainted Memorandum"
+step
+  label Talin
+  zone map 1426
+  note "Talk to Talin Keeneye"
+  turnin 233 -- Turn in Coldridge Valley Mail Delivery
+  accept 183 -- Accept The Boar Hunter
+  accept 234 -- Accept Coldridge Valley Mail Delivery
+step
+  loop
+  zone map 1426
+  goto 22.276,72.549 map 1426 r 1
+  goto 20.924,70.393 map 1426 r 1
+  goto 22.662,69.331 map 1426 r 1
+  goto 24.358,72.591 map 1426 r 1
+  goto 22.276,72.549 map 1426 r 45
+  goto 21.209,72.266 map 1426 r 45
+  goto 20.88,71.47 map 1426 r 45
+  goto 20.924,70.393 map 1426 r 45
+  goto 21.33,69.261 map 1426 r 45
+  goto 22.035,69.231 map 1426 r 45
+  goto 22.662,69.331 map 1426 r 45
+  goto 24.317,68.026 map 1426 r 45
+  goto 24.754,69.257 map 1426 r 45
+  goto 24.878,71.191 map 1426 r 45
+  goto 24.358,72.591 map 1426 r 45
+  note "Kill Small Crag Boars"
+  kill 708 x12 quest 183.1 -- Kill Small Crag Boar (x12)
+step
+  zone map 1426
+  note "Talk to Talin Keeneye"
+  turnin 183 -- Turn in The Boar Hunter
+step
+  only Paladin
+  zone map 1426
+  goto 23.595,72.462 map 1426 r 1 optional
+  goto 26.117,74.469 map 1426 r 1 optional
+  goto 26.832,74.649 map 1426 r 1 optional
+  goto 26.884,72.733 map 1426 r 1 optional
+  goto 23.595,72.462 map 1426 r 50 optional
+  goto 24.29,73.406 map 1426 r 50 optional
+  goto 24.642,74.138 map 1426 r 50 optional
+  goto 26.117,74.469 map 1426 r 50 optional
+  goto 26.832,74.649 map 1426 r 50 optional
+  goto 26.884,72.733 map 1426 r 50
+  level 3+1130 -- Grind to 1130+/1400xp
+step
+  only Warlock
+  zone map 1426
+  goto 23.595,72.462 map 1426 r 1 optional
+  goto 26.117,74.469 map 1426 r 1 optional
+  goto 26.832,74.649 map 1426 r 1 optional
+  goto 26.884,72.733 map 1426 r 1 optional
+  goto 23.595,72.462 map 1426 r 50 optional
+  goto 24.29,73.406 map 1426 r 50 optional
+  goto 24.642,74.138 map 1426 r 50 optional
+  goto 26.117,74.469 map 1426 r 50 optional
+  goto 26.832,74.649 map 1426 r 50 optional
+  goto 26.884,72.733 map 1426 r 50
+  level 3+1130 -- Grind to 1130+/1400xp
+step
+  only Shaman
+  zone map 1426
+  goto 23.595,72.462 map 1426 r 1 optional
+  goto 26.117,74.469 map 1426 r 1 optional
+  goto 26.832,74.649 map 1426 r 1 optional
+  goto 26.884,72.733 map 1426 r 1 optional
+  goto 23.595,72.462 map 1426 r 50 optional
+  goto 24.29,73.406 map 1426 r 50 optional
+  goto 24.642,74.138 map 1426 r 50 optional
+  goto 26.117,74.469 map 1426 r 50 optional
+  goto 26.832,74.649 map 1426 r 50 optional
+  goto 26.884,72.733 map 1426 r 50
+  level 3+1130 -- Grind to 1130+/1400xp
+step
+  zone map 1426
+  note "Talk to Grelin Whitebeard"
+  turnin 234 -- Turn in Coldridge Valley Mail Delivery
+  accept 182 -- Accept The Troll Cave
+step
+  only Hunter
+  along until next_30
+  zone map 1426
+  note "Kill Frostmane Troll Whelps"
+  kill 706 x14 quest 182.1 @20.671,75.838 map 1426 -- Kill Frostmane Troll Whelp (x14)
+step
+  only Hunter
+  label next_30
+  zone map 1426
+  goto 25.861,78.197 map 1426 r 1 optional
+  goto 23.716,80.257 map 1426 r 1 optional
+  goto 20.671,75.838 map 1426 r 1 optional
+  level 4 -- Grind to level 4
+step
+  only Paladin
+  zone map 1426
+  note "Talk to Nori Pridedrift"
+  note "This will start a 5 minute timer for the quest. Do NOT go AFK or log out for the next 5 minutes"
+  accept 3364 -- Accept Scalding Mornbrew Delivery
+step
+  only Warlock
+  zone map 1426
+  note "Talk to Nori Pridedrift"
+  note "This will start a 5 minute timer for the quest. Do NOT go AFK or log out for the next 5 minutes"
+  accept 3364 -- Accept Scalding Mornbrew Delivery
+step
+  only Hunter
+  zone map 1426
+  note "Talk to Nori Pridedrift"
+  note "This will start a 5 minute timer for the quest. Do NOT go AFK or log out for the next 5 minutes"
+  accept 3364 -- Accept Scalding Mornbrew Delivery
+step
+  only Shaman
+  zone map 1426
+  note "Talk to Nori Pridedrift"
+  note "This will start a 5 minute timer for the quest. Do NOT go AFK or log out for the next 5 minutes"
+  accept 3364 -- Accept Scalding Mornbrew Delivery
+step
+  only Paladin
+  along until next_33
+  zone map 1426
+  goto 28.792,68.804 map 1426 r 12 optional
+  note "You have 5 minutes to return to Anvilmar before [Durnan's Scalding Mornbrew] expires"
+  goto 28.939,68.387 map 1426 r 12 optional -- Enter Anvilmar
+step
+  only Warlock
+  along until next_33
+  zone map 1426
+  goto 28.792,68.804 map 1426 r 12 optional
+  note "You have 5 minutes to return to Anvilmar before [Durnan's Scalding Mornbrew] expires"
+  goto 28.939,68.387 map 1426 r 12 optional -- Enter Anvilmar
+step
+  only Hunter
+  along until next_33
+  zone map 1426
+  goto 28.792,68.804 map 1426 r 12 optional
+  note "You have 5 minutes to return to Anvilmar before [Durnan's Scalding Mornbrew] expires"
+  goto 28.939,68.387 map 1426 r 12 optional -- Enter Anvilmar
+step
+  only Shaman
+  along until next_33
+  zone map 1426
+  goto 28.792,68.804 map 1426 r 12 optional
+  note "You have 5 minutes to return to Anvilmar before [Durnan's Scalding Mornbrew] expires"
+  goto 28.939,68.387 map 1426 r 12 optional -- Enter Anvilmar
+step
+  only Paladin
+  when !turnedin 317
+  when onquest 3364
+  turnin 3364 -- Turn in Scalding Mornbrew Delivery
+step
+  only Warlock
+  when !turnedin 317
+  when onquest 3364
+  turnin 3364 -- Turn in Scalding Mornbrew Delivery
+step
+  only Hunter
+  when !turnedin 317
+  when onquest 3364
+  turnin 3364 -- Turn in Scalding Mornbrew Delivery
+step
+  only Shaman
+  when !turnedin 317
+  when onquest 3364
+  turnin 3364 -- Turn in Scalding Mornbrew Delivery
+step
+  only Paladin
+  when !turnedin 317
+  label next_33
+  zone map 1426
+  note "Talk to Durnan Furcutter inside"
+  accept 3365 -- Accept Bring Back the Mug
+step
+  only Warlock
+  when !turnedin 317
+  zone map 1426
+  note "Talk to Durnan Furcutter inside"
+  accept 3365 -- Accept Bring Back the Mug
+step
+  only Hunter
+  when !turnedin 317
+  zone map 1426
+  note "Talk to Durnan Furcutter inside"
+  accept 3365 -- Accept Bring Back the Mug
+step
+  only Shaman
+  when !turnedin 317
+  zone map 1426
+  note "Talk to Durnan Furcutter inside"
+  accept 3365 -- Accept Bring Back the Mug
+step
+  only Hunter
+  when onquest 3108
+  zone map 1426
+  goto 29.175086,67.455123 map 1426 r 8 optional
+  note "Talk to Thorgas Grimson"
+  turnin 3108 only Dwarf -- Turn in Etched Rune
+  learn 1978 "Serpent Sting"
+step
+  only Warlock
+  when onquest 3115
+  zone map 1426
+  note "Talk to Alamar Grimm upstairs"
+  turnin 3115 -- Turn in Tainted Memorandum
+  learn 172 "Corruption"
+step
+  only Shaman
+  when onquest 98581
+  turnin 98581 -- Turn in Archaic Rune
+step
+  only Shaman
+  zone map 1426
+  note "Talk to Teo Hammerstorm::257446"
+  accept 94373 -- Accept Call of Earth
+  learn 8042 "Earth Shock"
+step
+  only Paladin
+  zone map 1426
+  note "Talk to Grund Drokda::2756"
+  accept 97277 -- Accept Grund and Gozwin
+step
+  only Warlock
+  zone map 1426
+  note "Talk to Grund Drokda::2756"
+  accept 97277 -- Accept Grund and Gozwin
+step
+  only Hunter
+  zone map 1426
+  note "Talk to Grund Drokda::2756"
+  accept 97277 -- Accept Grund and Gozwin
+step
+  only Shaman
+  zone map 1426
+  note "Talk to Grund Drokda::2756"
+  accept 97277 -- Accept Grund and Gozwin
+step
+  only Paladin
+  when onquest 3107
+  zone map 1426
+  goto 28.832954,68.331976 map 1426 r 8 optional
+  note "Talk to Bromos Grummner inside"
+  turnin 3107 only Dwarf -- Turn in Consecrated Rune
+  learn 19740 "Blessing of Might"
+  learn 20271 "Judgement"
+step
+  only Warlock
+  when level<6
+  zone map 1426
+  note "Talk to Adlin Pridedrift"
+  note "Vendor Trash"
+  note "Buy 15 [Refreshing Spring Water] from him"
+  collect 159 x15 @30.086964,71.563143 map 1426 -- Collect Refreshing Spring Water (x15)
+step
+  only Paladin
+  along until next_41
+  zone map 1426
+  goto 26.493056,68.266494 map 1426 r 20 optional
+  goto 27.094071,65.047205 map 1426 r 20 optional -- Travel up to the hills in northern Coldridge Valley
+step
+  only Warlock
+  along until next_41
+  zone map 1426
+  goto 26.493056,68.266494 map 1426 r 20 optional
+  goto 27.094071,65.047205 map 1426 r 20 optional -- Travel up to the hills in northern Coldridge Valley
+step
+  only Hunter
+  along until next_41
+  zone map 1426
+  goto 26.493056,68.266494 map 1426 r 20 optional
+  goto 27.094071,65.047205 map 1426 r 20 optional -- Travel up to the hills in northern Coldridge Valley
+step
+  only Paladin
+  label next_41
+  zone map 1426
+  note "Kill the Snow Leopard Prowler"
+  note "Loot Gozwin's Mechanic's Log on the ground"
+  kill 269075 x1 quest 97277.2 -- Snow Leopard Prowler slain
+  collect 277976 x1 quest 97277.1 -- Gozwin's Mechanic's Log
+  goto 27.276812,62.848221 map 1426 r 8
+step
+  only Warlock
+  zone map 1426
+  note "Kill the Snow Leopard Prowler"
+  note "Loot Gozwin's Mechanic's Log on the ground"
+  kill 269075 x1 quest 97277.2 -- Snow Leopard Prowler slain
+  collect 277976 x1 quest 97277.1 -- Gozwin's Mechanic's Log
+  goto 27.276812,62.848221 map 1426 r 8
+step
+  only Hunter
+  zone map 1426
+  note "Kill the Snow Leopard Prowler"
+  note "Loot Gozwin's Mechanic's Log on the ground"
+  kill 269075 x1 quest 97277.2 -- Snow Leopard Prowler slain
+  collect 277976 x1 quest 97277.1 -- Gozwin's Mechanic's Log
+  goto 27.276812,62.848221 map 1426 r 8
+step
+  only Paladin
+  when onquest 3365
+  zone map 1426
+  note "Talk to Nori Pridedrift"
+  turnin 3365 -- Turn in Bring Back the Mug
+step
+  only Warlock
+  when onquest 3365
+  zone map 1426
+  note "Talk to Nori Pridedrift"
+  turnin 3365 -- Turn in Bring Back the Mug
+step
+  only Hunter
+  when onquest 3365
+  zone map 1426
+  note "Talk to Nori Pridedrift"
+  turnin 3365 -- Turn in Bring Back the Mug
+step
+  only Shaman
+  when onquest 3365
+  zone map 1426
+  note "Talk to Nori Pridedrift"
+  turnin 3365 -- Turn in Bring Back the Mug
+step
+  loop
+  zone map 1426
+  goto 25.861,78.197 map 1426 r 1
+  goto 23.716,80.257 map 1426 r 1
+  goto 20.671,75.838 map 1426 r 1
+  goto 25.861,78.197 map 1426 r 45
+  goto 26.382,78.409 map 1426 r 45
+  goto 26.031,79.854 map 1426 r 45
+  goto 23.716,80.257 map 1426 r 45
+  goto 22.836,79.962 map 1426 r 45
+  goto 22.684,78.888 map 1426 r 45
+  goto 21.029,76.459 map 1426 r 45
+  goto 20.671,75.838 map 1426 r 45
+  note "Kill Frostmane Troll Whelps" only !Shaman
+  note "Kill Frostmane Troll Whelps. Loot them for their Iceclaw Bear Pendants" only Shaman
+  kill 706 x14 quest 182.1 -- Kill Frostmane Troll Whelp (x14)
+  collect 264356 x1 quest 94373.1 only Shaman -- Iceclaw Bear Pendant (2)
+step
+  zone map 1426
+  note "Talk to Grelin Whitebeard"
+  turnin 182 -- Turn in The Troll Cave
+  accept 218 -- Accept The Stolen Journal
+step
+  only Warrior,Rogue,Priest,Mage,Druid
+  zone map 1426
+  note "Talk to Nori Pridedrift"
+  note "This will start a 5 minute timer for the quest. Do NOT go AFK or log out for the next 5 minutes"
+  accept 3364 -- Accept Scalding Mornbrew Delivery
+step
+  only Warrior,Rogue,Priest,Mage,Druid
+  along until FrostMCave1
+  note "You have 5 minutes to get Grelin Whitebeard's Journal and return to Anvilmar before [Durnan's Scalding Mornbrew] expires"
+  note "If you fail the quest don't worry as you can get it again later"
+step
+  label FrostMCave1
+  along until Grelin
+  zone map 1426
+  goto 27.098,80.707 map 1426 r 20 -- Enter the Frostmane Cave
+step
+  zone map 1426
+  goto 27.098,80.707 map 1426 r 20 -- Enter the Frostmane Cave
+step
+  along until Grelin
+  zone map 1426
+  goto 28.298,79.836 map 1426 r 15 optional
+  goto 29.252,79.043 map 1426 r 15 optional
+  goto 30.489,80.165 map 1426 r 50 optional -- Travel towards Grik'nir the Cold inside
+step
+  label Grelin
+  zone map 1426
+  note "Kill Grik'nir the Cold inside. Loot him for Grelin Whitebeard's Journal"
+  collect 2004 x1 quest 218.1 -- Collect Grelin Whitebeard's Journal (x1)
+step
+  only Warrior,Rogue,Priest,Mage,Druid
+  along until next_51
+  note "Die and respawn at the Spirit Healer"
+step
+  label next_51
+  along until Stolen
+  zone map 1426
+  goto 29.252,79.043 map 1426 r 15 optional
+  goto 28.298,79.836 map 1426 r 15 optional
+  goto 27.098,80.707 map 1426 r 20 optional -- Exit the Frostmane Cave
+step
+  label Stolen
+  zone map 1426
+  note "Talk to Grelin Whitebeard"
+  turnin 218 -- Turn in The Stolen Journal
+  accept 282 -- Accept Senir's Observations
+step
+  only Warrior,Rogue,Priest,Mage,Druid
+  when onquest 3364
+  turnin 3364 -- Turn in Scalding Mornbrew Delivery
+step
+  only Warrior,Rogue,Priest,Mage,Druid
+  when onquest 3364
+  zone map 1426
+  note "Talk to Durnan Furcutter"
+  note "If you failed the quest, skip this step"
+  accept 3365 -- Accept Bring Back the Mug
+step
+  only Warrior,Rogue,Priest,Mage,Druid
+  when turnedin 3364
+  zone map 1426
+  note "Talk to Durnan Furcutter"
+  note "If you failed the quest, skip this step"
+  accept 3365 -- Accept Bring Back the Mug
+step
+  only Warrior,Rogue,Priest,Mage,Druid
+  when turnedin 3364
+  when !turnedin 317
+  zone map 1426
+  note "Talk to Durnan Furcutter"
+  accept 3365 -- Accept Bring Back the Mug
+step
+  only Warrior,Rogue,Priest,Mage,Druid
+  when !turnedin 3364
+  zone map 1426
+  note "Talk to Nori Pridedrift and Grelin Whitebeard"
+  accept 3364 -- Accept Scalding Mornbrew Delivery
+  turnin 218 -- Turn in The Stolen Journal
+  accept 282 -- Accept Senir's Observations
+  goto 25.074985,75.71502 map 1426 r 8 optional
+step
+  only Warrior,Rogue,Priest,Mage,Druid
+  when onquest 3364
+  turnin 3364 -- Turn in Scalding Mornbrew Delivery
+step
+  only Warrior,Rogue,Priest,Mage,Druid
+  zone map 1426
+  note "Talk to Durnan Furcutter"
+  accept 3365 -- Accept Bring Back the Mug
+step
+  only Mage
+  when onquest 3114
+  zone map 1426
+  goto 28.708893,66.365987 map 1426 r 8 optional
+  note "Talk to Marryk Nurribit inside"
+  turnin 3114 only Gnome -- Turn in Glyphic Memorandum
+  learn 1459 "Arcane Intellect"
+  learn 116 "Frostbolt"
+step
+  only Rogue
+  zone map 1426
+  goto 28.368995,67.512991 map 1426 r 8
+  note "Talk to Solm Hargrin"
+  learn 1784 "Stealth"
+step
+  only Rogue
+  when onquest 3113
+  turnin 3113 only Gnome -- Turn in Encrypted Memorandum
+step
+  only Rogue
+  when onquest 3109
+  turnin 3109 only Dwarf -- Turn in Encrypted Rune
+step
+  only Priest
+  when onquest 3110
+  turnin 3110 only Dwarf -- Turn in Hallowed Rune
+step
+  only Priest
+  when onquest 98574
+  turnin 98574 only Gnome -- Turn in Hallowed Memorandum
+step
+  only Priest
+  zone map 1426
+  note "Talk to Branstock Khalder"
+  train 837 -- Train your class spells
+step
+  only Warrior
+  zone map 1426
+  goto 28.831939,67.241925 map 1426 r 8
+  note "Talk to Thran Khorman"
+  learn 100 "Charge"
+  learn 772 "Rend"
+step
+  only Warrior
+  when onquest 3106
+  turnin 3106 only Dwarf -- Turn in Simple Rune
+step
+  only Warrior
+  when onquest 3112
+  turnin 3112 only Gnome -- Turn in Simple Memorandum
+step
+  only Shaman
+  along until next_65
+  zone map 1426
+  goto 28.797624,68.729438 map 1426 r 10 optional -- Return to Teo Hammerstorm in Anvilmar
+step
+  only Shaman
+  when onquest 94373
+  turnin 94373 -- Turn in Call of Earth
+step
+  only Shaman
+  label next_65
+  zone map 1426
+  note "Talk to Teo Hammerstorm::257446"
+  accept 94374 -- Accept Call of Earth
+step
+  only Warrior,Rogue,Priest,Mage,Druid
+  zone map 1426
+  note "Talk to Grund Drokda::2756"
+  accept 97277 -- Accept Grund and Gozwin
+step
+  only Warrior,Rogue,Priest,Shaman,Mage,Druid
+  along until next_69
+  zone map 1426
+  goto 26.493056,68.266494 map 1426 r 20 optional
+  goto 27.094071,65.047205 map 1426 r 20 optional -- Travel up to the hills in northern Coldridge Valley
+step
+  only Warrior,Rogue,Priest,Shaman,Mage,Druid
+  label next_69
+  zone map 1426
+  note "Kill the Snow Leopard Prowler"
+  note "Loot Gozwin's Mechanic's Log on the ground"
+  kill 269075 x1 quest 97277.2 -- Snow Leopard Prowler slain
+  collect 277976 x1 quest 97277.1 -- Gozwin's Mechanic's Log
+  goto 27.276812,62.848221 map 1426 r 8
+step
+  only Shaman
+  when onquest 94374
+  zone map 1426
+  note "Use the [Earth Sapta] at the Spirit Stone to summon the Minor Manifestation of Earth"
+  use 6635 @24.771228,61.849236 map 1426
+step
+  only Shaman
+  when onquest 94374
+  turnin 94374 -- Turn in Call of Earth
+step
+  only Shaman
+  zone map 1426
+  note "Talk to Minor Manifestation of Earth::5891"
+  accept 94375 -- Accept Call of Earth
+step
+  only Shaman
+  along until next_73
+  zone map 1426
+  goto 28.797624,68.729438 map 1426 r 10 optional -- Return to Teo Hammerstorm in Anvilmar
+step
+  only Shaman
+  when onquest 94375
+  label next_73
+  zone map 1426
+  note "Talk to Teo Hammerstorm::257446"
+  turnin 94375 -- Turn in Call of Earth
+step
+  only Warrior,Rogue,Priest,Mage,Druid
+  label Stolen_2
+  zone map 1426
+  note "Talk to Grelin Whitebeard"
+  turnin 218 -- Turn in The Stolen Journal
+  accept 282 -- Accept Senir's Observations
+step
+  only Warrior,Rogue,Priest,Mage,Druid
+  when onquest 3365
+  zone map 1426
+  note "Talk to Nori Pridedrift"
+  turnin 3365 -- Turn in Bring Back the Mug
+step
+  only Priest,Dwarf
+  level 4+1690 -- Grind to 1690+/2100xp
+step
+  when onquest 97277
+  zone map 1426
+  note "Talk to Grund Drokda::2756"
+  turnin 97277 -- Turn in Grund and Gozwin
+step
+  only Priest,Dwarf
+  zone map 1426
+  note "Talk to Branstock Khalder"
+  accept 5626 -- Accept In Favor of the Light
+step
+  zone map 1426
+  note "Talk to Mountaineer Thalos::1965"
+  turnin 282 -- Turn in Senir's Observations
+  accept 420 -- Accept Senir's Observations
+  accept 96628 -- Accept The Adventurer
+step
+  zone map 1426
+  note "Talk to Hands Springsprocket::6782"
+  accept 2160 -- Accept Supplies to Tannok
+step
+  when onquest 2160
+  zone map 1426
+  goto 34.320061,70.950047 map 1426 r 15 optional
+  goto 35.65001,65.790048 map 1426 r 15 -- Travel through Coldridge Pass

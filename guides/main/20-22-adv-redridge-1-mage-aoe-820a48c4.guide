@@ -1,0 +1,928 @@
+guide rxp-free/20-22-adv-redridge-1-mage-aoe-820a48c4
+title "20-22 ADV Redridge 1 Mage AoE"
+levels 20-22
+zone map 1433
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · ADV AoE Alliance Mage"
+class Mage
+step
+  when !zone "Stormwind City"
+  along until next_1
+  hearth "Stormwind City" optional -- Hearth to Stormwind City
+step
+  label next_1
+  zone map 1453
+  note "Talk to Keldric through the wall"
+  vendor 1257 -- Vendor Trash. Buy [Lesser Healing Potions] from him (if they're up)
+step
+  along until Bank
+  zone map 1453
+  goto 55.299977,68.160459 map 1453 r 10 -- Enter the Stormwind Bank
+step
+  label Bank
+  zone map 1453
+  goto 57.030284,72.969943 map 1453 r 8
+  note "Talk to Newton"
+  note "NOTE: You need 12 stacks of each cloth ([Wool Cloth], [Silk Cloth], [Mageweave Cloth], and [Runecloth]) to do the cloth turnins later. You'll get these naturally as you level"
+  note "[Light Feather]"
+  note "[Wool Cloth]"
+  note "[Lean Wolf Flank]"
+  note "[Mysterious Fossil]"
+step
+  zone map 1453
+  goto 57.030284,72.969943 map 1453 r 8
+  note "Talk to Newton"
+  note "[Bronze Tube]"
+  note "[Scrolls]"
+  note "[Cask of Merlot]"
+  note "[A Simple Compass]"
+step
+  along until next_6
+  zone map 1453
+  goto 52.159983,61.4399 map 1453 r 12 optional
+  goto 49.409791,63.410104 map 1453 r 12 optional
+  goto 51.160184,68.330035 map 1453 r 12 optional -- Travel toward Roberto
+step
+  zone map 1453
+  goto 57.030284,72.969943 map 1453 r 8
+  note "Talk to Newton"
+  note "[Bronze Tube]"
+  note "[Scrolls]"
+  note "[Cask of Merlot]"
+  note "[A Simple Compass]"
+step
+  when !turnedin 116
+  label next_6
+  zone map 1453
+  note "Go inside the building"
+  note "Talk to Roberto"
+  note "Buy a [Cask of Merlot] from him"
+  collect 1941 x1 @52.049886,67.959645 map 1453 -- Cask of Merlot
+step
+  zone map 1453
+  goto 57.030284,72.969943 map 1453 r 8
+  note "Talk to Newton"
+  note "[Bronze Tube]"
+  note "[Scrolls]"
+  note "[Cask of Merlot]"
+  note "[A Simple Compass]"
+step
+  along until next_8
+  zone map 1453
+  goto 51.680168,59.860167 map 1453 r 8 optional
+  goto 51.829692,60.410173 map 1453 r 4 optional
+  goto 51.590157,60.150231 map 1453 r 6 optional
+  goto 39.170033,76.580123 map 1453 r 12 optional
+  note "Jump up onto the torch, then drop down to get under Stormwind"
+  note "With Shadows on \"Fair\" or \"Low\", get in the middle of Derek the Dinosaur's feet (the lighter part of the dirt) just before the blue void, then walk straight forward"
+  note "NOTE: There is a small chance of dying using this method. You can also walk to the Mage Tower normally if you wish"
+  goto 38.609877,79.390397 map 1453 r 10 optional -- Travel toward Larimaine
+step
+  zone map 1453
+  goto 57.030284,72.969943 map 1453 r 8
+  note "Talk to Newton"
+  note "[Bronze Tube]"
+  note "[Scrolls]"
+  note "[Cask of Merlot]"
+  note "[A Simple Compass]"
+step
+  label next_8
+  zone map 1453
+  goto 39.690018,79.559973 map 1453 r 8
+  note "Talk to Larimaine"
+  learn 3561 "Teleport: Stormwind"
+  note "Total Cost: 20s"
+step
+  zone map 1453
+  note "Talk to Jennea"
+  train 5497 -- Train your class spells (Blink, Evocation, Frost Armor r3, Mana Shield, Conjure Water r3)
+  note "Do NOT train Blizzard yet"
+  note "Total Cost: 1g"
+step
+  along until Charys
+  zone map 1453
+  goto 36.730047,82.439416 map 1453 r 10 optional
+  goto 37.909869,81.919532 map 1453 r 10 optional
+  goto 38.100307,80.929967 map 1453 r 8 optional
+  goto 37.490311,81.349445 map 1453 r 6 optional
+  goto 38.460354,80.609781 map 1453 r 8 optional
+  goto 33.650308,81.58038 map 1453 r 15 optional
+  goto 31.120311,79.419403 map 1453 r 15 optional
+  goto 32.070269,81.500055 map 1453 r 10 optional
+  goto 32.62968,80.619822 map 1453 r 8 optional
+  note "Exit the Mage Tower"
+  goto 32.16028,79.839996 map 1453 r 10 optional -- Travel toward Charys
+step
+  when has 4371
+  when !turnedin 344
+  zone map 1453
+  note "Enter the building"
+  note "Talk to Charys"
+  note "Buy 2 [Runes of Teleportation], [Lesser Mana Potions], [Healing Potions], and a [Cloth Belt] from her (if they're up)"
+  note "DON'T go below 18s 31c"
+  collect 17031 x2 @32.16028,79.839996 map 1453 -- Rune of Teleportation (2)
+step
+  when !has 4371
+  when !turnedin 344
+  label Charys
+  zone map 1453
+  note "Enter the building"
+  note "Talk to Charys"
+  note "Buy two [Runes of Teleportation], [Lesser Mana Potions], [Healing Potions], and a [Cloth Belt] from her (if they're up)"
+  note "DON'T go below 26s 31c"
+  collect 17031 x2 @32.16028,79.839996 map 1453 -- Rune of Teleportation (2)
+step
+  along until Adair
+  zone map 1453
+  goto 39.3203,71.539704 map 1453 r 20 optional
+  goto 41.060278,69.440087 map 1453 r 20 optional
+  goto 44.020249,69.809361 map 1453 r 20 optional
+  goto 46.319638,66.929918 map 1453 r 20 optional
+  goto 42.44988,61.760086 map 1453 r 20 optional
+  goto 41.169631,63.74033 map 1453 r 15 optional
+  goto 41.569848,65.459517 map 1453 r 10 optional -- Travel toward Adair
+step
+  zone map 1453
+  note "Enter the building"
+  note "Talk to Adair"
+  vendor 1316 -- Buy non-intellect [Scrolls] from him (if they're up)
+  note "DON'T go below 18s 31c"
+step
+  label Adair
+  zone map 1453
+  note "Enter the building"
+  note "Talk to Adair"
+  vendor 1316 -- Buy non-intellect [Scrolls] from him (if they're up)
+  note "DON'T go below 26s 31c"
+step
+  along until next_17
+  zone map 1453
+  goto 37.839943,58.500213 map 1453 r 5 optional
+  goto 37.810187,45.020048 map 1453 r 20 optional -- Run up the edge of the wall instead of going around
+step
+  label next_17
+  zone map 1453
+  note "Talk to Kristoff"
+  accept 343 -- Accept Speaking of Fortitude
+step
+  along until next_19
+  zone map 1453
+  goto 47.849837,32.670017 map 1453 r 15 optional
+  goto 47.959934,31.149412 map 1453 r 12 optional
+  goto 49.179927,30.290376 map 1453 r 12 optional -- Travel toward Baros
+step
+  when onquest 399
+  label next_19
+  zone map 1453
+  note "Go inside the building"
+  note "Talk to Baros"
+  turnin 399 -- Turn in Humble Beginnings
+step
+  when !has 4371
+  zone map 1453
+  note "Talk to Billibub"
+  vendor 5519 -- Buy a [Bronze Tube] from him if its up
+step
+  along until next_22
+  zone map 1453
+  goto 69.019691,28.390457 map 1453 r 30 optional
+  goto 72.600073,23.209469 map 1453 r 20 optional
+  goto 69.779955,16.580391 map 1453 r 20 optional
+  goto 70.34011,11.469687 map 1453 r 20 optional
+  goto 74.189783,7.45007 map 1453 r 12 optional -- Travel toward Milton
+step
+  label next_22
+  zone map 1453
+  note "Talk to Milton"
+  turnin 343 -- Turn in Speaking of Fortitude
+  accept 344 -- Accept Brother Paxton
+step
+  along until next_24
+  zone map 1453
+  goto 70.34011,11.469687 map 1453 r 20 optional
+  goto 69.779955,16.580391 map 1453 r 20 optional
+  goto 72.600073,23.209469 map 1453 r 20 optional
+  goto 69.199714,29.079917 map 1453 r 30 optional
+  goto 61.739903,42.340303 map 1453 r 20 optional
+  goto 64.800301,60.339888 map 1453 r 12 optional
+  goto 64.170219,60.59983 map 1453 r 12 optional -- Travel toward Felicia
+step
+  when !turnedin 90
+  label next_24
+  zone map 1453
+  note "Talk to Felicia"
+  note "Buy the [Stormwind Seasoning Herbs] from her"
+  collect 2665 x1 @64.170219,60.59983 map 1453 -- Stormwind Seasoning Herbs
+step
+  along until next_26
+  zone map 1453
+  goto 64.909654,58.480132 map 1453 r 30 optional
+  goto 59.909914,51.600037 map 1453 r 30 optional
+  goto 57.829975,54.980398 map 1453 r 30 optional
+  goto 63.270102,63.430185 map 1453 r 20 optional
+  goto 63.130249,65.229697 map 1453 r 20 optional
+  goto 65.939953,65.479598 map 1453 r 12 optional
+  goto 65.849941,65.999482 map 1453 r 8 optional
+  goto 65.219859,75.579403 map 1453 r 40 optional -- Drop down to the ledge below Dungar
+step
+  label next_26
+  along until next_27
+  zone map 1429
+  goto 42.959905,65.619898 map 1429 r 30 -- Travel toward the Goldshire Inn
+step
+  when !turnedin 116
+  label next_27
+  zone map 1429
+  note "Talk to Dobbins"
+  note "Buy a [Skin of Sweet Rum] from him"
+  collect 1939 x1 @44.000001,65.689889 map 1429 -- Skin of Sweet Rum
+step
+  label FarleyHome
+  along
+  zone map 1429
+  note "Talk to Farley"
+  sethome "Goldshire" @43.770085,65.80006 map 1429 -- Set your Hearthstone to Goldshire
+step
+  zone map 1429
+  note "Talk to Farley"
+  sethome "Goldshire" @43.770085,65.80006 map 1429 -- Set your Hearthstone to Goldshire
+step
+  along until next_30
+  zone map 1429
+  goto 48.789916,41.55984 map 1429 r 10 optional
+  goto 49.26012,40.690137 map 1429 r 10 optional
+  goto 49.609892,40.410173 map 1429 r 10 optional -- Travel toward Paxton
+step
+  zone map 1429
+  note "Talk to Farley"
+  sethome "Goldshire" @43.770085,65.80006 map 1429 -- Set your Hearthstone to Goldshire
+step
+  label next_30
+  zone map 1429
+  note "Talk to Paxton"
+  turnin 344 -- Turn in Brother Paxton
+  accept 345 -- Accept Ink Supplies
+step
+  along until Theo
+  zone map 1429
+  goto 49.26012,40.690137 map 1429 r 10 optional
+  goto 48.789916,41.55984 map 1429 r 10 optional
+  goto 48.279952,42.210065 map 1429 r 10 optional
+  goto 57.620071,51.969923 map 1429 r 30 optional
+  goto 64.450129,69.100006 map 1429 r 15 optional -- Take the Mountain Path toward the Tower of Azora
+step
+  label Theo
+  zone map 1429
+  note "Go upstairs"
+  note "Talk to Theocritus"
+  accept 94 -- Accept A Watchful Eye
+step
+  when has 4371
+  zone map 1429
+  note "Talk to Dawn upstairs"
+  vendor 958 -- Buy non-intellect [Scrolls], [Minor Mana Potions], and [Lesser Healing Potions] from her (if they're up)
+  note "DON'T go below 11s 38c"
+step
+  note "Review this source step manually."
+step
+  when !has 4371
+  zone map 1429
+  note "Talk to Dawn upstairs"
+  vendor 958 -- Buy non-intellect [Scrolls], [Minor Mana Potions], and [Lesser Healing Potions] from her (if they're up)
+  note "DON'T go below 19s 38c"
+step
+  along until next_37
+  zone map 1431
+  goto 73.790111,45.980222 map 1431 r 20 optional
+  goto 74.010111,45.360222 map 1431 r 10 optional -- Go Inside the Inn
+step
+  when !has 4371
+  zone map 1429
+  note "Talk to Dawn upstairs"
+  vendor 958 -- Buy non-intellect [Scrolls], [Minor Mana Potions], and [Lesser Healing Potions] from her (if they're up)
+  note "DON'T go below 19s 38c"
+step
+  when !turnedin 116
+  label next_37
+  zone map 1431
+  note "Talk to Hann"
+  note "Buy the [Bottle of Moonshine] from him"
+  collect 1942 x1 @73.810111,44.020222 map 1431 -- Bottle of Moonshine (1)
+step
+  along until Viktori
+  zone map 1431
+  goto 74.010111,45.360222 map 1431 r 10 optional
+  goto 73.790111,45.980222 map 1431 r 10 optional -- Exit the Inn
+step
+  along until next_40
+  zone map 1431
+  goto 75.220111,48.260222 map 1431 r 12 -- Go inside the building
+step
+  label next_40
+  zone map 1431
+  note "Talk to Elaine"
+  accept 163 -- Accept Raven Hill
+  accept 164 -- Accept Deliveries to Sven
+  accept 165 -- Accept The Hermit
+step
+  when !has 4371
+  zone map 1431
+  note "Talk to Herble"
+  vendor 3133 -- Buy a [Bronze Tube] from him if its up
+step
+  when has 4371
+  zone map 1431
+  note "Talk to Viktori"
+  accept 174 -- Accept Look To The Stars
+  turnin 174 -- Turn in Look To The Stars
+  accept 175 -- Accept Look To The Stars
+step
+  when turnedin 174
+  label Viktori
+  zone map 1431
+  note "Talk to Viktori"
+  accept 175 -- Accept Look To The Stars
+step
+  when turnedin 174
+  zone map 1431
+  note "Talk to Mary"
+  turnin 175 -- Turn in Look To The Stars
+  accept 177 -- Accept Look To The Stars
+step
+  zone map 1431
+  note "Talk to Felicia"
+  getfp "Duskwood" @77.480111,44.290222 map 1431 -- Get the Duskwood flight path
+step
+  along until Kzixx
+  zone map 1431
+  goto 76.660111,23.490222 map 1431 r 60 optional
+  goto 81.820111,19.760222 map 1431 r 20 optional -- Travel toward Kzixx
+step
+  when has 4827
+  zone map 1431
+  note "Talk to Kzixx"
+  vendor 3134 -- Buy [Lesser Mana Potions] and [Healing Potions] from him (if they're up)
+step
+  when has 4828
+  zone map 1431
+  note "Talk to Kzixx"
+  vendor 3134 -- Buy [Lesser Mana Potions] and [Healing Potions] from him (if they're up)
+step
+  when has 4829
+  zone map 1431
+  note "Talk to Kzixx"
+  vendor 3134 -- Buy [Lesser Mana Potions] and [Healing Potions] from him (if they're up)
+step
+  when !has 4827
+  when !has 4828
+  when !has 4829
+  label Kzixx
+  zone map 1431
+  note "Talk to Kzixx"
+  vendor 3134 -- Buy [Lesser Mana Potions], [Healing Potions], and a [Cloth Belt] from him (if they're up, and if needed)
+step
+  along until Gnolls
+  zone map 1431
+  note "AoE Tarantulas. Loot them for Crisp Spider Meat"
+  note "AoE Great Goretusks. Loot them for Great Goretusk Snouts and [Chunks of Boar Meat]"
+  collect 1081 x5 @81.820111,19.760222 map 1431 optional -- Crisp Spider Meat (5)
+  collect 2296 x5 @81.820111,19.760222 map 1431 optional -- Great Goretusk Snout (5)
+  collect 769 x50 @81.820111,19.760222 map 1431 optional -- Chunk of Boar Meat (50)
+step
+  along until Gnolls
+  zone map 1431
+  note "AoE Tarantulas. Loot them for Crisp Spider Meat"
+  note "AoE Great Goretusks. Loot them for Great Goretusk Snouts"
+  collect 1081 x5 @81.820111,19.760222 map 1431 optional -- Crisp Spider Meat (5)
+  collect 2296 x5 @81.820111,19.760222 map 1431 optional -- Great Goretusk Snout (5)
+step
+  zone map 1433
+  note "Talk to Parker"
+  accept 244 -- Accept Encroaching Gnolls
+step
+  label Gnolls
+  zone map 1433
+  note "Talk to Feldon"
+  turnin 244 -- Turn in Encroaching Gnolls
+  accept 246 -- Accept Assessing the Threat
+step
+  zone map 1433
+  note "Talk to Ariena"
+  getfp "Redridge Mountains" @30.589948,59.399855 map 1433 -- Get the Redridge Mountains flight path
+step
+  zone map 1433
+  note "Talk to Marris and Oslow"
+  accept 20 -- Accept Blackrock Menace
+  accept 125 -- Accept The Lost Tools
+  turnin 345 -- Turn in Ink Supplies
+  accept 347 -- Accept Rethban Ore
+  goto 32.140044,48.640253 map 1433 r 8 optional
+step
+  when !turnedin 125
+  zone map 1433
+  note "Talk to Karen"
+  note "Buy a [Mining Pick] from her"
+  note "You'll need this for later"
+  collect 2901 x1 @29.890217,47.359792 map 1433 -- Mining Pick (1)
+step
+  zone map 1433
+  note "Talk to Conacher"
+  accept 91 -- Accept Solomon's Law
+  goto 29.719776,44.260164 map 1433 r 8 optional
+step
+  zone map 1433
+  note "Talk to Baren and the Wanted Poster"
+  accept 127 -- Accept Selling Fish
+  accept 180 -- Accept Wanted: Lieutenant Fangore
+  goto 26.74995,46.41982 map 1433 r 8 optional
+step
+  label Darcy1
+  along
+  zone map 1433
+  note "Go Inside the Inn"
+  note "Talk to Darcy"
+  accept 129 -- Accept A Free Lunch
+step
+  zone map 1433
+  note "Inside the Inn"
+  note "Talk to Daniels"
+  accept 116 -- Accept Dry Times
+  turnin 116 -- Turn in Dry Times
+step
+  when onquest 65
+  zone map 1433
+  note "Inside the Inn"
+  note "Talk to Wiley by jumping from the bannister downstairs"
+  turnin 65 -- Turn in The Defias Brotherhood
+step
+  zone map 1433
+  note "Talk to Shawn"
+  accept 3741 -- Accept Hilary's Necklace
+step
+  zone map 1433
+  note "Swim underwater and check the spawn locations. There are 8 locations with 2 spawns up at once"
+  note "Open the Glinting Mud. Loot it for Hilary's Necklace"
+  note "This has a 5 second cast time"
+  collect 10958 x1 quest 3741.1 -- Hilary's Necklace (1)
+step
+  zone map 1433
+  note "Talk to Hilary"
+  turnin 3741 -- Turn in Hilary's Necklace
+step
+  along until Gnolls2
+  zone map 1433
+  note "AoE Great Goretusks. Loot them for Great Goretusk Snouts and [Chunks of Boar Meat]"
+  collect 2296 x5 @29.239776,53.630183 map 1433 optional -- Great Goretusk Snout (5)
+  collect 769 x50 @29.239776,53.630183 map 1433 optional -- Chunk of Boar Meat (50)
+step
+  along until Gnolls2
+  zone map 1433
+  note "AoE Great Goretusks. Loot them for Great Goretusk Snouts"
+  collect 2296 x5 @29.239776,53.630183 map 1433 optional -- Great Goretusk Snout (5)
+step
+  label Gnolls2
+  zone map 1433
+  note "AoE the Redridge Mongrels and Redridge Thrashers"
+  kill 423 x10 quest 246.1 @15.730222,62.469784 map 1433 -- Redridge Mongrel (1)
+step
+  along until Gnolls3
+  zone map 1433
+  note "AoE Tarantulas. Loot them for Crisp Spider Meat"
+  note "AoE Great Goretusks. Loot them for Great Goretusk Snouts and [Chunks of Boar Meat]"
+  collect 1081 x5 @15.730222,62.469784 map 1433 optional -- Crisp Spider Meat (5)
+  collect 2296 x5 @15.730222,62.469784 map 1433 optional -- Great Goretusk Snout (5)
+  collect 769 x50 @15.730222,62.469784 map 1433 optional -- Chunk of Boar Meat (50)
+step
+  along until Gnolls3
+  zone map 1433
+  note "AoE Tarantulas. Loot them for Crisp Spider Meat"
+  note "AoE Great Goretusks. Loot them for Great Goretusk Snouts"
+  collect 1081 x5 @15.730222,62.469784 map 1433 optional -- Crisp Spider Meat (5)
+  collect 2296 x5 @15.730222,62.469784 map 1433 optional -- Great Goretusk Snout (5)
+step
+  accept 129 -- Accept A Free Lunch
+step
+  zone map 1433
+  note "Talk to Parker"
+  turnin 129 -- Turn in A Free Lunch
+  accept 130 -- Accept Visit the Herbalist
+step
+  label Gnolls3
+  zone map 1433
+  goto 29.400083,83.930283 map 1433 r 60 optional
+  goto 30.950179,84.100183 map 1433 r 60 optional
+  goto 32.259814,82.830081 map 1433 r 60 optional
+  goto 34.599928,82.990312 map 1433 r 60 optional
+  goto 43.369829,71.010335 map 1433 r 60 optional
+  goto 29.400083,83.930283 map 1433 r 60 optional
+  goto 30.950179,84.100183 map 1433 r 60 optional
+  goto 32.259814,82.830081 map 1433 r 60 optional
+  goto 34.599928,82.990312 map 1433 r 60 optional
+  note "AoE the Redridge Mongrels, Redridge Thrashers, and Redridge Poachers"
+  note "Remember to deadzone the Redridge Poachers"
+  kill 423 x10 quest 246.1 @43.369829,71.010335 map 1433 -- Redridge Mongrel (10)
+  kill 424 x6 quest 246.2 @43.369829,71.010335 map 1433 -- Redridge Poacher (6)
+step
+  zone map 1433
+  note "Talk to Feldon"
+  turnin 246 -- Turn in Assessing the Threat
+step
+  zone map 1433
+  note "Go underwater"
+  note "Open the Sunken Chest. Loot it for Oslow's Toolbox"
+  note "This has a 5 second cast time"
+  collect 1309 x1 quest 125.1 -- Oslow's Toolbox (1)
+step
+  along until next_76
+  zone map 1433
+  note "AoE Murloc Flesheaters and Murloc Scouts. Loot them for some of the Spotted Sunfish and Murloc Fins"
+  collect 1467 x10 quest 127.1 @40.300041,45.979877 map 1433 -- Spotted Sunfish (10)
+  collect 1468 x8 @40.300041,45.979877 map 1433 optional -- Murloc Fin (8)
+step
+  label next_76
+  zone map 1433
+  note "Talk to Oslow"
+  turnin 125 -- Turn in The Lost Tools
+  accept 89 -- Accept The Everstill Bridge
+step
+  when onquest 89
+  zone map 1433
+  note "Talk to Dorin"
+  vendor 956 -- Vendor Trash
+step
+  loop
+  zone map 1433
+  goto 37.159774,45.200136 map 1433 r 60
+  goto 38.359773,41.340105 map 1433 r 60
+  goto 38.889984,31.720072 map 1433 r 60
+  goto 43.25006,34.030289 map 1433 r 60
+  goto 47.370135,34.769973 map 1433 r 60
+  goto 55.350018,45.019877 map 1433 r 60
+  goto 57.019883,51.009865 map 1433 r 60
+  goto 56.239998,53.929924 map 1433 r 60
+  goto 58.380189,53.559737 map 1433 r 60
+  goto 58.470017,44.610323 map 1433 r 60
+  goto 59.109863,43.970092 map 1433 r 60
+  goto 59.740035,42.010034 map 1433 r 60
+  goto 62.339958,41.760019 map 1433 r 60
+  goto 62.56015,45.359676 map 1433 r 60
+  note "AoE Blackrock Outrunners, Blackrock Renegades and Blackrock Grunts. Loot them for their Battleworn Axes"
+  note "AoE Murloc Tidecallers and Murloc Scouts. Loot them for their Spotted Sunfish and Murloc Fins"
+  note "AoE Dire Condors. Loot them for their Tough Condor Meat"
+  note "AoE Greater Tarantulas. Loot them for their Crisp Spider Meat"
+  note "AoE Great Goretusks. Loot them for Great Goretusk Snouts"
+  note "AoE Redridge Mystics and Redridge Brutes Loot them for their Iron Pikes and Iron Rivets"
+  note "Be careful as Blackrock Outrunners cast [Net], Dire Condors cast [Knockdown]"
+  collect 3014 x10 quest 20.1 -- Blackrock Axe (10)
+  goto 37.159774,45.200136 map 1433 r 30
+  goto 38.359773,41.340105 map 1433 r 30
+  goto 40.089984,40.639788 map 1433 r 30
+  goto 42.889829,39.259874 map 1433 r 30
+  goto 59.359997,44.559905 map 1433 r 30
+  goto 59.789786,42.050091 map 1433 r 30
+  goto 62.579958,41.460278 map 1433 r 30
+  goto 62.569823,45.479848 map 1433 r 30
+  goto 59.359997,44.559905 map 1433 r 30
+  collect 1467 x10 quest 127.1 -- Spotted Sunfish (10)
+  collect 1468 x8 optional -- Murloc Fin (8)
+  goto 58.060036,52.009923 map 1433 r 40
+  goto 57.080228,51.029894 map 1433 r 40
+  goto 56.120228,53.550068 map 1433 r 40
+  goto 58.060036,52.009923 map 1433 r 8
+  collect 1080 x5 optional -- Tough Condor Meat (5)
+  goto 43.25006,34.030289 map 1433 r 30
+  goto 47.370135,34.769973 map 1433 r 30
+  goto 47.370135,34.769973 map 1433 r 30
+  goto 49.970058,33.600015 map 1433 r 30
+  goto 51.900191,39.750234 map 1433 r 30
+  goto 54.810133,40.659817 map 1433 r 30
+  goto 54.700037,44.930093 map 1433 r 30
+  goto 57.629787,46.479906 map 1433 r 30
+  collect 1081 x5 optional -- Crisp Spider Meat (5)
+  goto 52.259961,36.560132 map 1433 r 30
+  goto 54.079999,38.279845 map 1433 r 30
+  goto 54.980114,40.309659 map 1433 r 30
+  goto 56.790017,41.360134 map 1433 r 30
+  goto 57.259883,47.600137 map 1433 r 30
+  goto 54.759922,45.579992 map 1433 r 30
+  goto 52.669942,42.729689 map 1433 r 30
+  goto 50.499808,41.550062 map 1433 r 30
+  goto 52.259961,36.560132 map 1433 r 30
+  collect 2296 x5 optional -- Great Goretusk Snout (5)
+  collect 2856 x5 quest 89.1 -- Iron Pike (5)
+  collect 1013 x5 quest 89.2 -- Iron Rivet (5)
+  goto 38.889984,31.720072 map 1433 r 8
+step
+  along until Herbalist
+  zone map 1433
+  note "AoE Redridge Mystics and Redridge Brutes Loot them for their Iron Pikes and Iron Rivets"
+  collect 2856 x5 quest 89.1 @32.210063,40.090033 map 1433 -- Iron Pike (5)
+  collect 1013 x5 quest 89.2 @32.210063,40.090033 map 1433 -- Iron Rivet (5)
+step
+  when has 1080 x5
+  when has 1081 x5
+  when has 2296 x5
+  zone map 1433
+  note "Go inside"
+  note "Talk to Breanna"
+  accept 92 -- Accept Redridge Goulash
+  turnin 92 -- Turn in Redridge Goulash
+step
+  label Herbalist
+  zone map 1433
+  note "Talk to Martie"
+  turnin 130 -- Turn in Visit the Herbalist
+  accept 131 -- Accept Delivering Daffodils
+  accept 34 -- Accept An Unwelcome Guest
+step
+  along until next_83
+  zone map 1433
+  goto 17.71978,55.709723 map 1433 r 60 optional
+  goto 16.089991,53.079737 map 1433 r 60 optional
+  note "AoE Great Goretusks. Loot them for Great Goretusk Snouts"
+  collect 2296 x5 @16.089991,53.079737 map 1433 optional -- Great Goretusk Snout (5)
+step
+  label next_83
+  zone map 1433
+  note "Kill Bellygrub"
+  note "Kite her toward the fence north of Lamar. Jump back and forth to safespot her without taking any damage"
+  note "Be careful as Bellygrub casts [Charge] and [Tremor]"
+  collect 3631 x1 quest 34.1 -- Bellygrub's Tusk (1)
+step
+  zone map 1433
+  note "Talk to Martie"
+  turnin 34 -- Turn in An Unwelcome Guest
+step
+  when !turnedin 92
+  zone map 1433
+  goto 17.470106,43.619934 map 1433 r 60 optional
+  goto 20.919932,39.369687 map 1433 r 60 optional
+  goto 17.71978,55.709723 map 1433 r 60 optional
+  goto 16.089991,53.079737 map 1433 r 60 optional
+  goto 17.470106,43.619934 map 1433 r 60 optional
+  goto 20.919932,39.369687 map 1433 r 60 optional
+  note "AoE Great Goretusks. Loot them for Great Goretusk Snouts"
+  collect 2296 x5 @16.089991,53.079737 map 1433 -- Great Goretusk Snout (5)
+step
+  along until next_87
+  zone map 1433
+  note "AoE Redridge Mystics and Redridge Brutes Loot them for their Iron Pikes and Iron Rivets"
+  collect 2856 x5 quest 89.1 @21.350182,36.339815 map 1433 -- Iron Pike (5)
+  collect 1013 x5 quest 89.2 @21.350182,36.339815 map 1433 -- Iron Rivet (5)
+step
+  when onquest 347
+  label next_87
+  zone map 1433
+  goto 19.500201,31.91 map 1433 r 60 optional
+  goto 20.579971,28.290315 map 1433 r 40 -- Travel to the Rethban Caverns
+step
+  loop
+  zone map 1433
+  goto 18.950182,24.50004 map 1433 r 20
+  goto 21.620124,23.720299 map 1433 r 20
+  goto 21.890066,15.060266 map 1433 r 20
+  goto 20.210067,13.250078 map 1433 r 20
+  goto 18.819818,15.029877 map 1433 r 20
+  goto 16.060049,17.07972 map 1433 r 20
+  goto 17.47978,19.550167 map 1433 r 20
+  goto 16.049914,21.039895 map 1433 r 20
+  goto 18.950182,24.50004 map 1433 r 20
+  note "AoE Redridge Drudgers. Loot them for their Rethban Ore, Iron Pikes, and Iron Rivets"
+  note "AoE Redridge Bashers. Loot them for their Iron Pikes and Iron Rivets"
+  note "Mine the Copper Veins in the cave. Loot them for the Rethban Ore"
+  collect 2798 x5 quest 347.1 -- Rethban Ore (5)
+  collect 2856 x5 quest 89.1 -- Iron Pike (5)
+  collect 1013 x5 quest 89.2 -- Iron Rivet (5)
+step
+  when !turnedin 92
+  zone map 1433
+  goto 18.950182,24.50004 map 1433 r 20 optional
+  goto 21.620124,23.720299 map 1433 r 20 optional
+  goto 21.890066,15.060266 map 1433 r 20 optional
+  goto 20.210067,13.250078 map 1433 r 20 optional
+  goto 18.819818,15.029877 map 1433 r 20 optional
+  goto 16.060049,17.07972 map 1433 r 20 optional
+  goto 17.47978,19.550167 map 1433 r 20 optional
+  goto 16.049914,21.039895 map 1433 r 20 optional
+  goto 18.950182,24.50004 map 1433 r 20
+  level 21+14365 -- Grind to 14365+/25200xp
+step
+  when turnedin 92
+  zone map 1433
+  goto 18.950182,24.50004 map 1433 r 20 optional
+  goto 21.620124,23.720299 map 1433 r 20 optional
+  goto 21.890066,15.060266 map 1433 r 20 optional
+  goto 20.210067,13.250078 map 1433 r 20 optional
+  goto 18.819818,15.029877 map 1433 r 20 optional
+  goto 16.060049,17.07972 map 1433 r 20 optional
+  goto 17.47978,19.550167 map 1433 r 20 optional
+  goto 16.049914,21.039895 map 1433 r 20 optional
+  goto 18.950182,24.50004 map 1433 r 20
+  level 21+15715 -- Grind to 15715+/25200xp
+step
+  label next_92
+  zone map 1433
+  note "Talk to Marris and Oslow"
+  turnin 20 -- Turn in Blackrock Menace
+  accept 19 -- Accept Tharil'zun
+  turnin 89 -- Turn in The Everstill Bridge
+  goto 32.140044,48.640253 map 1433 r 8 optional
+step
+  zone map 1433
+  note "Talk to Verner"
+  accept 118 -- Accept The Price of Shoes
+step
+  zone map 1433
+  note "Talk to Baren"
+  turnin 127 -- Turn in Selling Fish
+  accept 150 -- Accept Murloc Poachers
+  turnin 150 -- Turn in Murloc Poachers
+  goto 27.720084,47.37982 map 1433 r 8 optional
+step
+  label Kimberly
+  zone map 1433
+  note "Go Inside the Inn"
+  note "Talk to Darcy"
+  turnin 131 -- Turn in Delivering Daffodils
+step
+  along until next_98
+  zone map 1433
+  goto 26.520084,46.379762 map 1433 r 12 optional
+  goto 22.8602,44.570265 map 1433 r 12 optional
+  note "Travel toward Breanna"
+step
+  label next_98
+  zone map 1433
+  note "Go inside"
+  note "Talk to Breanna"
+  accept 92 -- Accept Redridge Goulash
+  turnin 92 -- Turn in Redridge Goulash
+step
+  along until next_100
+  hearth "Goldshire" optional -- Hearth to Goldshire
+step
+  label next_100
+  zone map 1429
+  note "Talk to Argus"
+  turnin 118 -- Turn in The Price of Shoes
+  accept 119 -- Accept Return to Verner
+step
+  along until next_102
+  zone map 1429
+  goto 48.789916,41.55984 map 1429 r 10 optional
+  goto 49.26012,40.690137 map 1429 r 10 optional
+  goto 49.609892,40.410173 map 1429 r 10 optional -- Travel toward Paxton
+step
+  label next_102
+  zone map 1429
+  note "Talk to Paxton"
+  turnin 347 -- Turn in Rethban Ore
+  accept 346 -- Accept Return to Kristoff
+step
+  when !zone "Stormwind City"
+  along until CharysEnd
+  note "Cast [Teleport: Stormwind]"
+step
+  when level>=22
+  along until CharysEnd
+  note "===PAY ATTENTION==="
+  note "Respec to the Frost AoE spec"
+step
+  when level>=22
+  zone map 1453
+  goto 38.229746,81.860403 map 1453 r 8
+  note "Talk to Dumas"
+  learn 10 "Blizzard"
+step
+  along until CharysEnd
+  zone map 1453
+  goto 36.730047,82.439416 map 1453 r 10 optional
+  goto 37.909869,81.919532 map 1453 r 10 optional
+  goto 38.100307,80.929967 map 1453 r 8 optional
+  goto 37.490311,81.349445 map 1453 r 6 optional
+  goto 38.460354,80.609781 map 1453 r 8 optional
+  goto 33.650308,81.58038 map 1453 r 15 optional
+  goto 31.120311,79.419403 map 1453 r 15 optional
+  goto 32.070269,81.500055 map 1453 r 10 optional
+  goto 32.62968,80.619822 map 1453 r 8 optional
+  note "Exit the Mage Tower"
+  goto 32.16028,79.839996 map 1453 r 10 optional -- Travel toward Charys
+step
+  when level<22
+  along until BankDeposit
+  note "DON'T Go below 1g 43s 30c"
+step
+  when has 4827
+  zone map 1453
+  note "Enter the building"
+  note "Talk to Charys"
+  vendor 1307 -- Buy [Lesser Mana Potions] and [Healing Potions] from him (if they're up)
+step
+  when has 4828
+  zone map 1453
+  note "Enter the building"
+  note "Talk to Charys"
+  vendor 1307 -- Buy [Lesser Mana Potions] and [Healing Potions] from him (if they're up)
+step
+  when has 4829
+  zone map 1453
+  note "Enter the building"
+  note "Talk to Charys"
+  vendor 1307 -- Buy [Lesser Mana Potions] and [Healing Potions] from him (if they're up)
+step
+  when !has 4827
+  when !has 4828
+  when !has 4829
+  label CharysEnd
+  zone map 1453
+  note "Enter the building"
+  note "Talk to Charys"
+  vendor 1307 -- Buy [Lesser Mana Potions], [Healing Potions], and a [Cloth Belt] from him (if they're up, and if needed)
+step
+  along until AdairX
+  zone map 1453
+  goto 39.3203,71.539704 map 1453 r 20 optional
+  goto 41.060278,69.440087 map 1453 r 20 optional
+  goto 44.020249,69.809361 map 1453 r 20 optional
+  goto 46.319638,66.929918 map 1453 r 20 optional
+  goto 42.44988,61.760086 map 1453 r 20 optional
+  goto 41.169631,63.74033 map 1453 r 15 optional
+  goto 41.569848,65.459517 map 1453 r 10 optional -- Travel toward Adair
+step
+  label AdairX
+  zone map 1453
+  note "Enter the building"
+  note "Talk to Adair"
+  vendor 1316 -- Buy non-intellect [Scrolls] from him (if they're up)
+step
+  along until next_115
+  zone map 1453
+  goto 37.839943,58.500213 map 1453 r 5 optional
+  goto 37.810187,45.020048 map 1453 r 20 optional -- Run up the edge of the wall instead of going around
+step
+  label next_115
+  zone map 1453
+  note "Talk to Kristoff"
+  turnin 346 -- Turn in Return to Kristoff
+step
+  when !has 4371
+  when !turnedin 174
+  zone map 1453
+  note "Talk to Billibub"
+  vendor 5519 -- Buy a [Bronze Tube] from him if its up
+step
+  along until next_118
+  zone map 1453
+  goto 63.889769,8.2499771 map 1453 r 20 -- Travel to the Deeprun Tram
+step
+  label next_118
+  along until next_119
+  note "Ride the Deeprun Tram whilst spam casting [Conjure Water r3]"
+step
+  when !has 4371
+  when !turnedin 174
+  label next_119
+  zone map 1455
+  note "Talk to Cogspinner"
+  vendor 5175 -- Buy a [Bronze Tube] from him if its up
+step
+  along until BankDeposit
+  zone map 1455
+  goto 33.440506,63.560618 map 1455 r 30 -- Enter the Ironforge Bank
+step
+  zone map 1455
+  goto 35.929676,60.130022 map 1455 r 8
+  note "Talk to Bailey"
+  note "NOTE: You need 12 stacks of each cloth ([Wool Cloth], [Silk Cloth], [Mageweave Cloth], and [Runecloth]) to do the cloth turnins later. You'll get these naturally as you level"
+  note "[Light Feather]"
+  note "[Wool Cloth]"
+  note "[Lean Wolf Flank]"
+  note "[Glyph of Azora]"
+  note "[Stormwind Seasoning Herbs]"
+  note "[Supplies for Sven]"
+  note "[Crate of Horseshoes]"
+step
+  label BankDeposit
+  zone map 1455
+  goto 35.929676,60.130022 map 1455 r 8
+  note "[Mysterious Fossil]"
+step
+  zone map 1455
+  goto 25.499953,7.0391676 map 1455 r 8
+  note "Talk to Milstaff"
+  learn 3562 "Teleport: Ironforge"
+step
+  along
+  note "===PAY ATTENTION==="
+  note "Respec to the Frost AoE spec"
+step
+  zone map 1455
+  goto 27.179636,8.600942 map 1455 r 8
+  note "Talk to Dink"
+  learn 10 "Blizzard"
+step
+  along
+  note "Start spam casting [Conjure Water r3] to conjure as much water as possible before taking the flight"

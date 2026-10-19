@@ -1,0 +1,582 @@
+guide rxp-free/14-16-adv-darkshore-2-mage-aoe-9a417233
+title "14-16 ADV Darkshore 2 Mage AoE"
+levels 14-16
+zone map 1439
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · ADV AoE Alliance Mage"
+class Mage
+next rxp-free/16-18-adv-westfall-mage-aoe-80b0adcc
+step
+  along until DeepO
+  note "Save any [Light Feathers] you get for later"
+step
+  when !turnedin 982
+  zone map 1439
+  note "Talk to Laird"
+  note "Buy up to 20 [Longjaw Mud Snappers] from him"
+  collect 4592 x20 @36.770031,44.280075 map 1439 -- Longjaw Mud Snapper (20)
+step
+  zone map 1439
+  note "Talk to Barithras and Glynda"
+  accept 947 -- Accept Cave Mushrooms
+  accept 4811 -- Accept The Red Crystal
+  goto 37.679954,43.380075 map 1439 r 8 optional
+step
+  label DeepO
+  zone map 1439
+  note "Talk to Gorbold"
+  accept 982 -- Accept Deep Ocean, Vast Sea
+step
+  when onquest 4761
+  turnin 4761 -- Turn in Thundris Windweaver
+step
+  zone map 1439
+  note "Talk to Thundris"
+  accept 4762 -- Accept The Cliffspring River
+step
+  when onquest 1001
+  along until MistV
+  zone map 1439
+  note "Kill Darkshore Threshers in the water. Loot them for their Thresher Eyes"
+  collect 5412 x3 quest 1001.1 @37.610031,30.859997 map 1439 -- Thresher Eye (3)
+step
+  zone map 1439
+  note "Loot the Silver Dawning Lockbox through the wall of the boat"
+  note "Use your \"Interact with Target\" keybind underwater next to the arrow location"
+  note "This has a 5 second cast time"
+  collect 12191 x1 quest 982.1 @38.210031,28.759997 map 1439 -- Silver Dawning's Lockbox (1)
+step
+  label MistV
+  zone map 1439
+  note "Loot the Mist Veil Lockbox through the wall of the boat"
+  note "Use your \"Interact with Target\" keybind underwater next to the arrow location"
+  note "This has a 5 second cast time"
+  collect 12192 x1 quest 982.2 @39.579954,27.469997 map 1439 -- Mist Veil's Lockbox (1)
+step
+  when onquest 1001
+  zone map 1439
+  note "Kill Darkshore Threshers in the water. Loot them for their Thresher Eyes"
+  collect 5412 x3 quest 1001.1 @37.610031,30.859997 map 1439 -- Thresher Eye (3)
+step
+  along until next_10
+  note "Save the [Murloc Eyes] you loot from the Greymist Coastrunners and Greymist Seers"
+step
+  label next_10
+  zone map 1439
+  note "Loot the Beached Sea Creature on the ground"
+  note "This has a 5 second cast time"
+  accept 4723 -- Accept Beached Sea Creature
+step
+  when onquest 1001
+  turnin 1001 -- Turn in Buzzbox 411
+step
+  zone map 1439
+  note "Click Buzzbox 411"
+  accept 1002 -- Accept Buzzbox 323
+step
+  along until SeaTurtle1
+  zone map 1439
+  goto 43.670031,27.810073 map 1439 r 50 optional
+  note "AoE Foreststrider Fledglings. Loot them for their Strider Meat"
+  collect 5469 x5 @43.670031,27.810073 map 1439 optional -- Strider Meat (5)
+step
+  along until SeaTurtle1
+  zone map 1439
+  note "Kill Moonstalker Runts and Moonstalkers. Loot them for their Moonstalker Fangs"
+  collect 5413 x6 quest 1002.1 @43.670031,27.810073 map 1439 -- Moonstalker Fang (6)
+step
+  when onquest 2138
+  along until SeaTurtle1
+  zone map 1439
+  note "Kill Rabid Thistle Bears"
+  note "Be careful as they cast [Rabies] (Instant Melee: Reduces ALL health regen by 50% for 10 Minutes)"
+  kill 2164 x20 quest 2138.1 @43.670031,27.810073 map 1439 -- Rabid Thistle Bear (20)
+step
+  when !turnedin 4725
+  label SeaTurtle1
+  zone map 1439
+  goto 44.199954,20.599996 map 1439 r 80 -- Travel toward the Beached Sea Turtle
+step
+  along until next_17
+  note "Save the [Murloc Eyes] you loot from the Greymist Warriors and Greymist Netters"
+step
+  label next_17
+  zone map 1439
+  note "Loot the Beached Sea Turtle on the ground"
+  note "This has a 5 second cast time"
+  accept 4725 -- Accept Beached Sea Turtle
+step
+  along until River
+  zone map 1439
+  note "Kill Foreststrider Fledglings. Loot them for their Strider Meat"
+  collect 5469 x5 @44.199954,20.599996 map 1439 optional -- Strider Meat (5)
+step
+  along until River
+  zone map 1439
+  note "Kill Moonstalker Runts and Moonstalkers. Loot them for their Moonstalker Fangs"
+  collect 5413 x6 quest 1002.1 @44.199954,20.599996 map 1439 -- Moonstalker Fang (6)
+step
+  when onquest 2138
+  along until RedC
+  zone map 1439
+  note "Kill Rabid Thistle Bears"
+  note "Be careful as they cast [Rabies] (Instant Melee: Reduces ALL health regen by 50% for 10 Minutes)"
+  kill 2164 x20 quest 2138.1 @44.199954,20.599996 map 1439 -- Rabid Thistle Bear (20)
+step
+  label River
+  zone map 1439
+  note "Use the [Empty Sampling Tube] in the water"
+  collect 12349 x1 quest 4762.1 @50.770031,25.429996 map 1439 -- Cliffspring River Sample (1)
+  use 12350 @50.770031,25.429996 map 1439
+step
+  along until RedC
+  zone map 1439
+  note "Kill Foreststriders. Loot them for their Strider Meat"
+  collect 5469 x5 @50.770031,25.429996 map 1439 optional -- Strider Meat (5)
+step
+  along until RedC
+  zone map 1439
+  note "Kill Moonstalker Runts and Moonstalkers. Loot them for their Moonstalker Fangs"
+  collect 5413 x6 quest 1002.1 @50.770031,25.429996 map 1439 -- Moonstalker Fang (6)
+step
+  when onquest 4811
+  label RedC
+  zone map 1439
+  goto 47.110031,48.630076 map 1439 r 400 -- Travel toward The Red Crystal
+step
+  along until Bash
+  zone map 1439
+  note "Kill Foreststrider Fledglings. Loot them for their Strider Meat"
+  collect 5469 x5 @47.110031,48.630076 map 1439 optional -- Strider Meat (5)
+step
+  along until Bash
+  zone map 1439
+  note "Kill Moonstalker Runts. Loot them for their Moonstalker Fangs"
+  collect 5413 x6 quest 1002.1 @47.110031,48.630076 map 1439 -- Moonstalker Fang (6)
+step
+  zone map 1439
+  goto 47.110031,48.630076 map 1439 r 8
+  note "Run up to The Red Crystal"
+  note "Remember to pull the Raging Moonkins that are leashed together"
+  interact 175524 quest 4811.1 -- Locate the large, red crystal on Darkshore's eastern mountain range (1)
+step
+  when onquest 957
+  label Bash
+  zone map 1439
+  goto 42.370031,61.820002 map 1439 r 175 -- Travel toward the Ancient Flame
+step
+  along until next_30
+  zone map 1439
+  goto 42.450031,60.660078 map 1439 r 1 optional
+  note "Kill Anaya Dawnrunner. Loot her for Anaya's Pendant"
+  note "Anaya's Pendant (1)"
+step
+  label next_30
+  zone map 1439
+  goto 42.370031,61.820002 map 1439 r 8
+  note "Click the Ancient Flame"
+  note "This has a 5 second cast time"
+  note "Destroy the seal at the ancient flame (1)"
+step
+  zone map 1439
+  goto 42.450031,60.660078 map 1439 r 50 optional
+  goto 43.250031,62.409926 map 1439 r 50 optional
+  goto 42.530031,59.000001 map 1439 r 50 optional
+  goto 42.450031,60.660078 map 1439 r 50 optional
+  goto 43.250031,62.409926 map 1439 r 50 optional
+  goto 42.530031,59.000001 map 1439 r 50 optional
+  goto 42.450031,60.660078 map 1439 r 50 optional
+  goto 43.250031,62.409926 map 1439 r 8
+  note "Kill Anaya Dawnrunner. Loot her for Anaya's Pendant"
+  note "Anaya's Pendant (1)"
+step
+  along until RBears
+  zone map 1439
+  note "Kill Foreststrider Fledglings. Loot them for their Strider Meat"
+  collect 5469 x5 @43.250031,62.409926 map 1439 optional -- Strider Meat (5)
+step
+  along until RBears
+  zone map 1439
+  note "Kill Moonstalker Runts and Moonstalkers. Loot them for their Moonstalker Fangs"
+  collect 5413 x6 quest 1002.1 @43.250031,62.409926 map 1439 -- Moonstalker Fang (6)
+step
+  along until BeachedST
+  note "Save the [Murloc Eyes] you loot from the Greymist Coastrunners and Greymist Seers"
+step
+  label BeachedST
+  zone map 1439
+  note "Click the Beached Sea Turtle"
+  note "This has a 5 second cast time"
+  accept 4722 -- Accept Beached Sea Turtle
+step
+  when onquest 2138
+  loop
+  zone map 1439
+  goto 38.739954,58.100001 map 1439 r 45
+  goto 39.910031,58.500078 map 1439 r 45
+  goto 39.230031,63.600078 map 1439 r 45
+  goto 39.870031,66.309926 map 1439 r 45
+  goto 39.979954,70.550003 map 1439 r 45
+  goto 37.399954,70.050079 map 1439 r 45
+  goto 38.630031,67.719926 map 1439 r 45
+  goto 38.499954,63.729926 map 1439 r 45
+  goto 38.739954,58.100001 map 1439 r 45
+  note "Kill Rabid Thistle Bears"
+  note "Be careful as they cast [Rabies] (Instant Melee: Reduces ALL health regen by 50% for 10 Minutes)"
+  kill 2164 x20 quest 2138.1 -- Rabid Thistle Bear (20)
+step
+  when onquest 985
+  label RBears
+  loop
+  zone map 1439
+  goto 39.259954,56.720001 map 1439 r 50
+  goto 40.210031,56.229925 map 1439 r 50
+  goto 39.959954,55.220001 map 1439 r 50
+  goto 39.899954,54.380001 map 1439 r 50
+  goto 40.239954,53.469924 map 1439 r 50
+  goto 39.210031,53.010077 map 1439 r 50
+  goto 39.899954,54.380001 map 1439 r 50
+  note "Kill Blackwood Pathfinders and Blackwood Windtalkers"
+  note "Be careful as Blackwood Pathfinders cast [Thrash] (Charges 2 extra attacks every 10 seconds), and Blackwood Windtalkers cast [Gust of Wind] (melee-range aoe stun)"
+  kill 2167 x8 quest 985.1 -- Blackwood Pathfinder (8)
+  kill 2324 x5 quest 985.2 -- Blackwood Windtalker (5)
+step
+  along until Auberdine
+  zone map 1439
+  note "Kill Moonstalker Runts Loot them for their Moonstalker Fangs"
+  collect 5413 x6 quest 1002.1 @39.899954,54.380001 map 1439 -- Moonstalker Fang (6)
+step
+  when !turnedin 2178
+  loop
+  zone map 1439
+  goto 38.630031,51.249924 map 1439 r 50
+  goto 38.330031,50 map 1439 r 50
+  goto 38.179954,48.420076 map 1439 r 50
+  goto 38.730031,47.619923 map 1439 r 50
+  goto 39.490031,47.649923 map 1439 r 50
+  goto 41.399954,47.130076 map 1439 r 50
+  goto 41.670031,49.470076 map 1439 r 50
+  goto 41.450031,50.84 map 1439 r 50
+  goto 38.630031,51.249924 map 1439 r 50
+  note "Kill Foreststrider Fledglings. Loot them for their Strider Meat"
+  collect 5469 x5 -- Strider Meat (5)
+step
+  when onquest 982
+  label Auberdine
+  zone map 1439
+  goto 36.619954,45.589999 map 1439 r 150 -- Travel toward Gwennyth
+step
+  zone map 1439
+  note "Talk to Gwennyth"
+  turnin 4722 -- Turn in Beached Sea Turtle
+  turnin 4723 -- Turn in Beached Sea Creature
+  turnin 4725 -- Turn in Beached Sea Turtle
+step
+  when onquest 982
+  zone map 1439
+  note "Talk to Laird"
+  note "Buy up to 20 [Longjaw Mud Snappers] from him"
+  vendor 4200 -- Vendor Trash
+  collect 4592 x20 @36.770031,44.280075 map 1439 optional -- Longjaw Mud Snapper (40)
+step
+  when onquest 963
+  zone map 1439
+  note "Talk to Cerellean"
+  turnin 963 -- Turn in For Love Eternal
+step
+  when has 5611
+  along until CliffRi
+  zone map 1439
+  note "Equip the [Tear of Grief]"
+  use 5611 @35.739954,43.699999 map 1439 optional
+step
+  zone map 1439
+  goto 36.770031,44.280075 map 1439 r 8
+  note "Talk to Allyndia"
+  note "Buy 15 [Melon Juice] from her"
+  collect 1205 x15 @36.770031,44.280075 map 1439 optional -- Melon Juice (15)
+step
+  zone map 1439
+  goto 36.770031,44.280075 map 1439 r 8
+  note "Talk to Allyndia"
+  note "Buy 10 [Melon Juice] from her"
+  collect 1205 x10 @36.770031,44.280075 map 1439 optional -- Melon Juice (10)
+step
+  zone map 1439
+  goto 36.770031,44.280075 map 1439 r 8
+  note "Talk to Allyndia"
+  note "Buy 5 [Melon Juice] from her"
+  collect 1205 x5 @36.770031,44.280075 map 1439 optional -- Melon Juice (5)
+step
+  along until next_49
+  zone map 1439
+  goto 37.450031,43.099999 map 1439 r 20 optional
+  goto 37.470031,42.399923 map 1439 r 20 optional
+  goto 37.439954,41.839999 map 1439 r 15 optional -- Travel toward Hollee
+step
+  label next_49
+  zone map 1439
+  note "Talk to Hollee"
+  accept 729 -- Accept The Absent Minded Prospector
+step
+  zone map 1439
+  note "Talk to Dalmond"
+  vendor 4182 -- Buy as many [Small Brown Pouches] as you need/can
+step
+  zone map 1439
+  note "Talk to Dalmond"
+  vendor 4182 -- Buy a [Brown Leather Satchel] from him
+step
+  label CliffRi
+  zone map 1439
+  note "Talk to Thundris"
+  turnin 4762 -- Turn in The Cliffspring River
+  accept 4763 -- Accept The Blackwood Corrupted
+step
+  zone map 1439
+  note "Talk to Alanndarian"
+  accept 2178 -- Accept Easy Strider Living
+  turnin 2178 -- Turn in Easy Strider Living
+step
+  label DeepO_2
+  zone map 1439
+  note "Talk to Gorbold"
+  turnin 982 -- Turn in Deep Ocean, Vast Sea
+step
+  along until next_56
+  zone map 1439
+  goto 37.639954,42.459923 map 1439 r 15 optional
+  goto 37.610031,43.209923 map 1439 r 15 optional
+  goto 37.679954,43.380075 map 1439 r 20 optional -- Travel toward Glynda
+step
+  label next_56
+  zone map 1439
+  note "Talk to Glynda"
+  turnin 4811 -- Turn in The Red Crystal
+  accept 4812 -- Accept As Water Cascades
+step
+  zone map 1439
+  goto 37.810031,43.890075 map 1439 r 8
+  note "Use the [Empty Cleansing Bowl] and [Empty Water Tube] at the Moonwell"
+  collect 12347 x1 @37.810031,43.890075 map 1439 optional -- Filled Cleansing Bowl (1)
+  collect 14339 x1 @37.810031,43.890075 map 1439 optional -- Moonwell Water Tube (1)
+  use 12346 @37.810031,43.890075 map 1439
+  use 14338 @37.810031,43.890075 map 1439
+step
+  when onquest 2138
+  turnin 2138 -- Turn in Cleansing of the Infected
+step
+  when onquest 985
+  turnin 985 -- Turn in How Big a Threat?
+step
+  zone map 1439
+  note "Talk to Tharnariun, Terenthis, and then Elissa upstairs"
+  accept 2139 -- Accept Tharnariun's Hope
+  accept 986 -- Accept A Lost Master
+  accept 965 -- Accept The Tower of Althalaxx
+  goto 39.270031,43.129999 map 1439 r 8 optional
+  goto 39.039954,43.549999 map 1439 r 8 optional
+step
+  only Gnome
+  when has 4786
+  along until next_60
+  zone map 1439
+  note "Equip the [Wise Man's Belt]"
+  use 4786 @39.039954,43.549999 map 1439 optional
+step
+  label next_60
+  zone map 1439
+  note "Click The Red Crystal"
+  note "This has a 5 second cast time"
+  note "Remember to pull the Raging Moonkins that are leashed together"
+  turnin 4812 -- Turn in As Water Cascades
+  accept 4813 -- Accept The Fragments Within
+step
+  along until GrainSample
+  zone map 1439
+  note "Kill Moonstalker Runts and Moonstalkers. Loot them for their Moonstalker Fangs"
+  collect 5413 x6 quest 1002.1 @47.319954,48.699923 map 1439 -- Moonstalker Fang (6)
+step
+  when onquest 957
+  zone map 1439
+  note "Talk to Asterion"
+  turnin 957 -- Turn in Bashal'Aran
+step
+  when !turnedin 4673
+  label GrainSample
+  zone map 1439
+  note "Open the Blackwood Grain Stores. Loot it for the Blackwood Grain Sample"
+  note "Aggro the Mobs protecting it, cast [Frost Nova], loot the Blackwood Grain Sample, then run away toward Den Mother from the mobs that spawn"
+  note "This has a 5 second cast time"
+  collect 12342 x1 @50.659954,34.980074 map 1439 -- Blackwood Grain Sample (1)
+step
+  along until next_65
+  zone map 1439
+  note "Kill Moonstalkers. Loot them for their Moonstalker Fangs"
+  collect 5413 x6 quest 1002.1 @50.659954,34.980074 map 1439 -- Moonstalker Fang (6)
+step
+  label next_65
+  along until DenM
+  zone map 1439
+  goto 52.330031,35.940074 map 1439 r 20 optional
+  goto 52.390031,36.849922 map 1439 r 20 optional
+  goto 51.579954,37.519998 map 1439 r 30 optional -- Travel toward Den Mother
+step
+  when !has 4358
+  zone map 1439
+  note "Kill Den Mother"
+  note "Be careful as Den Mother and her Thistle Cubs cast [Ravage] (2 second stun)"
+  kill 6788 x1 quest 2139.1 -- Den Mother (1)
+step
+  when has 4358
+  label DenM
+  zone map 1439
+  note "Kill Den Mother"
+  note "Be careful as Den Mother and her Thistle Cubs cast [Ravage] (2 second stun)"
+  note "Split Pull Den Mother with your [Rough Dynamite]"
+  kill 6788 x1 quest 2139.1 -- Den Mother (1)
+step
+  along until Talisman
+  zone map 1439
+  note "Kill Moonstalkers. Loot them for their Moonstalker Fangs"
+  collect 5413 x6 quest 1002.1 @51.510031,38.220075 map 1439 -- Moonstalker Fang (6)
+step
+  when !turnedin 4673
+  zone map 1439
+  note "Open the Blackwood Nut Stores. Loot it for the Blackwood Nut Sample :3"
+  note "Aggro the Mobs protecting it, cast [Frost Nova], loot the Blackwood Nut Sample, then run north"
+  note "This has a 5 second cast time"
+  collect 12343 x1 @51.799954,33.510074 map 1439 -- Blackwood Nut Sample (1)
+step
+  when !turnedin 4673
+  zone map 1439
+  note "Open the Blackwood Fruit Stores. Loot it for the Blackwood Fruit Sample"
+  note "Kill the Blackwood Warriors that aggro"
+  note "This has a 5 second cast time"
+  collect 12341 x1 @52.850031,33.420074 map 1439 -- Blackwood Fruit Sample (1)
+step
+  along until Talisman
+  zone map 1439
+  note "Use the [Filled Cleansing Bowl] near the campfire to summon Xabraxxis"
+  note "This has a 5 second cast time"
+  use 12347 @52.510031,33.109997 map 1439
+step
+  label Talisman
+  zone map 1439
+  note "Wait out the RP"
+  note "Kill Xabraxxis"
+  note "Loot Xabraxxis' Demon Bag that drops on the ground. Loot it for the Talisman of Corruption"
+  note "This has a 5 second cast time"
+  collect 12355 x1 quest 4763.1 @52.239954,33.079997 map 1439 -- Talisman of Corruption (1)
+step
+  when complete 1002
+  zone map 1439
+  note "Click Buzzbox 323"
+  turnin 1002 -- Turn in Buzzbox 323
+  accept 1003 -- Accept Buzzbox 525
+step
+  when turnedin 1002
+  zone map 1439
+  note "Click Buzzbox 323"
+  accept 1003 -- Accept Buzzbox 525
+step
+  along until next_76
+  zone map 1439
+  note "Kill Moonstalkers. Loot them for their Moonstalker Fangs"
+  collect 5413 x6 quest 1002.1 @54.650031,21.030072 map 1439 -- Moonstalker Fang (6)
+step
+  label next_76
+  zone map 1439
+  note "Loot the Beached Sea Turtle"
+  note "This has a 5 second cast time"
+  accept 4727 -- Accept Beached Sea Turtle
+step
+  zone map 1439
+  note "Kill Moonstalkers. Loot them for their Moonstalker Fangs"
+  collect 5413 x6 quest 1002.1 @54.650031,21.030072 map 1439 -- Moonstalker Fang (6)
+step
+  zone map 1439
+  note "Click Buzzbox 323"
+  turnin 1002 -- Turn in Buzzbox 323
+  accept 1003 -- Accept Buzzbox 525
+step
+  zone map 1439
+  note "Talk to Balthule"
+  turnin 965 -- Turn in The Tower of Althalaxx
+  accept 966 -- Accept The Tower of Althalaxx
+step
+  zone map 1439
+  note "Kill Dark Strand Fanatics. Loot them for Worn Parchments"
+  collect 5348 x4 quest 966.1 @56.359954,27.00992 map 1439 -- Worn Parchment (4)
+step
+  zone map 1439
+  note "Talk to Balthule"
+  turnin 966 -- Turn in The Tower of Althalaxx
+  accept 967 -- Accept The Tower of Althalaxx
+step
+  label CapCave
+  along until CapCave1
+  zone map 1439
+  goto 54.999954,33.420074 map 1439 r 30 -- Go inside the Cave
+step
+  along until next_84
+  zone map 1439
+  note "Loot the blue Scaber Stalks on the ground"
+  note "This has a 5 second cast time"
+  collect 5271 x5 quest 947.1 @55.299954,35.580074 map 1439 -- Scaber Stalk (5)
+step
+  label next_84
+  zone map 1439
+  note "Stay on the upper level of the cave. Drop down if there's no Death Cap on the upper level"
+  note "Loot the orange Death Cap on the ground at the end of the top path of the cave"
+  note "This has a 5 second cast time"
+  collect 5270 x1 quest 947.2 @55.890031,35.400074 map 1439 -- Death Cap (1)
+step
+  label CapCave1
+  zone map 1439
+  note "Loot the first Scaber Stalks at the mouth of the cave after looting the Death Cap"
+  note "This has a 5 second cast time"
+  collect 5271 x5 quest 947.1 @55.299954,35.580074 map 1439 -- Scaber Stalk (5)
+step
+  label next_87
+  zone map 1439
+  note "Talk to Thundris"
+  turnin 4763 -- Turn in The Blackwood Corrupted
+step
+  zone map 1439
+  note "Talk to Dalmond"
+  vendor 4182 -- Buy a [Brown Leather Satchel] from him
+  note "Do NOT go below 30 Silver"
+step
+  zone map 1439
+  note "Talk to Tharnariun"
+  turnin 2139 -- Turn in Tharnariun's Hope
+step
+  zone map 1439
+  note "Talk to Glynda, Barithras, and the Wanted Poster"
+  turnin 4813 -- Turn in The Fragments Within
+  turnin 947 -- Turn in Cave Mushrooms
+  accept 948 -- Accept Onu
+  accept 4740 -- Accept WANTED: Murkdeep!
+  goto 37.219954,44.220075 map 1439 r 8 optional
+step
+  when !turnedin 729
+  zone map 1439
+  note "Talk to Laird"
+  note "Buy up to 40 [Longjaw Mud Snappers] from him"
+  collect 4592 x40 @36.770031,44.280075 map 1439 -- Longjaw Mud Snapper (40)
+step
+  zone map 1439
+  note "Talk to Gwennyth"
+  turnin 4727 -- Turn in Beached Sea Turtle
+step
+  when !zone "Stormwind City"
+  zone map 1439
+  goto 37.039954,44.130075 map 1439 r 8
+  note "===PAY ATTENTION==="
+  note "Talk to Shaussiy"
+  note "Open the \"Set Hearthstone\" menu, then cast [Hearthstone]"
+  hearth "Stormwind City" optional -- Hearthstone BATCH from Auberdine to Stormwind City

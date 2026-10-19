@@ -1,0 +1,1949 @@
+guide rxp-free/19-23-stonetalon-barrens-ashenvale-712ee21c
+title "19-23 Stonetalon/Barrens/Ashenvale"
+levels 19-23
+zone map 1413
+coords era
+faction Horde
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · RXP Survival Guide 1-20"
+step
+  when onquest 6541
+  along until next_1
+  note "Abandon Report to Kadrak to avoid quest log issues. You'll pick it up again later"
+  note "Abandon Report to Kadrak"
+step
+  when onquest 6548
+  label next_1
+  loop
+  zone map 1442
+  goto 80.62,89.99 map 1442 r 1
+  goto 80.62,89.99 map 1442 r 40
+  goto 79.79,88.75 map 1442 r 40
+  goto 81.19,87.56 map 1442 r 40
+  goto 81.7,86.44 map 1442 r 40
+  goto 82.26,86.1 map 1442 r 40
+  goto 82.55,85.22 map 1442 r 40
+  goto 83.64,85.02 map 1442 r 40
+  goto 84.2,85.2 map 1442 r 40
+  goto 83.8,86.38 map 1442 r 40
+  goto 83.25,87.23 map 1442 r 40
+  goto 82.33,89.73 map 1442 r 40
+  goto 82.33,90.43 map 1442 r 40
+  goto 81.34,90.78 map 1442 r 40
+  note "Kill Grimtotem Ruffians and Grimtotem Mercenaries in the area"
+  kill 11910 x8 quest 6548.1 -- Kill Grimtotem Ruffian (x8)
+  kill 11911 x6 quest 6548.2 -- Kill Grimtotem Mercenary (x6)
+step
+  when onquest 6548
+  turnin 6548 -- Turn in Avenge My Village
+step
+  zone map 1413
+  note "Talk to Makaba"
+  accept 6629 -- Accept Kill Grundig Darkcloud
+step
+  along until next_4
+  zone map 1442
+  goto 75.89,87.49 map 1442 r 30 -- Travel up the path to the bonfire
+step
+  label next_4
+  zone map 1442
+  note "Kill Grundig Darkcloud and Grimtotem Brutes"
+  note "Make sure you kill all six Grimtotem Brutes before starting the quest inside"
+  kill 11858 x1 quest 6629.1 -- Kill Grundig Darkcloud (x1)
+  kill 11912 x6 quest 6629.2 @73.65,86.13 map 1442 -- Kill Grimtotem Brute (x6)
+step
+  zone map 1442
+  goto 73.48,85.59 map 1442 r 8
+  note "Talk to Kaya"
+  accept 6523 optional -- Accept Protect Kaya
+step
+  zone map 1442
+  goto 71.82,86.79 map 1442 r 40 optional
+  goto 71.83,89.79 map 1442 r 40 optional
+  goto 76.73,90.85 map 1442 r 8
+  note "Escort Kaya and stay close to her"
+  note "Be careful! Three Grimtotems will spawn when you reach the bonfire in Camp Aparaje"
+  complete 6523 optional -- Kaya Escorted to Camp Aparaje
+step
+  zone map 1442
+  note "Talk to Xen'Zilla"
+  accept 6461 -- Accept Blood Feeders
+step
+  along until InDeepTrouble
+  zone map 1442
+  note "Kill every Deepmoss Creeper you see"
+  kill 4005 x10 quest 6461.1 @60.83,71.84 map 1442 -- Kill Deepmoss Creeper (x10)
+step
+  along until InDeepTrouble
+  zone map 1442
+  goto 51.4,61.14 map 1442 r 50 optional
+  goto 49.96,61.04 map 1442 r 8 optional
+step
+  when !turnedin 1093
+  label InDeepTrouble
+  zone map 1442
+  goto 47.47,62.13 map 1442 r 8
+  note "Talk to Innkeeper Jayka"
+  note "Do NOT set your hearthstone!"
+  vendor 7731 only !Rogue,!Warrior -- Sell your junk, then restock on food and water if necessary
+  vendor 7731 only Rogue -- Sell your junk, then restock on food if necessary
+  vendor 7731 only Warrior -- Sell your junk, then restock on food if necessary
+step
+  when !turnedin 1093
+  zone map 1442
+  goto 47.61,61.58 map 1442 r 8
+  note "Talk to Jeeda on the second floor of the inn"
+  vendor 4083 only !Warrior -- Buy [Healing Potions] from her if they're up
+  vendor 4083 only Warrior -- Buy [Healing Potions] and [Liferoot] from her if they're up
+step
+  zone map 1442
+  goto 45.13,59.85 map 1442 r 8
+  note "Talk to Tharm"
+  getfp "Sun Rock Retreat" @45.13,59.85 map 1442 optional -- Get the Sun Rock Retreat flight path
+step
+  along until next_16
+  zone map 1442
+  goto 58.99,62.6 map 1442 r 100 -- Travel to Windshear Crag
+step
+  when onquest 1483
+  turnin 1483 -- Turn in Ziz Fizziks
+step
+  label next_16
+  zone map 1442
+  note "Talk to Ziz"
+  accept 1093 -- Accept Super Reaper 6000
+step
+  along until next_18
+  zone map 1442
+  note "Kill Deepmoss Venomspitters"
+  kill 4007 x7 quest 6461.2 @58.99,62.6 map 1442 -- Kill Deepmoss Venomspitter (x7)
+step
+  when onquest 1069
+  label next_18
+  loop
+  zone map 1442
+  goto 61.41,56.77 map 1442 r 1
+  goto 59.25,61.55 map 1442 r 30
+  goto 60.37,60.1 map 1442 r 30
+  goto 61.34,59.15 map 1442 r 30
+  goto 61.15,57.85 map 1442 r 30
+  goto 61.41,56.77 map 1442 r 30
+  goto 62.21,58.55 map 1442 r 30
+  goto 63.12,60.02 map 1442 r 30
+  goto 64.69,60.03 map 1442 r 30
+  goto 62.76,61.69 map 1442 r 30
+  goto 62.5,62.92 map 1442 r 30
+  goto 62.48,64.15 map 1442 r 30
+  goto 61.85,66.07 map 1442 r 30
+  goto 60.71,66.12 map 1442 r 30
+  goto 60.96,63.99 map 1442 r 30
+  goto 60.25,63.21 map 1442 r 30
+  note "Loot the Spider Eggs near the trees"
+  note "Be careful! The Deepmoss Hatchlings have a chance of summoning a level 22 Deepmoss Matriarch"
+  collect 5570 x15 quest 1069.1 -- Collect Deepmoss Egg (x15)
+step
+  loop
+  zone map 1442
+  goto 60.25,63.21 map 1442 r 1
+  goto 59.25,61.55 map 1442 r 50
+  goto 60.37,60.1 map 1442 r 50
+  goto 61.34,59.15 map 1442 r 50
+  goto 61.15,57.85 map 1442 r 50
+  goto 61.41,56.77 map 1442 r 50
+  goto 62.21,58.55 map 1442 r 50
+  goto 63.12,60.02 map 1442 r 50
+  goto 64.69,60.03 map 1442 r 50
+  goto 62.76,61.69 map 1442 r 50
+  goto 62.5,62.92 map 1442 r 50
+  goto 62.48,64.15 map 1442 r 50
+  goto 61.85,66.07 map 1442 r 50
+  goto 60.71,66.12 map 1442 r 50
+  goto 60.96,63.99 map 1442 r 50
+  goto 60.25,63.21 map 1442 r 50
+  note "Kill Deepmoss Venomspitters"
+  kill 4007 x7 quest 6461.2 -- Kill Deepmoss Venomspitter (x7)
+step
+  only Warrior,Troll
+  zone map 1442
+  goto 58.22,51.74 map 1442 r 8
+  note "Talk to Veenix. Buy a [Long Staff] from him"
+  collect 928 x1 @58.22,51.74 map 1442 optional -- Collect Long Staff (1)
+step
+  only Warrior,Troll
+  when has 928
+  when level>=20
+  along until BluePrints
+  zone map 1442
+  note "Equip the [Long Staff]"
+  use 928 @58.22,51.74 map 1442 optional
+step
+  only Warrior,Orc
+  zone map 1442
+  goto 58.22,51.74 map 1442 r 8
+  note "Talk to Veenix. Buy a [Battle Axe] from him"
+  collect 926 x1 @58.22,51.74 map 1442 optional -- Collect Battle Axe (1)
+step
+  only Warrior,Orc
+  when has 926
+  when level>=20
+  along until BluePrints
+  zone map 1442
+  note "Equip the [Battle Axe]"
+  use 926 @58.22,51.74 map 1442 optional
+step
+  only Warrior,Tauren
+  zone map 1442
+  goto 58.22,51.74 map 1442 r 8
+  note "Talk to Veenix. Buy a [Maul] from him"
+  collect 924 x1 @58.22,51.74 map 1442 optional -- Collect Maul (1)
+step
+  only Warrior,Tauren
+  when has 924
+  when level>=21
+  along until BluePrints
+  zone map 1442
+  note "Equip the [Maul]"
+  use 924 @58.22,51.74 map 1442 optional
+step
+  only Shaman
+  zone map 1442
+  goto 58.22,51.74 map 1442 r 8
+  note "Talk to Veenix. Buy a [Long Staff] from him"
+  collect 928 x1 @58.22,51.74 map 1442 optional -- Collect Long Staff (1)
+step
+  only Shaman
+  when has 928
+  when level>=20
+  along until BluePrints
+  zone map 1442
+  note "Equip the [Long Staff]"
+  use 928 @58.22,51.74 map 1442 optional
+step
+  only Rogue
+  zone map 1442
+  goto 58.22,51.74 map 1442 r 8
+  note "Talk to Veenix. Buy a [Longsword] from him."
+  collect 923 x1 @58.22,51.74 map 1442 optional -- Collect Longsword (1)
+step
+  only Rogue
+  when has 923
+  when level>=21
+  along until BluePrints
+  zone map 1442
+  note "Equip the [Longsword]"
+  use 923 @58.22,51.74 map 1442 optional
+step
+  when onquest 1062
+  along until BluePrints
+  zone map 1442
+  note "Kill Venture Co. Loggers"
+  kill 3989 x15 quest 1062.1 @58.22,51.74 map 1442 -- Kill Venture Co. Logger (x15)
+step
+  label BluePrints
+  loop
+  zone map 1442
+  goto 62.8,53.7 map 1442 r 1
+  goto 62.8,53.7 map 1442 r 100
+  goto 61.7,51.5 map 1442 r 100
+  goto 66.8,45.3 map 1442 r 100
+  goto 71.7,49.9 map 1442 r 100
+  goto 74.3,54.7 map 1442 r 100
+  note "Kill Venture Co. Operators. Loot them for their Blueprints"
+  collect 5734 x1 quest 1093.1 -- Collect Super Reaper 6000 Blueprints (x1)
+step
+  when onquest 1062
+  loop
+  zone map 1442
+  goto 61.5,55.12 map 1442 r 1
+  goto 61.5,55.12 map 1442 r 50
+  goto 60.48,55.1 map 1442 r 50
+  goto 59.8,53.69 map 1442 r 50
+  goto 59.53,52.52 map 1442 r 50
+  goto 60.8,51.23 map 1442 r 50
+  goto 62.06,54.39 map 1442 r 50
+  goto 62.63,55.35 map 1442 r 50
+  goto 63.63,54.42 map 1442 r 50
+  goto 65.42,54.15 map 1442 r 50
+  goto 66.83,54.92 map 1442 r 50
+  goto 68.64,54.03 map 1442 r 50
+  goto 69.86,53.53 map 1442 r 50
+  goto 70.34,56.41 map 1442 r 50
+  goto 67.9,56.96 map 1442 r 50
+  goto 66.25,56.64 map 1442 r 50
+  goto 65.29,57.14 map 1442 r 50
+  goto 64.27,57.63 map 1442 r 50
+  note "Kill Venture Co. Loggers"
+  kill 3989 x15 quest 1062.1 -- Kill Venture Co. Logger (x15)
+step
+  along until next_34
+  note "If you have over 15 Deepmoss Eggs, split the stack of any extras (shift click), then delete them"
+step
+  label next_34
+  zone map 1442
+  note "Talk to Ziz"
+  turnin 1093 -- Turn in Super Reaper 6000
+  accept 1094 -- Accept Further Instructions
+step
+  loop
+  zone map 1442
+  goto 68.59,88.34 map 1442 r 1
+  goto 60.83,71.84 map 1442 r 80
+  goto 59.04,73.01 map 1442 r 80
+  goto 60.36,76.28 map 1442 r 80
+  goto 61.47,81.51 map 1442 r 80
+  goto 64.95,83.88 map 1442 r 80
+  goto 68.59,88.34 map 1442 r 80
+  note "Finish killing Deepmoss Creepers"
+  kill 4005 x10 quest 6461.1 -- Kill Deepmoss Creeper (x10)
+step
+  only Druid
+  when !zone "Moonglade"
+  along until DruidTraining2
+  note "Cast [Teleport: Moonglade]"
+step
+  only Druid
+  when level>=18
+  when level<20
+  zone map 1450
+  goto 52.53,40.58 map 1450 r 8
+  note "Talk to Loganaar"
+  learn 1430 "your class spells"
+step
+  only Druid
+  when level>=20
+  label DruidTraining2
+  zone map 1450
+  goto 52.53,40.58 map 1450 r 8
+  note "Talk to Loganaar"
+  learn 768 "your class spells"
+step
+  along until next_40
+  zone map 1450
+  hearth "Camp Taurajo" optional -- Hearth to Camp Taurajo
+  use 6948 @52.53,40.58 map 1450 optional
+step
+  when onquest 3261
+  label next_40
+  zone map 1413
+  goto 45.58,59.03 map 1413 r 8
+  note "Talk to Innkeeper Byula"
+  vendor 7714 only !Rogue,!Warrior -- Sell your junk, then restock on food and water if necessary
+  vendor 7714 only Rogue -- Sell your junk, then restock on food if necessary
+  vendor 7714 only Warrior -- Sell your junk, then restock on food if necessary
+step
+  when onquest 3261
+  turnin 3261 -- Turn in Jorn Skyseer
+step
+  zone map 1413
+  note "Talk to Jorn Skyseer"
+  accept 882 -- Accept Ishamuhale
+step
+  when onquest 821
+  along until LakotaMani
+  zone map 1413
+  note "Kill Stormsnout. Loot them for a Horn"
+  collect 4895 x1 quest 821.3 @44.85,59.14 map 1413 -- Thunder Lizard Horn (1)
+step
+  along until LakotaMani
+  zone map 1413
+  note "Kill Bristleback Quilboars. Loot them for their Tusks. Save the [Blood Shards] you get"
+step
+  when onquest 878
+  along until LakotaMani
+  kill 3260 x6 quest 878.1 @44.85,59.14 map 1413 -- Kill Bristleback Water Seeker (x6)
+  kill 3261 x12 quest 878.2 @44.85,59.14 map 1413 -- Kill Bristleback Thornweaver (x12)
+  kill 3263 x12 quest 878.3 @44.85,59.14 map 1413 -- Kill Bristleback Geomancer (x12)
+step
+  when onquest 899
+  along until LakotaMani
+  collect 5085 x60 quest 899.1 @44.85,59.14 map 1413 -- Collect Bristleback Quilboar Tusk (x60)
+step
+  label LakotaMani
+  loop
+  zone map 1413
+  goto 45.14,52.82 map 1413 r 1
+  goto 45.93,49.08 map 1413 r 1
+  goto 47.43,51.37 map 1413 r 1
+  goto 50.1,53.34 map 1413 r 1
+  goto 45.14,52.82 map 1413 r 80
+  goto 45.93,49.08 map 1413 r 80
+  goto 47.43,51.37 map 1413 r 80
+  goto 50.1,53.34 map 1413 r 80
+  note "Kill Lakota'mani. Loot him for the [Hoof of Lakota'mani]"
+  note "Use the [Hoof of Lakota'mani] to start the quest"
+  note "He has 4 spawnpoints (marked on the map)"
+  note "Skip this step if you can't find him"
+  collect 5099 x1 optional -- Collect Hoof of Lakota'Mani
+  accept 883 -- Accept Lakota'Mani
+  use 5099 @50.1,53.34 map 1413
+step
+  when onquest 821
+  along until next_46
+  zone map 1413
+  note "Kill Stormsnout. Loot them for a Horn"
+  collect 4895 x1 quest 821.3 @50.1,53.34 map 1413 -- Thunder Lizard Horn (1)
+step
+  label next_46
+  zone map 1413
+  goto 50.71,54.6 map 1413 r 1 optional
+  goto 50.71,54.6 map 1413 r 60 optional
+  goto 50.74,55.33 map 1413 r 60 optional
+  goto 50.73,56.78 map 1413 r 60 optional
+  goto 50.42,57.23 map 1413 r 60 optional
+  goto 50.5,57.65 map 1413 r 60 optional
+  goto 50.87,57.5 map 1413 r 60 optional
+  goto 51.26,57.84 map 1413 r 60 optional
+  goto 51.74,57.69 map 1413 r 60 optional
+  goto 51.79,57.1 map 1413 r 60 optional
+  goto 53.08,54.69 map 1413 r 60 optional
+  goto 53.65,54.27 map 1413 r 60 optional
+  goto 53.63,53.53 map 1413 r 60 optional
+  goto 53.35,52.72 map 1413 r 60 optional
+  goto 53,51.83 map 1413 r 60 optional
+  goto 52.62,52.19 map 1413 r 60 optional
+  goto 52.59,52.71 map 1413 r 60 optional
+  goto 52.41,53.07 map 1413 r 60 optional
+  goto 52.32,53.71 map 1413 r 60 optional
+  goto 51.39,54.22 map 1413 r 60
+  note "Kill Bristleback Quilboars. Loot them for their Tusks. Save the [Blood Shards] you get"
+step
+  when onquest 878
+  kill 3260 x6 quest 878.1 -- Kill Bristleback Water Seeker (x6)
+  kill 3261 x12 quest 878.2 -- Kill Bristleback Thornweaver (x12)
+  kill 3263 x12 quest 878.3 -- Kill Bristleback Geomancer (x12)
+step
+  when onquest 899
+  collect 5085 x60 quest 899.1 -- Collect Bristleback Quilboar Tusk (x60)
+step
+  when onquest 821
+  loop
+  zone map 1413
+  goto 50.88,52.96 map 1413 r 1
+  goto 50.88,52.96 map 1413 r 50
+  goto 50.06,52.78 map 1413 r 50
+  goto 49.35,53.74 map 1413 r 50
+  goto 49.54,55.08 map 1413 r 50
+  goto 49.03,56.24 map 1413 r 50
+  goto 49.72,56.13 map 1413 r 50
+  note "Kill Stormsnout. Loot them for a Horn"
+  collect 4895 x1 quest 821.3 -- Thunder Lizard Horn (1)
+step
+  when onquest 865
+  along until next_49
+  zone map 1413
+  note "Kill Sunscale Scytheclaws. Loot them for their Horns"
+  note "Be careful as they cast [Thrash] (Charges 2 extra attacks every 10 seconds)"
+  collect 5055 x5 quest 865.1 @49.72,56.13 map 1413 -- Intact Raptor Horn (5)
+step
+  when onquest 821
+  label next_49
+  loop
+  zone map 1413
+  goto 53.98,51.68 map 1413 r 1
+  goto 53.98,51.68 map 1413 r 50
+  goto 54.1,50.58 map 1413 r 50
+  goto 53.85,49.76 map 1413 r 50
+  goto 54.32,49.38 map 1413 r 50
+  goto 54.82,49 map 1413 r 50
+  goto 55.23,47.96 map 1413 r 50
+  note "Finish killing Plainstriders. Loot them for their Kidneys"
+  collect 4894 x5 quest 821.2 -- Plainstrider Kidney (5)
+step
+  when onquest 865
+  loop
+  zone map 1413
+  goto 57.3,53.7 map 1413 r 1
+  goto 52,46.5 map 1413 r 1
+  goto 57.3,53.7 map 1413 r 90
+  goto 52,46.5 map 1413 r 90
+  note "Finish killing Sunscale Scytheclaws. Loot them for their Horns"
+  note "Be careful as they cast [Thrash] (Charges 2 extra attacks every 10 seconds)"
+  collect 5055 x5 quest 865.1 -- Intact Raptor Horn (5)
+step
+  when onquest 880
+  loop
+  zone map 1413
+  goto 55.59,43.39 map 1413 r 1
+  goto 55.59,43.39 map 1413 r 40
+  goto 55.09,43 map 1413 r 40
+  goto 55.03,42.21 map 1413 r 40
+  goto 55.47,41.51 map 1413 r 40
+  goto 55.99,42 map 1413 r 40
+  goto 56.15,42.53 map 1413 r 40
+  goto 56.01,43.4 map 1413 r 40
+  note "Kill Oasis Snapjaws in and around the lake. Loot them for their Shells"
+  collect 5098 x8 quest 880.1 -- Altered Snapjaw Shell (8)
+step
+  along until next_53
+  zone map 1413
+  note "Kill any Zhevra. Loot it for a Fresh Zhevra Carcass"
+  collect 10338 x1 @56.01,43.4 map 1413 -- Collect Fresh Zhevra Carcass
+step
+  label next_53
+  zone map 1413
+  use 10338 @59.71,30.33 map 1413 -- Use the [Fresh Zhevra Carcass] at the dead tree to summon Ishamuhale. Kill and loot him for his Fang
+  note "The Carcass only has a 30 minute duration!"
+  collect 5101 x1 quest 882.1 -- Ishamuhale's Fang (1)
+step
+  only Rogue
+  when onquest 2381
+  zone map 1413
+  note "Talk to Wrenix"
+  turnin 2381 -- Turn in Plundering the Plunderers
+step
+  when onquest 888
+  label BootyTurnin
+  zone map 1413
+  note "Talk to Gazlowe"
+  turnin 888 -- Turn in Stolen Booty
+step
+  when onquest 865
+  turnin 865 -- Turn in Raptor Horns
+step
+  when onquest 1069
+  turnin 1069 -- Turn in Deepmoss Spider Eggs
+step
+  when onquest 821
+  turnin 821 -- Turn in Chen's Empty Keg
+step
+  zone map 1413
+  note "Talk to Sputtervalve, Mebok and Drohn"
+  turnin 1094 -- Turn in Further Instructions
+  accept 1095 -- Accept Further Instructions
+  accept 822 -- Accept Chen's Empty Keg
+  goto 62.27,38.39 map 1413 r 8 optional
+step
+  only Warrior
+  zone map 1413
+  note "Talk to Grazlix"
+  vendor 3493 -- Buy [Mighty Chain Pants] from him if it's up
+step
+  zone map 1413
+  note "Talk to Vexspindle"
+  vendor 3492 -- Buy [Wolf Bracers] from him if they're up
+step
+  only Warrior
+  when has 4800
+  along until FlytoXroads
+  zone map 1413
+  note "Equip the [Mighty Chain Pants]"
+  use 4800 @62.05,39.41 map 1413 optional
+step
+  along until FlytoXroads
+  zone map 1413
+  note "Equip the [Wolf Bracers]"
+  use 4794 @62.05,39.41 map 1413 optional
+step
+  label FlytoXroads
+  along until XroadsHS2
+  zone map 1413
+  goto 63.09,37.16 map 1413 r 8 optional
+  note "Talk to Bragok"
+  fly "Crossroads" optional -- Fly to The Crossroads
+step
+  when onquest 899
+  turnin 899 -- Turn in Consumed by Hatred
+step
+  when onquest 880
+  turnin 880 -- Turn in Altered Beings
+step
+  zone map 1413
+  note "Talk to Mankrik and Tonga"
+  accept 1489 -- Accept Hamuul Runetotem
+  accept 3301 -- Accept Mura Runetotem
+  goto 52.26,31.93 map 1413 r 8 optional
+step
+  label XroadsHS2
+  zone map 1413
+  note "Talk to Innkeeper Boorand"
+  sethome "Crossroads" @51.99,29.89 map 1413 -- Set your Hearthstone to Crossroads
+  vendor 3934 only !Rogue,!Warrior -- Sell your junk, then restock on food and water if necessary
+  vendor 3934 only Rogue -- Sell your junk, then restock on food if necessary
+  vendor 3934 only Warrior -- Sell your junk, then restock on food if necessary
+step
+  only Shaman
+  when !zone "Orgrimmar"
+  along until next_70
+  zone map 1413
+  goto 51.5,30.34 map 1413 r 8
+  note "Talk to Devrak"
+  fly "Orgrimmar" -- Fly to Orgrimmar
+step
+  only Shaman
+  label next_70
+  zone map 1454
+  note "Talk to Searn"
+  accept 1528 -- Accept Call of Water
+step
+  only Shaman
+  zone map 1454
+  goto 38.82,36.41 map 1454 r 8
+  note "Talk to Kardris"
+  learn 2645 "your class spells"
+step
+  only Warlock
+  when !zone "Orgrimmar"
+  along until next_73
+  zone map 1413
+  goto 51.5,30.34 map 1413 r 8
+  note "Talk to Devrak"
+  fly "Orgrimmar" -- Fly to Orgrimmar
+step
+  only Warlock
+  label next_73
+  zone map 1454
+  note "Talk to Gan'rul"
+  train 5875 -- Train your class spells
+  accept 1507 -- Accept Devourer of Souls
+step
+  only Warlock
+  when !turnedin 1507
+  zone map 1454
+  note "Talk to Kurgul and buy [Grimoire of Torment (Rank 2)]"
+  collect 16346 x1 @47.54,46.75 map 1454 -- Grimoire of Torment (Rank 2)
+step
+  only Warlock
+  when onquest 1507
+  turnin 1507 -- Turn in Devourer of Souls
+step
+  only Warlock
+  zone map 1454
+  note "Talk to Cazul"
+  accept 1508 -- Accept Blind Cazul
+step
+  only Warlock
+  zone map 1454
+  goto 44.16,48.45 map 1454 r 8
+  note "Talk to Katis. Buy a [Burning Wand] from her"
+  collect 5210 x1 @44.16,48.45 map 1454 optional -- Collect Burning Wand (1)
+step
+  only Warlock
+  when onquest 1508
+  turnin 1508 -- Turn in Blind Cazul
+step
+  only Warlock
+  zone map 1454
+  note "Talk to Zankaja"
+  accept 1509 -- Accept News of Dogran
+step
+  only Warlock
+  when zone "Orgrimmar"
+  label ZepptoSTVforDM
+  along until TurninDogran
+  zone map 1454
+  goto 45.13,63.89 map 1454 r 8
+  note "Talk to Doras"
+  fly "Crossroads" -- Fly to The Crossroads
+step
+  only Warlock
+  when onquest 1509
+  turnin 1509 -- Turn in News of Dogran
+step
+  only Warlock
+  label TurninDogran
+  zone map 1413
+  note "Talk to Gazrog"
+  accept 1510 -- Accept News of Dogran
+step
+  only Shaman
+  when zone "Orgrimmar"
+  along until CallofWater01
+  zone map 1454
+  goto 45.13,63.89 map 1454 r 8
+  note "Talk to Doras"
+  fly "Ratchet" -- Fly to Ratchet
+step
+  only Shaman
+  when onquest 1528
+  turnin 1528 -- Turn in Call of Water
+step
+  only Shaman
+  label CallofWater01
+  zone map 1413
+  note "Talk to Islen"
+  accept 1530 -- Accept Call of Water
+step
+  only Shaman
+  along until next_116
+  zone map 1413
+  goto 63.09,37.16 map 1413 r 8 optional
+  note "Talk to Bragok"
+  fly "Crossroads" optional -- Fly to The Crossroads
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid
+  label next_116
+  along until next_117
+  zone map 1413
+  goto 63.09,37.16 map 1413 r 8 optional
+  note "Talk to Bragok"
+  fly "Crossroads" optional -- Fly to The Crossroads
+step
+  when turnedin 848
+  when !turnedin 853
+  label next_117
+  zone map 1413
+  note "Talk to Helbrim"
+  note "Helbrim Starts a 45-minute timed quest"
+  accept 853 -- Accept Apothecary Zamah
+step
+  when onquest 853
+  along until ZamahTurnin
+  note "You are on a timed quest, don't go afk. It will get turned 20-30 minutes after pick-up"
+step
+  only Shaman
+  along until TribesTurnin
+  zone map 1413
+  goto 63.09,37.16 map 1413 r 8 optional
+  note "Talk to Bragok"
+  fly "Camp Taurajo" optional -- Fly to Camp Taurajo
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid
+  along until TribesTurnin
+  zone map 1413
+  goto 51.5,30.34 map 1413 r 8 optional
+  note "Talk to Devrak"
+  fly "Camp Taurajo" optional -- Fly to Camp Taurajo
+step
+  when !turnedin 5052
+  zone map 1413
+  note "Kill Bristleback Quilboars. Loot them for a [Blood Shard]"
+  collect 5075 x1 @44.55,59.27 map 1413 -- Blood Shard (1)
+step
+  when onquest 878
+  turnin 878 -- Turn in Tribes at War
+step
+  label TribesTurnin
+  zone map 1413
+  note "Talk to Mangletooth"
+  accept 5052 -- Accept Blood Shards of Agamaggan
+  turnin 5052 -- Turn in Blood Shards of Agamaggan
+step
+  along until Thunderhawk
+  zone map 1413
+  goto 44.55,59.27 map 1413 r 1
+  note "Talk to Mangletooth"
+  note "Use your [Blood Shards] to get buffs. Save at least 4 of them for later"
+  note "Make sure to turn off any autocomplete functions from addons such as Questie or Leatrix Plus for this!"
+step
+  label IshamuhaleTurnin
+  zone map 1413
+  note "Talk to Jorn Skyseer"
+  turnin 882 -- Turn in Ishamuhale
+  accept 907 -- Accept Enraged Thunder Lizards
+step
+  when has 5099
+  zone map 1413
+  goto 44.85,59.14 map 1413 r 8 optional
+  note "Talk to Jorn Skyseer"
+  accept 883 -- Accept Lakota'Mani
+  turnin 883 -- Turn in Lakota'mani
+step
+  loop
+  zone map 1413
+  goto 44.32,60.84 map 1413 r 1
+  goto 44.32,60.84 map 1413 r 60
+  goto 44.25,61.78 map 1413 r 60
+  goto 44.07,62.63 map 1413 r 60
+  goto 44.52,63.1 map 1413 r 60
+  goto 45.67,63.59 map 1413 r 60
+  goto 46.94,62.21 map 1413 r 60
+  goto 47.42,60.57 map 1413 r 60
+  goto 47.92,60.55 map 1413 r 60
+  goto 48.32,60.23 map 1413 r 60
+  goto 49.14,61.07 map 1413 r 60
+  goto 49.85,61.13 map 1413 r 60
+  goto 49.63,59.75 map 1413 r 60
+  goto 49.21,59.33 map 1413 r 60
+  goto 48.12,58.59 map 1413 r 60
+  note "Kill Thunder Lizards. Loot them for their Blood"
+  collect 5143 x3 quest 907.1 -- Thunder Lizard Blood (3)
+step
+  label Thunderhawk
+  zone map 1413
+  note "Talk to Jorn"
+  turnin 907 -- Turn in Enraged Thunder Lizards
+  accept 913 -- Accept Cry of the Thunderhawk
+step
+  only Shaman
+  along until CallofWater2
+  zone map 1413
+  goto 43.42,77.41 map 1413 r 60 -- Travel south toward Brine
+step
+  only Shaman
+  along until CallofWater2
+  note "Kill a Thunderhawk. Loot it for its Wings"
+  collect 5164 x1 quest 913.1 -- Thunderhawk Wings (1)
+step
+  only Shaman
+  when onquest 1530
+  turnin 1530 -- Turn in Call of Water
+step
+  only Shaman
+  label CallofWater2
+  zone map 1413
+  note "Talk to Brine"
+  accept 1535 -- Accept Call of Water
+step
+  only Shaman
+  zone map 1413
+  use 7766 @44.22,76.75 map 1413 -- Fill your [Empty Brown Waterskin] in the watering hole below Brine's hut
+  collect 7769 x1 quest 1535.1 -- Filled Brown Waterskin (1)
+step
+  only Shaman
+  when onquest 1535
+  turnin 1535 -- Turn in Call of Water
+step
+  only Shaman
+  zone map 1413
+  note "Talk to Brine"
+  accept 1536 -- Accept Call of Water
+step
+  only Shaman
+  along until ThunderhawkTurnin
+  zone map 1413
+  goto 44.85,59.14 map 1413 r 200 -- Travel back toward Camp Taurajo
+step
+  loop
+  zone map 1413
+  goto 44.83,63.12 map 1413 r 1
+  goto 44.83,63.12 map 1413 r 60
+  goto 46.57,61.33 map 1413 r 60
+  goto 48.99,58.69 map 1413 r 60
+  goto 45.45,56.69 map 1413 r 60
+  goto 43.41,56.96 map 1413 r 60
+  note "Kill a Thunderhawk. Loot it for its Wings"
+  collect 5164 x1 quest 913.1 -- Thunderhawk Wings (1)
+step
+  label ThunderhawkTurnin
+  zone map 1413
+  note "Talk to Jorn Skyseer"
+  turnin 913 -- Turn in Cry of the Thunderhawk
+  accept 874 -- Accept Mahren Skyseer
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Undead,Skyborne
+  when has 5075 x10
+  note "Talk to Mangletooth"
+  note "Skip this step if you have the Thunder Bluff flight path"
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Undead,Skyborne
+  along until next_139
+  zone map 1412
+  goto 68.68,60.34 map 1412 r 120 optional
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Undead,Skyborne
+  label next_139
+  along until DeathDUPpickup
+  zone map 1456
+  goto 31.78,65.92 map 1456 r 8
+  note "If you have the Thunder Bluff flight path, fly there instead"
+step
+  only Tauren
+  along until DeathDUPpickup
+  zone map 1413
+  goto 44.45,59.16 map 1413 r 8
+  note "Talk to Omusa"
+  fly "Thunder Bluff" -- Fly to Thunder Bluff
+step
+  only Warrior,Undead
+  zone map 1456
+  goto 40.93,62.73 map 1456 r 8
+  note "Talk to Ansekhwa"
+  learn 199 "Two-Handed Maces"
+  learn 227 "Staves"
+step
+  only Rogue
+  zone map 1456
+  goto 40.93,62.73 map 1456 r 8
+  note "Talk to Ansekhwa"
+  learn 198 "Maces"
+step
+  only Rogue
+  when !turnedin 6544
+  zone map 1456
+  note "Talk to Kuruk. Buy [Deadly Throwing Axe] from him"
+  collect 3137 x200 @38.95,64.62 map 1456 -- Deadly Throwing Axe (200)
+step
+  zone map 1456
+  goto 47.12,57.88 map 1456 r 8
+  note "Talk to Chesmu"
+step
+  zone map 1456
+  note "Talk to Innkeeper Pala"
+  sethome "Thunder Bluff" @45.83,64.74 map 1456 -- Set your Hearthstone to Thunder Bluff
+step
+  along until next_147
+  zone map 1456
+  goto 28.14,32.97 map 1456 r 40 optional
+  goto 28.51,28.95 map 1456 r 10 optional -- Travel to the Spirit Rise and enter the pools of vision
+step
+  label next_147
+  along until DeathDUPpickup
+  zone map 1456
+  note "Talk to Clarice"
+  accept 264 -- Accept Until Death Do Us Part
+step
+  when onquest 853
+  label ZamahTurnin
+  zone map 1456
+  note "Talk to Zamah"
+  turnin 853 -- Turn in Apothecary Zamah
+step
+  only Priest
+  zone map 1456
+  goto 25.31,15.24 map 1456 r 8 optional
+  note "Talk to Miles"
+  accept 5644 only Undead,Priest -- Accept Devouring Plague
+  accept 5642 only Troll,Priest -- Accept Shadowguard
+  train 3044 -- Train your class spells
+step
+  only Mage
+  when level>=20
+  when level<22
+  zone map 1456
+  goto 22.74,14.48 map 1456 r 8
+  note "Talk to Shymm"
+  learn 12051 "your class spells"
+step
+  only Mage
+  when level>=22
+  zone map 1456
+  goto 22.74,14.48 map 1456 r 8
+  note "Talk to Shymm"
+  learn 2138 "your class spells"
+step
+  label DeathDUPpickup
+  note "Review this source step manually."
+step
+  only Shaman
+  when level>=20
+  when level<22
+  zone map 1456
+  goto 23.64,18.74 map 1456 r 8
+  note "Talk to Tigor"
+  learn 2645 "your class spells"
+step
+  only Shaman
+  when level>=22
+  zone map 1456
+  goto 23.64,18.74 map 1456 r 8
+  note "Talk to Tigor"
+  learn 8498 "your class spells"
+step
+  along until next_158
+  skill "First Aid" 80 -- Create [Heavy Linen Bandages] until your skill is 80 or higher
+step
+  label next_158
+  zone map 1456
+  goto 29.68,21.19 map 1456 r 8
+  note "Talk to Pand"
+  note "Skip this step if you did not have enough [Linen Cloth] to reach 80 skill"
+  learn 3277 "Wool Bandage"
+  learn 7934 "Anti-Venom" only Rogue
+step
+  only Rogue
+  when has 1475
+  zone map 1456
+  note "Create [Anti-Venom] if you found any [Small Venom Sacs]"
+  note "Save them for later"
+  collect 6452 x1 @29.68,21.19 map 1456 -- Anti Venom
+step
+  along until next_161
+  zone map 1456
+  goto 69.88,30.9 map 1456 r 80 -- Travel to the Elder Rise
+step
+  label next_161
+  zone map 1456
+  note "Talk to Hamuul"
+  turnin 1489 -- Turn in Hamuul Runetotem
+  accept 1490 -- Accept Nara Wildmane
+step
+  zone map 1456
+  note "Talk to Nara"
+  turnin 1490 -- Turn in Nara Wildmane
+step
+  only Druid
+  zone map 1456
+  note "Talk to Turak"
+  train 3033 -- Train your class spells
+  accept 27 -- Accept A Lesson to Learn
+step
+  only Druid
+  when !zone "Moonglade"
+  along until next_166
+  note "Cast [Teleport: Moonglade]"
+step
+  only Druid
+  when onquest 27
+  turnin 27 -- Turn in A Lesson to Learn
+step
+  only Druid
+  label next_166
+  zone map 1450
+  note "Talk to Dendrite"
+  accept 28 -- Accept Trial of the Lake
+step
+  only Druid
+  along until next_168
+  zone map 1450
+  goto 54.3,55.68 map 1450 r 8
+  collect 15877 x1 @54.3,55.68 map 1450 optional -- Loot the Bauble Container at the bottom of the lake for a[Shrine Bauble]
+  note "Do not go underwater until you arive right above the Bauble"
+step
+  only Druid
+  label next_168
+  zone map 1450
+  goto 36.4,42.01 map 1450 r 8 optional
+  note "Use the [Shrine Bauble] at the Shrine of Remulos"
+  interact 15885 quest 28.1 -- Complete the Trial of the Lake
+  use 15877 @36.4,42.01 map 1450
+step
+  only Druid
+  when onquest 28
+  turnin 28 -- Turn in Trial of the Lake
+step
+  only Druid
+  zone map 1450
+  note "Talk to Tajarri"
+  accept 30 -- Accept Trial of the Sea Lion
+step
+  only Druid
+  along until FlyXroads2
+  zone map 1450
+  hearth "Thunder Bluff" optional -- Hearth to Thunder Bluff
+  use 6948 @36.52,40.1 map 1450 optional
+step
+  only Druid
+  when !zone "Thunder Bluff"
+  along until FlyXroads2
+  zone map 1450
+  goto 44.29,45.88 map 1450 r 8 optional
+  note "Talk to Bunthen"
+  fly "Thunder Bluff" optional -- Fly to Thunder Bluff
+step
+  only Hunter
+  along until HunterTraining2
+  zone map 1456
+  goto 61.31,78.25 map 1456 r 60 -- Travel to the Hunter Rise
+step
+  only Hunter
+  when level>=20
+  when level<22
+  zone map 1456
+  goto 59.13,86.91 map 1456 r 8
+  note "Talk to Urek"
+  learn 5118 "your class spells"
+step
+  only Hunter
+  when level>=22
+  label HunterTraining2
+  zone map 1456
+  goto 59.13,86.91 map 1456 r 8
+  note "Talk to Urek"
+  learn 5118 "your class spells"
+step
+  only Hunter
+  zone map 1456
+  goto 54.07,84.02 map 1456 r 8
+  note "Talk to Hesuwa"
+  learn 24494 "your pet spells"
+step
+  only Warrior
+  along until next_178
+  zone map 1456
+  goto 61.31,78.25 map 1456 r 60 -- Travel to the Hunter Rise
+step
+  only Warrior
+  label next_178
+  zone map 1456
+  note "Talk to Torm"
+  learn 845 "your class spells"
+  accept 1823 -- Accept Speak with Ruga
+step
+  only Rogue
+  zone map 1456
+  goto 53,56.63 map 1456 r 8
+  note "Talk to Kard. Buy a [Longsword] from him."
+  collect 923 x1 @53,56.63 map 1456 optional -- Collect Longsword (1)
+step
+  only Rogue
+  when has 923
+  when level>=21
+  along until KayaLives
+  zone map 1456
+  note "Equip the [Longsword]"
+  use 923 @53,56.63 map 1456 optional
+step
+  only Warrior
+  along until next_182
+  note "If it's cheaper you can buy a green weapon from the auction house instead"
+step
+  only Shaman
+  along until next_182
+  note "If it's cheaper you can buy a green weapon from the auction house instead"
+step
+  only Warrior
+  label next_182
+  zone map 1456
+  goto 53.21,58.25 map 1456 r 8
+  note "Talk to Etu. Buy a [Long Staff] from him"
+  collect 928 x1 @53.21,58.25 map 1456 optional -- Collect Long Staff (1)
+step
+  only Warrior
+  when has 928
+  along until KayaLives
+  zone map 1456
+  note "Equip the [Long Staff]"
+  use 928 @53.21,58.25 map 1456 optional
+step
+  only Shaman
+  zone map 1456
+  goto 53.21,58.25 map 1456 r 8
+  note "Talk to Etu. Buy a [Long Staff] from him"
+  collect 928 x1 @53.21,58.25 map 1456 optional -- Collect Long Staff (1)
+step
+  only Shaman
+  when has 928
+  along until KayaLives
+  zone map 1456
+  note "Equip the [Long Staff]"
+  use 928 @53.21,58.25 map 1456 optional
+step
+  only Hunter
+  zone map 1456
+  goto 46.98,45.69 map 1456 r 8
+  note "Talk to Kuna. Buy a [Heavy Recurve Bow] from her"
+  collect 3027 x1 @46.98,45.69 map 1456 optional -- Collect Heavy Recurve Bow (1)
+step
+  only Hunter
+  when has 3027
+  along until KayaLives
+  zone map 1456
+  note "Equip the [Heavy Recurve Bow]"
+  use 3027 @46.98,45.69 map 1456 optional
+step
+  only Hunter
+  when !turnedin 493
+  zone map 1456
+  goto 46.98,45.69 map 1456 r 8
+  note "Talk to Kuna"
+  note "Buy [Sharp Arrows] from her"
+  collect 2515 x1600 @46.98,45.69 map 1456 only Hunter -- Sharp Arrow (1600)
+step
+  when !zone "The Barrens"
+  label FlyXroads2
+  zone map 1456
+  goto 47,49.82 map 1456 r 8
+  note "Talk to Tal"
+  fly "Crossroads" -- Fly to Crossroads
+step
+  when turnedin 851
+  along until next_192
+  zone map 1413
+  goto 45.66,40.34 map 1413 r 120 -- Travel to the Lushwater Oasis
+step
+  when turnedin 851
+  label next_192
+  zone map 1413
+  goto 45.64,38.16 map 1413 r 1 optional
+  goto 45.64,38.16 map 1413 r 50 optional
+  goto 45.84,37.86 map 1413 r 50 optional
+  goto 45.78,37.41 map 1413 r 50 optional
+  goto 45.95,37.11 map 1413 r 50 optional
+  goto 45.93,36.91 map 1413 r 50 optional
+  goto 46.14,36.85 map 1413 r 50 optional
+  goto 46.19,36.88 map 1413 r 50 optional
+  goto 46.28,36.86 map 1413 r 50 optional
+  goto 46.46,37.17 map 1413 r 50 optional
+  goto 46.58,37.31 map 1413 r 50 optional
+  goto 46.63,37.93 map 1413 r 50 optional
+  goto 46.75,38.39 map 1413 r 50 optional
+  goto 47.27,38.98 map 1413 r 50 optional
+  goto 47.47,39.27 map 1413 r 50 optional
+  goto 48.2,39.57 map 1413 r 50 optional
+  goto 48.4,39.58 map 1413 r 50 optional
+  goto 48.6,39.51 map 1413 r 50 optional
+  goto 48.54,39.96 map 1413 r 50 optional
+  goto 48.58,40.52 map 1413 r 50 optional
+  goto 48.27,40.82 map 1413 r 50 optional
+  goto 48.06,40.82 map 1413 r 50 optional
+  goto 47.86,41.13 map 1413 r 50 optional
+  goto 47.49,41.33 map 1413 r 50 optional
+  goto 47.34,41.61 map 1413 r 50 optional
+  goto 47.22,41.64 map 1413 r 50 optional
+  goto 46.85,42.05 map 1413 r 50 optional
+  goto 46.56,41.93 map 1413 r 50 optional
+  goto 46.27,41.76 map 1413 r 50 optional
+  goto 46.03,41.15 map 1413 r 50 optional
+  goto 45.86,41.32 map 1413 r 50 optional
+  goto 46.09,40.98 map 1413 r 50 optional
+  goto 46.08,40.68 map 1413 r 50 optional
+  goto 45.71,40.56 map 1413 r 50
+  note "Find & kill Hezrul Bloodmark. Loot him for his Head"
+  note "Hezrul patrols around the lake"
+  note "Hezrul's Head"
+step
+  when complete 852
+  when onquest 852
+  label next_195
+  zone map 1413
+  note "Talk to Regthar"
+  turnin 852 -- Turn in Hezrul Bloodmark
+step
+  when complete 855
+  when onquest 855
+  zone map 1413
+  note "Talk to Regthar"
+  turnin 855 -- Turn in Centaur Bracers
+step
+  when onquest 855
+  note "Abandon Centaur Bracers if you haven't completed it at this point"
+  note "Abandon Centaur Bracers"
+step
+  label SerenaKill
+  zone map 1413
+  goto 39.16,12.16 map 1413 r 8
+  note "Kill Serena Bloodfeather. Loot her for her Head"
+  note "Serena's Head (1)"
+step
+  when onquest 876
+  turnin 876 -- Turn in Serena Bloodfeather
+step
+  label ApothecaryPickup
+  zone map 1413
+  note "Talk to Darsok and Korran"
+  accept 1060 -- Accept Letter to Jin'Zil
+  accept 868 -- Accept Egg Hunt
+  goto 51.1,29.6 map 1413 r 8 optional
+step
+  when onquest 1062
+  turnin 1062 -- Turn in Goblin Invaders
+step
+  when onquest 6523
+  turnin 6523 -- Turn in Protect Kaya
+step
+  label next_250
+  zone map 1413
+  note "Talk to Seereth and Makaba"
+  accept 1063 -- Accept The Elder Crone
+  accept 1068 -- Accept Shredding Machines
+  turnin 6629 -- Turn in Kill Grundig Darkcloud
+  accept 6401 -- Accept Kaya's Alive
+  goto 35.19,27.79 map 1413 r 8 optional
+step
+  along until next_252
+  zone map 1442
+  goto 82.57,98.63 map 1442 r 60 optional
+  goto 80.1,98.2 map 1442 r 40 optional
+  goto 77.17,98.61 map 1442 r 40 optional -- Follow the path on the left upward
+step
+  label next_252
+  zone map 1442
+  note "Talk to Jin'Zil"
+  turnin 1060 -- Turn in Letter to Jin'Zil
+  accept 1058 -- Accept Jin'Zils Forest Magic
+step
+  only Warlock
+  when onquest 1510
+  turnin 1510 -- Turn in News of Dogran
+step
+  only Warlock
+  zone map 1442
+  note "Talk to Ken'zigla"
+  accept 1511 -- Accept Ken'zigla's Draught
+step
+  zone map 1442
+  note "Talk to Xen'Zilla"
+  turnin 6461 -- Turn in Blood Feeders
+step
+  label KayaLives
+  zone map 1442
+  note "Talk to Tammra"
+  turnin 6401 -- Turn in Kaya's Alive
+step
+  when !turnedin 6442
+  zone map 1442
+  goto 47.47,62.13 map 1442 r 8
+  note "Talk to Innkeeper Jayka"
+  note "Do NOT set your hearthstone!"
+  vendor 7731 only !Rogue,!Warrior -- Sell your junk, then restock on food and water if necessary
+  vendor 7731 only Rogue -- Sell your junk, then restock on food if necessary
+  vendor 7731 only Warrior -- Sell your junk, then restock on food if necessary
+step
+  when !turnedin 6442
+  zone map 1442
+  goto 47.61,61.58 map 1442 r 8
+  note "Talk to Jeeda on the second floor of the inn"
+  vendor 4083 only !Warrior -- Buy [Healing Potions] from her if they're up
+  vendor 4083 only Warrior -- Buy [Healing Potions] and [Liferoot] from her if they're up
+step
+  along until InDeepTrouble2
+  zone map 1442
+  goto 49.38,61.68 map 1442 r 30 optional
+  goto 48.92,62.71 map 1442 r 30 optional
+  goto 48.11,63.88 map 1442 r 30 optional
+  goto 47.21,64.05 map 1442 r 30 optional -- Run up the path to the right
+step
+  label InDeepTrouble2
+  zone map 1442
+  note "Talk to Tsunaman"
+  accept 6562 -- Accept Trouble in the Deeps
+step
+  label next_268
+  along until next_274
+  zone map 1442
+  goto 58.99,62.6 map 1442 r 100 -- Travel to Windshear Crag
+step
+  label next_274
+  zone map 1442
+  note "Talk to Ziz"
+  turnin 1095 -- Turn in Further Instructions
+step
+  loop
+  zone map 1442
+  goto 61.03,52.32 map 1442 r 50
+  goto 60.33,51.68 map 1442 r 50
+  goto 59.66,52.14 map 1442 r 50
+  goto 59.81,53.51 map 1442 r 50
+  goto 60.98,54.06 map 1442 r 50
+  goto 61.1,54.68 map 1442 r 50
+  goto 61.58,55.1 map 1442 r 50
+  goto 62.32,56.11 map 1442 r 50
+  goto 62.99,56.25 map 1442 r 50
+  goto 63.72,56.8 map 1442 r 50
+  goto 64.37,56.47 map 1442 r 50
+  goto 65.14,57.02 map 1442 r 50
+  goto 65.74,57.2 map 1442 r 50
+  goto 66.41,56.31 map 1442 r 50
+  goto 66.94,56.25 map 1442 r 50
+  goto 67.77,55.97 map 1442 r 50
+  goto 68.52,56.04 map 1442 r 50
+  goto 69.76,56.7 map 1442 r 50
+  goto 70.52,56.22 map 1442 r 50
+  goto 70.82,55.25 map 1442 r 50
+  goto 59.66,52.14 map 1442 r 1
+  note "Kill XT:9. It patrols the southern side of the river"
+  note "This quest does not need to be completed now"
+  kill 4074 x1 quest 1068.2 -- XT:9 (1)
+step
+  loop
+  zone map 1442
+  goto 67.18,46.87 map 1442 r 50
+  goto 66.53,46.95 map 1442 r 50
+  goto 65.72,45.09 map 1442 r 50
+  goto 63.73,45.02 map 1442 r 50
+  goto 63.72,45.92 map 1442 r 50
+  goto 63.43,46.57 map 1442 r 50
+  goto 64.43,46.13 map 1442 r 50
+  goto 64.72,46.63 map 1442 r 50
+  goto 64.82,47.72 map 1442 r 50
+  goto 65.11,48.31 map 1442 r 50
+  goto 65.98,48.67 map 1442 r 50
+  goto 66.24,49.65 map 1442 r 50
+  goto 66.65,49.58 map 1442 r 50
+  goto 66.88,48.95 map 1442 r 50
+  goto 68.41,49.58 map 1442 r 50
+  goto 69.45,46.56 map 1442 r 50
+  goto 70.22,48.62 map 1442 r 50
+  goto 70.95,48.49 map 1442 r 50
+  goto 71.41,45.54 map 1442 r 50
+  goto 71.25,43.45 map 1442 r 50
+  goto 64.82,47.23 map 1442 r 50
+  goto 64.82,47.23 map 1442 r 1
+  note "Kill XT:4. It patrols the northern side of the river"
+  note "This quest does not need to be completed now"
+  kill 4073 x1 quest 1068.1 -- XT:4 (1)
+step
+  label next_278
+  along until next_283
+  zone map 1442
+  goto 78.29,42.51 map 1442 r 30 -- Enter the Talondeep Path
+step
+  label next_283
+  along until ZoramFP
+  zone map 1440
+  goto 39.45,55.29 map 1440 r 50 optional
+  goto 36.47,57.15 map 1440 r 50 optional
+  goto 34.56,54.13 map 1440 r 30 optional
+  goto 32.14,52.12 map 1440 r 60 optional
+  goto 28.64,48.1 map 1440 r 50 optional
+  goto 26.34,45.44 map 1440 r 50 optional
+  goto 25.4,39 map 1440 r 70 optional
+  goto 11.96,34.28 map 1440 r 80 optional -- Travel toward the Zoram'gar Outpost
+  note "Make sure to avoid Astranaar guards en route. Follow the waypoint for safety"
+step
+  zone map 1440
+  goto 10.86,26.99 map 1440 r 50 optional
+  goto 11.23,25.73 map 1440 r 50 optional
+  goto 11.83,25.75 map 1440 r 50 optional
+  goto 12.51,24.09 map 1440 r 50 optional
+  goto 14.18,24.03 map 1440 r 50 optional
+  goto 14.85,23.08 map 1440 r 50 optional
+  goto 14.13,20.77 map 1440 r 50 optional
+  goto 14.73,19.56 map 1440 r 50 optional
+  goto 14.59,17.9 map 1440 r 50 optional
+  goto 13.38,16.39 map 1440 r 50 optional
+  goto 13.62,14.48 map 1440 r 50 optional
+  goto 14.15,15.31 map 1440 r 50 optional
+  goto 15.88,15.42 map 1440 r 50 optional
+  goto 15.4,16.96 map 1440 r 50 optional
+  goto 15.22,18.81 map 1440 r 50 optional
+  goto 15.33,20.78 map 1440 r 50 optional
+  goto 15.33,22.51 map 1440 r 50 optional
+  goto 15.32,24.9 map 1440 r 50 optional
+  goto 14.76,25.52 map 1440 r 50 optional
+  goto 14.62,26.49 map 1440 r 50 optional
+  goto 14.52,28.25 map 1440 r 50 optional
+  goto 13.55,29.36 map 1440 r 50 optional
+  goto 12.41,29.15 map 1440 r 50 optional
+  goto 11.22,31.04 map 1440 r 50 optional
+  goto 10.38,29.6 map 1440 r 50 optional
+  goto 11.01,28.57 map 1440 r 50 optional
+  level 21 -- Grind to level 21
+step
+  when !turnedin 6442
+  label ZoramFP
+  zone map 1440
+  note "Talk to Andruk"
+  getfp "Zoram'gar Outpost" @12.24,33.8 map 1440 -- Get the Zoram'gar Outpost flight path
+step
+  zone map 1440
+  note "Talk to Je'neu, Karang, Mitsuwa and Marukai"
+  turnin 6562 -- Turn in Trouble in the Deeps
+  accept 216 -- Accept Between a Rock and a Thistlefur
+  accept 6462 -- Accept Troll Charm
+  accept 6442 -- Accept Naga at the Zoram Strand
+  goto 11.69,34.9 map 1440 r 8 optional
+step
+  loop
+  zone map 1440
+  goto 11.01,28.57 map 1440 r 1
+  goto 10.86,26.99 map 1440 r 50
+  goto 11.23,25.73 map 1440 r 50
+  goto 11.83,25.75 map 1440 r 50
+  goto 12.51,24.09 map 1440 r 50
+  goto 14.18,24.03 map 1440 r 50
+  goto 14.85,23.08 map 1440 r 50
+  goto 14.13,20.77 map 1440 r 50
+  goto 14.73,19.56 map 1440 r 50
+  goto 14.59,17.9 map 1440 r 50
+  goto 13.38,16.39 map 1440 r 50
+  goto 13.62,14.48 map 1440 r 50
+  goto 14.15,15.31 map 1440 r 50
+  goto 15.88,15.42 map 1440 r 50
+  goto 15.4,16.96 map 1440 r 50
+  goto 15.22,18.81 map 1440 r 50
+  goto 15.33,20.78 map 1440 r 50
+  goto 15.33,22.51 map 1440 r 50
+  goto 15.32,24.9 map 1440 r 50
+  goto 14.76,25.52 map 1440 r 50
+  goto 14.62,26.49 map 1440 r 50
+  goto 14.52,28.25 map 1440 r 50
+  goto 13.55,29.36 map 1440 r 50
+  goto 12.41,29.15 map 1440 r 50
+  goto 11.22,31.04 map 1440 r 50
+  goto 10.38,29.6 map 1440 r 50
+  goto 11.01,28.57 map 1440 r 50
+  note "Kill Wrathtail Nagas. Loot them for their Heads"
+  collect 5490 x20 quest 6442.1 -- Wrathtail Head (20)
+step
+  label next_293
+  zone map 1440
+  goto 10.86,26.99 map 1440 r 50 optional
+  goto 11.23,25.73 map 1440 r 50 optional
+  goto 11.83,25.75 map 1440 r 50 optional
+  goto 12.51,24.09 map 1440 r 50 optional
+  goto 14.18,24.03 map 1440 r 50 optional
+  goto 14.85,23.08 map 1440 r 50 optional
+  goto 14.13,20.77 map 1440 r 50 optional
+  goto 14.73,19.56 map 1440 r 50 optional
+  goto 14.59,17.9 map 1440 r 50 optional
+  goto 13.38,16.39 map 1440 r 50 optional
+  goto 13.62,14.48 map 1440 r 50 optional
+  goto 14.15,15.31 map 1440 r 50 optional
+  goto 15.88,15.42 map 1440 r 50 optional
+  goto 15.4,16.96 map 1440 r 50 optional
+  goto 15.22,18.81 map 1440 r 50 optional
+  goto 15.33,20.78 map 1440 r 50 optional
+  goto 15.33,22.51 map 1440 r 50 optional
+  goto 15.32,24.9 map 1440 r 50 optional
+  goto 14.76,25.52 map 1440 r 50 optional
+  goto 14.62,26.49 map 1440 r 50 optional
+  goto 14.52,28.25 map 1440 r 50 optional
+  goto 13.55,29.36 map 1440 r 50 optional
+  goto 12.41,29.15 map 1440 r 50 optional
+  goto 11.22,31.04 map 1440 r 50 optional
+  goto 10.38,29.6 map 1440 r 50 optional
+  goto 11.01,28.57 map 1440 r 50 optional
+  level 23 -- Grind to level 23
+step
+  zone map 1440
+  note "Talk to Marukai"
+  turnin 6442 -- Turn in Naga at the Zoram Strand
+step
+  zone map 1440
+  note "Talk to Karang"
+  accept 216 -- Accept Between a Rock and a Thistlefur
+step
+  when !zone "Thunder Bluff"
+  along until flytoORG
+  zone map 1440
+  hearth "Thunder Bluff" optional -- Hearth to Thunder Bluff
+  use 6948 @11.9,34.53 map 1440 optional
+step
+  when !zone "Thunder Bluff"
+  along until flytoORG
+  zone map 1440
+  goto 12.24,33.8 map 1440 r 8 optional
+  note "Talk to Andruk"
+  fly "Thunder Bluff" optional -- Fly to Thunder Bluff
+step
+  zone map 1456
+  goto 47.12,57.88 map 1456 r 8
+  note "Talk to Chesmu"
+step
+  along until next_306
+  zone map 1456
+  goto 69.88,30.9 map 1456 r 80 -- Travel to the Elder Rise
+step
+  label next_306
+  zone map 1456
+  note "Talk to Magatha"
+  note "Wait for the RP to finish"
+  turnin 1063 -- Turn in The Elder Crone
+  accept 1064 -- Accept Forsaken Aid
+step
+  zone map 1456
+  note "Talk to Zamah"
+  turnin 1064 -- Turn in Forsaken Aid
+  accept 1065 -- Accept Journey to Tarren Mill
+step
+  only Warlock
+  along until flytoORG
+  zone map 1456
+  goto 47,49.82 map 1456 r 8 optional
+  note "Talk to Tal"
+  fly "Camp Taurajo" optional -- Fly to Camp Taurajo
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  when !zone "Orgrimmar"
+  zone map 1456
+  goto 47,49.82 map 1456 r 8
+  note "Talk to Tal"
+  fly "Orgrimmar" -- Fly to Orgrimmar
+step
+  only Warlock
+  when onquest 1511
+  turnin 1511 -- Turn in Ken'zigla's Draught
+step
+  only Warlock
+  zone map 1413
+  note "Talk to Logmar"
+  accept 1515 -- Accept Dogran's Captivity
+step
+  only Warlock
+  when onquest 1515
+  turnin 1515 -- Turn in Dogran's Captivity
+step
+  only Warlock
+  zone map 1413
+  note "Talk to Dogran"
+  accept 1512 -- Accept Love's Gift
+step
+  only Warlock
+  when zone "The Barrens"
+  zone map 1413
+  goto 44.45,59.16 map 1413 r 8
+  note "Talk to Omusa"
+  fly "Orgrimmar" -- Fly to Orgrimmar
+step
+  label flytoORG
+  note "Review this source step manually."
+step
+  only Warlock
+  when onquest 1512
+  turnin 1512 -- Turn in Love's Gift
+step
+  only Warlock
+  zone map 1454
+  note "Talk to Gan'rul"
+  accept 1513 -- Accept The Binding
+step
+  only Warlock
+  along until next_316
+  zone map 1454
+  note "Use [Dogran's Pendant] at the Summoning Circle"
+  use 6626 @48.25,45.27 map 1454
+step
+  only Warlock
+  label next_316
+  zone map 1454
+  note "Kill the Summoned Succubus"
+  kill 5677 x1 quest 1513.1 -- Kill Summoned Succubus (1)
+  use 6626 @49.66,50.15 map 1454
+step
+  only Warlock
+  when onquest 1513
+  zone map 1454
+  note "Talk to Gan'rul"
+  turnin 1513 -- Turn in The Binding
+step
+  only Warlock
+  when level>=22
+  when level<24
+  zone map 1454
+  goto 48.62,46.95 map 1454 r 8
+  note "Talk to Mirket"
+  learn 6202 "your class spells"
+step
+  only Warlock
+  when level>=24
+  zone map 1454
+  goto 48.62,46.95 map 1454 r 8
+  note "Talk to Mirket"
+  learn 6223 "your class spells"
+step
+  only Rogue
+  along until next_321
+  zone map 1454
+  note "Talk to Kareth. Buy a [Jambiya] from him if you do not have a dagger"
+  collect 2207 x1 @45.64,55.95 map 1454 -- Collect Jambiya (1)
+step
+  only Rogue
+  label next_321
+  zone map 1454
+  note "Talk to Shenthul"
+  learn 921 "Pick Pocket"
+  learn 8676 "Ambush"
+  learn 1943 "Rupture"
+  learn 1856 "Vanish"
+  learn 1725 "Distract"
+  learn 1785 "Stealth Rank 2"
+  accept 2460 -- Accept The Shattered Salute
+step
+  only Rogue
+  zone map 1454
+  note "After Shenthul does his salute, type /Salute while targeting him"
+  kill 3401 x1 quest 2460.1 -- Shattered Salute Performed (1)
+step
+  only Rogue
+  when onquest 2460
+  turnin 2460 -- Turn in The Shattered Salute
+step
+  only Rogue
+  zone map 1454
+  note "Talk to Shenthul"
+  accept 2458 -- Accept Deep Cover
+step
+  only Rogue
+  when !turnedin 2479
+  zone map 1454
+  note "Talk to Rekkul. Buy [Flash Powder] from him"
+  collect 2928 x20 @42.1,49.49 map 1454 -- Collect Dust of Decay (20)
+  collect 3371 x20 @42.1,49.49 map 1454 -- Collect Empty Vial (20)
+  collect 5140 x20 @42.1,49.49 map 1454 -- Collect Flash Powder (20)
+step
+  when onquest 3923
+  turnin 3923 -- Turn in Rilli Greasygob
+step
+  zone map 1454
+  note "Talk to Rilli"
+  accept 3924 -- Accept Samophlange Manual
+step
+  only Priest
+  zone map 1454
+  goto 44.16,48.45 map 1454 r 8
+  note "Talk to Katis. Buy a [Burning Wand] from her"
+  collect 5210 x1 @44.16,48.45 map 1454 optional -- Collect Burning Wand (1)
+step
+  only Warlock
+  zone map 1454
+  goto 44.16,48.45 map 1454 r 8
+  note "Talk to Katis. Buy a [Burning Wand] from her"
+  collect 5210 x1 @44.16,48.45 map 1454 optional -- Collect Burning Wand (1)
+step
+  only Mage
+  when level>=22
+  when level<24
+  zone map 1454
+  goto 38.36,85.54 map 1454 r 8
+  note "Talk to Pephredo"
+  learn 2138 "your class spells"
+step
+  only Mage
+  when level>=24
+  zone map 1454
+  goto 38.36,85.54 map 1454 r 8
+  note "Talk to Pephredo"
+  learn 2121 "your class spells"
+step
+  only Mage
+  zone map 1454
+  goto 38.66,85.41 map 1454 r 8
+  note "Talk to Thuul at the top of the hut"
+  learn 3567 "Teleport: Orgrimmar"
+step
+  only Priest,Troll
+  when onquest 5642
+  turnin 5642 -- Turn in Shadowguard
+step
+  only Priest,Troll
+  zone map 1454
+  note "Talk to Ur'kyo"
+  train 6018 -- Train your class spells
+step
+  only Priest,Undead
+  when level>=22
+  when level<24
+  zone map 1454
+  goto 35.59,87.8 map 1454 r 8
+  note "Talk to Ur'kyo"
+  learn 8103 "your class spells"
+step
+  only Priest,Undead
+  when level>=24
+  zone map 1454
+  goto 35.59,87.8 map 1454 r 8
+  note "Talk to Ur'kyo"
+  learn 3747 "your class spells"
+step
+  only Rogue
+  when !zone "The Barrens"
+  along until MissionProbable
+  zone map 1454
+  goto 26.22,61.58 map 1454 r 80 optional
+  goto 15.66,63.33 map 1454 r 30 optional
+  goto 18.03,60.51 map 1454 r 50 optional -- Enter The Barrens through the western Exit
+step
+  only Druid
+  when !zone "The Barrens"
+  along until MissionProbable
+  zone map 1454
+  goto 26.22,61.58 map 1454 r 80 optional
+  goto 15.66,63.33 map 1454 r 30 optional
+  goto 18.03,60.51 map 1454 r 50 optional -- Enter The Barrens through the western Exit
+step
+  only Rogue
+  along until MissionProbable
+  zone map 1413
+  goto 57.63,7.48 map 1413 r 120 -- Travel toward The Sludge Fen
+step
+  only Druid
+  along until MissionProbable
+  zone map 1413
+  goto 57.63,7.48 map 1413 r 120 -- Travel toward The Sludge Fen
+step
+  only Druid
+  when !turnedin 3924
+  zone map 1413
+  note "Loot the Strange Lockbox in the water for the [Half Pendant of Aquatic Agility]"
+  collect 15883 x1 @56.67,8.32 map 1413 -- Half Pendant of Aquatic Agility (1)
+step
+  only Rogue
+  along until next_337
+  zone map 1413
+  note "Target Taskmaster Fizzule, then use your [Flare Gun] TWICE and type /Salute"
+  note "Be careful! Do NOT approach him until he becomes friendly or he will attack you!"
+  use 8051 @55.7,5.89 map 1413
+step
+  only Rogue
+  when onquest 2458
+  turnin 2458 -- Turn in Deep Cover
+step
+  only Rogue
+  label next_337
+  zone map 1413
+  note "Talk to Taskmaster Fizzule"
+  accept 2478 -- Accept Mission: Possible But Not Probable
+step
+  only Rogue
+  label MissionProbable
+  note "Review this source step manually."
+step
+  only Druid
+  note "Review this source step manually."
+step
+  only Rogue
+  zone map 1413
+  note "Use [Pick Pocket] on Foreman Silixiz for his Tower Key"
+  collect 8072 x1 quest 2478.5 -- Silixiz's Tower Key (1)
+step
+  only Rogue
+  along until roguetowerq
+  note "Each mob here will take increased damage to certain abilities"
+  note "Use [Ambush] on the Mutated Venture Co. Drones"
+  note "Use [Rupture] on the Venture Co. Patrollers"
+  note "Use [Eviscerate] on the Venture Co. Lookouts once (1 combo point)"
+step
+  only Rogue
+  when onquest 2478
+  label roguetowerq
+  zone map 1413
+  note "Run into the Rogue Tower and kill Drones, Patrollers and Lookouts"
+  kill 7310 x2 quest 2478.1 @54.72,5.74 map 1413 -- Mutated Venture Co. Drone (2)
+  kill 7308 x2 quest 2478.3 @54.72,5.74 map 1413 -- Venture Co. Patroller (2)
+  kill 7307 x2 quest 2478.2 @54.72,5.74 map 1413 -- Venture Co. Lookout (2)
+step
+  only Rogue
+  zone map 1413
+  note "At the top of the tower you'll find Gallywix. Loot him for his Head"
+  note "Use [Ambush] to reduce his HP to half. Use [Gouge] to restore energy and use [Evasion]"
+  note "Remember to use a Potion and [Thistle Tea] if needed"
+  collect 8074 x1 quest 2478.4 -- Gallywix's Head (1)
+step
+  only Rogue
+  when onquest 2478
+  zone map 1413
+  note "Use your lock picking to open Gallywix's Lockbox & loot the Mixture."
+  collect 8073 x1 quest 2478.6 @54.77,5.57 map 1413 -- Cache of Zanzil's Altered Mixture (1)
+step
+  only Rogue
+  along until SamophlangePages
+  zone map 1413
+  goto 61.33,4.21 map 1413 r 120 -- Travel toward the Boulder Lode Mine
+step
+  only Druid
+  along until SamophlangePages
+  zone map 1413
+  goto 61.33,4.21 map 1413 r 120 -- Travel toward the Boulder Lode Mine
+step
+  only Warrior,Paladin,Hunter,Priest,Shaman,Mage,Warlock,Druid
+  when !zone "The Barrens"
+  when onquest 3924
+  zone map 1454
+  goto 26.22,61.58 map 1454 r 80 optional
+  goto 15.66,63.33 map 1454 r 30 optional
+  goto 18.03,60.51 map 1454 r 50 -- Enter The Barrens through the Western Exit
+step
+  only Druid
+  when !zone "The Barrens"
+  when onquest 3924
+  zone map 1454
+  goto 26.22,61.58 map 1454 r 80 optional
+  goto 15.66,63.33 map 1454 r 30 optional
+  goto 18.03,60.51 map 1454 r 50 -- Enter The Barrens through the Western Exit
+step
+  along until SamophlangePages
+  zone map 1454
+  note "Kill Venture Co. Enforcers and Venture Co. Overseers. Loot them for Samophlange Manual Pages"
+  collect 11148 x5 @18.03,60.51 map 1454 -- Samophlange Manual Page (5)
+step
+  label SamophlangePages
+  zone map 1413
+  note "Kill Boss Copperplug in the back of the mine. Loot him for the Samophlange Manual Cover"
+  collect 11147 x1 @59.99,4.13 map 1413 -- Samophlange Manual Cover (1)
+step
+  label SamophlangePages2
+  loop
+  zone map 1413
+  goto 61.51,4.43 map 1413 r 1
+  goto 61.46,4.5 map 1413 r 40
+  goto 61.06,3.63 map 1413 r 40
+  goto 61.63,3.37 map 1413 r 40
+  goto 62.14,3.52 map 1413 r 40
+  goto 61.94,4.53 map 1413 r 40
+  goto 61.85,5.37 map 1413 r 40
+  goto 61.44,5.56 map 1413 r 40
+  goto 61.17,5.05 map 1413 r 40
+  goto 61.51,4.43 map 1413 r 40
+  note "Kill Venture Co. Enforcers and Venture Co. Overseers. Loot them for Samophlange Manual Pages"
+  collect 11148 x5 -- Samophlange Manual Page (5)
+step
+  when complete 3924
+  zone map 1413
+  zone map 1464
+  note "Click the [Samophlange Manual Cover] to create the Manual"
+  collect 11149 x1 quest 3924.1 @61.51,4.43 map 1413 -- Samophlange Manual
+  use 6626 @61.51,4.43 map 1413
+  note "ste"
+  goto 56.81,45.47 map 1464 r 8 optional
+step
+  only Rogue
+  when onquest 2478
+  turnin 2478 -- Turn in Mission: Possible But Not Probable
+step
+  only Rogue
+  zone map 1454
+  note "Talk to Shenthul"
+  accept 2479 -- Accept Hinott's Assistance
+step
+  only Rogue
+  when !turnedin 2479
+  zone map 1454
+  note "Talk to Rekkul. Buy [Dust of Decay] and [Empty Vials] from him"
+  collect 2928 x20 @42.1,49.49 map 1454 -- Collect Dust of Decay (20)
+  collect 3371 x20 @42.1,49.49 map 1454 -- Collect Empty Vial (20)
+step
+  only Shaman
+  when level>=22
+  when level<24
+  zone map 1454
+  goto 38.82,36.41 map 1454 r 8
+  note "Talk to Kardris"
+  learn 8498 "your class spells"
+step
+  only Shaman
+  when level>=24
+  zone map 1454
+  goto 38.82,36.41 map 1454 r 8
+  note "Talk to Kardris"
+  learn 905 "your class spells"
+step
+  zone map 1454
+  note "Talk to Rilli"
+  turnin 3924 -- Turn in Samophlange Manual
+step
+  only Warrior,Troll
+  zone map 1454
+  goto 81.52,19.6 map 1454 r 8
+  note "Talk to Hanashi"
+  learn 197 "Two-Handed Axes"
+step
+  only Warrior
+  when level>=22
+  when level<24
+  zone map 1454
+  goto 79.91,31.36 map 1454 r 8
+  note "Talk to Grezz"
+  learn 6192 "your class spells"
+step
+  only Warrior
+  when level>=24
+  zone map 1454
+  goto 79.91,31.36 map 1454 r 8
+  note "Talk to Grezz"
+  learn 5308 "your class spells"
+step
+  only Hunter
+  when level>=22
+  when level<24
+  zone map 1454
+  goto 66.05,18.52 map 1454 r 8
+  note "Talk to Ormak"
+  learn 14323 "your class spells"
+step
+  only Hunter
+  when level>=24
+  zone map 1454
+  goto 66.05,18.52 map 1454 r 8
+  note "Talk to Ormak"
+  learn 14262 "your class spells"
+step
+  only Hunter
+  when level>=24
+  zone map 1454
+  goto 66.34,14.83 map 1454 r 8
+  note "Talk to Xao'tsu"
+  learn 24558 "your pet spells"
+step
+  only Rogue
+  when !turnedin 6544
+  zone map 1454
+  note "Talk to Trak'gen. Buy [Deadly Throwing Axe] from him"
+  collect 3137 x200 @48.12,80.52 map 1454 -- Deadly Throwing Axe (200)
+step
+  when !zone "Tirisfal Glades"
+  when !zone "Undercity"
+  label next_375
+  zone map 1411
+  goto 50.8,13.8 map 1411 r 40 -- Go up the Zeppelin Tower

@@ -1,0 +1,541 @@
+guide rxp-free/19-21-darkshore-ashenvale-a2a8d77f
+title "19-21 Darkshore/Ashenvale"
+levels 19-21
+zone map 1440
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+class Hunter
+step
+  when turnedin 731
+  when onquest 951
+  zone map 1439
+  note "Talk to Onu"
+  turnin 951 -- Turn in Mathystra Relics
+step
+  when turnedin 731
+  zone map 1439
+  note "Talk to Kerlonian Evershade to start the escort"
+  note "Skip this step if he is not there. It can take up to 25 minutes for him to respawn"
+  note "This is a timed quest, you have to escort him to his bag in 20 minutes"
+  accept 5321 -- Accept The Sleeper Has Awakened
+step
+  when onquest 5321
+  when turnedin 731
+  zone map 1439
+  note "Open Kerlonian's Chest. Loot it for the [Horn of Awakening]"
+  collect 13536 x1 quest 5321.1 -- Horn of Awakening (1)
+step
+  when onquest 729
+  label prospector
+  along
+  zone map 1439
+  note "Talk to Prospector Remtravel"
+  note "You may have to wait for him to respawn or for others to finish the escort"
+  turnin 729 -- Turn in The Absent Minded Prospector
+step
+  when !turnedin 731
+  zone map 1439
+  goto 35.719954,83.690005 map 1439 r 8
+  note "Talk to Prospector Remtravel"
+  note "This will start an escort"
+  accept 731 optional -- Accept The Absent Minded Prospector
+  note "This quest is VERY difficult. Skip this step if you're unable to find a group or solo it"
+step
+  when onquest 729
+  zone map 1439
+  note "Talk to Prospector Remtravel"
+  note "You may have to wait for him to respawn or for others to finish the escort"
+  turnin 729 -- Turn in The Absent Minded Prospector
+step
+  when onquest 731
+  note "Escort Prospector Remtravel through the Excavation"
+  note "This quest is VERY difficult. Skip this step if you're unable to find a group or solo it"
+  complete 731 optional
+step
+  along until TheryluneEnd
+  zone map 1439
+  note "Kill Twilight Disciples and Twilight Thugs. Loot them for the [Book: The Powers Below]"
+  note "*Be careful as Twilight Thugs can [Disarm] you for 6 seconds" only Rogue
+  note "*Be careful as Twilight Thugs can [Disarm] you for 6 seconds" only Paladin
+  note "*Be careful as Twilight Thugs can [Disarm] you for 6 seconds" only Warrior
+  note "*Be careful as Twilight Disciples cast [Renew] and a 3 second [Heal]"
+  collect 5352 x1 @35.719954,83.690005 map 1439 optional -- Book: The Powers Below (1)
+step
+  zone map 1439
+  note "Talk to Therylune. This will start an escort"
+  note "Skip this step if she is not there"
+  accept 945 -- Accept Therylune's Escape
+step
+  when onquest 945
+  label TheryluneEnd
+  zone map 1439
+  goto 40.510031,87.090082 map 1439 r 8
+  note "Escort Therylune out of The Masters Glaive"
+  complete 945 -- Escort Therylune away from the Master's Glaive (1)
+step
+  zone map 1439
+  note "Click the Beached Sea Creature"
+  accept 4733 -- Accept Beached Sea Creature
+  note "This quest can be VERY difficult. Engage the Murlocs 1 by 1, otherwise you may aggro multiple at the same time"
+step
+  zone map 1439
+  note "Click the Beached Sea Turtle"
+  accept 4732 -- Accept Beached Sea Turtle
+step
+  zone map 1439
+  note "Click the Beached Sea Turtle"
+  accept 4731 -- Accept Beached Sea Turtle
+step
+  zone map 1439
+  note "Click the Beached Sea Creature"
+  accept 4730 -- Accept Beached Sea Creature
+step
+  when onquest 1003
+  zone map 1439
+  note "Kill Grizzled Thistle Bears. Loot them for their Scalps"
+  note "Be careful as they cast [Ravage] an instant attack dealing 20-40 damage and knocking you down for 2 seconds"
+  collect 5414 x4 quest 1003.1 @37.999954,83.550081 map 1439 -- Grizzled Scalp (4)
+step
+  when onquest 1003
+  zone map 1439
+  note "Click the Buzzbox 525 on the ground"
+  turnin 1003 -- Turn in Buzzbox 525
+step
+  when onquest 993
+  turnin 993 -- Turn in A Lost Master
+step
+  when onquest 993
+  zone map 1439
+  note "Talk to Volcor"
+  note "Clear the furbolgs near the cave before talking to him"
+  accept 994 -- Accept Escape Through Force
+step
+  when turnedin 993
+  zone map 1439
+  note "Talk to Volcor"
+  note "Clear the furbolgs near the cave before talking to him"
+  accept 994 -- Accept Escape Through Force
+step
+  when turnedin 993
+  zone map 1439
+  note "Talk to Volcor"
+  note "Clear the furbolgs near the cave before talking to him"
+  accept 994 -- Accept Escape Through Force
+step
+  when turnedin 993
+  zone map 1439
+  goto 43.594,84.489 map 1439 r 1 optional
+  goto 42.576,82.897 map 1439 r 1 optional
+  goto 43.594,84.489 map 1439 r 15 optional
+  goto 42.576,82.897 map 1439 r 15 optional
+  goto 42.004,81.688 map 1439 r 8
+  note "Escort Volcor"
+  note "After crossing the 3rd torch after exiting the cave, a Furlbog will spawn from both sides and attack Volcor"
+  note "Halfway to the road, a Furlbogs will spawn from both sides and attack Volcor"
+  complete 994 -- Help Volcor to the road (1)
+step
+  when onquest 951
+  zone map 1439
+  note "Talk to Onu"
+  turnin 951 -- Turn in Mathystra Relics
+step
+  when !has 13536
+  zone map 1439
+  note "Talk to Kerlonian Evershade to start the escort"
+  note "Skip this step if he is not there. It can take up to 25 minutes for him to respawn"
+  note "This is a timed quest, you have to escort him to his bag in 20 minutes"
+  accept 5321 -- Accept The Sleeper Has Awakened
+step
+  when onquest 5321
+  when !has 13536
+  zone map 1439
+  note "Open Kerlonian's Chest. Loot it for the [Horn of Awakening]"
+  collect 13536 x1 quest 5321.1 -- Horn of Awakening (1)
+step
+  when onquest 5321
+  label Kerlonian
+  zone map 1439
+  note "Escort Kerlonian to his bag in Darkshore"
+  use 13536 @41.759802,90.01909 map 1439 -- Use the [Horn of Awakening] whenever Kerlonian falls asleep next to him
+  note "Avoid running on the main road as much as possible. Enemies will only spawn if you're on the road"
+  note "Escort Kerlonian Evershade to Maestra's Post"
+step
+  label AshenStart
+  along until tower
+  zone map 1440
+  goto 29.699998,13.599922 map 1440 r 8
+step
+  along until next_24
+  zone map 1440
+  note "Kill and loot Ghostpaw Runners you encounter while questing. Keep any [Lean Wolf Flanks] you get. You will need 10 for a cooking quest later"
+  collect 1015 x10 @29.699998,13.599922 map 1440
+step
+  when complete 5321
+  label next_24
+  zone map 1440
+  note "Talk to Liladris Moonriver"
+  turnin 5321 -- Turn in The Sleeper Has Awakened
+step
+  when onquest 967
+  turnin 967 -- Turn in The Tower of Althalaxx
+step
+  label tower
+  zone map 1440
+  note "Talk to Delgren the Purifier"
+  accept 970 -- Accept The Tower of Althalaxx
+step
+  when level>=20
+  zone map 1440
+  note "Talk to Orendil Broadleaf"
+  accept 1010 -- Accept Bathran's Hair
+step
+  zone map 1440
+  note "Kill Dark Strand Cultists, Dark Strand Adepts, Dark Strand Enforcers and Dark Strand Excavators. Loot them for the Glowing Soul Gem"
+  note "Be patient, this item has a low droprate"
+  collect 5366 x1 quest 970.1 @31.24994,30.699889 map 1440
+step
+  when onquest 1010
+  zone map 1440
+  note "Open the Plant Bundles on the ground. Loot them for Bathran's Hairs"
+  note "They look like small brown sacks. They can be hard to see"
+  collect 5437 x5 quest 1010.1 @31.889998,22.530003 map 1440
+step
+  zone map 1440
+  goto 31.24994,30.699889 map 1440 r 8
+  note "XP checkpoint: 20-1650 Keep killing Dark Strand mobs until you have enough xp to reach level 20"
+step
+  zone map 1440
+  note "Talk to Delgren the Purifier"
+  turnin 970 -- Turn in The Tower of Althalaxx
+step
+  zone map 1440
+  goto 31.889998,22.530003 map 1440 r 8
+  level 20 -- Grind to level 20
+step
+  zone map 1440
+  note "Talk to Orendil Broadleaf"
+  accept 1010 -- Accept Bathran's Hair
+step
+  when onquest 1010
+  zone map 1440
+  note "Open the Plant Bundles on the ground. Loot them for Bathran's Hairs"
+  note "They look like small brown sacks. They can be hard to see"
+  collect 5437 x5 quest 1010.1 @31.889998,22.530003 map 1440
+step
+  zone map 1440
+  note "Talk to Orendil Broadleaf"
+  turnin 1010 -- Turn in Bathran's Hair
+  accept 1020 -- Accept Orendil's Cure
+step
+  zone map 1440
+  note "Talk to Delgren the Purifier"
+  turnin 970 -- Turn in The Tower of Althalaxx
+  accept 973 -- Accept The Tower of Althalaxx
+step
+  along until Astranaar
+  zone map 1440
+  note "Kill and loot Ghostpaw Runners you encounter while questing. Keep any [Lean Wolf Flanks] you get. You will need 10 for a cooking quest later"
+  collect 1015 x10 @26.189998,38.690003 map 1440
+step
+  when complete 945
+  zone map 1440
+  note "Talk to Therysil"
+  turnin 945 -- Turn in Therylune's Escape
+step
+  only Hunter
+  zone map 1440
+  goto 20.412138,50.90906 map 1440 r 30 -- Head up the ramp to the north-west
+step
+  along until Astranaar
+  zone map 1440
+  note "Save up to 6 Gooey Spider Legs looted from the Spiders in the zone for later"
+  collect 2251 x6 @20.412138,50.90906 map 1440 optional -- Gooey Spider Legs
+step
+  only Hunter
+  along
+  zone map 1440
+  note "Talk to Bolyun"
+  train 3698 -- Train your pet skills
+step
+  only Hunter
+  zone map 1440
+  note "Talk to Alenndaar Lapidaar"
+  train 8308 -- Train your class skills
+  learn 5118 "Aspect of the Cheetah"
+step
+  label Astranaar
+  zone map 1440
+  note "Talk to Daelyshia"
+  getfp "Astranaar" @34.39994,47.999922 map 1440 -- Get the Astranaar Flight Path
+step
+  zone map 1440
+  note "Talk to Shindrell Swiftfire"
+  accept 1008 -- Accept The Zoram Strand
+step
+  zone map 1440
+  note "Talk to Sentinel Thenysil"
+  accept 1070 -- Accept On Guard in Stonetalon
+step
+  zone map 1440
+  note "Talk to Faldreas Goeth'Shael"
+  accept 1056 -- Accept Journey to Stonetalon Peak
+step
+  zone map 1440
+  note "Talk to Raene Wolfrunner"
+  accept 991 -- Accept Raene's Cleansing
+  accept 1054 -- Accept Culling the Threat
+step
+  label HCHunterNoHS
+  note "Review this source step manually."
+step
+  only Hunter,NightElf
+  zone map 1440
+  note "Talk to Innkeeper Kimlya"
+  sethome "Astranaar" @36.989998,49.220085 map 1440 -- Set your Hearthstone to Astranaar
+step
+  label HCHunterNoHSStart
+  note "Review this source step manually."
+step
+  zone map 1440
+  note "Talk to Maliynn"
+  vendor 3961 -- Buy food and water if necessary
+step
+  zone map 1440
+  note "Talk to Pelturas Whitemoon"
+  turnin 1020 -- Turn in Orendil's Cure
+  accept 1033 -- Accept Elune's Tear
+step
+  only Hunter
+  zone map 1440
+  note "Talk to Haljan Oakheart"
+  vendor 3962 -- Restock on Ammo if necessary
+step
+  along until ElunesTear
+  zone map 1440
+  note "Save up to 6 Gooey Spider Legs looted from the Spiders in the zone. You will need them for a quest later"
+  collect 2251 x6 @34.799998,50.800052 map 1440 optional -- Gooey Spider Legs
+step
+  zone map 1440
+  note "Loot Elune's Tear on the ground"
+  collect 5493 x1 quest 1033.1
+step
+  label ElunesTear
+  zone map 1440
+  note "Talk to Pelturas Whitemoon"
+  turnin 1033 -- Turn in Elune's Tear
+  accept 1034 -- Accept The Ruins of Stardust
+step
+  zone map 1440
+  note "Loot the Stardust Covered Bushes for the Handful of Stardust"
+  note "Their spawn locations are scattered throughout the island"
+  collect 5494 x5 quest 1034.1 @33.299998,67.789971 map 1440
+step
+  along until next_58
+  zone map 1440
+  goto 31.66994,64.240052 map 1440 r 15 optional -- Head to the base of the mountain
+  goto 31.210056,61.599922 map 1440 r 15 optional -- Run straight north while climbing the mountain
+step
+  label next_58
+  along until next_59
+  zone map 1440
+  goto 27.499941,60.760117 map 1440 r 8 -- Climb the hill next to the big tree to the right of the Fire Scar Shrine entrance
+  note "Jump over the tree root and hug the right to avoid aggroing mobs"
+step
+  when onquest 973
+  label next_59
+  zone map 1440
+  note "Kill Ilkrud Magthrull. Loot him for his Tome"
+  note "Ilkrud Magthrull will cast [Ilkrud's Guardians] which is a 5 second long cast and will summon 2 Voidwalkers. Stop this cast if you're able to"
+  note "Clear an exit path if needed so you can reset them along with the Succubus if needed. You may skip this and do it at level 23 if you wish"
+  collect 5533 x1 quest 973.1
+step
+  when complete 973
+  zone map 1440
+  note "Talk to Delgren the Purifier"
+  turnin 973 -- Turn in The Tower of Althalaxx
+step
+  label HCHunterEnd
+  note "Review this source step manually."
+step
+  along until StatuetteStart
+  zone map 1440
+  note "Save up to 6 Gooey Spider Legs looted from the Spiders in the zone. You will need them for a quest later"
+  collect 2251 x6 @26.189998,38.690003 map 1440 optional -- Gooey Spider Legs
+step
+  along until StatuetteStart
+  zone map 1440
+  note "Kill and loot Ghostpaw Runners you encounter while questing. Keep any [Lean Wolf Flanks] you get. You will need 10 for a cooking quest later"
+  collect 1015 x10 @26.189998,38.690003 map 1440
+step
+  label StatuetteStart
+  zone map 1440
+  note "Talk to Talen"
+  accept 1007 -- Accept The Ancient Statuette
+step
+  along until nagas
+  zone map 1440
+  note "Kill Wrathtail Nagas. Loot them for their Heads"
+  note "Don't go out of your way to complete this yet"
+  collect 5490 x20 quest 1008.1 @14.789999,31.289938 map 1440
+step
+  zone map 1440
+  note "Loot the Ancient Statuette on the ground"
+  collect 5424 x1 quest 1007.1 @14.200057,20.639922 map 1440
+step
+  zone map 1440
+  note "Talk to Talen"
+  turnin 1007 -- Turn in The Ancient Statuette
+  accept 1009 -- Accept Ruuzel
+step
+  zone map 1440
+  note "Kill Ruuzel. Loot her for the Ring of Zoram"
+  note "Ruuzel patrols the island with a Wrathtail Myrmidon and Wrathtail Sea Witch. Kill one of them and then reset them if needed"
+  note "If you have any [Bombs]/[Grenades] you can also use them to split pull Ruuzel"
+  note "Lady Vespia is a rarespawn that can also drop the Ring of Zoram if you see her"
+  collect 5445 x1 quest 1009.1 @6.5280343,13.361093 map 1440
+step
+  label nagas
+  zone map 1440
+  note "Kill Ruuzel. Loot her for the Ring of Zoram"
+  note "Ruuzel patrols the island with a Wrathtail Myrmidon and Wrathtail Sea Witch. Kill one of them and then reset them if needed"
+  note "Lady Vespia is a rarespawn that can also drop the Ring of Zoram if you see her"
+  collect 5445 x1 quest 1009.1 @6.5280343,13.361093 map 1440
+step
+  zone map 1440
+  note "Kill Wrathtail Nagas. Loot them for their Heads"
+  collect 5490 x20 quest 1008.1 @14.459999,17.150101 map 1440
+step
+  zone map 1440
+  note "Talk to Talen"
+  turnin 1009 -- Turn in Ruuzel
+step
+  along until SoulGemStart
+  zone map 1440
+  note "Save up to 6 Gooey Spider Legs looted from the Spiders in the zone. You will need them for a quest later"
+  collect 2251 x6 @14.789999,31.289938 map 1440 optional -- Gooey Spider Legs
+step
+  along until SoulGemStart
+  zone map 1440
+  note "Kill and loot Ghostpaw Runners you encounter while questing. Keep any [Lean Wolf Flanks] you get. You will need 10 for a cooking quest later"
+  collect 1015 x10 @14.789999,31.289938 map 1440
+step
+  label SoulGemStart
+  zone map 1440
+  note "Talk to Teronis' Corpse"
+  turnin 991 -- Turn in Raene's Cleansing
+  accept 1023 -- Accept Raene's Cleansing
+step
+  along until GlowingGem
+  zone map 1440
+  note "Keep any [Murloc Fins] you might loot. You will need 8 for a quest later"
+  collect 1468 x8 @20.309999,42.329938 map 1440 -- Murloc Fin(8)
+step
+  label GlowingGem
+  zone map 1440
+  note "Kill Saltspittle Murlocs. Loot them for the Glowing Gem"
+  note "Be careful as the Oracles can heal, and have a 90 damage instant-cast shock spell every few seconds"
+  collect 5463 x1 quest 1023.1 @20.309999,42.329938 map 1440
+step
+  only Hunter,Dwarf
+  hearth "Auberdine" optional -- Hearth to Auberdine
+step
+  only Hunter,NightElf
+  along until next_80
+  note "Die on the eastern side of the lake and spirit res at Astranaar"
+step
+  only Hunter,NightElf
+  label next_80
+  zone map 1440
+  goto 34.409998,47.979889 map 1440 r 8
+  note "Talk to Daelyshia"
+  fly "Darkshore" -- Fly to Darkshore
+step
+  when onquest 731
+  turnin 731 -- Turn in The Absent Minded Prospector
+step
+  zone map 1439
+  note "Talk to Archaeologist Hollee"
+  accept 741 -- Accept The Absent Minded Prospector
+step
+  along until end
+  vendor nearest -- Restock/Resupply
+step
+  when onquest 995
+  zone map 1439
+  note "Talk to Terenthis"
+  turnin 995 -- Turn in Escape Through Stealth
+step
+  when onquest 994
+  zone map 1439
+  note "Talk to Terenthis"
+  turnin 994 -- Turn in Escape Through Force
+step
+  zone map 1439
+  note "Talk to Gwennyth Bly'Leggonde"
+  turnin 4730 -- Turn in Beached Sea Creature
+  turnin 4731 -- Turn in Beached Sea Turtle
+  turnin 4732 -- Turn in Beached Sea Turtle
+  turnin 4733 -- Turn in Beached Sea Creature
+step
+  zone map 1439
+  goto 36.335985,45.573969 map 1439 r 8
+  note "Talk to Caylais Moonfeather"
+  fly "Teldrassil" -- Fly to Teldrassil
+step
+  along until next_88
+  zone map 1438
+  goto 55.889035,89.455912 map 1438 r 8
+step
+  only Hunter
+  when level>=22
+  label next_88
+  zone map 1457
+  note "Talk to Jocaste"
+  train 4146 -- Train your class spells
+step
+  zone map 1457
+  note "Talk to Garryeth"
+  goto 39.999981,42.199768 map 1457 r 8
+  note "[Elixir of Water Breathing] --5996"
+  note "[Murloc Fins] --1468"
+  note "[Gooey Spider Legs] --2251"
+  note "[Lean Wolf Flanks] --1015"
+step
+  only Hunter,Dwarf
+  when zone "Darnassus"
+  zone map 1457
+  note "Talk to Ilyenia Moonfire"
+  goto 57.559672,46.719917 map 1457 r 8
+  learn 264 "Bows"
+  learn 227 "Staves"
+step
+  when onquest 741
+  zone map 1438
+  note "Talk to Chief Archaeologist Greywhisker"
+  turnin 741 -- Turn in The Absent Minded Prospector
+  accept 942 -- Accept The Absent Minded Prospector
+step
+  when turnedin 741
+  zone map 1438
+  note "Talk to Chief Archaeologist Greywhisker"
+  accept 942 -- Accept The Absent Minded Prospector
+step
+  only Hunter,NightElf
+  label end
+  hearth "Astranaar" optional -- Hearth to Astranaar
+step
+  only Hunter,Dwarf
+  when !zone "Ashenvale"
+  when !zone "Darkshore"
+  zone map 1457
+  goto 29.466434,41.404845 map 1457 r 8
+step
+  only Hunter,Dwarf
+  when !zone "Ashenvale"
+  label end_2
+  zone map 1438
+  goto 58.389985,94.009871 map 1438 r 8
+  note "Talk to Vesprystus"
+  fly "Ashenvale" -- Fly to Ashenvale

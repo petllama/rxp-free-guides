@@ -1,0 +1,2321 @@
+guide rxp-free/1-9-zephras-isle-fa7954eb
+title "1-9 Zephras Isle"
+levels 1-9
+zone map 2521
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+next rxp-free/9-13-zephras-isle-fe470b33
+step
+  zone map 2521
+  note "Talk to Ailee Farheart::251362."
+  accept 92460 -- Accept Coming of Age
+step
+  zone map 2521
+  note "Talk to Rorian the Dayseeker::251361."
+  turnin 92460 -- Turn in Coming of Age
+  accept 92461 -- Accept Harmony in Balance
+step
+  zone map 2521
+  note "Talk to Elatrell Featherlight::251368."
+  accept 92462 -- Accept Infestation Investigation
+step
+  only Alliance
+  along until Juvenile_Vuldren
+  zone map 2521
+  goto 44.23,26 map 2521 r 40 optional
+  goto 45.24,25.9 map 2521 r 40 optional
+  goto 46.06,25.33 map 2521 r 40 optional
+  goto 46.77,27.83 map 2521 r 40 optional
+  goto 45.27,28.36 map 2521 r 40 optional
+  goto 43.84,28.39 map 2521 r 40 optional
+  goto 42.88,27.52 map 2521 r 40 optional
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid
+  along until Juvenile_Vuldren
+  zone map 2521
+  goto 44.23,26 map 2521 r 40 optional
+  goto 45.24,25.9 map 2521 r 40 optional
+  goto 46.06,25.33 map 2521 r 40 optional
+  goto 46.77,27.83 map 2521 r 40 optional
+  goto 45.27,28.36 map 2521 r 40 optional
+  goto 43.84,28.39 map 2521 r 40 optional
+  goto 42.88,27.52 map 2521 r 40 optional
+step
+  along until next_5
+  zone map 2521
+  note "Kill Juvenile Vuldrens::250873."
+  kill 250873 x8 quest 92461.1 @42.88,27.52 map 2521 -- 8/8 Juvenile Vuldren slain
+step
+  label next_5
+  zone map 2521
+  note "Kill Pesky Cirrusflies::251169."
+  note "*Prioritize them"
+  kill 251169 x8 quest 92462.1 @42.88,27.52 map 2521 -- 8/8 Pesky Cirrusfly slain
+step
+  label Juvenile_Vuldren
+  zone map 2521
+  note "Kill Juvenile Vuldrens::250873."
+  kill 250873 x8 quest 92461.1 @42.88,27.52 map 2521 -- 8/8 Juvenile Vuldren slain
+step
+  zone map 2521
+  note "Talk to Elatrell Featherlight::251368."
+  note "*Don't use [Walk on Air] as we need it soon."
+  turnin 92462 -- Turn in Infestation Investigation
+  accept 92463 -- Accept The Cirrusfly Queen
+step
+  only Warrior
+  when level>=1
+  zone map 2521
+  goto 43.66,24.13 map 2521 r 8 optional
+  note "Talk to Blademaster Ren::251964."
+  learn 6673 "Battle Shout"
+step
+  zone map 2521
+  note "Climb the spiral staircase, then Talk to Halaan Hawk Eye::257554 at the top of the tower."
+  accept 94414 -- Accept The Anchors of Zephras
+step
+  zone map 2521
+  note "Talk to Halaan Hawk Eye::257554."
+  note "*Move or press ESC to cancel."
+  kill 257554 x1 quest 94414.1 -- View the Anchor Pylon
+step
+  zone map 2521
+  note "Talk to Halaan Hawk Eye::257554."
+  note "*Move or press ESC to cancel."
+  turnin 94414 -- Turn in The Anchors of Zephras
+step
+  only Skyborne
+  zone map 2521
+  note "Talk to Myriaal Mistwake::263113."
+  accept 92474 -- Accept Falling With Style
+step
+  only Skyborne
+  label Harmony_in_Balance
+  along until next_14
+  note "Talk to Rorian the Dayseeker::251361."
+  turnin 92461 -- Turn in Harmony in Balance
+step
+  label next_14
+  only Skyborne
+  note "Talk to Rorian the Dayseeker::251361."
+  turnin 92461 -- Turn in Harmony in Balance
+step
+  only Skyborne
+  zone map 2521
+  note "Talk to Rorian the Dayseeker::251361."
+  turnin 92461 -- Turn in Harmony in Balance
+  accept 92464 -- Accept Elemental Unrest
+  accept 92481 only Mage -- Accept A Student of the Arcane
+  accept 92483 only Rogue -- Accept At Home in the Shadows
+  accept 92482 only Hunter -- Accept The Way of the Hunter
+  note "Quest 92484 excluded by Forever faction reference: .accept 92484. Accept Embracing the Elements" only Shaman
+  accept 92532 only Warrior -- Accept The Warrior's Path
+  accept 92485 only Druid -- Accept A Student of Nature
+step
+  only Skyborne
+  when complete 92474
+  when onquest 92474
+  zone map 2521
+  note "Talk to Rorian the Dayseeker::251361."
+  turnin 92474 -- Turn in Falling With Style
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Undead
+  zone map 2521
+  note "Talk to Rorian the Dayseeker::251361."
+  turnin 92461 -- Turn in Harmony in Balance
+  accept 92464 -- Accept Elemental Unrest
+  accept 92481 only Alliance,Mage -- Accept A Student of the Arcane
+  accept 92483 only Rogue -- Accept At Home in the Shadows
+  accept 92482 only Hunter -- Accept The Way of the Hunter
+  accept 92532 only Warrior -- Accept The Warrior's Path
+  accept 92485 only Druid -- Accept A Student of Nature
+step
+  only Druid
+  when onquest 92485
+  zone map 2521
+  note "Talk to Xyton Silverwind::251373."
+  turnin 92485 -- Turn in A Student of Nature
+step
+  only Druid
+  when level>=1
+  zone map 2521
+  goto 41.653,23.337 map 2521 r 8 optional
+  note "Talk to Xyton Silverwind::251373."
+  learn 1126 "Mark of the Wild"
+step
+  only Mage,Alliance
+  when onquest 92481
+  zone map 2521
+  note "Talk to Dorii Brightwhisper::251379."
+  turnin 92481 -- Turn in A Student of the Arcane
+step
+  only Mage,Alliance
+  when level>=1
+  zone map 2521
+  goto 41.55,23.67 map 2521 r 8 optional
+  note "Talk to Dorii Brightwhisper::251379."
+  learn 1459 "Arcane Intellect"
+step
+  only Hunter
+  when onquest 92482
+  zone map 2521
+  note "Talk to Tai'ree Farsight::251376."
+  turnin 92482 -- Turn in The Way of the Hunter
+step
+  only Warrior,Alliance
+  when !onquest 93552
+  when onquest 92464
+  zone map 2521
+  goto 43.37,23.99 map 2521 r 8 optional
+  note "Talk to Destin Thriceforged::251364."
+  collect 2131 x1 @43.37,23.99 map 2521 optional only Rogue -- Buy and equip a [Shortsword]
+  collect 1194 x1 @43.37,23.99 map 2521 optional only Warrior -- Buy and equip a [Bastard Sword]
+  vendor 251364 -- Vendor trash
+  note "*Don't sell [Stringy Meat] or [Linen Cloth]."
+step
+  zone map 2521
+  note "Talk to Dalia the Collector::251363."
+  accept 93552 -- Accept Harvesting Windstones
+step
+  along until next_26
+  zone map 2521
+  note "Click on the Crystals"
+  collect 258772 x15 quest 93552.1 @43.53,23.83 map 2521 -- 15/15 Windstone Cluster
+step
+  only Alliance
+  label next_26
+  zone map 2521
+  note "Talk to Falorne Fallwind::251371."
+  accept 92597 -- Accept Reading the Ley Lines
+step
+  along until next_28
+  zone map 2521
+  goto 43.82,25.41 map 2521 r 20 optional
+  goto 44.23,24.96 map 2521 r 20 optional
+  goto 44.28,27.32 map 2521 r 25 optional
+  note "Click on the Crystals"
+  note "*Expect to break about 10 stones, but you may need up to 15."
+  note "*If the area is abnormally crowded, camp one spawn point or rotate between nearby stones."
+  collect 258772 x15 quest 93552.1 @48.14,29.31 map 2521 -- 15/15 Windstone Cluster
+step
+  label next_28
+  zone map 2521
+  note "Kill Cirrusfly Queen::251404."
+  kill 251404 x1 quest 92463.1 -- Cirrusfly Queen slain
+step
+  only Alliance
+  along until next_30
+  zone map 2521
+  note "Click on the Crystals"
+  note "*Expect to break about 10 stones, but you may need up to 15."
+  note "*If the area is abnormally crowded, camp one spawn point or rotate between nearby stones."
+  collect 258772 x15 quest 93552.1 @47.19,23.57 map 2521 -- 15/15 Windstone Cluster
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid
+  along until next_30
+  zone map 2521
+  note "Click on the Crystals"
+  note "*Expect to break about 10 stones, but you may need up to 15."
+  note "*If the area is abnormally crowded, camp one spawn point or rotate between nearby stones."
+  collect 258772 x15 quest 93552.1 @47.19,23.57 map 2521 -- 15/15 Windstone Cluster
+step
+  only Alliance
+  when onquest 92464
+  turnin 92464 -- Turn in Elemental Unrest
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid
+  when onquest 92464
+  turnin 92464 -- Turn in Elemental Unrest
+step
+  only Alliance
+  label next_30
+  zone map 2521
+  note "Talk to Yala Windwatcher::249363."
+  accept 92465 -- Accept Agitators
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid
+  zone map 2521
+  note "Talk to Yala Windwatcher::249363."
+  accept 92465 -- Accept Agitators
+step
+  only Alliance
+  along until UseRacialAbility
+  zone map 2521
+  note "Click on the Crystals"
+  note "*Expect to break about 10 stones, but you may need up to 15."
+  note "*If the area is abnormally crowded, camp one spawn point or rotate between nearby stones."
+  collect 258772 x15 quest 93552.1 @47.29,21.9 map 2521 -- 15/15 Windstone Cluster
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid
+  along until UseRacialAbility
+  zone map 2521
+  note "Click on the Crystals"
+  note "*Expect to break about 10 stones, but you may need up to 15."
+  note "*If the area is abnormally crowded, camp one spawn point or rotate between nearby stones."
+  collect 258772 x15 quest 93552.1 @47.29,21.9 map 2521 -- 15/15 Windstone Cluster
+step
+  only Alliance
+  when onquest 92465
+  along until UseRacialAbility
+  zone map 2521
+  note "Kill Al'Aketh Converts::251160 and Roiling Winds::251143."
+  note "*Prioritize Roiling Winds::251143"
+  kill 251160 x7 quest 92465.1 @47.29,21.9 map 2521 -- 7/7 Al'Aketh Convert slain
+  kill 251143 x6 quest 92465.2 @47.29,21.9 map 2521 -- 6/6 Roiling Winds destroyed
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid
+  when onquest 92465
+  along until UseRacialAbility
+  zone map 2521
+  note "Kill Al'Aketh Converts::251160 and Roiling Winds::251143."
+  note "*Prioritize Roiling Winds::251143"
+  kill 251160 x7 quest 92465.1 @47.29,21.9 map 2521 -- 7/7 Al'Aketh Convert slain
+  kill 251143 x6 quest 92465.2 @47.29,21.9 map 2521 -- 6/6 Roiling Winds destroyed
+step
+  only Alliance
+  label UseRacialAbility
+  zone map 2521
+  goto 47.8,21.02 map 2521 r 30 optional
+  goto 46.9,20.82 map 2521 r 30 optional
+  goto 46.41,18.21 map 2521 r 8
+  note "Use [Read Ley Line] near the Blue Rift on the ground"
+  note "*Found throughout the zone Use [Read Ley Line] near one to gain 100% Mana and Health regeneration for 15 min instead of 15 sec."
+  interact 460002 quest 92597.1 -- Use your Read Ley Line ability near the Thendal Grove Ley Line
+step
+  only Alliance
+  along until Windstone_Cluster
+  zone map 2521
+  goto 46.85,17.68 map 2521 r 30 optional
+  goto 47.22,19 map 2521 r 30 optional
+  goto 48.3,19.06 map 2521 r 50 optional
+  goto 47.55,21.06 map 2521 r 35 optional
+  goto 46.74,20.49 map 2521 r 35 optional
+  goto 48.97,20.86 map 2521 r 40 optional
+  goto 47.41,21.14 map 2521 r 30 optional
+  goto 45.82,19.09 map 2521 r 40 optional
+  goto 47.19,23.55 map 2521 r 30 optional
+  goto 46.6,24.62 map 2521 r 30 optional
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid
+  along until Windstone_Cluster
+  zone map 2521
+  goto 46.85,17.68 map 2521 r 30 optional
+  goto 47.22,19 map 2521 r 30 optional
+  goto 48.3,19.06 map 2521 r 50 optional
+  goto 47.55,21.06 map 2521 r 35 optional
+  goto 46.74,20.49 map 2521 r 35 optional
+  goto 48.97,20.86 map 2521 r 40 optional
+  goto 47.41,21.14 map 2521 r 30 optional
+  goto 45.82,19.09 map 2521 r 40 optional
+  goto 47.19,23.55 map 2521 r 30 optional
+  goto 46.6,24.62 map 2521 r 30 optional
+step
+  only Alliance
+  along until next_36
+  zone map 2521
+  note "Click on the Crystals"
+  note "*Expect to break about 10 stones, but you may need up to 15."
+  note "*If the area is abnormally crowded, camp one spawn point or rotate between nearby stones."
+  collect 258772 x15 quest 93552.1 @46.6,24.62 map 2521 -- 15/15 Windstone Cluster
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid
+  along until next_36
+  zone map 2521
+  note "Click on the Crystals"
+  note "*Expect to break about 10 stones, but you may need up to 15."
+  note "*If the area is abnormally crowded, camp one spawn point or rotate between nearby stones."
+  collect 258772 x15 quest 93552.1 @46.6,24.62 map 2521 -- 15/15 Windstone Cluster
+step
+  only Alliance
+  when onquest 92465
+  label next_36
+  zone map 2521
+  note "Kill Al'Aketh Converts::251160 and Roiling Winds::251143."
+  note "*Loot them for the [Signet of Akir]" only Shaman
+  note "*Prioritize Roiling Winds::251143"
+  kill 251160 x7 quest 92465.1 @46.6,24.62 map 2521 -- 7/7 Al'Aketh Convert slain
+  kill 251143 x6 quest 92465.2 @46.6,24.62 map 2521 -- 6/6 Roiling Winds destroyed
+  note "Quest 92466 excluded by Forever faction reference: .complete 92466,1. 1/1 Signet of Akir" only Shaman
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid
+  when onquest 92465
+  zone map 2521
+  note "Kill Al'Aketh Converts::251160 and Roiling Winds::251143."
+  note "*Loot them for the [Signet of Akir]" only Shaman
+  note "*Prioritize Roiling Winds::251143"
+  kill 251160 x7 quest 92465.1 @46.6,24.62 map 2521 -- 7/7 Al'Aketh Convert slain
+  kill 251143 x6 quest 92465.2 @46.6,24.62 map 2521 -- 6/6 Roiling Winds destroyed
+  note "Quest 92466 excluded by Forever faction reference: .complete 92466,1. 1/1 Signet of Akir" only Shaman
+step
+  only Alliance
+  zone map 2521
+  note "Click on the Crystals"
+  note "*Expect to break about 10 stones, but you may need up to 15."
+  note "*If the area is abnormally crowded, camp one spawn point or rotate between nearby stones."
+  collect 258772 x15 quest 93552.1 @46.6,24.62 map 2521 -- 15/15 Windstone Cluster
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid
+  zone map 2521
+  note "Click on the Crystals"
+  note "*Expect to break about 10 stones, but you may need up to 15."
+  note "*If the area is abnormally crowded, camp one spawn point or rotate between nearby stones."
+  collect 258772 x15 quest 93552.1 @46.6,24.62 map 2521 -- 15/15 Windstone Cluster
+step
+  only Alliance
+  label Windstone_Cluster
+  level 3+300 -- Grind to 300+/1400xp
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid
+  level 3+300 -- Grind to 300+/1400xp
+step
+  only Alliance
+  when onquest 92465
+  turnin 92465 -- Turn in Agitators
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid
+  when onquest 92465
+  turnin 92465 -- Turn in Agitators
+step
+  only Alliance
+  zone map 2521
+  note "Talk to Yala Windwatcher::249363."
+  accept 92469 -- Accept Return to Rorian
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid
+  zone map 2521
+  note "Talk to Yala Windwatcher::249363."
+  accept 92469 -- Accept Return to Rorian
+step
+  only Alliance
+  along until Harvesting_Windstones2
+  hearth "Thendal Village" optional -- Hearth to Thendal Village
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid
+  along until Harvesting_Windstones2
+  hearth "Thendal Village" optional -- Hearth to Thendal Village
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid
+  label Harvesting_Windstones2
+  along until next_42
+  zone map 2521
+  note "Talk to Dalia the Collector::251363."
+  note "*Choose between Mining, Herbalism, or Skinning."
+  turnin 93552 -- Turn in Harvesting Windstones
+step
+  label next_42
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid
+  zone map 2521
+  note "Talk to Dalia the Collector::251363."
+  note "*Choose between Mining, Herbalism, or Skinning."
+  turnin 93552 -- Turn in Harvesting Windstones
+step
+  zone map 2521
+  note "Talk to Dalia the Collector::251363."
+  note "*Choose between Mining, Herbalism, or Skinning."
+  turnin 93552 -- Turn in Harvesting Windstones
+step
+  only Rogue
+  when onquest 92483
+  zone map 2521
+  note "Talk to Akeri Duskblade::251389."
+  turnin 92483 -- Turn in At Home in the Shadows
+step
+  only Warrior
+  when level>=4
+  when onquest 92469
+  zone map 2521
+  goto 43.66,24.14 map 2521 r 8 optional
+  note "Talk to Blademaster Ren::251964."
+  learn 100 "Charge"
+  learn 772 "Rend"
+step
+  only Warrior
+  when level>=4
+  when onquest 92532
+  zone map 2521
+  note "Talk to Blademaster Ren::251964."
+  turnin 92532 -- Turn in The Warrior's Path
+step
+  zone map 2521
+  note "Talk to Elatrell Featherlight::251368."
+  turnin 92463 -- Turn in The Cirrusfly Queen
+step
+  only Alliance
+  when onquest 92597
+  zone map 2521
+  note "Talk to Falorne Fallwind::251371."
+  turnin 92597 -- Turn in Reading the Ley Lines
+step
+  when has 247840
+  along until Turn_in_Return_to_Rorian
+  zone map 2521
+  learn 2575 "Mining for Dummies"
+  use 247840 @43.33,24.92 map 2521 -- Mining for Dummies
+step
+  when has 247841
+  along until Turn_in_Return_to_Rorian
+  zone map 2521
+  learn 2366 "Wild Harvest"
+  use 247841 @43.33,24.92 map 2521 -- Wild Harvest
+step
+  when has 247846
+  along until Turn_in_Return_to_Rorian
+  zone map 2521
+  learn 8613 "Pelt Collecting for Beginners"
+  use 247846 @43.33,24.92 map 2521 -- Pelt Collecting for Beginners
+step
+  only Warrior
+  when level>=4
+  when onquest 92469
+  zone map 2521
+  goto 43.66,24.14 map 2521 r 8 optional
+  note "Talk to Blademaster Ren::251964."
+  learn 100 "Charge"
+  learn 772 "Rend"
+step
+  only Warrior
+  when onquest 92532
+  zone map 2521
+  note "Talk to Blademaster Ren::251964."
+  turnin 92532 -- Turn in The Warrior's Path
+step
+  only Shaman
+  zone map 2521
+  goto 42.787,23.564 map 2521 r 8
+  note "Talk to Windshaper Boro::251374"
+  note "Quest 92468 excluded by Forever faction reference: .turnin 92468. Turn in Call of Earth"
+step
+  only Hunter,Alliance
+  when level>=4
+  zone map 2521
+  goto 42.467,23.731 map 2521 r 8 optional
+  note "Talk to Tai'ree Farsight::251376"
+  learn 13163 "Aspect of the Monkey"
+  learn 1978 "Serpent Sting"
+step
+  only Alliance
+  when onquest 92469
+  turnin 92469 -- Turn in Return to Rorian
+step
+  only Alliance
+  label Turn_in_Return_to_Rorian
+  zone map 2521
+  note "Talk to Rorian the Dayseeker::251361."
+  accept 92471 -- Accept Aetheen of the Gales -- Unlocks at 4
+step
+  only Skyborne,Alliance
+  when complete 92474
+  when onquest 92474
+  zone map 2521
+  note "Talk to Rorian the Dayseeker::251361."
+  turnin 92474 -- Turn in Falling With Style
+step
+  only Druid,Alliance
+  when level>=4
+  zone map 2521
+  goto 41.653,23.337 map 2521 r 8 optional
+  note "Talk to Xyton Silverwind::251373."
+  learn 8921 "Moonfire"
+  learn 774 "Rejuvenation"
+step
+  only Mage,Alliance
+  when level>=4
+  zone map 2521
+  goto 41.55,23.67 map 2521 r 8 optional
+  note "Talk to Dorii Brightwhisper::251379."
+  learn 116 "Frostbolt"
+step
+  only Alliance
+  when onquest 92471
+  turnin 92471 -- Turn in Aetheen of the Gales
+step
+  only Alliance
+  zone map 2521
+  note "Talk to Aetheen of the Gales::251366."
+  accept 92470 -- Accept Foul Matriarch
+step
+  label Aggressive_Encroachment
+  along until AggressiveVendor
+  note "Talk to Valreaa Valewind::257551."
+  accept 92473 -- Accept Aggressive Encroachment
+step
+  along
+  zone map 2521
+  note "Talk to Uualia Suncrest::251537"
+  collect 277113 x1 @42.76,24.5 map 2521 -- Buy an [Apprentice's Herb Pouch]
+step
+  along
+  zone map 2521
+  note "Talk to Uualia Suncrest::251537"
+  collect 2901 x1 @42.76,24.5 map 2521 -- Buy a [Mining Pick]
+  collect 277115 x1 @42.76,24.5 map 2521 -- Buy an [Apprentice's Mining Pack]
+step
+  along
+  zone map 2521
+  note "Talk to Uualia Suncrest::251537"
+  collect 7005 x1 @42.76,24.5 map 2521 -- Buy a [Skinning Knife]
+  collect 277114 x1 @42.76,24.5 map 2521 -- Buy an [Apprentice's Skinning Satchel]
+step
+  label AggressiveVendor
+  along
+  zone map 2521
+  note "Vendor trash"
+  note "*Don't sell [Stringy Meat] or [Linen Cloth]." only Alliance
+  collect 2512 x1200 @42.76,24.5 map 2521 only Hunter -- Rough Arrow (1200)
+  collect 159 x20 @42.76,24.5 map 2521 only Druid -- Buy [Refreshing Spring Water]
+  collect 159 x20 @42.76,24.5 map 2521 only Mage -- Buy [Refreshing Spring Water]
+  collect 159 x20 @42.76,24.5 map 2521 only Priest -- Buy [Refreshing Spring Water]
+  collect 159 x20 @42.76,24.5 map 2521 only Warlock -- Buy [Refreshing Spring Water]
+  collect 159 x20 @42.76,24.5 map 2521 only Paladin -- Buy [Refreshing Spring Water]
+step
+  note "Talk to Valreaa Valewind::257551."
+  accept 92473 -- Accept Aggressive Encroachment
+step
+  zone map 2521
+  note "Talk to Valreaa Valewind::257551."
+  accept 92473 -- Accept Aggressive Encroachment
+step
+  along until Scrawny_Usera
+  note "Manually drag the reagent bag into the reagent bag slot. Right-clicking it will place it in an empty general bag slot instead"
+step
+  along until Scrawny_Usera
+  note "You can gather herbs along the way to start working toward 20 Herbalism for a later quest. This is optional, especially at launch, so do it at your own risk"
+step
+  along until Scrawny_Usera
+  note "You can mine ore along the way to start working toward 20 Mining for a later quest. This is optional, especially at launch, so do it at your own risk"
+step
+  along until Scrawny_Usera
+  note "You can skin along the way to start working toward 20 Skinning for a later quest. This is optional, especially at launch, so do it at your own risk"
+step
+  label Scrawny_Usera
+  loop
+  zone map 2521
+  goto 41.05,25.7 map 2521 r 30
+  goto 40.4,26.9 map 2521 r 30
+  goto 39.7,27.03 map 2521 r 30
+  goto 37.25,29.72 map 2521 r 40
+  goto 38.17,27.84 map 2521 r 30
+  goto 37.67,26.31 map 2521 r 30
+  goto 38.44,27.35 map 2521 r 30
+  note "Kill Bears::250926. Loot them for [Scrawny Ursera Claw]."
+  collect 251918 x6 quest 92473.1 -- 6/6 Scrawny Ursera Claw
+step
+  when onquest 92470
+  along until next_73
+  zone map 2521
+  note "Kill Ursera Scavengers::250937."
+  kill 250937 x8 quest 92470.1 @38.44,27.35 map 2521 -- 8/8 Ursera Scavenger slain
+step
+  label next_73
+  zone map 2521
+  note "Kill Urs'anah::251115. Loot him for [Head of Urs'anah]."
+  collect 252665 x1 quest 92470.2 -- Head of Urs'anah
+step
+  when onquest 92470
+  loop
+  zone map 2521
+  goto 36.2,25 map 2521 r 30
+  goto 36.39,23.79 map 2521 r 30
+  goto 37.33,24.26 map 2521 r 30
+  goto 36.9,24.54 map 2521 r 30
+  goto 37.34,25.13 map 2521 r 30
+  goto 38.12,27.71 map 2521 r 30
+  goto 37.7,29.46 map 2521 r 30
+  goto 40.79,26.64 map 2521 r 30
+  note "Kill Ursera Scavengers::250937."
+  kill 250937 x8 quest 92470.1 -- 8/8 Ursera Scavenger slain
+step
+  when complete 92470
+  zone map 2521
+  goto 36.47,23.67 map 2521 r 30 optional
+  goto 35.88,23.79 map 2521 r 30 optional
+  goto 35.71,25.7 map 2521 r 30
+  note "*Use the sit macro in combat to die faster."
+step
+  when complete 92470
+  label Turn_in_Foul_Matriarch
+  along until next_77
+  note "Talk to Aetheen of the Gales::251366."
+  turnin 92470 -- Turn in Foul Matriarch
+step
+  label next_77
+  when complete 92470
+  note "Talk to Aetheen of the Gales::251366."
+  turnin 92470 -- Turn in Foul Matriarch
+step
+  when onquest 92470
+  turnin 92470 only Warrior -- Turn in Foul Matriarch
+  turnin 92470 only Paladin -- Turn in Foul Matriarch
+  turnin 92470 only Druid -- Turn in Foul Matriarch
+  turnin 92470 only Shaman -- Turn in Foul Matriarch
+  turnin 92470 only Priest -- Turn in Foul Matriarch
+  turnin 92470 only Warlock -- Turn in Foul Matriarch
+  turnin 92470 only Mage -- Turn in Foul Matriarch
+  turnin 92470 only Rogue -- Turn in Foul Matriarch
+  turnin 92470 only Hunter -- Turn in Foul Matriarch
+step
+  zone map 2521
+  note "Talk to Aetheen of the Gales::251366."
+  accept 92472 -- Accept The Next Step
+  accept 96638 -- Accept The Adventurer
+step
+  label Aggressive_Encroachment2
+  along until next_80
+  note "Talk to Valreaa Valewind::257551."
+  turnin 92473 -- Turn in Aggressive Encroachment
+step
+  label next_80
+  note "Talk to Valreaa Valewind::257551."
+  turnin 92473 -- Turn in Aggressive Encroachment
+step
+  zone map 2521
+  note "Talk to Valreaa Valewind::257551."
+  turnin 92473 -- Turn in Aggressive Encroachment
+step
+  label Al_Aketh_Thugs
+  along until next_83
+  zone map 2521
+  note "*Equip the [Worn Greatsword]" only Warrior
+  note "*Equip the [Worn Greatsword]" only Paladin
+  note "*Equip the [Novice's Quarterstaff]" only Druid
+  note "*Equip the [Novice's Quarterstaff]" only Shaman
+  note "*Equip the [Novice's Quarterstaff]" only Priest
+  note "*Equip the [Novice's Quarterstaff]" only Warlock
+  note "*Equip the [Scout Ranger's Dagger]" only Mage
+  note "*Equip the [Peacekeeper's Pickhammer]" only Rogue
+  note "*Equip the [Refined Shortbow]" only Hunter
+  note "Talk to Hanaa Nightwind::252095."
+  accept 92544 -- Accept Al'Aketh Thugs
+  use 258882 @42.41,25.15 map 2521 only Warrior -- Worn Greatsword
+  use 258882 @42.41,25.15 map 2521 only Paladin -- Worn Greatsword
+  use 257282 @42.41,25.15 map 2521 only Druid -- Novice's Quarterstaff
+  use 257282 @42.41,25.15 map 2521 only Shaman -- Novice's Quarterstaff
+  use 257282 @42.41,25.15 map 2521 only Priest -- Novice's Quarterstaff
+  use 257282 @42.41,25.15 map 2521 only Warlock -- Novice's Quarterstaff
+  use 257283 @42.41,25.15 map 2521 only Mage -- Scout Ranger's Dagger
+  use 257276 @42.41,25.15 map 2521 only Rogue -- Peacekeeper's Pickhammer
+  use 273879 @42.41,25.15 map 2521 only Hunter -- Refined Shortbow
+step
+  label next_83
+  zone map 2521
+  note "*Equip the [Worn Greatsword]" only Warrior
+  note "*Equip the [Worn Greatsword]" only Paladin
+  note "*Equip the [Novice's Quarterstaff]" only Druid
+  note "*Equip the [Novice's Quarterstaff]" only Shaman
+  note "*Equip the [Novice's Quarterstaff]" only Priest
+  note "*Equip the [Novice's Quarterstaff]" only Warlock
+  note "*Equip the [Scout Ranger's Dagger]" only Mage
+  note "*Equip the [Peacekeeper's Pickhammer]" only Rogue
+  note "*Equip the [Refined Shortbow]" only Hunter
+  note "Talk to Hanaa Nightwind::252095."
+  accept 92544 -- Accept Al'Aketh Thugs
+  use 258882 @42.41,25.15 map 2521 only Warrior -- Worn Greatsword
+  use 258882 @42.41,25.15 map 2521 only Paladin -- Worn Greatsword
+  use 257282 @42.41,25.15 map 2521 only Druid -- Novice's Quarterstaff
+  use 257282 @42.41,25.15 map 2521 only Shaman -- Novice's Quarterstaff
+  use 257282 @42.41,25.15 map 2521 only Priest -- Novice's Quarterstaff
+  use 257282 @42.41,25.15 map 2521 only Warlock -- Novice's Quarterstaff
+  use 257283 @42.41,25.15 map 2521 only Mage -- Scout Ranger's Dagger
+  use 257276 @42.41,25.15 map 2521 only Rogue -- Peacekeeper's Pickhammer
+  use 273879 @42.41,25.15 map 2521 only Hunter -- Refined Shortbow
+step
+  zone map 2521
+  note "Talk to Hanaa Nightwind::252095."
+  accept 92544 -- Accept Al'Aketh Thugs
+step
+  along until Malduko_Cloudcrush
+  zone map 2521
+  note "Kill Al'Aketh Brutes::251145 and Al'Aketh Neophytes::251448."
+  kill 251145 x6 quest 92544.1 @38.31,30.17 map 2521 -- 6/6 Al'Aketh Brute slain
+  kill 251448 x4 quest 92544.2 @38.31,30.17 map 2521 -- 4/4 Al'Aketh Neophyte slain
+step
+  label Malduko_Cloudcrush
+  along until next_87
+  zone map 2521
+  note "Kill Malduko Cloudcrush::256935."
+  kill 256935 x1 quest 92544.3 -- Malduko Cloudcrush slain
+step
+  label next_87
+  zone map 2521
+  goto 37.04,32.93 map 2521 r 20
+step
+  zone map 2521
+  note "Kill Malduko Cloudcrush::256935 atop the temple."
+  kill 256935 x1 quest 92544.3 -- Malduko Cloudcrush slain
+step
+  only Alliance
+  when onquest 92544
+  zone map 2521
+  goto 35.57,33.84 map 2521 r 8
+  note "Use [Read Ley Line] for 100% increased passive Mana and Health regeneration."
+step
+  along until Grind6
+  zone map 2521
+  goto 35.33,34.19 map 2521 r 30 optional
+  goto 36.34,31.56 map 2521 r 40 optional
+  goto 37.3,32.89 map 2521 r 40 optional
+  goto 37.16,34.72 map 2521 r 40 optional
+  goto 38.08,35.01 map 2521 r 40 optional
+step
+  loop
+  zone map 2521
+  goto 35.33,34.19 map 2521 r 30
+  goto 36.34,31.56 map 2521 r 40
+  goto 37.3,32.89 map 2521 r 40
+  goto 37.16,34.72 map 2521 r 40
+  goto 38.08,35.01 map 2521 r 40
+  note "Kill Al'Aketh Brutes::251145 and Al'Aketh Neophytes::251448."
+  note "*Refresh [Read Ley Line] near the Leyline" only Alliance
+  kill 251145 x6 quest 92544.1 -- 6/6 Al'Aketh Brute slain
+  kill 251448 x4 quest 92544.2 -- 4/4 Al'Aketh Neophyte slain
+step
+  label Grind6
+  level 5+1740 -- Grind to level 5 1740+/2800xp to reach level 6 after turn-ins in the next village to be able to train new spells.
+step
+  zone map 2521
+  note "Talk to Hanaa Nightwind::252095."
+  turnin 92544 -- Turn in Al'Aketh Thugs
+step
+  along until SkybornePart1End
+  zone map 2521
+  note "Windstones"
+  use 255663 @38.32,30.18 map 2521 -- Windstones
+step
+  along until The_Next_Step
+  note "Click Windstone crystals along the way for health and mana restoratives"
+  note "*If you see a Tornado, touch it for 40% movement speed. Dealing damage removes the effect."
+step
+  when onquest 92472
+  label The_Next_Step
+  along until VendorStep
+  note "Talk to Constable Aonda::251523."
+  turnin 92472 -- Turn in The Next Step
+step
+  along
+  zone map 2521
+  note "Kill Galestriders::251661 along the way. Loot them for [Strider Meat] and [Small Eggs]"
+  note "*If the Tornado speed buff is active or a Tornado is nearby, avoid killing them.."
+  collect 5469 x8 @38.32,30.18 map 2521 -- Strider Meat
+  collect 6889 x3 @38.32,30.18 map 2521 -- Small Egg
+step
+  label VendorStep
+  when onquest 92472
+  note "Talk to Constable Aonda::251523."
+  turnin 92472 -- Turn in The Next Step
+step
+  when onquest 92472
+  zone map 2521
+  note "Talk to Constable Aonda::251523."
+  turnin 92472 -- Turn in The Next Step
+step
+  zone map 2521
+  goto 45.67,45.51 map 2521 r 8 optional
+  note "Talk to Constable Aonda::251523."
+  accept 93461 only Alliance -- Accept Welcome to Shen'dar Village
+step
+  only Mage
+  when level>=6
+  zone map 2521
+  goto 45.1,45.87 map 2521 r 8 optional
+  note "Talk to Dorii Brightwhisper::251379."
+  learn 143 "Fireball (Rank 2)"
+  learn 2136 "Fire Blast"
+step
+  only Alliance
+  zone map 2521
+  note "Talk to Rathiril Sunlance::251903."
+  kill 251903 x1 quest 93461.1 -- Speak with Rathiril Sunlance
+  accept 92596 -- Accept The High Order
+step
+  only Alliance
+  zone map 2521
+  note "Talk to Rathiril Sunlance::251903."
+  kill 251903 x1 quest 92596.1 -- Listen to Rathiril Sunlance
+step
+  only Alliance
+  when onquest 92596
+  turnin 92596 -- Turn in The High Order
+step
+  only Alliance
+  zone map 2521
+  note "Talk to Rathiril Sunlance::251903."
+  accept 94413 -- Accept A Magical Affront
+step
+  only Rogue,Alliance
+  when level>=6
+  zone map 2521
+  goto 43.16,43.26 map 2521 r 8 optional
+  note "Talk to Miriaan Mistblade::254087"
+  learn 1757 "Sinister Strike (Rank 2)"
+  learn 1776 "Gouge"
+step
+  only Rogue,Alliance
+  when level>=6
+  zone map 2521
+  goto 43.16,43.26 map 2521 r 8 optional
+  note "Talk to Miriaan Mistblade::254087"
+  learn 1757 "Sinister Strike (Rank 2)"
+step
+  only Alliance
+  zone map 2521
+  note "Talk to Coriella Calmbreeze::254089."
+  kill 254089 x1 quest 93461.2 -- Speak with the Innkeeper
+step
+  only Alliance
+  zone map 2521
+  goto 43.02,43.24 map 2521 r 8
+  note "Talk to Coriella Calmbreeze::254089."
+  sethome "Shen'dar Village" @43.02,43.24 map 2521 optional -- Set your Hearthstone to Shen'dar Village
+step
+  only Warrior
+  when level>=6
+  zone map 2521
+  goto 44.95,45.1 map 2521 r 8 optional
+  note "Talk to Corsan Earthrazer::254088"
+  learn 3127 "Parry"
+step
+  only Druid
+  when level>=6
+  zone map 2521
+  goto 45.07,45.27 map 2521 r 25 optional
+  goto 45.154,44.217 map 2521 r 8 optional
+  note "Talk to Naeluna Swiftmend::254081 inside the house."
+  learn 467 "Thorns"
+  learn 5177 "Wrath (Rank 2)"
+step
+  only Hunter
+  when level>=6
+  zone map 2521
+  goto 45.07,45.27 map 2521 r 25 optional
+  goto 45.263,44.236 map 2521 r 8 optional
+  note "Talk to Elayaa Easewind::254084 inside the house."
+  learn 3044 "Arcane Shot"
+  learn 1130 "Hunter's Mark"
+step
+  when onquest 93461
+  turnin 93461 only Alliance -- Turn in Welcome to Shen'dar Village
+step
+  zone map 2521
+  note "Talk to Constable Aonda::251523."
+  accept 92517 -- Accept The Criminal Element
+step
+  only Warrior
+  when level>=6
+  zone map 2521
+  goto 44.95,45.1 map 2521 r 8 optional
+  note "Talk to Corsan Earthrazer::254088"
+  learn 3127 "Parry"
+step
+  only Hunter
+  when level>=6
+  zone map 2521
+  goto 45.263,44.236 map 2521 r 8 optional
+  note "Talk to Elayaa Easewind::254084."
+  learn 3044 "Arcane Shot"
+  learn 1130 "Hunter's Mark"
+step
+  only Druid
+  when level>=6
+  zone map 2521
+  goto 45.154,44.217 map 2521 r 8 optional
+  note "Talk to Naeluna Swiftmend::254081"
+  learn 467 "Thorns"
+  learn 5177 "Wrath (Rank 2)"
+step
+  only Mage
+  when level>=6
+  zone map 2521
+  goto 45.1,45.87 map 2521 r 8 optional
+  note "Talk to Dorii Brightwhisper::251379."
+  learn 143 "Fireball (Rank 2)"
+  learn 2136 "Fire Blast"
+step
+  only Druid
+  when !onquest 93319,92516
+  when !turnedin 93319
+  when !turnedin 92516
+  zone map 2521
+  goto 44.72,45.47 map 2521 r 8
+  note "Talk to Veena Vericloud::254358."
+  collect 1179 x5 @44.72,45.47 map 2521 optional -- Buy 5 [Ice Cold Milk], or 10 if you can afford them
+  note "*Don't sell [Stringy Meat], [Small Eggs], [Strider Meat], or [Linen Cloth]." only Alliance
+  note "*We need them for Cooking later."
+step
+  only Priest
+  when !onquest 93319,92516
+  when !turnedin 93319
+  when !turnedin 92516
+  zone map 2521
+  goto 44.72,45.47 map 2521 r 8
+  note "Talk to Veena Vericloud::254358."
+  collect 1179 x5 @44.72,45.47 map 2521 optional -- Buy 5 [Ice Cold Milk], or 10 if you can afford them
+  note "*Don't sell [Stringy Meat], [Small Eggs], [Strider Meat], or [Linen Cloth]." only Alliance
+  note "*We need them for Cooking later."
+step
+  only Warlock
+  when !onquest 93319,92516
+  when !turnedin 93319
+  when !turnedin 92516
+  zone map 2521
+  goto 44.72,45.47 map 2521 r 8
+  note "Talk to Veena Vericloud::254358."
+  collect 1179 x5 @44.72,45.47 map 2521 optional -- Buy 5 [Ice Cold Milk], or 10 if you can afford them
+  note "*Don't sell [Stringy Meat], [Small Eggs], [Strider Meat], or [Linen Cloth]." only Alliance
+  note "*We need them for Cooking later."
+step
+  only Mage
+  when !onquest 93319,92516
+  when !turnedin 93319
+  when !turnedin 92516
+  zone map 2521
+  goto 44.72,45.47 map 2521 r 8
+  note "Talk to Veena Vericloud::254358."
+  collect 1179 x5 @44.72,45.47 map 2521 optional -- Buy 5 [Ice Cold Milk], or 10 if you can afford them
+  note "*Don't sell [Stringy Meat], [Small Eggs], [Strider Meat], or [Linen Cloth]." only Alliance
+  note "*We need them for Cooking later."
+step
+  zone map 2521
+  note "Talk to Teeri Wellwind::251906."
+  accept 93319 -- Accept Pilfered Windstones
+  accept 92516 -- Accept Hippogryph Harassment
+step
+  zone map 2521
+  note "Talk to Indari Sunseam::251993."
+  accept 92515 -- Accept The Problem With Prideclaws
+step
+  zone map 2521
+  note "Talk to Taleen Shimmerthread::251991."
+  accept 93951 -- Accept A Little Beauty
+step
+  only Shaman
+  when onquest 92517
+  zone map 2521
+  goto 44.79,44.168 map 2521 r 8
+  note "Talk to Tephri Thriceforged::257421"
+  note "Buy and equip a [Walking Stick]"
+  collect 2495 x1 @44.79,44.168 map 2521 optional -- Collect Walking Stick (1)
+step
+  only Hunter
+  when onquest 92517
+  zone map 2521
+  goto 44.79,44.168 map 2521 r 8
+  note "Talk to Tephri Thriceforged::257421"
+  note "Buy and equip a [Hornwood Recurve Bow]"
+  collect 2506 x1 @44.79,44.168 map 2521 optional -- Collect Hornwood Recurve Bow
+step
+  only Warrior
+  when onquest 92517
+  zone map 2521
+  goto 44.8,44.18 map 2521 r 8
+  note "Talk to Tephri Thriceforged::257421 and buy and equip a [Wooden Mallet]."
+  collect 2493 x1 @44.8,44.18 map 2521 optional -- Wooden Mallet
+step
+  only Paladin
+  when onquest 92517
+  zone map 2521
+  goto 44.8,44.18 map 2521 r 8
+  note "Talk to Tephri Thriceforged::257421 and buy and equip a [Wooden Mallet]."
+  collect 2493 x1 @44.8,44.18 map 2521 optional -- Wooden Mallet
+step
+  only Rogue
+  when onquest 92517
+  zone map 2521
+  goto 44.8,44.18 map 2521 r 8
+  note "Talk to Tephri Thriceforged::257421 and buy and equip a [Gladius]."
+  collect 2488 x1 @44.8,44.18 map 2521 optional -- Gladius
+step
+  zone map 2521
+  note "Talk to Zerril Softbreeze::251905"
+  accept 92553 -- Accept Restocking the Larders
+step
+  when complete 92553
+  when onquest 92517
+  zone map 2521
+  goto 43.851,43.848 map 2521 r 8
+  note "Talk to Zerril Softbreeze::251905"
+  turnin 92553 optional -- Turn in Restocking the Larders
+step
+  when turnedin 92553
+  when onquest 92517
+  when has 6889
+  zone map 2521
+  goto 43.851,43.848 map 2521 r 8 optional
+  note "Talk to Zerril Softbreeze::251905"
+  learn 2550 "Apprentice Cook"
+step
+  when turnedin 92553
+  when onquest 92517
+  when has 6889
+  zone map 2521
+  goto 43.86,43.85 map 2521 r 8
+  note "Use the [Herb Baked Egg] macro below to craft as many as possible."
+  note "*Most buff food grants 5% increased experience from kills for 15 minutes. Try to maintain a high uptime on this buff while leveling."
+  note "*Buy 5-20 [Mild Spices] from Zerril Softbreeze if you haven't already."
+  note "*You may need to press the macro twice."
+step
+  when onquest 92553
+  when onquest 92517
+  when !has 6888
+  when has 6889
+  zone map 2521
+  goto 43.86,43.85 map 2521 r 8
+  note "Use the [Herb Baked Egg] macro below to craft 1 for the experience buff."
+  note "*Most buff food grants 5% increased experience from kills for 15 minutes. Try to maintain a high uptime on this buff while leveling."
+  note "*Buy 5-20 [Mild Spices] from Zerril Softbreeze if you haven't already."
+  note "*You may need to press the macro twice."
+step
+  when onquest 92553
+  when onquest 92517
+  when has 6889 x4
+  zone map 2521
+  goto 43.86,43.85 map 2521 r 8
+  note "Use the [Herb Baked Egg] macro below to craft every Small Egg beyond the 3 reserved for Restocking the Larders."
+  note "*Keep at least 3 Small Eggs for a later quest"
+  note "*Most buff food grants 5% increased experience from kills for 15 minutes. Try to maintain a high uptime on this buff while leveling."
+  note "*Buy 5-20 [Mild Spices] from Zerril Softbreeze if you haven't already."
+  note "*You may need to press the macro twice."
+step
+  only Rogue
+  when level>=6
+  zone map 2521
+  goto 43.16,43.26 map 2521 r 8 optional
+  note "Talk to Miriaan Mistblade::254087"
+  learn 1757 "Sinister Strike (Rank 2)"
+  learn 1776 "Gouge"
+step
+  only Rogue
+  when level>=6
+  zone map 2521
+  goto 43.16,43.26 map 2521 r 8 optional
+  note "Talk to Miriaan Mistblade::254087"
+  learn 1757 "Sinister Strike (Rank 2)"
+step
+  along until BadwindBennicA
+  zone map 2521
+  note "Kill Prideclaws::251245 along the way. Loot them for the [Prideclaw Pelts]."
+  note "*Prioritize them"
+  collect 252670 x10 quest 92515.1 @43.16,43.26 map 2521 -- 10/10 Prideclaw Pelt
+step
+  along until BadwindBennicA
+  zone map 2521
+  note "Kill Galestriders::251661 along the way. Loot them for [Strider Meat] and [Small Eggs]."
+  note "*Prioritize them"
+  collect 5469 x8 quest 92553.2 @43.16,43.26 map 2521 -- 8/8 Strider Meat
+  collect 6889 x3 quest 92553.1 @43.16,43.26 map 2521 -- 3/3 Small Egg
+step
+  along until BadwindBennicB
+  zone map 2521
+  note "Kill Highlands Bandits::251918. Loot them for the [Pilfered Windstone]."
+  kill 251918 x10 quest 92517.1 @43.16,43.26 map 2521 -- 10/10 Highlands Bandit slain
+  collect 257945 x10 quest 93319.1 @43.16,43.26 map 2521 -- 10/10 Pilfered Windstone
+step
+  label BadwindBennicA
+  along until next_138
+  note "Kill \"Badwind\" Bennic::255534."
+  kill 255534 x1 quest 92517.2 -- "Badwind" Bennic slain
+step
+  label next_138
+  only Alliance
+  when onquest 92517
+  along until BadwindBennicB
+  zone map 2521
+  goto 50.59,33.51 map 2521 r 20 optional
+  note "Use [Read Ley Line] for 100% increased passive Mana and Health regeneration."
+step
+  note "Kill \"Badwind\" Bennic::255534."
+  kill 255534 x1 quest 92517.2 -- "Badwind" Bennic slain
+step
+  label BadwindBennicB
+  zone map 2521
+  note "Kill \"Badwind\" Bennic::255534."
+  kill 255534 x1 quest 92517.2 -- "Badwind" Bennic slain
+step
+  along until OutCave
+  zone map 2521
+  note "Kill Galestriders::251661. Loot them for [Strider Meat] and [Small Eggs]."
+  collect 5469 x8 quest 92553.2 @50.68,34.214 map 2521 -- 8/8 Strider Meat
+  collect 6889 x3 quest 92553.1 @50.68,34.214 map 2521 -- 3/3 Small Egg
+step
+  along until OutCave
+  zone map 2521
+  note "Kill Prideclaws::251245. Loot them for the [Prideclaw Pelts]."
+  collect 252670 x10 quest 92515.1 @50.68,34.214 map 2521 -- 10/10 Prideclaw Pelt
+step
+  label OutCave
+  loop
+  zone map 2521
+  goto 50.27,33.41 map 2521 r 25
+  goto 49.69,34.05 map 2521 r 25
+  goto 49.64,34.66 map 2521 r 25
+  goto 49.93,35.22 map 2521 r 25
+  goto 49.79,35.97 map 2521 r 25
+  goto 49.26,35.91 map 2521 r 25
+  goto 48.82,36.47 map 2521 r 25
+  goto 49.43,38.66 map 2521 r 40
+  goto 48.02,38.41 map 2521 r 40
+  goto 47.75,36.19 map 2521 r 40
+  goto 48.93,36.38 map 2521 r 40
+  note "Kill Highlands Bandits::251918. Loot them for [Pilfered Windstone]."
+  kill 251918 x10 quest 92517.1 -- 10/10 Highlands Bandit slain
+  collect 257945 x10 quest 93319.1 -- 10/10 Pilfered Windstone
+step
+  along until To_Shendalar
+  zone map 2521
+  note "Kill Galestriders::251661 along the way."
+  note "*Loot them for [Strider Meat] and [Small Eggs]."
+  collect 5469 x8 quest 92553.2 @48.93,36.38 map 2521 -- 8/8 Strider Meat
+  collect 6889 x3 quest 92553.1 @48.93,36.38 map 2521 -- 3/3 Small Egg
+step
+  along until To_Shendalar
+  zone map 2521
+  note "Kill Prideclaws::251245 along the way."
+  note "*Loot them for [Prideclaw Pelts]."
+  collect 252670 x10 quest 92515.1 @48.93,36.38 map 2521 -- 10/10 Prideclaw Pelt
+step
+  label To_Shendalar
+  zone map 2521
+  note "Talk to the Zerril Softbreeze::251905 and buy 5 [Mild Spices]."
+  vendor 251905 -- Vendor Trash
+  collect 2678 x5 @43.86,43.85 map 2521 -- Mild Spices
+  note "*Don't sell [Stringy Meat], [Small Eggs], [Strider Meat], or [Linen Cloth]." only Alliance
+  note "*We need them for Cooking later."
+step
+  zone map 2521
+  goto 43.85,43.84 map 2521 r 8
+  note "Talk to Zerril Softbreeze::251905"
+  learn 2550 "Apprentice Cook"
+step
+  when complete 92553
+  zone map 2521
+  goto 43.851,43.848 map 2521 r 8
+  note "Talk to Zerril Softbreeze::251905"
+  turnin 92553 optional -- Turn in Restocking the Larders
+step
+  when turnedin 92553
+  when has 6889
+  zone map 2521
+  goto 43.86,43.85 map 2521 r 8
+  note "Use the [Herb Baked Egg] macro below to craft as many as possible."
+  note "*Most buff food grants 5% increased experience from kills for 15 minutes. Try to maintain a high uptime on this buff while leveling."
+  note "*Buy 5-20 [Mild Spices] from Zerril Softbreeze if you haven't already."
+  note "*You may need to press the macro twice."
+step
+  when onquest 92553
+  when !has 6888
+  when has 6889
+  zone map 2521
+  goto 43.86,43.85 map 2521 r 8
+  note "Use the [Herb Baked Egg] macro below to craft 1 for the experience buff."
+  note "*Most buff food grants 5% increased experience from kills for 15 minutes. Try to maintain a high uptime on this buff while leveling."
+  note "*Buy 5-20 [Mild Spices] from Zerril Softbreeze if you haven't already."
+  note "*You may need to press the macro twice."
+step
+  when onquest 92553
+  when has 6889 x4
+  zone map 2521
+  goto 43.86,43.85 map 2521 r 8
+  note "Use the [Herb Baked Egg] macro below to craft every Small Egg beyond the 3 reserved for Restocking the Larders."
+  note "*Keep at least 3 Small Eggs for a later quest"
+  note "*Most buff food grants 5% increased experience from kills for 15 minutes. Try to maintain a high uptime on this buff while leveling."
+  note "*Buy 5-20 [Mild Spices] from Zerril Softbreeze if you haven't already."
+  note "*You may need to press the macro twice."
+step
+  only Rogue
+  when level>=6
+  zone map 2521
+  goto 43.16,43.26 map 2521 r 8 optional
+  note "Talk to Miriaan Mistblade::254087"
+  learn 1757 "Sinister Strike (Rank 2)"
+  learn 1776 "Gouge"
+step
+  only Hunter
+  when onquest 96638
+  zone map 2521
+  goto 44.79,44.168 map 2521 r 8
+  note "Talk to Tephri Thriceforged::257421"
+  note "Buy and equip a [Hornwood Recurve Bow]"
+  collect 2506 x1 @44.79,44.168 map 2521 optional -- Collect Hornwood Recurve Bow
+step
+  only Warrior
+  when onquest 96638
+  zone map 2521
+  goto 44.8,44.18 map 2521 r 8
+  note "Talk to Tephri Thriceforged::257421 and buy and equip a [Wooden Mallet]."
+  collect 2493 x1 @44.8,44.18 map 2521 optional -- Wooden Mallet
+step
+  only Paladin
+  when onquest 96638
+  zone map 2521
+  goto 44.8,44.18 map 2521 r 8
+  note "Talk to Tephri Thriceforged::257421 and buy and equip a [Wooden Mallet]."
+  collect 2493 x1 @44.8,44.18 map 2521 optional -- Wooden Mallet
+step
+  only Rogue
+  when onquest 96638
+  zone map 2521
+  goto 44.8,44.18 map 2521 r 8
+  note "Talk to Tephri Thriceforged::257421 and buy and equip a [Gladius]."
+  collect 2488 x1 @44.8,44.18 map 2521 optional -- Gladius
+step
+  only Shaman
+  when onquest 96638
+  zone map 2521
+  goto 44.79,44.168 map 2521 r 8
+  note "Talk to Tephri Thriceforged::257421"
+  note "Buy and equip a [Walking Stick]"
+  collect 2495 x1 @44.79,44.168 map 2521 optional -- Collect Walking Stick (1)
+step
+  only Rogue
+  when has 2835
+  zone map 2521
+  goto 44.89,44.36 map 2521 r 8
+  note "Talk to Aedi Thriceforged::251913."
+  note "*Skip this if you already have two professions."
+  learn 2018 "Blacksmithing"
+step
+  only Warrior
+  when has 2835
+  zone map 2521
+  goto 44.89,44.36 map 2521 r 8
+  note "Talk to Aedi Thriceforged::251913."
+  note "*Skip this if you already have two professions."
+  learn 2018 "Blacksmithing"
+step
+  only Paladin
+  when has 2835
+  zone map 2521
+  goto 44.89,44.36 map 2521 r 8
+  note "Talk to Aedi Thriceforged::251913."
+  note "*Skip this if you already have two professions."
+  learn 2018 "Blacksmithing"
+step
+  only Shaman
+  when has 2835
+  zone map 2521
+  goto 44.89,44.36 map 2521 r 8
+  note "Talk to Aedi Thriceforged::251913."
+  note "*Skip this if you already have two professions."
+  learn 2018 "Blacksmithing"
+step
+  only Rogue
+  when has 2835
+  along until next_159
+  note "Open [Blacksmithing] and craft a [Rough Sharpening Stone] for your sharp weapon and apply it." only Rogue
+  note "Open [Blacksmithing] and craft a [Rough Weightstone] for your blunt weapon apply it." only Warrior
+  note "Open [Blacksmithing] and craft a [Rough Weightstone] for your blunt weapon apply it." only Paladin
+  note "Open [Blacksmithing] and craft a [Rough Weightstone] for your blunt weapon apply it." only Shaman
+step
+  only Warrior
+  when has 2835
+  along until next_159
+  note "Open [Blacksmithing] and craft a [Rough Sharpening Stone] for your sharp weapon and apply it." only Rogue
+  note "Open [Blacksmithing] and craft a [Rough Weightstone] for your blunt weapon apply it." only Warrior
+  note "Open [Blacksmithing] and craft a [Rough Weightstone] for your blunt weapon apply it." only Paladin
+  note "Open [Blacksmithing] and craft a [Rough Weightstone] for your blunt weapon apply it." only Shaman
+step
+  only Paladin
+  when has 2835
+  along until next_159
+  note "Open [Blacksmithing] and craft a [Rough Sharpening Stone] for your sharp weapon and apply it." only Rogue
+  note "Open [Blacksmithing] and craft a [Rough Weightstone] for your blunt weapon apply it." only Warrior
+  note "Open [Blacksmithing] and craft a [Rough Weightstone] for your blunt weapon apply it." only Paladin
+  note "Open [Blacksmithing] and craft a [Rough Weightstone] for your blunt weapon apply it." only Shaman
+step
+  only Shaman
+  when has 2835
+  along until next_159
+  note "Open [Blacksmithing] and craft a [Rough Sharpening Stone] for your sharp weapon and apply it." only Rogue
+  note "Open [Blacksmithing] and craft a [Rough Weightstone] for your blunt weapon apply it." only Warrior
+  note "Open [Blacksmithing] and craft a [Rough Weightstone] for your blunt weapon apply it." only Paladin
+  note "Open [Blacksmithing] and craft a [Rough Weightstone] for your blunt weapon apply it." only Shaman
+step
+  only Rogue
+  label next_159
+  along until Turn_in_The_Adventurer
+  note "Abandon Blacksmithing or continue with it."
+step
+  only Warrior
+  along until Turn_in_The_Adventurer
+  note "Abandon Blacksmithing or continue with it."
+step
+  only Paladin
+  along until Turn_in_The_Adventurer
+  note "Abandon Blacksmithing or continue with it."
+step
+  only Shaman
+  along until Turn_in_The_Adventurer
+  note "Abandon Blacksmithing or continue with it."
+step
+  zone map 2521
+  note "Talk to Teeri Wellwind::251906"
+  turnin 93319 -- Turn in Pilfered Windstones
+step
+  only Shaman
+  when onquest 96638
+  zone map 2521
+  goto 44.79,44.168 map 2521 r 8
+  note "Talk to Tephri Thriceforged::257421"
+  note "Buy and equip a [Walking Stick]"
+  collect 2495 x1 @44.79,44.168 map 2521 optional -- Collect Walking Stick (1)
+step
+  when onquest 96638
+  zone map 2521
+  note "Talk to Veena Vericloud::254358"
+  vendor 254358 -- Buy a [Small Brown Pouch] if you can.
+  note "*Buy at most 10 [Ice Cold Milk] from her" only Mage
+  note "*Buy at most 10 [Ice Cold Milk] from her" only Druid
+  note "*Buy at most 10 [Ice Cold Milk] from her" only Shaman
+  note "*Buy at most 10 [Ice Cold Milk] from her" only Priest
+  note "*Buy at most 10 [Ice Cold Milk] from her" only Warlock
+  note "*Buy at most 10 [Ice Cold Milk] from her" only Paladin
+  note "*When equipping bags, make sure your Reagent Bag is in the dedicated Reagent Bag slot."
+  collect 2946 x1 @44.71,45.48 map 2521 optional only Rogue -- Buy a [Balanced Throwing Dagger].
+  collect 2946 x1 @44.71,45.48 map 2521 optional only Warrior -- Buy a [Balanced Throwing Dagger].
+  note "*Don't sell [Stringy Meat], [Small Eggs], [Strider Meat], or [Linen Cloth]." only Alliance
+step
+  only Warrior
+  when level>=6
+  zone map 2521
+  goto 44.95,45.1 map 2521 r 8 optional
+  note "Talk to Corsan Earthrazer::254088"
+  learn 3127 "Parry"
+step
+  only Hunter
+  when level>=6
+  zone map 2521
+  goto 45.263,44.236 map 2521 r 8 optional
+  note "Talk to Elayaa Easewind::254084."
+  learn 3044 "Arcane Shot"
+  learn 1130 "Hunter's Mark"
+step
+  only Druid
+  when level>=6
+  zone map 2521
+  goto 45.154,44.217 map 2521 r 8 optional
+  note "Talk to Naeluna Swiftmend::254081"
+  learn 467 "Thorns"
+  learn 5177 "Wrath (Rank 2)"
+step
+  only Mage
+  when level>=6
+  zone map 2521
+  goto 45.1,45.87 map 2521 r 8 optional
+  note "Talk to Dorii Brightwhisper::251379."
+  learn 143 "Fireball (Rank 2)"
+  learn 2136 "Fire Blast"
+  learn 1296017 "Comprehend Scroll"
+step
+  zone map 2521
+  note "Click on the Bounty Available: Vulgara the Insatiable!"
+  accept 93318 -- Accept WANTED: Vulgara the Insatiable
+step
+  zone map 2521
+  goto 43.073,46.306 map 2521 r 8 optional
+  note "Talk to Naleeia Tattermend::257018."
+  learn 3273 "First Aid"
+step
+  label Turn_in_The_Adventurer
+  zone map 2521
+  note "Talk to Raan Wildwind::263664."
+  turnin 96638 -- Turn in The Adventurer
+  accept 96101 -- Accept The Great Outdoors
+step
+  zone map 2521
+  goto 41.67,44.79 map 2521 r 8
+  note "Click the macro in the Active Items frame to sit."
+  interact 460003 quest 96101.1 -- Use the /sit emote near the campfire
+step
+  only Alliance
+  when has 2589
+  when has 2672
+  note "Do not move or jump until the quest is complete."
+  note "*Use the Macros in the \"Active Items Frame\" to craft [Linen Bandages] and [Charred Wolf Meat] for later quests."
+  note "*You can craft and rebuff without losing quest credit. You can also eat buff food here to gain 5% increased experience from kills."
+  interact 460003 quest 96101.2 -- Gain the Boosted Rest buff
+  note "*You may need to press the macro twice."
+step
+  when has 2589
+  note "Do not move or jump until the quest is complete."
+  note "*Press the Macro in the \"Active Items Frame\" to craft [Linen Bandages] for a later quest."
+  note "*You can craft and rebuff without losing quest credit. You can also eat buff food here to gain 5% increased experience from kills."
+  interact 460003 quest 96101.2 -- Gain the Boosted Rest buff
+  note "*You may need to press the macro twice."
+step
+  only Alliance
+  when has 2672
+  note "Do not move or jump until the quest is complete."
+  note "*Press the Macro in the \"Active Items Frame\" to craft [Charred Wolf Meat] for a later quest"
+  note "*You can craft and rebuff without losing quest credit. You can also eat buff food here to gain 5% increased experience from kills."
+  interact 460003 quest 96101.2 -- Gain the Boosted Rest buff
+  note "*You may need to press the macro twice."
+step
+  note "Do not move or jump until the quest is complete."
+  note "*You can craft and rebuff without losing quest credit. You can also eat buff food here to gain 5% increased experience from kills."
+  interact 460003 quest 96101.2 -- Gain the Boosted Rest buff
+step
+  note "The process was cancelled. Please use the SIT macro again to restart it."
+  note "*Do not move or jump until the quest is complete."
+  interact 460003 quest 96101.2 -- Gain the Boosted Rest buff
+step
+  only Alliance
+  when has 2589
+  when has 2672
+  note "Do not move or jump until the quest is complete."
+  note "*Use the Macros in the \"Active Items Frame\" to craft [Linen Bandages] and [Charred Wolf Meat] for later quests."
+  note "*You can craft and rebuff without losing quest credit. You can also eat buff food here to gain 5% increased experience from kills."
+  interact 460003 quest 96101.2 -- Gain the Boosted Rest buff
+  note "*You may need to press the macro twice."
+step
+  when has 2589
+  note "Do not move or jump until the quest is complete."
+  note "*Press the Macro in the \"Active Items Frame\" to craft [Linen Bandages] for a later quest."
+  note "*You can craft and rebuff without losing quest credit. You can also eat buff food here to gain 5% increased experience from kills."
+  interact 460003 quest 96101.2 -- Gain the Boosted Rest buff
+  note "*You may need to press the macro twice."
+step
+  only Alliance
+  when has 2672
+  note "Do not move or jump until the quest is complete."
+  note "*Press the Macro in the \"Active Items Frame\" to craft [Charred Wolf Meat] for a later quest"
+  note "*You can craft and rebuff without losing quest credit. You can also eat buff food here to gain 5% increased experience from kills."
+  interact 460003 quest 96101.2 -- Gain the Boosted Rest buff
+  note "*You may need to press the macro twice."
+step
+  note "Do not move or jump until the quest is complete."
+  note "*You can craft and rebuff without losing quest credit. You can also eat buff food here to gain 5% increased experience from kills."
+  interact 460003 quest 96101.2 -- Gain the Boosted Rest buff
+step
+  zone map 2521
+  note "Talk to Raan Wildwind::263664."
+  turnin 96101 -- Turn in The Great Outdoors
+step
+  zone map 2521
+  goto 41.658,44.784 map 2521 r 8
+  note "Talk to Raan Wildwind::263664"
+  accept 97970 optional -- Accept Camping 101: Mining
+step
+  zone map 2521
+  goto 41.658,44.784 map 2521 r 8
+  note "Talk to Raan Wildwind::263664"
+  accept 97971 optional -- Accept Camping 101: Skinning
+step
+  zone map 2521
+  goto 41.658,44.784 map 2521 r 8
+  note "Talk to Raan Wildwind::263664"
+  accept 96646 optional -- Accept Camping 101: Cooking
+step
+  zone map 2521
+  goto 41.658,44.784 map 2521 r 8
+  note "Talk to Raan Wildwind::263664"
+  accept 97968 optional -- Accept Camping 101: Herbalism
+step
+  zone map 2521
+  goto 41.658,44.784 map 2521 r 8
+  note "Talk to Raan Wildwind::263664"
+  accept 97965 optional -- Accept Camping 101: First Aid
+step
+  zone map 2521
+  goto 41.658,44.784 map 2521 r 8
+  note "Talk to Raan Wildwind::263664"
+  accept 97967 optional -- Accept Camping 101: Fishing
+step
+  zone map 2521
+  goto 41.658,44.784 map 2521 r 8
+  note "Talk to Raan Wildwind::263664"
+  accept 97963 optional -- Accept Camping 101: Alchemy
+step
+  zone map 2521
+  goto 41.658,44.784 map 2521 r 8
+  note "Talk to Raan Wildwind::263664"
+  accept 97964 optional -- Accept Camping 101: Blacksmithing
+step
+  zone map 2521
+  goto 41.658,44.784 map 2521 r 8
+  note "Talk to Raan Wildwind::263664"
+  accept 97973 optional -- Accept Camping 101: Tailoring
+step
+  zone map 2521
+  goto 41.658,44.784 map 2521 r 8
+  note "Talk to Raan Wildwind::263664"
+  accept 98286 optional -- Accept Camping 101: Enchanting
+step
+  zone map 2521
+  goto 41.658,44.784 map 2521 r 8
+  note "Talk to Raan Wildwind::263664"
+  accept 97969 optional -- Accept Camping 101: Leatherworking
+step
+  along until HippogryphHarassmentA
+  note "If a Tornado is nearby, touch it to gain 40% increased movement speed for 5 minutes. Dealing damage removes the effect."
+step
+  along until HippogryphHarassmentA
+  zone map 2521
+  note "Kill Prideclaws::251245. Loot them for the [Prideclaw Pelts]."
+  collect 252670 x10 quest 92515.1 @41.658,44.784 map 2521 -- 10/10 Prideclaw Pelt
+step
+  along until HippogryphHarassmentA
+  zone map 2521
+  note "Kill Galestriders::251661. Loot them for [Strider Meat] and [Small Eggs]."
+  collect 5469 x8 quest 92553.2 @41.658,44.784 map 2521 -- 8/8 Strider Meat
+  collect 6889 x3 quest 92553.1 @41.658,44.784 map 2521 -- 3/3 Small Egg
+step
+  only Alliance
+  when onquest 94413
+  along until next_196
+  zone map 2521
+  note "Kill Windshaper Novice Seers::257532."
+  kill 257532 x6 quest 94413.1 @41.658,44.784 map 2521 -- 6/6 Windshaper Novice Seer defeated
+step
+  only Alliance
+  when onquest 94413
+  label next_196
+  zone map 2521
+  goto 39,47.37 map 2521 r 8
+  note "Use [Read Ley Line] for 100% increased passive Mana and Health regeneration."
+step
+  only Alliance
+  when onquest 94413
+  loop
+  zone map 2521
+  goto 37.96,46.86 map 2521 r 40
+  goto 38.75,48.72 map 2521 r 40
+  goto 38.99,47.24 map 2521 r 40
+  note "Kill Windshaper Novice Seers::257532."
+  kill 257532 x6 quest 94413.1 -- 6/6 Windshaper Novice Seer defeated
+step
+  when onquest 92516
+  zone map 2521
+  goto 36.44,50.93 map 2521 r 8
+  note "Jump off the mountain and use [Walk on Air] to fly towards the waypoint."
+  note "*Be careful near the waypoint; two Gryphons patrol the area."
+step
+  only Alliance
+  along until HippogryphHarassmentA
+  zone map 2521
+  goto 36.44,50.93 map 2521 r 40 optional
+  goto 35.16,51.07 map 2521 r 35 optional
+  goto 34.12,51.6 map 2521 r 45 optional
+  goto 34.52,52.76 map 2521 r 45 optional
+  goto 35.12,54.08 map 2521 r 38 optional
+  goto 35.86,53.01 map 2521 r 40 optional
+  goto 36.02,54.28 map 2521 r 40 optional
+  goto 35.71,55.57 map 2521 r 40 optional
+  goto 35.63,57.34 map 2521 r 30 optional
+  goto 34.6,57.11 map 2521 r 35 optional
+  goto 35.51,58.08 map 2521 r 40 optional
+  goto 36.61,58.64 map 2521 r 40 optional
+  goto 37.13,56.6 map 2521 r 40 optional
+  goto 38.61,56.89 map 2521 r 40 optional
+  goto 39.88,57.56 map 2521 r 40 optional
+  goto 39.1,55.85 map 2521 r 40 optional
+  goto 33.1,54.67 map 2521 r 40 optional
+  goto 34.7,52.68 map 2521 r 40 optional
+  goto 34.25,51.19 map 2521 r 40 optional
+step
+  along until next_201
+  zone map 2521
+  note "Kill Hippogryph Youths::251291, Hippogryph Protectors::251284 and the Hippogryph Matriarch::251261."
+  note "*Loot them for valuable vendor trash to help pay for weapon upgrades and class training."
+  note "*Prioritize the Matriarch::251261"
+  kill 251291 x8 quest 92516.1 @34.25,51.19 map 2521 -- 8/8 Hippogryph Youth slain
+  kill 251284 x6 quest 92516.2 @34.25,51.19 map 2521 -- 6/6 Hippogryph Protector slain
+  kill 251261 x1 quest 92516.3 @34.25,51.19 map 2521 -- 1/1 Hippogryph Matriarch slain
+step
+  label next_201
+  zone map 2521
+  note "Click on the Hippogryph Downs."
+  collect 263493 x8 quest 93951.1 @34.25,51.19 map 2521 -- 8/8 Hippogryph Down
+step
+  label HippogryphHarassmentA
+  zone map 2521
+  note "Kill Hippogryph Youths::251291, Hippogryph Protectors::251284 and the Hippogryph Matriarch::251261."
+  note "*Loot them for valuable vendor trash to help pay for weapon upgrades and class training."
+  note "*Prioritize the Matriarch::251261"
+  kill 251291 x8 quest 92516.1 @34.25,51.19 map 2521 -- 8/8 Hippogryph Youth slain
+  kill 251284 x6 quest 92516.2 @34.25,51.19 map 2521 -- 6/6 Hippogryph Protector slain
+  kill 251261 x1 quest 92516.3 @34.25,51.19 map 2521 -- 1/1 Hippogryph Matriarch slain
+step
+  along until VulgarasHeadA
+  zone map 2521
+  note "Kill Galestriders::251661. Loot them for [Strider Meat] and [Small Eggs]."
+  collect 5469 x8 quest 92553.2 @34.25,51.19 map 2521 -- 8/8 Strider Meat
+  collect 6889 x3 quest 92553.1 @34.25,51.19 map 2521 -- 3/3 Small Egg
+step
+  along until VulgarasHeadA
+  zone map 2521
+  note "Kill Prideclaws::251245. Loot them for the [Prideclaw Pelts]."
+  collect 252670 x10 quest 92515.1 @34.25,51.19 map 2521 -- 10/10 Prideclaw Pelt
+step
+  label VulgarasHeadA
+  zone map 2521
+  note "Kill Vulgara::254589 (level 8 elite) on the mountain. Loot it for [Vulgara's Head]."
+  note "*Look for a group to kill it or skip the quest; respawns are lengthy."
+  collect 257942 x1 quest 93318.1 -- Vulgara's Head
+step
+  along until A_Little_Beauty
+  zone map 2521
+  note "Kill Galestriders::251661. Loot them for [Strider Meat] and [Small Eggs]."
+  collect 5469 x8 quest 92553.2 @42.75,52.68 map 2521 -- 8/8 Strider Meat
+  collect 6889 x3 quest 92553.1 @42.75,52.68 map 2521 -- 3/3 Small Egg
+step
+  along until A_Little_Beauty
+  zone map 2521
+  note "Kill Prideclaws::251245. Loot them for the [Prideclaw Pelts]."
+  collect 252670 x10 quest 92515.1 @42.75,52.68 map 2521 -- 10/10 Prideclaw Pelt
+step
+  when complete 92516
+  when has 2589
+  zone map 2521
+  note "Press the Macro in the \"Active Items Frame\" to craft [Linen Bandages]."
+  note "*Skip this if you can't reach skill 20"
+  kill 257018 x1 quest 97965.1 -- Complete Camping 101: First Aid
+  note "*You may need to press the macro twice."
+step
+  when complete 97965
+  when complete 92516
+  when onquest 97965
+  zone map 2521
+  note "Talk to Naleeia Tattermend::257018 inside the tower"
+  turnin 97965 -- Turn in Camping 101: First Aid
+step
+  when complete 98286
+  when complete 92516
+  when onquest 98286
+  zone map 2521
+  note "Talk to Nasalanna Windsinger::257020"
+  turnin 98286 -- Turn in Camping 101: Enchanting
+step
+  when complete 97971
+  when complete 92516
+  when onquest 97971
+  zone map 2521
+  note "Talk to Mendalass Tattermend::257024"
+  turnin 97971 -- Turn in Camping 101: Skinning
+step
+  when complete 92516
+  when complete 92553
+  zone map 2521
+  note "Talk to Zerril Softbreeze::251905 and buy 5 [Mild Spices]"
+  vendor 251905 -- Vendor Trash
+  note "*Don't sell [Stringy Meat], [Small Eggs], or [Strider Meat]." only Alliance
+  note "*We need them for Cooking later."
+  collect 2678 x5 @43.851,43.848 map 2521 -- Mild Spices
+step
+  when complete 92516
+  when complete 92553
+  zone map 2521
+  note "Talk to Zerril Softbreeze::251905"
+  turnin 92553 -- Turn in Restocking the Larders
+step
+  when complete 96646
+  when complete 92516
+  when onquest 96646
+  zone map 2521
+  note "Talk to Zerril Softbreeze::251905"
+  turnin 96646 -- Turn in Camping 101: Cooking
+step
+  when turnedin 92553
+  when complete 92516
+  when has 6889
+  zone map 2521
+  goto 43.86,43.85 map 2521 r 8
+  note "Use the [Herb Baked Egg] macro below to craft as many as possible."
+  note "*Most buff food grants 5% increased experience from kills for 15 minutes. Try to maintain a high uptime on this buff while leveling."
+  note "*Buy 5-20 [Mild Spices] from Zerril Softbreeze if you haven't already."
+  note "*You may need to press the macro twice."
+step
+  when onquest 92553
+  when complete 92516
+  when !has 6888
+  when has 6889
+  zone map 2521
+  goto 43.86,43.85 map 2521 r 8
+  note "Use the [Herb Baked Egg] macro below to craft 1 for the experience buff."
+  note "*Most buff food grants 5% increased experience from kills for 15 minutes. Try to maintain a high uptime on this buff while leveling."
+  note "*Buy 5-20 [Mild Spices] from Zerril Softbreeze if you haven't already."
+  note "*You may need to press the macro twice."
+step
+  when onquest 92553
+  when complete 92516
+  when has 6889 x4
+  zone map 2521
+  goto 43.86,43.85 map 2521 r 8
+  note "Use the [Herb Baked Egg] macro below to craft every Small Egg beyond the 3 reserved for Restocking the Larders."
+  note "*Keep at least 3 Small Eggs for a later quest"
+  note "*Most buff food grants 5% increased experience from kills for 15 minutes. Try to maintain a high uptime on this buff while leveling."
+  note "*Buy 5-20 [Mild Spices] from Zerril Softbreeze if you haven't already."
+  note "*You may need to press the macro twice."
+step
+  when complete 97963
+  when complete 92516
+  when onquest 97963
+  zone map 2521
+  note "Talk to Nyassa Swiftdraught::257019"
+  turnin 97963 -- Turn in Camping 101: Alchemy
+step
+  label A_Little_Beauty
+  zone map 2521
+  note "Talk to Taleen Shimmerthread::251991"
+  turnin 93951 -- Turn in A Little Beauty
+step
+  when complete 97973
+  when complete 92516
+  when onquest 97973
+  zone map 2521
+  note "Talk to Taleen Shimmerthread::251991"
+  turnin 97973 -- Turn in Camping 101: Tailoring
+step
+  when complete 97964
+  when complete 92516
+  when onquest 97964
+  zone map 2521
+  note "Talk to Aedi Thriceforged::251913"
+  turnin 97964 -- Turn in Camping 101: Blacksmithing
+step
+  when complete 97970
+  when complete 92516
+  when onquest 97970
+  zone map 2521
+  note "Talk to Messana Crestwind::257022"
+  turnin 97970 -- Turn in Camping 101: Mining
+step
+  when complete 92515
+  when !turnedin 92516
+  zone map 2521
+  note "Talk to Indari Sunseam::251993"
+  turnin 92515 -- Turn in The Problem With Prideclaws
+step
+  when complete 97969
+  when complete 92516
+  when onquest 97969
+  zone map 2521
+  note "Talk to Indari Sunseam::251993"
+  turnin 97969 -- Turn in Camping 101: Leatherworking
+step
+  zone map 2521
+  note "Talk to Teeri Wellwind::251906"
+  turnin 92516 -- Turn in Hippogryph Harassment
+  turnin 93319 -- Turn in Pilfered Windstones
+step
+  only Shaman
+  when turnedin 92516
+  when turnedin 93319
+  zone map 2521
+  goto 44.79,44.168 map 2521 r 8
+  note "Talk to Tephri Thriceforged::257421"
+  note "Buy and equip a [Walking Stick]"
+  collect 2495 x1 @44.79,44.168 map 2521 optional -- Collect Walking Stick (1)
+step
+  only Druid
+  when turnedin 92516
+  when turnedin 93319
+  zone map 2521
+  goto 44.79,44.168 map 2521 r 8
+  note "Talk to Tephri Thriceforged::257421"
+  note "Buy and equip a [Walking Stick]"
+  collect 2495 x1 @44.79,44.168 map 2521 optional -- Collect Walking Stick (1)
+step
+  only Warrior
+  when level>=8
+  zone map 2521
+  goto 44.95,45.1 map 2521 r 8 optional
+  note "Talk to Corsan Earthrazer::254088"
+  learn 284 "Heroic Strike (Rank 2)"
+  learn 1715 "Hamstring"
+  learn 6343 "Thunder Clap"
+step
+  when complete 93318
+  zone map 2521
+  note "Talk to Danarii Bellowveil::252172"
+  turnin 93318 -- Turn in WANTED: Vulgara the Insatiable
+step
+  only Druid
+  when level>=8
+  zone map 2521
+  goto 45.153,44.225 map 2521 r 8 optional
+  note "Talk to Naeluna Swiftmend::254081."
+  learn 339 "Entangling Roots"
+  learn 5186 "Healing Touch (Rank 2)"
+step
+  only Hunter
+  when level>=8
+  zone map 2521
+  goto 45.263,44.236 map 2521 r 8 optional
+  note "Talk to Elayaa Easewind::254084."
+  learn 5116 "Concussive Shot"
+  learn 3127 "Parry"
+  learn 14260 "Raptor Strike (Rank 2)"
+step
+  zone map 2521
+  note "Talk to Constable Aonda::251523"
+  turnin 92517 -- Turn in The Criminal Element
+  accept 93036 -- Accept Infiltrating the Cult
+step
+  zone map 2521
+  note "Talk to Sania Silverstream::251904"
+  turnin 93036 -- Turn in Infiltrating the Cult
+  accept 92529 -- Accept Falaath Village
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid,Alliance
+  zone map 2521
+  note "Talk to Veena Vericloud::254358"
+  vendor 254358 -- Buy up to three [Small Brown Pouches] as needed.
+  note "Buy up to 10 [Ice Cold Milk] from him" only Druid
+  note "Buy up to 10 [Ice Cold Milk] from him" only Mage
+  note "Buy up to 10 [Ice Cold Milk] from him" only Priest
+  note "Buy up to 10 [Ice Cold Milk] from him" only Warlock
+  note "Buy up to 10 [Ice Cold Milk] from him" only Paladin
+  note "Buy up to 10 [Ice Cold Milk] from him" only Shaman
+  note "*When equipping bags, make sure your Reagent Bag is in the dedicated Reagent Bag slot."
+  note "*Don't sell [Stringy Meat], [Small Eggs], or [Strider Meat]." only Alliance
+step
+  when onquest 92529
+  zone map 2521
+  goto 44.831,45.515 map 2521 r 8
+step
+  only Shaman
+  zone map 2521
+  goto 44.79,44.168 map 2521 r 8
+  note "Talk to Tephri Thriceforged::257421"
+  note "Buy and equip a [Walking Stick]"
+  collect 2495 x1 @44.79,44.168 map 2521 optional -- Collect Walking Stick (1)
+step
+  only Druid
+  zone map 2521
+  goto 44.79,44.168 map 2521 r 8
+  note "Talk to Tephri Thriceforged::257421"
+  note "Buy and equip a [Walking Stick]"
+  collect 2495 x1 @44.79,44.168 map 2521 optional -- Collect Walking Stick (1)
+step
+  only Mage
+  when level>=8
+  zone map 2521
+  goto 45.1,45.86 map 2521 r 8 optional
+  note "Talk to Shenaan Spellwind::254086"
+  learn 5143 "Arcane Missiles"
+  learn 205 "Frostbolt (Rank 2)"
+  learn 118 "Polymorph"
+step
+  only Mage
+  when level>=8
+  zone map 2521
+  goto 45.1,45.86 map 2521 r 8 optional
+  note "Talk to Shenaan Spellwind::254086"
+  learn 5143 "Arcane Missiles"
+step
+  only Alliance
+  when onquest 94413
+  zone map 2521
+  note "Talk to Rathiril Sunlance::251903."
+  turnin 94413 -- Turn in A Magical Affront
+step
+  when complete 97967
+  zone map 2521
+  goto 45.03,48.45 map 2521 r 8
+  note "Talk to Fenn Fairweather::251992"
+  turnin 97967 optional -- Turn in Camping 101: Fishing
+step
+  along until LivingLightningA
+  zone map 2521
+  note "Kill Galestriders::251661. Loot them for [Strider Meat] and [Small Eggs]."
+  collect 5469 x8 quest 92553.2 @45.03,48.45 map 2521 -- 8/8 Strider Meat
+  collect 6889 x3 quest 92553.1 @45.03,48.45 map 2521 -- 3/3 Small Egg
+step
+  only Alliance
+  along until Skypriest_Aanders
+  zone map 2521
+  note "Kill Prideclaws::251245. Loot them for the [Prideclaw Pelts]."
+  collect 252670 x10 quest 92515.1 @45.03,48.45 map 2521 -- 10/10 Prideclaw Pelt
+step
+  when onquest 92529
+  zone map 2521
+  goto 45.374,53.512 map 2521 r 25 optional
+  goto 46.88,56.242 map 2521 r 8
+  note "Jump off the mountain and use [Walk on Air] to fly towards the questgiver."
+step
+  zone map 2521
+  note "Talk to Missionary Jasaan::257065"
+  turnin 92529 -- Turn in Falaath Village
+  accept 92528 -- Accept Among the Faithful
+  use 2454 @46.88,56.242 map 2521 only Warrior -- Elixir of Minor Strength
+  use 2454 @46.88,56.242 map 2521 only Rogue -- Elixir of Minor Strength
+step
+  when onquest 92528
+  zone map 2521
+  goto 46.89,56.24 map 2521 r 8
+step
+  label plans
+  along until next_246
+  zone map 2521
+  note "After clicking on the Wardrobe, return to the city."
+  kill 254128 x1 quest 92528.1 -- Learn about the cultists' plans
+step
+  label next_246
+  zone map 2521
+  goto 48.74,53.89 map 2521 r 10 optional
+  goto 49.06,53.48 map 2521 r 10 optional
+  goto 48.76,53.68 map 2521 r 10
+step
+  zone map 2521
+  note "Return to the city and wait for the roleplay."
+  note "*If you see a Tornado, use it for faster travel."
+  kill 254128 x1 quest 92528.1 -- Learn about the cultists' plans
+step
+  only Rogue
+  when !turnedin 92528
+  when level>=8
+  zone map 2521
+  goto 44.37,46.69 map 2521 r 30 optional
+  goto 43.15,43.27 map 2521 r 8 optional
+  note "Talk to Miriaan Mistblade::254087"
+  note "*Do not use [Walk on Air] during this step."
+  learn 5277 "Evasion"
+  learn 6760 "Eviscerate (Rank 2)"
+step
+  zone map 2521
+  goto 44.37,46.69 map 2521 r 30 optional only !Rogue
+  goto 44.49,45.95 map 2521 r 30 optional only !Rogue
+  goto 44.93,46.85 map 2521 r 30 optional only !Rogue
+  goto 45.21,46.63 map 2521 r 30 optional only !Rogue
+  goto 45.04,46.23 map 2521 r 15 optional only !Rogue
+  goto 45.67,45.5 map 2521 r 8 optional
+  note "Talk to Constable Aonda::251523."
+  note "*Do not use [Walk on Air] during this step."
+  turnin 92528 only Mage -- Turn in Among the Faithful
+  turnin 92528 only Druid -- Turn in Among the Faithful
+  turnin 92528 only Shaman -- Turn in Among the Faithful
+  turnin 92528 only Priest -- Turn in Among the Faithful
+  turnin 92528 only Warlock -- Turn in Among the Faithful
+  turnin 92528 only Warrior -- Turn in Among the Faithful
+  turnin 92528 only Rogue -- Turn in Among the Faithful
+  turnin 92528 only Paladin -- Turn in Among the Faithful
+  turnin 92528 only Hunter -- Turn in Among the Faithful
+  accept 92550 -- Accept Havoc in the Highlands
+  accept 93926 -- Accept The Western Watch
+step
+  zone map 2521
+  note "*Equip the [Stained Ritual Dagger]" only Mage
+  note "*Equip the [Stained Ritual Dagger]" only Priest
+  note "*Equip the [Stained Ritual Dagger]" only Warlock
+  note "*Equip the [Curved Scimitar]" only Warrior
+  note "*Equip the [Curved Scimitar]" only Rogue
+  note "*Equip the [Curved Scimitar]" only Paladin
+  note "*Equip the [Windswept Shortbow]" only Hunter
+  note "Talk to Danarii Bellowveil::252172."
+  accept 92551 -- Accept Stolen Supplies
+  use 257332 @45.25,45.18 map 2521 only Mage -- Stained Ritual Dagger
+  use 257332 @45.25,45.18 map 2521 only Priest -- Stained Ritual Dagger
+  use 257332 @45.25,45.18 map 2521 only Warlock -- Stained Ritual Dagger
+  use 257333 @45.25,45.18 map 2521 only Warrior -- Curved Scimitar
+  use 257333 @45.25,45.18 map 2521 only Rogue -- Curved Scimitar
+  use 257333 @45.25,45.18 map 2521 only Paladin -- Curved Scimitar
+  use 273877 @45.25,45.18 map 2521 only Hunter -- Windswept Shortbow
+step
+  when onquest 93926
+  when complete 97967
+  when onquest 97967
+  zone map 2521
+  note "Talk to Fenn Fairweather::251992"
+  turnin 97967 -- Turn in Camping 101: Fishing
+step
+  when onquest 93926
+  zone map 2521
+  goto 45.35,46.79 map 2521 r 20 optional
+  goto 44.05,49.98 map 2521 r 8
+  note "Jump off the mountain and use [Walk on Air] to fly towards the waypoint location."
+step
+  when onquest 93926
+  zone map 2521
+  goto 45.35,46.79 map 2521 r 20 optional
+  goto 44.05,49.98 map 2521 r 30 optional
+  goto 43.02,49.86 map 2521 r 8
+  note "*Use the sit macro in combat to die faster."
+step
+  when onquest 93926
+  label Western_Watchtower
+  along until next_255
+  note "Talk to Peacekeeper Vaaniel::252155."
+  kill 252155 x1 quest 93926.1 -- Check in on the Western Watchtower in the Shen'dar Highlands
+step
+  label next_255
+  when onquest 93926
+  note "Talk to Peacekeeper Vaaniel::252155."
+  kill 252155 x1 quest 93926.1 -- Check in on the Western Watchtower in the Shen'dar Highlands
+step
+  zone map 2521
+  note "Talk to Peacekeeper Vaaniel::252155."
+  kill 252155 x1 quest 93926.1 -- Check in on the Western Watchtower in the Shen'dar Highlands
+step
+  zone map 2521
+  note "Click on Peacekeeper Vaaniel::252155"
+  turnin 93926 -- Turn in The Western Watch
+  accept 93927 -- Accept A Last Request
+step
+  zone map 2521
+  note "Click on the Bloody Note."
+  note "*Keep one bag slot free."
+  kill 256966 x1 quest 93927.1 -- Collect and read the note
+step
+  zone map 2521
+  note "Click on Arvensus Shadowsong\\n from afar."
+  note "*Keep one bag slot free."
+  collect 263418 x1 quest 93927.4 -- Shadowsong Family Signet
+step
+  zone map 2521
+  note "Click on Raani Windgazer\\n from afar."
+  note "*Keep one bag slot free."
+  collect 263415 x1 quest 93927.3 -- Raani's Favorite Feather
+step
+  label Skypriest_Aanders
+  zone map 2521
+  note "Ascend the spiral staircase, then kill Skypriest Aanders::256966 atop the tower."
+  collect 254871 x1 quest 93927.2 -- Skypriest Aanders slain
+step
+  when onquest 92551
+  zone map 2521
+  goto 50.29,56.95 map 2521 r 8
+  note "Jump off the tower and use [Walk on Air] to fly towards the waypoint location."
+step
+  only Alliance
+  along until NearCommander
+  zone map 2521
+  note "Kill Al'Aketh Stormcallers::252068. Loot them for the [Stolen Shen'dar Supplies]."
+  note "Click on the Supply Caches (small bags)."
+  kill 252068 x6 quest 92550.1 @50.29,56.95 map 2521 -- 6/6 Al'Aketh Stormcaller slain
+  collect 252760 x10 quest 92551.1 @50.29,56.95 map 2521 -- 10/10 Stolen Shen'dar Supplies
+step
+  only Alliance
+  along until NearCommander
+  zone map 2521
+  note "Kill Galestriders::251661. Loot them for [Strider Meat] and [Small Eggs]."
+  collect 5469 x8 quest 92553.2 @50.29,56.95 map 2521 -- 8/8 Strider Meat
+  collect 6889 x3 quest 92553.1 @50.29,56.95 map 2521 -- 3/3 Small Egg
+step
+  only Alliance
+  along until NearCommander
+  zone map 2521
+  note "Kill Prideclaws::251245. Loot them for the [Prideclaw Pelts]."
+  collect 252670 x10 quest 92515.1 @50.29,56.95 map 2521 -- 10/10 Prideclaw Pelt
+step
+  only Alliance
+  when onquest 92550
+  label NearCommander
+  zone map 2521
+  goto 45.48,58.73 map 2521 r 30 optional
+  goto 48.36,58.49 map 2521 r 8
+  note "Use [Read Ley Line] for 100% increased passive Mana and Health regeneration."
+  note "*If a Tornado is nearby, touch it to gain 40% increased movement speed for 5 minutes. Dealing damage removes the effect."
+step
+  along until CommanderCyclasHeadA
+  zone map 2521
+  note "Kill Prideclaws::251245. Loot them for the [Prideclaw Pelts]."
+  collect 252670 x10 quest 92515.1 @48.36,58.49 map 2521 -- 10/10 Prideclaw Pelt
+step
+  along until CommanderCyclasHeadA
+  zone map 2521
+  note "Kill Living Lightning::251662."
+  kill 251662 x4 quest 92550.2 @48.36,58.49 map 2521 -- 4/4 Living Lightning slain
+step
+  along until CommanderCyclasHeadA
+  zone map 2521
+  note "Kill Al'Aketh Stormcallers::252068. Loot them for the [Stolen Shen'dar Supplies]."
+  note "Click on the Supply Caches."
+  kill 252068 x6 quest 92550.1 @48.36,58.49 map 2521 -- 6/6 Al'Aketh Stormcaller slain
+  collect 252760 x10 quest 92551.1 @48.36,58.49 map 2521 -- 10/10 Stolen Shen'dar Supplies
+step
+  label CommanderCyclasHeadA
+  zone map 2521
+  note "Kill Commander Cyclas::251966. Loot him for [Commander Cyclas's Head]."
+  collect 252661 x1 quest 92550.3 -- Commander Cyclas's Head
+step
+  along until LivingLightningA
+  zone map 2521
+  goto 49.877,56.539 map 2521 r 25 optional
+  goto 49.629,54.728 map 2521 r 25 optional
+  goto 49.058,53.545 map 2521 r 15 optional
+  goto 47.641,54.14 map 2521 r 30 optional
+  goto 49.765,57.237 map 2521 r 25 optional
+  goto 49.5,56.22 map 2521 r 35 optional
+  goto 49.86,56.95 map 2521 r 35 optional
+  goto 50.4,56.93 map 2521 r 25 optional
+step
+  along until next_273
+  zone map 2521
+  note "Kill Living Lightning::251662."
+  kill 251662 x4 quest 92550.2 @50.4,56.93 map 2521 -- 4/4 Living Lightning slain
+step
+  label next_273
+  zone map 2521
+  note "Kill Al'Aketh Stormcallers::252068. Loot them for the [Stolen Shen'dar Supplies]."
+  note "Click on the Supply Caches."
+  kill 252068 x6 quest 92550.1 @50.4,56.93 map 2521 -- 6/6 Al'Aketh Stormcaller slain
+  collect 252760 x10 quest 92551.1 @50.4,56.93 map 2521 -- 10/10 Stolen Shen'dar Supplies
+step
+  label LivingLightningA
+  zone map 2521
+  note "Kill Living Lightning::251662."
+  kill 251662 x4 quest 92550.2 @50.4,56.93 map 2521 -- 4/4 Living Lightning slain
+step
+  zone map 2521
+  goto 49.877,56.539 map 2521 r 25 optional
+  goto 49.629,54.728 map 2521 r 25 optional
+  goto 49.058,53.545 map 2521 r 15 optional
+  goto 47.641,54.14 map 2521 r 30 optional
+  goto 49.765,57.237 map 2521 r 25 optional
+  goto 49.5,56.22 map 2521 r 35 optional
+  goto 49.86,56.95 map 2521 r 35 optional
+  goto 50.4,56.93 map 2521 r 25
+  level 8+4000 -- Grind to 4000/5400 to reach level 10 later at the correct moment
+step
+  along until RestockingTheLardersA
+  zone map 2521
+  goto 47.34,51.69 map 2521 r 35 optional
+  goto 45.9,53.93 map 2521 r 35 optional
+  goto 42.65,49.07 map 2521 r 35 optional
+  goto 41.44,53.14 map 2521 r 35 optional
+  goto 39.77,56.4 map 2521 r 35 optional
+  goto 40.9,50.64 map 2521 r 35 optional
+  goto 37.56,43.24 map 2521 r 40 optional
+  goto 40.04,41.38 map 2521 r 40 optional
+step
+  along until next_278
+  zone map 2521
+  note "Kill Galestriders::251661. Loot them for [Strider Meat] and [Small Eggs]."
+  collect 5469 x8 quest 92553.2 @40.04,41.38 map 2521 -- 8/8 Strider Meat
+  collect 6889 x3 quest 92553.1 @40.04,41.38 map 2521 -- 3/3 Small Egg
+step
+  label next_278
+  zone map 2521
+  note "Kill Prideclaws::251245. Loot them for the [Prideclaw Pelts]."
+  collect 252670 x10 quest 92515.1 @40.04,41.38 map 2521 -- 10/10 Prideclaw Pelt
+step
+  label RestockingTheLardersA
+  zone map 2521
+  note "Kill Galestriders::251661. Loot them for [Strider Meat] and [Small Eggs]."
+  collect 5469 x8 quest 92553.2 @40.04,41.38 map 2521 -- 8/8 Strider Meat
+  collect 6889 x3 quest 92553.1 @40.04,41.38 map 2521 -- 3/3 Small Egg
+step
+  when complete 92553
+  zone map 2521
+  note "Talk to Zerril Softbreeze::251905"
+  turnin 92553 -- Turn in Restocking the Larders
+step
+  when complete 92550
+  zone map 2521
+  note "*Do not use [Walk on Air] during this step."
+  note "Talk to Zerril Softbreeze::251905."
+  vendor 251905 -- Vendor Trash
+  note "*Don't sell [Stringy Meat], [Small Eggs], or [Strider Meat]." only Alliance
+  note "*We need them for Cooking later."
+step
+  when complete 96646
+  when complete 92550
+  when onquest 96646
+  zone map 2521
+  note "Talk to Zerril Softbreeze::251905"
+  turnin 96646 -- Turn in Camping 101: Cooking
+step
+  when turnedin 92553
+  when complete 92550
+  when has 6889
+  zone map 2521
+  goto 43.86,43.85 map 2521 r 8
+  note "Use the [Herb Baked Egg] macro below to craft as many as possible."
+  note "*Most buff food grants 5% increased experience from kills for 15 minutes. Try to maintain a high uptime on this buff while leveling."
+  note "*Buy 5-20 [Mild Spices] from Zerril Softbreeze if you haven't already."
+  note "*You may need to press the macro twice."
+step
+  when complete 97971
+  when complete 92550
+  when onquest 97971
+  zone map 2521
+  note "Talk to Mendalass Tattermend::257024"
+  turnin 97971 -- Turn in Camping 101: Skinning
+step
+  when complete 98286
+  when complete 92550
+  when onquest 98286
+  zone map 2521
+  note "Talk to Nasalanna Windsinger::257020"
+  turnin 98286 -- Turn in Camping 101: Enchanting
+step
+  when has 2589
+  zone map 2521
+  note "Press the Macro in the \"Active Items Frame\" to craft [Linen Bandages]."
+  note "*Skip this if you can't reach skill 20"
+  kill 257018 x1 quest 97965.1 -- Complete Camping 101: First Aid
+  note "*You may need to press the macro twice."
+step
+  when complete 97965
+  when complete 92550
+  when onquest 97965
+  zone map 2521
+  note "Talk to Naleeia Tattermend::257018"
+  turnin 97965 -- Turn in Camping 101: First Aid
+step
+  when complete 97963
+  when complete 92550
+  when onquest 97963
+  zone map 2521
+  note "Talk to Nyassa Swiftdraught::257019"
+  turnin 97963 -- Turn in Camping 101: Alchemy
+step
+  when complete 97973
+  when complete 92550
+  when onquest 97973
+  zone map 2521
+  note "Talk to Taleen Shimmerthread::251991"
+  turnin 97973 -- Turn in Camping 101: Tailoring
+step
+  when complete 97964
+  when complete 92550
+  when onquest 97964
+  zone map 2521
+  note "Talk to Aedi Thriceforged::251913"
+  turnin 97964 -- Turn in Camping 101: Blacksmithing
+step
+  when complete 97970
+  when complete 92550
+  when onquest 97970
+  zone map 2521
+  note "Talk to Messana Crestwind::257022"
+  turnin 97970 -- Turn in Camping 101: Mining
+step
+  when complete 92515
+  zone map 2521
+  note "Talk to Indari Sunseam::251993"
+  turnin 92515 -- Turn in The Problem With Prideclaws
+step
+  when complete 97969
+  when complete 92550
+  when onquest 97969
+  zone map 2521
+  note "Talk to Indari Sunseam::251993"
+  turnin 97969 -- Turn in Camping 101: Leatherworking
+step
+  when complete 92550
+  zone map 2521
+  note "Talk to Veena Vericloud::254358"
+  vendor 254358 -- Vendor Trash. Buy up to three [Small Brown Pouches] as needed.
+  note "*Buy [Ice Cold Milk] from him" only Druid
+  note "*Buy [Ice Cold Milk] from him" only Mage
+  note "*Buy [Ice Cold Milk] from him" only Priest
+  note "*Buy [Ice Cold Milk] from him" only Warlock
+  note "*Buy [Ice Cold Milk] from him" only Paladin
+  note "*Buy [Sharp Arrows]" only Hunter
+  note "*When equipping bags, make sure your Reagent Bag is in the dedicated Reagent Bag slot."
+  note "*Don't sell [Stringy Meat], [Small Eggs], or [Strider Meat]." only Alliance
+  collect 2515 x1000 @44.71,45.48 map 2521 optional only Hunter -- Sharp Arrows (1000)
+step
+  label SkybornePart1End
+  zone map 2521
+  note "Talk to Danarii Bellowveil::252172."
+  turnin 92551 -- Turn in Stolen Supplies
+step
+  zone map 2521
+  note "Talk to Constable Aonda::251523."
+  turnin 92550 -- Turn in Havoc in the Highlands
+  turnin 93927 -- Turn in A Last Request
+  accept 92701 only Alliance -- Accept To Valanaar
+  accept 93948 -- Accept Deliver the Signet

@@ -1,0 +1,523 @@
+guide rxp-free/11-12-elwynn-dwarf-gnome-2bd7b80f
+title "11-12 Elwynn (Dwarf/Gnome)"
+levels 11-12
+zone map 1429
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+class !Hunter
+next rxp-free/12-14-loch-modan-dwarf-gnome-f935fec6
+step
+  only Warlock
+  along until next_1
+  note "Cast [Life Tap] repeatedly until you have <10% health while on the way to Dungar Longdrink"
+step
+  label next_1
+  zone map 1453
+  note "Talk to Dungar Longdrink"
+  getfp "Stormwind" @66.276938,62.137169 map 1453 -- Get the Stormwind City flight path
+step
+  only Warlock
+  along until next_4
+  note "Cast [Life Tap] repeatedly until you have <10% health then jump down the ledge (NOT into the water) next to the flight master and die intentionally"
+  note "Respawn at the Spirit Healer"
+step
+  only Mage
+  label next_4
+  along until next_5
+  zone map 1429
+  goto 43.876976,66.546199 map 1429 r 9 -- Travel upstairs in the Inn
+step
+  only Rogue
+  along until next_5
+  zone map 1429
+  goto 43.876976,66.546199 map 1429 r 9 -- Travel upstairs in the Inn
+step
+  only Mage
+  label next_5
+  zone map 1429
+  note "Talk to Zaldimar Wefhellt"
+  train 328 -- Train your class spells
+step
+  only Rogue
+  zone map 1429
+  note "Talk to Keryn Sylvius"
+  note "Prioritize training [Dual Wield]"
+  train 917 -- Train your class spells
+step
+  zone map 1429
+  note "Talk to Remy \"Two Times\""
+  accept 40 -- Accept A Fishy Peril
+step
+  zone map 1429
+  note "Talk to Marshal Dughan"
+  turnin 40 -- Turn in A Fishy Peril
+  accept 35 -- Accept Further Concerns
+step
+  only Paladin
+  zone map 1429
+  note "Talk to Brother Wilhelm"
+  train 927 -- Train your class spells
+step
+  only Warlock
+  zone map 1429
+  note "Click the Wanted Poster"
+  accept 176 -- Accept Wanted: "Hogger"
+  goto 24.547904,74.672068 map 1429 r 8 optional
+step
+  only Warlock
+  along until next_12
+  zone map 1429
+  note "The [Gold Pickup Schedule] is a very rare drop. Ignore this step if you don't get it"
+  note "Gruff Swiftbite a rare spawn, does have a 100% drop chance"
+  use 1307 @24.547904,74.672068 map 1429 -- Use the [Gold Pickup Schedule] to start the quest
+  collect 1307 x1 @24.547904,74.672068 map 1429 optional -- Collect Gold Pickup Schedule (x1)
+  accept 123 -- Accept The Collector
+step
+  only Warlock
+  label next_12
+  zone map 1429
+  note "Kill Hogger. Loot him for his Claw"
+  note "Hogger can spawn in multiple locations"
+  note "Cast [Fear] on Hogger continously and use your regular DoTs to kill him"
+  note "This quest is difficult. Find a group for him if needed. Skip this step if you're unable to find a group or solo him"
+  collect 1931 x1 quest 176.1 -- Huge Gnoll Claw (1)
+step
+  zone map 1429
+  note "Talk to Ma Stonefield"
+  accept 88 -- Accept Princess Must Die!
+  goto 34.659883,84.482907 map 1429 r 8 optional -- c:Elwynn Forest,34.660,84.483
+step
+  along until next_15
+  zone map 1429
+  goto 73.972913,72.179179 map 1429 r 30 -- Travel east to Guard Thomas
+step
+  label next_15
+  zone map 1429
+  note "Talk to Guard Thomas"
+  turnin 35 -- Turn in Further Concerns
+  accept 37 -- Accept Find the Lost Guards
+  accept 52 -- Accept Protect the Frontier
+step
+  along until BundleOT
+  zone map 1429
+  note "Kill Prowlers and Young Forest Bears"
+  note "Prioritize killing any Young Forest Bears you see"
+  kill 118 x8 quest 52.1 @73.972913,72.179179 map 1429 -- Kill Prowler (x8)
+  kill 822 x5 quest 52.2 @73.972913,72.179179 map 1429 -- Kill Young Forest Bear (x5)
+step
+  zone map 1429
+  note "Click A half-eaten body on the ground"
+  turnin 37 -- Turn in Find the Lost Guards
+  accept 45 -- Accept Discover Rolf's Fate
+step
+  zone map 1429
+  note "Talk to Supervisor Raelen"
+  accept 5545 -- Accept A Bundle of Trouble
+step
+  along until Prowlers
+  zone map 1429
+  note "Loot the Bundle of Wood on the ground. They are found beneath the trees"
+  collect 13872 x8 quest 5545.1 @81.382083,66.111995 map 1429 -- Bundle of Wood (8)
+step
+  label Prowlers
+  zone map 1429
+  note "Click Rolf's corpse on the ground"
+  note "Be careful as nearby Murlocs may aggro once you click Rolf's corpse"
+  note "Murloc Foragers will cast [Drink Minor Potion] which heals themselves for 61-68"
+  turnin 45 -- Turn in Discover Rolf's Fate
+  accept 71 -- Accept Report to Thomas
+step
+  loop
+  zone map 1429
+  goto 80.479994,55.180004 map 1429 r 1
+  goto 80.150102,60.030122 map 1429 r 1
+  goto 83.47985,59.19023 map 1429 r 1
+  goto 80.479994,55.180004 map 1429 r 40
+  goto 80.879898,53.879986 map 1429 r 40
+  goto 79.679898,52.309941 map 1429 r 40
+  goto 80.860018,52.169959 map 1429 r 40
+  goto 80.879898,53.879986 map 1429 r 40
+  goto 80.479994,55.180004 map 1429 r 40
+  goto 79.759994,56.699933 map 1429 r 40
+  goto 80.150102,60.030122 map 1429 r 40
+  goto 80.239994,61.460185 map 1429 r 40
+  goto 81.270006,61.59023 map 1429 r 40
+  goto 81.580018,62.640095 map 1429 r 40
+  goto 82.790102,60.119987 map 1429 r 40
+  goto 83.249934,61.120167 map 1429 r 40
+  goto 83.47985,59.19023 map 1429 r 40
+  goto 81.769886,59.169924 map 1429 r 40
+  goto 80.479994,55.180004 map 1429 r 40
+  goto 83.249934,61.120167 map 1429 r 40
+  goto 83.47985,59.19023 map 1429 r 40
+  note "Loot the Bundles of Wood on the ground at the base of the trees"
+  collect 13872 x8 quest 5545.1 -- Bundle of Wood (8)
+step
+  label BundleOT
+  zone map 1429
+  note "Talk to Supervisor Raelen"
+  turnin 5545 -- Turn in A Bundle of Trouble
+step
+  along until WaterloggedToolbox
+  zone map 1429
+  note "Kill Prowlers and Young Forest Bears"
+  kill 118 x8 quest 52.1 @81.382083,66.111995 map 1429 -- Kill Prowler (x8)
+  kill 822 x5 quest 52.2 @81.382083,66.111995 map 1429 -- Kill Young Forest Bear (x5)
+step
+  zone map 1429
+  note "Talk to Ormin Pelford"
+  accept 91733 -- Accept Downstream
+step
+  zone map 1429
+  note "Loot the Waterlogged Saw on the ground"
+  collect 247813 x1 quest 91733.2 -- Waterlogged Saw 1/1
+  goto 74.3,76.4 map 1429 r 8
+step
+  zone map 1429
+  note "Loot the Waterlogged Axe on the ground"
+  collect 247817 x1 quest 91733.1 @74.3,76.4 map 1429 -- Waterlogged Axe 1/1
+  goto 76.7,82.5 map 1429 r 8 optional
+step
+  label WaterloggedToolbox
+  zone map 1429
+  note "Loot the Waterlogged Toolbox on the ground"
+  collect 247818 x1 quest 91733.3 -- Waterlogged Toolbox 1/1
+  goto 77.3,86.8 map 1429 r 8
+step
+  zone map 1429
+  note "Kill Croaky. Loot him for [Croaky's Head]"
+  use 247826 @76.500835,86.050792 map 1429 -- Use [Croaky's Head] to start the quest
+  note "He is a level 11 elite. Skip this step if you are unable to kill him"
+  collect 247826 x1 @76.500835,86.050792 map 1429 optional -- Croaky's Head (1)
+  accept 91740 -- Accept Croaky's Head
+step
+  loop
+  zone map 1429
+  goto 77.499,74.518 map 1429 r 1
+  goto 80.496,78.223 map 1429 r 1
+  goto 87.342,63.763 map 1429 r 1
+  goto 77.499,74.518 map 1429 r 55
+  goto 77.222,77.499 map 1429 r 55
+  goto 78.483,79.323 map 1429 r 55
+  goto 80.496,78.223 map 1429 r 55
+  goto 81.434,76.695 map 1429 r 55
+  goto 87.145,69.922 map 1429 r 55
+  goto 87.342,63.763 map 1429 r 55
+  note "Kill Prowlers and Young Forest Bears"
+  kill 118 x8 quest 52.1 -- Kill Prowler (x8)
+  kill 822 x5 quest 52.2 -- Kill Young Forest Bear (x5)
+step
+  only Warlock
+  when onquest 147
+  zone map 1429
+  goto 71.100116,80.660188 map 1429 r 8
+  note "Kill Surena Caledon. Loot her for her Choker"
+  note "Kill Morgan the Collector. Loot him for The Collector's Ring"
+  note "Focus on killing Surena Caledon very quickly"
+  note "Cast [Fear] on Morgan the Collector continously"
+  note "Surena's Choker (1)"
+  note "The Collector's Ring (1)"
+step
+  only Warlock
+  zone map 1429
+  goto 71.100116,80.660188 map 1429 r 8
+  note "Kill Surena Caledon. Loot her for her Choker"
+  note "Focus on killing Surena Caledon very quickly"
+  note "Cast [Fear] on Morgan the Collector continously"
+  note "Surena's Choker (1)"
+step
+  zone map 1429
+  note "Kill Princess. Loot her for her Collar"
+  note "Princess will aggro with both of her Porcine Entourage"
+  note "Princess will also cast [Rushing Charge] which deals heavy damage"
+  note "Pool 100 Rage before you engage Princess" only Warrior
+  note "Be sure [Evasion] is ready. If you're struggling, you can use the Fence with Throwing Weapons to abuse pathing and buy time" only Rogue
+  note "Be ready to use a [Lesser Healing Potion]"
+  collect 1006 x1 quest 88.1 -- Collect Brass Collar (x1)
+step
+  when level>=9
+  zone map 1429
+  note "Talk to Guard Thomas"
+  turnin 52 -- Turn in Protect the Frontier
+  turnin 71 -- Turn in Report to Thomas
+  accept 39 -- Accept Deliver Thomas' Report
+  accept 109 -- Accept Report to Gryan Stoutmantle
+step
+  zone map 1429
+  note "Talk to Ormin Pelford"
+  turnin 91733 -- Turn in Downstream
+step
+  when onquest 91740
+  label next_36
+  zone map 1429
+  note "Talk to Merell Ross::248277"
+  turnin 91740 -- Turn in Croaky's Head
+step
+  along until next_38
+  zone map 1433
+  goto 17.400087,69.600032 map 1433 r 8
+step
+  label next_38
+  zone map 1433
+  note "Talk to Guard Parker"
+  accept 244 -- Accept Encroaching Gnolls
+step
+  zone map 1433
+  note "Talk to Deputy Feldon"
+  note "Be careful of high level mobs en route"
+  turnin 244 -- Turn in Encroaching Gnolls
+step
+  zone map 1433
+  goto 30.590409,59.41643 map 1433 r 8
+  note "Talk to Ariena Stormfeather"
+  getfp "Redridge Mountains" @30.590409,59.41643 map 1433 -- Get the Redridge Mountains flight path
+  fly "Stormwind" -- Fly to Stormwind
+step
+  zone map 1453
+  goto 53.612072,59.764223 map 1453 r 8 -- c:Stormwind City,53.612,59.764
+  note "Talk to Auctioneer Jaxon"
+  note "Buy the following items for faster turn ins at Westfall:"
+  note "If you don't want to or can't do this, skip this step"
+  note "[Stringy Vulture Meat]"
+  note "[Murloc Eye]"
+  note "[Goretusk Snout]"
+  note "[Okra]"
+  note "[Goretusk Liver]"
+  collect 729 x3 @53.612072,59.764223 map 1453 optional -- Stringy Vulture Meat (3)
+  collect 730 x3 @53.612072,59.764223 map 1453 optional -- Murloc Eye (3)
+  collect 731 x3 @53.612072,59.764223 map 1453 optional -- Goretusk Snout (3)
+  collect 732 x3 @53.612072,59.764223 map 1453 optional -- Okra (3)
+  collect 723 x8 @53.612072,59.764223 map 1453 optional -- Goretusk Liver (8)
+step
+  only Warlock
+  along until next_43
+  zone map 1453
+  goto 29.200309,73.99967 map 1453 r 20 optional
+  goto 27.199967,78.099612 map 1453 r 15 optional -- Travel to The Slaughtered Lamb and go downstairs
+step
+  only Warlock
+  label next_43
+  zone map 1453
+  note "Talk to Ursula Deline"
+  train 5495 -- Train your class spells
+step
+  only Warlock
+  when onquest 1688
+  turnin 1688 -- Turn in Surena Caledon
+step
+  only Warlock
+  zone map 1453
+  note "Talk to Gakin the Darkbinder"
+  accept 1689 -- Accept The Binding
+step
+  only Warlock
+  along until next_46
+  zone map 1453
+  note "Travel to the bottom of The Slaughtered Lamb"
+  note "Use the [Bloodstone Choker] to call forth a Summoned Voidwalker"
+  use 6928 @25.154247,77.40569 map 1453
+step
+  only Warlock
+  label next_46
+  zone map 1453
+  use 6928 @25.154247,77.40569 map 1453 -- Kill the Summoned Voidwalker
+  kill 5676 x1 quest 1689.1 -- Kill Summoned Voidwalker (x1)
+step
+  only Warlock
+  along until next_48
+  note "Start casting [Life Tap] on your way back up to Gakin the Darkbinder as you will do a deathskip momentarily"
+step
+  only Warlock
+  when onquest 1689
+  label next_48
+  zone map 1453
+  note "Talk to Gakin the Darkbinder"
+  turnin 1689 -- Turn in The Binding
+step
+  only Warlock
+  note "Die and respawn at the Spirit Healer by using [Life Tap] and standing on the Bonfire next to you"
+step
+  zone map 1429
+  goto 42.105068,65.927081 map 1429 r 8
+step
+  only Warlock
+  when onquest 147
+  turnin 147 -- Turn in Manhunt
+step
+  only Warlock
+  when onquest 147
+  zone map 1429
+  note "Talk to Marshal Dughan"
+  turnin 39 -- Turn in Deliver Thomas' Report
+step
+  only Warlock
+  when turnedin 147
+  zone map 1429
+  note "Talk to Marshal Dughan"
+  turnin 39 -- Turn in Deliver Thomas' Report
+step
+  zone map 1429
+  note "Talk to Marshal Dughan"
+  turnin 39 -- Turn in Deliver Thomas' Report
+step
+  only Hunter
+  when level>=12
+  zone map 1429
+  note "Talk to Josephine Carson"
+  train 251507 -- Train your class spells
+step
+  only Warrior
+  when level>=12
+  zone map 1429
+  note "Talk to Lyria Du Lac"
+  train 913 -- Train your class spells
+step
+  only Paladin
+  when level>=12
+  zone map 1429
+  note "Talk to Brother Wilhelm"
+  train 927 -- Train your class spells
+step
+  only Mage
+  along until next_57
+  zone map 1429
+  goto 43.876976,66.546199 map 1429 r 9 -- Travel upstairs in the Inn
+step
+  only Priest
+  along until next_57
+  zone map 1429
+  goto 43.876976,66.546199 map 1429 r 9 -- Travel upstairs in the Inn
+step
+  only Rogue
+  along until next_57
+  zone map 1429
+  goto 43.876976,66.546199 map 1429 r 9 -- Travel upstairs in the Inn
+step
+  only Mage
+  when level>=12
+  label next_57
+  zone map 1429
+  note "Talk to Zaldimar Wefhellt"
+  train 328 -- Train your class spells
+step
+  only Priest
+  when level>=12
+  zone map 1429
+  note "Talk to Priestess Josetta"
+  train 377 -- Train your class spells
+step
+  only Rogue
+  when level>=12
+  zone map 1429
+  note "Talk to Keryn Sylvius"
+  train 917 -- Train your class spells
+step
+  zone map 1429
+  note "Talk to Ma Stonefield"
+  turnin 88 -- Turn in Princess Must Die!
+  goto 34.659883,84.482907 map 1429 r 8 optional -- c:Elwynn Forest,34.660,84.483
+step
+  only Paladin,Dwarf
+  when !turnedin 1648
+  loop
+  zone map 1429
+  goto 27.000052,86.700153 map 1429 r 70
+  goto 26.099981,89.899865 map 1429 r 70
+  goto 25.199909,92.699938 map 1429 r 70
+  goto 27.000052,93.900154 map 1429 r 70
+  note "Kill Riverpaw Runts and Riverpaw Outrunners. Loot them for [Linen Cloth]"
+  note "Ensure you have 10 [Linen Cloth] for your upcoming Paladin class quest"
+  collect 2589 x10 -- Linen Cloth (10)
+step
+  along until WestEntry
+  zone map 1436
+  goto 59.949914,19.350003 map 1436 r 8
+step
+  when onquest 184
+  zone map 1436
+  note "Talk to Farmer Furlbrow"
+  turnin 184 -- Turn in Furlbrow's Deed
+step
+  label WestEntry
+  zone map 1436
+  note "Talk to Farmer Furlbrow and Verna Furlbrow"
+  accept 64 -- Accept The Forgotten Heirloom
+  accept 151 -- Accept Poor Old Blanchy
+  accept 36 -- Accept Westfall Stew
+  goto 59.919914,19.41986 map 1436 r 8 optional
+step
+  zone map 1436
+  note "Talk to Farmer Saldean"
+  accept 9 -- Accept The Killing Fields
+step
+  zone map 1436
+  note "Talk to Salma Saldean"
+  turnin 36 -- Turn in Westfall Stew
+  accept 38 -- Accept Westfall Stew
+  accept 22 -- Accept Goretusk Liver Pie
+step
+  when complete 38
+  zone map 1436
+  note "Talk to Salma Saldean"
+  turnin 38 -- Turn in Westfall Stew
+step
+  when complete 22
+  zone map 1436
+  note "Talk to Salma Saldean"
+  turnin 22 -- Turn in Goretusk Liver Pie
+step
+  along until next_70
+  note "Die and respawn at the Spirit Healer or run to Sentinel Hill"
+step
+  label next_70
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  turnin 109 -- Turn in Report to Gryan Stoutmantle
+  accept 12 -- Accept The People's Militia
+step
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  accept 12 -- Accept The People's Militia
+step
+  zone map 1436
+  note "Talk to Captain Danuvin"
+  accept 102 -- Accept Patrolling Westfall
+step
+  zone map 1436
+  note "Talk to Scout Galiaan"
+  accept 153 -- Accept Red Leather Bandanas
+step
+  zone map 1436
+  note "Talk to Thor"
+  getfp "Sentinel Hill" @56.549914,52.64015 map 1436 -- Get the Sentinel Hill flight path
+step
+  only Paladin,Dwarf
+  hearth "Ironforge" optional -- Hearth to Ironforge
+  note "Buy food/water if needed" only !Warrior,!Rogue
+  note "Buy food if needed" only Warrior
+  note "Buy food if needed" only Rogue
+step
+  only Paladin,Dwarf
+  when !zone "Ironforge"
+  when !zone "Loch Modan"
+  zone map 1436
+  goto 56.549914,52.64015 map 1436 r 8
+  note "Talk to Thor"
+  fly "Ironforge" -- Fly to Ironforge
+step
+  only Warrior,Hunter,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  when !zone "Loch Modan"
+  hearth "Thelsamar" optional -- Hearth to Thelsamar
+  note "Buy food/water if needed" only !Warrior,!Rogue
+  note "Buy food if needed" only Warrior
+  note "Buy food if needed" only Rogue
+step
+  only Warrior,Hunter,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  when !zone "Ironforge"
+  when !zone "Loch Modan"
+  zone map 1436
+  goto 56.549914,52.64015 map 1436 r 8
+  note "Talk to Thor"
+  fly "Loch Modan" -- Fly to Loch Modan

@@ -1,0 +1,493 @@
+guide rxp-free/10-12-adv-darkshore-1-mage-aoe-69191608
+title "10-12 ADV Darkshore 1 Mage AoE"
+levels 10-12
+zone map 1439
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · ADV AoE Alliance Mage"
+class Mage
+next rxp-free/12-14-adv-loch-modan-mage-aoe-98a61d75
+step
+  along until DeathlessSkip
+  zone map 1455
+  zone map 1426
+  goto 15.160032,85.700287 map 1455 r 20 optional
+  goto 59.840061,49.559899 map 1426 r 8 optional
+step
+  along until DeathlessSkip
+  zone map 1426
+  goto 53.480061,37.499901 map 1426 r 30 optional
+  goto 54.040061,38.600002 map 1426 r 30 optional
+  goto 59.429909,42.849951 map 1426 r 150 optional -- Travel to the skip spot. Hug the left side of the mountain en route
+step
+  when !turnedin 983
+  label DeathlessSkip
+  zone map 1426
+  goto 60.179959,43.009849 map 1426 r 12 optional
+  goto 60.419959,43.749951 map 1426 r 12 optional
+  goto 60.709909,44.180001 map 1426 r 4 optional
+  goto 60.949909,44.1599 map 1426 r 6 optional
+  goto 61.45001,41.680103 map 1426 r 10 optional
+  goto 61.760061,41.500103 map 1426 r 4 optional
+  goto 61.840061,41.629849 map 1426 r 4 optional
+  goto 62.01001,41.300002 map 1426 r 8 optional
+  goto 61.789909,39.70985 map 1426 r 15 optional
+  goto 61.480061,36.849952 map 1426 r 12 optional
+  goto 61.459959,32.759902 map 1426 r 15 optional
+  goto 61.379959,28.919903 map 1426 r 30 optional
+  goto 60.909909,22.820006 map 1426 r 30 optional
+  goto 60.509909,16.199905 map 1426 r 5 optional
+  goto 60.520061,15.810058 map 1426 r 5 optional
+  goto 60.739959,15.160109 map 1426 r 15 optional
+  goto 60.41001,14.349956 map 1426 r 8 optional
+  goto 60.640061,13.890058 map 1426 r 6 optional
+  goto 61.400061,13.269957 map 1426 r 10 optional
+  goto 61.520061,12.580109 map 1426 r 8 optional
+  note "Do the Deathless Dun Morogh -> Wetlands skip"
+  note "Eat to full after each fall if you don't feel confident"
+  goto 60.65001,11.380109 map 1426 r 20 -- Carefully drop down the mountain side
+step
+  when !turnedin 983
+  zone map 1426
+  zone map 1437
+  goto 60.800061,10.329957 map 1426 r 10 optional
+  goto 60.61001,9.7299574 map 1426 r 8 optional
+  goto 18.790052,72.529814 map 1437 r 12 optional
+  goto 18.700097,70.970086 map 1437 r 12 optional
+  goto 18.500117,69.390041 map 1437 r 12 optional
+  goto 17.619916,68.349859 map 1437 r 15 optional
+  goto 16.999906,67.680109 map 1437 r 12 optional
+  goto 15.960108,67.150041 map 1437 r 12 optional
+  goto 15.069992,66.409905 map 1437 r 20 optional
+  goto 15.310113,65.469859 map 1437 r 20 optional
+  goto 15.099977,63.720018 map 1437 r 12 optional
+  note "Do the Deathless Dun Morogh -> Wetlands skip"
+  note "Be careful of Sludginn (rare) before you drop down toward the coast (if he's up)"
+  note "Be careful of the Bluegill Raiders to the west when you reach the sea"
+  note "Avoid the Young Wetlands Crocolisks when crossing the sea. Wait for them to patrol away"
+  goto 12.690062,60.969905 map 1437 r 15 -- Travel to Menethil Harbor
+step
+  along until next_5
+  zone map 1437
+  goto 10.800047,59.799837 map 1437 r 10 optional
+  goto 10.630053,60.099882 map 1437 r 10 optional -- Go inside the Inn
+step
+  label next_5
+  zone map 1437
+  note "Jump onto the Chandelier downstairs"
+  note "Talk to Samor through the wall"
+  note "NOTE: To do this, bind \"Interact with Target\" under Gameplay -> Controls in the Options menu"
+  note "If the Boat has just arrived, skip this step"
+  vendor 1457 -- Buy [Healing Potions] from him (if they're up)
+step
+  zone map 1437
+  note "Talk to Shellei"
+  getfp "Menethil Harbor" @9.4899015,59.689905 map 1437 -- Get the Menethil Harbor flight path
+step
+  when has 769
+  along until DarkshoreBoat
+  zone map 1437
+  goto 7.8900628,56.219973 map 1437 r 8
+  note "If the Boat has just arrived, skip this step"
+  note "Cook any [Chunks of Boar Meat] you have from outside (there's a campfire inside)"
+step
+  zone map 1437
+  note "Talk to Dewin through the wall"
+  note "If the Boat has just arrived, skip this step"
+  vendor 1453 -- Buy [Healing Potions] from him (if they're up)
+step
+  label DarkshoreBoat
+  along until Darkshore
+  zone map 1437
+  goto 6.0900025,58.449814 map 1437 r 20 optional
+  goto 4.5000782,57.019973 map 1437 r 20 optional -- Travel toward the Darkshore Boat
+step
+  zone map 1437
+  goto 6.0900025,58.449814 map 1437 r 20 optional
+  goto 4.5000782,57.019973 map 1437 r 20 -- Travel toward the Darkshore Boat
+step
+  along until Darkshore
+  note "Start spam casting [Conjure Water r2] to conjure as much water as possible"
+step
+  label Darkshore
+  zone map 1437
+  goto 4.250043,57.210086 map 1437 r 8
+step
+  label Darkshoreshore
+  along until Wizbang
+  zone map 1439
+  goto 35.730031,45.229999 map 1439 r 60 -- Jump off the boat when you're closest to the shore
+step
+  zone map 1439
+  goto 35.730031,45.229999 map 1439 r 60 -- Jump off the boat when you're closest to the shore
+step
+  along until Wizbang
+  note "Kite 2-3 Pygmy Tide Crawlers toward Wizbang (Remember to use [Frost Nova]) Kill them when you accept the quest"
+step
+  zone map 1439
+  goto 35.730031,45.229999 map 1439 r 60 -- Jump off the boat when you're closest to the shore
+step
+  when !turnedin 983
+  along until next_15
+  zone map 1439
+  goto 36.770031,44.280075 map 1439 r 1 optional
+  note "Talk to Laird"
+  note "Buy up to 20 [Longjaw Mud Snappers] from him"
+  vendor nearest -- Vendor Trash
+  collect 4592 x20 @36.770031,44.280075 map 1439 optional -- Longjaw Mud Snapper (20)
+step
+  zone map 1439
+  goto 35.730031,45.229999 map 1439 r 60 -- Jump off the boat when you're closest to the shore
+step
+  label next_15
+  along until Wizbang
+  zone map 1439
+  goto 36.719954,44.520075 map 1439 r 20 optional
+  goto 36.839954,44.179999 map 1439 r 10 optional
+  goto 36.710031,43.869923 map 1439 r 10 optional
+  note "Go upstairs to the top floor"
+  goto 36.979954,44.139923 map 1439 r 8 optional -- Travel toward Wizbang
+step
+  label Wizbang
+  zone map 1439
+  note "Talk to Wizbang"
+  accept 983 -- Accept Buzzbox 827
+step
+  along until next_18
+  zone map 1439
+  note "Kill the Pygmy Tide Crawlers you kited. Loot them for their Crawler Legs"
+  collect 5385 x6 quest 983.1 @36.979954,44.139923 map 1439 -- Crawler Leg (6)
+step
+  label next_18
+  along until DalmondBags
+  zone map 1439
+  goto 37.439954,43.119923 map 1439 r 20 optional
+  goto 37.730031,41.400075 map 1439 r 20 optional
+  goto 37.390031,40.129998 map 1439 r 10 optional -- Travel toward Thundris
+step
+  label DalmondBags
+  zone map 1439
+  note "Talk to Thundris"
+  accept 954 -- Accept Bashal'Aran
+  accept 958 -- Accept Tools of the Highborne
+step
+  zone map 1439
+  note "Talk to Thundris and Alanndarian"
+  accept 954 -- Accept Bashal'Aran
+  accept 958 -- Accept Tools of the Highborne
+  accept 2178 -- Accept Easy Strider Living
+  goto 37.690031,40.659922 map 1439 r 8 optional
+step
+  when !turnedin 954
+  zone map 1439
+  note "Talk to Dalmond"
+  vendor 4182 -- Buy as many [Small Brown Pouches] as you need/can
+step
+  along until next_23
+  zone map 1439
+  goto 37.850031,41.389999 map 1439 r 20 optional
+  goto 38.579954,42.609923 map 1439 r 20 optional
+  goto 39.050031,43.230075 map 1439 r 20 optional
+  goto 39.370031,43.489999 map 1439 r 12 optional -- Travel toward Terenthis
+step
+  when !turnedin 954
+  zone map 1439
+  note "Talk to Dalmond"
+  vendor 4182 -- Buy as many [Small Brown Pouches] as you need/can
+step
+  label next_23
+  zone map 1439
+  note "Talk to Terenthis and Tharnariun"
+  accept 984 -- Accept How Big a Threat?
+  accept 2118 -- Accept Plagued Lands
+  goto 38.839954,43.410075 map 1439 r 8 optional
+step
+  when !turnedin 983
+  when !has 4592 x20
+  zone map 1439
+  goto 36.770031,44.280075 map 1439 r 8
+  note "Talk to Laird"
+  note "Buy up to 20 [Longjaw Mud Snappers] from him"
+  vendor nearest -- Vendor Trash
+  collect 4592 x20 @36.770031,44.280075 map 1439 optional -- Longjaw Mud Snapper (20)
+step
+  along until next_26
+  zone map 1439
+  note "Kill Pygmy Tide Crawlers. Loot them for their Crawler Legs"
+  collect 5385 x6 quest 983.1 @36.250031,49.899924 map 1439 -- Crawler Leg (6)
+step
+  label next_26
+  along until next_27
+  zone map 1439
+  note "Use [Tharnariun's Hope] on a Rabid Thistle Bear. It has a 50-yard range"
+  note "Be careful as they cast [Rabies] (Instant Melee: Reduces ALL health regen by 50% for 10 Minutes)"
+  kill 2164 x1 quest 2118.1 @38.230031,52.839924 map 1439 -- Rabid Thistle Bear Captured (1)
+  use 7586 @38.230031,52.839924 map 1439
+step
+  label next_27
+  zone map 1439
+  goto 38.899954,53.589924 map 1439 r 8
+  note "Run toward the Furbolg Camp"
+  note "Do not attempt to fight the Blackwood Windtalker"
+  complete 984 -- Find a corrupt furbolg camp (1)
+step
+  zone map 1439
+  note "Use [Tharnariun's Hope] on a Rabid Thistle Bear. It has a 50-yard range"
+  note "Be careful as they cast [Rabies] (Instant Melee: Reduces ALL health regen by 50% for 10 Minutes)"
+  kill 2164 x1 quest 2118.1 @38.570031,66.390079 map 1439 -- Rabid Thistle Bear Captured (1)
+  use 7586 @38.570031,66.390079 map 1439
+step
+  zone map 1439
+  note "Talk to Tysha"
+  accept 953 -- Accept The Fall of Ameth'Aran
+step
+  along until Relics
+  note "Avoid pulling Lady Moongazer (rare) if she's up"
+step
+  along until Fall
+  zone map 1439
+  note "Kill Cursed Highbornes and Writhing Highbornes. Loot them for Highborne Relics"
+  note "Kill Wailing Highbornes only if they're in your way"
+  collect 5360 x7 quest 958.1 @40.299954,59.700009 map 1439 -- Highborne Relic (7)
+step
+  zone map 1439
+  goto 42.650031,63.150078 map 1439 r 8
+  note "Click The Fall of Ameth'Aran on the ground"
+  note "This has a 5 second cast time"
+  interact 17189 quest 953.2 -- Read the Fall of Ameth'Aran (1)
+step
+  zone map 1439
+  goto 43.299954,58.700001 map 1439 r 8
+  note "Click The Lay of Ameth'Aran on the ground"
+  note "This has a 5 second cast time"
+  interact 17188 quest 953.1 -- Read the Lay of Ameth'Aran (1)
+step
+  label Fall
+  zone map 1439
+  note "Talk to Tysha"
+  turnin 953 -- Turn in The Fall of Ameth'Aran
+step
+  label Relics
+  zone map 1439
+  note "Kill Cursed Highbornes and Writhing Highbornes"
+  note "Kill Wailing Highbornes only if they're in your way"
+  collect 5360 x7 quest 958.1 @41.759954,57.960078 map 1439 -- Highborne Relic (7)
+step
+  along until next_37
+  note "Kite 2-3 Vile Sprites toward Asterion (Remember to use [Frost Nova]) Kill them when you accept the quest"
+step
+  label next_37
+  zone map 1439
+  note "Talk to Asterion"
+  turnin 954 -- Turn in Bashal'Aran
+  accept 955 -- Accept Bashal'Aran
+step
+  along until BashalF
+  note "Be careful as Licillin (rare) may be up"
+  note "He casts [Shadow Bolt] (Ranged Cast: Deals 55-70 Shadow damage)"
+step
+  loop
+  zone map 1439
+  goto 44.570031,36.570074 map 1439 r 35
+  goto 44.470031,38.109922 map 1439 r 35
+  goto 44.019954,38.550075 map 1439 r 35
+  goto 45.010031,39.619998 map 1439 r 35
+  goto 45.610031,38.809998 map 1439 r 35
+  goto 45.179954,37.509922 map 1439 r 35
+  goto 45.859954,36.960074 map 1439 r 35
+  goto 46.910031,37.110074 map 1439 r 35
+  goto 45.470031,36.009922 map 1439 r 35
+  goto 44.570031,36.570074 map 1439 r 35
+  note "Kill Vile Sprites and Wild Grells. Loot them for their Grell Earrings"
+  note "Be careful as the Vile Sprites cast [Poison] (Melee Instant: Deals 3 damage every 3 seconds for 15 seconds) and Wild Grells cast [Crazed] (Self Instant: Increases attack speed by 20% at <20% health)"
+  collect 5336 x8 quest 955.1 -- Grell Earring (8)
+step
+  zone map 1439
+  note "Talk to Asterion"
+  turnin 955 -- Turn in Bashal'Aran
+  accept 956 -- Accept Bashal'Aran
+step
+  zone map 1439
+  note "Kill Deth'ryll Satyrs. Loot them for the Ancient Moonstone Seal"
+  note "Be careful as they cast [Shoot] (Ranged Cast: Deals 15-25 damage)"
+  collect 5338 x1 quest 956.1 @47.439954,36.759922 map 1439 -- Ancient Moonstone Seal (1)
+step
+  zone map 1439
+  goto 44.570031,36.570074 map 1439 r 35 optional
+  goto 44.470031,38.109922 map 1439 r 35 optional
+  goto 44.019954,38.550075 map 1439 r 35 optional
+  goto 45.010031,39.619998 map 1439 r 35 optional
+  goto 45.610031,38.809998 map 1439 r 35 optional
+  goto 45.179954,37.509922 map 1439 r 35 optional
+  goto 45.859954,36.960074 map 1439 r 35 optional
+  goto 46.910031,37.110074 map 1439 r 35 optional
+  goto 45.470031,36.009922 map 1439 r 35 optional
+  goto 44.570031,36.570074 map 1439 r 35
+  level 11+1100 -- Grind to 1100+/8800xp
+step
+  label BashalF
+  zone map 1439
+  note "Talk to Asterion"
+  turnin 956 -- Turn in Bashal'Aran
+  accept 957 -- Accept Bashal'Aran
+step
+  label DalmondBags1
+  zone map 1439
+  note "Talk to Thundris"
+  turnin 958 -- Turn in Tools of the Highborne
+step
+  when !turnedin 3524
+  zone map 1439
+  note "Talk to Dalmond"
+  vendor 4182 -- Vendor Trash
+step
+  when has 5469 x5
+  zone map 1439
+  note "Talk to Alanndarian"
+  turnin 2178 -- Turn in Easy Strider Living
+step
+  zone map 1439
+  note "Talk to Terenthis and Tharnariun"
+  turnin 984 -- Turn in How Big a Threat?
+  accept 985 -- Accept How Big a Threat?
+  accept 4761 -- Accept Thundris Windweaver
+  turnin 2118 -- Turn in Plagued Lands
+  accept 2138 -- Accept Cleansing of the Infected
+  goto 38.839954,43.410075 map 1439 r 8 optional
+step
+  label Gwennyth
+  along
+  zone map 1439
+  note "Talk to Gwennyth"
+  accept 3524 -- Accept Washed Ashore
+step
+  zone map 1439
+  note "Talk to Caylais"
+  getfp "Auberdine" @36.339954,45.579923 map 1439 -- Get the Auberdine flight path
+step
+  zone map 1439
+  note "Talk to Gwennyth"
+  accept 3524 -- Accept Washed Ashore
+step
+  along until Bones
+  zone map 1439
+  note "Kill Pygmy Tide Crawlers and Young Reef Crawlers. Loot them for their Crawler Legs"
+  collect 5385 x6 quest 983.1 @36.250031,49.899924 map 1439 -- Crawler Leg (6)
+step
+  zone map 1439
+  note "Talk to Gwennyth"
+  accept 3524 -- Accept Washed Ashore
+step
+  along until Bones
+  zone map 1439
+  note "Save the [Murloc Eyes] you loot from the Greymist Coastrunners and Greymist Raiders"
+  collect 730 x3 @36.250031,49.899924 map 1439 optional -- Murloc Eyes (3)
+step
+  zone map 1439
+  note "Talk to Gwennyth"
+  accept 3524 -- Accept Washed Ashore
+step
+  label Bones
+  zone map 1439
+  note "Loot the Beached Sea Creature"
+  note "Be careful as the nearby Greymist Coastrunners have [Increased Movespeed]"
+  note "This has a 5 second cast time"
+  collect 12242 x1 quest 3524.1 -- Sea Creature Bones (1)
+step
+  zone map 1439
+  note "Kill Pygmy Tide Crawlers and Young Reef Crawlers. Loot them for their Crawler Legs"
+  collect 5385 x6 quest 983.1 @36.219954,44.889923 map 1439 -- Crawler Leg (6)
+step
+  zone map 1439
+  note "Click Buzzbox 827"
+  turnin 983 -- Turn in Buzzbox 827
+  accept 1001 -- Accept Buzzbox 411
+step
+  accept 3524 -- Accept Washed Ashore
+step
+  zone map 1439
+  note "Talk to Gwennyth"
+  turnin 3524 -- Turn in Washed Ashore
+  accept 4681 -- Accept Washed Ashore
+step
+  when !turnedin 4681
+  zone map 1439
+  note "Talk to Laird"
+  note "Buy up to 40 [Longjaw Mud Snappers] from him"
+  collect 4592 x40 @36.770031,44.280075 map 1439 -- Longjaw Mud Snapper (40)
+step
+  zone map 1439
+  note "Talk to Cerellean"
+  accept 963 -- Accept For Love Eternal
+step
+  along until Gwen
+  zone map 1439
+  note "Kill Darkshore Threshers"
+  note "Do NOT go out of your way for these"
+  collect 5412 x3 quest 1001.1 @35.739954,43.699999 map 1439 -- Thresher Eye (3)
+step
+  along until next_60
+  zone map 1439
+  goto 32.910031,42.240075 map 1439 r 15 optional
+  goto 32.410031,43.819999 map 1439 r 25 optional -- Run along the dock toward the Sea Turtle Remains
+step
+  label next_60
+  zone map 1439
+  note "Swim underwater"
+  note "Loot the Sea Turtle Remains"
+  collect 12289 x1 quest 4681.1 @31.859954,46.329923 map 1439 -- Sea Turtle Remains (1)
+step
+  zone map 1439
+  goto 36.119954,44.700076 map 1439 r 50 optional
+  goto 35.799954,45.879923 map 1439 r 50 optional
+  goto 36.039954,48.630076 map 1439 r 50 optional
+  goto 36.130031,50.130076 map 1439 r 50 optional
+  goto 36.579954,53.199924 map 1439 r 50 optional
+  goto 35.230031,53.810001 map 1439 r 50 optional
+  goto 35.219954,55.370001 map 1439 r 50 optional
+  goto 36.699954,57.090077 map 1439 r 50 optional
+  goto 36.119954,44.700076 map 1439 r 50 optional
+  goto 35.799954,45.879923 map 1439 r 50 optional
+  goto 36.039954,48.630076 map 1439 r 50 optional
+  goto 36.130031,50.130076 map 1439 r 50 optional
+  goto 36.579954,53.199924 map 1439 r 50 optional
+  goto 35.230031,53.810001 map 1439 r 50 optional
+  goto 35.219954,55.370001 map 1439 r 50 optional
+  goto 36.699954,57.090077 map 1439 r 8
+  level 11+7825 -- Grind to 7825+/8800xp
+step
+  label Gwen
+  zone map 1439
+  note "Talk to Gwennyth"
+  turnin 4681 -- Turn in Washed Ashore
+step
+  when !zone "Ironforge"
+  zone map 1439
+  goto 37.039954,44.130075 map 1439 r 8
+  note "===PAY ATTENTION==="
+  note "Talk to Shaussiy"
+  note "If this is your first time doing a Hearthstone Batch, watch the guide for it below"
+  note "Open the \"Set Hearthstone\" menu, then cast [Hearthstone]"
+  hearth "Ironforge" optional -- Hearthstone BATCH from Auberdine to Ironforge
+step
+  zone map 1455
+  note "Talk to Dink"
+  train 7312 -- Train your class spells (Fireball r3, Dampen Magic)
+  note "Total Cost: 12s"
+  note "Remember you may want money for a [Bronze Tube] (8s each) and Thelsamar flying (1s 10c)"
+step
+  along until next_66
+  note "Start spam casting [Conjure Water r2] to conjure as much water as possible before taking the flight"
+step
+  only Gnome
+  label next_66
+  zone map 1455
+  note "Talk to Gryth"
+  accept 6392 -- Accept Return to Brock
+step
+  zone map 1455
+  goto 55.500269,47.701026 map 1455 r 8
+  note "Talk to Gryth"
+  fly "Thelsamar" -- Fly to Thelsamar

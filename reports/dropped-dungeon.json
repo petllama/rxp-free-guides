@@ -1,0 +1,7648 @@
+{
+ "style": {
+  "group": true,
+  "hardcore": false,
+  "ssf": false,
+  "xprate": 1.0
+ },
+ "guides": {
+  "1-5-coldridge-valley-d2d37da7.guide": [
+   {
+    "step": 4,
+    "dropped": "money < 10"
+   },
+   {
+    "line": 97,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 115,
+    "goal": "along waypoint dropped: goto 28.831,68.698 map 1426 r 12 optional -- Exit Anvilmar"
+   },
+   {
+    "line": 115,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "1-6-durotar-ed0cce96.guide": [
+   {
+    "step": 3,
+    "dropped": "money < 100"
+   },
+   {
+    "step": 3,
+    "dropped": "too many cases (5): (((Warrior) or (Shaman) or (Warlock) or (Mage) or (Priest)) and money < 100)"
+   },
+   {
+    "step": 5,
+    "dropped": "money < 100"
+   },
+   {
+    "step": 8,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 9,
+    "dropped": "money < 100"
+   },
+   {
+    "step": 11,
+    "dropped": "money < 100"
+   },
+   {
+    "step": 15,
+    "dropped": "money >= 25"
+   },
+   {
+    "step": 26,
+    "dropped": "money < 100"
+   },
+   {
+    "step": 35,
+    "dropped": "money >= 400"
+   },
+   {
+    "step": 42,
+    "dropped": "money >= 97"
+   },
+   {
+    "step": 44,
+    "dropped": "money < 100"
+   },
+   {
+    "step": 76,
+    "dropped": "money >= 110"
+   },
+   {
+    "step": 77,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 78,
+    "dropped": "money >= 210"
+   },
+   {
+    "step": 79,
+    "dropped": "money >= 110"
+   },
+   {
+    "step": 80,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 83,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 84,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 84,
+    "dropped": "not knows 772"
+   },
+   {
+    "step": 86,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 110,
+    "dropped": "skill Blacksmithing < 1"
+   },
+   {
+    "step": 125,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 127,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 130,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 133,
+    "dropped": "money >= 300"
+   },
+   {
+    "step": 133,
+    "dropped": "not knows 6307"
+   },
+   {
+    "step": 134,
+    "dropped": "money >= 200"
+   },
+   {
+    "line": 42,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "1-6-mulgore-738c283e.guide": [
+   {
+    "step": 4,
+    "dropped": "money < 100"
+   },
+   {
+    "step": 5,
+    "dropped": "money < 100"
+   },
+   {
+    "step": 16,
+    "dropped": "money >= 102"
+   },
+   {
+    "step": 22,
+    "dropped": "money < 200"
+   },
+   {
+    "step": 23,
+    "dropped": "money < 100"
+   },
+   {
+    "step": 27,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 33,
+    "dropped": "money >= 25"
+   },
+   {
+    "step": 62,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 64,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 66,
+    "dropped": "money >= 200"
+   },
+   {
+    "line": 58,
+    "goal": "along waypoint dropped: goto 53.740088,80.149869 map 1412 r 30 -- Travel toward the rock--c:Mulgore,53.74,80.15"
+   },
+   {
+    "line": 58,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "1-6-northshire-56f23037.guide": [
+   {
+    "line": 98,
+    "goal": "along waypoint dropped: goto 47.629964,32.07001 map 1429 r 20 -- Enter the Echo Ridge Mine"
+   },
+   {
+    "line": 98,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "1-6-shadowglen-88ca374a.guide": [
+   {
+    "line": 50,
+    "goal": "along waypoint dropped: goto 59.305991,41.091123 map 1438 r 8"
+   },
+   {
+    "line": 50,
+    "goal": "along goal that never checks off, as a note: Buy 2 stacks of [Rough Arrows]"
+   },
+   {
+    "line": 50,
+    "goal": "along goal that never checks off, as a note: Vendor your trash"
+   },
+   {
+    "line": 50,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 51,
+    "goal": "along waypoint dropped: goto 59.305991,41.091123 map 1438 r 8"
+   },
+   {
+    "line": 51,
+    "goal": "along goal that never checks off, as a note: Buy 2 stacks of [Rough Arrows]"
+   },
+   {
+    "line": 51,
+    "goal": "along goal that never checks off, as a note: Vendor your trash"
+   },
+   {
+    "line": 51,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 52,
+    "goal": "along waypoint dropped: goto 59.305991,41.091123 map 1438 r 8"
+   },
+   {
+    "line": 52,
+    "goal": "along goal that never checks off, as a note: Buy 2 stacks of [Rough Arrows]"
+   },
+   {
+    "line": 52,
+    "goal": "along goal that never checks off, as a note: Vendor your trash"
+   },
+   {
+    "line": 52,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 87,
+    "goal": "along goal that never checks off, as a note: Use the [Crystal Phial] at the Moonwell"
+   }
+  ],
+  "1-6-tirisfal-glades-bc020226.guide": [
+   {
+    "step": 5,
+    "dropped": "money < 100"
+   },
+   {
+    "step": 11,
+    "dropped": "money < 1000"
+   },
+   {
+    "step": 15,
+    "dropped": "money < 1000"
+   },
+   {
+    "step": 20,
+    "dropped": "money < 25"
+   },
+   {
+    "step": 26,
+    "dropped": "money < 33"
+   },
+   {
+    "step": 27,
+    "dropped": "money >= 50"
+   },
+   {
+    "step": 43,
+    "dropped": "money < 1000"
+   },
+   {
+    "step": 45,
+    "dropped": "money < 1000"
+   },
+   {
+    "step": 48,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 49,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 50,
+    "dropped": "money >= 210"
+   },
+   {
+    "step": 51,
+    "dropped": "money >= 210"
+   },
+   {
+    "step": 52,
+    "dropped": "money >= 110"
+   },
+   {
+    "step": 53,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 57,
+    "dropped": "money < 1000"
+   },
+   {
+    "step": 58,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 59,
+    "dropped": "money >= 100"
+   },
+   {
+    "line": 14,
+    "goal": "along waypoint dropped: goto 30.980094,66.409959 map 1420 r 8 optional only Warlock"
+   },
+   {
+    "line": 14,
+    "goal": "along waypoint dropped: goto 30.840011,66.200166 map 1420 r 8 optional"
+   },
+   {
+    "line": 15,
+    "goal": "along waypoint dropped: goto 30.980094,66.409959 map 1420 r 8 optional only Warlock"
+   },
+   {
+    "line": 15,
+    "goal": "along waypoint dropped: goto 30.840011,66.200166 map 1420 r 8 optional"
+   }
+  ],
+  "1-9-zephras-isle-00051a23.guide": [
+   {
+    "step": 11,
+    "dropped": "money >= 10"
+   },
+   {
+    "step": 11,
+    "dropped": "not knows 5242"
+   },
+   {
+    "step": 23,
+    "dropped": "money >= 10"
+   },
+   {
+    "step": 26,
+    "dropped": "money >= 10"
+   },
+   {
+    "step": 74,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 74,
+    "dropped": "not knows 6178"
+   },
+   {
+    "step": 74,
+    "dropped": "not knows 6546"
+   },
+   {
+    "step": 80,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 80,
+    "dropped": "not knows 6178"
+   },
+   {
+    "step": 80,
+    "dropped": "not knows 6546"
+   },
+   {
+    "step": 82,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 86,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 90,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 93,
+    "dropped": "knows 2366"
+   },
+   {
+    "step": 94,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 95,
+    "dropped": "knows 8613"
+   },
+   {
+    "step": 100,
+    "dropped": "knows 2366"
+   },
+   {
+    "step": 101,
+    "dropped": "knows 2656"
+   },
+   {
+    "step": 102,
+    "dropped": "knows 8613"
+   },
+   {
+    "step": 140,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 145,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 148,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 148,
+    "dropped": "not knows 1777"
+   },
+   {
+    "step": 149,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 150,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 151,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 152,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 155,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 156,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 157,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 158,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 159,
+    "dropped": "money >= 125"
+   },
+   {
+    "step": 163,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 164,
+    "dropped": "money >= 285"
+   },
+   {
+    "step": 165,
+    "dropped": "money >= 701"
+   },
+   {
+    "step": 166,
+    "dropped": "money >= 536"
+   },
+   {
+    "step": 169,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 170,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 171,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 172,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 173,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 173,
+    "dropped": "not knows 1777"
+   },
+   {
+    "step": 174,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 191,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 192,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 193,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 194,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 194,
+    "dropped": "not knows 1777"
+   },
+   {
+    "step": 195,
+    "dropped": "money >= 285"
+   },
+   {
+    "step": 196,
+    "dropped": "money >= 701"
+   },
+   {
+    "step": 197,
+    "dropped": "money >= 536"
+   },
+   {
+    "step": 198,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 200,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 201,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 203,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 205,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 206,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 207,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 208,
+    "dropped": "money >= 300"
+   },
+   {
+    "step": 210,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 212,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 215,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 218,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 221,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 222,
+    "dropped": "knows 8613"
+   },
+   {
+    "step": 224,
+    "dropped": "knows 2366"
+   },
+   {
+    "step": 225,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 226,
+    "dropped": "knows 7620"
+   },
+   {
+    "step": 227,
+    "dropped": "knows 2259"
+   },
+   {
+    "step": 228,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 229,
+    "dropped": "knows 3908"
+   },
+   {
+    "step": 230,
+    "dropped": "knows 7411"
+   },
+   {
+    "step": 231,
+    "dropped": "knows 2108"
+   },
+   {
+    "step": 245,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 246,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 247,
+    "dropped": "knows 7411"
+   },
+   {
+    "step": 248,
+    "dropped": "knows 8613"
+   },
+   {
+    "step": 251,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 252,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 253,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 254,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 255,
+    "dropped": "knows 2259"
+   },
+   {
+    "step": 257,
+    "dropped": "knows 3908"
+   },
+   {
+    "step": 258,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 259,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 261,
+    "dropped": "knows 2108"
+   },
+   {
+    "step": 263,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 264,
+    "dropped": "money >= 500"
+   },
+   {
+    "step": 264,
+    "dropped": "not knows 7372"
+   },
+   {
+    "step": 264,
+    "dropped": "not knows 8198"
+   },
+   {
+    "step": 266,
+    "dropped": "money >= 400"
+   },
+   {
+    "step": 267,
+    "dropped": "money >= 400"
+   },
+   {
+    "step": 272,
+    "dropped": "money >= 1000"
+   },
+   {
+    "step": 273,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 275,
+    "dropped": "money >= 600"
+   },
+   {
+    "step": 276,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 277,
+    "dropped": "knows 7620"
+   },
+   {
+    "step": 288,
+    "dropped": "money >= 400"
+   },
+   {
+    "step": 291,
+    "dropped": "knows 7620"
+   },
+   {
+    "step": 320,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 321,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 322,
+    "dropped": "knows 8613"
+   },
+   {
+    "step": 323,
+    "dropped": "knows 7411"
+   },
+   {
+    "step": 324,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 325,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 326,
+    "dropped": "knows 2259"
+   },
+   {
+    "step": 327,
+    "dropped": "knows 3908"
+   },
+   {
+    "step": 328,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 329,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 331,
+    "dropped": "knows 2108"
+   },
+   {
+    "step": 345,
+    "dropped": "money >= 10"
+   },
+   {
+    "step": 345,
+    "dropped": "not knows 5242"
+   },
+   {
+    "step": 357,
+    "dropped": "money >= 10"
+   },
+   {
+    "step": 360,
+    "dropped": "money >= 10"
+   },
+   {
+    "step": 408,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 408,
+    "dropped": "not knows 6178"
+   },
+   {
+    "step": 408,
+    "dropped": "not knows 6546"
+   },
+   {
+    "step": 414,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 414,
+    "dropped": "not knows 6178"
+   },
+   {
+    "step": 414,
+    "dropped": "not knows 6546"
+   },
+   {
+    "step": 416,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 420,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 424,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 427,
+    "dropped": "knows 2366"
+   },
+   {
+    "step": 428,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 429,
+    "dropped": "knows 8613"
+   },
+   {
+    "step": 434,
+    "dropped": "knows 2366"
+   },
+   {
+    "step": 435,
+    "dropped": "knows 2656"
+   },
+   {
+    "step": 436,
+    "dropped": "knows 8613"
+   },
+   {
+    "step": 474,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 479,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 482,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 482,
+    "dropped": "not knows 1777"
+   },
+   {
+    "step": 483,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 484,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 485,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 486,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 489,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 490,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 491,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 492,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 493,
+    "dropped": "money >= 125"
+   },
+   {
+    "step": 497,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 498,
+    "dropped": "money >= 285"
+   },
+   {
+    "step": 499,
+    "dropped": "money >= 701"
+   },
+   {
+    "step": 500,
+    "dropped": "money >= 536"
+   },
+   {
+    "step": 503,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 504,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 505,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 506,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 507,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 507,
+    "dropped": "not knows 1777"
+   },
+   {
+    "step": 508,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 525,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 526,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 527,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 528,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 528,
+    "dropped": "not knows 1777"
+   },
+   {
+    "step": 529,
+    "dropped": "money >= 285"
+   },
+   {
+    "step": 530,
+    "dropped": "money >= 701"
+   },
+   {
+    "step": 531,
+    "dropped": "money >= 536"
+   },
+   {
+    "step": 532,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 534,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 535,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 537,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 539,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 540,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 541,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 542,
+    "dropped": "money >= 300"
+   },
+   {
+    "step": 544,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 546,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 549,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 552,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 555,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 556,
+    "dropped": "knows 8613"
+   },
+   {
+    "step": 558,
+    "dropped": "knows 2366"
+   },
+   {
+    "step": 559,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 560,
+    "dropped": "knows 7620"
+   },
+   {
+    "step": 561,
+    "dropped": "knows 2259"
+   },
+   {
+    "step": 562,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 563,
+    "dropped": "knows 3908"
+   },
+   {
+    "step": 564,
+    "dropped": "knows 7411"
+   },
+   {
+    "step": 565,
+    "dropped": "knows 2108"
+   },
+   {
+    "step": 579,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 580,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 581,
+    "dropped": "knows 7411"
+   },
+   {
+    "step": 582,
+    "dropped": "knows 8613"
+   },
+   {
+    "step": 585,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 586,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 587,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 588,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 589,
+    "dropped": "knows 2259"
+   },
+   {
+    "step": 591,
+    "dropped": "knows 3908"
+   },
+   {
+    "step": 592,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 593,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 595,
+    "dropped": "knows 2108"
+   },
+   {
+    "step": 597,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 598,
+    "dropped": "money >= 500"
+   },
+   {
+    "step": 598,
+    "dropped": "not knows 7372"
+   },
+   {
+    "step": 598,
+    "dropped": "not knows 8198"
+   },
+   {
+    "step": 600,
+    "dropped": "money >= 400"
+   },
+   {
+    "step": 601,
+    "dropped": "money >= 400"
+   },
+   {
+    "step": 606,
+    "dropped": "money >= 1000"
+   },
+   {
+    "step": 607,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 609,
+    "dropped": "money >= 600"
+   },
+   {
+    "step": 610,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 611,
+    "dropped": "knows 7620"
+   },
+   {
+    "step": 622,
+    "dropped": "money >= 400"
+   },
+   {
+    "step": 625,
+    "dropped": "knows 7620"
+   },
+   {
+    "step": 654,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 655,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 656,
+    "dropped": "knows 8613"
+   },
+   {
+    "step": 657,
+    "dropped": "knows 7411"
+   },
+   {
+    "step": 658,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 659,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 660,
+    "dropped": "knows 2259"
+   },
+   {
+    "step": 661,
+    "dropped": "knows 3908"
+   },
+   {
+    "step": 662,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 663,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 665,
+    "dropped": "knows 2108"
+   },
+   {
+    "line": 35,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 47,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 398,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 809,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 1631,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 2145,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 2179,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 2192,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 4382,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 0,
+    "goal": "per-class reward turn-ins of quest 92470 as one turnin"
+   },
+   {
+    "line": 0,
+    "goal": "per-class reward turn-ins of quest 92470 as one turnin"
+   },
+   {
+    "line": 0,
+    "goal": "per-class reward turn-ins of quest 92470 as one turnin"
+   },
+   {
+    "line": 0,
+    "goal": "per-class reward turn-ins of quest 92470 as one turnin"
+   },
+   {
+    "line": 17,
+    "goal": "along waypoint dropped: goto 42.06,23.48 map 2521 r 8 optional"
+   },
+   {
+    "line": 17,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 70,
+    "goal": "along waypoint dropped: goto 43.37,23.98 map 2521 r 60 -- 1"
+   },
+   {
+    "line": 70,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 96,
+    "goal": "along goal that never checks off, as a note: Vendor trash"
+   },
+   {
+    "line": 109,
+    "goal": "along waypoint dropped: goto 41.06,22.31 map 2521 r 8 optional"
+   },
+   {
+    "line": 109,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 114,
+    "goal": "along goal that never checks off, as a note: Vendor trash"
+   },
+   {
+    "line": 114,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 118,
+    "goal": "along waypoint dropped: goto 38.31,30.17 map 2521 r 100 -- Kill mobs along the way if you can do so without losing time."
+   },
+   {
+    "line": 118,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 123,
+    "goal": "along waypoint dropped: goto 36.032,33.545 map 2521 r 50 -- Head to the upper level of the temple"
+   },
+   {
+    "line": 123,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 135,
+    "goal": "along goal that never checks off, as a note: Vendor trash."
+   },
+   {
+    "line": 135,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 136,
+    "goal": "along goal that never checks off, as a note: Vendor trash."
+   },
+   {
+    "line": 136,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 137,
+    "goal": "along goal that never checks off, as a note: Vendor trash."
+   },
+   {
+    "line": 137,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 186,
+    "goal": "along waypoint dropped: goto 48.813,36.434 map 2521 r 10 optional"
+   },
+   {
+    "line": 186,
+    "goal": "along waypoint dropped: goto 49.355,35.793 map 2521 r 15 optional"
+   },
+   {
+    "line": 186,
+    "goal": "along waypoint dropped: goto 49.537,34.325 map 2521 r 70 optional -- Enter the cave"
+   },
+   {
+    "line": 186,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 302,
+    "goal": "along waypoint dropped: goto 48.85,53.91 map 2521 r 8"
+   },
+   {
+    "line": 302,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 312,
+    "goal": "along waypoint dropped: goto 40.23,63.83 map 2521 r 8 optional"
+   },
+   {
+    "line": 312,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 355,
+    "goal": "along waypoint dropped: goto 44.23,26 map 2521 r 40 optional"
+   },
+   {
+    "line": 355,
+    "goal": "along waypoint dropped: goto 45.24,25.9 map 2521 r 40 optional"
+   },
+   {
+    "line": 355,
+    "goal": "along waypoint dropped: goto 46.06,25.33 map 2521 r 40 optional"
+   },
+   {
+    "line": 355,
+    "goal": "along waypoint dropped: goto 46.77,27.83 map 2521 r 40 optional"
+   },
+   {
+    "line": 355,
+    "goal": "along waypoint dropped: goto 45.27,28.36 map 2521 r 40 optional"
+   },
+   {
+    "line": 355,
+    "goal": "along waypoint dropped: goto 43.84,28.39 map 2521 r 40 optional"
+   },
+   {
+    "line": 355,
+    "goal": "along waypoint dropped: goto 42.88,27.52 map 2521 r 40 optional"
+   },
+   {
+    "line": 355,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 356,
+    "goal": "along waypoint dropped: goto 44.23,26 map 2521 r 40 optional"
+   },
+   {
+    "line": 356,
+    "goal": "along waypoint dropped: goto 45.24,25.9 map 2521 r 40 optional"
+   },
+   {
+    "line": 356,
+    "goal": "along waypoint dropped: goto 46.06,25.33 map 2521 r 40 optional"
+   },
+   {
+    "line": 356,
+    "goal": "along waypoint dropped: goto 46.77,27.83 map 2521 r 40 optional"
+   },
+   {
+    "line": 356,
+    "goal": "along waypoint dropped: goto 45.27,28.36 map 2521 r 40 optional"
+   },
+   {
+    "line": 356,
+    "goal": "along waypoint dropped: goto 43.84,28.39 map 2521 r 40 optional"
+   },
+   {
+    "line": 356,
+    "goal": "along waypoint dropped: goto 42.88,27.52 map 2521 r 40 optional"
+   },
+   {
+    "line": 356,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 368,
+    "goal": "along waypoint dropped: goto 42.06,23.48 map 2521 r 8 optional"
+   },
+   {
+    "line": 368,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 410,
+    "goal": "along waypoint dropped: goto 46.85,17.68 map 2521 r 30 optional"
+   },
+   {
+    "line": 410,
+    "goal": "along waypoint dropped: goto 47.22,19 map 2521 r 30 optional"
+   },
+   {
+    "line": 410,
+    "goal": "along waypoint dropped: goto 48.3,19.06 map 2521 r 50 optional"
+   },
+   {
+    "line": 410,
+    "goal": "along waypoint dropped: goto 47.55,21.06 map 2521 r 35 optional"
+   },
+   {
+    "line": 410,
+    "goal": "along waypoint dropped: goto 46.74,20.49 map 2521 r 35 optional"
+   },
+   {
+    "line": 410,
+    "goal": "along waypoint dropped: goto 48.97,20.86 map 2521 r 40 optional"
+   },
+   {
+    "line": 410,
+    "goal": "along waypoint dropped: goto 47.41,21.14 map 2521 r 30 optional"
+   },
+   {
+    "line": 410,
+    "goal": "along waypoint dropped: goto 45.82,19.09 map 2521 r 40 optional"
+   },
+   {
+    "line": 410,
+    "goal": "along waypoint dropped: goto 47.19,23.55 map 2521 r 30 optional"
+   },
+   {
+    "line": 410,
+    "goal": "along waypoint dropped: goto 46.6,24.62 map 2521 r 30 optional"
+   },
+   {
+    "line": 410,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 421,
+    "goal": "along waypoint dropped: goto 43.37,23.98 map 2521 r 60 -- 1"
+   },
+   {
+    "line": 421,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 428,
+    "goal": "along goal that never checks off, as a note: Mining for Dummies"
+   },
+   {
+    "line": 429,
+    "goal": "along goal that never checks off, as a note: Wild Harvest"
+   },
+   {
+    "line": 430,
+    "goal": "along goal that never checks off, as a note: Pelt Collecting for Beginners"
+   },
+   {
+    "line": 447,
+    "goal": "along goal that never checks off, as a note: Vendor trash"
+   },
+   {
+    "line": 450,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 451,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 452,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 453,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 460,
+    "goal": "along waypoint dropped: goto 41.06,22.31 map 2521 r 8 optional"
+   },
+   {
+    "line": 460,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 465,
+    "goal": "along goal that never checks off, as a note: Vendor trash"
+   },
+   {
+    "line": 465,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 469,
+    "goal": "along waypoint dropped: goto 38.31,30.17 map 2521 r 100 -- Kill mobs along the way if you can do so without losing time."
+   },
+   {
+    "line": 469,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 474,
+    "goal": "along waypoint dropped: goto 36.032,33.545 map 2521 r 50 -- Head to the upper level of the temple"
+   },
+   {
+    "line": 474,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 478,
+    "goal": "along waypoint dropped: goto 35.33,34.19 map 2521 r 30 optional"
+   },
+   {
+    "line": 478,
+    "goal": "along waypoint dropped: goto 36.34,31.56 map 2521 r 40 optional"
+   },
+   {
+    "line": 478,
+    "goal": "along waypoint dropped: goto 37.3,32.89 map 2521 r 40 optional"
+   },
+   {
+    "line": 478,
+    "goal": "along waypoint dropped: goto 37.16,34.72 map 2521 r 40 optional"
+   },
+   {
+    "line": 478,
+    "goal": "along waypoint dropped: goto 38.08,35.01 map 2521 r 40 optional"
+   },
+   {
+    "line": 478,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 482,
+    "goal": "along goal that never checks off, as a note: Windstones"
+   },
+   {
+    "line": 482,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 486,
+    "goal": "along goal that never checks off, as a note: Vendor trash."
+   },
+   {
+    "line": 486,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 487,
+    "goal": "along goal that never checks off, as a note: Vendor trash."
+   },
+   {
+    "line": 487,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 488,
+    "goal": "along goal that never checks off, as a note: Vendor trash."
+   },
+   {
+    "line": 488,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 537,
+    "goal": "along waypoint dropped: goto 48.813,36.434 map 2521 r 10 optional"
+   },
+   {
+    "line": 537,
+    "goal": "along waypoint dropped: goto 49.355,35.793 map 2521 r 15 optional"
+   },
+   {
+    "line": 537,
+    "goal": "along waypoint dropped: goto 49.537,34.325 map 2521 r 70 optional -- Enter the cave"
+   },
+   {
+    "line": 537,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 564,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 565,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 566,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 567,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 598,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 602,
+    "goal": "along waypoint dropped: goto 36.44,50.93 map 2521 r 40 optional"
+   },
+   {
+    "line": 602,
+    "goal": "along waypoint dropped: goto 35.16,51.07 map 2521 r 35 optional"
+   },
+   {
+    "line": 602,
+    "goal": "along waypoint dropped: goto 34.12,51.6 map 2521 r 45 optional"
+   },
+   {
+    "line": 602,
+    "goal": "along waypoint dropped: goto 34.52,52.76 map 2521 r 45 optional"
+   },
+   {
+    "line": 602,
+    "goal": "along waypoint dropped: goto 35.12,54.08 map 2521 r 38 optional"
+   },
+   {
+    "line": 602,
+    "goal": "along waypoint dropped: goto 35.86,53.01 map 2521 r 40 optional"
+   },
+   {
+    "line": 602,
+    "goal": "along waypoint dropped: goto 36.02,54.28 map 2521 r 40 optional"
+   },
+   {
+    "line": 602,
+    "goal": "along waypoint dropped: goto 35.71,55.57 map 2521 r 40 optional"
+   },
+   {
+    "line": 602,
+    "goal": "along waypoint dropped: goto 35.63,57.34 map 2521 r 30 optional"
+   },
+   {
+    "line": 602,
+    "goal": "along waypoint dropped: goto 34.6,57.11 map 2521 r 35 optional"
+   },
+   {
+    "line": 602,
+    "goal": "along waypoint dropped: goto 35.51,58.08 map 2521 r 40 optional"
+   },
+   {
+    "line": 602,
+    "goal": "along waypoint dropped: goto 36.61,58.64 map 2521 r 40 optional"
+   },
+   {
+    "line": 602,
+    "goal": "along waypoint dropped: goto 37.13,56.6 map 2521 r 40 optional"
+   },
+   {
+    "line": 602,
+    "goal": "along waypoint dropped: goto 38.61,56.89 map 2521 r 40 optional"
+   },
+   {
+    "line": 602,
+    "goal": "along waypoint dropped: goto 39.88,57.56 map 2521 r 40 optional"
+   },
+   {
+    "line": 602,
+    "goal": "along waypoint dropped: goto 39.1,55.85 map 2521 r 40 optional"
+   },
+   {
+    "line": 602,
+    "goal": "along waypoint dropped: goto 33.1,54.67 map 2521 r 40 optional"
+   },
+   {
+    "line": 602,
+    "goal": "along waypoint dropped: goto 34.7,52.68 map 2521 r 40 optional"
+   },
+   {
+    "line": 602,
+    "goal": "along waypoint dropped: goto 34.25,51.19 map 2521 r 40 optional"
+   },
+   {
+    "line": 602,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 653,
+    "goal": "along waypoint dropped: goto 48.85,53.91 map 2521 r 8"
+   },
+   {
+    "line": 653,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 663,
+    "goal": "along waypoint dropped: goto 40.23,63.83 map 2521 r 8 optional"
+   },
+   {
+    "line": 663,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 676,
+    "goal": "along waypoint dropped: goto 49.877,56.539 map 2521 r 25 optional"
+   },
+   {
+    "line": 676,
+    "goal": "along waypoint dropped: goto 49.629,54.728 map 2521 r 25 optional"
+   },
+   {
+    "line": 676,
+    "goal": "along waypoint dropped: goto 49.058,53.545 map 2521 r 15 optional"
+   },
+   {
+    "line": 676,
+    "goal": "along waypoint dropped: goto 47.641,54.14 map 2521 r 30 optional"
+   },
+   {
+    "line": 676,
+    "goal": "along waypoint dropped: goto 49.765,57.237 map 2521 r 25 optional"
+   },
+   {
+    "line": 676,
+    "goal": "along waypoint dropped: goto 49.5,56.22 map 2521 r 35 optional"
+   },
+   {
+    "line": 676,
+    "goal": "along waypoint dropped: goto 49.86,56.95 map 2521 r 35 optional"
+   },
+   {
+    "line": 676,
+    "goal": "along waypoint dropped: goto 50.4,56.93 map 2521 r 25 optional"
+   },
+   {
+    "line": 676,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 682,
+    "goal": "along waypoint dropped: goto 47.34,51.69 map 2521 r 35 optional"
+   },
+   {
+    "line": 682,
+    "goal": "along waypoint dropped: goto 45.9,53.93 map 2521 r 35 optional"
+   },
+   {
+    "line": 682,
+    "goal": "along waypoint dropped: goto 42.65,49.07 map 2521 r 35 optional"
+   },
+   {
+    "line": 682,
+    "goal": "along waypoint dropped: goto 41.44,53.14 map 2521 r 35 optional"
+   },
+   {
+    "line": 682,
+    "goal": "along waypoint dropped: goto 39.77,56.4 map 2521 r 35 optional"
+   },
+   {
+    "line": 682,
+    "goal": "along waypoint dropped: goto 40.9,50.64 map 2521 r 35 optional"
+   },
+   {
+    "line": 682,
+    "goal": "along waypoint dropped: goto 37.56,43.24 map 2521 r 40 optional"
+   },
+   {
+    "line": 682,
+    "goal": "along waypoint dropped: goto 40.04,41.38 map 2521 r 40 optional"
+   },
+   {
+    "line": 682,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "1-9-zephras-isle-e3c2752e.guide": [
+   {
+    "step": 9,
+    "dropped": "money >= 10"
+   },
+   {
+    "step": 9,
+    "dropped": "not knows 5242"
+   },
+   {
+    "step": 21,
+    "dropped": "money >= 10"
+   },
+   {
+    "step": 23,
+    "dropped": "money >= 10"
+   },
+   {
+    "step": 50,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 50,
+    "dropped": "not knows 6178"
+   },
+   {
+    "step": 50,
+    "dropped": "not knows 6546"
+   },
+   {
+    "step": 57,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 57,
+    "dropped": "not knows 6178"
+   },
+   {
+    "step": 57,
+    "dropped": "not knows 6546"
+   },
+   {
+    "step": 60,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 64,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 65,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 69,
+    "dropped": "knows 2366"
+   },
+   {
+    "step": 70,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 71,
+    "dropped": "knows 8613"
+   },
+   {
+    "step": 76,
+    "dropped": "knows 2366"
+   },
+   {
+    "step": 77,
+    "dropped": "knows 2656"
+   },
+   {
+    "step": 78,
+    "dropped": "knows 8613"
+   },
+   {
+    "step": 116,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 121,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 121,
+    "dropped": "not knows 1777"
+   },
+   {
+    "step": 122,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 125,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 126,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 127,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 130,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 131,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 132,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 133,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 134,
+    "dropped": "money >= 125"
+   },
+   {
+    "step": 138,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 139,
+    "dropped": "money >= 285"
+   },
+   {
+    "step": 140,
+    "dropped": "money >= 701"
+   },
+   {
+    "step": 141,
+    "dropped": "money >= 536"
+   },
+   {
+    "step": 144,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 145,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 146,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 147,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 148,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 148,
+    "dropped": "not knows 1777"
+   },
+   {
+    "step": 149,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 166,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 167,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 168,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 169,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 169,
+    "dropped": "not knows 1777"
+   },
+   {
+    "step": 170,
+    "dropped": "money >= 285"
+   },
+   {
+    "step": 171,
+    "dropped": "money >= 701"
+   },
+   {
+    "step": 172,
+    "dropped": "money >= 536"
+   },
+   {
+    "step": 173,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 175,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 176,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 178,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 180,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 181,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 182,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 183,
+    "dropped": "money >= 300"
+   },
+   {
+    "step": 185,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 188,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 188,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 189,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 190,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 193,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 193,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 194,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 195,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 198,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 199,
+    "dropped": "knows 8613"
+   },
+   {
+    "step": 201,
+    "dropped": "knows 2366"
+   },
+   {
+    "step": 202,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 203,
+    "dropped": "knows 7620"
+   },
+   {
+    "step": 204,
+    "dropped": "knows 2259"
+   },
+   {
+    "step": 205,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 206,
+    "dropped": "knows 3908"
+   },
+   {
+    "step": 207,
+    "dropped": "knows 7411"
+   },
+   {
+    "step": 208,
+    "dropped": "knows 2108"
+   },
+   {
+    "step": 225,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 226,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 227,
+    "dropped": "knows 7411"
+   },
+   {
+    "step": 228,
+    "dropped": "knows 8613"
+   },
+   {
+    "step": 231,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 232,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 233,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 234,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 235,
+    "dropped": "knows 2259"
+   },
+   {
+    "step": 237,
+    "dropped": "knows 3908"
+   },
+   {
+    "step": 238,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 239,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 241,
+    "dropped": "knows 2108"
+   },
+   {
+    "step": 243,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 244,
+    "dropped": "money >= 500"
+   },
+   {
+    "step": 244,
+    "dropped": "not knows 7372"
+   },
+   {
+    "step": 244,
+    "dropped": "not knows 8198"
+   },
+   {
+    "step": 246,
+    "dropped": "money >= 400"
+   },
+   {
+    "step": 247,
+    "dropped": "money >= 400"
+   },
+   {
+    "step": 252,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 253,
+    "dropped": "money >= 600"
+   },
+   {
+    "step": 254,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 256,
+    "dropped": "knows 7620"
+   },
+   {
+    "step": 266,
+    "dropped": "money >= 400"
+   },
+   {
+    "step": 269,
+    "dropped": "knows 7620"
+   },
+   {
+    "step": 301,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 302,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 303,
+    "dropped": "knows 8613"
+   },
+   {
+    "step": 304,
+    "dropped": "knows 7411"
+   },
+   {
+    "step": 305,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 306,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 307,
+    "dropped": "knows 2259"
+   },
+   {
+    "step": 308,
+    "dropped": "knows 3908"
+   },
+   {
+    "step": 309,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 310,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 312,
+    "dropped": "knows 2108"
+   },
+   {
+    "step": 324,
+    "dropped": "money >= 10"
+   },
+   {
+    "step": 324,
+    "dropped": "not knows 5242"
+   },
+   {
+    "step": 336,
+    "dropped": "money >= 10"
+   },
+   {
+    "step": 338,
+    "dropped": "money >= 10"
+   },
+   {
+    "step": 365,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 365,
+    "dropped": "not knows 6178"
+   },
+   {
+    "step": 365,
+    "dropped": "not knows 6546"
+   },
+   {
+    "step": 372,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 372,
+    "dropped": "not knows 6178"
+   },
+   {
+    "step": 372,
+    "dropped": "not knows 6546"
+   },
+   {
+    "step": 375,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 379,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 380,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 384,
+    "dropped": "knows 2366"
+   },
+   {
+    "step": 385,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 386,
+    "dropped": "knows 8613"
+   },
+   {
+    "step": 391,
+    "dropped": "knows 2366"
+   },
+   {
+    "step": 392,
+    "dropped": "knows 2656"
+   },
+   {
+    "step": 393,
+    "dropped": "knows 8613"
+   },
+   {
+    "step": 431,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 436,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 436,
+    "dropped": "not knows 1777"
+   },
+   {
+    "step": 437,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 440,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 441,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 442,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 445,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 446,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 447,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 448,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 449,
+    "dropped": "money >= 125"
+   },
+   {
+    "step": 453,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 454,
+    "dropped": "money >= 285"
+   },
+   {
+    "step": 455,
+    "dropped": "money >= 701"
+   },
+   {
+    "step": 456,
+    "dropped": "money >= 536"
+   },
+   {
+    "step": 459,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 460,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 461,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 462,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 463,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 463,
+    "dropped": "not knows 1777"
+   },
+   {
+    "step": 464,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 481,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 482,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 483,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 484,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 484,
+    "dropped": "not knows 1777"
+   },
+   {
+    "step": 485,
+    "dropped": "money >= 285"
+   },
+   {
+    "step": 486,
+    "dropped": "money >= 701"
+   },
+   {
+    "step": 487,
+    "dropped": "money >= 536"
+   },
+   {
+    "step": 488,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 490,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 491,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 493,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 495,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 496,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 497,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 498,
+    "dropped": "money >= 300"
+   },
+   {
+    "step": 500,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 503,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 503,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 504,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 505,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 508,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 508,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 509,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 510,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 513,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 514,
+    "dropped": "knows 8613"
+   },
+   {
+    "step": 516,
+    "dropped": "knows 2366"
+   },
+   {
+    "step": 517,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 518,
+    "dropped": "knows 7620"
+   },
+   {
+    "step": 519,
+    "dropped": "knows 2259"
+   },
+   {
+    "step": 520,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 521,
+    "dropped": "knows 3908"
+   },
+   {
+    "step": 522,
+    "dropped": "knows 7411"
+   },
+   {
+    "step": 523,
+    "dropped": "knows 2108"
+   },
+   {
+    "step": 540,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 541,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 542,
+    "dropped": "knows 7411"
+   },
+   {
+    "step": 543,
+    "dropped": "knows 8613"
+   },
+   {
+    "step": 546,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 547,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 548,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 549,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 550,
+    "dropped": "knows 2259"
+   },
+   {
+    "step": 552,
+    "dropped": "knows 3908"
+   },
+   {
+    "step": 553,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 554,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 556,
+    "dropped": "knows 2108"
+   },
+   {
+    "step": 558,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 559,
+    "dropped": "money >= 500"
+   },
+   {
+    "step": 559,
+    "dropped": "not knows 7372"
+   },
+   {
+    "step": 559,
+    "dropped": "not knows 8198"
+   },
+   {
+    "step": 561,
+    "dropped": "money >= 400"
+   },
+   {
+    "step": 562,
+    "dropped": "money >= 400"
+   },
+   {
+    "step": 567,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 568,
+    "dropped": "money >= 600"
+   },
+   {
+    "step": 569,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 571,
+    "dropped": "knows 7620"
+   },
+   {
+    "step": 581,
+    "dropped": "money >= 400"
+   },
+   {
+    "step": 584,
+    "dropped": "knows 7620"
+   },
+   {
+    "step": 616,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 617,
+    "dropped": "knows 2550"
+   },
+   {
+    "step": 618,
+    "dropped": "knows 8613"
+   },
+   {
+    "step": 619,
+    "dropped": "knows 7411"
+   },
+   {
+    "step": 620,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 621,
+    "dropped": "knows 3273"
+   },
+   {
+    "step": 622,
+    "dropped": "knows 2259"
+   },
+   {
+    "step": 623,
+    "dropped": "knows 3908"
+   },
+   {
+    "step": 624,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 625,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 627,
+    "dropped": "knows 2108"
+   },
+   {
+    "line": 35,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 47,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 303,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 318,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 766,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 1621,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 2149,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 2177,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 2190,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 4363,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 0,
+    "goal": "per-class reward turn-ins of quest 92470 as one turnin"
+   },
+   {
+    "line": 0,
+    "goal": "per-class reward turn-ins of quest 92470 as one turnin"
+   },
+   {
+    "line": 0,
+    "goal": "per-class reward turn-ins of quest 92470 as one turnin"
+   },
+   {
+    "line": 0,
+    "goal": "per-class reward turn-ins of quest 92470 as one turnin"
+   },
+   {
+    "line": 16,
+    "goal": "along waypoint dropped: goto 42.06,23.48 map 2521 r 8 optional"
+   },
+   {
+    "line": 16,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 60,
+    "goal": "along waypoint dropped: goto 43.37,23.98 map 2521 r 60 -- 1"
+   },
+   {
+    "line": 60,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 86,
+    "goal": "along goal that never checks off, as a note: Vendor trash"
+   },
+   {
+    "line": 99,
+    "goal": "along waypoint dropped: goto 41.06,22.31 map 2521 r 8 optional"
+   },
+   {
+    "line": 99,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 104,
+    "goal": "along goal that never checks off, as a note: Vendor trash"
+   },
+   {
+    "line": 104,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 108,
+    "goal": "along waypoint dropped: goto 38.31,30.17 map 2521 r 100 -- Kill mobs along the way if you can do so without losing time."
+   },
+   {
+    "line": 108,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 113,
+    "goal": "along waypoint dropped: goto 36.032,33.545 map 2521 r 50 -- Head to the upper level of the temple"
+   },
+   {
+    "line": 113,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 125,
+    "goal": "along goal that never checks off, as a note: Vendor trash."
+   },
+   {
+    "line": 125,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 126,
+    "goal": "along goal that never checks off, as a note: Vendor trash."
+   },
+   {
+    "line": 126,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 127,
+    "goal": "along goal that never checks off, as a note: Vendor trash."
+   },
+   {
+    "line": 127,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 173,
+    "goal": "along waypoint dropped: goto 48.813,36.434 map 2521 r 10 optional"
+   },
+   {
+    "line": 173,
+    "goal": "along waypoint dropped: goto 49.355,35.793 map 2521 r 15 optional"
+   },
+   {
+    "line": 173,
+    "goal": "along waypoint dropped: goto 49.537,34.325 map 2521 r 70 optional -- Enter the cave"
+   },
+   {
+    "line": 173,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 294,
+    "goal": "along waypoint dropped: goto 48.85,53.91 map 2521 r 8"
+   },
+   {
+    "line": 294,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 304,
+    "goal": "along waypoint dropped: goto 40.23,63.83 map 2521 r 8 optional"
+   },
+   {
+    "line": 304,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 350,
+    "goal": "along waypoint dropped: goto 44.23,26 map 2521 r 40 optional"
+   },
+   {
+    "line": 350,
+    "goal": "along waypoint dropped: goto 45.24,25.9 map 2521 r 40 optional"
+   },
+   {
+    "line": 350,
+    "goal": "along waypoint dropped: goto 46.06,25.33 map 2521 r 40 optional"
+   },
+   {
+    "line": 350,
+    "goal": "along waypoint dropped: goto 46.77,27.83 map 2521 r 40 optional"
+   },
+   {
+    "line": 350,
+    "goal": "along waypoint dropped: goto 45.27,28.36 map 2521 r 40 optional"
+   },
+   {
+    "line": 350,
+    "goal": "along waypoint dropped: goto 43.84,28.39 map 2521 r 40 optional"
+   },
+   {
+    "line": 350,
+    "goal": "along waypoint dropped: goto 42.88,27.52 map 2521 r 40 optional"
+   },
+   {
+    "line": 350,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 351,
+    "goal": "along waypoint dropped: goto 44.23,26 map 2521 r 40 optional"
+   },
+   {
+    "line": 351,
+    "goal": "along waypoint dropped: goto 45.24,25.9 map 2521 r 40 optional"
+   },
+   {
+    "line": 351,
+    "goal": "along waypoint dropped: goto 46.06,25.33 map 2521 r 40 optional"
+   },
+   {
+    "line": 351,
+    "goal": "along waypoint dropped: goto 46.77,27.83 map 2521 r 40 optional"
+   },
+   {
+    "line": 351,
+    "goal": "along waypoint dropped: goto 45.27,28.36 map 2521 r 40 optional"
+   },
+   {
+    "line": 351,
+    "goal": "along waypoint dropped: goto 43.84,28.39 map 2521 r 40 optional"
+   },
+   {
+    "line": 351,
+    "goal": "along waypoint dropped: goto 42.88,27.52 map 2521 r 40 optional"
+   },
+   {
+    "line": 351,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 362,
+    "goal": "along waypoint dropped: goto 42.06,23.48 map 2521 r 8 optional"
+   },
+   {
+    "line": 362,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 389,
+    "goal": "along waypoint dropped: goto 46.85,17.68 map 2521 r 30 optional"
+   },
+   {
+    "line": 389,
+    "goal": "along waypoint dropped: goto 47.22,19 map 2521 r 30 optional"
+   },
+   {
+    "line": 389,
+    "goal": "along waypoint dropped: goto 48.3,19.06 map 2521 r 50 optional"
+   },
+   {
+    "line": 389,
+    "goal": "along waypoint dropped: goto 47.55,21.06 map 2521 r 35 optional"
+   },
+   {
+    "line": 389,
+    "goal": "along waypoint dropped: goto 46.74,20.49 map 2521 r 35 optional"
+   },
+   {
+    "line": 389,
+    "goal": "along waypoint dropped: goto 48.97,20.86 map 2521 r 40 optional"
+   },
+   {
+    "line": 389,
+    "goal": "along waypoint dropped: goto 47.41,21.14 map 2521 r 30 optional"
+   },
+   {
+    "line": 389,
+    "goal": "along waypoint dropped: goto 45.82,19.09 map 2521 r 40 optional"
+   },
+   {
+    "line": 389,
+    "goal": "along waypoint dropped: goto 47.19,23.55 map 2521 r 30 optional"
+   },
+   {
+    "line": 389,
+    "goal": "along waypoint dropped: goto 46.6,24.62 map 2521 r 30 optional"
+   },
+   {
+    "line": 389,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 390,
+    "goal": "along waypoint dropped: goto 46.85,17.68 map 2521 r 30 optional"
+   },
+   {
+    "line": 390,
+    "goal": "along waypoint dropped: goto 47.22,19 map 2521 r 30 optional"
+   },
+   {
+    "line": 390,
+    "goal": "along waypoint dropped: goto 48.3,19.06 map 2521 r 50 optional"
+   },
+   {
+    "line": 390,
+    "goal": "along waypoint dropped: goto 47.55,21.06 map 2521 r 35 optional"
+   },
+   {
+    "line": 390,
+    "goal": "along waypoint dropped: goto 46.74,20.49 map 2521 r 35 optional"
+   },
+   {
+    "line": 390,
+    "goal": "along waypoint dropped: goto 48.97,20.86 map 2521 r 40 optional"
+   },
+   {
+    "line": 390,
+    "goal": "along waypoint dropped: goto 47.41,21.14 map 2521 r 30 optional"
+   },
+   {
+    "line": 390,
+    "goal": "along waypoint dropped: goto 45.82,19.09 map 2521 r 40 optional"
+   },
+   {
+    "line": 390,
+    "goal": "along waypoint dropped: goto 47.19,23.55 map 2521 r 30 optional"
+   },
+   {
+    "line": 390,
+    "goal": "along waypoint dropped: goto 46.6,24.62 map 2521 r 30 optional"
+   },
+   {
+    "line": 390,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 406,
+    "goal": "along waypoint dropped: goto 43.37,23.98 map 2521 r 60 -- 1"
+   },
+   {
+    "line": 406,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 414,
+    "goal": "along goal that never checks off, as a note: Mining for Dummies"
+   },
+   {
+    "line": 415,
+    "goal": "along goal that never checks off, as a note: Wild Harvest"
+   },
+   {
+    "line": 416,
+    "goal": "along goal that never checks off, as a note: Pelt Collecting for Beginners"
+   },
+   {
+    "line": 432,
+    "goal": "along goal that never checks off, as a note: Vendor trash"
+   },
+   {
+    "line": 435,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 436,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 437,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 438,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 445,
+    "goal": "along waypoint dropped: goto 41.06,22.31 map 2521 r 8 optional"
+   },
+   {
+    "line": 445,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 450,
+    "goal": "along goal that never checks off, as a note: Vendor trash"
+   },
+   {
+    "line": 450,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 454,
+    "goal": "along waypoint dropped: goto 38.31,30.17 map 2521 r 100 -- Kill mobs along the way if you can do so without losing time."
+   },
+   {
+    "line": 454,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 459,
+    "goal": "along waypoint dropped: goto 36.032,33.545 map 2521 r 50 -- Head to the upper level of the temple"
+   },
+   {
+    "line": 459,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 463,
+    "goal": "along waypoint dropped: goto 35.33,34.19 map 2521 r 30 optional"
+   },
+   {
+    "line": 463,
+    "goal": "along waypoint dropped: goto 36.34,31.56 map 2521 r 40 optional"
+   },
+   {
+    "line": 463,
+    "goal": "along waypoint dropped: goto 37.3,32.89 map 2521 r 40 optional"
+   },
+   {
+    "line": 463,
+    "goal": "along waypoint dropped: goto 37.16,34.72 map 2521 r 40 optional"
+   },
+   {
+    "line": 463,
+    "goal": "along waypoint dropped: goto 38.08,35.01 map 2521 r 40 optional"
+   },
+   {
+    "line": 463,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 467,
+    "goal": "along goal that never checks off, as a note: Windstones"
+   },
+   {
+    "line": 467,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 471,
+    "goal": "along goal that never checks off, as a note: Vendor trash."
+   },
+   {
+    "line": 471,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 472,
+    "goal": "along goal that never checks off, as a note: Vendor trash."
+   },
+   {
+    "line": 472,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 473,
+    "goal": "along goal that never checks off, as a note: Vendor trash."
+   },
+   {
+    "line": 473,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 519,
+    "goal": "along waypoint dropped: goto 48.813,36.434 map 2521 r 10 optional"
+   },
+   {
+    "line": 519,
+    "goal": "along waypoint dropped: goto 49.355,35.793 map 2521 r 15 optional"
+   },
+   {
+    "line": 519,
+    "goal": "along waypoint dropped: goto 49.537,34.325 map 2521 r 70 optional -- Enter the cave"
+   },
+   {
+    "line": 519,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 548,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 549,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 550,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 551,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 584,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 591,
+    "goal": "along waypoint dropped: goto 36.44,50.93 map 2521 r 40 optional"
+   },
+   {
+    "line": 591,
+    "goal": "along waypoint dropped: goto 35.16,51.07 map 2521 r 35 optional"
+   },
+   {
+    "line": 591,
+    "goal": "along waypoint dropped: goto 34.12,51.6 map 2521 r 45 optional"
+   },
+   {
+    "line": 591,
+    "goal": "along waypoint dropped: goto 34.52,52.76 map 2521 r 45 optional"
+   },
+   {
+    "line": 591,
+    "goal": "along waypoint dropped: goto 35.12,54.08 map 2521 r 38 optional"
+   },
+   {
+    "line": 591,
+    "goal": "along waypoint dropped: goto 35.86,53.01 map 2521 r 40 optional"
+   },
+   {
+    "line": 591,
+    "goal": "along waypoint dropped: goto 36.02,54.28 map 2521 r 40 optional"
+   },
+   {
+    "line": 591,
+    "goal": "along waypoint dropped: goto 35.71,55.57 map 2521 r 40 optional"
+   },
+   {
+    "line": 591,
+    "goal": "along waypoint dropped: goto 35.63,57.34 map 2521 r 30 optional"
+   },
+   {
+    "line": 591,
+    "goal": "along waypoint dropped: goto 34.6,57.11 map 2521 r 35 optional"
+   },
+   {
+    "line": 591,
+    "goal": "along waypoint dropped: goto 35.51,58.08 map 2521 r 40 optional"
+   },
+   {
+    "line": 591,
+    "goal": "along waypoint dropped: goto 36.61,58.64 map 2521 r 40 optional"
+   },
+   {
+    "line": 591,
+    "goal": "along waypoint dropped: goto 37.13,56.6 map 2521 r 40 optional"
+   },
+   {
+    "line": 591,
+    "goal": "along waypoint dropped: goto 38.61,56.89 map 2521 r 40 optional"
+   },
+   {
+    "line": 591,
+    "goal": "along waypoint dropped: goto 39.88,57.56 map 2521 r 40 optional"
+   },
+   {
+    "line": 591,
+    "goal": "along waypoint dropped: goto 39.1,55.85 map 2521 r 40 optional"
+   },
+   {
+    "line": 591,
+    "goal": "along waypoint dropped: goto 33.1,54.67 map 2521 r 40 optional"
+   },
+   {
+    "line": 591,
+    "goal": "along waypoint dropped: goto 34.7,52.68 map 2521 r 40 optional"
+   },
+   {
+    "line": 591,
+    "goal": "along waypoint dropped: goto 34.25,51.19 map 2521 r 40 optional"
+   },
+   {
+    "line": 591,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 640,
+    "goal": "along waypoint dropped: goto 48.85,53.91 map 2521 r 8"
+   },
+   {
+    "line": 640,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 650,
+    "goal": "along waypoint dropped: goto 40.23,63.83 map 2521 r 8 optional"
+   },
+   {
+    "line": 650,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 667,
+    "goal": "along waypoint dropped: goto 49.877,56.539 map 2521 r 25 optional"
+   },
+   {
+    "line": 667,
+    "goal": "along waypoint dropped: goto 49.629,54.728 map 2521 r 25 optional"
+   },
+   {
+    "line": 667,
+    "goal": "along waypoint dropped: goto 49.058,53.545 map 2521 r 15 optional"
+   },
+   {
+    "line": 667,
+    "goal": "along waypoint dropped: goto 47.641,54.14 map 2521 r 30 optional"
+   },
+   {
+    "line": 667,
+    "goal": "along waypoint dropped: goto 49.765,57.237 map 2521 r 25 optional"
+   },
+   {
+    "line": 667,
+    "goal": "along waypoint dropped: goto 49.5,56.22 map 2521 r 35 optional"
+   },
+   {
+    "line": 667,
+    "goal": "along waypoint dropped: goto 49.86,56.95 map 2521 r 35 optional"
+   },
+   {
+    "line": 667,
+    "goal": "along waypoint dropped: goto 50.4,56.93 map 2521 r 25 optional"
+   },
+   {
+    "line": 667,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 672,
+    "goal": "along waypoint dropped: goto 47.34,51.69 map 2521 r 35 optional"
+   },
+   {
+    "line": 672,
+    "goal": "along waypoint dropped: goto 45.9,53.93 map 2521 r 35 optional"
+   },
+   {
+    "line": 672,
+    "goal": "along waypoint dropped: goto 42.65,49.07 map 2521 r 35 optional"
+   },
+   {
+    "line": 672,
+    "goal": "along waypoint dropped: goto 41.44,53.14 map 2521 r 35 optional"
+   },
+   {
+    "line": 672,
+    "goal": "along waypoint dropped: goto 39.77,56.4 map 2521 r 35 optional"
+   },
+   {
+    "line": 672,
+    "goal": "along waypoint dropped: goto 40.9,50.64 map 2521 r 35 optional"
+   },
+   {
+    "line": 672,
+    "goal": "along waypoint dropped: goto 37.56,43.24 map 2521 r 40 optional"
+   },
+   {
+    "line": 672,
+    "goal": "along waypoint dropped: goto 40.04,41.38 map 2521 r 40 optional"
+   },
+   {
+    "line": 672,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "10-12-durotar-ced6c1de.guide": [
+   {
+    "step": 17,
+    "dropped": "not knows 16828"
+   },
+   {
+    "step": 54,
+    "dropped": "money >= 2871"
+   },
+   {
+    "line": 118,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "10-12-tirisfal-orc-troll-91422a6f.guide": [
+   {
+    "step": 18,
+    "dropped": "money >= 800"
+   },
+   {
+    "step": 30,
+    "dropped": "money >= 2023"
+   },
+   {
+    "step": 31,
+    "dropped": "money >= 2023"
+   },
+   {
+    "step": 34,
+    "dropped": "money >= 1000"
+   },
+   {
+    "step": 35,
+    "dropped": "not knows 201"
+   },
+   {
+    "step": 58,
+    "dropped": "money >= 800"
+   },
+   {
+    "step": 59,
+    "dropped": "money >= 800"
+   },
+   {
+    "step": 60,
+    "dropped": "money >= 800"
+   },
+   {
+    "step": 61,
+    "dropped": "money >= 800"
+   },
+   {
+    "step": 62,
+    "dropped": "money >= 800"
+   },
+   {
+    "line": 3,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 4,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 63,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 64,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 65,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 66,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "11-13-loch-modan-e2a43473.guide": [
+   {
+    "step": 5,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 6,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 7,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 23,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 24,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 25,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 39,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 40,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 41,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 41,
+    "dropped": "skill Cooking >= 10"
+   },
+   {
+    "step": 51,
+    "dropped": "money < 7579"
+   },
+   {
+    "step": 57,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 57,
+    "dropped": "skill Cooking >= 1"
+   },
+   {
+    "step": 58,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 59,
+    "dropped": "skill Cooking >= 50"
+   },
+   {
+    "step": 60,
+    "dropped": "too many cases (6): (((Warlock) or (Mage) or (Rogue) or (Priest) or (Warrior) or (Paladin)))"
+   },
+   {
+    "step": 88,
+    "dropped": "money >= 3815"
+   },
+   {
+    "step": 89,
+    "dropped": "money >= 3815"
+   }
+  ],
+  "11-13-loch-modan-hunter-e84d167f.guide": [
+   {
+    "step": 17,
+    "dropped": "money >= 1300"
+   },
+   {
+    "step": 48,
+    "dropped": "skill Cooking < 50"
+   }
+  ],
+  "11-16-darkshore-loch-modan-67ee20cb.guide": [
+   {
+    "step": 20,
+    "dropped": "not knows 17255"
+   },
+   {
+    "step": 27,
+    "dropped": "skill Herbalism >= 15"
+   },
+   {
+    "step": 66,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 67,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 69,
+    "dropped": "skill Cooking >= 10"
+   },
+   {
+    "step": 99,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 99,
+    "dropped": "skill Cooking >= 1"
+   },
+   {
+    "step": 100,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 100,
+    "dropped": "skill Cooking >= 10"
+   },
+   {
+    "step": 109,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 109,
+    "dropped": "skill Cooking >= 1"
+   },
+   {
+    "step": 110,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 110,
+    "dropped": "skill Cooking >= 10"
+   },
+   {
+    "step": 114,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 114,
+    "dropped": "skill Cooking >= 1"
+   },
+   {
+    "step": 128,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 128,
+    "dropped": "skill Cooking >= 1"
+   },
+   {
+    "step": 165,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 169,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 170,
+    "dropped": "skill Cooking >= 10"
+   },
+   {
+    "line": 92,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 212,
+    "goal": "along goal that never checks off, as a note: Use item 15397"
+   },
+   {
+    "line": 212,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 257,
+    "goal": "along goal that never checks off, as a note: Use item 3107"
+   },
+   {
+    "line": 257,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 350,
+    "goal": "along waypoint dropped: goto 25.799715,75.499474 map 1455 r 1 optional -- c:Ironforge,25.800,75.500"
+   },
+   {
+    "line": 350,
+    "goal": "along waypoint dropped: goto 24.199715,74.599179 map 1455 r 1 optional -- c:Ironforge,24.200,74.600"
+   }
+  ],
+  "12-14-loch-modan-dwarf-gnome-e1f8d938.guide": [
+   {
+    "step": 37,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 38,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 39,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 56,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 57,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 58,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 65,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 66,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 67,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 72,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 110,
+    "dropped": "money >= 3340"
+   },
+   {
+    "step": 125,
+    "dropped": "money >= 3815"
+   },
+   {
+    "step": 126,
+    "dropped": "money >= 3815"
+   },
+   {
+    "step": 132,
+    "dropped": "money >= 3340"
+   },
+   {
+    "line": 132,
+    "goal": "along waypoint dropped: goto 53.612072,59.764223 map 1453 r 8 optional"
+   },
+   {
+    "line": 133,
+    "goal": "along waypoint dropped: goto 53.612072,59.764223 map 1453 r 8 optional"
+   },
+   {
+    "line": 134,
+    "goal": "along waypoint dropped: goto 53.612072,59.764223 map 1453 r 8 optional"
+   }
+  ],
+  "12-14-silverpine-forest-45436275.guide": [
+   {
+    "step": 16,
+    "dropped": "money >= 500"
+   },
+   {
+    "step": 48,
+    "dropped": "money >= 1400"
+   },
+   {
+    "step": 49,
+    "dropped": "money >= 2633"
+   },
+   {
+    "step": 79,
+    "dropped": "money >= 3815"
+   },
+   {
+    "step": 80,
+    "dropped": "money >= 3815"
+   },
+   {
+    "step": 85,
+    "dropped": "skill \"First Aid\" >= 40"
+   },
+   {
+    "step": 87,
+    "dropped": "skill \"First Aid\" >= 50"
+   },
+   {
+    "step": 105,
+    "dropped": "skill \"First Aid\" >= 40"
+   },
+   {
+    "step": 107,
+    "dropped": "skill \"First Aid\" >= 50"
+   },
+   {
+    "step": 114,
+    "dropped": "money >= 3515"
+   },
+   {
+    "line": 249,
+    "goal": "objective 437.2 kept as a note"
+   },
+   {
+    "line": 1,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 139,
+    "goal": "along waypoint dropped: goto 48.970238,92.839656 map 1454 r 50 optional"
+   },
+   {
+    "line": 139,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "12-16-the-barrens-936357b2.guide": [
+   {
+    "step": 28,
+    "dropped": "money >= 1751"
+   },
+   {
+    "step": 30,
+    "dropped": "money >= 1324"
+   },
+   {
+    "step": 58,
+    "dropped": "money >= 1751"
+   },
+   {
+    "step": 59,
+    "dropped": "money >= 1324"
+   },
+   {
+    "step": 95,
+    "dropped": "money >= 6397"
+   },
+   {
+    "step": 98,
+    "dropped": "money >= 5544"
+   },
+   {
+    "step": 100,
+    "dropped": "money >= 5304"
+   },
+   {
+    "step": 102,
+    "dropped": "money >= 6286"
+   },
+   {
+    "step": 105,
+    "dropped": "money >= 5544"
+   },
+   {
+    "step": 107,
+    "dropped": "money >= 3815"
+   },
+   {
+    "step": 109,
+    "dropped": "money >= 3815"
+   },
+   {
+    "step": 112,
+    "dropped": "too many cases (5): (((Mage) or (Priest) or (Warlock) or (Shaman) or (Druid)) and onquest 887 and xp >= 15)"
+   },
+   {
+    "step": 125,
+    "dropped": "money >= 6397"
+   },
+   {
+    "step": 128,
+    "dropped": "money >= 5544"
+   },
+   {
+    "step": 130,
+    "dropped": "money >= 5304"
+   },
+   {
+    "step": 132,
+    "dropped": "money >= 6286"
+   },
+   {
+    "step": 135,
+    "dropped": "money >= 5544"
+   },
+   {
+    "step": 137,
+    "dropped": "money >= 3815"
+   },
+   {
+    "step": 139,
+    "dropped": "money >= 3815"
+   },
+   {
+    "line": 139,
+    "goal": "along goal that never checks off, as a note: Use item 2030"
+   },
+   {
+    "line": 139,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 252,
+    "goal": "along waypoint dropped: goto 52.229967,31.000037 map 1413 r 8"
+   },
+   {
+    "line": 252,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 253,
+    "goal": "along waypoint dropped: goto 52.229967,31.000037 map 1413 r 8"
+   },
+   {
+    "line": 253,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "13-15-westfall-718b02a6.guide": [
+   {
+    "step": 66,
+    "dropped": "money >= 3815"
+   },
+   {
+    "step": 67,
+    "dropped": "money >= 3815"
+   },
+   {
+    "step": 68,
+    "dropped": "not knows 1758"
+   },
+   {
+    "step": 69,
+    "dropped": "not knows 1160"
+   },
+   {
+    "step": 75,
+    "dropped": "not knows 6222"
+   },
+   {
+    "step": 77,
+    "dropped": "not knows 2137"
+   },
+   {
+    "step": 80,
+    "dropped": "not knows 19742"
+   },
+   {
+    "step": 85,
+    "dropped": "skill Cooking >= 1"
+   },
+   {
+    "step": 89,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 90,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 91,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 92,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 93,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 94,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 95,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 96,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 97,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 98,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 99,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 100,
+    "dropped": "skill \"First Aid\" >= 1"
+   },
+   {
+    "line": 69,
+    "goal": "along waypoint dropped: goto 56.549914,52.64015 map 1436 r 8"
+   },
+   {
+    "line": 69,
+    "goal": "along goal that never checks off, as a note: Fly to Stormwind"
+   },
+   {
+    "line": 69,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 85,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 86,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "15-17-darkshore-8f193333.guide": [
+   {
+    "step": 12,
+    "dropped": "not knows 17255"
+   },
+   {
+    "step": 18,
+    "dropped": "skill Herbalism >= 15"
+   },
+   {
+    "step": 38,
+    "dropped": "skill Cooking >= 10"
+   },
+   {
+    "step": 89,
+    "dropped": "skill Cooking >= 10"
+   },
+   {
+    "step": 102,
+    "dropped": "skill Cooking >= 10"
+   },
+   {
+    "line": 55,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 142,
+    "goal": "along waypoint dropped: goto 60.900786,11.875777 map 1453 r 20 optional"
+   },
+   {
+    "line": 142,
+    "goal": "along waypoint dropped: goto 63.898696,8.1719945 map 1453 r 8 optional"
+   },
+   {
+    "line": 142,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "16-17-ragefire-chasm-efced763.guide": [
+   {
+    "step": 5,
+    "dropped": "skill \"First Aid\" >= 1"
+   },
+   {
+    "step": 6,
+    "dropped": "skill \"First Aid\" >= 1"
+   },
+   {
+    "step": 7,
+    "dropped": "skill \"First Aid\" >= 1"
+   },
+   {
+    "step": 8,
+    "dropped": "skill \"First Aid\" >= 40"
+   },
+   {
+    "step": 25,
+    "dropped": "money >= 1000"
+   },
+   {
+    "step": 27,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 28,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 29,
+    "dropped": "knows 227"
+   },
+   {
+    "step": 29,
+    "dropped": "money >= 3588"
+   },
+   {
+    "step": 31,
+    "dropped": "knows 227"
+   },
+   {
+    "step": 31,
+    "dropped": "money >= 10210"
+   },
+   {
+    "step": 46,
+    "dropped": "money >= 1500"
+   },
+   {
+    "step": 47,
+    "dropped": "money >= 1500"
+   },
+   {
+    "line": 40,
+    "goal": "along goal that never checks off, as a note: Use item 3026"
+   },
+   {
+    "line": 40,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 42,
+    "goal": "along goal that never checks off, as a note: Use item 926"
+   },
+   {
+    "line": 42,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 43,
+    "goal": "along goal that never checks off, as a note: Use item 926"
+   },
+   {
+    "line": 43,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "17-18-hall-of-thanes-d4f5ecd7.guide": [
+   {
+    "step": 36,
+    "dropped": "not knows 20381"
+   }
+  ],
+  "18-19-ruins-of-lordaeron-d9b4f925.guide": [
+   {
+    "line": 15,
+    "goal": "along goal that never checks off, as a note: Use the [Crest of Lordaeron] to start the quest"
+   }
+  ],
+  "18-21-the-barrens-a90d90d0.guide": [
+   {
+    "step": 110,
+    "dropped": "money >= 6190"
+   },
+   {
+    "step": 111,
+    "dropped": "money >= 3515"
+   },
+   {
+    "step": 111,
+    "dropped": "too many cases (5): (((Rogue) or (Hunter) or (Warrior) or (Shaman) or (Druid)) and turnedin 865 and money >= 3515)"
+   },
+   {
+    "step": 113,
+    "dropped": "too many cases (5): (((Rogue) or (Hunter) or (Warrior) or (Shaman) or (Druid)) and has 4794 and turnedin 865 and xp >= 20)"
+   },
+   {
+    "step": 129,
+    "dropped": "money >= 5808"
+   },
+   {
+    "step": 207,
+    "dropped": "skill \"First Aid\" >= 1"
+   },
+   {
+    "step": 208,
+    "dropped": "skill \"First Aid\" >= 1"
+   },
+   {
+    "step": 255,
+    "dropped": "money >= 8743"
+   },
+   {
+    "step": 258,
+    "dropped": "money >= 9860"
+   },
+   {
+    "step": 260,
+    "dropped": "money >= 9860"
+   },
+   {
+    "step": 262,
+    "dropped": "money >= 5643"
+   },
+   {
+    "line": 7,
+    "goal": "along waypoint dropped: goto 52.229967,31.000037 map 1413 r 8"
+   },
+   {
+    "line": 7,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 79,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 158,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 258,
+    "goal": "along goal that never checks off, as a note: Use item 923"
+   },
+   {
+    "line": 258,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 262,
+    "goal": "along goal that never checks off, as a note: Use item 928"
+   },
+   {
+    "line": 262,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 264,
+    "goal": "along goal that never checks off, as a note: Use item 928"
+   },
+   {
+    "line": 264,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 266,
+    "goal": "along goal that never checks off, as a note: Use item 3027"
+   },
+   {
+    "line": 266,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "19-20-deadmines-089ed7e3.guide": [
+   {
+    "step": 87,
+    "dropped": "not knows 2645"
+   },
+   {
+    "step": 88,
+    "dropped": "not knows 408342"
+   },
+   {
+    "step": 100,
+    "dropped": "skill \"First Aid\" >= 1"
+   },
+   {
+    "line": 103,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "20-21-darkshore-ashenvale-f3614875.guide": [
+   {
+    "step": 107,
+    "dropped": "skill Herbalism >= 1"
+   },
+   {
+    "step": 108,
+    "dropped": "skill Herbalism < 1"
+   },
+   {
+    "step": 114,
+    "dropped": "skill Herbalism >= 1"
+   },
+   {
+    "step": 115,
+    "dropped": "skill Herbalism < 1"
+   },
+   {
+    "line": 655,
+    "goal": "objective 5321.2 kept as a note"
+   },
+   {
+    "line": 65,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 84,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "21-22-wailing-caverns-abf4653a.guide": [
+   {
+    "step": 6,
+    "dropped": "skill Herbalism >= 1"
+   },
+   {
+    "step": 7,
+    "dropped": "skill Herbalism < 1"
+   },
+   {
+    "step": 12,
+    "dropped": "skill Herbalism >= 1"
+   },
+   {
+    "step": 13,
+    "dropped": "skill Herbalism < 1"
+   },
+   {
+    "step": 20,
+    "dropped": "skill Herbalism >= 1"
+   },
+   {
+    "step": 21,
+    "dropped": "skill Herbalism < 1"
+   },
+   {
+    "step": 26,
+    "dropped": "skill Herbalism >= 1"
+   },
+   {
+    "step": 27,
+    "dropped": "skill Herbalism < 1"
+   },
+   {
+    "step": 103,
+    "dropped": "money >= 5808"
+   },
+   {
+    "line": 77,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 78,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 79,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 80,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 81,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 82,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "5-11-dun-morogh-4f90ee3c.guide": [
+   {
+    "step": 12,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 24,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 35,
+    "dropped": "money >= 536"
+   },
+   {
+    "step": 37,
+    "dropped": "money >= 460"
+   },
+   {
+    "step": 39,
+    "dropped": "money >= 400"
+   },
+   {
+    "step": 41,
+    "dropped": "money >= 631"
+   },
+   {
+    "step": 44,
+    "dropped": "money >= 479"
+   },
+   {
+    "step": 50,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 51,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 52,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 159,
+    "dropped": "money < 1030"
+   },
+   {
+    "step": 167,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 168,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 169,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 177,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 178,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 179,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 198,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 199,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 200,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 221,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 227,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 228,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 229,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 255,
+    "dropped": "money >= 2871"
+   },
+   {
+    "step": 268,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 269,
+    "dropped": "skill Cooking >= 50"
+   },
+   {
+    "step": 299,
+    "dropped": "money >= 1922"
+   },
+   {
+    "step": 300,
+    "dropped": "money >= 1922"
+   },
+   {
+    "line": 691,
+    "goal": "objective 287.2 kept as a note"
+   },
+   {
+    "line": 27,
+    "goal": "along goal that never checks off, as a note: Use item 2946"
+   },
+   {
+    "line": 27,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 29,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 176,
+    "goal": "along goal that never checks off, as a note: Use item 3107"
+   },
+   {
+    "line": 176,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 177,
+    "goal": "along goal that never checks off, as a note: Use item 2946"
+   },
+   {
+    "line": 177,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 179,
+    "goal": "along waypoint dropped: goto 57.936,50.787 map 1426 r 1"
+   },
+   {
+    "line": 181,
+    "goal": "along waypoint dropped: goto 57.936,50.787 map 1426 r 1"
+   },
+   {
+    "line": 183,
+    "goal": "along waypoint dropped: goto 59.840061,49.559899 map 1426 r 40 optional"
+   },
+   {
+    "line": 183,
+    "goal": "along waypoint dropped: goto 61.360061,47.070051 map 1426 r 40 optional -- Go up the dirt path"
+   },
+   {
+    "line": 183,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "6-10-durotar-94608336.guide": [
+   {
+    "step": 8,
+    "dropped": "skill Enchanting >= 1"
+   },
+   {
+    "step": 10,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 11,
+    "dropped": "money >= 50"
+   },
+   {
+    "step": 13,
+    "dropped": "money >= 479"
+   },
+   {
+    "step": 15,
+    "dropped": "money >= 381"
+   },
+   {
+    "step": 17,
+    "dropped": "money >= 460"
+   },
+   {
+    "step": 19,
+    "dropped": "money >= 513"
+   },
+   {
+    "step": 21,
+    "dropped": "money >= 271"
+   },
+   {
+    "step": 29,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 29,
+    "dropped": "skill Blacksmithing >= 1"
+   },
+   {
+    "step": 46,
+    "dropped": "money >= 479"
+   },
+   {
+    "step": 48,
+    "dropped": "money >= 381"
+   },
+   {
+    "step": 50,
+    "dropped": "money >= 460"
+   },
+   {
+    "step": 52,
+    "dropped": "money >= 513"
+   },
+   {
+    "step": 54,
+    "dropped": "money >= 271"
+   },
+   {
+    "step": 81,
+    "dropped": "skill Blacksmithing < 1"
+   },
+   {
+    "step": 83,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 83,
+    "dropped": "skill Blacksmithing >= 1"
+   },
+   {
+    "step": 86,
+    "dropped": "goal of quest 784, accepted only for another play style: kill 3128 x10 quest 784.1 @57.053428,57.904482 map 1411 -- Kul Tiras Sailor (10)"
+   },
+   {
+    "step": 86,
+    "dropped": "goal of quest 784, accepted only for another play style: kill 3129 x8 quest 784.2 @57.053428,57.904482 map 1411 -- Kul Tiras Marine (8)"
+   },
+   {
+    "step": 86,
+    "dropped": "goal of quest 791, accepted only for another play style: collect 4870 x8 quest 791.1 @57.053428,57.904482 map 1411 -- Canvas Scraps (8)"
+   },
+   {
+    "step": 87,
+    "dropped": "goal of quest 96822, accepted only for another play style: collect 275713 x1 quest 96822.1 -- Raider's Bow"
+   },
+   {
+    "step": 88,
+    "dropped": "goal of quest 96822, accepted only for another play style: collect 275716 x1 quest 96822.2 @57.350355,56.471858 map 1411 -- 1/1 Raider's Battleaxe"
+   },
+   {
+    "step": 91,
+    "dropped": "goal of quest 784, accepted only for another play style: kill 3192 x1 quest 784.3 -- Lieutenant Benedict (1)"
+   },
+   {
+    "step": 93,
+    "dropped": "goal of quest 96822, accepted only for another play style: collect 275717 x1 quest 96822.3 -- Raider's Shield"
+   },
+   {
+    "step": 94,
+    "dropped": "goal of quest 784, accepted only for another play style: kill 3128 x10 quest 784.1 -- Kul Tiras Sailor (10)"
+   },
+   {
+    "step": 94,
+    "dropped": "goal of quest 784, accepted only for another play style: kill 3129 x8 quest 784.2 -- Kul Tiras Marine (8)"
+   },
+   {
+    "step": 94,
+    "dropped": "goal of quest 791, accepted only for another play style: collect 4870 x8 quest 791.1 -- Canvas Scraps (8)"
+   },
+   {
+    "step": 95,
+    "dropped": "goal of quest 784, accepted only for another play style: kill 3128 x10 quest 784.1 -- Kul Tiras Sailor (10)"
+   },
+   {
+    "step": 95,
+    "dropped": "goal of quest 784, accepted only for another play style: kill 3129 x8 quest 784.2 -- Kul Tiras Marine (8)"
+   },
+   {
+    "step": 96,
+    "dropped": "goal of quest 791, accepted only for another play style: collect 4870 x8 quest 791.1 -- Canvas Scraps (8)"
+   },
+   {
+    "step": 106,
+    "dropped": "goal of quest 784, accepted only for another play style: turnin 784 -- Turn in Vanquish the Betrayers"
+   },
+   {
+    "step": 111,
+    "dropped": "goal of quest 791, accepted only for another play style: turnin 791 -- Turn in Carry Your Weight"
+   },
+   {
+    "step": 114,
+    "dropped": "skill Blacksmithing < 1"
+   },
+   {
+    "step": 116,
+    "dropped": "money >= 479"
+   },
+   {
+    "step": 118,
+    "dropped": "money >= 381"
+   },
+   {
+    "step": 120,
+    "dropped": "money >= 460"
+   },
+   {
+    "step": 122,
+    "dropped": "money >= 513"
+   },
+   {
+    "step": 129,
+    "dropped": "money >= 283"
+   },
+   {
+    "step": 135,
+    "dropped": "goal of quest 96822, accepted only for another play style: turnin 96822 -- Turn in For Honor"
+   },
+   {
+    "step": 139,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 139,
+    "dropped": "not knows 7799"
+   },
+   {
+    "step": 147,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 148,
+    "dropped": "money >= 500"
+   },
+   {
+    "step": 157,
+    "dropped": "skill Enchanting >= 1"
+   },
+   {
+    "step": 158,
+    "dropped": "skill Enchanting >= 1"
+   },
+   {
+    "step": 165,
+    "dropped": "skill Enchanting >= 1"
+   },
+   {
+    "step": 166,
+    "dropped": "skill Enchanting >= 1"
+   },
+   {
+    "step": 175,
+    "dropped": "skill Enchanting >= 1"
+   },
+   {
+    "step": 181,
+    "dropped": "goal of quest 96825, accepted only for another play style: collect 275718 x8 quest 96825.1 @52.058629,68.307319 map 1411 -- 8/8 Prickly Pear Fruit"
+   },
+   {
+    "step": 183,
+    "dropped": "goal of quest 96825, accepted only for another play style: collect 275718 x8 quest 96825.1 -- 8/8 Prickly Pear Fruit"
+   },
+   {
+    "step": 186,
+    "dropped": "goal of quest 96825, accepted only for another play style: turnin 96825 -- Turn in This Fruit Could Bite Back"
+   },
+   {
+    "step": 240,
+    "dropped": "money >= 1751"
+   },
+   {
+    "step": 257,
+    "dropped": "money >= 375"
+   },
+   {
+    "step": 259,
+    "dropped": "goal of quest 96825, accepted only for another play style: turnin 96825 -- Turn in This Fruit Could Bite Back"
+   },
+   {
+    "step": 264,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 264,
+    "dropped": "not knows 7799"
+   },
+   {
+    "line": 106,
+    "goal": "along goal that never checks off, as a note: Use item 3131"
+   },
+   {
+    "line": 106,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 107,
+    "goal": "along goal that never checks off, as a note: Use item 2495"
+   },
+   {
+    "line": 107,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 108,
+    "goal": "along goal that never checks off, as a note: Use item 2494"
+   },
+   {
+    "line": 108,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 109,
+    "goal": "along goal that never checks off, as a note: Use item 2491"
+   },
+   {
+    "line": 109,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 110,
+    "goal": "along goal that never checks off, as a note: Use item 2490"
+   },
+   {
+    "line": 110,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 113,
+    "goal": "along goal that never checks off, as a note: Use item 2506"
+   },
+   {
+    "line": 113,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 257,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 258,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 260,
+    "goal": "along goal that never checks off, as a note: Hearth to Razor Hill"
+   },
+   {
+    "line": 260,
+    "goal": "along goal that never checks off, as a note: Use item 6948"
+   },
+   {
+    "line": 260,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "6-11-elwynn-forest-f9d92950.guide": [
+   {
+    "step": 8,
+    "dropped": "skill Skinning >= 1"
+   },
+   {
+    "step": 9,
+    "dropped": "skill Herbalism >= 1"
+   },
+   {
+    "step": 10,
+    "dropped": "skill Mining >= 1"
+   },
+   {
+    "step": 14,
+    "dropped": "money >= 536"
+   },
+   {
+    "step": 32,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 41,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 41,
+    "dropped": "not knows 20397"
+   },
+   {
+    "step": 46,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 51,
+    "dropped": "money >= 281"
+   },
+   {
+    "step": 58,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 59,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 60,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 62,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 63,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 64,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 65,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 66,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 72,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 73,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 74,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 75,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 76,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 83,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 84,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 85,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 86,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 87,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 102,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 103,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 104,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 127,
+    "dropped": "money >= 1000"
+   },
+   {
+    "step": 127,
+    "dropped": "not knows 20270"
+   },
+   {
+    "step": 128,
+    "dropped": "too many cases (5): (((Mage) or (Priest) or (Rogue) or (Warrior) or (Paladin)))"
+   },
+   {
+    "step": 133,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 134,
+    "dropped": "money >= 1250"
+   },
+   {
+    "step": 136,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 137,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 138,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 148,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 149,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 150,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 151,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 152,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 160,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 161,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 162,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 163,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 164,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 167,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 168,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 169,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 173,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 174,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 175,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 177,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 178,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 179,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 182,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 183,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 184,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 190,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 191,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 192,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 197,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 198,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 199,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 222,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 223,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 224,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 232,
+    "dropped": "money < 5000"
+   },
+   {
+    "step": 238,
+    "dropped": "money < 7500"
+   },
+   {
+    "step": 244,
+    "dropped": "money < 7500"
+   },
+   {
+    "step": 261,
+    "dropped": "money >= 5000"
+   },
+   {
+    "step": 263,
+    "dropped": "money < 7500"
+   },
+   {
+    "step": 265,
+    "dropped": "money < 7500"
+   },
+   {
+    "step": 269,
+    "dropped": "money < 7500"
+   },
+   {
+    "step": 271,
+    "dropped": "money < 7500"
+   },
+   {
+    "step": 273,
+    "dropped": "money < 7500"
+   },
+   {
+    "step": 277,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 278,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 279,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 280,
+    "dropped": "money < 7500"
+   },
+   {
+    "step": 282,
+    "dropped": "money < 7500"
+   },
+   {
+    "step": 323,
+    "dropped": "money >= 2490"
+   },
+   {
+    "step": 324,
+    "dropped": "money >= 2490"
+   },
+   {
+    "step": 329,
+    "dropped": "money >= 1664"
+   },
+   {
+    "step": 344,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 345,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 346,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 350,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 351,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 352,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 352,
+    "dropped": "skill Cooking >= 10"
+   },
+   {
+    "step": 391,
+    "dropped": "knows 13908"
+   },
+   {
+    "step": 394,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 412,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 413,
+    "dropped": "skill Cooking >= 50"
+   },
+   {
+    "step": 416,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 417,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 418,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 427,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 428,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 429,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 436,
+    "dropped": "knows 2018"
+   },
+   {
+    "step": 437,
+    "dropped": "knows 2575"
+   },
+   {
+    "line": 41,
+    "goal": "along goal that never checks off, as a note: Use item 2946"
+   },
+   {
+    "line": 41,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 43,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 303,
+    "goal": "along waypoint dropped: goto 41.529125,65.899862 map 1429 r 8 optional"
+   },
+   {
+    "line": 303,
+    "goal": "along goal that never checks off, as a note: Vendor Trash"
+   },
+   {
+    "line": 303,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "6-11-teldrassil-8a4a3b4e.guide": [
+   {
+    "step": 15,
+    "dropped": "money >= 285"
+   },
+   {
+    "step": 23,
+    "dropped": "money >= 401"
+   },
+   {
+    "step": 33,
+    "dropped": "money >= 94"
+   },
+   {
+    "step": 34,
+    "dropped": "skill Cooking >= 1"
+   },
+   {
+    "step": 41,
+    "dropped": "skill Herbalism >= 15"
+   },
+   {
+    "step": 65,
+    "dropped": "money >= 285"
+   },
+   {
+    "step": 70,
+    "dropped": "money >= 536"
+   },
+   {
+    "step": 73,
+    "dropped": "money >= 401"
+   },
+   {
+    "step": 75,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 110,
+    "dropped": "skill Cooking >= 1"
+   },
+   {
+    "step": 164,
+    "dropped": "skill Enchanting < 10"
+   },
+   {
+    "step": 165,
+    "dropped": "skill Enchanting < 10"
+   },
+   {
+    "step": 166,
+    "dropped": "skill Enchanting < 10"
+   },
+   {
+    "step": 167,
+    "dropped": "skill Enchanting >= 10"
+   },
+   {
+    "step": 168,
+    "dropped": "skill Enchanting >= 10"
+   },
+   {
+    "step": 203,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 314,
+    "dropped": "money >= 5022"
+   },
+   {
+    "step": 315,
+    "dropped": "money >= 3022"
+   },
+   {
+    "step": 316,
+    "dropped": "money >= 2023"
+   },
+   {
+    "step": 320,
+    "dropped": "money >= 600"
+   },
+   {
+    "line": 108,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 211,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 268,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 276,
+    "goal": "along waypoint dropped: goto 41.199933,44.400147 map 1438 r 1 optional"
+   },
+   {
+    "line": 276,
+    "goal": "along waypoint dropped: goto 44.199934,39.799926 map 1438 r 1 optional"
+   },
+   {
+    "line": 276,
+    "goal": "along waypoint dropped: goto 45.600065,31.400074 map 1438 r 1 optional"
+   },
+   {
+    "line": 276,
+    "goal": "along waypoint dropped: goto 37.599933,28.8 map 1438 r 1 optional"
+   },
+   {
+    "line": 296,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 323,
+    "goal": "along goal that never checks off, as a note: Use item 2495"
+   },
+   {
+    "line": 323,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "6-12-mulgore-b4d726a5.guide": [
+   {
+    "step": 11,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 13,
+    "dropped": "money >= 701"
+   },
+   {
+    "step": 15,
+    "dropped": "money >= 414"
+   },
+   {
+    "step": 54,
+    "dropped": "money >= 250"
+   },
+   {
+    "step": 57,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 59,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 61,
+    "dropped": "money >= 701"
+   },
+   {
+    "step": 63,
+    "dropped": "money >= 414"
+   },
+   {
+    "step": 67,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 99,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 101,
+    "dropped": "money >= 701"
+   },
+   {
+    "step": 103,
+    "dropped": "money >= 414"
+   },
+   {
+    "step": 120,
+    "dropped": "money >= 250"
+   },
+   {
+    "step": 182,
+    "dropped": "money >= 500"
+   },
+   {
+    "step": 212,
+    "dropped": "money >= 1000"
+   },
+   {
+    "step": 213,
+    "dropped": "money >= 1000"
+   },
+   {
+    "step": 234,
+    "dropped": "skill Skinning >= 1"
+   },
+   {
+    "step": 235,
+    "dropped": "skill Skinning >= 1"
+   },
+   {
+    "step": 236,
+    "dropped": "skill Skinning >= 1"
+   },
+   {
+    "line": 212,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "6-12-tirisfal-glades-f054af4f.guide": [
+   {
+    "step": 19,
+    "dropped": "money >= 381"
+   },
+   {
+    "step": 23,
+    "dropped": "money >= 510"
+   },
+   {
+    "step": 28,
+    "dropped": "money >= 666"
+   },
+   {
+    "step": 33,
+    "dropped": "money >= 10"
+   },
+   {
+    "step": 38,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 39,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 40,
+    "dropped": "not knows 6307"
+   },
+   {
+    "step": 41,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 44,
+    "dropped": "money >= 125"
+   },
+   {
+    "step": 83,
+    "dropped": "money >= 125"
+   },
+   {
+    "step": 87,
+    "dropped": "money >= 381"
+   },
+   {
+    "step": 90,
+    "dropped": "money >= 510"
+   },
+   {
+    "step": 94,
+    "dropped": "money >= 666"
+   },
+   {
+    "step": 96,
+    "dropped": "money >= 500"
+   },
+   {
+    "step": 105,
+    "dropped": "money >= 381"
+   },
+   {
+    "step": 108,
+    "dropped": "money >= 510"
+   },
+   {
+    "step": 135,
+    "dropped": "money >= 381"
+   },
+   {
+    "step": 138,
+    "dropped": "money >= 510"
+   },
+   {
+    "step": 142,
+    "dropped": "money >= 666"
+   },
+   {
+    "step": 191,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 192,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 198,
+    "dropped": "money >= 2543"
+   },
+   {
+    "step": 199,
+    "dropped": "money >= 2543"
+   },
+   {
+    "step": 201,
+    "dropped": "money >= 1922"
+   },
+   {
+    "step": 202,
+    "dropped": "money >= 1922"
+   },
+   {
+    "step": 220,
+    "dropped": "money >= 500"
+   },
+   {
+    "step": 302,
+    "dropped": "money >= 1922"
+   },
+   {
+    "step": 303,
+    "dropped": "money >= 1922"
+   },
+   {
+    "step": 305,
+    "dropped": "money >= 2543"
+   },
+   {
+    "step": 306,
+    "dropped": "money >= 2543"
+   },
+   {
+    "step": 320,
+    "dropped": "not knows 2652"
+   },
+   {
+    "line": 170,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 171,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 217,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 310,
+    "goal": "along goal that never checks off, as a note: Use item 851"
+   },
+   {
+    "line": 310,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 312,
+    "goal": "along goal that never checks off, as a note: Use item 1198"
+   },
+   {
+    "line": 312,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 338,
+    "goal": "along waypoint dropped: goto 61.920066,64.850124 map 1420 r 8"
+   },
+   {
+    "line": 338,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "9-13-zephras-isle-2c3afa34.guide": [
+   {
+    "step": 5,
+    "dropped": "knows 7620"
+   },
+   {
+    "step": 26,
+    "dropped": "money >= 1345"
+   },
+   {
+    "step": 28,
+    "dropped": "money >= 2151"
+   },
+   {
+    "step": 30,
+    "dropped": "money >= 2176"
+   },
+   {
+    "step": 32,
+    "dropped": "money >= 1727"
+   },
+   {
+    "step": 34,
+    "dropped": "knows 2366"
+   },
+   {
+    "step": 35,
+    "dropped": "money >= 1345"
+   },
+   {
+    "step": 60,
+    "dropped": "money >= 1200"
+   },
+   {
+    "step": 89,
+    "dropped": "money >= 1200"
+   },
+   {
+    "step": 90,
+    "dropped": "money >= 2151"
+   },
+   {
+    "step": 92,
+    "dropped": "money >= 2176"
+   },
+   {
+    "step": 94,
+    "dropped": "money >= 900"
+   },
+   {
+    "step": 94,
+    "dropped": "not knows 2070"
+   },
+   {
+    "step": 94,
+    "dropped": "not knows 6774"
+   },
+   {
+    "step": 94,
+    "dropped": "not knows 8696"
+   },
+   {
+    "step": 95,
+    "dropped": "money >= 1727"
+   },
+   {
+    "step": 98,
+    "dropped": "money >= 800"
+   },
+   {
+    "step": 99,
+    "dropped": "money >= 1345"
+   },
+   {
+    "step": 103,
+    "dropped": "money >= 1200"
+   },
+   {
+    "step": 104,
+    "dropped": "money >= 800"
+   },
+   {
+    "step": 142,
+    "dropped": "knows 4036"
+   },
+   {
+    "step": 158,
+    "dropped": "knows 4036"
+   },
+   {
+    "step": 189,
+    "dropped": "money >= 3000"
+   },
+   {
+    "step": 189,
+    "dropped": "not knows 1671"
+   },
+   {
+    "step": 189,
+    "dropped": "not knows 7887"
+   },
+   {
+    "step": 190,
+    "dropped": "money >= 4500"
+   },
+   {
+    "step": 190,
+    "dropped": "not knows 6190"
+   },
+   {
+    "step": 190,
+    "dropped": "not knows 6574"
+   },
+   {
+    "step": 191,
+    "dropped": "money >= 1600"
+   },
+   {
+    "step": 269,
+    "dropped": "knows 7620"
+   },
+   {
+    "step": 290,
+    "dropped": "money >= 1345"
+   },
+   {
+    "step": 292,
+    "dropped": "money >= 2151"
+   },
+   {
+    "step": 294,
+    "dropped": "money >= 2176"
+   },
+   {
+    "step": 296,
+    "dropped": "money >= 1727"
+   },
+   {
+    "step": 298,
+    "dropped": "knows 2366"
+   },
+   {
+    "step": 299,
+    "dropped": "money >= 1345"
+   },
+   {
+    "step": 324,
+    "dropped": "money >= 1200"
+   },
+   {
+    "step": 353,
+    "dropped": "money >= 1200"
+   },
+   {
+    "step": 354,
+    "dropped": "money >= 2151"
+   },
+   {
+    "step": 356,
+    "dropped": "money >= 2176"
+   },
+   {
+    "step": 358,
+    "dropped": "money >= 900"
+   },
+   {
+    "step": 358,
+    "dropped": "not knows 2070"
+   },
+   {
+    "step": 358,
+    "dropped": "not knows 6774"
+   },
+   {
+    "step": 358,
+    "dropped": "not knows 8696"
+   },
+   {
+    "step": 359,
+    "dropped": "money >= 1727"
+   },
+   {
+    "step": 362,
+    "dropped": "money >= 800"
+   },
+   {
+    "step": 363,
+    "dropped": "money >= 1345"
+   },
+   {
+    "step": 367,
+    "dropped": "money >= 1200"
+   },
+   {
+    "step": 368,
+    "dropped": "money >= 800"
+   },
+   {
+    "step": 406,
+    "dropped": "knows 4036"
+   },
+   {
+    "step": 422,
+    "dropped": "knows 4036"
+   },
+   {
+    "step": 452,
+    "dropped": "money >= 3000"
+   },
+   {
+    "step": 452,
+    "dropped": "not knows 1671"
+   },
+   {
+    "step": 452,
+    "dropped": "not knows 7887"
+   },
+   {
+    "step": 453,
+    "dropped": "money >= 4500"
+   },
+   {
+    "step": 453,
+    "dropped": "not knows 6190"
+   },
+   {
+    "step": 453,
+    "dropped": "not knows 6574"
+   },
+   {
+    "step": 454,
+    "dropped": "money >= 1600"
+   },
+   {
+    "line": 346,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 1066,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 1168,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 11,
+    "goal": "along waypoint dropped: goto 62.096,73.339 map 2521 r 20 -- Go upstairs"
+   },
+   {
+    "line": 11,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 18,
+    "goal": "along waypoint dropped: goto 65.93,76.37 map 2521 r 5 optional"
+   },
+   {
+    "line": 18,
+    "goal": "along waypoint dropped: goto 66.46,76.8 map 2521 r 5 optional"
+   },
+   {
+    "line": 18,
+    "goal": "along waypoint dropped: goto 66.43,76.58 map 2521 r 5 optional"
+   },
+   {
+    "line": 18,
+    "goal": "along waypoint dropped: goto 66.43,76.83 map 2521 r 5 optional"
+   },
+   {
+    "line": 18,
+    "goal": "along waypoint dropped: goto 66.31,77.08 map 2521 r 5 optional"
+   },
+   {
+    "line": 18,
+    "goal": "along waypoint dropped: goto 66,76.57 map 2521 r 8 optional"
+   },
+   {
+    "line": 18,
+    "goal": "along waypoint dropped: goto 66.19,76.22 map 2521 r 8 optional"
+   },
+   {
+    "line": 18,
+    "goal": "along waypoint dropped: goto 66.44,76.4 map 2521 r 5 optional -- Climb the tower"
+   },
+   {
+    "line": 18,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 40,
+    "goal": "along waypoint dropped: goto 51.397,68.644 map 2521 r 15 -- Enter the cave"
+   },
+   {
+    "line": 40,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 44,
+    "goal": "along waypoint dropped: goto 51.397,68.644 map 2521 r 15 -- Leave the cave"
+   },
+   {
+    "line": 44,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 68,
+    "goal": "along waypoint dropped: goto 44.81,74.4 map 2521 r 30 -- Make your way up the mountain"
+   },
+   {
+    "line": 68,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 87,
+    "goal": "along goal that never checks off, as a note: Planting Shovel"
+   },
+   {
+    "line": 87,
+    "goal": "along goal that never checks off, as a note: Planting Shovel"
+   },
+   {
+    "line": 87,
+    "goal": "along goal that never checks off, as a note: Planting Shovel"
+   },
+   {
+    "line": 87,
+    "goal": "along goal that never checks off, as a note: Roofing Hammer"
+   },
+   {
+    "line": 87,
+    "goal": "along goal that never checks off, as a note: Roofing Hammer"
+   },
+   {
+    "line": 87,
+    "goal": "along goal that never checks off, as a note: Trusty Wrench"
+   },
+   {
+    "line": 87,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 178,
+    "goal": "along waypoint dropped: goto 61.77,39.14 map 2521 r 150 -- Leave the cave"
+   },
+   {
+    "line": 178,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 182,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 190,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 202,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 208,
+    "goal": "along waypoint dropped: goto 60.087856,17.346116 map 1456 r 15 optional"
+   },
+   {
+    "line": 208,
+    "goal": "along waypoint dropped: goto 56.868695,25.293425 map 1456 r 15 optional"
+   },
+   {
+    "line": 208,
+    "goal": "along waypoint dropped: goto 54.176479,26.917378 map 1456 r 8 optional"
+   },
+   {
+    "line": 208,
+    "goal": "along waypoint dropped: goto 50.200431,34.433549 map 1456 r 25 optional -- Enter Thunder Bluff"
+   },
+   {
+    "line": 208,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 210,
+    "goal": "along waypoint dropped: goto 50.775281,37.120976 map 1456 r 12 optional"
+   },
+   {
+    "line": 210,
+    "goal": "along waypoint dropped: goto 53.994443,34.907801 map 1456 r 12 optional"
+   },
+   {
+    "line": 210,
+    "goal": "along waypoint dropped: goto 55.364503,35.554508 map 1456 r 8 optional"
+   },
+   {
+    "line": 210,
+    "goal": "along waypoint dropped: goto 68.47109,28.239534 map 1456 r 12 optional -- Cross the bridge."
+   },
+   {
+    "line": 210,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 220,
+    "goal": "along waypoint dropped: goto 60.087856,17.346116 map 1456 r 15 optional"
+   },
+   {
+    "line": 220,
+    "goal": "along waypoint dropped: goto 56.868695,25.293425 map 1456 r 15 optional"
+   },
+   {
+    "line": 220,
+    "goal": "along waypoint dropped: goto 54.176479,26.917378 map 1456 r 8 optional"
+   },
+   {
+    "line": 220,
+    "goal": "along waypoint dropped: goto 50.200431,34.433549 map 1456 r 25 optional -- Enter Thunder Bluff"
+   },
+   {
+    "line": 220,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 273,
+    "goal": "along goal that never checks off, as a note: Windstones"
+   },
+   {
+    "line": 273,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 280,
+    "goal": "along waypoint dropped: goto 62.096,73.339 map 2521 r 20 -- Go upstairs"
+   },
+   {
+    "line": 280,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 287,
+    "goal": "along waypoint dropped: goto 65.93,76.37 map 2521 r 5 optional"
+   },
+   {
+    "line": 287,
+    "goal": "along waypoint dropped: goto 66.46,76.8 map 2521 r 5 optional"
+   },
+   {
+    "line": 287,
+    "goal": "along waypoint dropped: goto 66.43,76.58 map 2521 r 5 optional"
+   },
+   {
+    "line": 287,
+    "goal": "along waypoint dropped: goto 66.43,76.83 map 2521 r 5 optional"
+   },
+   {
+    "line": 287,
+    "goal": "along waypoint dropped: goto 66.31,77.08 map 2521 r 5 optional"
+   },
+   {
+    "line": 287,
+    "goal": "along waypoint dropped: goto 66,76.57 map 2521 r 8 optional"
+   },
+   {
+    "line": 287,
+    "goal": "along waypoint dropped: goto 66.19,76.22 map 2521 r 8 optional"
+   },
+   {
+    "line": 287,
+    "goal": "along waypoint dropped: goto 66.44,76.4 map 2521 r 5 optional -- Climb the tower"
+   },
+   {
+    "line": 287,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 297,
+    "goal": "along goal that never checks off, as a note: Zephrali Bow"
+   },
+   {
+    "line": 297,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 299,
+    "goal": "along goal that never checks off, as a note: Zephrali Smasher"
+   },
+   {
+    "line": 299,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 301,
+    "goal": "along goal that never checks off, as a note: Zephrali Greatstaff"
+   },
+   {
+    "line": 301,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 303,
+    "goal": "along goal that never checks off, as a note: Zephrali Bludgeon"
+   },
+   {
+    "line": 303,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 309,
+    "goal": "along waypoint dropped: goto 51.397,68.644 map 2521 r 15 -- Enter the cave"
+   },
+   {
+    "line": 309,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 313,
+    "goal": "along waypoint dropped: goto 51.397,68.644 map 2521 r 15 -- Leave the cave"
+   },
+   {
+    "line": 313,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 319,
+    "goal": "along goal that never checks off, as a note: Flutterfly Swatter"
+   },
+   {
+    "line": 321,
+    "goal": "along waypoint dropped: goto 50.017,77.659 map 2521 r 40 optional"
+   },
+   {
+    "line": 321,
+    "goal": "along waypoint dropped: goto 51.3,80.59 map 2521 r 40 optional"
+   },
+   {
+    "line": 321,
+    "goal": "along waypoint dropped: goto 50.868,83.289 map 2521 r 40 optional"
+   },
+   {
+    "line": 321,
+    "goal": "along waypoint dropped: goto 50.42,83.74 map 2521 r 40 optional"
+   },
+   {
+    "line": 321,
+    "goal": "along waypoint dropped: goto 49.24,81.79 map 2521 r 40 optional"
+   },
+   {
+    "line": 321,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 337,
+    "goal": "along waypoint dropped: goto 44.81,74.4 map 2521 r 30 -- Make your way up the mountain"
+   },
+   {
+    "line": 337,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 356,
+    "goal": "along goal that never checks off, as a note: Planting Shovel"
+   },
+   {
+    "line": 356,
+    "goal": "along goal that never checks off, as a note: Planting Shovel"
+   },
+   {
+    "line": 356,
+    "goal": "along goal that never checks off, as a note: Planting Shovel"
+   },
+   {
+    "line": 356,
+    "goal": "along goal that never checks off, as a note: Roofing Hammer"
+   },
+   {
+    "line": 356,
+    "goal": "along goal that never checks off, as a note: Roofing Hammer"
+   },
+   {
+    "line": 356,
+    "goal": "along goal that never checks off, as a note: Trusty Wrench"
+   },
+   {
+    "line": 356,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 420,
+    "goal": "along waypoint dropped: goto 59.08,34.75 map 2521 r 30 optional"
+   },
+   {
+    "line": 420,
+    "goal": "along waypoint dropped: goto 57.26,33.48 map 2521 r 30 optional"
+   },
+   {
+    "line": 420,
+    "goal": "along waypoint dropped: goto 59.15,32.25 map 2521 r 30 optional"
+   },
+   {
+    "line": 420,
+    "goal": "along waypoint dropped: goto 59.06,31.69 map 2521 r 30 optional"
+   },
+   {
+    "line": 420,
+    "goal": "along waypoint dropped: goto 58.82,31.1 map 2521 r 20 optional"
+   },
+   {
+    "line": 420,
+    "goal": "along waypoint dropped: goto 58.33,31.61 map 2521 r 30 optional"
+   },
+   {
+    "line": 420,
+    "goal": "along waypoint dropped: goto 58.47,32.63 map 2521 r 30 optional"
+   },
+   {
+    "line": 420,
+    "goal": "along waypoint dropped: goto 57.55,32.06 map 2521 r 30 optional"
+   },
+   {
+    "line": 420,
+    "goal": "along waypoint dropped: goto 57.55,31.01 map 2521 r 20 optional"
+   },
+   {
+    "line": 420,
+    "goal": "along waypoint dropped: goto 57.81,31.07 map 2521 r 20 optional"
+   },
+   {
+    "line": 420,
+    "goal": "along waypoint dropped: goto 58.14,30.47 map 2521 r 20 optional"
+   },
+   {
+    "line": 420,
+    "goal": "along waypoint dropped: goto 57.91,26.83 map 2521 r 30 optional"
+   },
+   {
+    "line": 420,
+    "goal": "along waypoint dropped: goto 58.06,28.2 map 2521 r 30 optional"
+   },
+   {
+    "line": 420,
+    "goal": "along waypoint dropped: goto 56.61,29.26 map 2521 r 20 optional"
+   },
+   {
+    "line": 420,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 433,
+    "goal": "along waypoint dropped: goto 54.93,38.11 map 2521 r 40 optional"
+   },
+   {
+    "line": 433,
+    "goal": "along waypoint dropped: goto 55.92,36.83 map 2521 r 40 optional"
+   },
+   {
+    "line": 433,
+    "goal": "along waypoint dropped: goto 57.49,37.79 map 2521 r 40 optional"
+   },
+   {
+    "line": 433,
+    "goal": "along waypoint dropped: goto 58.93,37.91 map 2521 r 40 optional"
+   },
+   {
+    "line": 433,
+    "goal": "along waypoint dropped: goto 60.27,38.12 map 2521 r 40 optional"
+   },
+   {
+    "line": 433,
+    "goal": "along waypoint dropped: goto 61.61,36.4 map 2521 r 40 optional"
+   },
+   {
+    "line": 433,
+    "goal": "along waypoint dropped: goto 61.41,39.14 map 2521 r 40 optional"
+   },
+   {
+    "line": 433,
+    "goal": "along waypoint dropped: goto 59.67,40.26 map 2521 r 40 optional"
+   },
+   {
+    "line": 433,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 447,
+    "goal": "along waypoint dropped: goto 61.77,39.14 map 2521 r 150 -- Leave the cave"
+   },
+   {
+    "line": 447,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 450,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 458,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 470,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 476,
+    "goal": "along waypoint dropped: goto 60.087856,17.346116 map 1456 r 15 optional"
+   },
+   {
+    "line": 476,
+    "goal": "along waypoint dropped: goto 56.868695,25.293425 map 1456 r 15 optional"
+   },
+   {
+    "line": 476,
+    "goal": "along waypoint dropped: goto 54.176479,26.917378 map 1456 r 8 optional"
+   },
+   {
+    "line": 476,
+    "goal": "along waypoint dropped: goto 50.200431,34.433549 map 1456 r 25 optional -- Enter Thunder Bluff"
+   },
+   {
+    "line": 476,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 478,
+    "goal": "along waypoint dropped: goto 50.775281,37.120976 map 1456 r 12 optional"
+   },
+   {
+    "line": 478,
+    "goal": "along waypoint dropped: goto 53.994443,34.907801 map 1456 r 12 optional"
+   },
+   {
+    "line": 478,
+    "goal": "along waypoint dropped: goto 55.364503,35.554508 map 1456 r 8 optional"
+   },
+   {
+    "line": 478,
+    "goal": "along waypoint dropped: goto 68.47109,28.239534 map 1456 r 12 optional -- Cross the bridge."
+   },
+   {
+    "line": 478,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 488,
+    "goal": "along waypoint dropped: goto 60.087856,17.346116 map 1456 r 15 optional"
+   },
+   {
+    "line": 488,
+    "goal": "along waypoint dropped: goto 56.868695,25.293425 map 1456 r 15 optional"
+   },
+   {
+    "line": 488,
+    "goal": "along waypoint dropped: goto 54.176479,26.917378 map 1456 r 8 optional"
+   },
+   {
+    "line": 488,
+    "goal": "along waypoint dropped: goto 50.200431,34.433549 map 1456 r 25 optional -- Enter Thunder Bluff"
+   },
+   {
+    "line": 488,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 521,
+    "goal": "along waypoint dropped: goto 61.519956,53.2 map 1420 r 80 -- Travel to Brill"
+   },
+   {
+    "line": 521,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 532,
+    "goal": "along waypoint dropped: goto 66.090215,20.060021 map 1458 r 35 optional"
+   },
+   {
+    "line": 532,
+    "goal": "along waypoint dropped: goto 64.370345,23.940641 map 1458 r 35 optional"
+   },
+   {
+    "line": 532,
+    "goal": "along waypoint dropped: goto 65.929694,26.710503 map 1458 r 10 optional"
+   },
+   {
+    "line": 532,
+    "goal": "along waypoint dropped: goto 65.890085,34.029626 map 1458 r 10 optional"
+   },
+   {
+    "line": 532,
+    "goal": "along waypoint dropped: goto 64.220248,39.769319 map 1458 r 10 optional"
+   },
+   {
+    "line": 532,
+    "goal": "along waypoint dropped: goto 65.530476,43.620255 map 1458 r 15 optional -- Take the lift down to the Undercity"
+   },
+   {
+    "line": 532,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "9-13-zephras-isle-d35c9f72.guide": [
+   {
+    "step": 5,
+    "dropped": "knows 7620"
+   },
+   {
+    "step": 8,
+    "dropped": "money >= 1345"
+   },
+   {
+    "step": 10,
+    "dropped": "money >= 2151"
+   },
+   {
+    "step": 12,
+    "dropped": "money >= 2176"
+   },
+   {
+    "step": 14,
+    "dropped": "money >= 1727"
+   },
+   {
+    "step": 82,
+    "dropped": "money >= 1200"
+   },
+   {
+    "step": 83,
+    "dropped": "money >= 2151"
+   },
+   {
+    "step": 85,
+    "dropped": "money >= 2176"
+   },
+   {
+    "step": 87,
+    "dropped": "money >= 900"
+   },
+   {
+    "step": 87,
+    "dropped": "not knows 2070"
+   },
+   {
+    "step": 87,
+    "dropped": "not knows 6774"
+   },
+   {
+    "step": 87,
+    "dropped": "not knows 8696"
+   },
+   {
+    "step": 88,
+    "dropped": "money >= 1727"
+   },
+   {
+    "step": 91,
+    "dropped": "money >= 800"
+   },
+   {
+    "step": 92,
+    "dropped": "money >= 1345"
+   },
+   {
+    "step": 96,
+    "dropped": "money >= 1200"
+   },
+   {
+    "step": 97,
+    "dropped": "money >= 800"
+   },
+   {
+    "step": 124,
+    "dropped": "knows 2366"
+   },
+   {
+    "step": 137,
+    "dropped": "knows 2366"
+   },
+   {
+    "step": 184,
+    "dropped": "money >= 1345"
+   },
+   {
+    "step": 186,
+    "dropped": "money >= 2151"
+   },
+   {
+    "step": 188,
+    "dropped": "money >= 1727"
+   },
+   {
+    "step": 215,
+    "dropped": "knows 4036"
+   },
+   {
+    "step": 243,
+    "dropped": "knows 4036"
+   },
+   {
+    "step": 268,
+    "dropped": "money >= 1600"
+   },
+   {
+    "step": 269,
+    "dropped": "money >= 800"
+   },
+   {
+    "step": 270,
+    "dropped": "money >= 3000"
+   },
+   {
+    "step": 270,
+    "dropped": "not knows 1671"
+   },
+   {
+    "step": 270,
+    "dropped": "not knows 7887"
+   },
+   {
+    "step": 273,
+    "dropped": "money >= 1600"
+   },
+   {
+    "step": 296,
+    "dropped": "money >= 2400"
+   },
+   {
+    "step": 316,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 316,
+    "dropped": "skill Cooking >= 1"
+   },
+   {
+    "step": 317,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 318,
+    "dropped": "skill Cooking >= 50"
+   },
+   {
+    "step": 323,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 324,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 325,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 326,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 327,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 328,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 329,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 330,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 331,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 332,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 333,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 334,
+    "dropped": "skill \"First Aid\" >= 1"
+   },
+   {
+    "step": 341,
+    "dropped": "knows 7620"
+   },
+   {
+    "step": 344,
+    "dropped": "money >= 1345"
+   },
+   {
+    "step": 346,
+    "dropped": "money >= 2151"
+   },
+   {
+    "step": 348,
+    "dropped": "money >= 2176"
+   },
+   {
+    "step": 350,
+    "dropped": "money >= 1727"
+   },
+   {
+    "step": 418,
+    "dropped": "money >= 1200"
+   },
+   {
+    "step": 419,
+    "dropped": "money >= 2151"
+   },
+   {
+    "step": 421,
+    "dropped": "money >= 2176"
+   },
+   {
+    "step": 423,
+    "dropped": "money >= 900"
+   },
+   {
+    "step": 423,
+    "dropped": "not knows 2070"
+   },
+   {
+    "step": 423,
+    "dropped": "not knows 6774"
+   },
+   {
+    "step": 423,
+    "dropped": "not knows 8696"
+   },
+   {
+    "step": 424,
+    "dropped": "money >= 1727"
+   },
+   {
+    "step": 427,
+    "dropped": "money >= 800"
+   },
+   {
+    "step": 428,
+    "dropped": "money >= 1345"
+   },
+   {
+    "step": 432,
+    "dropped": "money >= 1200"
+   },
+   {
+    "step": 433,
+    "dropped": "money >= 800"
+   },
+   {
+    "step": 460,
+    "dropped": "knows 2366"
+   },
+   {
+    "step": 473,
+    "dropped": "knows 2366"
+   },
+   {
+    "step": 520,
+    "dropped": "money >= 1345"
+   },
+   {
+    "step": 522,
+    "dropped": "money >= 2151"
+   },
+   {
+    "step": 524,
+    "dropped": "money >= 1727"
+   },
+   {
+    "step": 551,
+    "dropped": "knows 4036"
+   },
+   {
+    "step": 579,
+    "dropped": "knows 4036"
+   },
+   {
+    "step": 603,
+    "dropped": "money >= 1600"
+   },
+   {
+    "step": 604,
+    "dropped": "money >= 800"
+   },
+   {
+    "step": 605,
+    "dropped": "money >= 3000"
+   },
+   {
+    "step": 605,
+    "dropped": "not knows 1671"
+   },
+   {
+    "step": 605,
+    "dropped": "not knows 7887"
+   },
+   {
+    "step": 608,
+    "dropped": "money >= 1600"
+   },
+   {
+    "step": 631,
+    "dropped": "money >= 2400"
+   },
+   {
+    "step": 651,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 651,
+    "dropped": "skill Cooking >= 1"
+   },
+   {
+    "step": 652,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 653,
+    "dropped": "skill Cooking >= 50"
+   },
+   {
+    "step": 658,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 659,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 660,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 661,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 662,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 663,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 664,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 665,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 666,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 667,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 668,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 669,
+    "dropped": "skill \"First Aid\" >= 1"
+   },
+   {
+    "line": 385,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 1675,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 1818,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 20,
+    "goal": "along waypoint dropped: goto 62.096,73.339 map 2521 r 20 -- Go upstairs"
+   },
+   {
+    "line": 20,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 27,
+    "goal": "along waypoint dropped: goto 65.93,76.37 map 2521 r 5 optional"
+   },
+   {
+    "line": 27,
+    "goal": "along waypoint dropped: goto 66.46,76.8 map 2521 r 5 optional"
+   },
+   {
+    "line": 27,
+    "goal": "along waypoint dropped: goto 66.43,76.58 map 2521 r 5 optional"
+   },
+   {
+    "line": 27,
+    "goal": "along waypoint dropped: goto 66.43,76.83 map 2521 r 5 optional"
+   },
+   {
+    "line": 27,
+    "goal": "along waypoint dropped: goto 66.31,77.08 map 2521 r 5 optional"
+   },
+   {
+    "line": 27,
+    "goal": "along waypoint dropped: goto 66,76.57 map 2521 r 8 optional"
+   },
+   {
+    "line": 27,
+    "goal": "along waypoint dropped: goto 66.19,76.22 map 2521 r 8 optional"
+   },
+   {
+    "line": 27,
+    "goal": "along waypoint dropped: goto 66.44,76.4 map 2521 r 5 optional -- Climb the tower"
+   },
+   {
+    "line": 27,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 64,
+    "goal": "along waypoint dropped: goto 44.81,74.4 map 2521 r 30 -- Make your way up the mountain"
+   },
+   {
+    "line": 64,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 113,
+    "goal": "along waypoint dropped: goto 46.52,70.33 map 2521 r 30 -- Go around the Mountain."
+   },
+   {
+    "line": 113,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 140,
+    "goal": "along waypoint dropped: goto 60.905,69.414 map 2521 r 35 optional"
+   },
+   {
+    "line": 140,
+    "goal": "along waypoint dropped: goto 58.339,68.476 map 2521 r 35 optional"
+   },
+   {
+    "line": 140,
+    "goal": "along waypoint dropped: goto 53.799,72.161 map 2521 r 35 optional"
+   },
+   {
+    "line": 151,
+    "goal": "along waypoint dropped: goto 65.65,79.27 map 2521 r 30 optional"
+   },
+   {
+    "line": 151,
+    "goal": "along waypoint dropped: goto 64.98,77.12 map 2521 r 30 optional"
+   },
+   {
+    "line": 151,
+    "goal": "along waypoint dropped: goto 65.93,76.37 map 2521 r 8 optional"
+   },
+   {
+    "line": 151,
+    "goal": "along waypoint dropped: goto 66.46,76.8 map 2521 r 5 optional"
+   },
+   {
+    "line": 151,
+    "goal": "along waypoint dropped: goto 66.43,76.58 map 2521 r 5 optional"
+   },
+   {
+    "line": 151,
+    "goal": "along waypoint dropped: goto 66.43,76.83 map 2521 r 5 optional"
+   },
+   {
+    "line": 151,
+    "goal": "along waypoint dropped: goto 66.31,77.08 map 2521 r 5 optional"
+   },
+   {
+    "line": 151,
+    "goal": "along waypoint dropped: goto 66,76.57 map 2521 r 8 optional"
+   },
+   {
+    "line": 151,
+    "goal": "along waypoint dropped: goto 66.19,76.22 map 2521 r 8 optional"
+   },
+   {
+    "line": 151,
+    "goal": "along waypoint dropped: goto 66.44,76.4 map 2521 r 5 optional -- Climb the tower"
+   },
+   {
+    "line": 151,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 174,
+    "goal": "along waypoint dropped: goto 67.39,63.3 map 2521 r 15 -- Go over the mountain"
+   },
+   {
+    "line": 174,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 184,
+    "goal": "along waypoint dropped: goto 65.58,68.58 map 2521 r 30 optional"
+   },
+   {
+    "line": 184,
+    "goal": "along waypoint dropped: goto 65.93,76.37 map 2521 r 5 optional"
+   },
+   {
+    "line": 184,
+    "goal": "along waypoint dropped: goto 66.46,76.8 map 2521 r 5 optional"
+   },
+   {
+    "line": 184,
+    "goal": "along waypoint dropped: goto 66.43,76.58 map 2521 r 5 optional"
+   },
+   {
+    "line": 184,
+    "goal": "along waypoint dropped: goto 66.43,76.83 map 2521 r 5 optional"
+   },
+   {
+    "line": 184,
+    "goal": "along waypoint dropped: goto 66.31,77.08 map 2521 r 5 optional"
+   },
+   {
+    "line": 184,
+    "goal": "along waypoint dropped: goto 66,76.57 map 2521 r 8 optional"
+   },
+   {
+    "line": 184,
+    "goal": "along waypoint dropped: goto 66.19,76.22 map 2521 r 8 optional"
+   },
+   {
+    "line": 184,
+    "goal": "along waypoint dropped: goto 66.44,76.4 map 2521 r 5 optional -- Go around the mountain then climb the tower"
+   },
+   {
+    "line": 184,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 212,
+    "goal": "along waypoint dropped: goto 57.25,60.92 map 2521 r 50 -- Go around the mountains"
+   },
+   {
+    "line": 212,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 266,
+    "goal": "along waypoint dropped: goto 61.77,39.14 map 2521 r 150 -- Leave the cave"
+   },
+   {
+    "line": 266,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 270,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 280,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 286,
+    "goal": "along waypoint dropped: goto 65.93,76.37 map 2521 r 5 optional"
+   },
+   {
+    "line": 286,
+    "goal": "along waypoint dropped: goto 66.46,76.8 map 2521 r 5 optional"
+   },
+   {
+    "line": 286,
+    "goal": "along waypoint dropped: goto 66.43,76.58 map 2521 r 5 optional"
+   },
+   {
+    "line": 286,
+    "goal": "along waypoint dropped: goto 66.43,76.83 map 2521 r 5 optional"
+   },
+   {
+    "line": 286,
+    "goal": "along waypoint dropped: goto 66.31,77.08 map 2521 r 5 optional"
+   },
+   {
+    "line": 286,
+    "goal": "along waypoint dropped: goto 66,76.57 map 2521 r 8 optional"
+   },
+   {
+    "line": 286,
+    "goal": "along waypoint dropped: goto 66.19,76.22 map 2521 r 8 optional"
+   },
+   {
+    "line": 286,
+    "goal": "along waypoint dropped: goto 66.44,76.4 map 2521 r 5 optional -- Climb the tower"
+   },
+   {
+    "line": 286,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 291,
+    "goal": "along waypoint dropped: goto 66.18,76.51 map 2521 r 8"
+   },
+   {
+    "line": 291,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 305,
+    "goal": "along waypoint dropped: goto 65.65,79.27 map 2521 r 30 optional"
+   },
+   {
+    "line": 305,
+    "goal": "along waypoint dropped: goto 64.98,77.12 map 2521 r 30 optional"
+   },
+   {
+    "line": 305,
+    "goal": "along waypoint dropped: goto 65.93,76.37 map 2521 r 5 optional"
+   },
+   {
+    "line": 305,
+    "goal": "along waypoint dropped: goto 66.46,76.8 map 2521 r 5 optional"
+   },
+   {
+    "line": 305,
+    "goal": "along waypoint dropped: goto 66.43,76.58 map 2521 r 5 optional"
+   },
+   {
+    "line": 305,
+    "goal": "along waypoint dropped: goto 66.43,76.83 map 2521 r 5 optional"
+   },
+   {
+    "line": 305,
+    "goal": "along waypoint dropped: goto 66.31,77.08 map 2521 r 5 optional"
+   },
+   {
+    "line": 305,
+    "goal": "along waypoint dropped: goto 66,76.57 map 2521 r 8 optional"
+   },
+   {
+    "line": 305,
+    "goal": "along waypoint dropped: goto 66.19,76.22 map 2521 r 8 optional"
+   },
+   {
+    "line": 305,
+    "goal": "along waypoint dropped: goto 66.44,76.4 map 2521 r 5 optional -- Climb the tower"
+   },
+   {
+    "line": 305,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 316,
+    "goal": "along waypoint dropped: goto 65.81,83.44 map 2521 r 8"
+   },
+   {
+    "line": 316,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 346,
+    "goal": "along goal that never checks off, as a note: Windstones"
+   },
+   {
+    "line": 346,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 352,
+    "goal": "along goal that never checks off, as a note: Zephrali Bow"
+   },
+   {
+    "line": 352,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 354,
+    "goal": "along goal that never checks off, as a note: Zephrali Smasher"
+   },
+   {
+    "line": 354,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 356,
+    "goal": "along goal that never checks off, as a note: Zephrali Greatstaff"
+   },
+   {
+    "line": 356,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 358,
+    "goal": "along goal that never checks off, as a note: Zephrali Bludgeon"
+   },
+   {
+    "line": 358,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 362,
+    "goal": "along waypoint dropped: goto 62.096,73.339 map 2521 r 20 -- Go upstairs"
+   },
+   {
+    "line": 362,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 365,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 369,
+    "goal": "along waypoint dropped: goto 65.93,76.37 map 2521 r 5 optional"
+   },
+   {
+    "line": 369,
+    "goal": "along waypoint dropped: goto 66.46,76.8 map 2521 r 5 optional"
+   },
+   {
+    "line": 369,
+    "goal": "along waypoint dropped: goto 66.43,76.58 map 2521 r 5 optional"
+   },
+   {
+    "line": 369,
+    "goal": "along waypoint dropped: goto 66.43,76.83 map 2521 r 5 optional"
+   },
+   {
+    "line": 369,
+    "goal": "along waypoint dropped: goto 66.31,77.08 map 2521 r 5 optional"
+   },
+   {
+    "line": 369,
+    "goal": "along waypoint dropped: goto 66,76.57 map 2521 r 8 optional"
+   },
+   {
+    "line": 369,
+    "goal": "along waypoint dropped: goto 66.19,76.22 map 2521 r 8 optional"
+   },
+   {
+    "line": 369,
+    "goal": "along waypoint dropped: goto 66.44,76.4 map 2521 r 5 optional -- Climb the tower"
+   },
+   {
+    "line": 369,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 397,
+    "goal": "along goal that never checks off, as a note: Flutterfly Swatter"
+   },
+   {
+    "line": 399,
+    "goal": "along waypoint dropped: goto 50.017,77.659 map 2521 r 40 optional"
+   },
+   {
+    "line": 399,
+    "goal": "along waypoint dropped: goto 51.3,80.59 map 2521 r 40 optional"
+   },
+   {
+    "line": 399,
+    "goal": "along waypoint dropped: goto 50.868,83.289 map 2521 r 40 optional"
+   },
+   {
+    "line": 399,
+    "goal": "along waypoint dropped: goto 50.42,83.74 map 2521 r 40 optional"
+   },
+   {
+    "line": 399,
+    "goal": "along waypoint dropped: goto 49.24,81.79 map 2521 r 40 optional"
+   },
+   {
+    "line": 399,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 406,
+    "goal": "along waypoint dropped: goto 44.81,74.4 map 2521 r 30 -- Make your way up the mountain"
+   },
+   {
+    "line": 406,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 420,
+    "goal": "along goal that never checks off, as a note: Planting Shovel"
+   },
+   {
+    "line": 420,
+    "goal": "along goal that never checks off, as a note: Planting Shovel"
+   },
+   {
+    "line": 420,
+    "goal": "along goal that never checks off, as a note: Planting Shovel"
+   },
+   {
+    "line": 420,
+    "goal": "along goal that never checks off, as a note: Roofing Hammer"
+   },
+   {
+    "line": 420,
+    "goal": "along goal that never checks off, as a note: Roofing Hammer"
+   },
+   {
+    "line": 420,
+    "goal": "along goal that never checks off, as a note: Trusty Wrench"
+   },
+   {
+    "line": 420,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 453,
+    "goal": "along goal that never checks off, as a note: Use your [Taming Rod] on a Windsong Crawler::254588 at max range."
+   },
+   {
+    "line": 453,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 455,
+    "goal": "along waypoint dropped: goto 46.52,70.33 map 2521 r 30 -- Go around the Mountain."
+   },
+   {
+    "line": 455,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 482,
+    "goal": "along waypoint dropped: goto 60.905,69.414 map 2521 r 35 optional"
+   },
+   {
+    "line": 482,
+    "goal": "along waypoint dropped: goto 58.339,68.476 map 2521 r 35 optional"
+   },
+   {
+    "line": 482,
+    "goal": "along waypoint dropped: goto 53.799,72.161 map 2521 r 35 optional"
+   },
+   {
+    "line": 493,
+    "goal": "along waypoint dropped: goto 65.65,79.27 map 2521 r 30 optional"
+   },
+   {
+    "line": 493,
+    "goal": "along waypoint dropped: goto 64.98,77.12 map 2521 r 30 optional"
+   },
+   {
+    "line": 493,
+    "goal": "along waypoint dropped: goto 65.93,76.37 map 2521 r 8 optional"
+   },
+   {
+    "line": 493,
+    "goal": "along waypoint dropped: goto 66.46,76.8 map 2521 r 5 optional"
+   },
+   {
+    "line": 493,
+    "goal": "along waypoint dropped: goto 66.43,76.58 map 2521 r 5 optional"
+   },
+   {
+    "line": 493,
+    "goal": "along waypoint dropped: goto 66.43,76.83 map 2521 r 5 optional"
+   },
+   {
+    "line": 493,
+    "goal": "along waypoint dropped: goto 66.31,77.08 map 2521 r 5 optional"
+   },
+   {
+    "line": 493,
+    "goal": "along waypoint dropped: goto 66,76.57 map 2521 r 8 optional"
+   },
+   {
+    "line": 493,
+    "goal": "along waypoint dropped: goto 66.19,76.22 map 2521 r 8 optional"
+   },
+   {
+    "line": 493,
+    "goal": "along waypoint dropped: goto 66.44,76.4 map 2521 r 5 optional -- Climb the tower"
+   },
+   {
+    "line": 493,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 516,
+    "goal": "along waypoint dropped: goto 67.39,63.3 map 2521 r 15 -- Go over the mountain"
+   },
+   {
+    "line": 516,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 526,
+    "goal": "along waypoint dropped: goto 65.58,68.58 map 2521 r 30 optional"
+   },
+   {
+    "line": 526,
+    "goal": "along waypoint dropped: goto 65.93,76.37 map 2521 r 5 optional"
+   },
+   {
+    "line": 526,
+    "goal": "along waypoint dropped: goto 66.46,76.8 map 2521 r 5 optional"
+   },
+   {
+    "line": 526,
+    "goal": "along waypoint dropped: goto 66.43,76.58 map 2521 r 5 optional"
+   },
+   {
+    "line": 526,
+    "goal": "along waypoint dropped: goto 66.43,76.83 map 2521 r 5 optional"
+   },
+   {
+    "line": 526,
+    "goal": "along waypoint dropped: goto 66.31,77.08 map 2521 r 5 optional"
+   },
+   {
+    "line": 526,
+    "goal": "along waypoint dropped: goto 66,76.57 map 2521 r 8 optional"
+   },
+   {
+    "line": 526,
+    "goal": "along waypoint dropped: goto 66.19,76.22 map 2521 r 8 optional"
+   },
+   {
+    "line": 526,
+    "goal": "along waypoint dropped: goto 66.44,76.4 map 2521 r 5 optional -- Go around the mountain then climb the tower"
+   },
+   {
+    "line": 526,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 533,
+    "goal": "along goal that never checks off, as a note: Zephrali Bow"
+   },
+   {
+    "line": 533,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 535,
+    "goal": "along goal that never checks off, as a note: Zephrali Smasher"
+   },
+   {
+    "line": 535,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 537,
+    "goal": "along goal that never checks off, as a note: Zephrali Bludgeon"
+   },
+   {
+    "line": 537,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 539,
+    "goal": "along goal that never checks off, as a note: Honed Greathammer"
+   },
+   {
+    "line": 539,
+    "goal": "along goal that never checks off, as a note: Balanced Quarterstaff"
+   },
+   {
+    "line": 539,
+    "goal": "along goal that never checks off, as a note: Balanced Quarterstaff"
+   },
+   {
+    "line": 539,
+    "goal": "along goal that never checks off, as a note: Balanced Quarterstaff"
+   },
+   {
+    "line": 539,
+    "goal": "along goal that never checks off, as a note: Quickblade's Dagger"
+   },
+   {
+    "line": 539,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 554,
+    "goal": "along waypoint dropped: goto 57.25,60.92 map 2521 r 50 -- Go around the mountains"
+   },
+   {
+    "line": 554,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 573,
+    "goal": "along waypoint dropped: goto 59.08,34.75 map 2521 r 30 optional"
+   },
+   {
+    "line": 573,
+    "goal": "along waypoint dropped: goto 57.26,33.48 map 2521 r 30 optional"
+   },
+   {
+    "line": 573,
+    "goal": "along waypoint dropped: goto 59.15,32.25 map 2521 r 30 optional"
+   },
+   {
+    "line": 573,
+    "goal": "along waypoint dropped: goto 59.06,31.69 map 2521 r 30 optional"
+   },
+   {
+    "line": 573,
+    "goal": "along waypoint dropped: goto 58.82,31.1 map 2521 r 20 optional"
+   },
+   {
+    "line": 573,
+    "goal": "along waypoint dropped: goto 58.33,31.61 map 2521 r 30 optional"
+   },
+   {
+    "line": 573,
+    "goal": "along waypoint dropped: goto 58.47,32.63 map 2521 r 30 optional"
+   },
+   {
+    "line": 573,
+    "goal": "along waypoint dropped: goto 57.55,32.06 map 2521 r 30 optional"
+   },
+   {
+    "line": 573,
+    "goal": "along waypoint dropped: goto 57.55,31.01 map 2521 r 20 optional"
+   },
+   {
+    "line": 573,
+    "goal": "along waypoint dropped: goto 57.81,31.07 map 2521 r 20 optional"
+   },
+   {
+    "line": 573,
+    "goal": "along waypoint dropped: goto 58.14,30.47 map 2521 r 20 optional"
+   },
+   {
+    "line": 573,
+    "goal": "along waypoint dropped: goto 57.91,26.83 map 2521 r 30 optional"
+   },
+   {
+    "line": 573,
+    "goal": "along waypoint dropped: goto 58.06,28.2 map 2521 r 30 optional"
+   },
+   {
+    "line": 573,
+    "goal": "along waypoint dropped: goto 56.61,29.26 map 2521 r 20 optional"
+   },
+   {
+    "line": 573,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 592,
+    "goal": "along waypoint dropped: goto 54.93,38.11 map 2521 r 40 optional"
+   },
+   {
+    "line": 592,
+    "goal": "along waypoint dropped: goto 55.92,36.83 map 2521 r 40 optional"
+   },
+   {
+    "line": 592,
+    "goal": "along waypoint dropped: goto 57.49,37.79 map 2521 r 40 optional"
+   },
+   {
+    "line": 592,
+    "goal": "along waypoint dropped: goto 58.93,37.91 map 2521 r 40 optional"
+   },
+   {
+    "line": 592,
+    "goal": "along waypoint dropped: goto 60.27,38.12 map 2521 r 40 optional"
+   },
+   {
+    "line": 592,
+    "goal": "along waypoint dropped: goto 61.61,36.4 map 2521 r 40 optional"
+   },
+   {
+    "line": 592,
+    "goal": "along waypoint dropped: goto 61.41,39.14 map 2521 r 40 optional"
+   },
+   {
+    "line": 592,
+    "goal": "along waypoint dropped: goto 59.67,40.26 map 2521 r 40 optional"
+   },
+   {
+    "line": 592,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 608,
+    "goal": "along waypoint dropped: goto 61.77,39.14 map 2521 r 150 -- Leave the cave"
+   },
+   {
+    "line": 608,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 611,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 621,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 627,
+    "goal": "along waypoint dropped: goto 65.93,76.37 map 2521 r 5 optional"
+   },
+   {
+    "line": 627,
+    "goal": "along waypoint dropped: goto 66.46,76.8 map 2521 r 5 optional"
+   },
+   {
+    "line": 627,
+    "goal": "along waypoint dropped: goto 66.43,76.58 map 2521 r 5 optional"
+   },
+   {
+    "line": 627,
+    "goal": "along waypoint dropped: goto 66.43,76.83 map 2521 r 5 optional"
+   },
+   {
+    "line": 627,
+    "goal": "along waypoint dropped: goto 66.31,77.08 map 2521 r 5 optional"
+   },
+   {
+    "line": 627,
+    "goal": "along waypoint dropped: goto 66,76.57 map 2521 r 8 optional"
+   },
+   {
+    "line": 627,
+    "goal": "along waypoint dropped: goto 66.19,76.22 map 2521 r 8 optional"
+   },
+   {
+    "line": 627,
+    "goal": "along waypoint dropped: goto 66.44,76.4 map 2521 r 5 optional -- Climb the tower"
+   },
+   {
+    "line": 627,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 632,
+    "goal": "along waypoint dropped: goto 66.18,76.51 map 2521 r 8"
+   },
+   {
+    "line": 632,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 646,
+    "goal": "along waypoint dropped: goto 65.65,79.27 map 2521 r 30 optional"
+   },
+   {
+    "line": 646,
+    "goal": "along waypoint dropped: goto 64.98,77.12 map 2521 r 30 optional"
+   },
+   {
+    "line": 646,
+    "goal": "along waypoint dropped: goto 65.93,76.37 map 2521 r 5 optional"
+   },
+   {
+    "line": 646,
+    "goal": "along waypoint dropped: goto 66.46,76.8 map 2521 r 5 optional"
+   },
+   {
+    "line": 646,
+    "goal": "along waypoint dropped: goto 66.43,76.58 map 2521 r 5 optional"
+   },
+   {
+    "line": 646,
+    "goal": "along waypoint dropped: goto 66.43,76.83 map 2521 r 5 optional"
+   },
+   {
+    "line": 646,
+    "goal": "along waypoint dropped: goto 66.31,77.08 map 2521 r 5 optional"
+   },
+   {
+    "line": 646,
+    "goal": "along waypoint dropped: goto 66,76.57 map 2521 r 8 optional"
+   },
+   {
+    "line": 646,
+    "goal": "along waypoint dropped: goto 66.19,76.22 map 2521 r 8 optional"
+   },
+   {
+    "line": 646,
+    "goal": "along waypoint dropped: goto 66.44,76.4 map 2521 r 5 optional -- Climb the tower"
+   },
+   {
+    "line": 646,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 654,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 657,
+    "goal": "along waypoint dropped: goto 65.81,83.44 map 2521 r 8"
+   },
+   {
+    "line": 657,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 670,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 672,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 674,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 676,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 678,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 680,
+    "goal": "along step with no goal left dropped"
+   }
+  ]
+ }
+}

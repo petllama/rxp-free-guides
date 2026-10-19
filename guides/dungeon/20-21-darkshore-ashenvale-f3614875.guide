@@ -1,0 +1,759 @@
+guide rxp-free/20-21-darkshore-ashenvale-f3614875
+title "20-21 Darkshore/Ashenvale"
+levels 20-21
+zone map 1439
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · Dungeon Guide 1-20"
+step
+  only Druid
+  along until catspirit1
+  note "Cast Teleport: Moonglade"
+step
+  only Druid
+  when !zone "Darnassus"
+  when !zone "Teldrassil"
+  along until next_2
+  zone map 1450
+  goto 44.147876,45.22887 map 1450 r 8 -- c:Moonglade,44.148,45.229
+  note "Talk to Silva Fil'naveth"
+  fly "Teldrassil" -- Fly to Darnassus
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Warlock,NightElf
+  label next_2
+  along until catspirit1
+  zone map 1438
+  goto 55.949919,89.879926 map 1438 r 8
+step
+  only Druid
+  label catspirit1
+  zone map 1457
+  note "Talk to Mathrengyl Bearwalker::4217"
+  accept 98393 -- Accept The Great Cat Spirit
+step
+  only Druid
+  when !zone "Moonglade"
+  along until next_5
+  note "Cast Teleport: Moonglade"
+step
+  only Druid
+  when onquest 98393
+  turnin 98393 -- Turn in The Great Cat Spirit
+step
+  only Druid
+  label next_5
+  zone map 1450
+  goto 56.215893,30.635958 map 1450 r 8 optional
+  note "Talk to Dendrite Starblaze::11802"
+  accept 98341 only Skyborne -- Accept The Great Windborne Cat Spirit
+  accept 98394 only Human,Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Undead -- Accept The Great Cat Spirit
+step
+  only Druid,Human,Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Undead
+  when onquest 98394
+  turnin 98394 -- Turn in The Great Cat Spirit
+step
+  only Druid,Human,Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Undead
+  zone map 1450
+  note "Talk to Great Cat Spirit"
+  accept 98396 -- Accept The Great Cat Spirit
+step
+  only Druid,Skyborne
+  when onquest 98341
+  turnin 98341 -- Turn in The Great Windborne Cat Spirit
+step
+  only Druid,Skyborne
+  zone map 1450
+  note "Talk to Avatar of Saeyleenan::272054"
+  accept 98404 -- Accept The Great Windborne Cat Spirit
+step
+  only Druid
+  along until next_9
+  zone map 1450
+  goto 72.149469,62.176966 map 1450 r 8
+step
+  only Druid
+  label next_9
+  zone map 1450
+  note "Go deep into the cave, travel across the bridge, look for a cat statue inside an alcove and click on the small orb next to the statue"
+  note "Loot Relic of the Claw"
+  goto 75.212285,67.314721 map 1450 r 8
+  collect 280679 x1 quest 98404.2 only Skyborne -- Relic of the Claw
+  collect 280679 x1 quest 98396.2 only Human,Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Undead -- Relic of the Claw
+step
+  only Druid
+  zone map 1450
+  note "Click on the small orb next to the cat statue"
+  note "Loot Relic of the Silent Shadow"
+  goto 74.423837,65.34016 map 1450 r 8
+  collect 280680 x1 quest 98404.3 only Skyborne -- Relic of the Silent Shadow
+  collect 280680 x1 quest 98396.3 only Human,Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Undead -- Relic of the Silent Shadow
+step
+  only Druid
+  zone map 1450
+  note "Click on the small orb next to the cat statue"
+  note "Loot Relic of the Fang"
+  goto 72.470047,65.918239 map 1450 r 8
+step
+  only Druid
+  when onquest 98404
+  collect 280502 x1 quest 98404.1 @72.470047,65.918239 map 1450 only Skyborne -- 1/1 Relic of the Fang
+step
+  only Druid
+  when onquest 98396
+  collect 280502 x1 quest 98396.1 @72.470047,65.918239 map 1450 only Human,Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Undead -- 1/1 Relic of the Fang
+step
+  only Druid,Human,Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Undead
+  when onquest 98396
+  turnin 98396 -- Turn in The Great Cat Spirit
+step
+  only Druid,Human,Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Undead
+  zone map 1450
+  note "Talk to Great Cat Spirit"
+  accept 98731 -- Accept Blessings of the Great Cat Spirit
+step
+  only Druid,Skyborne
+  when onquest 98404
+  turnin 98404 -- Turn in The Great Windborne Cat Spirit
+step
+  only Druid,Skyborne
+  zone map 1450
+  note "Talk to Avatar of Saeyleenan::272054"
+  accept 98738 -- Accept Blessings of the Great Windborne Cat Spirit
+step
+  only Druid
+  when onquest 98738
+  turnin 98738 only Skyborne -- Turn in Blessings of the Great Windborne Cat Spirit
+step
+  only Druid
+  zone map 1450
+  goto 56.185568,30.538529 map 1450 r 8 optional
+  note "Teleport to Moonglade and talk to Dendrite Starblaze::11802"
+  accept 98397 only Alliance -- Accept To Darnassus --
+step
+  only Druid
+  when !zone "Darnassus"
+  when !zone "Teldrassil"
+  along until catspirit2
+  zone map 1450
+  goto 44.147876,45.22887 map 1450 r 8 -- c:Moonglade,44.148,45.229
+  note "Talk to Silva Fil'naveth"
+  fly "Teldrassil" -- Fly to Darnassus
+step
+  only Druid
+  when !zone "Darnassus"
+  when !zone "Teldrassil"
+  along until catspirit2
+  zone map 1450
+  goto 44.147876,45.22887 map 1450 r 8 -- c:Moonglade,44.148,45.229
+  note "Talk to Silva Fil'naveth"
+  fly "Teldrassil" -- Fly to Darnassus
+step
+  only Druid
+  when onquest 98397
+  label catspirit2
+  zone map 1457
+  note "Talk to Mathrengyl Bearwalker::4217"
+  turnin 98397 -- Turn in To Darnassus
+step
+  only Druid
+  when !zone "Darkshore"
+  zone map 1457
+  goto 29.466434,41.404845 map 1457 r 8
+step
+  only Druid
+  when !zone "Darkshore"
+  zone map 1438
+  goto 58.389985,94.009871 map 1438 r 8
+  note "Talk to Vesprystus"
+  fly "Darkshore" -- Fly to Darkshore
+step
+  zone map 1439
+  note "Talk to Barithras Moonshade"
+  accept 947 -- Accept Cave Mushrooms
+step
+  when onquest 4763
+  zone map 1439
+  goto 37.779954,44.059999 map 1439 r 8
+  note "Use the [Empty Cleansing Bowl] at the Auberdine moonwell"
+  collect 12347 x1 @37.779954,44.059999 map 1439 optional -- Filled Cleansing Bowl (1)
+  use 12346 @37.779954,44.059999 map 1439
+step
+  zone map 1439
+  note "Talk to Archaeologist Hollee"
+  accept 729 -- Accept The Absent Minded Prospector
+step
+  when turnedin 4762
+  zone map 1439
+  note "Talk to Thundris Windweaver"
+  accept 4763 -- Accept The Blackwood Corrupted
+step
+  when onquest 3765
+  zone map 1439
+  note "Talk to Gershala Nightwhisper"
+  turnin 3765 -- Turn in The Corruption Abroad
+step
+  zone map 1439
+  note "Talk to Gershala Nightwhisper"
+  accept 1275 -- Accept Researching the Corruption
+step
+  when turnedin 2138
+  zone map 1439
+  note "Talk to Tharnariun Treetender"
+  accept 2139 -- Accept Tharnariun's Hope
+step
+  zone map 1439
+  note "Talk to Sentinel Elissa Starbreeze upstairs"
+  accept 965 -- Accept The Tower of Althalaxx
+step
+  when onquest 4763
+  zone map 1439
+  goto 37.779954,44.059999 map 1439 r 8
+  note "Use the [Empty Cleansing Bowl] at the Auberdine moonwell"
+  collect 12347 x1 @37.779954,44.059999 map 1439 optional -- Filled Cleansing Bowl (1)
+  use 12346 @37.779954,44.059999 map 1439
+step
+  when onquest 4763
+  when !has 12355
+  label Blackwood1
+  along until Xabraxxis
+  zone map 1439
+  goto 52.379954,33.390074 map 1439 r 1 optional
+  goto 50.659954,34.939998 map 1439 r 8 optional
+  note "Open the Blackwood Grain Stores. Loot it for the [Blackwood Grain Sample]"
+  note "Looting this will spawn 2 Blackwood Furbolgs that will aggro and run towards you. Be ready to fight them or reset them"
+  note "If you see Xabraxxis yell in chat or see someone fighting him, help them. Open the Xabraxxis' Demon Bag he drops on the ground. Loot it for the Talisman of Corruption"
+  collect 12342 x1 @50.659954,34.939998 map 1439 optional -- Blackwood Grain Stores (1)
+  collect 12355 x1 quest 4763.1 @50.659954,34.939998 map 1439 -- Talisman of Corruption (1)
+step
+  when onquest 2139
+  zone map 1439
+  note "Kill Den Mother"
+  note "Be careful as the Thistle Cubs can cast [Ravage], a melee instant attack which stuns you for 2 seconds"
+  kill 6788 x1 quest 2139.1 -- Den Mother (1)
+step
+  when onquest 4763
+  when !has 12355
+  zone map 1439
+  goto 52.379954,33.390074 map 1439 r 1 optional
+  goto 50.659954,34.939998 map 1439 r 8 optional
+  note "Open the Blackwood Grain Stores. Loot it for the [Blackwood Grain Sample]"
+  note "Looting this will spawn 2 Blackwood Furbolgs that will aggro and run towards you. Be ready to fight them or reset them"
+  note "If you see Xabraxxis yell in chat or see someone fighting him, help them. Open the Xabraxxis' Demon Bag he drops on the ground. Loot it for the Talisman of Corruption"
+  collect 12342 x1 @50.659954,34.939998 map 1439 optional -- Blackwood Grain Stores (1)
+  collect 12355 x1 quest 4763.1 @50.659954,34.939998 map 1439 -- Talisman of Corruption (1)
+step
+  when onquest 4763
+  when !has 12355
+  label Blackwood2
+  along until Xabraxxis
+  zone map 1439
+  goto 52.379954,33.390074 map 1439 r 1 optional
+  goto 51.830031,33.499997 map 1439 r 8 optional
+  note "Open the Blackwood Nut Stores. Loot it for the [Blackwood Nut Sample]"
+  note "Looting this will spawn 2 Blackwood Furbolgs that will aggro and run towards you. Be ready to fight them or reset them"
+  note "If you see Xabraxxis yell in chat or see someone fighting him, help them. Open the Xabraxxis' Demon Bag he drops on the ground. Loot it for the Talisman of Corruption"
+  collect 12343 x1 @51.830031,33.499997 map 1439 optional -- Blackwood Nut Sample (1)
+  collect 12355 x1 quest 4763.1 @51.830031,33.499997 map 1439 -- Talisman of Corruption (1)
+step
+  when onquest 4763
+  when !has 12355
+  zone map 1439
+  goto 52.379954,33.390074 map 1439 r 1 optional
+  goto 51.830031,33.499997 map 1439 r 8 optional
+  note "Open the Blackwood Nut Stores. Loot it for the [Blackwood Nut Sample]"
+  note "Looting this will spawn 2 Blackwood Furbolgs that will aggro and run towards you. Be ready to fight them or reset them"
+  note "If you see Xabraxxis yell in chat or see someone fighting him, help them. Open the Xabraxxis' Demon Bag he drops on the ground. Loot it for the Talisman of Corruption"
+  collect 12343 x1 @51.830031,33.499997 map 1439 optional -- Blackwood Nut Sample (1)
+  collect 12355 x1 quest 4763.1 @51.830031,33.499997 map 1439 -- Talisman of Corruption (1)
+step
+  when onquest 4763
+  when !has 12355
+  label Blackwood3
+  along until Xabraxxis
+  zone map 1439
+  goto 52.379954,33.390074 map 1439 r 1 optional
+  goto 52.859954,33.409997 map 1439 r 8 optional
+  note "Open the Blackwood Fruit Stores. Loot it for the [Blackwood Fruit Sample]"
+  note "Looting this will spawn 2 Blackwood Furbolgs that will aggro and run towards you. Be ready to fight them or reset them"
+  note "If you see Xabraxxis yell in chat or see someone fighting him, help them. Open the Xabraxxis' Demon Bag he drops on the ground. Loot it for the Talisman of Corruption"
+  collect 12341 x1 @52.859954,33.409997 map 1439 optional -- Blackwood Fruit Sample (1)
+  collect 12355 x1 quest 4763.1 @52.859954,33.409997 map 1439 -- Talisman of Corruption (1)
+step
+  when onquest 4763
+  when !has 12355
+  zone map 1439
+  goto 52.379954,33.390074 map 1439 r 1 optional
+  goto 52.859954,33.409997 map 1439 r 8 optional
+  note "Open the Blackwood Fruit Stores. Loot it for the [Blackwood Fruit Sample]"
+  note "Looting this will spawn 2 Blackwood Furbolgs that will aggro and run towards you. Be ready to fight them or reset them"
+  note "If you see Xabraxxis yell in chat or see someone fighting him, help them. Open the Xabraxxis' Demon Bag he drops on the ground. Loot it for the Talisman of Corruption"
+  collect 12341 x1 @52.859954,33.409997 map 1439 optional -- Blackwood Fruit Sample (1)
+  collect 12355 x1 quest 4763.1 @52.859954,33.409997 map 1439 -- Talisman of Corruption (1)
+step
+  when onquest 4763
+  along until Xabraxxis
+  zone map 1439
+  note "Use the [Filled Cleansing Bowl] at the Bonfire to summon Xabraxxis"
+  use 12347 @52.379954,33.390074 map 1439
+step
+  when onquest 4763
+  when !has 12355
+  zone map 1439
+  goto 52.379954,33.390074 map 1439 r 1 optional
+  goto 52.859954,33.409997 map 1439 r 8 optional
+  note "Open the Blackwood Fruit Stores. Loot it for the [Blackwood Fruit Sample]"
+  note "Looting this will spawn 2 Blackwood Furbolgs that will aggro and run towards you. Be ready to fight them or reset them"
+  note "If you see Xabraxxis yell in chat or see someone fighting him, help them. Open the Xabraxxis' Demon Bag he drops on the ground. Loot it for the Talisman of Corruption"
+  collect 12341 x1 @52.859954,33.409997 map 1439 optional -- Blackwood Fruit Sample (1)
+  collect 12355 x1 quest 4763.1 @52.859954,33.409997 map 1439 -- Talisman of Corruption (1)
+step
+  when onquest 4763
+  label Xabraxxis
+  zone map 1439
+  note "Kill Xabraxxis. Open the Xabraxxis' Demon Bag he drops on the ground. Loot it for the Talisman of Corruption"
+  use 12347 @52.379954,33.390074 map 1439
+  collect 12355 x1 quest 4763.1 @52.379954,33.390074 map 1439 -- Talisman of Corruption (1)
+step
+  zone map 1439
+  note "Loot the Scaber Stalks and a Death Cap on the ground"
+  note "Stay on the upper section. If there is not a Death Cap at the end of the top side, drop down and get one from the southern room below"
+  note "Be careful as Stormscale Wave Riders cast [Aqua Jet] (Ranged Instant: Deals damage to nearby enemies and knocks them back) - make sure you're not in a position to get knocked off the upper level of the cave"
+  collect 5271 x5 quest 947.1 @55.890031,35.400074 map 1439 -- Scaber Stalk (5)
+  collect 5270 x1 quest 947.2 @55.039954,33.339921 map 1439 -- Death Cap (1)
+  goto 55.379954,36.339922 map 1439 r 8 optional
+step
+  zone map 1439
+  note "Talk to Balthule Shadowstrike"
+  turnin 965 -- Turn in The Tower of Althalaxx
+  accept 966 -- Accept The Tower of Althalaxx
+step
+  loop
+  zone map 1439
+  goto 55.231,26.508 map 1439 r 1
+  goto 56.194,27.071 map 1439 r 1
+  goto 56.047,26.586 map 1439 r 1
+  goto 55.231,26.508 map 1439 r 50
+  goto 55.369,27.025 map 1439 r 50
+  goto 55.763,26.695 map 1439 r 50
+  goto 55.815,26.972 map 1439 r 50
+  goto 56.194,27.071 map 1439 r 50
+  goto 56.79,27.621 map 1439 r 50
+  goto 57.278,26.311 map 1439 r 50
+  goto 57.046,26.234 map 1439 r 50
+  goto 56.544,26.598 map 1439 r 50
+  goto 56.047,26.586 map 1439 r 50
+  goto 55.743,25.915 map 1439 r 50
+  note "Kill Dark Strand Fanatics. Loot them for their Worn Parchments"
+  collect 5348 x4 quest 966.1 -- Worn Parchment (4)
+step
+  zone map 1439
+  note "Talk to Balthule Shadowstrike"
+  turnin 966 -- Turn in The Tower of Althalaxx
+  accept 967 -- Accept The Tower of Althalaxx
+step
+  zone map 1439
+  note "Talk to Gelkak Gyromast"
+  accept 2098 -- Accept Gyromast's Retrieval
+step
+  along until next_41
+  zone map 1439
+  note "Kill Raging Reef Crawlers and Encrusted Tide Crawlers. Loot them for the Bottom of Gelkak's Key"
+  note "Be aware of Raging Reef Crawlers' [Thrash] ability. You can take 200 damage instantly from their melee hits"
+  collect 7500 x1 quest 2098.3 -- Bottom of Gelkak's Key (1)
+step
+  label next_41
+  zone map 1439
+  note "Kill Greymist Oracles and Greymist Tidehunters. Loot them for the Middle of Gelkak's Key"
+  note "Be aware of Greymist Oracles' [Lightning Bolt] damage and they can also heal with [Healing Wave]"
+  note "Care as Greymist Tidehunters can cast [Poison] while in melee leaving a dot dealing 13 damage per 3 seconds for 30 seconds"
+  note "You can LoS (Line of Sight) the Greymist Oracles' [Lightning Bolts] around the sunken ship to avoid taking its damage"
+  collect 7499 x1 quest 2098.2 -- Middle of Gelkak's Key (1)
+step
+  zone map 1439
+  goto 55.590031,16.980071 map 1439 r 45 optional
+  goto 53.759954,18.960072 map 1439 r 45 optional
+  goto 51.339954,21.999919 map 1439 r 45 optional
+  note "Kill Raging Reef Crawlers and Encrusted Tide Crawlers. Loot them for the Bottom of Gelkak's Key"
+  note "Be aware of Raging Reef Crawlers' [Thrash] ability. You can take 200 damage instantly from their melee hits"
+  collect 7500 x1 quest 2098.3 -- Bottom of Gelkak's Key (1)
+step
+  label foreststriders
+  along
+  zone map 1439
+  note "Kill Giant Foreststriders. Loot them for the Top of Gelkak's Key"
+  collect 7498 x1 quest 2098.1 -- Top of Gelkak's Key (1)
+step
+  zone map 1439
+  goto 59.290031,13.219994 map 1439 r 55 optional
+  goto 61.399954,9.3999175 map 1439 r 50 optional
+  goto 61.510031,12.660071 map 1439 r 50 optional
+  goto 61.239954,15.379995 map 1439 r 50 optional
+  goto 61.399954,9.3999175 map 1439 r 8
+step
+  zone map 1439
+  note "Kill Giant Foreststriders. Loot them for the Top of Gelkak's Key"
+  collect 7498 x1 quest 2098.1 -- Top of Gelkak's Key (1)
+step
+  zone map 1439
+  note "Talk to Gelkak Gyromast"
+  note "Start looking for a group for Gyromast's Revenge/The Threshwackonator 4100" only Warrior
+  note "Start looking for a group for Gyromast's Revenge/The Threshwackonator 4100" only Paladin
+  note "Start looking for a group for Gyromast's Revenge/The Threshwackonator 4100" only Rogue
+  note "Start looking for a group for Gyromast's Revenge/The Threshwackonator 4100" only Shaman
+  turnin 2098 -- Turn in Gyromast's Retrieval
+  accept 2078 -- Accept Gyromast's Revenge
+step
+  along until next_47
+  zone map 1439
+  goto 55.802,18.29 map 1439 r 8
+  note "This quest is VERY difficult"
+step
+  label next_47
+  zone map 1439
+  goto 56.654,13.484 map 1439 r 8
+  note "Escort The Threshwackonator 4100 to Gelkak Gyromast"
+  note "Kill The Threshwackonator 4100 once it turns hostile"
+  note "This quest is VERY difficult"
+  note "*Only use ranged attacks while running from it, avoid being at melee range" only Druid
+  note "Try to do this quest if you can as it'll save you time later as it rewards [Elixirs of Water Breathing] for underwater quests later" only !Druid,!Warlock,!Shaman
+  note "Use [Entangling Roots] on him when he turns hostile then create distance and kite using instant cast spells" only Druid
+  note "If you are unable to kill the The Threshwackonator 4100, skip this step"
+  kill 6669 x1 quest 2078.1 -- Gyromast's Revenge (1)
+step
+  when complete 2078
+  zone map 1439
+  note "Talk to Gelkak Gyromast"
+  turnin 2078 -- Turn in Gyromast's Revenge
+step
+  when turnedin 4681
+  zone map 1439
+  note "Click the Beached Sea Turtle"
+  accept 4727 -- Accept Beached Sea Turtle
+step
+  only Druid
+  when !turnedin 272
+  zone map 1439
+  note "Swim out in the water"
+  note "Open the Strange Lockbox. Loot it for the Half Pendant of Aquatic Agility"
+  collect 15883 x1 @48.87,11.32 map 1439 -- Collect Half Pendant of Aquatic Agility (x1)
+step
+  when complete 2139
+  zone map 1439
+  note "Talk to Tharnariun Treetender"
+  turnin 2139 -- Turn in Tharnariun's Hope
+step
+  when complete 4763
+  zone map 1439
+  note "Talk to Thundris Windweaver"
+  turnin 4763 -- Turn in The Blackwood Corrupted
+step
+  zone map 1439
+  note "Talk to Barithras Moonshade"
+  turnin 947 -- Turn in Cave Mushrooms
+  accept 948 -- Accept Onu
+step
+  zone map 1439
+  note "Click the Wanted Poster"
+  accept 4740 -- Accept WANTED: Murkdeep!
+step
+  when onquest 4727
+  label ReturnAuberdine
+  zone map 1439
+  note "Talk to Gwennyth Bly'Leggonde"
+  turnin 4727 -- Turn in Beached Sea Turtle
+step
+  when turnedin 4681
+  zone map 1439
+  note "Click the Beached Sea Creature"
+  accept 4728 -- Accept Beached Sea Creature
+step
+  zone map 1439
+  note "Make sure you check if Murkdeep is already up in the water (if someone has previously failed the encounter or left the Greymist Hunter in the wave that he spawns with alive)"
+  note "Kill the Greymist Warriors and Greymist Hunters in the camp"
+  note "Move to the Bonfire in the center of the camp to start the Murkdeep encounter:"
+  note "3 waves will spawn from the water, each after killing the previous wave: Wave 1 has 3 level 12-13 Greymist Coastrunners, Wave 2 has 2 level 15-16 Greymist Warriors, and Wave 3 has a level 19 Murkdeep and a level 16-17 Greymist Hunter. You can move away from the Bonfire to avoid aggroing the next wave"
+  kill 10323 x1 quest 4740.1 -- Murkdeep (1)
+step
+  zone map 1439
+  note "Talk to Onu"
+  turnin 948 -- Turn in Onu
+  accept 944 -- Accept The Master's Glaive
+step
+  when onquest 944
+  label MasterG
+  zone map 1439
+  goto 38.539954,86.049929 map 1439 r 100 -- Travel to The Master's Glaive
+step
+  along until FunandGames
+  zone map 1439
+  note "Kill Twilight Disciples and Twilight Thugs. Loot them for the [Book: The Powers Below]"
+  note "*Be careful as Twilight Thugs can [Disarm] you for 6 seconds" only Rogue
+  note "*Be careful as Twilight Thugs can [Disarm] you for 6 seconds" only Paladin
+  note "*Be careful as Twilight Thugs can [Disarm] you for 6 seconds" only Warrior
+  note "*Be careful as Twilight Thugs can [Disarm] you for 6 seconds" only Shaman
+  note "*Be careful as Twilight Disciples cast [Renew] and a 3 second [Heal]"
+  collect 5352 x1 @38.539954,86.049929 map 1439 optional -- Book: The Powers Below (1)
+step
+  zone map 1439
+  goto 38.946061,86.808403 map 1439 r 8
+  note "Discover The Master's Glaive"
+  complete 944 -- Enter the Master's Glaive (1)
+step
+  along until next_65
+  zone map 1439
+  note "Use the [Phial of Scrying] and place it on the ground"
+  use 5251 @38.946061,86.808403 map 1439
+step
+  label next_65
+  zone map 1439
+  note "Click the Scrying Bowl on the ground"
+  turnin 944 -- Turn in The Master's Glaive
+  accept 949 -- Accept The Twilight Camp
+  use 5251 @38.539954,86.049929 map 1439
+step
+  label FunandGames
+  zone map 1439
+  note "Click the Twilight Tome on the northern pedestal"
+  turnin 949 -- Turn in The Twilight Camp
+  accept 950 -- Accept Return to Onu
+  accept 98042 -- Accept It's All Fun and Games Until...
+step
+  along until TheryluneEnd
+  zone map 1439
+  note "Kill Twilight Disciples and Twilight Thugs. Loot them for the Peerless Eye and [Book: The Powers Below]"
+  note "*Be careful as Twilight Thugs can [Disarm] you for 6 seconds" only Rogue
+  note "*Be careful as Twilight Thugs can [Disarm] you for 6 seconds" only Paladin
+  note "*Be careful as Twilight Thugs can [Disarm] you for 6 seconds" only Warrior
+  note "*Be careful as Twilight Thugs can [Disarm] you for 6 seconds" only Shaman
+  note "*Be careful as Twilight Disciples cast [Renew] and a 3 second [Heal]"
+  collect 279279 x1 quest 98042.1 @38.537,86.05 map 1439 -- Peerless Eye (1)
+  collect 5352 x1 @38.537,86.05 map 1439 optional -- Book: The Powers Below (1)
+step
+  zone map 1439
+  note "Talk to Therylune. This will start an escort"
+  note "Skip this step if she is not there"
+  accept 945 -- Accept Therylune's Escape
+step
+  when onquest 945
+  label TheryluneEnd
+  zone map 1439
+  goto 40.510031,87.090082 map 1439 r 8
+  note "Escort Therylune out of The Masters Glaive"
+  complete 945 -- Escort Therylune away from the Master's Glaive (1)
+step
+  loop
+  zone map 1439
+  goto 39.158275,85.299242 map 1439 r 40
+  goto 37.993389,85.949624 map 1439 r 40
+  goto 38.660006,87.305003 map 1439 r 40
+  note "Kill Twilight Disciples and Twilight Thugs. Loot them for the Peerless Eye and [Book: The Powers Below]"
+  note "*Be careful as Twilight Thugs can [Disarm] you for 6 seconds" only Rogue
+  note "*Be careful as Twilight Thugs can [Disarm] you for 6 seconds" only Paladin
+  note "*Be careful as Twilight Thugs can [Disarm] you for 6 seconds" only Warrior
+  note "*Be careful as Twilight Thugs can [Disarm] you for 6 seconds" only Shaman
+  note "*Be careful as Twilight Disciples cast [Renew] and a 3 second [Heal]"
+  collect 279279 x1 quest 98042.1 -- Peerless Eye (1)
+  collect 5352 x1 optional -- Book: The Powers Below (1)
+step
+  label prospector
+  along
+  zone map 1439
+  note "Talk to Prospector Remtravel"
+  note "You may have to wait for him to respawn or for others to finish the escort"
+  turnin 729 -- Turn in The Absent Minded Prospector
+step
+  zone map 1439
+  goto 35.719954,83.690005 map 1439 r 8
+  note "Talk to Prospector Remtravel. This will start an escort"
+  accept 731 optional -- Accept The Absent Minded Prospector
+step
+  zone map 1439
+  note "Talk to Prospector Remtravel"
+  note "You may have to wait for him to respawn or for others to finish the escort"
+  turnin 729 -- Turn in The Absent Minded Prospector
+step
+  when onquest 731
+  note "Escort Prospector Remtravel through the Excavation"
+  complete 731 optional
+step
+  when turnedin 4681
+  zone map 1439
+  note "Click the Beached Sea Creature"
+  accept 4730 -- Accept Beached Sea Creature
+step
+  when turnedin 4681
+  zone map 1439
+  note "Be aware of Greymist Oracles' [Lightning Bolt] damage, they can also heal with [Healing Wave]"
+  note "Click the Beached Sea Turtle"
+  accept 4731 -- Accept Beached Sea Turtle
+step
+  when turnedin 4681
+  zone map 1439
+  note "Be aware of Greymist Oracles' [Lightning Bolt] damage, they can also heal with [Healing Wave]"
+  note "Click the Beached Sea Turtle"
+  accept 4732 -- Accept Beached Sea Turtle
+step
+  when turnedin 4681
+  zone map 1439
+  note "Click the Beached Sea Creature"
+  accept 4733 -- Accept Beached Sea Creature
+  note "Be aware of Greymist Oracles' [Lightning Bolt] damage, they can also heal with [Healing Wave]"
+step
+  zone map 1439
+  note "Talk to Onu"
+  turnin 950 -- Turn in Return to Onu
+step
+  when has 5352
+  zone map 1439
+  note "Use the [Book: The Powers Below] to start the quest"
+  accept 968 -- Accept The Powers Below
+  use 5352 @43.555,76.293 map 1439
+step
+  when turnedin 731
+  zone map 1439
+  note "Talk to Kerlonian Evershade to start the escort"
+  note "Skip this step if he is not there. It can take up to 25 minutes for him to respawn"
+  note "This is a timed quest, you have to escort him to his bag in 20 minutes"
+  accept 5321 -- Accept The Sleeper Has Awakened
+step
+  when onquest 5321
+  when turnedin 731
+  zone map 1439
+  note "Open Kerlonian's Chest. Loot it for the [Horn of Awakening]"
+  collect 13536 x1 quest 5321.1 -- Horn of Awakening (1)
+step
+  when !has 13536
+  zone map 1439
+  note "Talk to Kerlonian Evershade to start the escort"
+  note "Skip this step if he is not there. It can take up to 25 minutes for him to respawn"
+  note "This is a timed quest, you have to escort him to his bag in 20 minutes"
+  accept 5321 -- Accept The Sleeper Has Awakened
+step
+  when onquest 5321
+  when !has 13536
+  zone map 1439
+  note "Open Kerlonian's Chest. Loot it for the [Horn of Awakening]"
+  collect 13536 x1 quest 5321.1 -- Horn of Awakening (1)
+step
+  when onquest 5321
+  label Kerlonian
+  zone map 1439
+  note "Escort Kerlonian to his bag in Darkshore"
+  use 13536 @41.759802,90.01909 map 1439 -- Use the [Horn of Awakening] whenever Kerlonian falls asleep next to him
+  note "Avoid running on the main road as much as possible. Enemies will only spawn if you're on the road"
+  note "Escort Kerlonian Evershade to Maestra's Post"
+step
+  along until tower
+  zone map 1440
+  goto 29.699998,13.599922 map 1440 r 8
+step
+  when complete 5321
+  zone map 1440
+  note "Talk to Liladris Moonriver"
+  turnin 5321 -- Turn in The Sleeper Has Awakened
+step
+  label tower
+  zone map 1440
+  note "Talk to Delgren the Purifier"
+  turnin 967 -- Turn in The Tower of Althalaxx
+  accept 970 -- Accept The Tower of Althalaxx
+step
+  when level>=20
+  zone map 1440
+  note "Talk to Orendil Broadleaf"
+  accept 1010 -- Accept Bathran's Hair
+step
+  zone map 1440
+  note "Kill Dark Strand Cultists and Dark Strand Adepts. Loot them for the Glowing Soul Gem"
+  collect 5366 x1 quest 970.1 @31.24994,30.699889 map 1440
+step
+  zone map 1440
+  goto 31.24994,30.699889 map 1440 r 8
+  note "XP checkpoint: 20-1650 Keep killing Dark Strand mobs until you have enough xp to reach level 20"
+step
+  when onquest 1010
+  zone map 1440
+  note "Open the Plant Bundles in the ground. Loot them for Bathran's Hairs"
+  note "They look like small brown sacks and can be partially buried into the ground. They can be hard to see"
+  note "Make sure you have [Find Herbs] enabled to see them on the minimap"
+  collect 5437 x5 quest 1010.1 @31.889998,22.530003 map 1440 -- Bathran's Hair (5)
+step
+  when onquest 1010
+  zone map 1440
+  note "Open the Plant Bundles in the ground. Loot them for Bathran's Hairs"
+  note "They look like small brown sacks and can be partially buried into the ground. They can be hard to see"
+  collect 5437 x5 quest 1010.1 @31.889998,22.530003 map 1440 -- Bathran's Hair (5)
+step
+  when complete 1010
+  zone map 1440
+  note "Talk to Orendil Broadleaf"
+  turnin 1010 -- Turn in Bathran's Hair
+  accept 1020 -- Accept Orendil's Cure
+step
+  when turnedin 1010
+  zone map 1440
+  note "Talk to Orendil Broadleaf"
+  accept 1020 -- Accept Orendil's Cure
+step
+  zone map 1440
+  note "Talk to Delgren the Purifier"
+  turnin 970 -- Turn in The Tower of Althalaxx
+  accept 973 -- Accept The Tower of Althalaxx
+step
+  zone map 1440
+  goto 31.889998,22.530003 map 1440 r 8
+  level 20 -- Grind to level 20
+step
+  zone map 1440
+  note "Talk to Orendil Broadleaf"
+  accept 1010 -- Accept Bathran's Hair
+step
+  zone map 1440
+  note "Open the Plant Bundles in the ground. Loot them for Bathran's Hairs"
+  note "They look like small brown sacks and can be partially buried into the ground. They can be hard to see"
+  note "Make sure you have [Find Herbs] enabled to see them on the minimap"
+  collect 5437 x5 quest 1010.1 @31.889998,22.530003 map 1440 -- Bathran's Hair (5)
+step
+  zone map 1440
+  note "Open the Plant Bundles in the ground. Loot them for Bathran's Hairs"
+  note "They look like small brown sacks and can be partially buried into the ground. They can be hard to see"
+  collect 5437 x5 quest 1010.1 @31.889998,22.530003 map 1440 -- Bathran's Hair (5)
+step
+  zone map 1440
+  note "Talk to Orendil Broadleaf"
+  turnin 1010 -- Turn in Bathran's Hair
+  accept 1020 -- Accept Orendil's Cure
+step
+  label AshenvaleEnd
+  zone map 1440
+  note "Talk to Daelyshia"
+  getfp "Astranaar" @34.39994,47.999922 map 1440 -- Get the Astranaar Flight Path
+step
+  label TZS
+  zone map 1440
+  note "Talk to Shindrell Swiftfire"
+  accept 1008 -- Accept The Zoram Strand
+step
+  zone map 1440
+  note "Talk to Sentinel Thenysil"
+  accept 1070 -- Accept On Guard in Stonetalon
+step
+  zone map 1440
+  note "Talk to Faldreas Goeth'Shael"
+  accept 1056 -- Accept Journey to Stonetalon Peak
+step
+  zone map 1440
+  note "Talk to Raene Wolfrunner"
+  accept 991 -- Accept Raene's Cleansing
+  accept 1054 -- Accept Culling the Threat
+step
+  zone map 1440
+  note "Talk to Innkeeper Kimlya"
+  sethome "Astranaar" @36.989998,49.220085 map 1440 -- Set your Hearthstone to Astranaar
+step
+  zone map 1440
+  note "Talk to Pelturas Whitemoon"
+  turnin 1020 -- Turn in Orendil's Cure
+  accept 1033 -- Accept Elune's Tear

@@ -1,0 +1,772 @@
+guide rxp-free/10-12-durotar-0ee7849c
+title "10-12 Durotar"
+levels 10-12
+zone map 1411
+coords era
+faction Horde
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+next rxp-free/10-12-tirisfal-orc-troll-0a4643db, rxp-free/12-17-the-barrens-44048418
+step
+  only Shaman
+  zone map 1411
+  note "Talk to Takrin"
+  accept 840 -- Accept Conscript of the Horde
+step
+  only Hunter
+  zone map 1411
+  note "Talk to Takrin"
+  accept 840 -- Accept Conscript of the Horde
+step
+  only Shaman
+  when !zone "The Barrens"
+  when onquest 840,2983,1522,2984,1523
+  label FarWatchPost
+  zone map 1413
+  goto 62.260032,19.379981 map 1413 r 40 -- Travel to Far Watch Post
+step
+  only Shaman
+  when onquest 840
+  turnin 840 -- Turn in Conscript of the Horde
+step
+  only Shaman
+  zone map 1413
+  note "Talk to Kargal"
+  accept 842 -- Accept Crossroads Conscription
+step
+  only Shaman
+  when onquest 2983
+  turnin 2983 -- Turn in Call of Fire
+step
+  only Shaman
+  zone map 1413
+  note "Talk to Kranal"
+  accept 1524 -- Accept Call of Fire
+step
+  only Shaman
+  along until next_5
+  note "Kill Dreadmaw Crocolisks on the way. Loot them for Kron's Amulet"
+  note "Kron's Amulet (1)"
+step
+  only Shaman
+  label next_5
+  along until CallofFire3
+  zone map 1411
+  goto 36.740047,57.779943 map 1411 r 10 optional
+  goto 36.629976,58.149872 map 1411 r 8 optional
+  goto 36.629976,58.149872 map 1411 r 8 optional
+  goto 36.769929,58.979943 map 1411 r 8 optional
+  goto 36.849929,58.320085 map 1411 r 8 optional
+  goto 37.239905,58.130014 map 1411 r 8 optional
+  goto 37.860047,58.179943 map 1411 r 8 optional
+  goto 38.049929,57.789872 map 1411 r 8 optional
+  goto 38.929929,57.539943 map 1411 r 8 optional
+  goto 39.189976,57.899943 map 1411 r 8 optional
+  goto 39.159905,58.560085 map 1411 r 10 optional -- Travel the path up the mountain toward Telf
+  note "Be careful to not fall of the mountain, the path is very narrow. You could die if you fall"
+step
+  only Shaman
+  when onquest 1524
+  turnin 1524 -- Turn in Call of Fire
+step
+  only Shaman
+  label CallofFire3
+  zone map 1411
+  note "Talk to Telf"
+  accept 1525 -- Accept Call of Fire
+step
+  only Shaman
+  when onquest 99048
+  turnin 99048 -- Turn in A Missing Hand
+step
+  only Shaman
+  zone map 1411
+  note "Talk to Heglan Shadeeye"
+  accept 99049 -- Accept Threat from Below
+step
+  only Shaman
+  zone map 1411
+  note "Loot the Abandoned Dagger on the ground"
+  collect 286012 x1 quest 99049.1 -- Orcish Dagger
+step
+  only Shaman
+  zone map 1411
+  note "Loot the Weapon Piece on the ground"
+  collect 286010 x1 quest 99049.3 -- Broken Bone Trident
+step
+  only Shaman
+  zone map 1411
+  note "Loot the Strange Debris on the ground"
+  collect 286011 x1 quest 99049.2 -- Banner Scrap
+step
+  only Shaman
+  when onquest 99049
+  zone map 1411
+  note "Talk to Orgnil Soulscar"
+  turnin 99049 -- Turn in Threat from Below
+step
+  only Hunter
+  along until MargozTurnIn
+  note "Tame a Venomtail Scorpid"
+step
+  only Shaman
+  when onquest 1525
+  label next_14
+  loop
+  zone map 1411
+  goto 53.179953,29.149872 map 1411 r 1
+  goto 53.179953,29.149872 map 1411 r 20
+  goto 52.699953,27.970014 map 1411 r 12
+  goto 53.050024,27.869872 map 1411 r 12
+  goto 53.140047,27.240085 map 1411 r 12
+  goto 52.839905,26.800085 map 1411 r 12
+  goto 52.069976,26.850014 map 1411 r 12
+  goto 51.899953,25.699943 map 1411 r 12
+  note "Kill Burning Blade Cultists. Loot them for a Reagent Pouch"
+  collect 6652 x1 quest 1525.2 -- Reagent Pouch (1)
+step
+  only Warrior,Paladin,Rogue,Priest,Mage,Warlock,Druid
+  when turnedin 806
+  along until MargozTurnIn
+  zone map 1411
+  goto 56.299953,27.909872 map 1411 r 80 optional
+  goto 56.410024,20.040085 map 1411 r 50 optional -- Travel to Margoz
+step
+  only Warrior,Paladin,Rogue,Priest,Mage,Warlock,Druid
+  when turnedin 806
+  when onquest 828
+  turnin 828 -- Turn in Margoz
+step
+  only Warrior,Paladin,Rogue,Priest,Mage,Warlock,Druid
+  when turnedin 806
+  label MargozTurnIn
+  zone map 1411
+  note "Talk to Margoz"
+  accept 827 -- Accept Skull Rock
+step
+  only Warrior,Paladin,Rogue,Priest,Mage,Warlock,Druid
+  when turnedin 828
+  along until next_18
+  zone map 1411
+  goto 56.490024,25.040085 map 1411 r 50 optional
+  goto 56.110071,27.939943 map 1411 r 50 optional
+  goto 53.179953,29.149872 map 1411 r 50 optional -- Travel toward Dustwind Cave
+step
+  only Warrior,Paladin,Rogue,Priest,Mage,Warlock,Druid
+  when turnedin 828
+  label next_18
+  loop
+  zone map 1411
+  goto 53.179953,29.149872 map 1411 r 1
+  goto 53.179953,29.149872 map 1411 r 20
+  goto 52.699953,27.970014 map 1411 r 12
+  goto 53.050024,27.869872 map 1411 r 12
+  goto 53.140047,27.240085 map 1411 r 12
+  goto 52.839905,26.800085 map 1411 r 12
+  goto 52.069976,26.850014 map 1411 r 12
+  goto 52.699953,27.970014 map 1411 r 12
+  note "Kill Burning Blade Orcs. Loot them for their Collars"
+  collect 4871 x1 quest 827.1 -- Searing Collar (6)
+step
+  when onquest 835
+  label Ravine
+  kill 3117 x12 quest 835.1 -- Dustwind Savage (12)
+  kill 3118 x8 quest 835.2 -- Dustwind Storm Witch (8)
+step
+  label next_20
+  loop
+  zone map 1411
+  goto 53.979953,23.699943 map 1411 r 1
+  goto 54.020047,27.229872 map 1411 r 40
+  goto 52.820047,24.269872 map 1411 r 40
+  goto 51.850024,23.949872 map 1411 r 40
+  goto 54.010024,23.629872 map 1411 r 40
+  goto 52.129929,20.770014 map 1411 r 40
+  goto 51.259953,19.189872 map 1411 r 40
+  goto 53.979953,23.699943 map 1411 r 40
+  note "Kill Dustwind Savages and Dustwind Storm Witches"
+  use 277661 @53.979953,23.699943 map 1411 -- Loot Dustwind Storm Witches for a [Dull Storm Orb]. Use it to accept the quest
+  collect 277661 x1 optional -- Dull Storm Orb (x1)
+  accept 97281 -- Accept A Simmering Storm
+step
+  when onquest 835
+  turnin 835 -- Turn in Securing the Lines
+step
+  label SecuringLinesTurnIn
+  zone map 1411
+  note "Talk to Rezlak"
+  turnin 97281 -- Turn in A Simmering Storm
+  accept 97282 -- Accept Stormy Potential
+step
+  only Shaman
+  when !has 4904
+  when onquest 813
+  loop
+  zone map 1411
+  goto 38.730024,22.040085 map 1411 r 1
+  goto 42.64,20.450014 map 1411 r 60
+  goto 40.430071,19.720085 map 1411 r 60
+  goto 40.590071,16.410014 map 1411 r 60
+  goto 38.789976,17.000085 map 1411 r 60
+  goto 38.730024,22.040085 map 1411 r 60
+  note "Finish killing Venomtail Scorpids. Loot them for their Poison Sacs"
+  collect 4886 x4 quest 813.1 -- Venomtail Poison Sac (4)
+step
+  only Hunter
+  when !has 4904
+  when onquest 813
+  loop
+  zone map 1411
+  goto 38.730024,22.040085 map 1411 r 1
+  goto 42.64,20.450014 map 1411 r 60
+  goto 40.430071,19.720085 map 1411 r 60
+  goto 40.590071,16.410014 map 1411 r 60
+  goto 38.789976,17.000085 map 1411 r 60
+  goto 38.730024,22.040085 map 1411 r 60
+  note "Finish killing Venomtail Scorpids. Loot them for their Poison Sacs"
+  collect 4886 x4 quest 813.1 -- Venomtail Poison Sac (4)
+step
+  along until next_25
+  zone map 1411
+  note "Kill Thunder Lizards and Lightning Hides. Loot them for their Charged Thunder Lizard Organs"
+  collect 277665 x5 quest 97282.1 @38.730024,22.040085 map 1411 -- 5/5 Charged Thunder Lizard Organ
+step
+  label next_25
+  loop
+  zone map 1411
+  goto 43.232151,23.717248 map 1411 r 1
+  goto 40.756501,30.103064 map 1411 r 1
+  goto 43.232151,23.717248 map 1411 r 40
+  goto 40.756501,30.103064 map 1411 r 40
+  note "Kill Halikor (elite). Loot him for [Halikor's Hoof]"
+  note "This is hard! Group up if possible. It has 800 health but his damage is manageable. Skip this step if you can't kill it"
+  note "He has at least two different spawn locations inside Thunder Ridge"
+  collect 275723 x1 optional -- Halikor's Hoof (x1)
+  accept 96877 -- Accept Halikor's Hoof
+step
+  zone map 1411
+  note "Kill Thunder Lizards and Lightning Hides. Loot them for their Charged Thunder Lizard Organs"
+  collect 277665 x5 quest 97282.1 @39.428842,25.246326 map 1411 -- 5/5 Charged Thunder Lizard Organ
+step
+  zone map 1411
+  note "Talk to Rezlak"
+  turnin 97282 -- Turn in Stormy Potential
+step
+  only Shaman
+  when turnedin 806
+  along until MargozTurnIn_2
+  zone map 1411
+  goto 56.410024,20.040085 map 1411 r 50 -- Travel to Margoz
+step
+  only Hunter
+  when turnedin 806
+  along until MargozTurnIn_2
+  zone map 1411
+  goto 56.410024,20.040085 map 1411 r 50 -- Travel to Margoz
+step
+  only Shaman
+  when turnedin 806
+  when onquest 828
+  turnin 828 -- Turn in Margoz
+step
+  only Hunter
+  when turnedin 806
+  when onquest 828
+  turnin 828 -- Turn in Margoz
+step
+  only Shaman
+  when turnedin 806
+  label MargozTurnIn_2
+  zone map 1411
+  note "Talk to Margoz"
+  accept 827 -- Accept Skull Rock
+step
+  only Hunter
+  when turnedin 806
+  zone map 1411
+  note "Talk to Margoz"
+  accept 827 -- Accept Skull Rock
+step
+  only Shaman
+  along until Gazzuz
+  zone map 1411
+  goto 55.12,10.099943 map 1411 r 60 -- Travel toward Skull Rock
+step
+  only Hunter
+  along until Gazzuz
+  zone map 1411
+  goto 55.12,10.099943 map 1411 r 60 -- Travel toward Skull Rock
+step
+  only Shaman
+  when !has 4904
+  when onquest 813
+  along until Gazzuz
+  zone map 1411
+  note "Kill Venomtail Scorpids. Loot them for their Poison Sacs"
+  collect 4886 x4 quest 813.1 @55.12,10.099943 map 1411 -- Venomtail Poison Sac (4)
+step
+  only Hunter
+  when !has 4904
+  when onquest 813
+  along until Gazzuz
+  zone map 1411
+  note "Kill Venomtail Scorpids. Loot them for their Poison Sacs"
+  collect 4886 x4 quest 813.1 @55.12,10.099943 map 1411 -- Venomtail Poison Sac (4)
+step
+  only Shaman
+  when onquest 5726
+  along until Gazzuz
+  zone map 1411
+  note "Kill Burning Blade Orcs. Loot them for their Collars and for a Lieutenant's Insignia"
+  collect 4871 x1 quest 827.1 -- Searing Collar (6)
+  collect 14544 x1 quest 5726.1 @51.479905,9.7098723 map 1411 -- Lieutenant's Insignia (1)
+step
+  only Hunter
+  when onquest 5726
+  along until Gazzuz
+  zone map 1411
+  note "Kill Burning Blade Orcs. Loot them for their Collars and for a Lieutenant's Insignia"
+  collect 4871 x1 quest 827.1 -- Searing Collar (6)
+  collect 14544 x1 quest 5726.1 @51.479905,9.7098723 map 1411 -- Lieutenant's Insignia (1)
+step
+  only Shaman
+  label Gazzuz
+  zone map 1411
+  goto 51.799905,10.000085 map 1411 r 8 optional
+  note "Kill Gazz'uz. Loot him for his [Eye of Burning Shadow]"
+  note "Use the [Eye of Burning Shadow] to start the quest"
+  note "Use your [Really Sticky Glue] on the Voidwalker to avoid being hit, and [Healing Potions] to restore health. Use LoS (line of sight) to avoid Gazz'uz his Shadow Bolts"
+  note "You can run to bodies of water found within the cave to evade the Voidwalker after killing Gazz'uz"
+  note "Be careful as he is VERY difficult. You can skip this quest if you need"
+  collect 4903 x1 @51.799905,10.000085 map 1411 optional -- Collect Eye of Burning Shadow
+  accept 832 -- Accept Burning Shadows
+  use 4903 @51.799905,10.000085 map 1411
+step
+  only Hunter
+  zone map 1411
+  goto 51.799905,10.000085 map 1411 r 8 optional
+  note "Kill Gazz'uz. Loot him for his [Eye of Burning Shadow]"
+  note "Use the [Eye of Burning Shadow] to start the quest"
+  note "Use your [Really Sticky Glue] on the Voidwalker to avoid being hit, and [Healing Potions] to restore health. Use LoS (line of sight) to avoid Gazz'uz his Shadow Bolts"
+  note "You can run to bodies of water found within the cave to evade the Voidwalker after killing Gazz'uz"
+  note "Be careful as he is VERY difficult. You can skip this quest if you need"
+  collect 4903 x1 @51.799905,10.000085 map 1411 optional -- Collect Eye of Burning Shadow
+  accept 832 -- Accept Burning Shadows
+  use 4903 @51.799905,10.000085 map 1411
+step
+  only Shaman
+  when onquest 5726
+  loop
+  zone map 1411
+  goto 53.770024,8.8698723 map 1411 r 1
+  goto 54.72,8.7799433 map 1411 r 15
+  goto 54.289929,8.8900142 map 1411 r 15
+  goto 53.770024,8.8698723 map 1411 r 15
+  goto 53.370024,7.7300142 map 1411 r 15
+  goto 52.730024,7.8500142 map 1411 r 15
+  goto 52.420047,8.5898723 map 1411 r 15
+  goto 51.649929,8.1898723 map 1411 r 15
+  goto 51.390071,8.7098723 map 1411 r 15
+  goto 51.479905,9.7098723 map 1411 r 15
+  goto 53.770024,8.8698723 map 1411 r 15
+  note "Kill Burning Blade Orcs. Loot them for their Collars and for a Lieutenant's Insignia"
+  note "Skip the Lieutenant's Insignia if you're unlucky with the drop"
+  collect 4871 x1 quest 827.1 -- Searing Collar (6)
+  collect 14544 x1 quest 5726.1 -- Lieutenant's Insignia (1)
+step
+  only Hunter
+  when onquest 5726
+  loop
+  zone map 1411
+  goto 53.770024,8.8698723 map 1411 r 1
+  goto 54.72,8.7799433 map 1411 r 15
+  goto 54.289929,8.8900142 map 1411 r 15
+  goto 53.770024,8.8698723 map 1411 r 15
+  goto 53.370024,7.7300142 map 1411 r 15
+  goto 52.730024,7.8500142 map 1411 r 15
+  goto 52.420047,8.5898723 map 1411 r 15
+  goto 51.649929,8.1898723 map 1411 r 15
+  goto 51.390071,8.7098723 map 1411 r 15
+  goto 51.479905,9.7098723 map 1411 r 15
+  goto 53.770024,8.8698723 map 1411 r 15
+  note "Kill Burning Blade Orcs. Loot them for their Collars and for a Lieutenant's Insignia"
+  note "Skip the Lieutenant's Insignia if you're unlucky with the drop"
+  collect 4871 x1 quest 827.1 -- Searing Collar (6)
+  collect 14544 x1 quest 5726.1 -- Lieutenant's Insignia (1)
+step
+  only Shaman
+  when !has 4904
+  when onquest 813
+  along
+  zone map 1411
+  note "Kill Venomtail Scorpids. Loot them for their Poison Sacs"
+  collect 4886 x4 quest 813.1 @53.770024,8.8698723 map 1411 -- Venomtail Poison Sac (4)
+step
+  only Hunter
+  when !has 4904
+  when onquest 813
+  along
+  zone map 1411
+  note "Kill Venomtail Scorpids. Loot them for their Poison Sacs"
+  collect 4886 x4 quest 813.1 @53.770024,8.8698723 map 1411 -- Venomtail Poison Sac (4)
+step
+  when turnedin 806
+  when onquest 827
+  turnin 827 -- Turn in Skull Rock
+step
+  when turnedin 806
+  zone map 1411
+  note "Talk to Margoz"
+  accept 829 -- Accept Neeru Fireblade
+step
+  zone map 1454
+  goto 48.970238,92.839656 map 1454 r 50
+step
+  only Warrior,Paladin,Hunter,Priest,Shaman,Mage,Warlock,Druid
+  when !turnedin 97246
+  zone map 1454
+  note "Talk to Trak'gen"
+  vendor 3313 -- Vendor your trash
+step
+  only Rogue
+  zone map 1454
+  goto 48.119677,80.520004 map 1454 r 8 optional
+  note "Talk to Trak'gen. Buy [Sharp Throwing Axe] from him"
+  collect 3135 x1 @48.119677,80.520004 map 1454 optional -- Sharp Throwing Axe (200)
+  vendor 3313 -- Vendor your trash
+step
+  only Rogue
+  when has 3135
+  along until ZeptoUC1
+  zone map 1454
+  note "Equip the [Sharp Throwing Axe] when you are level 11"
+  use 3135 @48.119677,80.520004 map 1454 optional
+step
+  only Priest,Troll
+  when onquest 5654
+  turnin 5654 -- Turn in Hex of Weakness
+step
+  only Priest,Troll
+  when onquest 5654
+  zone map 1454
+  note "Talk to Ur'kyo"
+  train 6018 -- Train your class spells
+step
+  only Priest,Troll
+  when turnedin 5654
+  zone map 1454
+  note "Talk to Ur'kyo"
+  train 6018 -- Train your class spells
+step
+  only Priest,Troll
+  when onquest 5652
+  turnin 5652 -- Turn in Hex of Weakness
+step
+  only Priest,Troll
+  zone map 1454
+  note "Talk to Ur'kyo"
+  train 6018 -- Train your class spells
+step
+  zone map 1454
+  note "Talk to Thatog"
+  note "He is upstairs in the building"
+  accept 97246 -- Accept Meal Appeal
+step
+  only Shaman
+  zone map 1454
+  goto 47.550023,68.370329 map 1454 r 8
+  note "Talk to Urtharo. Buy a [Quarter Staff] from him"
+  collect 854 x1 @47.550023,68.370329 map 1454 optional -- Collect Quarter Staff (1)
+step
+  only Shaman
+  when has 854
+  along until NeeruFireblade
+  zone map 1454
+  note "Equip the [Quarter Staff]"
+  use 854 @47.550023,68.370329 map 1454 optional
+step
+  zone map 1454
+  note "Talk to Borstan"
+  turnin 97246 -- Turn in Meal Appeal
+  accept 97249 -- Accept Favorite Food
+step
+  when onquest 96877
+  zone map 1454
+  note "Talk to Kamari"
+  turnin 96877 -- Turn in Halikor's Hoof
+step
+  zone map 1454
+  note "Talk to Kor'geld"
+  accept 97242 -- Accept Yelmak's Medley
+step
+  along until next_50
+  zone map 1454
+  goto 62.697552,39.060375 map 1454 r 15 optional
+  goto 64.622542,38.012713 map 1454 r 15 optional
+  goto 66.119756,40.247013 map 1454 r 15 optional
+  goto 67.852246,38.728972 map 1454 r 15 optional -- Travel to the Valley of Honor
+step
+  label next_50
+  loop
+  zone map 1454
+  goto 69.392238,34.591775 map 1454 r 1
+  goto 69.392238,34.591775 map 1454 r 20
+  goto 71.089081,32.314713 map 1454 r 20
+  goto 70.354733,29.599344 map 1454 r 20
+  goto 66.248088,27.835423 map 1454 r 20
+  goto 67.731043,32.688879 map 1454 r 20
+  note "Loot the Handful of Cattails and Speargrass Cuttings in the water"
+  collect 277278 x1 quest 97242.1 -- Handful of Cattails
+  collect 277279 x1 quest 97242.2 -- Speargrass Cuttings
+step
+  only Hunter
+  when level>=12
+  zone map 1454
+  goto 66.049886,18.519782 map 1454 r 8
+  note "Talk to Ormak"
+  learn 14281 "your class spells"
+step
+  only Hunter
+  when level>=12
+  zone map 1454
+  goto 66.34006,14.830514 map 1454 r 8
+  note "Talk to Xao'tsu"
+  learn 24556 "your pet spells"
+step
+  zone map 1454
+  note "Talk to Kor'geld"
+  turnin 97242 -- Turn in Yelmak's Medley
+step
+  zone map 1454
+  note "Talk to Yelmak"
+  note "You may have to wait about 10 seconds before you can accept this quest"
+  accept 97275 -- Accept Whuut's the Rush
+step
+  zone map 1454
+  note "Talk to Whuut"
+  turnin 97275 -- Turn in Whuut's the Rush
+step
+  zone map 1454
+  note "Talk to Migi"
+  turnin 97249 -- Turn in Favorite Food
+step
+  zone map 1454
+  note "Talk to Thra"
+  accept 97326 -- Accept Rocks to Rests
+step
+  when onquest 97326
+  zone map 1454
+  note "Loot the orange Rocks on the ground"
+  note "Skip this quest if there is a lot of competition! There aren't that many Rocks and they do not respawn quickly"
+  collect 277952 x8 quest 97326.1 @43.704322,34.634537 map 1454 -- 8/8 Smooth Boulder
+step
+  when complete 97326
+  zone map 1454
+  note "Talk to Thra"
+  turnin 97326 -- Turn in Rocks to Rests
+step
+  only Warrior,Paladin,Rogue,Priest,Mage,Warlock,Druid
+  when onquest 831
+  label Admiralorders1
+  zone map 1454
+  note "Talk to Nazgrel"
+  turnin 831 -- Turn in The Admiral's Orders
+step
+  only Shaman
+  zone map 1454
+  goto 38.819839,36.410217 map 1454 r 8
+  note "Talk to Kardris"
+  learn 8050 "your class spells"
+step
+  when onquest 829
+  zone map 1454
+  note "Talk to Kareth"
+  vendor 3331 -- Repair your gear
+step
+  only Rogue
+  zone map 1454
+  goto 42.749669,53.529873 map 1454 r 8 optional
+  note "Talk to Therzok"
+  accept 1963 only Orc,Rogue -- Accept The Shattered Hand
+step
+  only Shaman
+  when !has 4904
+  when onquest 813
+  zone map 1454
+  note "Talk to Kor'ghan"
+  turnin 813 -- Turn in Finding the Antidote
+step
+  only Hunter
+  when !has 4904
+  when onquest 813
+  zone map 1454
+  note "Talk to Kor'ghan"
+  turnin 813 -- Turn in Finding the Antidote
+step
+  only Warlock
+  zone map 1454
+  goto 48.59023,46.970225 map 1454 r 8
+  note "Talk to Mirket"
+  learn 1120 "your class spells"
+step
+  only Shaman
+  when turnedin 827
+  when onquest 832
+  turnin 832 -- Turn in Burning Shadows
+step
+  only Hunter
+  when turnedin 827
+  when onquest 832
+  turnin 832 -- Turn in Burning Shadows
+step
+  only Shaman
+  when turnedin 827
+  when onquest 832
+  zone map 1454
+  note "Talk to Neeru"
+  turnin 829 -- Turn in Neeru Fireblade
+  accept 809 -- Accept Ak'Zeloth
+step
+  only Shaman
+  when turnedin 827
+  when turnedin 832
+  zone map 1454
+  note "Talk to Neeru"
+  turnin 829 -- Turn in Neeru Fireblade
+  accept 809 -- Accept Ak'Zeloth
+step
+  only Hunter
+  when turnedin 827
+  when onquest 832
+  zone map 1454
+  note "Talk to Neeru"
+  turnin 829 -- Turn in Neeru Fireblade
+  accept 809 -- Accept Ak'Zeloth
+step
+  only Hunter
+  when turnedin 827
+  when turnedin 832
+  zone map 1454
+  note "Talk to Neeru"
+  turnin 829 -- Turn in Neeru Fireblade
+  accept 809 -- Accept Ak'Zeloth
+step
+  when turnedin 827
+  label NeeruFireblade
+  zone map 1454
+  note "Talk to Neeru"
+  turnin 829 -- Turn in Neeru Fireblade
+  accept 809 -- Accept Ak'Zeloth
+step
+  only Shaman
+  label FoundtheCure
+  zone map 1411
+  note "Talk to Rhinag"
+  accept 812 -- Accept Need for a Cure
+step
+  only Hunter
+  zone map 1411
+  note "Talk to Rhinag"
+  accept 812 -- Accept Need for a Cure
+step
+  only Shaman
+  when onquest 812
+  turnin 812 -- Turn in Need for a Cure
+step
+  only Hunter
+  when onquest 812
+  turnin 812 -- Turn in Need for a Cure
+step
+  only Shaman
+  zone map 1411
+  goto 34.8,32.840085 map 1411 r 50 optional
+  goto 34.810024,37.019943 map 1411 r 50 optional
+  goto 34.439905,44.530014 map 1411 r 50 optional
+  goto 34.270071,47.019943 map 1411 r 50 optional
+  goto 34.709976,42.299943 map 1411 r 8
+  note "Travel south alongside the river toward Far Watch Post"
+  note "Kill Dreadmaw Crocolisks on the way. Loot them for Kron's Amulet"
+  note "Skip and abandon this quest if it won't drop"
+  note "Kron's Amulet (1)"
+step
+  only Hunter
+  zone map 1411
+  goto 34.8,32.840085 map 1411 r 50 optional
+  goto 34.810024,37.019943 map 1411 r 50 optional
+  goto 34.439905,44.530014 map 1411 r 50 optional
+  goto 34.270071,47.019943 map 1411 r 50 optional
+  goto 34.709976,42.299943 map 1411 r 8
+  note "Travel south alongside the river toward Far Watch Post"
+  note "Kill Dreadmaw Crocolisks on the way. Loot them for Kron's Amulet"
+  note "Skip and abandon this quest if it won't drop"
+  note "Kron's Amulet (1)"
+step
+  only Shaman
+  when complete 816
+  when onquest 816
+  zone map 1411
+  note "Talk to Misha"
+  turnin 816 -- Turn in Lost But Not Forgotten
+step
+  only Hunter
+  when complete 816
+  when onquest 816
+  zone map 1411
+  note "Talk to Misha"
+  turnin 816 -- Turn in Lost But Not Forgotten
+step
+  only Shaman
+  when !zone "The Barrens"
+  label FarWatchPost_2
+  zone map 1413
+  goto 62.260032,19.379981 map 1413 r 40 -- Travel to Far Watch Post
+step
+  only Hunter
+  when !zone "The Barrens"
+  zone map 1413
+  goto 62.260032,19.379981 map 1413 r 40 -- Travel to Far Watch Post
+step
+  only Hunter
+  when onquest 840
+  turnin 840 -- Turn in Conscript of the Horde
+step
+  only Hunter
+  zone map 1413
+  note "Talk to Kargal"
+  accept 842 -- Accept Crossroads Conscription
+step
+  only Shaman
+  when turnedin 829
+  label Akzeloth
+  zone map 1413
+  note "Talk to Ak'Zeloth"
+  turnin 809 -- Turn in Ak'Zeloth
+  accept 924 -- Accept The Demon Seed
+step
+  only Hunter
+  when turnedin 829
+  zone map 1413
+  note "Talk to Ak'Zeloth"
+  turnin 809 -- Turn in Ak'Zeloth
+  accept 924 -- Accept The Demon Seed
+step
+  only Shaman
+  when onquest 924
+  when onquest 926
+  zone map 1413
+  note "Loot the [Flawed Power Stone] next to Ak'Zeloth. This item has a 30 minute timer, so be sure to be quick"
+  turnin 926 -- Turn in Flawed Power Stone
+step
+  only Hunter
+  when onquest 924
+  when onquest 926
+  zone map 1413
+  note "Loot the [Flawed Power Stone] next to Ak'Zeloth. This item has a 30 minute timer, so be sure to be quick"
+  turnin 926 -- Turn in Flawed Power Stone
+step
+  only Warrior,Paladin,Rogue,Priest,Mage,Warlock,Druid
+  when !zone "Tirisfal Glades"
+  label ZeptoUC1
+  zone map 1411
+  goto 50.8,13.800085 map 1411 r 40 -- Go up the Zeppelin Tower
+  note "Conjure water while waiting" only Mage

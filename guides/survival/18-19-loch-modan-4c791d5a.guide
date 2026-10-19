@@ -1,0 +1,272 @@
+guide rxp-free/18-19-loch-modan-4c791d5a
+title "18-19 Loch Modan"
+levels 18-19
+zone map 1432
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · RXP Survival Guide 1-20"
+next rxp-free/19-20-redridge-d951dc98
+step
+  zone map 1437
+  note "Talk to Dewin Shimmerdawn"
+  vendor 1453 -- Buy as many [Healing Potions] that are available
+  note "This is a limited supply item. Skip this step if Dewin Shimmerdawn doesn't have any"
+step
+  zone map 1437
+  note "Talk to Neal Allen"
+  vendor 1448 -- Buy a [Bronze Tube]
+  note "This is a limited supply item. Skip this step if Neal Allen doesn't have one"
+step
+  only Hunter
+  zone map 1437
+  note "Talk to Edwina Monzor"
+  vendor 1462 -- Buy a [Medium Quiver] and [Sharp Arrows]
+  collect 11362 x1 @11.113,58.316 map 1437 -- Medium Quiver (1)
+  collect 2515 x1800 @11.113,58.316 map 1437 -- Sharp Arrow (1800)
+step
+  zone map 1437
+  note "Talk to Samor Festivus upstairs"
+  vendor 1457 -- Buy as many [Healing Potions] that are available
+  note "This is a limited supply item. Skip this step if Samor Festivus doesn't have any"
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock
+  when zone "Wetlands"
+  when level>=18
+  zone map 1437
+  goto 9.49,59.69 map 1437 r 8
+  note "Talk to Shellei"
+  fly "Ironforge" -- Fly to Ironforge
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock
+  when level>=18
+  zone map 1455
+  note "Talk to Bilban Tosslespanner" only Warrior
+  note "Talk to Briarthorn" only Warlock
+  note "Talk to Fenthwick" only Rogue
+  note "Talk to Toldren Deepiron" only Priest
+  note "Talk to Dink" only Mage
+  note "Talk to Brandur Ironhammer" only Paladin
+  goto 65.905,88.405 map 1455 r 8 optional only Warrior
+  goto 51.1,8.7 map 1455 r 15 optional only Warlock
+  goto 50.343,5.657 map 1455 r 8 optional only Warlock
+  goto 51.495,15.33 map 1455 r 8 optional only Rogue
+  goto 25.207,10.756 map 1455 r 8 optional only Priest
+  goto 27.18,8.6 map 1455 r 8 optional only Mage
+  goto 23.141,6.149 map 1455 r 8 optional only Paladin
+  train class -- Train your class spells
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock
+  when zone "Ironforge"
+  zone map 1455
+  goto 55.501,47.742 map 1455 r 8
+  note "Talk to Gryth Thurden"
+  fly "Loch Modan" -- Fly to Loch Modan
+step
+  when zone "Wetlands"
+  zone map 1437
+  goto 9.49,59.69 map 1437 r 8
+  note "Talk to Shellei"
+  fly "Loch Modan" -- Fly to Loch Modan
+step
+  zone map 1432
+  note "Talk to Jern Hornhelm"
+  accept 436 -- Accept Ironband's Excavation
+step
+  along until next_11
+  zone map 1432
+  goto 23.85,17.92 map 1432 r 100 -- Travel north to the Algaz Station
+step
+  when onquest 353
+  turnin 353 only NightElf -- Turn in Stormpike's Delivery
+step
+  label next_11
+  zone map 1432
+  note "Talk to Mountaineer Stormpike"
+  accept 307 -- Accept Filthy Paws
+step
+  along until next_13
+  zone map 1432
+  goto 35.5,18.97 map 1432 r 20 -- Enter the Silver Stream Mine
+step
+  label next_13
+  zone map 1432
+  note "Open the Miners' League Crates. Loot them for the Miners' Gear"
+  note "The Miners' League Crates can be found all throughout the Mine"
+  collect 2640 x4 quest 307.1 @35.93,22.55 map 1432 -- Miners' Gear (4)
+step
+  zone map 1432
+  note "Talk to Mountaineer Stormpike"
+  turnin 307 -- Turn in Filthy Paws
+step
+  along until next_16
+  zone map 1432
+  goto 43.43,10.14 map 1432 r 50 -- Travel to the Stonewrought Dam
+step
+  label next_16
+  zone map 1432
+  note "Talk to Chief Engineer Hinderweir VII"
+  accept 250 -- Accept A Dark Threat Looms
+step
+  zone map 1432
+  note "Click the Suspicious Barrel"
+  turnin 250 -- Turn in A Dark Threat Looms
+  accept 199 -- Accept A Dark Threat Looms
+step
+  zone map 1432
+  note "Talk to Chief Engineer Hinderweir VII"
+  turnin 199 -- Turn in A Dark Threat Looms
+step
+  along until next_20
+  note "Be careful not to run into the Horde Runners! It's an elite pack of 2 Orcs and a Tauren who patrol the east side of The Loch (the line on your map)"
+step
+  label next_20
+  along until next_21
+  zone map 1432
+  goto 82.92,59.37 map 1432 r 80 optional
+  goto 83.28,62.97 map 1432 r 25 optional -- Travel to The Farstrider Lodge
+step
+  label next_21
+  zone map 1432
+  note "Talk to Daryl the Youngling"
+  accept 257 -- Accept A Hunter's Boast
+  goto 83.49,65.4 map 1432 r 8 optional
+step
+  only Hunter
+  zone map 1432
+  note "Talk to Claude Erksine"
+  train 3545 -- Train your pet spells
+step
+  only Hunter
+  zone map 1432
+  note "Talk to Dargh Trueaim"
+  train 10930 -- Train your class spells
+step
+  zone map 1432
+  note "Talk to Marek Ironheart"
+  accept 385 -- Accept Crocolisk Hunting
+  goto 81.76,61.66 map 1432 r 8 optional
+step
+  zone map 1432
+  note "Kill Mountain Buzzards"
+  note "You must complete this quest and return to Daryl the Youngling within 15 minutes. If you fail the quest, abandon it and pick it up again"
+  kill 1194 x6 quest 257.1 @80.09,64.16 map 1432 -- Mountain Buzzard slain (6)
+step
+  along until next_27
+  zone map 1432
+  goto 82.92,59.37 map 1432 r 80 optional
+  goto 83.28,62.97 map 1432 r 25 optional -- Travel toward Daryl the Youngling
+step
+  label next_27
+  zone map 1432
+  note "Talk to Daryl the Youngling"
+  turnin 257 -- Turn in A Hunter's Boast
+  accept 258 -- Accept A Hunter's Challenge
+step
+  zone map 1432
+  note "Kill Elder Mountain Boars"
+  note "You must complete this quest and return to Daryl the Youngling with 12 minutes. If you fail the quest, abandon it and pick it up again"
+  kill 1192 x5 quest 258.1 @69.45,39.18 map 1432 -- Elder Mountain Boar slain (5)
+step
+  along until next_30
+  zone map 1432
+  goto 82.92,59.37 map 1432 r 80 optional
+  goto 83.28,62.97 map 1432 r 25 optional -- Travel toward Daryl the Youngling
+step
+  label next_30
+  zone map 1432
+  note "Talk to Daryl the Youngling"
+  turnin 258 -- Turn in A Hunter's Challenge
+step
+  along until next_33
+  note "Be careful not to run into the Horde Runners! It's an elite pack of 2 Orcs and a Tauren who patrol the east side of The Loch (the line on your map)"
+step
+  label next_33
+  along until next_34
+  zone map 1432
+  goto 54.7,38.3 map 1432 r 200 -- Travel to the island located in the middle of The Loch
+step
+  label next_34
+  zone map 1432
+  note "Kill Loch Crocolisks. Loot them for their Meat and Skin"
+  collect 2924 x5 quest 385.1 @54.72,38.15 map 1432 -- Crocolisk Meat (5)
+  collect 2925 x6 quest 385.2 @54.72,38.15 map 1432 -- Crocolisk Skin (6)
+step
+  along until next_36
+  note "Be careful not to run into the Horde Runners! It's an elite pack of 2 Orcs and a Tauren who patrol the east side of The Loch (the line on your map)"
+step
+  label next_36
+  along until next_37
+  zone map 1432
+  goto 64.89,66.66 map 1432 r 80 -- Travel to Ironband's Excavation Site
+step
+  label next_37
+  zone map 1432
+  note "Talk to Magmar Fellhew"
+  turnin 436 -- Turn in Ironband's Excavation
+  accept 297 -- Accept Gathering Idols
+step
+  zone map 1432
+  note "Talk to Prospector Ironband"
+  accept 298 -- Accept Excavation Progress Report
+step
+  zone map 1432
+  note "Kill Stonesplinter Diggers, Stonesplinter Geomancers and Berserk Troggs. Loot them for their Idols"
+  collect 2636 x8 quest 297.1 @70.38,62.82 map 1432
+step
+  zone map 1432
+  note "Talk to Magmar Fellhew"
+  turnin 297 -- Turn in Gathering Idols
+step
+  label next_42
+  along until next_44
+  zone map 1432
+  goto 82.92,59.37 map 1432 r 80 optional
+  goto 83.28,62.97 map 1432 r 25 optional -- Travel to The Farstrider Lodge
+step
+  label next_44
+  zone map 1432
+  note "Talk to Marek Ironheart"
+  turnin 385 -- Turn in Crocolisk Hunting
+step
+  along until next_52
+  note "Be careful not to run into the Horde Runners! It's an elite pack of 2 Orcs and a Tauren who patrol the east side of The Loch (the line on your map)"
+step
+  label next_52
+  along until FINISHED
+  zone map 1432
+  goto 36.77,46.2 map 1432 r 150 -- Travel to Thelsamar
+step
+  zone map 1432
+  note "Talk to Jern Hornhelm"
+  turnin 298 -- Turn in Excavation Progress Report
+  accept 301 -- Accept Report to Ironforge
+step
+  label FINISHED
+  zone map 1432
+  goto 33.938,50.954 map 1432 r 8
+  note "Talk to Thorgrum"
+  fly "Ironforge" -- Fly to Ironforge
+step
+  zone map 1455
+  note "Talk to Prospector Stormpike"
+  turnin 301 -- Turn in Report to Ironforge
+step
+  when turnedin 2078
+  zone map 1455
+  goto 35.9,60.17 map 1455 r 8
+  note "Talk to Bailey Stonemantle"
+  note "[Elixir of Water Breathing] (If you have them) -- 5996"
+step
+  along until next_60
+  zone map 1455
+  note "Talk to Gearcutter Cogspinner"
+  vendor 5175 -- Buy a [Bronze Tube]
+  note "This is a limited supply item. Skip this step if Gearcutter Cogspinner doesn't have one"
+step
+  label next_60
+  zone map 1455
+  goto 78,52 map 1455 r 5
+  note "Level your [First Aid] and [Cooking] if needed while waiting for the tram"
+  note "You will need your [First Aid] to be 80 for a quest at level 24" only Rogue,Human,Gnome,NightElf,Orc,Troll,Tauren,Undead,Skyborne

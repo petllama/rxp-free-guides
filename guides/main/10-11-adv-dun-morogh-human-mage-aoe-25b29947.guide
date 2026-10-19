@@ -1,0 +1,231 @@
+guide rxp-free/10-11-adv-dun-morogh-human-mage-aoe-25b29947
+title "10-11 ADV Dun Morogh Human Mage AoE"
+levels 10-11
+zone map 1426
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · ADV AoE Alliance Mage"
+class Mage
+race Human
+next rxp-free/10-12-adv-darkshore-1-mage-aoe-69191608
+step
+  when !turnedin 314
+  label Dirt
+  along until Rudra
+  zone map 1426
+  goto 59.840061,49.559899 map 1426 r 40 optional
+  goto 61.360061,47.070051 map 1426 r 40 optional -- Go up the dirt path
+step
+  when !turnedin 314
+  zone map 1426
+  goto 59.840061,49.559899 map 1426 r 40 optional
+  goto 61.360061,47.070051 map 1426 r 40 -- Go up the dirt path
+step
+  along until Rudra
+  note "Kite Vagash down to Rudra"
+step
+  label Rudra
+  zone map 1426
+  note "Talk to Rudra"
+  accept 314 -- Accept Protecting the Herd
+step
+  zone map 1426
+  goto 62.57001,46.139899 map 1426 r 1 optional
+  goto 62.779959,54.599898 map 1426 r 40 optional
+  goto 62.819959,55.730151 map 1426 r 8
+  note "Kill Vagash. Loot him for the Fang of Vagash"
+  note "Kite Vagash down to the Dun Morogh Mountaineer south of the ranch. Make sure you do 51%+ damage to him"
+  note "Remember to get The Tundrid Hills explore xp and pull the Snow Leopard to the Dun Morogh Mountaineer if convenient"
+  collect 3627 x1 quest 314.1 -- Collect Fang of Vagash (1)
+step
+  zone map 1426
+  note "Talk to Rudra"
+  turnin 314 -- Turn in Protecting the Herd
+step
+  along until Ghilm
+  note "Remember to save [Chunks of Boar Meat] you get for leveling [Cooking] to 50 later"
+step
+  along until Ghilm
+  zone map 1426
+  goto 66.339959,50.920101 map 1426 r 50 optional
+  goto 67.720061,53.659999 map 1426 r 30 optional
+  note "Kite the Ice Claw Bear to the Ironforge Mountaineer (make sure to deal 51%+ damage to get credit)"
+  note "Be careful as they cast [Ice Claw] (Melee Instant: Deals an additional 4 melee damage)"
+step
+  label Ghilm
+  along
+  zone map 1426
+  note "Talk to Ghilm"
+  learn 2550 "Cooking"
+step
+  zone map 1426
+  goto 68.429909,54.460101 map 1426 r 8 optional
+  goto 68.53001,54.640101 map 1426 r 8
+  note "Talk to Kazan"
+  note "Buy 15 [Ice Cold Milk] from him"
+  collect 1179 x15 @68.53001,54.640101 map 1426 optional -- Ice Cold Milk (15)
+step
+  zone map 1426
+  goto 68.429909,54.460101 map 1426 r 8 optional
+  goto 68.53001,54.640101 map 1426 r 8
+  note "Talk to Kazan"
+  note "Buy 10 [Ice Cold Milk] from him"
+  collect 1179 x10 @68.53001,54.640101 map 1426 optional -- Ice Cold Milk (10)
+step
+  zone map 1426
+  goto 68.429909,54.460101 map 1426 r 8 optional
+  goto 68.53001,54.640101 map 1426 r 8
+  note "Talk to Kazan"
+  note "Buy 5 [Ice Cold Milk] from him"
+  collect 1179 x5 @68.53001,54.640101 map 1426 optional -- Ice Cold Milk (5)
+step
+  zone map 1426
+  goto 68.400061,54.45005 map 1426 r 1 optional
+  note "Talk to Ghilm"
+  learn 2550 "Cooking"
+step
+  zone map 1426
+  note "Talk to Mehr and Stonebrow"
+  accept 433 -- Accept The Public Servant
+  accept 432 -- Accept Those Blasted Troggs!
+  goto 69.083919,56.330151 map 1426 r 8 optional
+step
+  along until Bonesnappers
+  zone map 1426
+  note "Kill Rockjaw Skullthumpers"
+  note "Don't go out of your way to kill them"
+  kill 1115 x6 quest 432.1 @69.083919,56.330151 map 1426 -- Kill Rockjaw Skullthumper (x6)
+step
+  along until Bonesnappers
+  zone map 1426
+  goto 70.739959,56.229948 map 1426 r 30 -- Enter the cave
+step
+  label Bonesnappers
+  zone map 1426
+  note "Kill Rockjaw Bonesnappers inside the cave"
+  note "Be careful as they cast [Knockdown] (Melee Instant: Stuns for 2 seconds)"
+  kill 1117 x10 quest 433.1 @72.619959,52.559898 map 1426 -- Kill Rockjaw Bonesnapper (x10)
+step
+  loop
+  zone map 1426
+  goto 70.739959,56.229948 map 1426 r 30
+  goto 69.93001,57.290151 map 1426 r 30
+  goto 70.57001,58.610151 map 1426 r 30
+  goto 69.680061,59.370049 map 1426 r 30
+  goto 68.360061,59.57015 map 1426 r 30
+  goto 69.160061,57.510049 map 1426 r 30
+  goto 69.93001,57.290151 map 1426 r 30
+  note "Kill Rockjaw Skullthumpers"
+  kill 1115 x6 quest 432.1 -- Kill Rockjaw Skullthumper (x6)
+step
+  label Frast
+  zone map 1426
+  note "Talk to Stonebrow and Mehr"
+  turnin 432 -- Turn in Those Blasted Troggs!
+  turnin 433 -- Turn in The Public Servant
+  goto 68.669909,55.970151 map 1426 r 8 optional
+step
+  when !turnedin 419
+  zone map 1426
+  note "Talk to Frast"
+  vendor 1698 -- Vendor Trash
+step
+  zone map 1426
+  goto 69.33001,55.459999 map 1426 r 8
+  note "Talk to Dank"
+  learn 2575 "Mining"
+step
+  label Shortcut1
+  along until Pilot
+  zone map 1426
+  goto 70.349909,55.279999 map 1426 r 5 optional
+  goto 70.520061,54.75005 map 1426 r 12 optional -- Take the shortcut up behind Dank
+step
+  zone map 1426
+  goto 70.349909,55.279999 map 1426 r 5 optional
+  goto 70.520061,54.75005 map 1426 r 12 -- Take the shortcut up behind Dank
+step
+  label Shortcut2
+  along until Pilot
+  zone map 1426
+  goto 70.97001,50.699898 map 1426 r 50 optional
+  goto 72.899959,49.789848 map 1426 r 50 optional
+  goto 77.109909,48.820102 map 1426 r 50 optional -- Kite the nearby Rockjaw Ambushers to the Ironforge Mountaineers that can patrol on the road (make sure to deal 51%+ damage to get credit)
+step
+  zone map 1426
+  goto 70.97001,50.699898 map 1426 r 50 optional
+  goto 72.899959,49.789848 map 1426 r 50 optional
+  goto 77.109909,48.820102 map 1426 r 50 -- Kite the nearby Rockjaw Ambushers to the Ironforge Mountaineers that can patrol on the road (make sure to deal 51%+ damage to get credit)
+step
+  along until Pilot
+  zone map 1426
+  goto 81.229909,42.6599 map 1426 r 50 optional
+  goto 83.01001,40.30985 map 1426 r 30 optional -- Kite a Scarred Crag Boar through the tunnel
+  note "Be careful as they cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 40-100 melee damage on hit. Only castable at range)"
+step
+  label Pilot
+  zone map 1426
+  note "Talk to Hammerfoot"
+  accept 419 -- Accept The Lost Pilot
+step
+  zone map 1426
+  note "Click the Dwarven Corpse on the ground"
+  note "MAKE SURE You have a free inventory slot. Mangeclaw will not come down if you do not accept the next quest"
+  note "REMEMBER You're kiting Mangeclaw back to Hammerfoot"
+  turnin 419 -- Turn in The Lost Pilot
+  accept 417 -- Accept A Pilot's Revenge
+step
+  zone map 1426
+  goto 78.41001,37.799901 map 1426 r 60 optional
+  goto 83.89001,39.189951 map 1426 r 8
+  note "Kill Mangeclaw. Loot him for the Mangy Claw"
+  note "Kite him all the way over to Hammerfoot (make sure to deal 51%+ damage to get credit)"
+  collect 3183 x1 quest 417.1 -- Collect Mangy Claw (x1)
+step
+  zone map 1426
+  note "Talk to Hammerfoot"
+  turnin 417 -- Turn in A Pilot's Revenge
+step
+  label Tunnel1
+  zone map 1426
+  goto 83.01001,40.30985 map 1426 r 30 optional
+  goto 81.229909,42.6599 map 1426 r 30 -- Run back through the tunnel
+step
+  zone map 1432
+  goto 19.010033,61.879785 map 1432 r 8
+  note "Kite a Scarred Crag Boar through the tunnel"
+  note "Be careful as they cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 40-100 melee damage on hit. Only castable at range)"
+step
+  along until Rugelfuss
+  zone map 1432
+  note "Try to kite a nearby Elder Black Bear or Forest Lurker into the Bunker with you (remember to deal 51%+ damage to get credit)"
+  note "Loot the Elder Black Bears for their [Bear Meat]"
+  note "Loot the Forest Lurkers for their [Spider Ichor]"
+  note "Cobbleflint, Gravelgaw, and Wallbang won't assist you"
+  collect 3173 x3 @19.010033,61.879785 map 1432 optional -- Collect Bear Meat (x3)
+  collect 3174 x3 @19.010033,61.879785 map 1432 optional -- Collect Spider Ichor (x3)
+step
+  label Cobbleflint
+  zone map 1432
+  note "Talk to Cobbleflint"
+  accept 224 -- Accept In Defense of the King's Lands
+step
+  along until Rugelfuss
+  zone map 1432
+  goto 23.269852,75.649753 map 1432 r 12 optional
+  goto 23.620063,75.41981 map 1432 r 12 optional
+  goto 23.120124,73.929798 map 1432 r 12 optional -- Enter the Bunker. Go to the top floor
+step
+  label Rugelfuss
+  zone map 1432
+  note "Talk to Rugelfuss"
+  accept 267 -- Accept The Trogg Threat
+step
+  label next_34
+  zone map 1432
+  note "Talk to Kadrell"
+  note "Kadrell patrols along the main Thelsamar road"
+  accept 416 -- Accept Rat Catching
+  accept 1339 -- Accept Mountaineer Stormpike's Task

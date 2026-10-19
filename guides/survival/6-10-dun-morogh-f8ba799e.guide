@@ -1,0 +1,1417 @@
+guide rxp-free/6-10-dun-morogh-f8ba799e
+title "6-10 Dun Morogh"
+levels 6-10
+zone map 1426
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · RXP Survival Guide 1-20"
+next rxp-free/10-11-elwynn-dwarf-gnome-1419a546
+step
+  when !turnedin 317
+  note "Kill Crag Boars and Large Crag Boars. Loot them for their [Chunks of Boar Meat]"
+  collect 769 x4 -- Collect Chunk of Boar Meat (x4)
+step
+  when !turnedin 384
+  note "Kill Crag Boars and Large Crag Boars. Loot them for their Crag Boar Ribs"
+  collect 2886 x6 -- Collect Crag Boar Rib (x6)
+step
+  zone map 1426
+  goto 36.4,62.9 map 1426 r 45 optional
+  goto 37.7,60.5 map 1426 r 45 optional
+  goto 46.726,53.826 map 1426 r 8
+  level 5+2145 only Priest -- Travel to Kharanos. Grind to 2145/+2800xp killing Crag Boars en-route
+  level 5+2415 only !Priest -- Travel to Kharanos. Grind to 2415/+2800xp killing Crag Boars en-route
+step
+  along until next_4
+  zone map 1426
+  goto 46.726,53.826 map 1426 r 30 -- Travel to Kharanos. Kill Crag Boars en-route
+step
+  when onquest 420
+  label next_4
+  zone map 1426
+  note "Talk to Senir Whitebeard"
+  turnin 420 -- Turn in Senir's Observations
+step
+  only Warlock
+  zone map 1426
+  note "Talk to Gimrizz Shadowcog"
+  train 5612 -- Train your class spells
+step
+  only Warlock
+  zone map 1426
+  note "Talk to Dannie Fizzwizzle"
+  vendor 6328 -- Buy the [Grimoire of Blood Pact (Rank 1)] if you can afford it. If not you will buy it later
+step
+  only Warrior,Paladin,Hunter,Rogue,Shaman,Mage,Warlock,Druid
+  zone map 1426
+  goto 48.3,57 map 1426 r 8
+  level 6 -- Grind to 6
+step
+  only Hunter
+  zone map 1426
+  note "Talk to Grif Wildheart"
+  train 1231 -- Train your class spells
+  learn 3044 "Arcane Shot"
+step
+  zone map 1426
+  note "Talk to Ragnar Thunderbrew"
+  accept 384 -- Accept Beer Basted Boar Ribs
+step
+  when onquest 2160
+  zone map 1426
+  note "Talk to Tannok Frosthammer"
+  turnin 2160 -- Turn in Supplies to Tannok
+step
+  only Rogue
+  zone map 1426
+  note "Talk to Kreg Bilmn"
+  vendor 1691 -- Buy and equip a [Small Throwing Knife]
+step
+  only Rogue
+  zone map 1426
+  note "Talk to Hogral Bakkan inside in the backroom"
+  train 1234 -- Train your class spells
+step
+  only Mage
+  zone map 1426
+  note "Talk to Magis Sparkmantle inside upstairs"
+  train 1228 -- Train your class spells
+step
+  only Paladin
+  zone map 1426
+  note "Talk to Azar Stronghammer inside upstairs"
+  train 1232 -- Train your class spells
+step
+  only Priest
+  zone map 1426
+  note "Talk to Maxan Anvol inside"
+  accept 5625 -- Accept Garments of the Light
+step
+  only Priest
+  zone map 1426
+  note "Use Lesser Heal Rank 2 and then Power Word: Fortitude on Mountaineer Dolf"
+  kill 12427 x1 quest 5625.1 -- Heal and fortify Mountaineer Dolf
+step
+  only Priest
+  when onquest 5625
+  turnin 5625 -- Turn in Garments of the Light
+step
+  only Priest
+  zone map 1426
+  note "Talk to Maxan Anvol inside"
+  train 1226 -- Train your class spells
+step
+  only Priest
+  level 6 -- Grind to 6
+step
+  only Priest
+  zone map 1426
+  note "Talk to Innkeeper Belm inside"
+  sethome "Thunderbrew Distillery" @47.377,52.523 map 1426 -- Set your Hearthstone to Thunderbrew Distillery
+  vendor 1247 -- Buy as much [Ice Cold Milk] as you can afford
+step
+  only Mage
+  zone map 1426
+  note "Talk to Innkeeper Belm inside"
+  sethome "Thunderbrew Distillery" @47.377,52.523 map 1426 -- Set your Hearthstone to Thunderbrew Distillery
+  vendor 1247 -- Buy as much [Ice Cold Milk] as you can afford
+step
+  only Warlock
+  zone map 1426
+  note "Talk to Innkeeper Belm inside"
+  sethome "Thunderbrew Distillery" @47.377,52.523 map 1426 -- Set your Hearthstone to Thunderbrew Distillery
+  vendor 1247 -- Buy as much [Ice Cold Milk] as you can afford
+step
+  only Warrior,Paladin,Hunter,Rogue,Shaman,Druid
+  zone map 1426
+  note "Talk to Innkeeper Belm inside"
+  sethome "Thunderbrew Distillery" @47.377,52.523 map 1426 -- Set your Hearthstone to Thunderbrew Distillery
+step
+  only Warrior
+  zone map 1426
+  note "Talk to Granis Swiftaxe inside"
+  train 1229 -- Train your class spells
+step
+  only Paladin
+  along until next_23
+  zone map 1426
+  goto 45.8,51.8 map 1426 r 20 -- Travel to the Blacksmith
+step
+  only Warrior
+  along until next_23
+  zone map 1426
+  goto 45.8,51.8 map 1426 r 20 -- Travel to the Blacksmith
+step
+  only Warrior,Gnome
+  label next_23
+  zone map 1426
+  note "Talk to Grawn Thromwyn"
+  note "Buy and equip a [Gladius]"
+  goto 45.29,52.19 map 1426 r 8
+  collect 2488 x1 @45.29,52.19 map 1426 optional -- Collect Gladius (1)
+step
+  only Warrior,Dwarf
+  zone map 1426
+  note "Talk to Grawn Thromwyn"
+  note "Buy and equip a [Large Axe]"
+  goto 45.29,52.19 map 1426 r 8
+  collect 2491 x1 @45.29,52.19 map 1426 optional -- Collect Large Axe (1)
+step
+  only Rogue
+  zone map 1426
+  note "Talk to Grawn Thromwyn"
+  note "Buy and equip a [Stiletto]"
+  goto 45.29,52.19 map 1426 r 8
+  collect 2494 x1 @45.29,52.19 map 1426 optional -- Collect Stiletto (1)
+step
+  only Paladin
+  zone map 1426
+  note "Talk to Grawn Thromwyn"
+  note "Buy and equip a [Wooden Mallet]"
+  goto 45.29,52.19 map 1426 r 8
+  collect 2493 x1 @45.29,52.19 map 1426 optional -- Collect Wooden Mallet (1)
+step
+  only Warrior
+  zone map 1426
+  note "Talk to Tognus Flintfire"
+  train 1241 -- Train [Blacksmithing]
+  note "This will allow you to make [Rough Sharpening Stones] which increase melee hits by +2 Damage. This is very significant early on" only Warrior
+  note "This will allow you to make [Rough Sharpening Stones] which increase melee hits by +2 Damage. This is very significant early on" only Rogue
+  note "This will allow you to make [Rough Weightstones] which increase melee hits by +2 Damage. This is very significant early on" only Paladin
+step
+  only Rogue
+  zone map 1426
+  note "Talk to Tognus Flintfire"
+  train 1241 -- Train [Blacksmithing]
+  note "This will allow you to make [Rough Sharpening Stones] which increase melee hits by +2 Damage. This is very significant early on" only Warrior
+  note "This will allow you to make [Rough Sharpening Stones] which increase melee hits by +2 Damage. This is very significant early on" only Rogue
+  note "This will allow you to make [Rough Weightstones] which increase melee hits by +2 Damage. This is very significant early on" only Paladin
+step
+  only Paladin
+  zone map 1426
+  note "Talk to Tognus Flintfire"
+  train 1241 -- Train [Blacksmithing]
+  note "This will allow you to make [Rough Sharpening Stones] which increase melee hits by +2 Damage. This is very significant early on" only Warrior
+  note "This will allow you to make [Rough Sharpening Stones] which increase melee hits by +2 Damage. This is very significant early on" only Rogue
+  note "This will allow you to make [Rough Weightstones] which increase melee hits by +2 Damage. This is very significant early on" only Paladin
+step
+  zone map 1426
+  note "Talk to Tharek Blackstone"
+  accept 400 -- Accept Tools for Steelgrill
+step
+  zone map 1426
+  note "Talk to Pilot Bellowfiz"
+  note "Don't kill any Young Black Bears en-route"
+  accept 317 -- Accept Stocking Jetsteam
+step
+  zone map 1426
+  note "Talk to Pilot Stonegear"
+  accept 313 -- Accept The Grizzled Den
+step
+  zone map 1426
+  note "Talk to Beldin Steelgrill"
+  turnin 400 -- Turn in Tools for Steelgrill
+step
+  label BoarMeat44
+  zone map 1426
+  note "Talk to Loslor Rudge"
+  accept 5541 -- Accept Ammo for Rumbleshot
+step
+  only Warrior
+  along until next_34
+  zone map 1426
+  note "Talk to Loslor Rudge"
+  goto 50.084,49.42 map 1426 r 8 optional
+  note "Buy a [Mining Pick] if you trained [Blacksmithing]"
+  collect 2901 x1 @50.084,49.42 map 1426 optional
+step
+  only Paladin
+  along until next_34
+  zone map 1426
+  note "Talk to Loslor Rudge"
+  goto 50.084,49.42 map 1426 r 8 optional
+  note "Buy a [Mining Pick] if you trained [Blacksmithing]"
+  collect 2901 x1 @50.084,49.42 map 1426 optional
+step
+  only Rogue
+  along until next_34
+  zone map 1426
+  note "Talk to Loslor Rudge"
+  goto 50.084,49.42 map 1426 r 8 optional
+  note "Buy a [Mining Pick] if you trained [Blacksmithing]"
+  collect 2901 x1 @50.084,49.42 map 1426 optional
+step
+  only Warrior
+  label next_34
+  zone map 1426
+  note "Talk to Yarr Hammerstone"
+  train 5392 -- Train [Mining]
+step
+  only Paladin
+  zone map 1426
+  note "Talk to Yarr Hammerstone"
+  train 5392 -- Train [Mining]
+step
+  only Rogue
+  zone map 1426
+  note "Talk to Yarr Hammerstone"
+  train 5392 -- Train [Mining]
+step
+  only Warrior
+  note "Cast [Find Minerals]"
+step
+  only Paladin
+  note "Cast [Find Minerals]"
+step
+  only Rogue
+  note "Cast [Find Minerals]"
+step
+  only Paladin
+  along until BearFur
+  zone map 1426
+  note "Kill Young Black Bears. Loot them for their Fur"
+  collect 6952 x2 quest 317.2 @50.01,50.31 map 1426 -- Collect Thick Bear Fur (x2)
+step
+  only Warrior
+  along until BearFur
+  zone map 1426
+  note "Kill Young Black Bears. Loot them for their Fur"
+  collect 6952 x2 quest 317.2 @50.01,50.31 map 1426 -- Collect Thick Bear Fur (x2)
+step
+  only Rogue
+  along until BearFur
+  zone map 1426
+  note "Kill Young Black Bears. Loot them for their Fur"
+  collect 6952 x2 quest 317.2 @50.01,50.31 map 1426 -- Collect Thick Bear Fur (x2)
+step
+  only Hunter,Priest,Shaman,Mage,Warlock,Druid
+  zone map 1426
+  note "Kill Young Black Bears. Loot them for their Fur"
+  note "Kill Crag Boars and Large Crag Boars. Loot them for their [Chunks of Boar Meat] and Crag Boar Ribs"
+  collect 6952 x2 quest 317.2 @43.5,52.5 map 1426 -- Collect Thick Bear Fur (x2)
+  collect 769 x4 quest 317.1 @43.5,52.5 map 1426 -- Collect Chunk of Boar Meat (x4)
+  collect 2886 x6 @43.5,52.5 map 1426 optional -- Collect Crag Boar Rib (x6)
+step
+  only Hunter,Priest,Shaman,Mage,Warlock,Druid
+  along until Ribs
+  zone map 1426
+  note "Kill Crag Boars and Large Crag Boars. Loot them for their Crag Boar Ribs"
+  collect 2886 x6 @43.5,52.5 map 1426 optional -- Collect Crag Boar Rib (x6)
+step
+  only Hunter,Priest,Shaman,Mage,Warlock,Druid
+  zone map 1426
+  note "Talk to Pilot Bellowfiz"
+  turnin 317 -- Turn in Stocking Jetsteam
+  accept 318 -- Accept Evershine
+step
+  only Warrior
+  along until next_41
+  zone map 1426
+  note "Talk to Innkeeper Belm inside"
+  vendor 1247 -- Buy as much [Freshly Baked Bread] as you can afford
+step
+  only Priest
+  label next_41
+  along until next_42
+  zone map 1426
+  note "Talk to Innkeeper Belm inside"
+  vendor 1247 -- Buy as much [Ice Cold Milk] as you can afford
+step
+  only Mage
+  along until next_42
+  zone map 1426
+  note "Talk to Innkeeper Belm inside"
+  vendor 1247 -- Buy as much [Ice Cold Milk] as you can afford
+step
+  only Warlock
+  along until next_42
+  zone map 1426
+  note "Talk to Innkeeper Belm inside"
+  vendor 1247 -- Buy as much [Ice Cold Milk] as you can afford
+step
+  label next_42
+  along until next_43
+  zone map 1426
+  goto 42.38,55.28 map 1426 r 40 -- Travel to The Grizzled Den
+step
+  label next_43
+  zone map 1426
+  note "Kill Wendigos and Young Wendigos. Loot them for their Manes"
+  note "Remember to keep an eye out for [Copper Veins] which yield [Rough Stones] so you can craft [Rough Sharpening Stones]" only Warrior
+  note "Remember to keep an eye out for [Copper Veins] which yield [Rough Stones] so you can craft [Rough Sharpening Stones]" only Rogue
+  note "Remember to keep an eye out for [Copper Veins] which yield [Rough Stones] so you can craft [Rough Weightstones]" only Paladin
+  collect 2671 x8 quest 313.1 @42.25,53.68 map 1426 -- Collect Wendigo Mane (x8)
+step
+  zone map 1426
+  note "Open the Ammo Crate. Loot it for Rumbleshot's Ammo"
+  collect 13850 x1 quest 5541.1 -- Collect Rumbleshot's Ammo (x1)
+step
+  label BearFur
+  zone map 1426
+  note "Talk to Hegnar Rumbleshot"
+  turnin 5541 -- Turn in Ammo for Rumbleshot
+step
+  only Hunter
+  zone map 1426
+  note "Talk to Hegnar Rumbleshot"
+  goto 40.682,65.13 map 1426 r 8
+  note "Buy and equip a [Ornate Blunderbuss]. Skip this step if you can't afford it"
+  collect 2509 x1 @40.682,65.13 map 1426 optional -- Ornate Blunderbuss (1)
+step
+  only Hunter,Priest,Shaman,Mage,Warlock,Druid
+  level 7 -- Grind to 7
+step
+  only Paladin
+  zone map 1426
+  note "Kill Young Black Bears. Loot them for their Fur"
+  note "Kill Crag Boars and Large Crag Boars. Loot them for their [Chunks of Boar Meat] and Crag Boar Ribs"
+  collect 6952 x2 quest 317.2 @51.4,50.4 map 1426 -- Collect Thick Bear Fur (x2)
+  collect 769 x4 quest 317.1 @51.4,50.4 map 1426 -- Collect Chunk of Boar Meat (x4)
+  collect 2886 x6 @51.4,50.4 map 1426 optional -- Collect Crag Boar Rib (x6)
+step
+  only Warrior
+  zone map 1426
+  note "Kill Young Black Bears. Loot them for their Fur"
+  note "Kill Crag Boars and Large Crag Boars. Loot them for their [Chunks of Boar Meat] and Crag Boar Ribs"
+  collect 6952 x2 quest 317.2 @51.4,50.4 map 1426 -- Collect Thick Bear Fur (x2)
+  collect 769 x4 quest 317.1 @51.4,50.4 map 1426 -- Collect Chunk of Boar Meat (x4)
+  collect 2886 x6 @51.4,50.4 map 1426 optional -- Collect Crag Boar Rib (x6)
+step
+  only Rogue
+  zone map 1426
+  note "Kill Young Black Bears. Loot them for their Fur"
+  note "Kill Crag Boars and Large Crag Boars. Loot them for their [Chunks of Boar Meat] and Crag Boar Ribs"
+  collect 6952 x2 quest 317.2 @51.4,50.4 map 1426 -- Collect Thick Bear Fur (x2)
+  collect 769 x4 quest 317.1 @51.4,50.4 map 1426 -- Collect Chunk of Boar Meat (x4)
+  collect 2886 x6 @51.4,50.4 map 1426 optional -- Collect Crag Boar Rib (x6)
+step
+  only Paladin
+  along until Ribs
+  zone map 1426
+  note "Kill Crag Boars and Large Crag Boars. Loot them for their Crag Boar Ribs"
+  collect 2886 x6 @51.4,50.4 map 1426 optional -- Collect Crag Boar Rib (x6)
+step
+  only Warrior
+  along until Ribs
+  zone map 1426
+  note "Kill Crag Boars and Large Crag Boars. Loot them for their Crag Boar Ribs"
+  collect 2886 x6 @51.4,50.4 map 1426 optional -- Collect Crag Boar Rib (x6)
+step
+  only Rogue
+  along until Ribs
+  zone map 1426
+  note "Kill Crag Boars and Large Crag Boars. Loot them for their Crag Boar Ribs"
+  collect 2886 x6 @51.4,50.4 map 1426 optional -- Collect Crag Boar Rib (x6)
+step
+  only Warrior
+  zone map 1426
+  note "Talk to Pilot Bellowfiz"
+  turnin 317 -- Turn in Stocking Jetsteam
+  accept 318 -- Accept Evershine
+step
+  only Paladin
+  zone map 1426
+  note "Talk to Pilot Bellowfiz"
+  turnin 317 -- Turn in Stocking Jetsteam
+  accept 318 -- Accept Evershine
+step
+  only Rogue
+  zone map 1426
+  note "Talk to Pilot Bellowfiz"
+  turnin 317 -- Turn in Stocking Jetsteam
+  accept 318 -- Accept Evershine
+step
+  only Warrior
+  zone map 1426
+  note "Talk to Pilot Stonegear"
+  turnin 313 -- Turn in The Grizzled Den
+step
+  only Paladin
+  zone map 1426
+  note "Talk to Pilot Stonegear"
+  turnin 313 -- Turn in The Grizzled Den
+step
+  only Rogue
+  zone map 1426
+  note "Talk to Pilot Stonegear"
+  turnin 313 -- Turn in The Grizzled Den
+step
+  only Warrior
+  zone map 1426
+  collect 2901 x1 @50.084,49.42 map 1426 -- Buy a Mining Pick
+step
+  only Paladin
+  zone map 1426
+  collect 2901 x1 @50.084,49.42 map 1426 -- Buy a Mining Pick
+step
+  only Rogue
+  zone map 1426
+  collect 2901 x1 @50.084,49.42 map 1426 -- Buy a Mining Pick
+step
+  only Warrior
+  level 7 -- Grind to 7
+step
+  only Paladin
+  level 7 -- Grind to 7
+step
+  only Rogue
+  level 7 -- Grind to 7
+step
+  only Rogue
+  when level>=8
+  zone map 1426
+  note "Talk to Hogral Bakkan inside in the backroom"
+  train 1234 -- Train your class spells
+step
+  only Paladin
+  when level>=8
+  zone map 1426
+  note "Talk to Azar Stronghammer inside upstairs"
+  train 1232 -- Train your class spells
+step
+  only Warrior
+  when level>=8
+  zone map 1426
+  note "Talk to Granis Swiftaxe inside"
+  train 1229 -- Train your class spells
+step
+  only Warrior,Gnome
+  zone map 1426
+  note "Talk to Grawn Thromwyn"
+  note "Buy and equip a [Gladius]"
+  goto 45.29,52.19 map 1426 r 8
+  collect 2488 x1 @45.29,52.19 map 1426 optional -- Collect Gladius (1)
+step
+  only Warrior,Dwarf
+  zone map 1426
+  note "Talk to Grawn Thromwyn"
+  note "Buy and equip a [Large Axe]"
+  goto 45.29,52.19 map 1426 r 8
+  collect 2491 x1 @45.29,52.19 map 1426 optional -- Collect Large Axe (1)
+step
+  only Rogue
+  zone map 1426
+  note "Talk to Grawn Thromwyn"
+  note "Buy and equip a [Stiletto]"
+  goto 45.29,52.19 map 1426 r 8
+  collect 2494 x1 @45.29,52.19 map 1426 optional -- Collect Stiletto (1)
+step
+  only Paladin
+  zone map 1426
+  note "Talk to Grawn Thromwyn"
+  note "Buy and equip a [Wooden Mallet]"
+  goto 45.29,52.19 map 1426 r 8
+  collect 2493 x1 @45.29,52.19 map 1426 optional -- Collect Wooden Mallet (1)
+step
+  only Warrior
+  along until next_62
+  zone map 1426
+  goto 47.377,52.523 map 1426 r 8
+  note "Talk to Innkeeper Belm inside"
+  vendor 1247 only Warrior -- Buy up to 20 [Freshly Baked Bread]
+  vendor 1247 only Rogue -- Buy up to 20 [Freshly Baked Bread]
+  vendor 1247 only Paladin -- Buy up to 10 [Freshly Baked Bread]
+step
+  only Rogue
+  along until next_62
+  zone map 1426
+  goto 47.377,52.523 map 1426 r 8
+  note "Talk to Innkeeper Belm inside"
+  vendor 1247 only Warrior -- Buy up to 20 [Freshly Baked Bread]
+  vendor 1247 only Rogue -- Buy up to 20 [Freshly Baked Bread]
+  vendor 1247 only Paladin -- Buy up to 10 [Freshly Baked Bread]
+step
+  only Paladin
+  along until next_62
+  zone map 1426
+  goto 47.377,52.523 map 1426 r 8
+  note "Talk to Innkeeper Belm inside"
+  vendor 1247 only Warrior -- Buy up to 20 [Freshly Baked Bread]
+  vendor 1247 only Rogue -- Buy up to 20 [Freshly Baked Bread]
+  vendor 1247 only Paladin -- Buy up to 10 [Freshly Baked Bread]
+step
+  only Paladin
+  label next_62
+  along until next_63
+  zone map 1426
+  goto 43,47.4 map 1426 r 60 optional
+  goto 39.6,48.9 map 1426 r 60 optional
+  goto 37.9,50.8 map 1426 r 60 optional
+  goto 34.577,51.652 map 1426 r 40 optional -- Travel toward Tundra MacGrann
+  note "Kill Boars, Bears and Wolves en-route"
+step
+  only Warrior
+  along until next_63
+  zone map 1426
+  goto 43,47.4 map 1426 r 60 optional
+  goto 39.6,48.9 map 1426 r 60 optional
+  goto 37.9,50.8 map 1426 r 60 optional
+  goto 34.577,51.652 map 1426 r 40 optional -- Travel toward Tundra MacGrann
+  note "Kill Boars, Bears and Wolves en-route"
+step
+  only Rogue
+  along until next_63
+  zone map 1426
+  goto 43,47.4 map 1426 r 60 optional
+  goto 39.6,48.9 map 1426 r 60 optional
+  goto 37.9,50.8 map 1426 r 60 optional
+  goto 34.577,51.652 map 1426 r 40 optional -- Travel toward Tundra MacGrann
+  note "Kill Boars, Bears and Wolves en-route"
+step
+  only Paladin
+  label next_63
+  zone map 1426
+  note "Talk to Tundra MacGrann"
+  goto 43,47.4 map 1426 r 60 optional
+  goto 39.6,48.9 map 1426 r 60 optional
+  accept 312 -- Accept Tundra MacGrann's Stolen Stash
+step
+  only Warrior
+  zone map 1426
+  note "Talk to Tundra MacGrann"
+  goto 43,47.4 map 1426 r 60 optional
+  goto 39.6,48.9 map 1426 r 60 optional
+  accept 312 -- Accept Tundra MacGrann's Stolen Stash
+step
+  only Rogue
+  zone map 1426
+  note "Talk to Tundra MacGrann"
+  goto 43,47.4 map 1426 r 60 optional
+  goto 39.6,48.9 map 1426 r 60 optional
+  accept 312 -- Accept Tundra MacGrann's Stolen Stash
+step
+  only Hunter,Priest,Shaman,Mage,Warlock,Druid
+  along until next_65
+  zone map 1426
+  goto 35.2,56.4 map 1426 r 60 optional
+  goto 36,52 map 1426 r 60 optional
+  goto 34.577,51.652 map 1426 r 40 optional -- Travel toward Tundra MacGrann
+  note "Kill Boars, Bears and Wolves en-route"
+step
+  only Hunter,Priest,Shaman,Mage,Warlock,Druid
+  label next_65
+  zone map 1426
+  note "Talk to Tundra MacGrann"
+  accept 312 -- Accept Tundra MacGrann's Stolen Stash
+step
+  along until next_67
+  zone map 1426
+  goto 30.5,46 map 1426 r 50 -- Travel to Brewnall Village
+step
+  only Warrior,Paladin,Hunter,Rogue,Shaman,Warlock,Druid
+  label next_67
+  along until next_68
+  zone map 1426
+  note "Talk to Keeg Gibn"
+  vendor 1697 -- Vendor trash
+step
+  only Priest
+  label next_68
+  along until next_69
+  zone map 1426
+  note "Talk to Keeg Gibn"
+  vendor 1697 -- Buy up to 20 [Ice Cold Milk]
+step
+  only Mage
+  along until next_69
+  zone map 1426
+  note "Talk to Keeg Gibn"
+  vendor 1697 -- Buy up to 20 [Ice Cold Milk]
+step
+  only Warlock
+  along until next_69
+  zone map 1426
+  note "Talk to Keeg Gibn"
+  vendor 1697 -- Buy up to 20 [Ice Cold Milk]
+step
+  when onquest 318
+  turnin 318 -- Turn in Evershine
+step
+  label next_69
+  zone map 1426
+  note "Talk to Rejold Barleybrew"
+  accept 319 -- Accept A Favor for Evershine
+  accept 315 -- Accept The Perfect Stout
+step
+  zone map 1426
+  note "Talk to Marleth Barleybrew"
+  accept 310 -- Accept Bitter Rivals
+step
+  label Ribs
+  zone map 1426
+  note "Kill Ice Claw Bears, Elder Crag Boars and Snow Leopards"
+  kill 1196 x6 quest 319.1 @28.7,43.7 map 1426 -- Kill Ice Claw Bear (x6)
+  kill 1127 x8 quest 319.2 @28.7,43.7 map 1426 -- Kill Elder Crag Boar (x8)
+  kill 1201 x8 quest 319.3 @28.7,43.7 map 1426 -- Kill Snow Leopard (x8)
+step
+  zone map 1426
+  note "Kill Elder Crag Boars. Loot them for their Crag Boar Ribs"
+  collect 2886 x6 quest 384.1 @28.7,43.7 map 1426 -- Collect Crag Boar Rib (x6)
+step
+  zone map 1426
+  note "Talk to Rejold Barleybrew"
+  turnin 319 -- Turn in A Favor for Evershine
+  accept 320 -- Accept Return to Bellowfiz
+step
+  when turnedin 384
+  zone map 1426
+  level 7+4360 -- If you have already turned in the quest Beer Basted Boar Ribs, grind until 4360+/4500xp
+  goto 31.5,38.9 map 1426 r 60 optional
+  goto 28.3,39.9 map 1426 r 60 optional
+  goto 28.7,43.7 map 1426 r 60 optional
+  goto 25.8,47.2 map 1426 r 60 optional
+  goto 25.8,47.2 map 1426 r 60 optional
+  goto 30,51.8 map 1426 r 60 optional
+  goto 31.5,38.9 map 1426 r 60 optional
+  goto 28.3,39.9 map 1426 r 60 optional
+  goto 28.7,43.7 map 1426 r 60 optional
+  goto 25.8,47.2 map 1426 r 60 optional
+  goto 25.8,47.2 map 1426 r 60 optional
+  goto 30,51.8 map 1426 r 8
+step
+  zone map 1426
+  level 7+3735 -- Grind until 3735+/4500xp
+  goto 31.5,38.9 map 1426 r 60 optional
+  goto 28.3,39.9 map 1426 r 60 optional
+  goto 28.7,43.7 map 1426 r 60 optional
+  goto 25.8,47.2 map 1426 r 60 optional
+  goto 25.8,47.2 map 1426 r 60 optional
+  goto 30,51.8 map 1426 r 60 optional
+  goto 31.5,38.9 map 1426 r 60 optional
+  goto 28.3,39.9 map 1426 r 60 optional
+  goto 28.7,43.7 map 1426 r 60 optional
+  goto 25.8,47.2 map 1426 r 60 optional
+  goto 25.8,47.2 map 1426 r 60 optional
+  goto 30,51.8 map 1426 r 8
+step
+  label next_81
+  along until next_83
+  hearth "Kharanos" optional -- Hearth to Kharanos
+step
+  label next_83
+  zone map 1426
+  note "Talk to Innkeeper Belm inside"
+  note "Buy a [Rhapsody Malt] and a [Thunder Ale]"
+  collect 2894 x1 quest 384.2 @47.377,52.523 map 1426 -- Collect Rhapsody Malt (x1)
+  collect 2686 x1 @47.377,52.523 map 1426 optional -- Collect Thunder Ale (x1)
+step
+  when onquest 308
+  along until next_85
+  zone map 1426
+  note "Talk to Jarven Thunderbrew downstairs"
+  turnin 308 -- Turn in Distracting Jarven
+step
+  label next_85
+  zone map 1426
+  note "Click the Unguarded Thunder Ale Barrel"
+  turnin 310 -- Turn in Bitter Rivals
+  accept 311 -- Accept Return to Marleth
+step
+  zone map 1426
+  note "Talk to Ragnar Thunderbrew outside"
+  turnin 384 -- Turn in Beer Basted Boar Ribs
+step
+  only Hunter,Priest,Shaman,Mage,Warlock,Druid
+  level 8 -- Grind to 8
+step
+  only Hunter
+  zone map 1426
+  note "Talk to Grif Wildheart"
+  train 1231 -- Train your class spells
+  learn 5116 "Concussive Shot"
+step
+  only Warlock
+  zone map 1426
+  note "Talk to Gimrizz Shadowcog"
+  train 5612 -- Train your class spells
+  learn 5782 "Fear"
+step
+  only Warlock
+  zone map 1426
+  note "Talk to Gimrizz Shadowcog"
+  vendor 5612 -- Buy the [Grimoire of Firebolt (Rank 2)] if you can afford it. If not you will buy it later
+step
+  only Rogue
+  when level>=8
+  zone map 1426
+  note "Talk to Hogral Bakkan inside in the backroom"
+  train 1234 -- Train your class spells
+step
+  only Paladin
+  when level>=8
+  zone map 1426
+  note "Talk to Azar Stronghammer inside upstairs"
+  train 1232 -- Train your class spells
+step
+  only Warrior
+  when level>=8
+  zone map 1426
+  note "Talk to Granis Swiftaxe inside"
+  train 1229 -- Train your class spells
+step
+  only Mage
+  when level>=8
+  zone map 1426
+  note "Talk to Magis Sparkmantle inside upstairs"
+  train 1228 -- Train your class spells
+  learn 118 "Polymorph"
+step
+  only Priest
+  when level>=8
+  zone map 1426
+  note "Talk to Maxan Anvol inside"
+  train 1226 -- Train your class spells
+step
+  zone map 1426
+  goto 47.18,52.61 map 1426 r 8
+  note "Talk to Thamner Pol"
+  learn 3273 "First Aid"
+step
+  only Warrior,Gnome
+  zone map 1426
+  note "Talk to Grawn Thromwyn"
+  note "Buy and equip a [Gladius]"
+  goto 45.29,52.19 map 1426 r 8
+  collect 2488 x1 @45.29,52.19 map 1426 optional -- Collect Gladius (1)
+step
+  only Warrior,Dwarf
+  zone map 1426
+  note "Talk to Grawn Thromwyn"
+  note "Buy and equip a [Large Axe]"
+  goto 45.29,52.19 map 1426 r 8
+  collect 2491 x1 @45.29,52.19 map 1426 optional -- Collect Large Axe (1)
+step
+  only Rogue
+  zone map 1426
+  note "Talk to Grawn Thromwyn"
+  note "Buy and equip a [Stiletto]"
+  goto 45.29,52.19 map 1426 r 8
+  collect 2494 x1 @45.29,52.19 map 1426 optional -- Collect Stiletto (1)
+step
+  only Paladin
+  zone map 1426
+  note "Talk to Grawn Thromwyn"
+  note "Buy and equip a [Wooden Mallet]"
+  goto 45.29,52.19 map 1426 r 8
+  collect 2493 x1 @45.29,52.19 map 1426 optional -- Collect Wooden Mallet (1)
+step
+  only Warrior
+  zone map 1426
+  note "Talk to Innkeeper Belm inside"
+  goto 47.377,52.523 map 1426 r 8
+  vendor 1247 only Warrior -- Buy up to 30 [Freshly Baked Bread]
+  vendor 1247 only Rogue -- Buy up to 30 [Freshly Baked Bread]
+  vendor 1247 only Paladin -- Buy up to 15 [Freshly Baked Bread]
+step
+  only Rogue
+  zone map 1426
+  note "Talk to Innkeeper Belm inside"
+  goto 47.377,52.523 map 1426 r 8
+  vendor 1247 only Warrior -- Buy up to 30 [Freshly Baked Bread]
+  vendor 1247 only Rogue -- Buy up to 30 [Freshly Baked Bread]
+  vendor 1247 only Paladin -- Buy up to 15 [Freshly Baked Bread]
+step
+  only Paladin
+  zone map 1426
+  note "Talk to Innkeeper Belm inside"
+  goto 47.377,52.523 map 1426 r 8
+  vendor 1247 only Warrior -- Buy up to 30 [Freshly Baked Bread]
+  vendor 1247 only Rogue -- Buy up to 30 [Freshly Baked Bread]
+  vendor 1247 only Paladin -- Buy up to 15 [Freshly Baked Bread]
+step
+  only Priest
+  zone map 1426
+  note "Talk to Innkeeper Belm inside"
+  vendor 1247 -- Buy up to 30 [Ice Cold Milk]
+step
+  only Mage
+  zone map 1426
+  note "Talk to Innkeeper Belm inside"
+  vendor 1247 -- Buy up to 30 [Ice Cold Milk]
+step
+  only Warlock
+  zone map 1426
+  note "Talk to Innkeeper Belm inside"
+  vendor 1247 -- Buy up to 30 [Ice Cold Milk]
+step
+  zone map 1426
+  note "Talk to Senir Whitebeard"
+  accept 287 -- Accept Frostmane Hold
+step
+  zone map 1426
+  note "Talk to Pilot Stonegear"
+  turnin 313 -- Turn in The Grizzled Den
+step
+  zone map 1426
+  note "Talk to Pilot Bellowfiz"
+  note "Choose the [Camping Knife] reward. Save it for later" only Rogue
+  turnin 320 -- Turn in Return to Bellowfiz
+step
+  zone map 1426
+  note "Talk to Razzle Sprysprocket"
+  accept 412 -- Accept Operation Recombobulation
+step
+  along until next_108
+  zone map 1426
+  goto 43.1,45 map 1426 r 20 optional
+  goto 42.1,45.4 map 1426 r 20 optional -- Travel to Shimmer Ridge. Follow the arrow and run up the mountain
+step
+  label next_108
+  zone map 1426
+  note "Kill Frostmane Seers. Loot them for their Shimmerweed"
+  note "Shimmerweed can also be looted from Shimmerweed Baskets on the ground"
+  collect 2676 x6 quest 315.1 @41.5,36 map 1426 -- Collect Shimmerweed (x6)
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Druid
+  zone map 1426
+  note "Open MacGrann's Meat Locker. Loot it for MacGrann's Dried Meats"
+  note "Wait until Old Icebeard patrols out of the Cave. Once he patrols out of the Cave you can enter and loot MacGrann's Meat Locker"
+  collect 2667 x1 quest 312.1 -- MacGrann's Dried Meats (1)
+step
+  only Mage
+  zone map 1426
+  note "Cast [Polymorph] on Old Icebeard" only Mage
+  note "Cast [Fear] on Old Icebeard" only Warlock
+  note "Open MacGrann's Meat Locker. Loot it for MacGrann's Dried Meats"
+  collect 2667 x1 quest 312.1 -- Collect MacGrann's Dried Meats (x1)
+step
+  only Warlock
+  zone map 1426
+  note "Cast [Polymorph] on Old Icebeard" only Mage
+  note "Cast [Fear] on Old Icebeard" only Warlock
+  note "Open MacGrann's Meat Locker. Loot it for MacGrann's Dried Meats"
+  collect 2667 x1 quest 312.1 -- Collect MacGrann's Dried Meats (x1)
+step
+  when onquest 312
+  zone map 1426
+  note "Talk to Tundra MacGrann"
+  turnin 312 -- Turn in Tundra MacGrann's Stolen Stash
+step
+  only Mage
+  along until next_113
+  zone map 1426
+  note "Talk to Keeg Gibn"
+  vendor 1697 -- Buy up to 10 more [Ice Cold Milk]
+step
+  only Priest
+  along until next_113
+  zone map 1426
+  note "Talk to Keeg Gibn"
+  vendor 1697 -- Buy up to 10 more [Ice Cold Milk]
+step
+  only Warlock
+  along until next_113
+  zone map 1426
+  note "Talk to Keeg Gibn"
+  vendor 1697 -- Buy up to 10 more [Ice Cold Milk]
+step
+  only Warrior
+  label next_113
+  along until next_114
+  zone map 1426
+  note "Talk to Keeg Gibn"
+  vendor 1697 -- Vendor trash
+step
+  only Paladin
+  along until next_114
+  zone map 1426
+  note "Talk to Keeg Gibn"
+  vendor 1697 -- Vendor trash
+step
+  only Rogue
+  along until next_114
+  zone map 1426
+  note "Talk to Keeg Gibn"
+  vendor 1697 -- Vendor trash
+step
+  label next_114
+  zone map 1426
+  note "Talk to Rejold Barleybrew"
+  turnin 315 -- Turn in The Perfect Stout
+  accept 413 -- Accept Shimmer Stout
+step
+  zone map 1426
+  note "Talk to Marleth Barleybrew"
+  turnin 311 -- Turn in Return to Marleth
+step
+  zone map 1426
+  note "Kill Leper Gnomes. Loot them for their Gears and Cogs"
+  collect 3084 x8 quest 412.2 @25,43.5 map 1426 -- Collect Gyromechanic Gear (x8)
+  collect 3083 x8 quest 412.1 @25,43.5 map 1426 -- Collect Restabilization Cog (x8)
+step
+  level 9 -- Grind to 9
+step
+  along until next_119
+  zone map 1426
+  goto 24.509,50.831 map 1426 r 20 -- Enter Frostmane Hold
+step
+  label next_119
+  along until next_120
+  zone map 1426
+  note "Kill Frostmane Headhunters"
+  kill 1123 x5 quest 287.1 @24.509,50.831 map 1426 -- Kill Frostmane Headhunter (x5)
+step
+  label next_120
+  zone map 1426
+  note "Drop down to this location to explore Frostmane Hold. If there are mobs below, clear around normally and do NOT drop down"
+  goto 22.86,52.16 map 1426 r 8
+  note "Fully explore Frostmane Hold"
+step
+  only Hunter
+  along until next_122
+  note "XP checkpoint: 10-2325"
+step
+  label next_122
+  zone map 1426
+  note "Kill Frostmane Headhunters"
+  kill 1123 x5 quest 287.1 @21.3,52.9 map 1426 -- Kill Frostmane Headhunter (x5)
+step
+  only Hunter
+  note "XP checkpoint: 10-1400"
+step
+  along until next_125
+  hearth "Kharanos" optional -- Hearth to Kharanos
+step
+  label next_125
+  along until next_126
+  zone map 1426
+  goto 46.726,53.826 map 1426 r 150 -- Travel to Kharanos
+step
+  only Hunter
+  label next_126
+  zone map 1426
+  note "Talk to Razzle Sprysprocket"
+  turnin 412 -- Turn in Operation Recombobulation
+step
+  zone map 1426
+  note "Talk to Senir Whitebeard"
+  turnin 287 -- Turn in Frostmane Hold
+  accept 291 -- Accept The Reports
+step
+  only Rogue
+  when level>=10
+  zone map 1426
+  note "Talk to Hogral Bakkan inside in the backroom"
+  accept 2218 -- Accept Road to Salvation
+step
+  zone map 1426
+  goto 47.18,52.61 map 1426 r 8
+  note "Talk to Thamner Pol"
+  learn 3273 "First Aid"
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  zone map 1426
+  note "Talk to Razzle Sprysprocket"
+  turnin 412 -- Turn in Operation Recombobulation
+step
+  only Hunter
+  zone map 1426
+  note "Talk to Grif Wildheart"
+  accept 6064 -- Accept Taming the Beast
+step
+  only Hunter
+  when onquest 6064
+  zone map 1426
+  note "Use the [Taming Rod] on a Large Crag Boar"
+  kill 1126 x1 quest 6064.1 @48.3,56.9 map 1426 -- Tame a Large Crag Boar (1)
+step
+  only Hunter
+  when onquest 6064
+  turnin 6064 -- Turn in Taming the Beast
+step
+  only Hunter
+  zone map 1426
+  note "Talk to Grif Wildheart"
+  accept 6084 -- Accept Taming the Beast
+step
+  only Hunter
+  when onquest 6084
+  zone map 1426
+  note "Use the [Taming Rod] on a Snow Leopard"
+  kill 1201 x1 quest 6084.1 @49.4,59.4 map 1426 -- Tame a Snow Leopard (1)
+step
+  only Hunter
+  when onquest 6084
+  turnin 6084 -- Turn in Taming the Beast
+step
+  only Hunter
+  zone map 1426
+  note "Talk to Grif Wildheart"
+  accept 6085 -- Accept Taming the Beast
+step
+  only Hunter
+  when onquest 6085
+  zone map 1426
+  note "Use the [Taming Rod] on a Ice Claw Bear"
+  kill 1196 x1 quest 6085.1 @50.4,59.7 map 1426 -- Tame an Ice Claw Bear (1)
+step
+  only Hunter
+  when onquest 6085
+  turnin 6085 -- Turn in Taming the Beast
+step
+  only Hunter
+  zone map 1426
+  note "Talk to Grif Wildheart"
+  accept 6086 -- Accept Training the Beast
+step
+  only Warrior
+  along until next_139
+  note "Grind until you have 10s30c, then run into Ironforge"
+step
+  only Warrior
+  label next_139
+  zone map 1426
+  zone map 1455
+  goto 47.58,41.58 map 1426 r 40 optional
+  goto 50.19,40.79 map 1426 r 20 optional
+  goto 14.9,87.1 map 1455 r 40 -- Travel to Ironforge
+step
+  only Hunter
+  zone map 1426
+  zone map 1455
+  goto 47.58,41.58 map 1426 r 40 optional
+  goto 50.19,40.79 map 1426 r 20 optional
+  goto 14.9,87.1 map 1455 r 40 -- Travel to Ironforge
+step
+  only Hunter
+  when onquest 6086
+  zone map 1455
+  note "Talk to Belia Thundergranite"
+  turnin 6086 -- Turn in Training the Beast
+step
+  only Warrior
+  zone map 1455
+  note "Talk to Bixi Wobblebonk"
+  train 13084 -- Train Thrown
+step
+  only Warrior
+  zone map 1455
+  goto 62.375,88.679 map 1455 r 8
+  note "Talk to Brenwyn Wintersteel down stairs"
+  note "Buy a [Balanced Throwing Dagger] and equip it"
+step
+  only Warrior
+  along until next_144
+  zone map 1426
+  goto 53.5,34.9 map 1426 r 60 optional
+  goto 52.9,35.62 map 1426 r 8 optional
+step
+  only Hunter
+  along until next_144
+  zone map 1426
+  goto 53.5,34.9 map 1426 r 60 optional
+  goto 52.9,35.62 map 1426 r 8 optional
+step
+  label next_144
+  zone map 1426
+  note "Talk to Rudra Amberstill"
+  accept 314 -- Accept Protecting the Herd
+step
+  along until next_146
+  zone map 1426
+  goto 62.3,50.3 map 1426 r 14 optional
+  goto 62.2,49.4 map 1426 r 10 optional -- Run up this part of the mountain
+step
+  label next_146
+  zone map 1426
+  note "Kill Vagash. Loot him for his Fang"
+  note "This quest is difficult. Find a group for him if needed. Skip this step if you're unable to find a group or solo him"
+  note "Watch the video below before you attempt to kill Vagash. It can be soloed on any class"
+  collect 3627 x1 quest 314.1 -- Collect Fang of Vagash (1)
+step
+  zone map 1426
+  note "Talk to Rudra Amberstill"
+  note "Choose [Coldridge Hammer] as your reward. Don't worry if you can't equip it yet, you will train 2H Maces very soon!" only Warrior
+  turnin 314 -- Turn in Protecting the Herd
+step
+  along until next_149
+  zone map 1426
+  goto 68.5,54.6 map 1426 r 60 -- Travel to Gol'Bolar Quarry
+step
+  label next_149
+  zone map 1426
+  goto 68.379,54.492 map 1426 r 8
+  note "Talk to Cook Ghilm"
+  learn 2550 "Cooking"
+step
+  zone map 1426
+  goto 68.6,54.7 map 1426 r 8
+  note "Talk to Kazan Mogosh"
+  vendor 1237 only Warrior -- Buy [Freshly Baked Bread] if needed
+  vendor 1237 only Rogue -- Buy [Freshly Baked Bread] if needed
+  vendor 1237 only !Warrior,!Rogue -- Buy [Freshly Baked Bread] and [Ice Cold Milk] if needed
+step
+  zone map 1426
+  note "Talk to Senator Mehr Stonehallow and Foreman Stonebrow"
+  accept 433 -- Accept The Public Servant
+  accept 432 -- Accept Those Blasted Troggs!
+  goto 69.084,56.33 map 1426 r 8 optional
+step
+  zone map 1426
+  note "Kill Rockjaw Skullthumpers and Rockjaw Bonesnappers"
+  kill 1115 x6 quest 432.1 @70.7,56.4 map 1426 -- Kill Rockjaw Skullthumper (x6)
+  kill 1117 x10 quest 433.1 @70.7,56.4 map 1426 -- Kill Rockjaw Bonesnapper (x10)
+step
+  zone map 1426
+  note "Talk to Foreman Stonebrow and Senator Mehr Stonehallow"
+  turnin 432 -- Turn in Those Blasted Troggs!
+  turnin 433 -- Turn in The Public Servant
+  goto 68.671,55.969 map 1426 r 8 optional
+step
+  zone map 1426
+  goto 67.1,59.7 map 1426 r 8
+  level 10 -- Grind to 10
+step
+  zone map 1426
+  note "Talk to Pilot Hammerfoot"
+  accept 419 -- Accept The Lost Pilot
+step
+  zone map 1426
+  note "Click the Dwarven Corpse"
+  turnin 419 -- Turn in The Lost Pilot
+  accept 417 -- Accept A Pilot's Revenge
+step
+  zone map 1426
+  note "Kill Mangeclaw. Loot him for his Claw"
+  collect 3183 x1 quest 417.1 -- Collect Mangy Claw (x1)
+step
+  zone map 1426
+  note "Talk to Pilot Hammerfoot"
+  turnin 417 -- Turn in A Pilot's Revenge
+step
+  zone map 1426
+  note "Talk to Mountaineer Barleybrew"
+  goto 79.6,50.7 map 1426 r 50 optional
+  goto 82.3,53.5 map 1426 r 25 optional
+  turnin 413 -- Turn in Shimmer Stout
+  accept 414 -- Accept Stout to Kadrell
+step
+  along until next_161
+  zone map 1426
+  zone map 1432
+  goto 86.203,51.26 map 1426 r 15 optional
+  goto 22.071,73.127 map 1432 r 200 optional -- Travel to Loch Modan
+step
+  label next_161
+  zone map 1432
+  note "Talk to Mountaineer Cobbleflint"
+  accept 224 -- Accept In Defense of the King's Lands
+step
+  zone map 1432
+  note "Talk to Captain Rugelfuss in the bunker"
+  accept 267 -- Accept The Trogg Threat
+step
+  along until HonorStudents
+  note "Talk to Mountaineer Kadrell"
+  note "Mountaineer Kadrell patrols the road through Thelsamar"
+  turnin 414 -- Turn in Stout to Kadrell
+  accept 416 -- Accept Rat Catching
+  accept 1339 -- Accept Mountaineer Stormpike's Task
+step
+  zone map 1432
+  note "Talk to Vidra Hearthstove"
+  accept 418 -- Accept Thelsamar Blood Sausages
+step
+  along until next_166
+  zone map 1432
+  note "Talk to Yanni Stoutheart"
+  vendor 1682 -- Buy a [Small Brown Pouch] if needed
+step
+  only Warrior,Hunter,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  label next_166
+  zone map 1432
+  note "Talk to Innkeeper Hearthstove"
+  sethome "Thelsamar" @35.534,48.404 map 1432 -- Set your Hearthstone to Thelsamar
+step
+  label HonorStudents
+  zone map 1432
+  note "Talk to Brock Stoneseeker"
+  accept 6387 -- Accept Honor Students
+step
+  zone map 1432
+  note "Talk to Mountaineer Kadrell"
+  note "Mountaineer Kadrell patrols the road through Thelsamar"
+  turnin 414 -- Turn in Stout to Kadrell
+  accept 416 -- Accept Rat Catching
+  accept 1339 -- Accept Mountaineer Stormpike's Task
+step
+  along until Thelsamar1
+  zone map 1432
+  note "Kill Elder Black Bears. Loot them for their Bear Meat"
+  note "Kill Mountain Boars. Loot them for their Boar Intestines"
+  note "Kill Forest Lurkers. Loot them for their Ichor"
+  collect 3172 x3 @36.77,46.2 map 1432 optional -- Collect Boar Intestines (x3)
+  collect 3173 x3 @36.77,46.2 map 1432 optional -- Collect Bear Meat (x3)
+  collect 3174 x3 @36.77,46.2 map 1432 optional -- Collect Spider Ichor (x3)
+  note "Save any [Chunks of Boar Meat] to use for leveling [Cooking] later"
+  note "Don't go out of your way to complete this right now. You'll come back to Loch Modan soon"
+step
+  along until next_171
+  zone map 1432
+  goto 23.85,17.92 map 1432 r 100 -- Travel north to the Algaz Station
+step
+  label next_171
+  zone map 1432
+  note "Talk to Mountaineer Stormpike"
+  turnin 1339 -- Turn in Mountaineer Stormpike's Task
+  accept 1338 -- Accept Stormpike's Order
+step
+  when complete 418
+  label next_174
+  zone map 1432
+  note "Talk to Vidra Hearthstove"
+  turnin 418 -- Turn in Thelsamar Blood Sausages
+step
+  label Thelsamar1
+  zone map 1432
+  note "Talk to Thorgrum Borrelson"
+  turnin 6387 -- Turn in Honor Students
+  accept 6391 -- Accept Ride to Ironforge
+step
+  zone map 1432
+  goto 33.938,50.954 map 1432 r 8
+  note "Talk to Thorgrum Borrelson"
+  fly "Ironforge" -- Fly to Ironforge
+step
+  zone map 1455
+  note "Talk to Golnir Bouldertoe"
+  turnin 6391 -- Turn in Ride to Ironforge
+  accept 6388 -- Accept Gryth Thurden
+step
+  only Hunter
+  zone map 1455
+  note "Do NOT fly anywhere"
+  note "Talk to Gryth Thurden"
+  turnin 6388 -- Turn in Gryth Thurden
+  accept 6392 -- Accept Return to Brock
+step
+  zone map 1455
+  note "Talk to Senator Barin Redstone"
+  turnin 291 -- Turn in The Reports
+step
+  only Warrior
+  zone map 1455
+  note "Talk to Buliwyf Stonehand"
+  note "Equip the [Coldridge Hammer] now if you didn't earlier"
+  train 11865 -- Train 2h Maces
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  zone map 1455
+  note "Do NOT fly anywhere"
+  note "Talk to Gryth Thurden"
+  turnin 6388 -- Turn in Gryth Thurden
+  accept 6392 -- Accept Return to Brock
+step
+  zone map 1455
+  note "Enter the Deeprun Tram"
+  note "Talk to Monty on the middle platform"
+  accept 6661 @78,52 map 1455 -- Accept Deeprun Rat Roundup
+step
+  zone map 1455
+  use 17117 @78,52 map 1455 -- Use the [Rat Catcher's Flute] on Deeprun Rats
+  kill 13016 x5 quest 6661.1 @78,52 map 1455 -- Rats Captured (x5)
+step
+  zone map 1455
+  note "Talk to Monty"
+  turnin 6661 @78,52 map 1455 -- Turn in Deeprun Rat Roundup
+  accept 6662 @78,52 map 1455 -- Accept Me Brother, Nipsy
+step
+  along until next_186
+  note "Level your [First Aid] and [Cooking] if needed while waiting for the Tram"
+  note "You will need your [First Aid] to be 80 for a quest at level 24" only Rogue,Human,Gnome,NightElf,Orc,Troll,Tauren,Undead,Skyborne
+step
+  label next_186
+  zone map 1455
+  note "Talk to Nipsy when you get off the Tram"
+  note "Nipsy is on the center platform"
+  turnin 6662 @78,52 map 1455 -- Turn in Me Brother, Nipsy
+step
+  note "Talk to Grimand Elmore"
+  accept 353 -- Accept Stormpike's Delivery
+step
+  note "Talk to Furen Longbeard"
+  turnin 1338 -- Turn in Stormpike's Order
+step
+  only Priest
+  when onquest 5634
+  turnin 5634 -- Turn in Desperate Prayer
+step
+  only Priest
+  label next_191
+  note "Talk to High Priestess Laurena"
+  train 376 -- Train your class spells
+step
+  only Priest
+  note "Talk to High Priestess Laurena"
+  learn 13908 "Desperate Prayer"
+step
+  only Warrior
+  note "Talk to Ilsa"
+  train 5480 -- Train your class spells
+  accept 1638 -- Accept A Warrior's Training
+step
+  only Warrior
+  when onquest 1638
+  turnin 1638 -- Turn in A Warrior's Training
+step
+  only Warrior
+  label next_195
+  note "Talk to Harry Burlguard"
+  accept 1639 -- Accept Bartleby the Drunk
+step
+  only Warrior
+  when onquest 1639
+  turnin 1639 -- Turn in Bartleby the Drunk
+step
+  only Warrior
+  note "Talk to Bartleby"
+  accept 1640 -- Accept Beat Bartleby
+step
+  only Warrior
+  note "Attack Bartleby. He will submit at 1%"
+  kill 6090 x1 quest 1640.1 -- Beat Bartleby
+step
+  only Warrior
+  when onquest 1640
+  turnin 1640 -- Turn in Beat Bartleby
+step
+  only Warrior
+  note "Talk to Bartleby"
+  accept 1665 -- Accept Bartleby's Mug
+step
+  only Warrior
+  when onquest 1665
+  note "Talk to Harry Burlguard"
+  turnin 1665 -- Turn in Bartleby's Mug
+step
+  only Warlock
+  label next_201
+  note "Talk to Ursula Deline"
+  train 5495 -- Train your class spells
+step
+  only Warlock
+  note "Talk to Gakin the Darkbinder"
+  accept 1688 -- Accept Surena Caledon
+step
+  note "Talk to Woo Ping"
+  train 11867 only Rogue -- Train 1h Swords
+  train 11867 only Mage -- Train 1h Swords
+  train 11867 only Priest -- Train Staves
+  train 11867 only Warlock -- Train 1h Swords and Staves
+  train 11867 only Warrior -- Train 2h Swords
+  train 11867 only Paladin -- Train 2h Swords
+step
+  only Paladin,Dwarf
+  zone map 1455
+  note "Talk to Innkeeper Allison"
+  sethome "Stormwind" @78,52 map 1455 -- Set your Hearthstone to Stormwind
+step
+  only Rogue
+  note "Talk to Gunther Weller"
+  vendor 1289 -- Buy a [Cutlass] and equip it in your Main-Hand. Equip the [Craftsman's Dagger] from earlier in your Off-Hand
+step
+  only Rogue
+  note "Talk to Thurman Mullby"
+  vendor 1285 -- Buy a [Keen Throwing Knife]. Equip it when you're level 11

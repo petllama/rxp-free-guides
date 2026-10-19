@@ -1,0 +1,600 @@
+guide rxp-free/19-20-deadmines-089ed7e3
+title "19-20 Deadmines"
+levels 19-20
+zone map 1436
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · Dungeon Guide 1-20"
+next rxp-free/20-21-darkshore-ashenvale-f3614875
+step
+  label FlyWestfall
+  along until TDB1
+  zone map 1453
+  goto 66.276938,62.137169 map 1453 r 8
+  note "Talk to Dungar Longdrink"
+  note "If you do not already have the Westfall flight path, skip this step" only NightElf,Orc,Troll,Tauren,Undead,Skyborne
+  fly "Westfall" -- Fly to Westfall
+step
+  zone map 1453
+  goto 66.276938,62.137169 map 1453 r 8
+  note "Talk to Dungar Longdrink"
+  note "If you do not already have the Westfall flight path, skip this step" only NightElf,Orc,Troll,Tauren,Undead,Skyborne
+  fly "Westfall" -- Fly to Westfall
+step
+  label TDB1
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  accept 65 -- Accept The Defias Brotherhood
+step
+  when !zone "Redridge Mountains"
+  when !zone "Elwynn Forest"
+  along until RRDB
+  zone map 1453
+  zone map 1436
+  goto 66.276938,62.137169 map 1453 r 1 optional
+  goto 56.549914,52.64015 map 1436 r 1 optional
+  note "Talk to Dungar Longdrink or Thor"
+  note "If you do not already have the Redridge Mountains flight path, skip this step" only NightElf,Orc,Troll,Tauren,Undead,Skyborne
+  fly "Redridge" -- Fly to Redridge Mountains
+step
+  when !turnedin 132
+  zone map 1433
+  goto 15.457976,71.26104 map 1433 r 8
+step
+  zone map 1433
+  note "Talk to Foreman Oslow"
+  accept 125 -- Accept The Lost Tools
+step
+  label RRDB
+  zone map 1433
+  note "Talk to Wiley the Black inside upstairs"
+  turnin 65 -- Turn in The Defias Brotherhood
+  accept 132 -- Accept The Defias Brotherhood
+step
+  zone map 1433
+  note "Talk to Shawn"
+  accept 3741 -- Accept Hilary's Necklace
+step
+  zone map 1433
+  note "Jump into the Lake"
+  note "Open the Glinting Mud. Loot it for Hilary's Necklace"
+  note "It has multiple spawn locations in the Lake"
+  collect 10958 x1 quest 3741.1 -- Hilary's Necklace (1)
+step
+  zone map 1433
+  note "Open the Sunken Chest. Loot it for Oslow's Toolbox"
+  collect 1309 x1 quest 125.1 -- Oslow's Toolbox (1)
+step
+  zone map 1433
+  note "Talk to Foreman Oslow"
+  turnin 125 -- Turn in The Lost Tools
+step
+  zone map 1433
+  note "Talk to Hilary"
+  turnin 3741 -- Turn in Hilary's Necklace
+step
+  along until next_13
+  zone map 1433
+  goto 30.590409,59.41643 map 1433 r 8
+  note "Talk to Ariena Stormfeather"
+  fly "Westfall" -- Fly to Westfall
+step
+  label next_13
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  turnin 132 -- Turn in The Defias Brotherhood
+  accept 135 -- Accept The Defias Brotherhood
+step
+  along until SWDB
+  zone map 1436
+  goto 56.549914,52.64015 map 1436 r 8
+  note "Talk to Thor"
+  fly "Stormwind" -- Fly to Stormwind
+step
+  along until SWDB
+  zone map 1453
+  goto 74.900206,53.999759 map 1453 r 20 optional
+  goto 78.430003,60.150231 map 1453 r 20 optional
+  goto 78.670282,60.130149 map 1453 r 10 optional -- Enter the SI:7 Headquarters. Travel up stairs toward Master Mathias Shaw
+step
+  label SWDB
+  zone map 1453
+  note "Talk to Master Mathias Shaw"
+  turnin 135 -- Turn in The Defias Brotherhood
+  accept 141 -- Accept The Defias Brotherhood
+step
+  when !turnedin 103
+  zone map 1453
+  note "Talk to Auctioneer Jaxon"
+  note "Buy the following items for faster turn ins at Westfall shortly:"
+  note "If you don't want to or can't do this, skip this step"
+  note "[Flask of Oil]"
+  collect 814 x5 @53.612072,59.764223 map 1453 -- Flask of Oil (5)
+step
+  along until EnterDM
+  zone map 1453
+  note "Talk to Dungar Longdrink"
+  goto 66.276938,62.137169 map 1453 r 8
+  fly "Westfall" -- Fly to Westfall
+step
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  turnin 141 -- Turn in The Defias Brotherhood
+  accept 142 -- Accept The Defias Brotherhood
+step
+  only Druid
+  zone map 1436
+  note "Talk to Innkeeper Heather"
+  sethome "Westfall" @52.8,53.6 map 1436 -- Set your Hearthstone to Westfall
+step
+  along until next_22
+  zone map 1436
+  goto 44.499914,69.620153 map 1436 r 55 -- Travel to Moonbrook
+step
+  label next_22
+  zone map 1436
+  note "Kill the Defias Messenger. Loot him for his Mysterious Message"
+  note "The Defias Messenger spawns in Moonbrook. He walks along the road north of Moonbrook, to the Gold Coast Quarry and Jangolode Mine. If you don't see him along the road, wait for him to spawn in Moonbrook"
+  collect 1381 x1 quest 142.1 -- A Mysterious Message (1)
+step
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  turnin 142 -- Turn in The Defias Brotherhood
+step
+  zone map 1436
+  note "Talk to The Defias Traitor"
+  note "You may need to wait for The Defias Traitor to spawn if he's not there"
+  accept 155 -- Accept The Defias Brotherhood
+step
+  zone map 1436
+  goto 42.559914,71.709867 map 1436 r 8
+  note "Escort the The Defias Traitor to the Deadmines"
+  complete 155 -- Escort The Defias Traitor to discover where VanCleef is hiding (1)
+step
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  turnin 155 -- Turn in The Defias Brotherhood
+  accept 166 -- Accept The Defias Brotherhood
+step
+  zone map 1436
+  note "Talk to Scout Riell atop the Tower"
+  accept 214 -- Accept Red Silk Bandanas
+step
+  zone map 1436
+  goto 56.454,69.982 map 1436 r 1 optional
+  goto 56.434,74.339 map 1436 r 1 optional
+  goto 59.384,74.184 map 1436 r 1 optional
+  goto 60.871,74.362 map 1436 r 1 optional
+  goto 60.902,77.64 map 1436 r 1 optional
+  goto 63.442,77.339 map 1436 r 1 optional
+  goto 65.203,75.286 map 1436 r 1 optional
+  goto 63.594,72.862 map 1436 r 1 optional
+  goto 63.825,70.125 map 1436 r 1 optional
+  goto 42.649,71.376 map 1436 r 8
+  note "Grind Gnolls south of Sentinel Hill whilst assembling a Deadmines group"
+step
+  zone map 1436
+  goto 42.549914,71.690153 map 1436 r 8
+step
+  when onquest 214
+  along until EnterDM
+  zone map 1436
+  note "Kill the Defias. Loot them for their Red Silk Bandanas"
+  note "You can also complete this inside the Deadmines"
+  collect 915 x10 quest 214.1 @42.549914,71.690153 map 1436 -- Red Silk Bandana (10)
+step
+  when onquest 168
+  along until next_32
+  zone map 1436
+  note "Kill Skeletal Miners, Undead Dynamiters and Undead Excavators. Loot them for their Cards"
+  note "NOTE: This quest does NOT give bonus XP similar to other dungeon quests, and takes significantly longer to complete. Consider skipping this quest if your group agrees"
+  note "This is completed OUTSIDE of the Dungeon"
+  collect 1894 x4 quest 168.1 @42.549914,71.690153 map 1436 -- Miners' Union Card (4)
+step
+  label next_32
+  zone map 1415
+  goto 41.18,79.8 map 1415 r 25 optional
+  goto 41.03,79.96 map 1415 r 25 optional
+  goto 40.92,80.05 map 1415 r 25 optional
+  goto 41.08,80.11 map 1415 r 8
+  note "Kill Foreman Thistlenettle. Loot him for his Badge"
+  note "This is completed OUTSIDE of the Dungeon"
+  note "Thistlenettle's Badge (1)"
+step
+  when onquest 168
+  zone map 1415
+  note "Kill Skeletal Miners, Undead Dynamiters and Undead Excavators. Loot them for their Cards"
+  note "NOTE: This quest does NOT give bonus XP similar to other dungeon quests, and takes significantly longer to complete. Consider skipping this quest if your group agrees"
+  note "This is completed OUTSIDE of the Dungeon"
+  collect 1894 x4 quest 168.1 @41.08,80.11 map 1415 -- Miners' Union Card (4)
+step
+  label EnterDM
+  zone map 1415
+  goto 40.94,79.76 map 1415 r 25 optional
+  goto 40.86,79.62 map 1415 r 20 optional
+  goto 40.678,79.578 map 1415 r 8
+step
+  along until DMend
+  zone map 1415
+  note "Kill the Defias inside The Deadmines. Loot them for their Bandanas"
+  collect 915 x10 quest 214.1 @40.678,79.578 map 1415 -- Red Silk Bandana (10)
+step
+  when onquest 2040
+  zone map 1415
+  note "Kill Sneed. Loot him for the Gnoam Sprecklesprocket"
+  collect 7365 x1 quest 2040.1 @40.678,79.578 map 1415 -- Gnoam Sprecklesprocket (1)
+step
+  label DMend
+  zone map 1415
+  note "Kill Edwin VanCleef. Loot him for his Head and [An Unsent Letter]"
+  note "Use [An Unsent Letter] to start the quest"
+  collect 2874 x1 @40.678,79.578 map 1415 optional -- An Unsent Letter (1)
+  collect 3637 x1 quest 166.1 -- Head of VanCleef (1)
+  accept 373 -- Accept The Unsent Letter
+  use 2874 @40.678,79.578 map 1415 -- An Unsent Letter
+step
+  along until next_39
+  zone map 1436
+  goto 30.009914,86.019869 map 1436 r 40 -- Travel to the Westfall Lighthouse
+step
+  when has 814 x5
+  label next_39
+  zone map 1436
+  note "Talk to Captain Grayson"
+  accept 104 -- Accept The Coastal Menace
+  accept 103 -- Accept Keeper of the Flame
+  turnin 103 -- Turn in Keeper of the Flame
+step
+  zone map 1436
+  note "Talk to Captain Grayson"
+  accept 104 -- Accept The Coastal Menace
+step
+  zone map 1436
+  note "Kill Old Murk-Eye. Loot him for his Scale"
+  collect 3636 x1 quest 104.1 @34.429914,83.930155 map 1436 -- Scale of Old Murk-Eye (1)
+step
+  when complete 104
+  zone map 1436
+  note "Talk to Captain Grayson"
+  turnin 104 -- Turn in The Coastal Menace
+step
+  only Druid
+  zone map 1436
+  note "Click the Burned-Out Remains on the ground"
+  accept 79008 -- Accept ...and that note you found
+step
+  only Druid
+  along until next_45
+  zone map 1436
+  goto 17.928,33.099 map 1436 r 50 -- Swim out to sea
+step
+  only Druid
+  when !turnedin 272
+  label next_45
+  zone map 1436
+  note "Open the Strange Lockbox. Loot it for the Half Pendant of Aquatic Endurance"
+  collect 15882 x1 @17.928,33.099 map 1436 -- Collect Half Pendant of Aquatic Endurance (x1)
+step
+  only Druid
+  along until next_47
+  note "Cast Teleport: Moonglade"
+step
+  only Druid
+  label next_47
+  zone map 1450
+  note "Talk to Loganaar"
+  train 12042 -- Train your class spells
+step
+  only Druid
+  when onquest 272
+  collect 15885 x1 quest 272.1 @36.000005,41.399912 map 1450 -- Collect Pendant of the Sea Lion (x1)
+step
+  only Druid
+  zone map 1450
+  use 15883 @36.000005,41.399912 map 1450 -- Use the [Half Pendant of Aquatic Agility] to combine it with the [Half Pendant of Aquatic Endurance] at the Shrine of Remulos
+step
+  only Druid
+  along until next_50
+  note "Cast Teleport: Moonglade"
+  note "This will save you time from running back"
+step
+  only Druid
+  when onquest 272
+  turnin 272 -- Turn in Trial of the Sea Lion
+step
+  only Druid
+  label next_50
+  zone map 1450
+  note "Talk to Dendrite Starblaze"
+  accept 5061 -- Accept Aquatic Form
+step
+  only Druid
+  hearth "Sentinel Hill" optional -- Hearth to Sentinel Hill
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Warlock
+  zone map 1436
+  note "Click the Burned-Out Remains on the ground"
+  accept 79008 -- Accept ...and that note you found
+step
+  along until RSB
+  zone map 1436
+  goto 56.329914,47.520007 map 1436 r 100 -- Travel to Sentinel Hill
+step
+  when complete 166
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  turnin 166 -- Turn in The Defias Brotherhood
+  goto 56.329914,47.520007 map 1436 r 8 optional
+step
+  when complete 214
+  label RSB
+  zone map 1436
+  note "Talk to Scout Riell atop the tower"
+  turnin 214 -- Turn in Red Silk Bandanas
+  goto 56.669914,47.349864 map 1436 r 8 optional
+step
+  zone map 1436
+  goto 56.549914,52.64015 map 1436 r 8
+  note "Talk to Thor"
+  fly "Redridge" -- Fly to Redridge Mountains
+step
+  zone map 1433
+  note "Talk to Guard Parker"
+  accept 244 -- Accept Encroaching Gnolls
+step
+  zone map 1433
+  note "Talk to Deputy Feldon"
+  turnin 244 -- Turn in Encroaching Gnolls
+  accept 246 -- Accept Assessing the Threat
+  accept 98407 -- Accept Show of Force
+step
+  zone map 1433
+  note "Talk to Marshal Marris"
+  accept 20 -- Accept Blackrock Menace
+  accept 98387 -- Accept Blackrock Blockade
+step
+  zone map 1433
+  note "Click the Wanted Poster"
+  accept 95999 -- Accept WANTED: Incinerator Gar'im
+step
+  loop
+  zone map 1433
+  goto 15.798859,63.235782 map 1433 r 50
+  goto 29.48991,82.799693 map 1433 r 45
+  goto 32.520082,81.780297 map 1433 r 45
+  goto 43.18004,72.219659 map 1433 r 45
+  goto 31.129833,82.180182 map 1433 r 45
+  note "Kill Redridge Mongrels and Redridge Poachers"
+  note "Kill Redridge Thrashers. Loot them for their Spiked Collars"
+  kill 423 x10 quest 246.1 -- Redridge Mongrel (10)
+  kill 424 x6 quest 246.2 -- Redridge Poacher (6)
+  collect 280911 x5 quest 98407.1 -- Spiked Collar (5)
+step
+  when onquest 95999
+  label IncineratorGarim
+  along
+  zone map 1433
+  note "Kill Incinerator Gar'im inside the cave. Loot him for the Broken Staff of Incinerator Gar'im"
+  note "Skip this step if you are unable to find a group for him"
+  collect 271872 x1 quest 95999.1 @77.876383,86.310256 map 1433 -- Broken Staff of Incinerator Gar'im (1)
+step
+  along until orcs
+  zone map 1433
+  note "Loot the Grain Sacks and Meat Haunches on the ground for Stolen Supplies"
+  note "Loot the Weapon Racks and Stolen Weapons the ground"
+  collect 280841 x8 quest 98387.1 @77.876383,86.310256 map 1433 -- Stolen Supplies (10)
+  collect 280839 x10 quest 98387.2 @77.876383,86.310256 map 1433 -- Stolen Weapon (8)
+step
+  label orcs
+  loop
+  zone map 1433
+  note "Kill Blackrock Grunts and Blackrock Outrunners. Loot them for their Axes"
+  note "Be aware the Blackrock Outrunners will cast [Net] on you"
+  goto 73.999993,78.999749 map 1433 r 60
+  goto 76.1798,83.390197 map 1433 r 60
+  goto 77.799915,68.49983 map 1433 r 60
+  goto 70.109783,77.340122 map 1433 r 60
+  goto 73.999993,78.999749 map 1433 r 60
+  collect 3014 x10 quest 20.1 -- Battleworn Axe (10)
+step
+  loop
+  zone map 1433
+  goto 73.999993,78.999749 map 1433 r 60
+  goto 76.1798,83.390197 map 1433 r 60
+  goto 77.799915,68.49983 map 1433 r 60
+  goto 70.109783,77.340122 map 1433 r 60
+  goto 73.999993,78.999749 map 1433 r 60
+  note "Loot the Grain Sacks and Meat Haunches on the ground for Stolen Supplies"
+  note "Loot the Weapon Racks and Stolen Weapons the ground"
+  collect 280841 x8 quest 98387.1 -- Stolen Supplies (10)
+  collect 280839 x10 quest 98387.2 -- Stolen Weapon (8)
+step
+  when onquest 95999
+  zone map 1433
+  note "Kill Incinerator Gar'im inside the cave. Loot him for the Broken Staff of Incinerator Gar'im"
+  note "Skip this step if you are unable to find a group for him"
+  collect 271872 x1 quest 95999.1 @77.876383,86.310256 map 1433 -- Broken Staff of Incinerator Gar'im (1)
+step
+  note "Review this source step manually."
+step
+  zone map 1433
+  note "Talk to Deputy Feldon"
+  turnin 246 -- Turn in Assessing the Threat
+  turnin 98407 -- Turn in Show of Force
+step
+  zone map 1433
+  note "Talk to Marshal Marris"
+  turnin 20 -- Turn in Blackrock Menace
+  turnin 98387 -- Turn in Blackrock Blockade
+step
+  when complete 95999
+  zone map 1433
+  note "Talk to Magistrate Solomon"
+  turnin 95999 -- Turn in WANTED: Incinerator Gar'im
+step
+  level 20 -- Grind to 20
+step
+  label Level20Check
+  note "Review this source step manually."
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Warlock
+  when !zone "Stormwind City"
+  when !zone "Darkshore"
+  hearth "Stormwind" optional -- Hearth to Stormwind
+step
+  when !zone "Stormwind City"
+  when !zone "Darkshore"
+  along until DarkshoreBoat
+  zone map 1433
+  zone map 1436
+  goto 30.590409,59.41643 map 1433 r 1 optional
+  goto 56.549914,52.64015 map 1436 r 1 optional
+  note "Talk to Ariena Stormfeather or Thor"
+  fly "Stormwind" -- Fly to Stormwind
+step
+  only Rogue
+  zone map 1453
+  note "Talk to Osborne"
+  note "Turn in the Deadmines quests if you are not level 20 yet"
+  train 918 -- Train your class spells
+step
+  only Rogue
+  zone map 1453
+  note "Talk to Master Mathias Shaw"
+  accept 2360 -- Accept Mathias and the Defias
+  goto 75.780238,59.840086 map 1453 r 8 optional
+step
+  only Warrior
+  zone map 1453
+  note "Talk to Wu or Ilsa"
+  note "Turn in the Deadmines quests if you are not level 20 yet"
+  goto 76.080029,50.139677 map 1453 r 15 optional
+  goto 80.219822,45.370356 map 1453 r 15 optional
+  goto 78.679953,45.789833 map 1453 r 8 optional
+  train class -- Train your class spells
+step
+  when complete 167
+  when onquest 167
+  zone map 1453
+  note "Talk to Wilder Thistlenettle"
+  turnin 167 -- Turn in Oh Brother. . .
+  goto 65.446004,21.169092 map 1453 r 8 optional
+step
+  when complete 168
+  when onquest 168
+  zone map 1453
+  note "Talk to Wilder Thistlenettle"
+  turnin 168 -- Turn in Collecting Memories
+  goto 65.446004,21.169092 map 1453 r 8 optional
+step
+  only Hunter
+  zone map 1453
+  note "Talk to Einris Brightspear"
+  train 5515 -- Train your class spells
+step
+  only Hunter
+  zone map 1453
+  note "Talk to Karrina Mekenda"
+  train 2879 -- Train your pet spells
+step
+  when complete 2040
+  when onquest 2040
+  zone map 1453
+  note "Talk to Shoni the Shilent"
+  turnin 2040 -- Turn in Underground Assault
+step
+  only Shaman
+  along until ShamTrain
+  zone map 1453
+  goto 61.149248,11.567863 map 1453 r 25 optional
+  goto 63.999866,8.1004826 map 1453 r 8 optional
+step
+  only Shaman
+  zone map 1455
+  note "Talk to Eldrun Stormbreaker::258098"
+  accept 94494 -- Accept Call of Water
+  train class -- Train your class spells
+step
+  only Shaman
+  when level>=22
+  label ShamTrain
+  zone map 1455
+  goto 47.166356,13.866245 map 1455 r 8
+  note "Talk to Eldrun Stormbreaker::258098"
+  train class -- Train your class spells
+step
+  only Shaman
+  when !zone "Darkshore"
+  when !zone "Ashenvale"
+  zone map 1455
+  goto 78.00019,52.000834 map 1455 r 5
+step
+  zone map 1453
+  note "Talk to Baros Alexston"
+  turnin 373 -- Turn in The Unsent Letter
+  accept 389 -- Accept Bazil Thredd
+step
+  only Warlock
+  along until next_89
+  zone map 1453
+  goto 29.200309,73.99967 map 1453 r 20 optional
+  goto 27.199967,78.099612 map 1453 r 15 optional -- Travel to The Slaughtered Lamb and go downstairs
+step
+  only Warlock
+  label next_89
+  zone map 1453
+  note "Talk to Ursula Deline"
+  train 5495 -- Train your class spells
+step
+  only Warlock
+  zone map 1453
+  note "Talk to Gakin the Darkbinder"
+  accept 1716 -- Accept Devourer of Souls
+step
+  only Mage
+  along until next_92
+  zone map 1453
+  goto 37.689675,82.090223 map 1453 r 10 -- Travel to the Mage Tower
+step
+  only Mage
+  label next_92
+  zone map 1453
+  note "Talk to Elsharin"
+  train 5498 -- Train your class spells
+step
+  only Priest
+  along until next_94
+  zone map 1453
+  goto 42.510136,33.510086 map 1453 r 20 -- Travel to the Stormwind Cathedral
+step
+  only Paladin
+  along until next_94
+  zone map 1453
+  goto 42.510136,33.510086 map 1453 r 20 -- Travel to the Stormwind Cathedral
+step
+  only Paladin
+  label next_94
+  zone map 1453
+  note "Talk to Arthur the Faithful"
+  train 5491 -- Train your class spells
+step
+  only Priest
+  zone map 1453
+  note "Talk to Brother Joshua"
+  train 5489 -- Train your class spells
+step
+  zone map 1453
+  note "Talk to Argos Nightwhisper"
+  accept 3765 -- Accept The Corruption Abroad
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Warlock
+  zone map 1453
+  goto 3.7842844,40.89333 map 1453 r 8
+  note "Level your [First Aid] while waiting for the boat to Darkshore if needed"
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Warlock
+  label DarkshoreBoat
+  zone map 1453
+  goto 3.7842844,40.89333 map 1453 r 8

@@ -1,0 +1,441 @@
+guide rxp-free/10-12-loch-modan-mage-aoe-2618a1c1
+title "10-12 Loch Modan Mage AoE"
+levels 10-12
+zone map 1432
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · Speedrun Guide Mage"
+class Mage
+next rxp-free/12-18-darkshore-mage-aoe-d3bb5ed9
+step
+  along until next_1
+  note "As you quest through Loch Modan, save ALL of the Chunks of Boar Meat you get and DO NOT vendor it. You'll need it for later"
+step
+  only Gnome
+  label next_1
+  zone map 1432
+  note "Talk to Mountaineer Cobbleflint"
+  accept 224 -- Accept In Defense of the King's Lands
+step
+  only Gnome
+  zone map 1432
+  note "Go into the bunker from behind"
+  note "Talk to Captain Rugelfuss"
+  accept 267 -- Accept The Trogg Threat
+step
+  only Gnome
+  zone map 1432
+  goto 29.899943,68.200239 map 1432 r 45 -- Run to the Troggs Entrance
+step
+  only Gnome
+  zone map 1432
+  goto 30.000004,72.400104 map 1432 r 50 optional
+  goto 34.699944,71.599922 map 1432 r 50 optional
+  goto 30.899822,81.099901 map 1432 r 50 optional
+  goto 30.000004,72.400104 map 1432 r 50 optional
+  goto 34.699944,71.599922 map 1432 r 50 optional
+  goto 30.899822,81.099901 map 1432 r 50
+  note "Kill Stonesplinter Troggs. Loot them for their Teeth"
+  note "Be careful as this quest can be difficult. Run if you misspull 2 mobs at once"
+step
+  only Gnome
+  when onquest 224
+  kill 1161 x10 quest 224.1 @30.899822,81.099901 map 1432 -- Kill Stonesplinter Trogg (x10)
+  kill 1162 x10 quest 224.2 @30.899822,81.099901 map 1432 -- Kill Stonesplinter Scout (x10)
+step
+  only Gnome
+  when onquest 267
+  collect 2536 x8 quest 267.1 @30.899822,81.099901 map 1432 -- Collect Trogg Stone Tooth (x8)
+step
+  only Gnome
+  when onquest 224
+  zone map 1432
+  note "Talk to Mountaineer Cobbleflint"
+  turnin 224 -- Turn in Defense of the King's Lands
+step
+  only Gnome
+  when onquest 267
+  zone map 1432
+  note "Go into the bunker from behind"
+  note "Talk to Captain Rugelfuss"
+  turnin 267 -- Turn in The Trogg Threat
+step
+  only Human
+  zone map 1432
+  goto 24.100063,18.199777 map 1432 r 8
+  vendor nearest -- Vendor and repair
+step
+  only Human
+  when onquest 353
+  turnin 353 -- Turn in Stormpike's Delivery
+step
+  only Human
+  zone map 1432
+  note "Talk to Mountaineer Stormpike"
+  accept 307 -- Accept Filthy Paws
+step
+  only Human
+  along until next_10
+  zone map 1432
+  note "Kill Spiders in the zone for Spider Ichor"
+  collect 3174 x3 @24.76387,18.397104 map 1432 -- Collect Spider Ichor (x3)
+  note "Kill Bears in the zone for Bear Meat"
+  collect 3173 x3 @24.76387,18.397104 map 1432 -- Collect Bear Meat (x3)
+  note "Kill Boars in the zone for Boar Intestines"
+  collect 3172 x3 @24.76387,18.397104 map 1432 -- Collect Boar Intestines (x3)
+step
+  only Human
+  label next_10
+  zone map 1432
+  goto 35.099823,47.799963 map 1432 r 130 -- Grind mobs en route for cooking quest later
+step
+  zone map 1432
+  note "Run up to Thelsamar. do NOT set your hearth" only Gnome
+  note "Talk to Vidra Hearthstove"
+  accept 418 -- Accept Thelsamar Blood Sausages
+step
+  zone map 1432
+  goto 34.800004,48.600145 map 1432 r 8
+  vendor nearest -- Buy 1-2 6 slot bags to fill your bag slots
+step
+  zone map 1432
+  goto 35.500065,48.400099 map 1432 r 8
+  vendor nearest -- Buy food/water (try to have 40 level 5 drink, 20 level 5 food)
+step
+  zone map 1432
+  note "Find Kadrell. He patrols along the Thelsamar road"
+  note "Talk to Mountaineer Kadrell"
+  accept 416 -- Accept Rat Catching
+  accept 1339 -- Accept Mountaineer Stormpike's Task
+step
+  along until Thelsamar1
+  zone map 1432
+  note "Kill Spiders in the zone for Thelsamar Blood Sausages"
+  collect 3174 x3 @36.700065,41.600189 map 1432 optional -- Collect Spider Ichor (x3)
+step
+  along until Thelsamar1
+  zone map 1432
+  note "Kill Bears in the zone for Thelsamar Blood Sausages"
+  collect 3173 x3 @36.700065,41.600189 map 1432 optional -- Collect Bear Meat (x3)
+step
+  along until Thelsamar1
+  zone map 1432
+  note "Kill Boars in the zone for Thelsamar Blood Sausages"
+  collect 3172 x3 @36.700065,41.600189 map 1432 optional -- Collect Boar Intestines (x3)
+step
+  only Gnome
+  zone map 1432
+  goto 24.100063,18.199777 map 1432 r 8
+  vendor nearest -- Vendor and repair
+step
+  only Gnome
+  zone map 1432
+  note "Talk to Mountaineer Stormpike"
+  turnin 1339 -- Turn in Mountaineer Stormpike's Task
+  accept 1338 -- Accept Stormpike's Order
+  accept 307 -- Accept Filthy Paws
+step
+  only Gnome
+  label Thelsamar1
+  zone map 1432
+  goto 33.709853,17.200094 map 1432 r 130 -- Grind some mobs for Boar Intestines, Bear Meat and Spider Ichor en route
+step
+  only Human
+  label Thelsamar1_2
+  zone map 1432
+  goto 39.299823,27.000141 map 1432 r 130 -- Grind some mobs for Boar Intestines, Bear Meat and Spider Ichor en route
+step
+  along until Gear
+  zone map 1432
+  note "Kill Tunnel Rats. Loot them for their Ears"
+  collect 3110 x12 quest 416.1 @39.299823,27.000141 map 1432 -- Collect Tunnel Rat Ear (x12)
+step
+  zone map 1432
+  goto 35.500065,18.199777 map 1432 r 45 -- Go to the entrance of the cave whilst killing rats
+step
+  when onquest 307
+  label Gear
+  zone map 1432
+  note "Collect the crates you find in the cave. Be careful because this is difficult at level 11"
+  note "Be careful as the Geomancers cast Flame Ward (Fire Immunity) after a few seconds"
+  collect 2640 x4 quest 307.1 @35.500065,19.900162 map 1432 -- Collect Miners' Gear (x4)
+step
+  zone map 1432
+  note "Kill Tunnel Rats. Loot them for their Ears"
+  note "Try to kill the Vermin instead of Kobolds/Geomancers"
+  collect 3110 x12 quest 416.1 @39.429975,22.580117 map 1432 -- Collect Tunnel Rat Ear (x12)
+step
+  along until Thelsamar2
+  zone map 1432
+  note "Kill Spiders in the zone for Thelsamar Blood Sausages"
+  collect 3174 x3 @39.429975,22.580117 map 1432 optional -- Collect Spider Ichor (x3)
+step
+  along until Thelsamar2
+  zone map 1432
+  note "Kill Bears in the zone for Thelsamar Blood Sausages"
+  collect 3173 x3 @39.429975,22.580117 map 1432 optional -- Collect Bear Meat (x3)
+step
+  along until Thelsamar2
+  zone map 1432
+  note "Kill Boars in the zone for Thelsamar Blood Sausages"
+  collect 3172 x3 @39.429975,22.580117 map 1432 optional -- Collect Boar Intestines (x3)
+step
+  label Thelsamar2
+  zone map 1432
+  goto 23.299942,17.900252 map 1432 r 60 -- Run back to the bunker, grinding en route
+step
+  zone map 1432
+  goto 24.100063,18.199777 map 1432 r 8
+  vendor nearest -- vendor and repair
+step
+  when onquest 307
+  turnin 307 -- Turn in Filthy Paws
+step
+  zone map 1432
+  goto 24.700063,18.299799 map 1432 r 8 optional
+  note "Talk to Mountaineer Stormpike"
+  turnin 1339 only Human -- Turn in Mountaineer Stormpike's Task
+  accept 1338 only Human -- Accept Stormpike's Order
+step
+  label Meat9
+  along
+  zone map 1432
+  note "Kill Bears. Loot them for Meat"
+  collect 3173 x3 @26.899943,10.700251 map 1432 optional -- Collect Bear Meat (x3)
+step
+  label Ichor9
+  along
+  zone map 1432
+  note "Kill Spiders. Loot them for Ichor"
+  collect 3174 x3 @31.900064,16.399912 map 1432 optional -- Collect Spider Ichor (x3)
+step
+  when !turnedin 418
+  zone map 1432
+  note "Kill Boars. Loot them for Intestines"
+  collect 3172 x3 @38.000125,34.899757 map 1432 -- Collect Boar Intestines (x3)
+step
+  zone map 1432
+  goto 26.899943,10.700251 map 1432 r 40 optional
+  goto 30.899822,10.600228 map 1432 r 40 optional
+  goto 28.599883,15.400229 map 1432 r 40 optional
+  goto 30.499943,26.60005 map 1432 r 40 optional
+  goto 33.399883,30.299802 map 1432 r 40 optional
+  goto 39.399884,33.299938 map 1432 r 40 optional
+  goto 26.899943,10.700251 map 1432 r 40 optional
+  goto 30.899822,10.600228 map 1432 r 40 optional
+  goto 28.599883,15.400229 map 1432 r 40 optional
+  goto 30.499943,26.60005 map 1432 r 40 optional
+  goto 33.399883,30.299802 map 1432 r 40 optional
+  goto 39.399884,33.299938 map 1432 r 40 optional
+  goto 26.899943,10.700251 map 1432 r 8
+  note "Kill Bears. Loot them for Meat"
+  collect 3173 x3 @26.899943,10.700251 map 1432 optional -- Collect Bear Meat (x3)
+step
+  zone map 1432
+  goto 31.900064,16.399912 map 1432 r 40 optional
+  goto 27.999883,20.599777 map 1432 r 40 optional
+  goto 33.800125,40.499939 map 1432 r 40 optional
+  goto 36.200125,30.899938 map 1432 r 40 optional
+  goto 39.000005,32.10021 map 1432 r 40 optional
+  goto 31.900064,16.399912 map 1432 r 40 optional
+  goto 27.999883,20.599777 map 1432 r 40 optional
+  goto 33.800125,40.499939 map 1432 r 40 optional
+  goto 36.200125,30.899938 map 1432 r 40 optional
+  goto 39.000005,32.10021 map 1432 r 40 optional
+  goto 31.900064,16.399912 map 1432 r 8
+  note "Kill Spiders. Loot them for Ichor"
+  collect 3174 x3 @31.900064,16.399912 map 1432 optional -- Collect Spider Ichor (x3)
+step
+  label RatCatching
+  along
+  zone map 1432
+  note "Find Kadrell. He patrols along the Thelsamar road"
+  note "Talk to Mountaineer Kadrell"
+  turnin 416 -- Turn in Rat Catching
+step
+  zone map 1432
+  goto 31.900064,16.399912 map 1432 r 40 optional
+  goto 27.999883,20.599777 map 1432 r 40 optional
+  goto 33.800125,40.499939 map 1432 r 40 optional
+  goto 36.200125,30.899938 map 1432 r 40 optional
+  goto 39.000005,32.10021 map 1432 r 40 optional
+  goto 31.900064,16.399912 map 1432 r 40 optional
+  goto 27.999883,20.599777 map 1432 r 40 optional
+  goto 33.800125,40.499939 map 1432 r 40 optional
+  goto 36.200125,30.899938 map 1432 r 40 optional
+  goto 39.000005,32.10021 map 1432 r 40 optional
+  goto 31.900064,16.399912 map 1432 r 8
+  note "Kill Spiders. Loot them for Ichor"
+  collect 3174 x3 @31.900064,16.399912 map 1432 optional -- Collect Spider Ichor (x3)
+step
+  zone map 1432
+  note "Talk to Vidra Hearthstove"
+  turnin 418 -- Turn in Thelsamar Blood Sausages
+step
+  zone map 1432
+  goto 34.760125,48.620258 map 1432 r 8
+  vendor nearest -- Buy 6 slots until your bag containers are full. Also buy 1 Flint and Tinder, and 2 Simple Wood
+  collect 4470 x2 @34.760125,48.620258 map 1432 -- Simple Wood (2)
+  collect 4471 x1 @34.760125,48.620258 map 1432 -- Flint and Tinder (1)
+step
+  level 12 -- Grind to 12
+step
+  zone map 1432
+  note "Find Kadrell. He patrols along the Thelsamar road"
+  note "Talk to Mountaineer Kadrell"
+  turnin 416 -- Turn in Rat Catching
+step
+  only Gnome
+  along until next_42
+  zone map 1432
+  goto 64.819947,66.039967 map 1432 r 8
+  vendor nearest -- Check Aldren for a Wise Man's Belt. Buy it if you can afford it. Save it for later
+step
+  zone map 1432
+  note "Find Kadrell. He patrols along the Thelsamar road"
+  note "Talk to Mountaineer Kadrell"
+  turnin 416 -- Turn in Rat Catching
+step
+  only Gnome
+  label next_42
+  zone map 1432
+  note "Talk to Prospector Ironband"
+  accept 298 -- Accept Excavation Progress Report
+step
+  only Gnome
+  zone map 1432
+  goto 68.120129,62.980034 map 1432 r 8
+  note "Die and respawn back in Thelsamar"
+step
+  only Gnome
+  when onquest 298
+  turnin 298 -- Turn in Excavation Progress Report
+step
+  only Gnome
+  zone map 1432
+  note "Go inside the building"
+  note "Talk to Brock Stoneseeker"
+  accept 6387 -- Accept Honor Students
+  note "Talk to Jern Hornhelm"
+  accept 301 -- Accept Report to Ironforge
+step
+  zone map 1432
+  note "Find Kadrell. He patrols along the Thelsamar road"
+  note "Talk to Mountaineer Kadrell"
+  turnin 416 -- Turn in Rat Catching
+step
+  when onquest 6387
+  turnin 6387 only Gnome -- Turn in Honor Students
+step
+  zone map 1432
+  goto 33.940065,50.959919 map 1432 r 8 optional
+  getfp "Thelsamar" @33.940065,50.959919 map 1432 -- Get the Thelsamar flight path
+  note "Talk to Thorgrum Borrelson"
+  accept 6391 only Gnome -- Accept Ride to Ironforge
+  fly "Ironforge" -- Fly to Ironforge
+step
+  only Human
+  zone map 1455
+  goto 27.150545,8.5706163 map 1455 r 8
+  train class -- Train your class spells
+step
+  only Human
+  zone map 1455
+  goto 12.239557,89.170686 map 1455 r 120 -- Exit Ironforge
+step
+  only Gnome
+  when onquest 301
+  turnin 301 -- Turn in Report to Ironforge
+step
+  only Gnome
+  zone map 1455
+  note "Talk to Prospector Stormpike"
+  accept 302 -- Accept Powder to Ironband
+step
+  only Gnome
+  when onquest 6391
+  turnin 6391 -- Turn in Ride to Ironforge
+step
+  only Gnome
+  zone map 1455
+  note "Go back toward The Great Forge, then take a right and go inside the building"
+  note "Talk to Golnir Bouldertoe"
+  accept 6388 -- Accept Gryth Thurden
+step
+  only Gnome
+  when onquest 291
+  zone map 1455
+  note "Talk to Senator Barin Redstone"
+  turnin 291 -- Turn in The Reports
+step
+  only Gnome
+  when onquest 6388
+  turnin 6388 -- Turn in Gryth Thurden
+step
+  only Gnome
+  zone map 1455
+  note "Talk to Gryth Thurden"
+  accept 6392 -- Accept Return to Brock
+  fly "Thelsamar" -- Fly to Thelsamar
+step
+  only Gnome
+  zone map 1432
+  note "Go inside the building"
+  goto 37.160125,46.889975 map 1432 r 20 optional
+  goto 37.019823,47.809748 map 1432 r 8
+  note "Talk to Brock Stoneseeker"
+  note "Talk to Jern Hornhelm"
+step
+  only Gnome
+  when onquest 6392
+  turnin 6392 -- Turn in Return to Brock
+step
+  only Gnome
+  when onquest 302
+  turnin 302 -- Turn in Powder to Ironband
+step
+  only Gnome
+  hearth "Kharanos" optional -- Hearth to Kharanos
+step
+  only Gnome
+  zone map 1426
+  goto 47.499959,52.079898 map 1426 r 8
+  train class -- Train your class spells
+step
+  label next_57
+  zone map 1426
+  goto 30.299959,37.499901 map 1426 r 50 -- Run to here
+step
+  zone map 1426
+  goto 30.899959,33.100105 map 1426 r 15 -- Run up the mountain north
+step
+  zone map 1426
+  goto 32.400061,29.099903 map 1426 r 15 -- Follow it up to here
+step
+  zone map 1426
+  zone map 1437
+  goto 33.000061,27.200005 map 1426 r 15 optional
+  goto 33.000061,25.199904 map 1426 r 15 optional
+  goto 11.599967,43.400018 map 1437 r 60
+  note "Keep running straight north, drop down and die, then respawn"
+step
+  along until next_63
+  zone map 1437
+  goto 12.699977,46.700154 map 1437 r 60 -- Swim to shore
+step
+  label next_63
+  zone map 1437
+  goto 10.400088,56.000109 map 1437 r 15 optional
+  goto 10.099997,56.899882 map 1437 r 15 optional
+  goto 10.600068,57.199927 map 1437 r 15 optional
+  goto 10.76,56.721 map 1437 r 8 optional
+  vendor nearest -- If you have 8s, Check for Bronze Tube from Neal Allen and buy it if it's there
+step
+  zone map 1437
+  goto 8.099957,56.300154 map 1437 r 8 optional
+  vendor nearest -- Check Dewin for Heal Potions, buy down to 1s
+step
+  zone map 1437
+  getfp "Menethil Harbor" @9.5000577,59.700063 map 1437 -- Get the Menethil Harbor flight path

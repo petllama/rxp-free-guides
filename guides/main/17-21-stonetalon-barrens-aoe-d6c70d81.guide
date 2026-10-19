@@ -1,0 +1,417 @@
+guide rxp-free/17-21-stonetalon-barrens-aoe-d6c70d81
+title "17-21 Stonetalon/Barrens AoE"
+levels 17-21
+zone map 1413
+coords era
+faction Horde
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · Speedrun Guide Mage AoE"
+class Mage
+step
+  when onquest 6548
+  zone map 1442
+  note "Kill Grimtotems in the area"
+  kill 11911 x6 quest 6548.2 @82.299999,90.000061 map 1442 -- Kill Grimtotem Mercenary (x6)
+  kill 11910 x8 quest 6548.1 @82.299999,90.000061 map 1442 -- Kill Grimtotem Ruffian (x8)
+step
+  when onquest 6548
+  turnin 6548 -- Turn in Avenge My Village
+step
+  zone map 1413
+  note "Talk to Makaba Flathoof"
+  accept 6629 -- Accept Kill Grundig Darkcloud
+step
+  zone map 1442
+  note "Enter the village through the Western path. Make sure you kill all 6 brutes before starting the quest inside. Kill Grundig in front of the main tent"
+  kill 11858 x1 quest 6629.1 -- Kill Grundig Darkcloud (x1)
+  kill 11912 x6 quest 6629.2 @73.99993,86.199985 map 1442 -- Kill Grimtotem Brute (x6)
+step
+  zone map 1442
+  note "Start the Kaya Escort"
+  note "Talk to Kaya Flathoof"
+  accept 6523 -- Accept Protect Kaya
+step
+  zone map 1442
+  note "Escort Kaya and stay close to her. 3 Grimtotems will spawn at the bonfire. Eat/drink before she gets to the camp"
+  goto 75.79993,91.400138 map 1442 r 8
+  complete 6523 -- Kaya Escorted to Camp Aparaje
+step
+  zone map 1442
+  note "Talk to Xen'Zilla"
+  accept 6461 -- Accept Blood Feeders
+step
+  when onquest 1069
+  label deepmossegg
+  along
+  zone map 1442
+  note "Click the spider eggs near the trees"
+  collect 5570 x15 quest 1069.1 @71.400066,95.1001 map 1442 -- Collect Deepmoss Egg (x15)
+step
+  zone map 1442
+  note "Kill the Deepmoss Spiders in the area"
+  kill 4005 x10 quest 6461.1 @54.699997,71.9001 map 1442 -- Kill Deepmoss Creeper (x10)
+  kill 4007 x7 quest 6461.2 @54.699997,71.9001 map 1442 -- Kill Deepmoss Venomspitter (x7)
+step
+  when onquest 1483
+  turnin 1483 -- Turn in Ziz Fizziks
+step
+  zone map 1442
+  note "Talk to Ziz Fizziks"
+  accept 1093 -- Accept Super Reaper 6000
+step
+  when onquest 1069
+  zone map 1442
+  note "Click the spider eggs near the trees"
+  collect 5570 x15 quest 1069.1 @71.400066,95.1001 map 1442 -- Collect Deepmoss Egg (x15)
+step
+  when onquest 1062
+  along until next_10
+  zone map 1442
+  note "Kill Loggers as you search for Operators to get the Blueprints"
+  kill 3989 x15 quest 1062.1 @58.989076,62.59891 map 1442 -- Kill Venture Co. Logger (x15)
+step
+  when onquest 1069
+  zone map 1442
+  note "Click the spider eggs near the trees"
+  collect 5570 x15 quest 1069.1 @71.400066,95.1001 map 1442 -- Collect Deepmoss Egg (x15)
+step
+  label next_10
+  zone map 1442
+  note "Kill Venture Co. Operators until you get the Blueprints"
+  collect 5734 x1 quest 1093.1 @62.799997,53.700023 map 1442 -- Collect Super Reaper 6000 Blueprints (x1)
+step
+  when onquest 1062
+  zone map 1442
+  note "Finish killing Loggers"
+  kill 3989 x15 quest 1062.1 @73.39993,54.3001 map 1442 -- Kill Venture Co. Logger (x15)
+step
+  zone map 1442
+  note "Talk to Ziz Fizziks"
+  turnin 1093 -- Turn in Super Reaper 6000
+  accept 1094 -- Accept Further Instructions
+step
+  hearth "Camp Taurajo" optional -- Hearth to Camp Taurajo
+step
+  when onquest 3261
+  turnin 3261 -- Turn in Jorn Skyseer
+step
+  zone map 1413
+  note "Talk to Jorn Skyseer"
+  accept 882 -- Accept Ishamuhale
+step
+  when onquest 821
+  label Lizard
+  along
+  zone map 1413
+  note "Kill Stormsnouts. Loot them for a Horn"
+  collect 4895 x1 quest 821.3 @44.9,59.099944 map 1413 -- Thunder Lizard Horn (1)
+step
+  label Lakota1
+  along until next_17
+  zone map 1413
+  goto 50,53.100019 map 1413 r 1 optional
+  goto 46.000033,49.200074 map 1413 r 1 optional
+  goto 45.299967,52.499981 map 1413 r 1 optional
+  goto 44.999967,51.800037 map 1413 r 1 optional
+  note "Find & kill Lakota'mani (Gray Kodo) around the area. Loot his Hoof. If you can't find him, skip this quest."
+  collect 5099 x1 @44.999967,51.800037 map 1413 optional -- Collect Hoof of Lakota'Mani
+  accept 883 -- Accept Lakota'Mani
+step
+  label next_17
+  zone map 1413
+  note "Kill a LOT of Quilboars. Loot them for their tusks. Save the Blood Shards you get"
+  goto 44.3,52.300019 map 1413 r 50 optional
+  goto 47.099967,53.299981 map 1413 r 50 optional
+  goto 45.2,54.299944 map 1413 r 50 optional
+  goto 44.3,52.300019 map 1413 r 50 optional
+  goto 47.099967,53.299981 map 1413 r 50 optional
+  goto 45.2,54.299944 map 1413 r 50 optional
+  goto 44.3,52.300019 map 1413 r 50 optional
+  goto 47.099967,53.299981 map 1413 r 50 optional
+  goto 45.2,54.299944 map 1413 r 50 optional
+  goto 44.3,52.300019 map 1413 r 50 optional
+  goto 47.099967,53.299981 map 1413 r 50 optional
+  goto 45.2,54.299944 map 1413 r 50
+step
+  when onquest 878
+  kill 3260 x6 quest 878.1 @45.2,54.299944 map 1413 -- Kill Bristleback Water Seeker (x6)
+  kill 3261 x12 quest 878.2 @45.2,54.299944 map 1413 -- Kill Bristleback Thornweaver (x12)
+  kill 3263 x12 quest 878.3 @45.2,54.299944 map 1413 -- Kill Bristleback Geomancer (x12)
+step
+  when onquest 899
+  collect 5085 x60 quest 899.1 @45.2,54.299944 map 1413 -- Collect Bristleback Quilboar Tusk (x60)
+step
+  when onquest 821
+  along until Ishamuhale
+  zone map 1413
+  note "Kill Plainstriders. Loot them for their Kidneys"
+  collect 4894 x5 quest 821.2 @45.2,54.299944 map 1413 -- Plainstrider Kidney (5)
+step
+  when onquest 821
+  zone map 1413
+  note "Kill Stormsnouts. Loot them for a Horn"
+  collect 4895 x1 quest 821.3 @44.9,59.099944 map 1413 -- Thunder Lizard Horn (1)
+step
+  when onquest 880
+  zone map 1413
+  note "Go around the lake and AoE Turtles. Loot them for their Shells"
+  collect 5098 x8 quest 880.1 @55.499967,42.599963 map 1413 -- Altered Snapjaw Shell (8)
+step
+  along until Ishamuhale
+  zone map 1413
+  note "Kill a Zhevra in the area. Loot it for a Carcass"
+  collect 10338 x1 @61.000032,32.199963 map 1413 -- Collect Fresh Zhevra Carcass
+step
+  label Ishamuhale
+  zone map 1413
+  note "Use the Fresh Zhevra Carcass at the dead tree to summon Ishamuhale. Kill and loot him for his Fang"
+  collect 5101 x1 quest 882.1 -- Ishamuhale's Fang (1)
+step
+  when onquest 821
+  zone map 1413
+  note "Kill Plainstriders. Loot them for their Kidneys"
+  collect 4894 x5 quest 821.2 @59.899999,30.4 map 1413 -- Plainstrider Kidney (5)
+step
+  when onquest 888
+  zone map 1413
+  note "Run back to Ratchet"
+  note "Talk to Gazlowe"
+  turnin 888 -- Turn in Stolen Booty
+step
+  zone map 1413
+  note "Talk to Sputtervalve"
+  turnin 1094 -- Turn in Further Instructions
+  accept 1095 -- Accept Further Instructions
+step
+  zone map 1413
+  goto 62.399966,37.6 map 1413 r 8
+  note "Talk to Mebok Mizzyrix"
+step
+  when onquest 865
+  turnin 865 -- Turn in Raptor Horns
+step
+  when onquest 1069
+  turnin 1069 -- Turn in Deepmoss Spider Eggs
+step
+  when onquest 821
+  zone map 1413
+  note "Talk to Brewmaster Drohn"
+  turnin 821 -- Turn in Chen's Empty Keg
+step
+  zone map 1413
+  goto 63.100032,37.100019 map 1413 r 8
+  fly "Crossroads" -- Fly to Crossroads
+step
+  when onquest 880
+  turnin 880 -- Turn in Altered Beings
+step
+  zone map 1413
+  note "Talk to Tonga Runetotem"
+  accept 1489 -- Accept Hamuul Runetotem
+  accept 3301 -- Accept Mura Runetotem
+step
+  when onquest 899
+  zone map 1413
+  note "Talk to Mankrik"
+  turnin 899 -- Turn in Consumed by Hatred
+step
+  when onquest 875
+  turnin 875 -- Turn in Harpy Lieutenants
+step
+  zone map 1413
+  note "Top of the tower"
+  note "Talk to Darsok Swiftdagger"
+  accept 876 -- Accept Serena Bloodfeather
+step
+  when onquest 848
+  turnin 848 -- Turn in Fungal Spores
+step
+  zone map 1413
+  note "This starts a timed quest"
+  note "Talk to Apothecary Helbrim"
+  accept 853 -- Accept Apothecary Zamah
+step
+  zone map 1413
+  goto 51.5,30.299944 map 1413 r 8
+  fly "Camp Taurajo" -- Fly to Camp Taurajo
+step
+  zone map 1413
+  note "Kill Quilboars for a Blood Shard"
+  collect 5075 x1 @53,52.100056 map 1413 -- Blood Shard (1)
+step
+  when onquest 878
+  turnin 878 -- Turn in Tribes at War
+step
+  zone map 1413
+  note "Talk to Mangletooth"
+  accept 5052 -- Accept Blood Shards of Agamaggan
+  turnin 5052 -- Turn in Blood Shards of Agamaggan
+step
+  zone map 1413
+  note "Talk to Jorn Skyseer"
+  turnin 882 -- Turn in Ishamuhale
+  accept 907 -- Accept Enraged Thunder Lizards
+  accept 1130 -- Accept Melor Sends Word
+step
+  accept 883 -- Accept Lakota'Mani
+step
+  when onquest 883
+  zone map 1413
+  note "Talk to Jorn Skyseer"
+  turnin 883 -- Turn in Lakota'mani
+step
+  zone map 1413
+  note "Talk to Jorn Skyseer"
+  turnin 882 -- Turn in Ishamuhale
+  accept 907 -- Accept Enraged Thunder Lizards
+  accept 1130 -- Accept Melor Sends Word
+step
+  label Owatanka2
+  along until next_39
+  zone map 1413
+  goto 44.200033,62.099981 map 1413 r 1 optional
+  goto 49.199967,62.599963 map 1413 r 1 optional
+  goto 49.600033,60 map 1413 r 1 optional
+  note "Search for Owatanka (Blue Thunder Lizard) around this area. If you find him, loot his Tailspike and start the quest. If you can't find him, skip this quest"
+  collect 5102 x1 @49.600033,60 map 1413 optional -- Collect Owatanka's Tailspike
+  accept 884 -- Accept Owatanka
+step
+  label next_39
+  zone map 1413
+  note "Kill Thunder Lizards. Loot them for their blood"
+  collect 5143 x3 quest 907.1 @50,61.100019 map 1413 -- Thunder Lizard Blood (3)
+step
+  zone map 1413
+  note "Talk to Jorn Skyseer"
+  turnin 907 -- Turn in Enraged Thunder Lizards
+  accept 913 -- Accept Cry of the Thunderhawk
+step
+  accept 884 -- Accept Owatanka
+step
+  when onquest 884
+  zone map 1413
+  note "Talk to Jorn Skyseer"
+  turnin 884 -- Turn in Owatanka
+step
+  zone map 1413
+  note "Talk to Jorn Skyseer"
+  turnin 907 -- Turn in Enraged Thunder Lizards
+  accept 913 -- Accept Cry of the Thunderhawk
+step
+  zone map 1413
+  note "Kill a Thunderhawk. Loot it for its Wings"
+  collect 5164 x1 quest 913.1 -- Thunderhawk Wings (1)
+step
+  zone map 1413
+  note "Talk to Jorn Skyseer"
+  turnin 913 -- Turn in Cry of the Thunderhawk
+step
+  when onquest 889
+  along until next_46
+  zone map 1413
+  note "Turn in your Blood Shards for the Spirit of the Wind buff from Mangletooth. If you accidentally sold any shards, skip this step"
+  note "Talk to Mangletooth"
+  turnin 889 -- Turn in Spirit of the Wind
+step
+  label next_46
+  zone map 1456
+  goto 31.999713,66.899673 map 1456 r 60 -- Run to the lift and take it into Thunder Bluff
+step
+  zone map 1456
+  sethome "Thunder Bluff" @45.814323,64.710929 map 1456 -- Set your Hearthstone to Thunder Bluff
+step
+  zone map 1456
+  note "Talk to Melor Stonehoof"
+  turnin 1130 -- Turn in Melor Sends Word
+  accept 1131 -- Accept Steelsnap
+step
+  zone map 1456
+  note "Go into The Pools of Vision"
+  note "Talk to Apothecary Zamah"
+  turnin 853 -- Turn in Apothecary Zamah
+step
+  zone map 1456
+  goto 25.159952,20.950429 map 1456 r 8
+  train class -- Train your class spells
+  note "Don't respec to AoE yet (if you've gone fire spec)"
+step
+  zone map 1456
+  note "Talk to Clarice Foster"
+  accept 264 -- Accept Until Death Do Us Part
+step
+  zone map 1456
+  goto 47.003305,49.832359 map 1456 r 8
+  getfp "Thunder Bluff" @47.003305,49.832359 map 1456 -- Get the Thunder Bluff flight path
+  fly "Crossroads" -- Fly to Crossroads
+step
+  zone map 1413
+  note "Kill Serena Bloodfeather. Loot her for her Head"
+  collect 5067 x1 quest 876.1 -- Serena's Head (1)
+step
+  when onquest 1062
+  turnin 1062 -- Turn in Goblin Invaders
+step
+  zone map 1413
+  note "Talk to Seereth Stonebreak"
+  note "Talk to Makaba Flathoof"
+  turnin 6629 -- Turn in Kill Grundig Darkcloud
+  turnin 6523 -- Turn in Protect Kaya
+  accept 6401 -- Accept Kaya's Alive
+  accept 1063 -- Accept The Elder Crone
+step
+  zone map 1442
+  note "Talk to Xen'Zilla"
+  turnin 6461 -- Turn in Blood Feeders
+step
+  zone map 1442
+  note "Talk to Ziz Fizziks"
+  turnin 1095 -- Turn in Further Instructions
+step
+  zone map 1442
+  note "Talk to Tammra Windfield"
+  turnin 6401 -- Turn in Kaya's Alive
+step
+  zone map 1442
+  getfp "Sun Rock" @45.120065,59.839908 map 1442 -- Get the Sun Rock Retreat flight path
+step
+  along until next_60
+  hearth "Thunder Bluff" optional -- Hearth to Thunder Bluff
+step
+  label next_60
+  zone map 1456
+  note "Talk to Magatha Grimtotem"
+  turnin 1063 -- Turn in The Elder Crone
+  accept 1064 -- Accept Forsaken Aid
+step
+  zone map 1456
+  note "Talk to Arch Druid Hamuul Runetotem"
+  turnin 1489 -- Turn in Hamuul Runetotem
+  accept 1490 -- Accept Nara Wildmane
+step
+  zone map 1456
+  note "Talk to Nara Wildmane"
+  turnin 1490 -- Turn in Nara Wildmane
+step
+  zone map 1456
+  note "Talk to Apothecary Zamah"
+  turnin 1064 -- Turn in Forsaken Aid
+  accept 1065 -- Accept Journey to Tarren Mill
+step
+  zone map 1456
+  goto 25.159952,20.950429 map 1456 r 8
+  train class -- Train your class spells if needed
+  note "Respec to Frost AoE if you haven't already"
+step
+  zone map 1456
+  goto 46.800192,50.000503 map 1456 r 8
+  fly "The Crossroads" -- Fly to The Crossroads
+step
+  zone map 1413
+  note "Go upstairs"
+  note "Talk to Darsok Swiftdagger"
+  turnin 876 -- Turn in Serena Bloodfeather
+step
+  zone map 1413
+  goto 51.5,30.340056 map 1413 r 8
+  fly "Orgrimmar" -- Fly to Orgrimmar

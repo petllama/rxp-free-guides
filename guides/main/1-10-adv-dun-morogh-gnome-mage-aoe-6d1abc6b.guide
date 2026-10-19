@@ -1,0 +1,1218 @@
+guide rxp-free/1-10-adv-dun-morogh-gnome-mage-aoe-6d1abc6b
+title "1-10 ADV Dun Morogh Gnome Mage AoE"
+levels 1-10
+zone map 1426
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · ADV AoE Alliance Mage"
+class Mage
+race Gnome
+next rxp-free/10-12-adv-darkshore-1-mage-aoe-69191608
+step
+  along until next_1
+  note "You have selected the Advanced guide. This is the fastest guide for the fastest class in the game (Alliance Mage). As such, there will be a lot of niche mechanics used as well as highly difficult AoE pulls. Stay persistent while you learn! Good Luck!"
+step
+  when has 6948
+  label next_1
+  along until Adlin
+  note "Delete the [Hearthstone] from your bags, as it's no longer needed"
+step
+  zone map 1426
+  note "Talk to Sten Stoutarm"
+  accept 179 -- Accept Dwarven Outfitters
+step
+  zone map 1426
+  note "Kill Ragged Young Wolves. Loot them for their Tough Wolf Meat"
+  collect 750 x8 quest 179.1 @28.557,72.487 map 1426 -- Collect Tough Wolf Meat (x8)
+step
+  when level<6
+  label Adlin
+  along
+  zone map 1426
+  note "Talk to Adlin Pridedrift"
+  note "Vendor Trash"
+  note "Buy 15 [Refreshing Spring Water] from him"
+  note "Grind extra Ragged Young Wolves if you don't have enough money"
+  collect 159 x15 @30.086964,71.563143 map 1426 -- Collect Refreshing Spring Water (x15)
+step
+  zone map 1426
+  note "Talk to Sten Stoutarm and Balir Frosthammer"
+  turnin 179 -- Turn in Dwarven Outfitters
+  accept 233 -- Accept Coldridge Valley Mail Delivery
+  accept 3114 -- Accept Glyphic Memorandum
+  accept 170 -- Accept A New Threat
+  goto 29.709909,71.250046 map 1426 r 8 optional
+step
+  when onquest 170
+  along until Rockjaw
+  zone map 1426
+  note "Kill Rockjaw Troggs and Burly Rockjaw Troggs"
+  kill 707 x6 quest 170.1 @20.627,70.415 map 1426 -- Kill Rockjaw Trogg (x6)
+  kill 724 x6 quest 170.2 @20.627,70.415 map 1426 -- Kill Burly Rockjaw Trogg (x6)
+step
+  label Talin
+  zone map 1426
+  note "Talk to Talin Keeneye"
+  turnin 233 -- Turn in Coldridge Valley Mail Delivery
+  accept 183 -- Accept The Boar Hunter
+  accept 234 -- Accept Coldridge Valley Mail Delivery
+step
+  loop
+  zone map 1426
+  goto 22.276,72.549 map 1426 r 1
+  goto 20.924,70.393 map 1426 r 1
+  goto 22.662,69.331 map 1426 r 1
+  goto 24.358,72.591 map 1426 r 1
+  goto 22.276,72.549 map 1426 r 45
+  goto 21.209,72.266 map 1426 r 45
+  goto 20.88,71.47 map 1426 r 45
+  goto 20.924,70.393 map 1426 r 45
+  goto 21.33,69.261 map 1426 r 45
+  goto 22.035,69.231 map 1426 r 45
+  goto 22.662,69.331 map 1426 r 45
+  goto 24.317,68.026 map 1426 r 45
+  goto 24.754,69.257 map 1426 r 45
+  goto 24.878,71.191 map 1426 r 45
+  goto 24.358,72.591 map 1426 r 45
+  note "Kill Small Crag Boars"
+  kill 708 x12 quest 183.1 -- Kill Small Crag Boar (x12)
+step
+  zone map 1426
+  note "Talk to Talin Keeneye"
+  turnin 183 -- Turn in The Boar Hunter
+step
+  label Rockjaw
+  zone map 1426
+  note "Talk to Grelin Whitebeard"
+  turnin 234 -- Turn in Coldridge Valley Mail Delivery
+  accept 182 -- Accept The Troll Cave
+step
+  along until next_13
+  zone map 1426
+  note "Kill Frostmane Troll Whelps"
+  kill 706 x14 quest 182.1 @25.077,75.711 map 1426 -- Kill Frostmane Troll Whelp (x14)
+step
+  when onquest 182
+  label next_13
+  zone map 1426
+  goto 26.73001,79.720095 map 1426 r 30 -- Enter the cave
+step
+  zone map 1426
+  note "Kill Frostmane Troll Whelps inside the cave"
+  note "Clear a path to just before the Frozen Lake room"
+  kill 706 x14 quest 182.1 @28.29001,79.850146 map 1426 -- Kill Frostmane Troll Whelp (x14)
+step
+  zone map 1426
+  note "Kill Frostmane Troll Whelps en route back to Grelin Whitebeard"
+  kill 706 x14 quest 182.1 @25.779959,78.309943 map 1426 -- Kill Frostmane Troll Whelp (x14)
+step
+  zone map 1426
+  note "Talk to Grelin Whitebeard"
+  note "Make sure you have 3 inventory slots for these turnins/accepts"
+  turnin 182 -- Turn in The Troll Cave
+  accept 218 -- Accept The Stolen Journal
+  goto 25.076,75.712888 map 1426 r 8 optional
+step
+  when onquest 218
+  zone map 1426
+  goto 26.73001,79.720095 map 1426 r 40 optional
+  goto 29.339959,79.089943 map 1426 r 30 optional
+  goto 29.669909,79.679892 map 1426 r 10 -- Enter the Cave. Run through the path you cleared (without fighting if possible) toward the Frozen Lake inside
+step
+  zone map 1426
+  note "Kill the Frostmane Troll Whelp in front of you"
+  note "Kill Grik'nir the Cold. Loot him for Grelin Whitebeard's Journal"
+  note "Be careful as he casts [Frost Shock] (Range Instant: Deals 10 Frost damage and slows movespeed by 50% for 8 seconds)"
+  collect 2004 x1 quest 218.1 -- Collect Grelin Whitebeard's Journal (x1)
+step
+  zone map 1426
+  note "Talk to Grelin Whitebeard and Nori Pridedrift"
+  turnin 218 -- Turn in The Stolen Journal
+  accept 282 -- Accept Senir's Observations
+  accept 3364 -- Accept Scalding Mornbrew Delivery
+  goto 24.979959,75.959893 map 1426 r 1 optional
+step
+  when onquest 218,3364
+  label LogoutSkip2
+  along until Rybrad
+  zone map 1426
+  goto 28.789909,69.040098 map 1426 r 20 optional
+  goto 28.629909,68.430047 map 1426 r 10 optional -- Enter Anvilmar
+step
+  when onquest 218,3364
+  label Rybrad
+  zone map 1426
+  note "Talk to Rybrad Coldbank"
+  vendor 945 -- Vendor Trash
+step
+  when !turnedin 420
+  zone map 1426
+  note "Talk to Durnan Furcutter and Marryk Nurribit"
+  turnin 3364 -- Turn in Scalding Mornbrew Delivery
+  accept 3365 -- Accept Bring Back the Mug
+  turnin 3114 -- Turn in Glyphic Memorandum
+  train class -- Train your class spells (Arcane Intellect, Frostbolt)
+  goto 28.708893,66.365987 map 1426 r 8 optional
+step
+  when complete 170
+  zone map 1426
+  note "Talk to Balir Frosthammer"
+  turnin 170 -- Turn in A New Threat
+step
+  when onquest 170
+  label TroggEnd
+  along
+  zone map 1426
+  note "Kill ALL Rockjaw Troggs you see and Burly Rockjaw Troggs"
+  kill 707 x6 quest 170.1 @29.28,75.5 map 1426 -- Kill Rockjaw Trogg (x6)
+  kill 724 x6 quest 170.2 @29.28,75.5 map 1426 -- Kill Burly Rockjaw Trogg (x6)
+step
+  label StolenJ
+  zone map 1426
+  note "Talk to Nori Pridedrift"
+  turnin 3365 -- Turn in Bring Back the Mug
+  goto 24.979959,75.959893 map 1426 r 8 optional
+step
+  when onquest 170
+  zone map 1426
+  note "Kill ALL Rockjaw Troggs you see and Burly Rockjaw Troggs"
+  kill 707 x6 quest 170.1 @29.28,75.5 map 1426 -- Kill Rockjaw Trogg (x6)
+  kill 724 x6 quest 170.2 @29.28,75.5 map 1426 -- Kill Burly Rockjaw Trogg (x6)
+step
+  when complete 170
+  zone map 1426
+  note "Talk to Balir Frosthammer"
+  turnin 170 -- Turn in A New Threat
+step
+  when onquest 170
+  zone map 1426
+  note "Kill ALL Rockjaw Troggs you see and Burly Rockjaw Troggs"
+  kill 707 x6 quest 170.1 @29.28,75.5 map 1426 -- Kill Rockjaw Trogg (x6)
+  kill 724 x6 quest 170.2 @29.28,75.5 map 1426 -- Kill Burly Rockjaw Trogg (x6)
+step
+  label Observations
+  zone map 1426
+  note "Talk to Mountaineer Thalos and Hands Springsprocket"
+  turnin 282 -- Turn in Senir's Observations
+  accept 420 -- Accept Senir's Observations
+  accept 2160 -- Accept Supplies to Tannok
+  goto 33.85001,72.239894 map 1426 r 8 optional
+step
+  when onquest 170
+  along until StockingJ
+  note "Abandon A New Threat"
+step
+  when onquest 2160
+  zone map 1426
+  goto 34.320061,70.950047 map 1426 r 15 optional
+  goto 35.65001,65.790048 map 1426 r 15 -- Travel through Coldridge Pass
+step
+  along until StockingJ
+  zone map 1426
+  goto 36.509909,62.939896 map 1426 r 40 optional
+  note "Kill Crag Boars. Loot them for [Chunks of Boar Meat] and Crag Boar Ribs"
+  note "Be careful as they cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 25-70 melee damage on hit. Only castable at range)"
+  collect 769 x4 @36.509909,62.939896 map 1426 optional -- Collect Chunk of Boar Meat (x4)
+  collect 2886 x6 @36.509909,62.939896 map 1426 optional -- Collect Crag Boar Rib (x6)
+step
+  when onquest 2160
+  zone map 1426
+  goto 37.97001,61.869947 map 1426 r 30 optional
+  goto 39.89001,59.2601 map 1426 r 45 -- Deal 51%+ damage to nearby Juvenile Snow Leopards and Young Black Bears, then pull them to the Ironforge Mountaineer to kill them more efficiently
+step
+  along until next_33
+  zone map 1426
+  goto 43.440061,55.639999 map 1426 r 50 optional
+  goto 44.139959,52.639999 map 1426 r 50 optional
+  goto 46.020975,51.67604 map 1426 r 20 optional -- Travel toward Tharek
+step
+  label next_33
+  zone map 1426
+  note "Talk to Tharek"
+  accept 400 -- Accept Tools for Steelgrill
+step
+  label StockingJ
+  zone map 1426
+  note "Kite Young Black Bears en route (make sure to deal 51%+ damage to get credit)"
+  note "Talk to Bellowfiz"
+  accept 317 -- Accept Stocking Jetsteam
+step
+  when !turnedin 312
+  zone map 1426
+  note "Talk to Stonegear, Beldin, and Loslor"
+  note "Kite Young Black Bears to the Ironforge Mountaineer if you pulled any (make sure to deal 51%+ damage to get credit)"
+  accept 313 -- Accept The Grizzled Den
+  turnin 400 -- Turn in Tools for Steelgrill
+  accept 5541 -- Accept Ammo for Rumbleshot
+  vendor nearest -- Vendor Trash
+  goto 50.083919,49.420102 map 1426 r 8 optional
+step
+  along until next_37
+  zone map 1426
+  note "Kill Crag Boars and Large Crag Boars. Loot them for [Chunks of Boar Meat] and Crag Boar Ribs"
+  note "Be careful as they cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 25-70 melee damage on hit. Only castable at range)"
+  collect 769 x4 quest 317.1 @50.083919,49.420102 map 1426 -- Collect Chunk of Boar Meat (x4)
+  collect 2886 x6 @50.083919,49.420102 map 1426 optional -- Collect Crag Boar Rib (x6)
+step
+  label next_37
+  zone map 1426
+  note "Kill Young Black Bears and Ice Claw Bears. Loot them for their Thick Bear Fur"
+  note "Kite Young Black Bears and Ice Claw Bears to nearby Ironforge Mountaineers (make sure to deal 51%+ damage to get credit)"
+  note "Be careful as they cast [Ice Claw] (Melee Instant: Deals an additional 4 melee damage)"
+  collect 6952 x2 quest 317.2 @45.179959,54.379999 map 1426 -- Collect Thick Bear Fur (x2)
+step
+  loop
+  zone map 1426
+  goto 51.699959,49.660102 map 1426 r 40
+  goto 51.080061,52.420101 map 1426 r 40
+  goto 51.429909,53.210152 map 1426 r 40
+  goto 50.059959,51.659898 map 1426 r 40
+  goto 49.560061,50.819898 map 1426 r 40
+  goto 48.120061,49.1 map 1426 r 40
+  goto 48.21001,46.92995 map 1426 r 40
+  goto 45.480061,50.039898 map 1426 r 40
+  goto 44.069909,52.499898 map 1426 r 40
+  goto 43.69001,55.59005 map 1426 r 40
+  goto 42.779959,56.8601 map 1426 r 40
+  goto 44.45001,59.33015 map 1426 r 40
+  goto 46.309909,61.85015 map 1426 r 40
+  goto 46.259959,59.490049 map 1426 r 40
+  goto 48.080061,59.049947 map 1426 r 40
+  goto 49.400061,58.97015 map 1426 r 40
+  goto 48.299959,56.8601 map 1426 r 40
+  goto 49.09001,54.739999 map 1426 r 40
+  goto 49.61001,54.319999 map 1426 r 40
+  goto 51.429909,53.210152 map 1426 r 40
+  note "Kill Crag Boars and Large Crag Boars. Loot them for [Chunks of Boar Meat] and Crag Boar Ribs"
+  note "Be careful as they cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 25-70 melee damage on hit. Only castable at range)"
+  collect 769 x4 quest 317.1 -- Collect Chunk of Boar Meat (x4)
+  collect 2886 x6 optional -- Collect Crag Boar Rib (x6)
+step
+  zone map 1426
+  note "Talk to Bellowfiz"
+  turnin 317 -- Turn in Stocking Jetsteam
+  accept 318 -- Accept Evershine
+step
+  zone map 1426
+  goto 51.699959,49.660102 map 1426 r 40 optional
+  goto 51.080061,52.420101 map 1426 r 40 optional
+  goto 51.429909,53.210152 map 1426 r 40 optional
+  goto 50.059959,51.659898 map 1426 r 40 optional
+  goto 49.560061,50.819898 map 1426 r 40 optional
+  goto 48.120061,49.1 map 1426 r 40 optional
+  goto 48.21001,46.92995 map 1426 r 40 optional
+  goto 45.480061,50.039898 map 1426 r 40 optional
+  goto 44.069909,52.499898 map 1426 r 40 optional
+  goto 43.69001,55.59005 map 1426 r 40 optional
+  goto 42.779959,56.8601 map 1426 r 40 optional
+  goto 44.45001,59.33015 map 1426 r 40 optional
+  goto 46.309909,61.85015 map 1426 r 40 optional
+  goto 46.259959,59.490049 map 1426 r 40 optional
+  goto 48.080061,59.049947 map 1426 r 40 optional
+  goto 49.400061,58.97015 map 1426 r 40 optional
+  goto 48.299959,56.8601 map 1426 r 40 optional
+  goto 49.09001,54.739999 map 1426 r 40 optional
+  goto 49.61001,54.319999 map 1426 r 40 optional
+  goto 51.429909,53.210152 map 1426 r 40
+  level 5+2690 -- Grind to 2690+/2800xp
+step
+  along until InnLS1
+  note "Unequip your current [Staff]"
+step
+  along until Tannok
+  note "Rebuff [Arcane Intellect]"
+  note "Rebuff [Frost Armor]"
+step
+  zone map 1426
+  note "Talk to Ragnar"
+  accept 384 -- Accept Beer Basted Boar Ribs
+step
+  along until next_45
+  zone map 1426
+  goto 46.97001,51.99005 map 1426 r 10 optional
+  goto 47.499959,52.079898 map 1426 r 12 optional -- Go inside
+step
+  when level<6
+  label next_45
+  zone map 1426
+  note "Talk to Tannok"
+  turnin 2160 -- Turn in Supplies to Tannok
+step
+  along until Tannok
+  zone map 1426
+  goto 46.97001,51.99005 map 1426 r 10 optional
+  goto 47.499959,52.079898 map 1426 r 12 optional -- Go inside
+step
+  label Tannok
+  along
+  zone map 1426
+  note "Talk to Tannok"
+  turnin 2160 -- Turn in Supplies to Tannok
+step
+  when !turnedin 312
+  zone map 1426
+  note "Talk to Magis upstairs"
+  train 1228 -- Train your class spells (Fireball R2, Fire Blast)
+step
+  when !turnedin 312
+  along until Golorn
+  zone map 1426
+  note "Talk to Belm"
+  sethome "Thunderbrew Distillery" @47.379959,52.519999 map 1426 -- Set your Hearthstone to Thunderbrew Distillery
+step
+  zone map 1426
+  note "Talk to Tannok"
+  turnin 2160 -- Turn in Supplies to Tannok
+step
+  when has 2886 x6
+  zone map 1426
+  goto 47.379959,52.519999 map 1426 r 8
+  note "Talk to Belm"
+  note "Buy a [Rhapsody Malt] from him"
+  collect 2894 x1 quest 384.2 @47.379959,52.519999 map 1426 optional -- Collect Rhapsody Malt (x1)
+step
+  zone map 1426
+  note "Talk to Tannok"
+  turnin 2160 -- Turn in Supplies to Tannok
+step
+  when complete 384
+  zone map 1426
+  note "Talk to Ragnar"
+  turnin 384 -- Turn in Beer Basted Boar Ribs
+step
+  zone map 1426
+  note "Talk to Tannok"
+  turnin 2160 -- Turn in Supplies to Tannok
+step
+  zone map 1426
+  goto 47.379959,52.519999 map 1426 r 8
+  note "Talk to Belm"
+  note "Buy 20 [Ice Cold Milk] from him"
+  collect 1179 x20 @47.379959,52.519999 map 1426 optional -- Ice Cold Milk (20)
+step
+  zone map 1426
+  note "Talk to Tannok"
+  turnin 2160 -- Turn in Supplies to Tannok
+step
+  zone map 1426
+  goto 47.379959,52.519999 map 1426 r 8
+  note "Talk to Belm"
+  note "Buy 15 [Ice Cold Milk] from him"
+  collect 1179 x15 @47.379959,52.519999 map 1426 optional -- Ice Cold Milk (15)
+step
+  zone map 1426
+  note "Talk to Tannok"
+  turnin 2160 -- Turn in Supplies to Tannok
+step
+  zone map 1426
+  goto 47.379959,52.519999 map 1426 r 8
+  note "Talk to Belm"
+  note "Buy 10 [Ice Cold Milk] from him"
+  collect 1179 x10 @47.379959,52.519999 map 1426 optional -- Ice Cold Milk (10)
+step
+  zone map 1426
+  note "Talk to Tannok"
+  turnin 2160 -- Turn in Supplies to Tannok
+step
+  label InnLS1
+  zone map 1426
+  goto 47.379959,52.519999 map 1426 r 8
+  note "Talk to Belm"
+  note "Buy 5 [Ice Cold Milk] from him"
+  collect 1179 x5 @47.379959,52.519999 map 1426 optional -- Ice Cold Milk (5)
+step
+  zone map 1426
+  note "Talk to Tannok"
+  turnin 2160 -- Turn in Supplies to Tannok
+step
+  when !has 1179
+  zone map 1426
+  goto 47.379959,52.519999 map 1426 r 8
+  note "Talk to Belm"
+  note "Buy 20 [Refreshing Spring Water] from him"
+  collect 159 x20 @47.379959,52.519999 map 1426 optional -- Refreshing Spring Water (20)
+step
+  zone map 1426
+  note "Talk to Tannok"
+  turnin 2160 -- Turn in Supplies to Tannok
+step
+  when !has 1179
+  zone map 1426
+  goto 47.379959,52.519999 map 1426 r 8
+  note "Talk to Belm"
+  note "Buy 15 [Refreshing Spring Water] from him"
+  collect 159 x15 @47.379959,52.519999 map 1426 optional -- Refreshing Spring Water (15)
+step
+  zone map 1426
+  note "Talk to Tannok"
+  turnin 2160 -- Turn in Supplies to Tannok
+step
+  when !has 1179
+  zone map 1426
+  goto 47.379959,52.519999 map 1426 r 8
+  note "Talk to Belm"
+  note "Buy 10 [Refreshing Spring Water] from him"
+  collect 159 x10 @47.379959,52.519999 map 1426 optional -- Refreshing Spring Water (10)
+step
+  zone map 1426
+  note "Talk to Tannok"
+  turnin 2160 -- Turn in Supplies to Tannok
+step
+  when !has 1179
+  zone map 1426
+  goto 47.379959,52.519999 map 1426 r 8
+  note "Talk to Belm"
+  note "Buy 5 [Refreshing Spring Water] from him"
+  collect 159 x5 @47.379959,52.519999 map 1426 optional -- Refreshing Spring Water (5)
+step
+  label Golorn
+  along
+  zone map 1426
+  note "Talk to Golorn"
+  note "Buy a [Skinning Knife] from him"
+  collect 7005 x1 @46.77001,53.719999 map 1426 optional -- Skinning Knife (1)
+step
+  label SenirO
+  zone map 1426
+  note "Talk to Senir"
+  turnin 420 -- Turn in Senir's Observations
+step
+  zone map 1426
+  goto 46.77001,53.719999 map 1426 r 1
+  note "Talk to Golorn"
+  note "Buy a [Skinning Knife] from him"
+  collect 7005 x1 @46.77001,53.719999 map 1426 optional -- Skinning Knife (1)
+step
+  when has 7005
+  along until next_63
+  zone map 1426
+  note "Equip the [Skinning Knife]"
+  use 7005 @46.725949,53.825989 map 1426 optional
+step
+  zone map 1426
+  goto 46.77001,53.719999 map 1426 r 1
+  note "Talk to Golorn"
+  note "Buy a [Skinning Knife] from him"
+  collect 7005 x1 @46.77001,53.719999 map 1426 optional -- Skinning Knife (1)
+step
+  label next_63
+  loop
+  zone map 1426
+  goto 42.57001,54.799999 map 1426 r 10
+  goto 41.89001,54.51005 map 1426 r 10
+  goto 42.13001,52.679898 map 1426 r 10
+  goto 42.459959,51.959898 map 1426 r 10
+  goto 41.909909,51.429949 map 1426 r 10
+  goto 42.459959,51.959898 map 1426 r 10
+  goto 42.13001,52.679898 map 1426 r 10
+  goto 42.57001,54.799999 map 1426 r 10
+  note "Kill Young Wendigos and Wendigos. Loot them for their Wendigo Manes"
+  note "Be careful as they cast [Frost Breath] (Melee Cast: Deals 6-10 Frost damage) and have increased [Frost Resistance]"
+  collect 2671 x8 quest 313.1 -- Collect Wendigo Mane (x8)
+step
+  zone map 1426
+  note "Open the Ammo Crate on the ground. Loot it for Rumbleshot's Ammo"
+  note "This has a 5 second cast time"
+  collect 13850 x1 quest 5541.1 -- Collect Rumbleshot's Ammo (x1)
+step
+  when !turnedin 384
+  along until Ammo
+  zone map 1426
+  goto 40.600061,62.239998 map 1426 r 45 optional
+  note "Kill Crag Boars and Juvenile Snow Leopards en route"
+  note "Loot the Crag Boars for their Crag Boar Ribs"
+  note "Be careful as Crag Boars cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 25-70 melee damage on hit. Only castable at range)"
+  collect 2886 x6 quest 384.1 @40.600061,62.239998 map 1426 optional -- Crag Boar Rib (6)
+  goto 40.682091,65.130048 map 1426 r 20 optional -- Travel toward Hegnar
+  note "XP checkpoint: >7-1000,1"
+step
+  when turnedin 384
+  along until Ammo
+  zone map 1426
+  goto 40.600061,62.239998 map 1426 r 45 optional
+  note "Kill Crag Boars and Juvenile Snow Leopards en route"
+  note "Be careful as Crag Boars cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 25-70 melee damage on hit. Only castable at range)"
+  goto 40.682091,65.130048 map 1426 r 20 optional -- Travel toward Hegnar
+  note "XP checkpoint: >7-1000,1"
+step
+  along until Ammo
+  zone map 1426
+  goto 40.600061,62.239998 map 1426 r 45 optional
+  goto 40.682091,65.130048 map 1426 r 20 optional -- Travel toward Hegnar
+  note "XP checkpoint: <7-1000,1"
+step
+  when !turnedin 312
+  label Ammo
+  zone map 1426
+  note "Talk to Hegnar"
+  turnin 5541 -- Turn in Ammo for Rumbleshot
+  vendor 1243 -- Vendor Trash
+step
+  when !turnedin 384
+  along until TundraOne
+  zone map 1426
+  note "Deal 51%+ damage to nearby Juvenile Snow Leopards and Young Black Bears, then pull them to the Ironforge Mountaineer to kill them more efficiently"
+  note "Kill Large Crag Boars and Crag Boars en route. Loot them for their Crag Boar Ribs"
+  note "Be careful as Large Crag Boars and Crag Boars cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 25-70 melee damage on hit. Only castable at range)"
+  collect 2886 x6 quest 384.1 @36.379959,52.490152 map 1426 -- Crag Boar Rib (6)
+  level 7 -- Grind to Level 7 en route to Tundra before talking to him
+step
+  when turnedin 384
+  along until TundraOne
+  zone map 1426
+  goto 37.979959,61.900099 map 1426 r 50 optional
+  goto 35.109909,56.779999 map 1426 r 45 optional
+  goto 35.619959,54.729948 map 1426 r 50 optional
+  goto 36.379959,52.490152 map 1426 r 40 optional
+  note "Deal 51%+ damage to nearby Juvenile Snow Leopards and Young Black Bears, then pull them to the Ironforge Mountaineer to kill them more efficiently"
+  note "Kill Large Crag Boars and Crag Boars en route"
+  note "Be careful as Large Crag Boars and Crag Boars cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 25-70 melee damage on hit. Only castable at range)"
+  level 7 -- Grind to Level 7 en route to Tundra before talking to him
+step
+  label TundraOne
+  zone map 1426
+  note "Talk to Tundra"
+  accept 312 -- Accept Tundra MacGrann's Stolen Stash
+step
+  along until next_73
+  note "Kite an Ice Claw Bear toward Rejold"
+  note "Try to accept the quest before the Ice Claw Bear dies to get quest credit"
+  note "Be careful as they cast [Ice Claw] (Melee Instant: Deals an additional 4 melee damage)"
+  note "Make sure to deal 51%+ damage to get credit"
+step
+  label next_73
+  zone map 1426
+  note "Talk to Rejold and Marleth"
+  turnin 318 -- Turn in Evershine
+  accept 319 -- Accept A Favor for Evershine
+  accept 315 -- Accept The Perfect Stout
+  accept 310 -- Accept Bitter Rivals
+  goto 30.186051,45.531067 map 1426 r 8 optional
+step
+  when has 1179 x10
+  when onquest 319
+  zone map 1426
+  note "Talk to Keeg"
+  note "Buy up to 10 more [Ice Cold Milk] from him"
+  vendor 1697 -- Vendor Trash
+  collect 1179 x10 @30.45001,46.009849 map 1426 optional -- Ice Cold Milk (10)
+step
+  when has 1179 x5
+  when onquest 319
+  zone map 1426
+  note "Talk to Keeg"
+  note "Buy up to 5 more [Ice Cold Milk] from him"
+  vendor 1697 -- Vendor Trash
+  collect 1179 x5 @30.45001,46.009849 map 1426 optional -- Ice Cold Milk (5)
+step
+  when !turnedin 384
+  along
+  zone map 1426
+  note "Kill Ice Claw Bears, Elder Crag Boars, and Snow Leopards en route to the Cave. Loot the Elder Crag Boars for Crag Boar Ribs"
+  note "Focus on the Snow Leopards"
+  note "Be careful as Ice Claw Bears cast [Ice Claw] (Melee Instant: Deals an additional 4 melee damage), and Elder Crag Boars cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 25-70 melee damage on hit. Only castable at range)"
+  kill 1196 x6 quest 319.1 @36.85001,45.479899 map 1426 -- Kill Ice Claw Bear (x6)
+  kill 1127 x8 quest 319.2 @36.85001,45.479899 map 1426 -- Kill Elder Crag Boar (x8)
+  kill 1201 x8 quest 319.3 @36.85001,45.479899 map 1426 -- Kill Snow Leopard (x8)
+  collect 2886 x6 quest 384.1 @36.85001,45.479899 map 1426 -- Crag Boar Rib (6)
+step
+  when turnedin 384
+  along
+  zone map 1426
+  note "Kill Ice Claw Bears, Elder Crag Boars, and Snow Leopards en route to the Cave"
+  note "Focus on the Snow Leopards"
+  note "Be careful as Ice Claw Bears cast [Ice Claw] (Melee Instant: Deals an additional 4 melee damage), and Elder Crag Boars cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 25-70 melee damage on hit. Only castable at range)"
+  kill 1196 x6 quest 319.1 @36.85001,45.479899 map 1426 -- Kill Ice Claw Bear (x6)
+  kill 1127 x8 quest 319.2 @36.85001,45.479899 map 1426 -- Kill Elder Crag Boar (x8)
+  kill 1201 x8 quest 319.3 @36.85001,45.479899 map 1426 -- Kill Snow Leopard (x8)
+step
+  zone map 1426
+  note "Talk to Senir"
+  accept 287 -- Accept Frostmane Hold
+step
+  along until Rhapsody1
+  zone map 1426
+  goto 46.97001,51.99005 map 1426 r 10 optional
+  goto 47.189909,52.019898 map 1426 r 12 optional -- Go inside
+step
+  when has 2886 x6
+  when !turnedin 384
+  zone map 1426
+  note "Talk to Belm"
+  note "Buy [Rhapsody Malt] and [Thunder Ale] from him"
+  collect 2894 x1 quest 384.2 @47.379959,52.519999 map 1426 -- Collect Rhapsody Malt (x1)
+  collect 2686 x1 @47.379959,52.519999 map 1426 optional -- Collect Thunder Ale (x1)
+step
+  when !has 2886 x6
+  when !turnedin 311
+  label Rhapsody1
+  zone map 1426
+  note "Talk to Belm"
+  note "Buy a [Thunder Ale] from him"
+  collect 2686 x1 @47.379959,52.519999 map 1426 -- Collect Thunder Ale (x1)
+step
+  along until next_83
+  zone map 1426
+  goto 47.499959,52.4 map 1426 r 8 optional
+  goto 47.720061,52.430152 map 1426 r 8 optional -- Go Downstairs
+step
+  when onquest 308
+  label next_83
+  along until next_84
+  zone map 1426
+  note "Talk to Jarven downstairs"
+  turnin 308 -- Turn in Distracting Jarven
+step
+  label next_84
+  zone map 1426
+  note "Keep mousing over the Guarded Thunder Ale Barrel downstairs. Wait for the Guarded Thunder Ale Barrel to become Unguarded"
+  note "Click the Unguarded Thunder Ale Barrel"
+  turnin 310 -- Turn in Bitter Rivals
+  accept 311 -- Accept Return to Marleth
+step
+  zone map 1426
+  goto 47.379959,52.519999 map 1426 r 8
+  note "Talk to Belm"
+  note "Buy up to 10 more [Ice Cold Milk] from him"
+  collect 1179 x10 @47.379959,52.519999 map 1426 optional -- Ice Cold Milk (10)
+step
+  zone map 1426
+  goto 47.379959,52.519999 map 1426 r 8
+  note "Talk to Belm"
+  note "Buy up to 5 more [Ice Cold Milk] from him"
+  collect 1179 x5 @47.379959,52.519999 map 1426 optional -- Ice Cold Milk (5)
+step
+  when onquest 287
+  zone map 1426
+  goto 47.189909,52.019898 map 1426 r 12 optional
+  goto 46.97001,51.99005 map 1426 r 10 optional
+  goto 46.829909,52.360101 map 1426 r 20 -- Exit the Inn
+step
+  when complete 384
+  zone map 1426
+  note "Talk to Ragnar"
+  turnin 384 -- Turn in Beer Basted Boar Ribs
+step
+  along until next_90
+  zone map 1426
+  goto 46.65001,47.420001 map 1426 r 40 optional
+  note "Deal 51%+ damage to nearby Snow Tracker Wolves, Winter Wolves, and Young Black Bears. Pull them to the Ironforge Mountaineer to kill them more efficiently"
+  note "Be careful as Snow Tracker Wolves have [Increased Aggro Range] (Aggro range is increased by about 8 yards)"
+step
+  when onquest 315
+  label next_90
+  zone map 1426
+  goto 42.909909,45.169849 map 1426 r 25 optional
+  goto 42.320061,45.270052 map 1426 r 45 -- Run up the ramp toward the Frostmane Seers
+step
+  along until ShimmerB
+  zone map 1426
+  note "Kill the Frostmane Headhunter patrol"
+  note "Be careful, as he patrols between all the stationary Frostmane Seers"
+  note "Be careful as they cast [Shoot] (Ranged Cast: Deals 8-15 damage)"
+  kill 1123 x5 quest 287.1 @42.320061,45.270052 map 1426 -- Kill Frostmane Headhunters (5)
+step
+  label ShimmerB
+  zone map 1426
+  note "Kill Frostmane Seers. Loot them for their Shimmerweed"
+  note "Open the Shimmerweed Baskets on the ground. Loot them for their Shimmerweed"
+  note "This has a 5 second cast time"
+  note "Be careful as they cast [Lightning Bolt] (Ranged Cast: Deals 15-30 Nature damage)"
+  collect 2676 x6 quest 315.1 @41.840061,35.629851 map 1426 -- Collect Shimmerweed (x6)
+step
+  along until IBCave
+  zone map 1426
+  note "Kill Large Crag Boars and Elder Crag Boars. Loot them for their Crag Boar Ribs"
+  collect 2886 x6 quest 384.1 @41.840061,35.629851 map 1426 -- Crag Boar Rib (6)
+step
+  along until IBCave
+  zone map 1426
+  note "Kill the two Elder Crag Boars en route to the cave (if they're up)"
+  note "Be careful as they cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 25-85 melee damage on hit. Only castable at range)"
+  kill 1127 x8 quest 319.2 @37.720061,51.880101 map 1426 -- Kill Elder Crag Boar (x8)
+step
+  when onquest 312
+  label IBCave
+  zone map 1426
+  goto 37.85001,53.709948 map 1426 r 50 -- Travel toward the Cave
+step
+  along until next_97
+  note "After looting it, remember to jump-turn his attacks to avoid the Daze and to jump on the tree log to temporarily evade him"
+step
+  label next_97
+  zone map 1426
+  note "If Old Icebeard is in the cave, kite him up the side of the cave, then all the way above it. Wait for him to get close, then jump back down then go toward the back of the cave"
+  note "Open MacGrann's Meat Locker on the ground. Loot it for Macgrann's Dried Meats"
+  note "This has a 5 second cast time"
+  collect 2667 x1 quest 312.1 -- Collect MacGrann's Dried Meats (x1)
+step
+  zone map 1426
+  note "Talk to Tundra"
+  turnin 312 -- Turn in Tundra MacGrann's Stolen Stash
+step
+  when !turnedin 384
+  zone map 1426
+  note "Kill Ice Claw Bears, Elder Crag Boars, and Snow Leopards. Loot the Elder Crag Boars for Crag Boar Ribs"
+  note "Remember to kite an Ice Claw Bear or Snow Leopards back to the questgiver if possible"
+  note "Be careful as Ice Claw Bears cast [Ice Claw] (Melee Instant: Deals an additional 4 melee damage), and Elder Crag Boars cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 35-85 melee damage on hit. Only castable at range)"
+  kill 1196 x6 quest 319.1 @31.299959,39.16985 map 1426 -- Kill Ice Claw Bear (x6)
+  kill 1127 x8 quest 319.2 @31.299959,39.16985 map 1426 -- Kill Elder Crag Boar (x8)
+  kill 1201 x8 quest 319.3 @31.299959,39.16985 map 1426 -- Kill Snow Leopard (x8)
+  collect 2886 x6 quest 384.1 @31.299959,39.16985 map 1426 -- Crag Boar Rib (6)
+step
+  when turnedin 384
+  zone map 1426
+  note "Kill Ice Claw Bears, Elder Crag Boars, and Snow Leopards"
+  note "Remember to kite an Ice Claw Bear or Snow Leopards back to the questgiver if possible"
+  note "Be careful as Ice Claw Bears cast [Ice Claw] (Melee Instant: Deals an additional 4 melee damage), and Elder Crag Boars cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 35-85 melee damage on hit. Only castable at range)"
+  kill 1196 x6 quest 319.1 @31.299959,39.16985 map 1426 -- Kill Ice Claw Bear (x6)
+  kill 1127 x8 quest 319.2 @31.299959,39.16985 map 1426 -- Kill Elder Crag Boar (x8)
+  kill 1201 x8 quest 319.3 @31.299959,39.16985 map 1426 -- Kill Snow Leopard (x8)
+step
+  zone map 1426
+  note "Talk to Rejold and Marleth"
+  turnin 315 -- Turn in The Perfect Stout
+  accept 413 -- Accept Shimmer Stout
+  turnin 319 -- Turn in A Favor for Evershine
+  accept 320 -- Accept Return to Bellowfiz
+  turnin 311 -- Turn in Return to Marleth
+  goto 30.186051,45.531067 map 1426 r 8 optional
+step
+  zone map 1426
+  goto 30.45001,46.009849 map 1426 r 8
+  note "Talk to Keeg"
+  note "Buy up to 10 more [Ice Cold Milk] from him"
+  collect 1179 x10 @30.45001,46.009849 map 1426 optional -- Ice Cold Milk (10)
+step
+  zone map 1426
+  goto 30.45001,46.009849 map 1426 r 8
+  note "Talk to Keeg"
+  note "Buy up to 5 more [Ice Cold Milk] from him"
+  collect 1179 x5 @30.45001,46.009849 map 1426 optional -- Ice Cold Milk (5)
+step
+  zone map 1426
+  note "Kill Elder Crag Boars. Loot them for their Crag Boar Ribs"
+  note "Be careful as they cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 35-85 melee damage on hit. Only castable at range)"
+  collect 2886 x6 quest 384.1 @31.299959,39.16985 map 1426 -- Crag Boar Rib (6)
+step
+  along until Explore
+  zone map 1426
+  goto 25.120061,49.540102 map 1426 r 35 optional
+  goto 24.939959,50.610051 map 1426 r 12 optional -- Enter the cave from the north side
+step
+  zone map 1426
+  note "Kill Frostmane Headhunters inside the cave"
+  note "Be careful as they cast [Shoot] (Ranged Cast: Deals 8-15 damage)"
+  note "Be careful of the patrolling Frostmane Headhunter inside"
+  kill 1123 x5 quest 287.1 @23.309909,51.359898 map 1426 -- Kill Frostmane Headhunter (x5)
+step
+  label Explore
+  zone map 1426
+  goto 23.01001,52.04 map 1426 r 8 optional
+  goto 22.899959,52.089949 map 1426 r 8
+  note "Carefully WALK down onto the nook below (do NOT fall down). Walk carefully down the nook until you get credit"
+  note "Be careful of the Frostmane Hideskinner below, as he may be able to attack you on the nook if he's close to it"
+  note "Get ready to cast [Hearthstone]"
+  note "Fully explore Frostmane Hold"
+step
+  along until Senir2
+  hearth "Kharanos" optional -- Hearth to Kharanos
+step
+  zone map 1426
+  note "Talk to Belm"
+  note "Buy a [Rhapsody Malt] from him"
+  collect 2894 x1 quest 384.2 @47.379959,52.519999 map 1426 -- Collect Rhapsody Malt (x1)
+step
+  when !turnedin 314
+  zone map 1426
+  note "Talk to Magis upstairs"
+  train 1228 -- Train your class spells (Frostbolt r2, Polymorph)
+step
+  along until Senir2
+  note "Remember to save [Chunks of Boar Meat] you get for leveling [Cooking] to 50 later"
+step
+  zone map 1426
+  note "Talk to Ragnar"
+  turnin 384 -- Turn in Beer Basted Boar Ribs
+step
+  label Senir2
+  zone map 1426
+  note "Talk to Senir"
+  turnin 287 -- Turn in Frostmane Hold
+  accept 291 -- Accept The Reports
+step
+  along until next_115
+  note "Rebuff [Arcane Intellect]"
+  note "Rebuff [Frost Armor]"
+step
+  label next_115
+  zone map 1426
+  note "Talk to Bellowfiz and Stonegear"
+  turnin 320 -- Turn in Return to Bellowfiz
+  turnin 313 -- Turn in The Grizzled Den
+  goto 49.62199,48.612082 map 1426 r 8 optional
+step
+  along until Dirt
+  note "Deal 51%+ damage to nearby Winter Wolves, then pull them to the Ironforge Mountaineers that CAN be patrolling on the road to kill them more efficiently"
+  note "If you don't see the Ironforge Mountaineers, skip this step"
+step
+  when !turnedin 314
+  label Dirt
+  along until Rudra
+  zone map 1426
+  goto 59.840061,49.559899 map 1426 r 40 optional
+  goto 61.360061,47.070051 map 1426 r 40 optional -- Go up the dirt path
+step
+  when !turnedin 314
+  zone map 1426
+  goto 59.840061,49.559899 map 1426 r 40 optional
+  goto 61.360061,47.070051 map 1426 r 40 -- Go up the dirt path
+step
+  along until Rudra
+  note "Kite Vagash down to Rudra"
+step
+  label Rudra
+  zone map 1426
+  note "Talk to Rudra"
+  accept 314 -- Accept Protecting the Herd
+step
+  zone map 1426
+  goto 62.57001,46.139899 map 1426 r 1 optional
+  goto 62.779959,54.599898 map 1426 r 40 optional
+  goto 62.819959,55.730151 map 1426 r 8
+  note "Kill Vagash. Loot him for the Fang of Vagash"
+  note "Kite Vagash down to the Dun Morogh Mountaineer south of the ranch. Make sure you do 51%+ damage to him"
+  note "Remember to get The Tundrid Hills explore xp and pull the Snow Leopard to the Dun Morogh Mountaineer if convenient"
+  collect 3627 x1 quest 314.1 -- Collect Fang of Vagash (1)
+step
+  zone map 1426
+  note "Talk to Rudra"
+  turnin 314 -- Turn in Protecting the Herd
+step
+  along until Ghilm
+  zone map 1426
+  goto 66.339959,50.920101 map 1426 r 50 optional
+  goto 67.720061,53.659999 map 1426 r 30 optional
+  note "Kite the Ice Claw Bear to the Ironforge Mountaineer (make sure to deal 51%+ damage to get credit)"
+  note "Be careful as they cast [Ice Claw] (Melee Instant: Deals an additional 4 melee damage)"
+step
+  label Ghilm
+  along
+  zone map 1426
+  note "Talk to Ghilm"
+  learn 2550 "Cooking"
+step
+  zone map 1426
+  goto 68.429909,54.460101 map 1426 r 8 optional
+  goto 68.53001,54.640101 map 1426 r 8
+  note "Talk to Kazan"
+  note "Buy 15 [Ice Cold Milk] from him"
+  collect 1179 x15 @68.53001,54.640101 map 1426 optional -- Ice Cold Milk (15)
+step
+  zone map 1426
+  goto 68.429909,54.460101 map 1426 r 8 optional
+  goto 68.53001,54.640101 map 1426 r 8
+  note "Talk to Kazan"
+  note "Buy 10 [Ice Cold Milk] from him"
+  collect 1179 x10 @68.53001,54.640101 map 1426 optional -- Ice Cold Milk (10)
+step
+  zone map 1426
+  goto 68.429909,54.460101 map 1426 r 8 optional
+  goto 68.53001,54.640101 map 1426 r 8
+  note "Talk to Kazan"
+  note "Buy 5 [Ice Cold Milk] from him"
+  collect 1179 x5 @68.53001,54.640101 map 1426 optional -- Ice Cold Milk (5)
+step
+  zone map 1426
+  goto 68.400061,54.45005 map 1426 r 1 optional
+  note "Talk to Ghilm"
+  learn 2550 "Cooking"
+step
+  zone map 1426
+  note "Talk to Mehr and Stonebrow"
+  accept 433 -- Accept The Public Servant
+  accept 432 -- Accept Those Blasted Troggs!
+  goto 69.083919,56.330151 map 1426 r 8 optional
+step
+  along until Bonesnappers
+  zone map 1426
+  note "Kill Rockjaw Skullthumpers"
+  note "Don't go out of your way to kill them"
+  kill 1115 x6 quest 432.1 @69.083919,56.330151 map 1426 -- Kill Rockjaw Skullthumper (x6)
+step
+  along until Bonesnappers
+  zone map 1426
+  goto 70.739959,56.229948 map 1426 r 30 -- Enter the cave
+step
+  label Bonesnappers
+  zone map 1426
+  note "Kill Rockjaw Bonesnappers inside the cave"
+  note "Be careful as they cast [Knockdown] (Melee Instant: Stuns for 2 seconds)"
+  kill 1117 x10 quest 433.1 @72.619959,52.559898 map 1426 -- Kill Rockjaw Bonesnapper (x10)
+step
+  loop
+  zone map 1426
+  goto 70.739959,56.229948 map 1426 r 30
+  goto 69.93001,57.290151 map 1426 r 30
+  goto 70.57001,58.610151 map 1426 r 30
+  goto 69.680061,59.370049 map 1426 r 30
+  goto 68.360061,59.57015 map 1426 r 30
+  goto 69.160061,57.510049 map 1426 r 30
+  goto 69.93001,57.290151 map 1426 r 30
+  note "Kill Rockjaw Skullthumpers"
+  kill 1115 x6 quest 432.1 -- Kill Rockjaw Skullthumper (x6)
+step
+  label Frast
+  zone map 1426
+  note "Talk to Stonebrow and Mehr"
+  turnin 432 -- Turn in Those Blasted Troggs!
+  turnin 433 -- Turn in The Public Servant
+  goto 68.669909,55.970151 map 1426 r 8 optional
+step
+  zone map 1426
+  note "Talk to Frast"
+  vendor 1698 -- Vendor Trash
+step
+  zone map 1426
+  goto 69.33001,55.459999 map 1426 r 8
+  note "Talk to Dank"
+  learn 2575 "Mining"
+step
+  label Shortcut1
+  along until Pilot
+  zone map 1426
+  goto 70.349909,55.279999 map 1426 r 5 optional
+  goto 70.520061,54.75005 map 1426 r 12 optional -- Take the shortcut up behind Dank
+step
+  zone map 1426
+  goto 70.349909,55.279999 map 1426 r 5 optional
+  goto 70.520061,54.75005 map 1426 r 12 -- Take the shortcut up behind Dank
+step
+  label Shortcut2
+  along until Pilot
+  zone map 1426
+  goto 70.97001,50.699898 map 1426 r 50 optional
+  goto 72.899959,49.789848 map 1426 r 50 optional
+  goto 77.109909,48.820102 map 1426 r 50 optional -- Kite the nearby Rockjaw Ambushers to the Ironforge Mountaineers that can patrol on the road (make sure to deal 51%+ damage to get credit)
+step
+  zone map 1426
+  goto 70.97001,50.699898 map 1426 r 50 optional
+  goto 72.899959,49.789848 map 1426 r 50 optional
+  goto 77.109909,48.820102 map 1426 r 50 -- Kite the nearby Rockjaw Ambushers to the Ironforge Mountaineers that can patrol on the road (make sure to deal 51%+ damage to get credit)
+step
+  along until Pilot
+  zone map 1426
+  goto 81.229909,42.6599 map 1426 r 50 optional
+  goto 83.01001,40.30985 map 1426 r 30 optional -- Kite a Scarred Crag Boar through the tunnel
+  note "Be careful as they cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 40-100 melee damage on hit. Only castable at range)"
+step
+  when !turnedin 419
+  label Pilot
+  zone map 1426
+  note "Talk to Hammerfoot"
+  accept 419 -- Accept The Lost Pilot
+step
+  zone map 1426
+  note "Click the Dwarven Corpse on the ground"
+  note "MAKE SURE You have a 1 free inventory slot for this turnin"
+  note "Remember you're going to kite Mangeclaw back to Hammerfoot"
+  turnin 419 -- Turn in The Lost Pilot
+  accept 417 -- Accept A Pilot's Revenge
+step
+  zone map 1426
+  goto 78.41001,37.799901 map 1426 r 60 optional
+  goto 83.89001,39.189951 map 1426 r 8
+  note "Kill Mangeclaw. Loot him for the Mangy Claw"
+  note "Kite him all the way over to Hammerfoot (make sure to deal 51%+ damage to get credit)"
+  collect 3183 x1 quest 417.1 -- Collect Mangy Claw (x1)
+step
+  zone map 1426
+  note "Talk to Hammerfoot"
+  turnin 417 -- Turn in A Pilot's Revenge
+step
+  label Tunnel1
+  along until Barleybrew
+  zone map 1426
+  goto 83.01001,40.30985 map 1426 r 30 optional
+  goto 81.229909,42.6599 map 1426 r 30 optional -- Run back through the tunnel
+step
+  zone map 1426
+  goto 78.73001,49.770051 map 1426 r 8
+  note "Be careful as Scarred Crag Boars and Elder Crag Boars cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 40-100 melee damage on hit. Only castable at range), and Ice Claw Bears cast [Ice Claw] (Melee Instant: Deals an additional 4 melee damage)"
+  level 9+5450 -- Grind to 5450+/6500xp
+step
+  zone map 1426
+  goto 83.01001,40.30985 map 1426 r 30 optional
+  goto 81.229909,42.6599 map 1426 r 30 -- Run back through the tunnel
+step
+  label Tunnel2
+  along until Barleybrew
+  zone map 1426
+  goto 79.61001,49.94 map 1426 r 20 optional
+  goto 81.099959,49.76 map 1426 r 20 optional
+  goto 81.600061,50.010051 map 1426 r 20 optional
+  goto 83.589909,49.180102 map 1426 r 20 optional
+  note "Kite a Scarred Crag Boar en route"
+  note "Be careful as they cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 40-100 melee damage on hit. Only castable at range)"
+  goto 84.259959,48.930051 map 1426 r 20 optional -- Do the Mountain Skip. Remember to drop down carefully
+step
+  zone map 1426
+  goto 79.61001,49.94 map 1426 r 20 optional
+  goto 81.099959,49.76 map 1426 r 20 optional
+  goto 81.600061,50.010051 map 1426 r 20 optional
+  goto 83.589909,49.180102 map 1426 r 20 optional
+  goto 84.259959,48.930051 map 1426 r 20 -- Do the Mountain Skip. Remember to drop down carefully
+step
+  along until Barleybrew
+  note "Be careful as Scarred Crag Boars cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 40-100 melee damage on hit. Only castable at range)"
+  level 9+5990 -- Grind to 5990+/6500xp
+step
+  label Barleybrew
+  zone map 1426
+  note "Talk to Barleybrew"
+  turnin 413 -- Turn in Shimmer Stout
+  accept 414 -- Accept Stout to Kadrell
+step
+  zone map 1426
+  goto 86.739959,49.58 map 1426 r 40 optional
+  goto 86.360061,47.360001 map 1426 r 8
+  level 9+6320 -- Grind to 6320+/6500xp
+  note "Be careful as Scarred Crag Boars cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 40-100 melee damage on hit. Only castable at range)"
+step
+  label CragB1
+  along until Cobbleflint
+  zone map 1432
+  goto 16.450153,58.539897 map 1432 r 20 optional
+  goto 19.590093,62.759875 map 1432 r 30 optional -- Kite a Scarred Crag Boar through the tunnel
+  note "Be careful as they cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 40-100 melee damage on hit. Only castable at range)"
+step
+  zone map 1432
+  goto 21.139942,71.620036 map 1432 r 35 optional
+  goto 19.060063,75.460036 map 1432 r 35 optional
+  goto 20.910093,77.669776 map 1432 r 35 optional
+  goto 21.139942,71.620036 map 1432 r 35 optional
+  level 10 -- Grind to Level 10
+step
+  zone map 1432
+  goto 16.450153,58.539897 map 1432 r 20 optional
+  goto 19.590093,62.759875 map 1432 r 30 -- Kite a Scarred Crag Boar through the tunnel
+  note "Be careful as they cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 40-100 melee damage on hit. Only castable at range)"
+step
+  along until Rugelfuss
+  zone map 1432
+  note "Try to kite a nearby Elder Black Bear or Forest Lurker into the Bunker with you (remember to deal 51%+ damage to get credit)"
+  note "Loot the Elder Black Bears for their [Bear Meat]"
+  note "Loot the Forest Lurkers for their [Spider Ichor]"
+  note "Cobbleflint, Gravelgaw, and Wallbang won't assist you"
+  collect 3173 x3 @21.139942,71.620036 map 1432 optional -- Collect Bear Meat (x3)
+  collect 3174 x3 @21.139942,71.620036 map 1432 optional -- Collect Spider Ichor (x3)
+step
+  label Cobbleflint
+  zone map 1432
+  note "Talk to Cobbleflint"
+  accept 224 -- Accept In Defense of the King's Lands
+step
+  along until Rugelfuss
+  zone map 1432
+  goto 23.269852,75.649753 map 1432 r 12 optional
+  goto 23.620063,75.41981 map 1432 r 12 optional
+  goto 23.120124,73.929798 map 1432 r 12 optional -- Enter the Bunker. Go to the top floor
+step
+  label Rugelfuss
+  zone map 1432
+  note "Talk to Rugelfuss"
+  accept 267 -- Accept The Trogg Threat
+step
+  zone map 1432
+  note "Talk to Kadrell"
+  note "Kadrell patrols along the main Thelsamar road"
+  turnin 414 -- Turn in Stout to Kadrell
+  accept 416 -- Accept Rat Catching
+  accept 1339 -- Accept Mountaineer Stormpike's Task
+step
+  zone map 1432
+  note "Talk to Brock"
+  note "He can be inside or outside the building"
+  accept 6387 -- Accept Honor Students
+step
+  zone map 1432
+  note "Talk to Thorgrum"
+  getfp "Thelsamar" @33.940065,50.959919 map 1432 -- Get the Thelsamar flight path
+  turnin 6387 -- Turn in Honor Students
+  accept 6391 -- Accept Ride to Ironforge
+step
+  along until next_158
+  zone map 1432
+  goto 33.940065,50.959919 map 1432 r 8
+  note "Talk to Thorgrum"
+  fly "Ironforge" -- Fly to Ironforge
+step
+  label next_158
+  along until next_160
+  zone map 1455
+  goto 55.81015,38.350471 map 1455 r 30 optional
+  goto 51.829755,29.770188 map 1455 r 15 optional
+  goto 49.669439,28.229262 map 1455 r 12 optional
+  note "Go inside the building"
+  goto 51.540111,26.299789 map 1455 r 10 optional -- Travel toward Golnir
+step
+  when onquest 291
+  label next_160
+  zone map 1455
+  note "Talk to Golnir"
+  turnin 6391 -- Turn in Ride to Ironforge
+  accept 6388 -- Accept Gryth Thurden
+  vendor 4256 -- Vendor Trash
+step
+  along until next_162
+  zone map 1455
+  goto 49.669439,28.229262 map 1455 r 12 optional
+  goto 55.81015,38.350471 map 1455 r 30 optional
+  note "Exit the building"
+  goto 55.49015,47.740071 map 1455 r 10 optional -- Travel toward Gryth
+step
+  label next_162
+  zone map 1455
+  note "Talk to Gryth"
+  turnin 6388 -- Turn in Gryth Thurden
+step
+  along until next_164
+  zone map 1455
+  goto 55.070229,51.360203 map 1455 r 30 optional
+  goto 49.110387,56.020887 map 1455 r 30 optional
+  goto 46.670545,50.560362 map 1455 r 20 optional
+  goto 44.120664,50.370827 map 1455 r 20 optional
+  goto 39.549597,57.489789 map 1455 r 10 optional -- Travel toward Barin
+step
+  label next_164
+  zone map 1455
+  note "Talk to Barin"
+  turnin 291 -- Turn in The Reports
+step
+  along until next_166
+  zone map 1455
+  goto 44.430545,49.080088 map 1455 r 20 optional
+  goto 44.08019,46.599066 map 1455 r 20 optional
+  goto 40.839715,44.589987 map 1455 r 20 optional
+  goto 35.299794,32.759166 map 1455 r 20 optional
+  goto 27.599557,11.05922 map 1455 r 20 optional
+  goto 27.169518,8.5800931 map 1455 r 10 optional -- Travel toward Dink
+step
+  label next_166
+  zone map 1455
+  note "Talk to Dink"
+  train 7312 -- Train your class spells (Frost Armor r2, Frost Nova, Polymorph, Conjure Water r1 & r2)
+  note "Total Cost: 15s"
+  note "Remember you may want money for Healing Potions (3s each), Bronze Tube (8s each), and level 5 food (20c per 5)"
+step
+  along until IFHS
+  zone map 1455
+  note "Go inside the building"
+  goto 18.139953,51.449285 map 1455 r 10 -- Travel toward Firebrew
+step
+  label IFHS
+  zone map 1455
+  note "Talk to Firebrew"
+  sethome "Ironforge" @18.139953,51.449285 map 1455 -- Set your Hearthstone to Ironforge

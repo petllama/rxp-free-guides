@@ -1,0 +1,394 @@
+guide rxp-free/11-13-loch-modan-hunter-d8ccbac0
+title "11-13 Loch Modan (Hunter)"
+levels 11-13
+zone map 1432
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+class Hunter
+next rxp-free/14-16-darkshore-f2ec54c2
+step
+  label NormalRouteStart
+  note "Review this source step manually."
+step
+  when !zone "Loch Modan"
+  along until next_2
+  zone map 1426
+  zone map 1432
+  goto 86.202904,51.26 map 1426 r 15 optional
+  goto 22.070939,73.126899 map 1432 r 20 optional -- Travel to Loch Modan
+step
+  label next_2
+  zone map 1432
+  note "Talk to Mountaineer Cobbleflint"
+  accept 224 -- Accept In Defense of the King's Lands
+step
+  zone map 1432
+  note "Talk to Captain Rugelfuss in the bunker"
+  accept 267 -- Accept The Trogg Threat
+step
+  along
+  zone map 1432
+  note "Talk to Mountaineer Kadrell"
+  note "Mountaineer Kadrell patrols the road through Thelsamar"
+  note "Quest not in Forever reference: .turnin -414. Turn in Stout to Kadrell"
+  accept 416 -- Accept Rat Catching
+  accept 1339 -- Accept Mountaineer Stormpike's Task
+step
+  zone map 1432
+  note "Talk to Vidra Hearthstove"
+  accept 418 -- Accept Thelsamar Blood Sausages
+step
+  zone map 1432
+  note "Talk to Innkeeper Hearthstove"
+  sethome "Thelsamar" @35.534143,48.403905 map 1432 -- Set your Hearthstone to Thelsamar
+step
+  zone map 1432
+  note "Talk to Brock Stoneseeker"
+  accept 6387 -- Accept Honor Students
+step
+  zone map 1432
+  note "Talk to Thorgrum Borrelson"
+  turnin 6387 -- Turn in Honor Students
+  accept 6391 -- Accept Ride to Ironforge
+step
+  along until RTB
+  zone map 1432
+  goto 33.937889,50.953939 map 1432 r 8
+  note "Talk to Thorgrum Borrelson"
+  fly "Ironforge" -- Fly to Ironforge
+step
+  zone map 1455
+  note "Talk to Golnir Bouldertoe"
+  turnin 6391 -- Turn in Ride to Ironforge
+  accept 6388 -- Accept Gryth Thurden
+step
+  when onquest 291
+  zone map 1455
+  note "Talk to Senator Barin Redstone"
+  turnin 291 -- Turn in The Reports
+step
+  only Hunter
+  when onquest 6086
+  zone map 1455
+  note "Talk to Belia Thundergranite"
+  turnin 6086 -- Turn in Training the Beast
+step
+  only Hunter
+  label RTB
+  zone map 1455
+  note "Talk to Gryth Thurden"
+  turnin 6388 -- Turn in Gryth Thurden
+  accept 6392 -- Accept Return to Brock
+step
+  when !zone "Loch Modan"
+  zone map 1455
+  note "Talk to Gryth Thurden"
+  goto 55.501534,47.741966 map 1455 r 8
+  fly "Loch Modan" -- Fly to Loch Modan
+step
+  when onquest 6392
+  zone map 1432
+  note "Talk to Brock Stoneseeker"
+  turnin 6392 -- Turn in Return to Brock
+step
+  only Hunter
+  zone map 1432
+  goto 35.828161,43.457131 map 1432 r 8
+  note "Talk to Vrok Blunderblast"
+  note "Buy a [Hunter's Boomstick] if you can afford it"
+  collect 2511 x1 @35.828161,43.457131 map 1432 optional
+step
+  only Hunter
+  when has 2511
+  along until next_18
+  zone map 1432
+  note "Equip the [Hunter's Boomstick]"
+  use 2511 @35.828161,43.457131 map 1432 optional
+step
+  label next_18
+  along until BraveSoul
+  zone map 1432
+  note "Kill Elder Black Bears. Loot them for their Bear Meat"
+  note "Kill Mountain Boars. Loot them for their Boar Intestines"
+  note "Kill Forest Lurkers. Loot them for their Ichor"
+  collect 3172 x3 @35.828161,43.457131 map 1432 optional -- Collect Boar Intestines (x3)
+  collect 3173 x3 @35.828161,43.457131 map 1432 optional -- Collect Bear Meat (x3)
+  collect 3174 x3 @35.828161,43.457131 map 1432 optional -- Collect Spider Ichor (x3)
+step
+  along until next_20
+  zone map 1432
+  goto 23.849912,17.919822 map 1432 r 100 -- Travel north to the Algaz Station
+step
+  accept 1339 -- Accept Mountaineer Stormpike's Task
+step
+  label next_20
+  zone map 1432
+  note "Talk to Mountaineer Stormpike inside the bunker"
+  turnin 1339 -- Turn in Mountaineer Stormpike's Task
+  accept 1338 -- Accept Stormpike's Order
+  accept 307 -- Accept Filthy Paws
+step
+  only Human
+  zone map 1432
+  note "Talk to Mountaineer Stormpike inside the bunker"
+  turnin 1339 -- Turn in Mountaineer Stormpike's Task
+  accept 1338 -- Accept Stormpike's Order
+  accept 307 -- Accept Filthy Paws
+step
+  label BraveSoul
+  along until next_23
+  zone map 1432
+  goto 35.500065,18.900316 map 1432 r 20 -- Enter the Silver Stream Mine
+step
+  label next_23
+  zone map 1432
+  note "Open the Miners' League Crates. Loot them for the Miners' Gear"
+  note "The Miners' League Crates can be found all throughout the Mine"
+  note "You will be able to do this quest at a higher level if you wish to skip it for now"
+  collect 2640 x4 quest 307.1 @35.930035,22.550219 map 1432 -- Miners' Gear (4)
+step
+  along until RatEar
+  zone map 1432
+  note "Kill Elder Black Bears. Loot them for their Bear Meat"
+  note "Kill Mountain Boars. Loot them for their Boar Intestines"
+  note "Kill Forest Lurkers. Loot them for their Ichor"
+  collect 3172 x3 @35.930035,22.550219 map 1432 optional -- Collect Boar Intestines (x3)
+  collect 3173 x3 @35.930035,22.550219 map 1432 optional -- Collect Bear Meat (x3)
+  collect 3174 x3 @35.930035,22.550219 map 1432 optional -- Collect Spider Ichor (x3)
+step
+  zone map 1432
+  note "Talk to Mountaineer Stormpike"
+  turnin 307 -- Turn in Filthy Paws
+step
+  accept 416 -- Accept Rat Catching
+step
+  label RatEar
+  zone map 1432
+  note "Kill Tunnel Rats. Loot them for their Ears"
+  note "Tunnel Rats can spawn throughout Loch Modan. Check your World Map for their locations"
+  collect 3110 x12 quest 416.1 @35.480125,16.820116 map 1432 -- Collect Tunnel Rat Ear (x12)
+step
+  when !turnedin 418
+  zone map 1432
+  note "Kill Elder Black Bears. Loot them for their Bear Meat"
+  note "Kill Mountain Boars. Loot them for their Boar Intestines"
+  note "Kill Forest Lurkers. Loot them for their Ichor"
+  collect 3173 x3 @35.480125,16.820116 map 1432 -- Bear Meat (3)
+  collect 3172 x3 @26.899943,10.700251 map 1432 -- Boar Intestines (3)
+  collect 3174 x3 @38.000125,34.899757 map 1432 -- Spider Ichor (3)
+  goto 31.900064,16.399912 map 1432 r 90 optional
+  goto 27.999883,20.599777 map 1432 r 90 optional
+  goto 33.800125,40.499939 map 1432 r 90 optional
+  goto 36.200125,30.899938 map 1432 r 90 optional
+  goto 39.000005,32.10021 map 1432 r 90 optional
+  goto 31.900064,16.399912 map 1432 r 90 optional
+  goto 27.999883,20.599777 map 1432 r 90 optional
+  goto 33.800125,40.499939 map 1432 r 90 optional
+  goto 36.200125,30.899938 map 1432 r 90 optional
+  goto 39.000005,32.10021 map 1432 r 90 optional
+  goto 31.900064,16.399912 map 1432 r 8 optional
+step
+  along
+  zone map 1432
+  note "Talk to Mountaineer Kadrell"
+  note "Mountaineer Kadrell patrols the road through Thelsamar"
+  turnin 416 -- Turn in Rat Catching
+step
+  zone map 1432
+  note "Talk to Vidra Hearthstove"
+  turnin 418 -- Turn in Thelsamar Blood Sausages
+step
+  zone map 1432
+  note "Kill Stonesplinter Troggs and Stonesplinter Scouts. Loot them for their Teeth"
+  kill 1161 x10 quest 224.1 @33.879883,76.579855 map 1432 -- Kill Stonesplinter Trogg (x10)
+  kill 1162 x10 quest 224.2 @33.879883,76.579855 map 1432 -- Kill Stonesplinter Scout (x10)
+  collect 2536 x8 quest 267.1 @33.879883,76.579855 map 1432 -- Collect Trogg Stone Tooth (x8)
+step
+  zone map 1432
+  note "Talk to Mountaineer Cobbleflint"
+  turnin 224 -- Turn in In Defense of the King's Lands
+step
+  zone map 1432
+  note "Talk to Captain Rugelfuss"
+  turnin 267 -- Turn in The Trogg Threat
+step
+  along until next_34
+  zone map 1432
+  goto 19.599882,63.10017 map 1432 r 5 -- Travel to the snowy patch on the ground just outside the South Gate Pass tunnel
+step
+  when onquest 86667
+  collect 279379 x1 quest 86667.1 @19.599882,63.10017 map 1432 -- Jar of Snow 1/1
+step
+  label next_34
+  zone map 1432
+  use 279380 @19.599882,63.10017 map 1432 -- Use the [Ceramic Jar] while standing on the snowy patch to collect the [Jar of Snow]
+step
+  when onquest 86667
+  zone map 1432
+  note "Talk to Norric Lochthane"
+  note "Ensure to turn this in before the 10 minute expiry on the [Jar of Snow]"
+  turnin 86667 -- Turn in Snowbound
+step
+  when level>=13
+  zone map 1432
+  note "Click the Discarded Fishing Toolbox on the lake floor"
+  note "NOTE: This can spawn in one of many different locations. Swim around until you see the exclamation point on your minimap"
+  note "Be careful of high level Young Threshadon"
+  accept 86614 -- Accept Silver of the Waves
+step
+  when level>=13
+  zone map 1432
+  note "Talk to Khara Deepwater::1684"
+  turnin 86614 -- Turn in Silver of the Waves
+step
+  along until next_39
+  zone map 1432
+  goto 64.889917,66.660216 map 1432 r 80 -- Travel to Ironband's Excavation Site
+step
+  label next_39
+  zone map 1432
+  note "Talk to Prospector Ironband"
+  accept 298 -- Accept Excavation Progress Report
+step
+  along until next_41
+  zone map 1432
+  goto 82.92001,59.369977 map 1432 r 80 optional
+  goto 83.28001,62.970249 map 1432 r 25 optional -- Travel to The Farstrider Lodge
+step
+  label next_41
+  zone map 1432
+  note "Talk to Daryl the Youngling"
+  accept 257 -- Accept A Hunter's Boast
+  goto 83.489919,65.400148 map 1432 r 8 optional
+step
+  zone map 1432
+  note "Kill Mountain Buzzards"
+  note "You must complete this quest and return to Daryl the Youngling within 15 minutes. If you fail the quest, abandon it and pick it up again"
+  kill 1194 x6 quest 257.1 @80.09004,64.160193 map 1432 -- Mountain Buzzard slain (6)
+step
+  zone map 1432
+  note "Talk to Daryl the Youngling"
+  turnin 257 -- Turn in A Hunter's Boast
+step
+  zone map 1432
+  note "Talk to Xandar Goodbeard"
+  note "Buy a [Simple Wood] and a [Flint and Tinder] from him"
+  note "This is used to make [Basic Campfires] on Boats to level your [Cooking] skill without losing time"
+  note "You need 50 [Cooking] for a quest in Duskwood later"
+  collect 4470 x1 @82.495841,63.369253 map 1432 -- Simple Wood (1)
+  collect 4471 x1 @82.495841,63.369253 map 1432 -- Flint and Tinder (1)
+step
+  along until next_47
+  note "Die and respawn at the Spirit Healer"
+step
+  label next_47
+  zone map 1432
+  note "Talk to Jern Hornhelm"
+  turnin 298 -- Turn in Excavation Progress Report
+  accept 301 -- Accept Report to Ironforge
+step
+  zone map 1432
+  goto 33.937889,50.953939 map 1432 r 8
+  note "Talk to Thorgrum"
+  fly "Ironforge" -- Fly to Ironforge
+step
+  zone map 1455
+  goto 60.072601,36.415311 map 1455 r 8
+  note "Talk to Daryl Riknussun"
+  learn 2550 "Cooking"
+step
+  zone map 1455
+  note "Talk to Prospector Stormpike"
+  turnin 301 -- Turn in Report to Ironforge
+step
+  when !zone "Stormwind City"
+  along until EnterSW
+  zone map 1455
+  goto 78.00019,51.400006 map 1455 r 8
+step
+  zone map 1455
+  note "Talk to Monty on the middle platform"
+  accept 6661 @78.00019,51.400006 map 1455 -- Accept Deeprun Rat Roundup
+step
+  zone map 1455
+  use 17117 @78.00019,51.400006 map 1455 -- Use the [Rat Catcher's Flute] on Deeprun Rats
+  kill 13016 x5 quest 6661.1 @78.00019,51.400006 map 1455 -- Rats Captured (x5)
+step
+  zone map 1455
+  note "Talk to Monty"
+  turnin 6661 @78.00019,51.400006 map 1455 -- Turn in Deeprun Rat Roundup
+  accept 6662 @78.00019,51.400006 map 1455 -- Accept Me Brother, Nipsy
+step
+  zone map 1455
+  note "Take the Deeprun Tram to the Stormwind side"
+  note "Talk to Nipsy on the middle platform on the Stormwind side of the Deeprun Tram"
+  turnin 6662 @78.00019,51.400006 map 1455 -- Turn in Me Brother, Nipsy
+step
+  label EnterSW
+  zone map 1453
+  note "Talk to Grimand Elmore"
+  accept 353 -- Accept Stormpike's Delivery
+step
+  zone map 1453
+  note "Talk to Furen Longbeard"
+  turnin 1338 -- Turn in Stormpike's Order
+step
+  only Hunter
+  zone map 1453
+  note "Talk to Einris Brightspear"
+  train 5515 -- Train your class spells
+step
+  zone map 1453
+  note "Talk to Woo Ping"
+  train 11867 -- Train Staves
+step
+  label NormalRouteEnd
+  note "Review this source step manually."
+step
+  zone map 1453
+  goto 53.612072,59.764223 map 1453 r 8
+  note "Talk to Auctioneer Jaxon"
+  note "Buy [Chunks of Boar Meat] and/or [Stringy Wolf Meat] to level your [Cooking] with later"
+  note "You need 50 [Cooking] for a quest in Darkshire later"
+  note "If you don't want to or can't do this, skip this step"
+  note "Buy the following items for faster turn ins in Darkshore shortly:"
+  note "[Strider Meat]"
+  note "[Darkshore Grouper]"
+  note "[Chunks of Boar Meat]"
+  note "[Stringy Wolf Meat]"
+  collect 5469 x5 @53.612072,59.764223 map 1453 optional -- Strider Meat (5)
+  collect 12238 x6 @53.612072,59.764223 map 1453 optional -- Darkshore Grouper (6)
+step
+  zone map 1453
+  goto 53.612072,59.764223 map 1453 r 8
+  note "Talk to Auctioneer Jaxon"
+  note "If you don't want to or can't do this, skip this step"
+  note "Buy the following items for faster turn ins in Darkshore shortly:"
+  note "[Strider Meat]"
+  note "[Darkshore Grouper]"
+  collect 5469 x5 @53.612072,59.764223 map 1453 optional -- Strider Meat (5)
+  collect 12238 x6 @53.612072,59.764223 map 1453 optional -- Darkshore Grouper (6)
+step
+  when !turnedin 95065
+  zone map 1453
+  note "Talk to Catherine Leland"
+  note "Buy one [Shiny Bauble] and three [Nightcrawlers] from her. This is for a 900xp quest"
+  collect 6529 x1 @45.769897,58.587232 map 1453 -- 1/1 Shiny Bauble
+  collect 6530 x3 @45.769897,58.587232 map 1453 -- 3/3 Nightcrawlers
+step
+  zone map 1453
+  note "Talk to Gilbert Gray::267118"
+  accept 95065 -- Accept Fishin' Time
+  turnin 95065 -- Turn in Fishin' Time
+step
+  only Hunter
+  zone map 1453
+  goto 3.7842844,40.89333 map 1453 r 8
+  note "Level your [First Aid] while waiting for the boat to Darkshore if needed"
+step
+  only Hunter
+  label DarkshoreBoat
+  zone map 1453
+  goto 3.7842844,40.89333 map 1453 r 8

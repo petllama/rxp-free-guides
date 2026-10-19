@@ -1,0 +1,3498 @@
+guide rxp-free/9-13-zephras-isle-2c3afa34
+title "9-13 Zephras Isle"
+levels 9-13
+zone map 2521
+coords era
+faction Horde
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · Dungeon Guide 1-22"
+next rxp-free/12-14-silverpine-forest-45436275, rxp-free/12-16-the-barrens-936357b2
+step
+  when !turnedin 92550
+  note "Complete the 1-9 Skyborne guide before continuing. This guide requires the quests from Part 1."
+step
+  when !turnedin 93927
+  note "Complete the 1-9 Skyborne guide before continuing. This guide requires the quests from Part 1."
+step
+  zone map 2521
+  goto 45.67,45.5 map 2521 r 8 optional
+  note "Talk to Constable Aonda::251523."
+  accept 92579 only Horde -- Accept To Valanaar
+  accept 93948 -- Accept Deliver the Signet
+step
+  along until LeaveZephrasIsle
+  zone map 2521
+  note "Windstones"
+  use 255663 @45.67,45.5 map 2521 -- Windstones
+step
+  when !turnedin 93948
+  when !onquest 93317
+  zone map 2521
+  goto 49.4,58.76 map 2521 r 8
+  note "Jump off the mountain and use [Walk on Air] to fly towards the waypoint location."
+step
+  when complete 97967
+  when complete 92550
+  when onquest 97967
+  zone map 2521
+  note "Talk to Fenn Fairweather::251992"
+  turnin 97967 -- Turn in Camping 101: Fishing
+step
+  when onquest 93948
+  when !onquest 93317
+  zone map 2521
+  goto 49.4,58.76 map 2521 r 8
+  note "*Use the sit macro in combat to die faster."
+  note "*Otherwise, you may be sent to a different graveyard"
+  note "*Be careful if you go straight through the field; you can easily die."
+step
+  when onquest 93948
+  when !onquest 93317
+  zone map 2521
+  goto 54.99,68.14 map 2521 r 8
+  note "Talk to the Spirit Healer::6491."
+step
+  when onquest 93948
+  zone map 2521
+  note "Talk to Donaal Downbreeze::255940."
+  sethome "Valanaar" @54.99,68.14 map 2521 -- Set your Hearthstone to Valanaar
+  goto 62.18,72.616 map 2521 r 8
+step
+  label Accept_Blood_Tithe
+  along until next_10
+  zone map 2521
+  note "Talk to Alvarion Windfield::252448 on the second floor."
+  accept 92679 -- Accept Blood Tithe
+step
+  label next_10
+  zone map 2521
+  note "Talk to Alvarion Windfield::252448 on the second floor."
+  accept 92679 -- Accept Blood Tithe
+step
+  zone map 2521
+  note "Talk to Alvarion Windfield::252448 on the second floor."
+  accept 92679 -- Accept Blood Tithe
+step
+  when !onquest 94484
+  when !turnedin 93948
+  zone map 2521
+  goto 63.33,73.65 map 2521 r 15 optional
+  goto 63.973,75.095 map 2521 r 25 -- Go over the mountain
+step
+  zone map 2521
+  note "Talk to Lotheluum Starbreeze::252359."
+  accept 94484 -- Accept Unnerving Silence
+step
+  only Horde
+  zone map 2521
+  note "Talk to Ealaane Nimbuswalker::259012."
+  accept 94896 -- Accept Aid For The Refugees
+  accept 94897 -- Accept The Fate of a Loved One
+step
+  label DeliverTheSignetA
+  along until next_16
+  note "Talk to Talaanis Shadowsong::252476."
+  turnin 93948 -- Turn in Deliver the Signet
+step
+  label next_16
+  note "Talk to Talaanis Shadowsong::252476."
+  turnin 93948 -- Turn in Deliver the Signet
+step
+  label Deliver_the_Signet
+  zone map 2521
+  note "Talk to Talaanis Shadowsong::252476."
+  turnin 93948 -- Turn in Deliver the Signet
+step
+  when onquest 92579
+  turnin 92579 only Horde -- Turn in To Valanaar
+step
+  label BuggedAcceptedA
+  zone map 2521
+  goto 66.18,76.65 map 2521 r 8 optional
+  note "Talk to Valennia Stormfist::252383."
+  accept 92700 only Horde -- Accept The Grand Skyseer
+step
+  only Horde
+  when onquest 92700
+  zone map 2521
+  goto 66.488,76.498 map 2521 r 6 optional
+  goto 63.027,77.807 map 2521 r 8 optional only Hunter
+  goto 61.491,76.893 map 2521 r 8 only !Hunter
+  note "Jump off the tower and use [Walk on Air] to fly towards the waypoint locations."
+step
+  only Horde
+  when onquest 92700
+  turnin 92700 -- Turn in The Grand Skyseer
+step
+  only Horde
+  zone map 2521
+  note "Talk to Ayessa Dawnsinger::251968."
+  accept 92708 -- Accept A Grand Adventure
+  accept 93735 -- Accept The Broken Construct 1
+step
+  only Horde
+  when onquest 93735
+  zone map 2521
+  goto 59.154,79.783 map 2521 r 8
+  note "Use [Skysight] for the 10% movement speed buff."
+step
+  only Hunter,Horde
+  when level>=9
+  when !onquest 92679
+  when !turnedin 92679
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Bow]"
+  collect 277110 x1 @59.395,75.73 map 2521 optional -- Collect Zephrali Bow
+  vendor 271465 -- Vendor trash and repair if needed
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Hunter,Horde
+  when level>=9
+  when has 277110
+  along until LeavingValanaarA
+  zone map 2521
+  note "Equip the [Zephrali Bow]."
+  use 277110 @59.395,75.73 map 2521 -- Zephrali Bow
+step
+  only Warrior,Horde
+  when level>=9
+  when !onquest 92679
+  when !turnedin 92679
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Smasher]."
+  collect 277106 x1 @59.395,75.73 map 2521 optional -- Zephrali Smasher
+  vendor 271465 -- Vendor trash and repair if needed.
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Warrior,Horde
+  when level>=9
+  when has 277106
+  along until LeavingValanaarA
+  zone map 2521
+  note "Equip the [Zephrali Smasher]."
+  use 277106 @59.395,75.73 map 2521 -- Zephrali Smasher
+step
+  only Druid,Horde
+  when level>=9
+  when !onquest 92679
+  when !turnedin 92679
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Greatstaff]."
+  collect 277109 x1 @59.395,75.73 map 2521 optional -- Zephrali Greatstaff
+  vendor 271465 -- Vendor trash and repair if needed.
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Druid,Horde
+  when level>=9
+  when has 277109
+  along until LeavingValanaarA
+  zone map 2521
+  note "Equip the [Zephrali Greatstaff]."
+  use 277109 @59.395,75.73 map 2521 -- Zephrali Greatstaff
+step
+  only Rogue,Horde
+  when level>=9
+  when !onquest 92679
+  when !turnedin 92679
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Bludgeon]."
+  collect 277107 x1 @59.395,75.73 map 2521 optional -- Zephrali Bludgeon
+  vendor 271465 -- Vendor trash and repair if needed.
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Rogue,Horde
+  when level>=9
+  when has 277107
+  along until LeavingValanaarA
+  zone map 2521
+  note "Equip the [Zephrali Bludgeon]."
+  use 277107 @59.395,75.73 map 2521 -- Zephrali Bludgeon
+step
+  only Horde
+  when complete 97968
+  when onquest 97968
+  zone map 2521
+  note "Talk to Syriel Nightrain::254345."
+  turnin 97968 -- Turn in Camping 101: Herbalism
+step
+  only Hunter,Horde
+  when onquest 93735
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Bow]"
+  collect 277110 x1 @59.395,75.73 map 2521 optional -- Collect Zephrali Bow
+  vendor 271465 -- Vendor trash and repair if needed
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Horde
+  when onquest 93735
+  turnin 93735 -- Turn in The Broken Construct 1
+step
+  only Horde
+  label LeavingValanaarA
+  zone map 2521
+  note "Talk to Riaani Nightwind::256083."
+  accept 93737 -- Accept The Broken Construct 2
+  kill 256083 x1 quest 93737.1 -- Listen to what Riaani Nightwind has to say
+step
+  only Horde
+  label BrokenConstructA
+  along until next_34
+  note "Click on the Construct Parts inside the cave on the bottom floor."
+  collect 260881 x1 quest 93737.2 -- Obtain Crystallized lightning from the Shriekling Cave
+step
+  label next_34
+  only Horde
+  note "Click on the Construct Parts inside the cave on the bottom floor."
+  collect 260881 x1 quest 93737.2 -- Obtain Crystallized lightning from the Shriekling Cave
+step
+  only Horde
+  loop
+  zone map 2521
+  goto 51.434,67.603 map 2521 r 15
+  goto 51.874,67.221 map 2521 r 15
+  goto 52.933,66.084 map 2521 r 15
+  goto 53.201,65.424 map 2521 r 15
+  goto 52.752,64.732 map 2521 r 15
+  note "Click on the Construct Parts inside the cave on the bottom floor."
+  collect 260881 x1 quest 93737.2 -- Obtain Crystallized lightning from the Shriekling Cave
+step
+  only Horde
+  label BrokenConstructB
+  along until FindAameliaWindfieldA
+  note "Talk to Aamelia Windfield::252800."
+  note "*She may be moving between locations during a roleplay sequence. Wait at the waypoint location."
+  kill 252800 x1 quest 92679.1 -- Find Aamelia Windfield
+step
+  label FindAameliaWindfieldA
+  loop
+  zone map 2521
+  goto 46.71,81.94 map 2521 r 30
+  goto 47.511,78.49 map 2521 r 10
+  note "Talk to Aamelia Windfield::252800."
+  note "*She may be moving between locations during a roleplay sequence."
+  note "*Look for her from a distance or follow her dialogue; the arrow marks only an approximate location."
+  note "*If a Tornado is present, use it for faster travel."
+  note "*If you walk through the orchard, watch out for stealthed bandits."
+  kill 252800 x1 quest 92679.1 -- Find Aamelia Windfield
+step
+  zone map 2521
+  note "Talk to Aamelia Windfield::252800."
+  note "*She may be moving between locations during a roleplay sequence."
+  note "*Look for her from a distance or follow her dialogue; the arrow marks only an approximate location."
+  turnin 92679 -- Turn in Blood Tithe
+  accept 92682 -- Accept Make Yourself Useful
+  accept 92684 -- Accept Ornery Ornery Galestriders
+  accept 92683 -- Accept Flutterfly Dust
+step
+  loop
+  zone map 2521
+  goto 46.164,78.043 map 2521 r 30
+  goto 48.92,84.441 map 2521 r 30
+  note "Click on the Ripe Stormapples."
+  note "Kill Hungry Bandits::252802 (stealthed)."
+  note "*Hunter tips: Spam tab to target them early, use Hunter's Mark on them so you can run away and hit them from farther away." only Hunter
+  collect 253591 x10 quest 92682.1 -- 10/10 Ripe Stormapple
+  kill 252802 x5 quest 92682.2 -- 5/5 Hungry Bandit slain
+step
+  only Horde
+  when onquest 92684
+  zone map 2521
+  goto 48.416,80.537 map 2521 r 8
+  note "Use [Skysight] for the 10% movement speed buff."
+step
+  along until WhatIsMyPurposeA
+  zone map 2521
+  note "Kill Ornery Galestriders::251707. Loot them for [Lowlands Galestrider Tenderloins]."
+  collect 253597 x7 quest 92684.1 @48.416,80.537 map 2521 -- 7/7 Lowlands Galestrider Tenderloin
+step
+  along until WhatIsMyPurposeA
+  zone map 2521
+  note "Repeatedly use the [Flutterfly Swatter] on the Flutterflies::251622"
+  note "Click on the Flutterfly Dust."
+  note "*If a Flutterfly doesn't fly away, use the swatter on it again" only !Mage,!Druid
+  note "*Repeatedly cast [Polymorph] and use the swatter on the same Flutterfly for extra dust." only Mage
+  note "*cast [Entangling Roots] and use the swatter on the same Flutterfly for extra dust." only Druid
+  collect 253595 x5 quest 92683.1 @48.416,80.537 map 2521 -- 5/5 Flutterfly Dust
+  use 253666 @48.416,80.537 map 2521 -- Flutterfly Swatter
+step
+  label WhatIsMyPurposeA
+  zone map 2521
+  note "Talk to Malfunctioning Cyclone Construct::250929."
+  accept 92698 -- Accept What Is My Purpose?
+step
+  along until GalestriderTenderloinA
+  zone map 2521
+  goto 50.017,77.659 map 2521 r 40 optional
+  goto 51.3,80.59 map 2521 r 40 optional
+  goto 50.868,83.289 map 2521 r 40 optional
+  goto 50.42,83.74 map 2521 r 40 optional
+  goto 49.24,81.79 map 2521 r 40 optional
+step
+  along until next_47
+  zone map 2521
+  note "Kill Ornery Galestriders::251707. Loot them for [Lowlands Galestrider Tenderloins]."
+  collect 253597 x7 quest 92684.1 @49.24,81.79 map 2521 -- 7/7 Lowlands Galestrider Tenderloin
+step
+  label next_47
+  zone map 2521
+  note "Repeatedly use the [Flutterfly Swatter] on the Flutterflies::251622"
+  note "Click on the Flutterfly Dust."
+  note "*If a Flutterfly doesn't fly away, use the swatter on it again" only !Mage,!Druid
+  note "*Repeatedly cast [Polymorph] and use the swatter on the same Flutterfly for extra dust." only Mage
+  note "*cast [Entangling Roots] and use the swatter on the same Flutterfly for extra dust." only Druid
+  collect 253595 x5 quest 92683.1 @49.24,81.79 map 2521 -- 5/5 Flutterfly Dust
+  use 253666 @49.24,81.79 map 2521 -- Flutterfly Swatter
+step
+  label GalestriderTenderloinA
+  zone map 2521
+  note "Kill Ornery Galestriders::251707. Loot them for [Lowlands Galestrider Tenderloins]."
+  collect 253597 x7 quest 92684.1 @49.24,81.79 map 2521 -- 7/7 Lowlands Galestrider Tenderloin
+step
+  zone map 2521
+  note "Talk to Aamelia Windfield::252800."
+  note "*If a Tornado is nearby, use it for faster travel."
+  note "*She may be moving between locations during a roleplay sequence."
+  note "*Look for her from a distance or follow her dialogue; the arrow marks only an approximate location."
+  turnin 92682 -- Turn in Make Yourself Useful
+  turnin 92684 -- Turn in Ornery Ornery Galestriders
+  turnin 92698 -- Turn in What Is My Purpose?
+  turnin 92683 -- Turn in Flutterfly Dust
+  accept 92685 -- Accept The Hills Have Eyes
+step
+  only Shaman,Horde
+  zone map 2521
+  goto 50.017,77.659 map 2521 r 40 optional
+  goto 51.3,80.59 map 2521 r 40 optional
+  goto 50.868,83.289 map 2521 r 40 optional
+  goto 50.42,83.74 map 2521 r 40 optional
+  goto 49.24,81.79 map 2521 r 40 optional
+  level 10 -- Grind to level 10
+step
+  only Shaman,Horde
+  along until next_52
+  hearth "Valanaar" optional -- Hearth to Valanaar
+step
+  only Shaman,Horde
+  when !turnedin 97243
+  label next_52
+  zone map 2521
+  note "Talk to Donaal Downbreeze::255940."
+  vendor 255940 -- Vendor trash
+  collect 1179 x20 @49.24,81.79 map 2521 only Mage -- Buy [Ice Cold Milk]
+  collect 1179 x20 @49.24,81.79 map 2521 only Druid -- Buy [Ice Cold Milk]
+  collect 1179 x20 @49.24,81.79 map 2521 only Priest -- Buy [Ice Cold Milk]
+  collect 1179 x20 @49.24,81.79 map 2521 only Warlock -- Buy [Ice Cold Milk]
+  collect 1179 x20 @49.24,81.79 map 2521 only Paladin -- Buy [Ice Cold Milk]
+  collect 1179 x20 @49.24,81.79 map 2521 only Hunter -- Buy [Ice Cold Milk]
+  collect 1179 x20 @49.24,81.79 map 2521 only Shaman -- Buy [Ice Cold Milk]
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+  goto 62.18,72.616 map 2521 r 8
+step
+  only Shaman,Horde
+  zone map 2521
+  note "Talk to Sessaria Skystride::252382."
+  accept 97243 -- Accept Call of Fire
+step
+  only Shaman,Horde
+  when !turnedin 97243
+  when level>=10
+  zone map 2521
+  goto 58.313,78.499 map 2521 r 8
+  note "Talk to Sessaria Skystride::252382."
+  train class optional -- Train your class spells
+step
+  only Shaman,Horde
+  when onquest 97243
+  turnin 97243 -- Turn in Call of Fire
+step
+  only Shaman,Horde
+  label CallOfFireA
+  zone map 2521
+  goto 54.402,77.329 map 2521 r 30 optional
+  note "Talk to Olariaan Swiftburn::268592."
+  accept 97244 -- Accept Call of Fire
+step
+  only Shaman,Horde
+  zone map 2521
+  note "Kill Skypriest Faladiel::268602. Loot him for [Faladiel's Heart]."
+  collect 277267 x1 quest 97244.1 -- Faladiel's Heart
+step
+  only Shaman,Horde
+  when onquest 97244
+  turnin 97244 -- Turn in Call of Fire
+step
+  only Shaman,Horde
+  label CallOfFireB
+  zone map 2521
+  note "Talk to Olariaan Swiftburn::268592."
+  accept 97245 -- Accept Call of Fire
+step
+  label Bandit_Highwaymen
+  along until next_59
+  zone map 2521
+  note "*Equip the [Flutterfly Swatter] if you don't have [Zephrali Bludgeon]." only Rogue
+  note "Kill Bandit Highwaymen::252820. Loot them for the [Blood-Stained Bandit Masks]."
+  note "*Watch for stealthed enemies in the apple orchard."
+  collect 253596 x7 quest 92685.1 @51.241,86.193 map 2521 -- 7/7 Blood-Stained Bandit Mask
+  use 263329 @51.241,86.193 map 2521 only Rogue -- Flutterfly Swatter
+step
+  label next_59
+  only Horde
+  along until next_61
+  note "Click on the Construct Parts."
+  collect 260880 x1 quest 93737.4 -- Obtain Air Construct Core from the Bandit Camp
+step
+  zone map 2521
+  note "*Equip the [Flutterfly Swatter] if you don't have [Zephrali Bludgeon]." only Rogue
+  note "Kill Bandit Highwaymen::252820. Loot them for the [Blood-Stained Bandit Masks]."
+  note "*Watch for stealthed enemies in the apple orchard."
+  collect 253596 x7 quest 92685.1 @51.241,86.193 map 2521 -- 7/7 Blood-Stained Bandit Mask
+  use 263329 @51.241,86.193 map 2521 only Rogue -- Flutterfly Swatter
+step
+  label next_61
+  loop
+  zone map 2521
+  goto 45.615,72.361 map 2521 r 35
+  goto 43.551,74.999 map 2521 r 35
+  note "Kill Bandit Highwaymen::252820. Loot them for the [Blood-Stained Bandit Masks]."
+  collect 253596 x7 quest 92685.1 -- 7/7 Blood-Stained Bandit Mask
+step
+  only Horde
+  loop
+  zone map 2521
+  goto 45.615,72.361 map 2521 r 35
+  goto 43.551,74.999 map 2521 r 35
+  note "Click on the Construct Parts."
+  collect 260880 x1 quest 93737.4 -- Obtain Air Construct Core from the Bandit Camp
+step
+  only Shaman,Horde
+  zone map 2521
+  note "Click on Kuramaa's Stump."
+  note "Kill Kuramaa::268605. Loot it for [Kuramaa's Mask]."
+  note "*He knocks you back and takes additional fire damage."
+  collect 277269 x1 quest 97245.1 -- Kuramaa's Mask
+step
+  zone map 2521
+  goto 45.615,72.361 map 2521 r 35 optional
+  goto 43.551,74.999 map 2521 r 35 optional
+  level 10 -- Grind to level 10
+step
+  along until next_66
+  note "Talk to Aamelia Windfield::252800."
+  note "*She may be moving between locations during a roleplay sequence."
+  note "*Look for her from a distance or follow her dialogue; the arrow marks only an approximate location."
+  turnin 92685 -- Turn in The Hills Have Eyes
+step
+  when onquest 92685
+  label next_66
+  zone map 2521
+  goto 43.84,75.53 map 2521 r 30 optional
+  goto 44.06,76.19 map 2521 r 15 optional
+  goto 47.511,78.49 map 2521 r 8
+  note "Jump off the mountain and use [Walk on Air] in midair to fly towards the waypoint location."
+step
+  zone map 2521
+  note "Talk to Aamelia Windfield::252800."
+  note "*She may be moving between locations during a roleplay sequence."
+  note "*Look for her from a distance or follow her dialogue; the arrow marks only an approximate location."
+  note "*You can jump off the mountain and use [Walk on Air] in midair to fly towards the waypoint location."
+  note "*Watch out for stealthed bandits along the way."
+  turnin 92685 -- Turn in The Hills Have Eyes
+step
+  only Horde
+  when onquest 92703
+  zone map 2521
+  goto 48.445,80.591 map 2521 r 8
+  note "Use [Skysight] for the 10% movement speed buff."
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid,Horde
+  when !turnedin 92703
+  hearth "Valanaar" optional -- Hearth to Valanaar
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid,Horde
+  when !turnedin 92703
+  zone map 2521
+  note "Talk to Donaal Downbreeze::255940."
+  note "*Buy [Forest Mushroom Cap] from him. You will use this to feed your pet later" only Hunter
+  vendor 255940 -- Vendor trash
+  collect 1179 x20 @48.445,80.591 map 2521 only Mage -- Buy [Ice Cold Milk]
+  collect 1179 x20 @48.445,80.591 map 2521 only Druid -- Buy [Ice Cold Milk]
+  collect 1179 x20 @48.445,80.591 map 2521 only Priest -- Buy [Ice Cold Milk]
+  collect 1179 x20 @48.445,80.591 map 2521 only Warlock -- Buy [Ice Cold Milk]
+  collect 1179 x20 @48.445,80.591 map 2521 only Paladin -- Buy [Ice Cold Milk]
+  collect 1179 x20 @48.445,80.591 map 2521 only Hunter -- Buy [Ice Cold Milk]
+  collect 4604 x5 @48.445,80.591 map 2521 only Hunter -- Forest Mushroom
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+  goto 62.18,72.616 map 2521 r 8
+step
+  only Shaman,Horde
+  when onquest 97245
+  turnin 97245 -- Turn in Call of Fire
+step
+  only Shaman,Horde
+  zone map 2521
+  note "Talk to Olariaan Swiftburn::268592."
+  accept 97257 -- Accept Call of Fire
+step
+  only Shaman,Horde
+  zone map 2521
+  note "Wait for the roleplay. Use the [Torch of Eternal Flame] on the burning Brazier of Offering."
+  kill 268762 x1 quest 97257.1 -- Complete the Ritual with Olariaan
+  use 277329 @51.265,85.927 map 2521 -- Torch of Eternal Flame
+step
+  only Shaman,Horde
+  zone map 2521
+  goto 52.4,81.309 map 2521 r 25 optional
+  goto 54.907,76.598 map 2521 r 15 optional
+  note "You have roughly 5 minutes to run back."
+  note "*If a Tornado is nearby, use it for faster travel."
+  kill 268679 x1 quest 97257.2 -- Light the Brazier of Eternal Flame
+step
+  only Shaman,Horde
+  when onquest 97257
+  zone map 2521
+  note "Talk to Sessaria Skystride::252382."
+  turnin 97257 -- Turn in Call of Fire
+step
+  when complete 92703
+  when onquest 92703
+  zone map 2521
+  goto 61.94,72.8 map 2521 r 10 optional
+  goto 62.05,73.09 map 2521 r 8 optional
+  goto 62.11,73.33 map 2521 r 8 optional
+  note "Talk to Alvarion Windfield::252448 on the second floor."
+  turnin 92703 only Warrior -- Turn in Deliver the News
+  turnin 92703 only Shaman -- Turn in Deliver the News
+  turnin 92703 only Paladin -- Turn in Deliver the News
+  turnin 92703 only Druid -- Turn in Deliver the News
+  turnin 92703 only Priest -- Turn in Deliver the News
+  turnin 92703 only Rogue -- Turn in Deliver the News
+  turnin 92703 only Hunter -- Turn in Deliver the News
+  turnin 92703 only Mage -- Turn in Deliver the News
+  turnin 92703 only Warlock -- Turn in Deliver the News
+step
+  only Mage
+  zone map 2521
+  goto 62.887,77.324 map 2521 r 8
+  note "Talk to Belann Windwood::256507."
+  note "Quest 93791 excluded by Forever faction reference: .accept 93791. Accept Speak with Belann"
+  note "Quest 93791 excluded by Forever faction reference: .turnin 93791. Turn in Speak with Belann"
+  note "Quest 93797 excluded by Forever faction reference: .accept 93797. Accept Boughs in the Wind"
+step
+  only Warrior
+  zone map 2521
+  note "Talk to Seena Skybreaker::252377."
+  accept 94003 -- Accept The Skybreaker Bulwark
+step
+  only Warrior
+  when level>=10
+  zone map 2521
+  goto 59.55,73.3 map 2521 r 25 optional
+  goto 59.89,72.87 map 2521 r 8 optional
+  note "Talk to Seena Skybreaker::252377."
+  learn 6546 "Rend (Rank 2)"
+  learn 2687 "Bloodrage"
+step
+  only Warrior
+  when level>=9
+  when !onquest 92679
+  when !turnedin 92679
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Smasher]."
+  collect 277106 x1 @59.395,75.73 map 2521 optional -- Zephrali Smasher
+  vendor 271465 -- Vendor trash and repair if needed.
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Paladin
+  when level>=9
+  when !onquest 92679
+  when !turnedin 92679
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Smasher]."
+  collect 277106 x1 @59.395,75.73 map 2521 optional -- Zephrali Smasher
+  vendor 271465 -- Vendor trash and repair if needed.
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Warrior
+  when level>=9
+  when has 277106
+  zone map 2521
+  note "Equip the [Zephrali Smasher]."
+  use 277106 @59.395,75.73 map 2521 -- Zephrali Smasher
+step
+  only Paladin
+  when level>=9
+  when has 277106
+  zone map 2521
+  note "Equip the [Zephrali Smasher]."
+  use 277106 @59.395,75.73 map 2521 -- Zephrali Smasher
+step
+  only Shaman
+  when level>=9
+  when !onquest 92679
+  when !turnedin 92679
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Greatstaff]."
+  collect 277109 x1 @59.395,75.73 map 2521 optional -- Zephrali Greatstaff
+  vendor 271465 -- Vendor trash and repair if needed.
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Druid
+  when level>=9
+  when !onquest 92679
+  when !turnedin 92679
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Greatstaff]."
+  collect 277109 x1 @59.395,75.73 map 2521 optional -- Zephrali Greatstaff
+  vendor 271465 -- Vendor trash and repair if needed.
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Shaman
+  when level>=9
+  when has 277109
+  zone map 2521
+  note "Equip the [Zephrali Greatstaff]."
+  use 277109 @59.395,75.73 map 2521 -- Zephrali Greatstaff
+step
+  only Druid
+  when level>=9
+  when has 277109
+  zone map 2521
+  note "Equip the [Zephrali Greatstaff]."
+  use 277109 @59.395,75.73 map 2521 -- Zephrali Greatstaff
+step
+  only Rogue
+  when level>=10
+  zone map 2521
+  goto 59.55,73.3 map 2521 r 30 optional
+  goto 59.9,72.48 map 2521 r 8 optional
+  note "Talk to Eltheen Nightbreeze::252379."
+  learn 674 "Dual Wield"
+  learn 6770 "Sap"
+  learn 5171 "Slice and Dice"
+  learn 2983 "Sprint"
+step
+  only Rogue
+  when level>=9
+  when !onquest 92679
+  when !turnedin 92679
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Bludgeon]."
+  collect 277107 x1 @59.395,75.73 map 2521 optional -- Zephrali Bludgeon
+  vendor 271465 -- Vendor trash and repair if needed.
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Rogue
+  when level>=9
+  when has 277107
+  zone map 2521
+  note "Equip the [Zephrali Bludgeon]."
+  use 277107 @59.395,75.73 map 2521 -- Zephrali Bludgeon
+step
+  only Hunter
+  zone map 2521
+  note "Talk to Quel'ana Quickgale::252389."
+  accept 94978 -- Accept Taming the Beast
+step
+  only Hunter
+  when level>=10
+  zone map 2521
+  goto 59.571,72.639 map 2521 r 8 optional
+  note "Talk to Quel'ana Quickgale::252389."
+  learn 13165 "Aspect of the Hawk"
+  learn 13549 "Serpent Sting (Rank 2)"
+step
+  only Hunter
+  when level>=9
+  when !onquest 92679
+  when !turnedin 92679
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Bow]"
+  collect 277110 x1 @59.395,75.73 map 2521 optional -- Collect Zephrali Bow
+  vendor 271465 -- Vendor trash and repair if needed
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Hunter
+  when level>=9
+  when has 277110
+  zone map 2521
+  note "Equip the [Zephrali Bow]."
+  use 277110 @59.395,75.73 map 2521 -- Zephrali Bow
+step
+  only Druid,Horde
+  when !onquest 94006
+  when !turnedin 94006
+  along until next_92
+  zone map 2521
+  goto 63.33,73.65 map 2521 r 15 optional
+  goto 63.973,75.095 map 2521 r 25 optional -- Go over the mountain
+step
+  only Druid,Horde
+  label next_92
+  zone map 2521
+  note "Talk to Lotheluum Starbreeze::252359."
+  accept 94006 -- Accept The Great Ursera Spirit
+step
+  only Druid
+  when level>=10
+  zone map 2521
+  goto 63.983,75.093 map 2521 r 8 optional
+  note "Talk to Lotheluum Starbreeze::252359."
+  learn 16689 "Nature's Grasp"
+  learn 1058 "Rejuvenation (Rank 2)"
+  learn 5232 "Mark of the Wild (Rank 2)"
+  learn 8924 "Moonfire (Rank 2)"
+step
+  only Mage
+  when level>=10
+  zone map 2521
+  goto 65.91,80.58 map 2521 r 8 optional
+  note "Talk to Anathamaas Aetherwind::252373"
+  learn 168 "Frost Armor"
+  learn 122 "Frost Nova"
+  learn 5504 "Conjure Water"
+  learn 5505 "Conjure Water (Rank 2)"
+step
+  only Hunter,Horde
+  when onquest 94978
+  kill 254588 x1 quest 94978.1 -- Tame a Windsong Crawler
+step
+  only Hunter,Horde
+  zone map 2521
+  goto 54.46,78.811 map 2521 r 48 optional
+  use 267272 @51.268,69.758 map 2521 -- Use your [Taming Rod] on a Windsong Crawler::254588 at max range.
+step
+  only Hunter,Horde
+  when onquest 94978
+  turnin 94978 -- Turn in Taming the Beast
+step
+  only Hunter,Horde
+  zone map 2521
+  note "Talk to Quel'ana Quickgale::252389."
+  accept 94979 -- Accept Taming the Beast
+step
+  only Hunter,Horde
+  along until next_98
+  note "Dismiss your Windsong Crawler::254588 by right clicking its unit frame and clicking dismiss, otherwise you'll be unable to tame an Ornery Galestrider::251707"
+  note "*Be careful; it will attack you when dismissed."
+step
+  only Hunter,Horde
+  when onquest 94979
+  kill 251707 x1 quest 94979.1 -- Tame an Ornery Galestrider
+step
+  only Hunter,Horde
+  label next_98
+  zone map 2521
+  goto 60.905,69.414 map 2521 r 35 optional
+  goto 58.339,68.476 map 2521 r 35 optional
+  use 267298 @53.799,72.161 map 2521 -- Use your [Taming Rod] on an Ornery Galestrider::251707 at max range.
+step
+  only Hunter,Horde
+  when onquest 94979
+  turnin 94979 -- Turn in Taming the Beast
+step
+  only Hunter,Horde
+  zone map 2521
+  note "Talk to Quel'ana Quickgale::252389."
+  accept 94013 -- Accept Taming the Beast
+step
+  only Hunter,Horde
+  along until next_101
+  note "Dismiss your Ornery Galestrider::251707 by right clicking its unit frame and clicking dismiss, otherwise you'll be unable to tame an Vuldren::250874"
+  note "*Be careful; it will attack you when dismissed."
+step
+  only Hunter,Horde
+  when onquest 94013
+  kill 250874 x1 quest 94013.1 -- Tame a Vuldren
+step
+  only Hunter,Horde
+  label next_101
+  zone map 2521
+  goto 54.08,74.719 map 2521 r 35 optional
+  goto 52.625,77.864 map 2521 r 25 optional
+  goto 53.021,81.568 map 2521 r 25 optional
+  use 264163 @48.981,82.669 map 2521 -- Use your [Taming Rod] on a Vuldren::250874 at max range.
+step
+  only Hunter,Horde
+  when onquest 94013
+  turnin 94013 -- Turn in Taming the Beast
+step
+  only Hunter,Horde
+  zone map 2521
+  note "Talk to Quel'ana Quickgale::252389."
+  accept 94050 -- Accept Training the Beast
+step
+  only Hunter,Horde
+  when onquest 94050
+  zone map 2521
+  note "Talk to Quel'dora Quickgale::254411."
+  turnin 94050 -- Turn in Training the Beast
+step
+  only Hunter,Horde
+  when level>=10
+  zone map 2521
+  goto 59.605,72.527 map 2521 r 8
+  note "Talk to Quel'dora Quickgale::254411."
+  learn 4195 "Great Stamina"
+  learn 24547 "Natural Armor"
+step
+  only Hunter,Horde
+  along
+  note "Cast [Tame Beast] on a Windsong Crawler::254588 to tame it -- .tame 1997"
+  note "*NOTE: If all crabs are dead then you can also tame an Ornery Galestrider::251707 until you find a crab."
+  learn 2981 "Claw (Rank 2)"
+step
+  only Mage
+  zone map 2521
+  goto 48.59,67.77 map 2521 r 8
+  note "Click on the Branch."
+  note "Quest 93797 excluded by Forever faction reference: .complete 93797,1. 1/1 Wind-Infused Bough"
+step
+  only Mage
+  label SkyhopperMultiClass
+  zone map 2521
+  goto 62.89,77.44 map 2521 r 8
+  note "Talk to Belann Windwood::256507."
+  note "Quest 93797 excluded by Forever faction reference: .turnin 93797. Turn in Boughs in the Wind"
+step
+  only Mage
+  zone map 2521
+  goto 62.71,77.75 map 2521 r 15 optional
+  goto 63.06,77.3 map 2521 r 20 optional
+  goto 62.67,76.59 map 2521 r 25 optional
+  goto 62.16,75.12 map 2521 r 30 optional
+  goto 63.03,74.51 map 2521 r 30 optional
+  goto 63.72,76.13 map 2521 r 30 optional
+  goto 64.18,78.18 map 2521 r 30 optional
+  goto 63.19,79.17 map 2521 r 30 optional
+  goto 64.36,80.69 map 2521 r 30
+  note "Kill Skyhoppers::251314."
+  note "Enchanted Skyhopper Exterminated"
+step
+  only Druid,Horde
+  when onquest 94006
+  zone map 2521
+  goto 65.424,71.472 map 2521 r 35 optional
+  goto 65.905,68.024 map 2521 r 8
+step
+  only Druid,Horde
+  when onquest 94006
+  zone map 2521
+  goto 69.01,65.86 map 2521 r 20 optional
+  goto 69.84,61.73 map 2521 r 8
+  note "Jump off the mountain and use [Walk on Air] to fly towards the questgiver."
+step
+  only Druid,Horde
+  when onquest 94006
+  turnin 94006 -- Turn in The Great Ursera Spirit
+step
+  only Druid,Horde
+  zone map 2521
+  note "Talk to Urs'endris::255853."
+  accept 94638 -- Accept Strength and Mercy
+step
+  only Druid,Horde
+  zone map 2521
+  note "Talk to Fendaal Windstone::273017."
+  note "*If a Tornado is nearby, touch it to gain 40% increased movement speed for 5 minutes. Dealing damage removes the effect."
+  accept 98512 -- Accept Al'Aketh Assassins
+step
+  only Druid,Horde
+  when onquest 98512
+  loop
+  zone map 2521
+  goto 55.27,59.58 map 2521 r 35
+  goto 54.58,60.52 map 2521 r 35
+  goto 55.93,60.3 map 2521 r 35
+  goto 56.04,59.08 map 2521 r 35
+  note "Kill Al'Aketh Assassins::254626."
+  kill 254626 x10 quest 98512.1 -- 10/10 Al'Aketh Assassin slain
+step
+  only Druid,Horde
+  when onquest 98512
+  zone map 2521
+  note "Talk to Fendaal Windstone::273017."
+  turnin 98512 -- Turn in Al'Aketh Assassins
+step
+  only Druid,Horde
+  zone map 2521
+  goto 56.8,61.1 map 2521 r 25 optional
+  note "Kill Ur'endra::258443 inside the cave."
+  kill 258443 x1 quest 94638.1 -- Ur'endra slain
+step
+  only Druid,Horde
+  when onquest 94638
+  zone map 2521
+  goto 56.83,63.121 map 2521 r 15 optional
+  goto 57.299,63.465 map 2521 r 15 optional
+  goto 60.25,62.742 map 2521 r 20 optional
+  goto 69.803,61.66 map 2521 r 8
+  note "Jump off the lower (not the one you're on) mountain and use [Walk on Air] to fly towards the questgiver."
+step
+  only Druid,Horde
+  when onquest 94638
+  zone map 2521
+  note "Talk to Urs'endris::255853."
+  turnin 94638 -- Turn in Strength and Mercy
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Warlock,Horde
+  zone map 2521
+  note "Talk to Fendaal Windstone::273017."
+  note "*If a Tornado is nearby, touch it to gain 40% increased movement speed for 5 minutes. Dealing damage removes the effect."
+  accept 98512 -- Accept Al'Aketh Assassins
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Warlock,Horde
+  when onquest 98512
+  loop
+  zone map 2521
+  goto 55.27,59.58 map 2521 r 35
+  goto 54.58,60.52 map 2521 r 35
+  goto 55.93,60.3 map 2521 r 35
+  goto 56.04,59.08 map 2521 r 35
+  note "Kill Al'Aketh Assassins::254626."
+  kill 254626 x10 quest 98512.1 -- 10/10 Al'Aketh Assassin slain
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Warlock,Horde
+  when onquest 98512
+  zone map 2521
+  note "Talk to Fendaal Windstone::273017."
+  turnin 98512 -- Turn in Al'Aketh Assassins
+step
+  only Druid,Horde
+  zone map 2521
+  goto 56.8,61.1 map 2521 r 25 -- 1
+step
+  only Horde
+  loop
+  zone map 2521
+  goto 53.029,51.423 map 2521 r 35
+  goto 53.621,50.493 map 2521 r 35
+  goto 52.878,49.641 map 2521 r 35
+  goto 53.129,47.738 map 2521 r 35
+  goto 52.528,45.922 map 2521 r 35
+  goto 51.574,46.567 map 2521 r 35
+  goto 49.511,45.931 map 2521 r 35
+  goto 49.917,44.806 map 2521 r 35
+  goto 50.642,44.296 map 2521 r 35
+  note "Click on the Construct Parts."
+  collect 260883 x1 quest 93737.3 -- Obtain Enchanted Gyrozephyr from Windsong Lake
+step
+  only Warrior
+  when onquest 94003
+  zone map 2521
+  note "Kill Zaal Stormshield::257196. Loot him for the [Skybreaker Bulwark]."
+  collect 263993 x1 quest 94003.1 @56.56,50.36 map 2521 -- 1/1 Skybreaker Bulwark
+step
+  label Learn
+  zone map 2521
+  note "Talk to Strange Hermit::251684."
+  accept 93159 -- Accept The Strange Hermit
+  kill 251684 x1 quest 93159.1 -- Learn more about the Strange Hermit
+  turnin 93159 -- Turn in The Strange Hermit
+  accept 93160 -- Accept The Forest's Bounty
+  accept 93172 -- Accept Free the Hollows
+step
+  zone map 2521
+  note "Talk to Strange Hermit::251684."
+  accept 98285 -- Accept Camping 101: Engineering
+step
+  along
+  note "Click on the Seeds"
+  collect 257128 x1 quest 93160.1 -- Zephyrseed
+step
+  along until Resaan_s_Heirloom
+  zone map 2521
+  note "Kill Wind Hollows::251676."
+  kill 251676 x10 quest 93172.1 @53.95,38.9 map 2521 -- 10/10 Wind Hollow freed
+step
+  label Resaan_s_Heirloom
+  zone map 2521
+  note "Click on the Resaan Nimbuswalker"
+  collect 266434 x1 quest 94897.1 -- Resaan's Heirloom
+step
+  along until Wind_Hollow
+  zone map 2521
+  goto 59.08,34.75 map 2521 r 30 optional
+  goto 57.26,33.48 map 2521 r 30 optional
+  goto 59.15,32.25 map 2521 r 30 optional
+  goto 59.06,31.69 map 2521 r 30 optional
+  goto 58.82,31.1 map 2521 r 20 optional
+  goto 58.33,31.61 map 2521 r 30 optional
+  goto 58.47,32.63 map 2521 r 30 optional
+  goto 57.55,32.06 map 2521 r 30 optional
+  goto 57.55,31.01 map 2521 r 20 optional
+  goto 57.81,31.07 map 2521 r 20 optional
+  goto 58.14,30.47 map 2521 r 20 optional
+  goto 57.91,26.83 map 2521 r 30 optional
+  goto 58.06,28.2 map 2521 r 30 optional
+  goto 56.61,29.26 map 2521 r 20 optional
+step
+  label Wind_Hollow
+  zone map 2521
+  note "Kill Wind Hollows::251676."
+  kill 251676 x10 quest 93172.1 @56.61,29.26 map 2521 -- 10/10 Wind Hollow freed
+step
+  along until Unnerving_Silence
+  note "Click on the Seeds especially around trees."
+  collect 257128 x1 quest 93160.1 -- Zephyrseed
+step
+  zone map 2521
+  note "Talk to Elegael Thornpaw::257944."
+  turnin 94484 -- Turn in Unnerving Silence
+  accept 94485 -- Accept Tears of the Lady
+  accept 94486 -- Accept Feathers for Binding
+  accept 94487 -- Accept Unwanted and Unworthy
+step
+  along until Unnerving_Silence
+  zone map 2521
+  note "Click on the Tear Moss on trees."
+  collect 265105 x8 quest 94485.1 @61.76,39.14 map 2521 -- 8/8 Lady's Tear Moss
+step
+  zone map 2521
+  note "Talk to Vayn Moongaze::254151."
+  accept 93165 -- Accept Mercy Falls on Deaf Ears
+step
+  label Unnerving_Silence
+  loop
+  zone map 2521
+  goto 63.04,37.12 map 2521 r 40
+  goto 61.99,35.62 map 2521 r 30
+  goto 61.97,36.71 map 2521 r 30
+  goto 62.47,37.3 map 2521 r 40
+  goto 62.96,39.3 map 2521 r 40
+  goto 63.33,38.01 map 2521 r 35
+  goto 64.14,39.18 map 2521 r 40
+  goto 65.7,36.82 map 2521 r 40
+  goto 65.63,35.57 map 2521 r 40
+  note "Kill Al'Aketh Footsoldiers::252665 and Al'Aketh Stormchasers::252664."
+  note "*Loot them for [Bloody Heirlooms]." only Horde
+  collect 265141 x1 quest 94487.1 -- Bloody Heirloom
+step
+  loop
+  zone map 2521
+  goto 62.83,38.25 map 2521 r 35
+  goto 62.08,36.7 map 2521 r 35
+  goto 61.17,35.44 map 2521 r 35
+  goto 60.82,37.23 map 2521 r 35
+  goto 60.33,37.46 map 2521 r 35
+  goto 60.9,38.88 map 2521 r 35
+  goto 59.79,38.95 map 2521 r 35
+  goto 59.9,40.38 map 2521 r 35
+  goto 58.53,39.85 map 2521 r 35
+  goto 57.94,39.99 map 2521 r 35
+  goto 57.36,40.86 map 2521 r 35
+  goto 57.24,42.8 map 2521 r 35
+  goto 55.38,42.17 map 2521 r 35
+  goto 54.55,42.17 map 2521 r 35
+  goto 55.59,39.23 map 2521 r 35
+  collect 257128 x1 quest 93160.1 -- Zephyrseed
+  collect 265105 x8 quest 94485.1 -- 8/8 Lady's Tear Moss
+  collect 265140 x20 quest 94486.1 -- 20/20 Pristine Shriekling Feathers
+step
+  zone map 2521
+  note "Kill Shadowgale Shrieklings::256092."
+  note "*Loot them for the [Pristine Shriekling Feathers]."
+  collect 265140 x20 quest 94486.1 @55.59,39.23 map 2521 -- 20/20 Pristine Shriekling Feathers
+step
+  only Horde
+  along until ForestHollowsB
+  zone map 2521
+  note "Click on the Tear Moss on trees."
+  collect 265105 x8 quest 94485.1 @55.59,39.23 map 2521 -- 8/8 Lady's Tear Moss
+step
+  only Horde
+  label ForestHollowsA
+  note "Click on the Seeds especially around trees."
+  collect 257128 x1 quest 93160.1 -- Zephyrseed
+step
+  only Horde
+  label ForestHollowsB
+  zone map 2521
+  note "Talk to Strange Hermit::251684."
+  turnin 93160 -- Turn in The Forest's Bounty
+  turnin 93172 -- Turn in Free the Hollows
+step
+  when complete 98285
+  zone map 2521
+  note "Talk to Strange Hermit::251684."
+  turnin 98285 -- Turn in Camping 101: Engineering
+step
+  along until Pristine_Shriekling_Feathers
+  zone map 2521
+  goto 54.93,38.11 map 2521 r 40 optional
+  goto 55.92,36.83 map 2521 r 40 optional
+  goto 57.49,37.79 map 2521 r 40 optional
+  goto 58.93,37.91 map 2521 r 40 optional
+  goto 60.27,38.12 map 2521 r 40 optional
+  goto 61.61,36.4 map 2521 r 40 optional
+  goto 61.41,39.14 map 2521 r 40 optional
+  goto 59.67,40.26 map 2521 r 40 optional
+step
+  along until next_144
+  zone map 2521
+  note "Kill Shadowgale Shrieklings::256092. Loot them for the [Pristine Shriekling Feathers]."
+  collect 265140 x20 quest 94486.1 @59.67,40.26 map 2521 -- 20/20 Pristine Shriekling Feathers
+step
+  label next_144
+  zone map 2521
+  note "Click on the Tear Moss"
+  collect 265105 x8 quest 94485.1 @59.67,40.26 map 2521 -- 8/8 Lady's Tear Moss
+step
+  label Pristine_Shriekling_Feathers
+  zone map 2521
+  note "Kill Shadowgale Shrieklings::256092. Loot them for the [Pristine Shriekling Feathers]."
+  collect 265140 x20 quest 94486.1 @59.67,40.26 map 2521 -- 20/20 Pristine Shriekling Feathers
+step
+  zone map 2521
+  note "Talk to Elegael Thornpaw::257944."
+  turnin 94485 -- Turn in Tears of the Lady
+  turnin 94487 -- Turn in Unwanted and Unworthy
+  turnin 94486 -- Turn in Feathers for Binding
+  accept 94488 -- Accept The Ties That Bind
+  accept 94489 -- Accept The Wounds of Betrayal
+step
+  when !turnedin 94490
+  zone map 2521
+  note "Kill Commander Haalien::253622. Loot him for [Severed Head] and [Ripped Missive]."
+  collect 265475 x1 quest 94488.1 -- Commander Haalien's Severed Head
+  collect 265476 x1 @65.54,36.3 map 2521 -- Ripped Missive
+step
+  along until next_149
+  zone map 2521
+  note "Use the [Ripped Missive] in your bags to begin the quest."
+  accept 94490 -- Accept Ripped Missive
+  use 265476 @65.54,36.3 map 2521 -- Ripped Missive
+step
+  label next_149
+  zone map 2521
+  note "Talk to Vayn Moongaze::254151 at the entrance of the cave."
+  turnin 93165 -- Turn in Mercy Falls on Deaf Ears
+step
+  zone map 2521
+  note "Click on the Druids"
+  kill 258134 x1 quest 94489.1 -- Injured Druids healed
+step
+  along until next_152
+  zone map 2521
+  goto 64.703,30.067 map 2521 r 20 -- 1
+step
+  label next_152
+  zone map 2521
+  note "Click on the Druids."
+  kill 258134 x1 quest 94489.1 -- Injured Druids healed
+step
+  loop
+  zone map 2521
+  goto 64.98,34.96 map 2521 r 10
+  goto 64.51,34.89 map 2521 r 10
+  note "Click on the Druids"
+  kill 258134 x1 quest 94489.1 -- Injured Druids healed
+step
+  zone map 2521
+  note "Click on Jorel Windsinger inside the cave."
+  kill 258130 x1 quest 94489.2 -- Find Jorel Windsinger
+step
+  label Wounds_of_Betrayal
+  along until next_156
+  zone map 2521
+  goto 63.93,34.5 map 2521 r 15 optional
+  note "Talk to Elegael Thornpaw::257944."
+  turnin 94489 -- Turn in The Wounds of Betrayal
+step
+  label next_156
+  zone map 2521
+  goto 63.93,34.5 map 2521 r 15 optional
+  note "Talk to Elegael Thornpaw::257944."
+  turnin 94489 -- Turn in The Wounds of Betrayal
+step
+  accept 94490 -- Accept Ripped Missive
+step
+  zone map 2521
+  note "Talk to Elegael Thornpaw::257944."
+  turnin 94489 -- Turn in The Wounds of Betrayal
+  turnin 94490 -- Turn in Ripped Missive
+  turnin 94488 -- Turn in The Ties That Bind
+  accept 94491 -- Accept The Fate of the Den
+step
+  zone map 2521
+  hearth "Valanaar" optional -- Hearth to Valanaar
+  use 6948 @61.77,39.14 map 2521 optional -- Hearthstone
+step
+  when onquest 94896
+  zone map 2521
+  note "Talk to Donaal Downbreeze::255940."
+  vendor 255940 -- Vendor trash
+  collect 1179 x20 @62.18,72.616 map 2521 optional only Mage -- Ice Cold Milk
+  collect 1179 x20 @62.18,72.616 map 2521 optional only Druid -- Ice Cold Milk
+  collect 1179 x20 @62.18,72.616 map 2521 optional only Shaman -- Ice Cold Milk
+  collect 1179 x20 @62.18,72.616 map 2521 optional only Priest -- Ice Cold Milk
+  collect 1179 x20 @62.18,72.616 map 2521 optional only Warlock -- Ice Cold Milk
+  collect 1179 x20 @62.18,72.616 map 2521 optional only Paladin -- Ice Cold Milk
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Horde
+  zone map 2521
+  note "Talk to Lotheluum Starbreeze::252359."
+  turnin 94491 -- Turn in The Fate of the Den
+step
+  only Horde
+  when complete 94896
+  zone map 2521
+  goto 65.95,74.31 map 2521 r 8
+  note "Talk to Ealaane Nimbuswalker::259012."
+step
+  only Horde
+  when complete 94896
+  when onquest 94896
+  turnin 94896 -- Turn in Aid For The Refugees
+step
+  only Horde
+  when complete 94896
+  when onquest 94897
+  turnin 94897 -- Turn in The Fate of a Loved One
+step
+  only Horde
+  when onquest 94897
+  zone map 2521
+  note "Talk to Ealaane Nimbuswalker::259012."
+  turnin 94897 -- Turn in The Fate of a Loved One
+step
+  only Horde
+  note "Abandon any remaining \"Camping 101\" quests."
+  note "*Click the macro in the Active Items frame to abandon them all at once."
+  note "Abandon Camping 101: Mining"
+  note "Abandon Camping 101: Skinning"
+  note "Abandon Camping 101: Cooking"
+  note "Abandon Camping 101: Herbalism"
+  note "Abandon Camping 101: First Aid"
+  note "Abandon Camping 101: Fishing"
+  note "Abandon Camping 101: Alchemy"
+  note "Abandon Camping 101: Blacksmithing"
+  note "Abandon Camping 101: Tailoring"
+  note "Abandon Camping 101: Enchanting"
+  note "Abandon Camping 101: Leatherworking"
+  note "Abandon Camping 101: Engineering"
+  note "Abandon WANTED: Vulgara the Insatiable"
+step
+  only Horde
+  when complete 93317
+  when onquest 93317
+  zone map 2521
+  note "Talk to Nyalah Brightfire::257006 inside the house."
+  turnin 93317 -- Turn in Crab Season
+step
+  only Warrior,Horde
+  when onquest 94003
+  zone map 2521
+  note "Talk to Seena Skybreaker::252377."
+  turnin 94003 -- Turn in The Skybreaker Bulwark
+step
+  only Warrior,Horde
+  when !turnedin 93736
+  when level>=12
+  zone map 2521
+  goto 59.89,72.87 map 2521 r 8 optional
+  note "Talk to Seena Skybreaker::252377."
+  learn 5242 "Battle Shout (Rank 2)"
+  learn 7384 "Overpower"
+  learn 72 "Shield Bash"
+step
+  only Warrior,Horde
+  when !turnedin 93736
+  when level>=14
+  zone map 2521
+  goto 59.89,72.87 map 2521 r 8 optional
+  note "Talk to Seena Skybreaker::252377."
+  learn 1160 "Demoralizing Shout"
+  learn 6572 "Revenge"
+  learn 1310185 "Tactical Mastery"
+step
+  only Rogue,Horde
+  when level>=12
+  zone map 2521
+  goto 59.9,72.48 map 2521 r 8 optional
+  note "Talk to Eltheen Nightbreeze::252379."
+  learn 1766 "Kick"
+  learn 3127 "Parry"
+step
+  only Horde
+  when complete 93737
+  when onquest 93737
+  zone map 2521
+  note "Talk to Riaani Nightwind::256083."
+  turnin 93737 -- Turn in The Broken Construct
+step
+  only Horde
+  when turnedin 93737
+  zone map 2521
+  note "Talk to Riaani Nightwind::256083."
+  accept 93738 -- Accept The Broken Construct
+step
+  only Horde
+  when complete 93736
+  when onquest 93736
+  zone map 2521
+  note "Talk to Endaria Mistgaze::254344."
+  turnin 93736 -- Turn in Unwelcome Spirits
+step
+  only Horde
+  when onquest 93736
+  when onquest 93738
+  zone map 2521
+  note "Talk to Ayessa Dawnsinger::251968."
+  turnin 93738 -- Turn in The Broken Construct
+step
+  only Horde
+  when complete 92708
+  when onquest 92708
+  zone map 2521
+  note "Talk to Ayessa Dawnsinger::251968."
+  turnin 92708 -- Turn in A Grand Adventure
+step
+  only Horde
+  when !turnedin 95350
+  label LeaveZephrasIsle
+  zone map 2521
+  goto 57.921,80.781 map 2521 r 8
+step
+  only Druid,Skyborne,Horde
+  zone map 1412
+  note "Talk to Muln Earthfury::259118."
+  accept 94911 -- Accept Child of Nature
+step
+  only Horde
+  zone map 1412
+  note "Talk to Alaana Stormwalker::259119."
+  accept 95350 -- Accept Welcome to Azeroth
+step
+  only Druid,Skyborne,Horde
+  when onquest 94911
+  along until ChildOfNatureC
+  turnin 94911 -- Turn in Child of Nature
+step
+  only Druid,Skyborne,Horde
+  label ChildOfNatureA
+  along until ChildOfNatureC
+  note "Talk to Turak Runetotem::3033."
+  accept 94913 -- Accept Moonglade
+step
+  label ChildOfNatureB
+  only Druid,Skyborne,Horde
+  zone map 1456
+  goto 60.087856,17.346116 map 1456 r 15 optional
+  goto 56.868695,25.293425 map 1456 r 15 optional
+  goto 54.176479,26.917378 map 1456 r 8 optional
+  goto 50.200431,34.433549 map 1456 r 25 -- Enter Thunder Bluff
+step
+  label ChildOfNatureC
+  only Druid,Skyborne,Horde
+  zone map 1456
+  goto 50.775281,37.120976 map 1456 r 12 optional
+  goto 53.994443,34.907801 map 1456 r 12 optional
+  goto 55.364503,35.554508 map 1456 r 8 optional
+  goto 68.47109,28.239534 map 1456 r 12 -- Cross the bridge.
+step
+  only Druid,Skyborne,Horde
+  when onquest 94911
+  turnin 94911 -- Turn in Child of Nature
+step
+  only Druid,Skyborne,Horde
+  zone map 1456
+  note "Talk to Turak Runetotem::3033."
+  accept 94913 -- Accept Moonglade
+step
+  only Druid,Skyborne,Horde
+  note "Talk to Turak Runetotem::3033."
+  accept 94913 -- Accept Moonglade
+step
+  only Druid,Skyborne,Horde
+  when level>=12
+  when level<14
+  zone map 1456
+  goto 76.47109,27.291031 map 1456 r 8
+  note "Talk to Turak Runetotem::3033."
+  learn 8936 "your class spells"
+step
+  only Druid,Skyborne,Horde
+  note "Talk to Turak Runetotem::3033."
+  accept 94913 -- Accept Moonglade
+step
+  only Druid,Skyborne,Horde
+  when level>=14
+  zone map 1456
+  goto 76.47109,27.291031 map 1456 r 8
+  note "Talk to Turak Runetotem::3033."
+  learn 5178 "your class spells"
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Warlock,Horde
+  when onquest 95350
+  when !zone "Orgrimmar"
+  label WelcomeToAzerothA
+  along until next_187
+  note "Talk to Tal::2995."
+  fly "Orgrimmar" -- Fly to Orgrimmar
+step
+  only Horde
+  label next_187
+  zone map 1456
+  note "Talk to Rahauro"
+  accept 5722 -- Accept Searching for the Lost Satchel
+  accept 5723 -- Accept Testing an Enemy's Strength
+step
+  only Horde
+  when onquest 95350
+  when !zone "Orgrimmar"
+  zone map 1456
+  goto 46.962108,49.825174 map 1456 r 8
+  note "Talk to Tal::2995."
+  fly "Orgrimmar" -- Fly to Orgrimmar
+step
+  only Horde
+  zone map 1454
+  note "Talk to Innkeeper Gryshka::6929"
+  sethome "Orgrimmar" @54.1,68.42 map 1454 -- Set your Hearthstone to Orgrimmar
+step
+  only Horde
+  zone map 1454
+  note "Talk to Thatog::268701"
+  note "He is upstairs in the building"
+  accept 97246 -- Accept Meal Appeal
+step
+  only Horde
+  when onquest 97246
+  turnin 97246 -- Turn in Meal Appeal
+step
+  only Horde
+  zone map 1454
+  note "Talk to Borstan::3368"
+  accept 97249 -- Accept Favorite Food
+step
+  only Horde
+  zone map 1454
+  note "Talk to Kor'geld::3348"
+  accept 97242 -- Accept Yelmak's Medley
+step
+  only Horde
+  along until next_195
+  zone map 1454
+  goto 62.697552,39.060375 map 1454 r 15 optional
+  goto 64.622542,38.012713 map 1454 r 15 optional
+  goto 66.119756,40.247013 map 1454 r 15 optional
+  goto 67.852246,38.728972 map 1454 r 15 optional -- Travel to the Valley of Honor
+step
+  only Horde
+  label next_195
+  loop
+  zone map 1454
+  goto 69.392238,34.591775 map 1454 r 1
+  goto 69.392238,34.591775 map 1454 r 20
+  goto 71.089081,32.314713 map 1454 r 20
+  goto 70.354733,29.599344 map 1454 r 20
+  goto 66.248088,27.835423 map 1454 r 20
+  goto 67.731043,32.688879 map 1454 r 20
+  note "Loot the Handful of Cattails and Speargrass Cuttings in the water"
+  collect 277278 x1 quest 97242.1 -- Handful of Cattails
+  collect 277279 x1 quest 97242.2 -- Speargrass Cuttings
+step
+  only Hunter,Horde
+  when level>=12
+  zone map 1454
+  goto 66.049886,18.519782 map 1454 r 8
+  note "Talk to Ormak Grimshot::3352"
+  learn 13795 "your class spells"
+step
+  only Hunter,Horde
+  zone map 1454
+  goto 66.34006,14.830514 map 1454 r 8
+  note "Talk to Xao'tsu::10088"
+  learn 24556 "your pet spells"
+step
+  only Warrior,Horde
+  when level>=12
+  when level<14
+  zone map 1454
+  goto 79.909811,31.360058 map 1454 r 8
+  note "Talk to Grezz Ragefist::3353"
+  learn 7384 "your class spells"
+step
+  only Warrior,Horde
+  when level>=14
+  zone map 1454
+  goto 79.909811,31.360058 map 1454 r 8
+  note "Talk to Grezz Ragefist::3353"
+  learn 1160 "your class spells"
+step
+  only Horde
+  when onquest 97242
+  zone map 1454
+  note "Talk to Kor'geld::3348"
+  turnin 97242 -- Turn in Yelmak's Medley
+step
+  only Horde
+  zone map 1454
+  note "Talk to Yelmak::3347"
+  note "You may have to wait about 10 seconds before you can accept this quest"
+  accept 97275 -- Accept Whuut's the Rush
+step
+  only Horde
+  when onquest 97275
+  zone map 1454
+  note "Talk to Whuut::11046"
+  turnin 97275 -- Turn in Whuut's the Rush
+step
+  only Horde
+  when onquest 97249
+  zone map 1454
+  note "Talk to Migi::268682"
+  turnin 97249 -- Turn in Favorite Food
+step
+  only Horde
+  zone map 1454
+  note "Talk to Thra::268684"
+  accept 97326 -- Accept Rocks to Rests
+step
+  only Horde
+  when onquest 97326
+  zone map 1454
+  note "Loot the orange Rocks on the ground"
+  note "Skip this quest if there is a lot of competition! There aren't that many Rocks and they do not respawn quickly"
+  collect 277952 x8 quest 97326.1 @43.704322,34.634537 map 1454 -- 8/8 Smooth Boulder
+step
+  only Horde
+  when complete 97326
+  when onquest 97326
+  zone map 1454
+  note "Talk to Thra::268684"
+  turnin 97326 -- Turn in Rocks to Rests
+step
+  only Horde
+  when onquest 95350
+  turnin 95350 -- Turn in Welcome to Azeroth
+step
+  only Horde
+  zone map 1454
+  note "Talk to Thrall::4949."
+  accept 98024 -- Accept Journey to the Crossroads
+step
+  only Horde
+  when level>=13
+  zone map 1454
+  note "Talk to Zor Lonetree::4047"
+  accept 1061 -- Accept The Spirits of Stonetalon
+step
+  only Shaman,Horde
+  when level>=12
+  when level<14
+  zone map 1454
+  goto 38.819839,36.410217 map 1454 r 8
+  note "Talk to Kardris Dreamseeker::3344"
+  learn 408341 "your class spells"
+step
+  only Shaman,Horde
+  when level>=14
+  zone map 1454
+  goto 38.819839,36.410217 map 1454 r 8
+  note "Talk to Kardris Dreamseeker::3344"
+  learn 8045 "your class spells"
+step
+  only Rogue,Horde
+  when level>=12
+  when level<14
+  zone map 1454
+  goto 43.899672,54.65023 map 1454 r 8
+  note "Talk to Ormok::3328"
+  learn 1766 "your class spells"
+step
+  only Rogue,Horde
+  when level>=14
+  zone map 1454
+  goto 43.899672,54.65023 map 1454 r 8
+  note "Talk to Ormok::3328"
+  learn 1758 "your class spells"
+step
+  only Mage,Horde
+  when level>=12
+  when level<14
+  zone map 1454
+  goto 38.35998,85.54023 map 1454 r 8
+  note "Talk to Pephredo::5882"
+  learn 145 "your class spells"
+step
+  only Mage,Horde
+  when level>=14
+  zone map 1454
+  goto 38.35998,85.54023 map 1454 r 8
+  note "Talk to Pephredo::5882"
+  learn 1449 "your class spells"
+step
+  only Hunter,Horde
+  label Conscript
+  zone map 1411
+  note "Talk to Takrin Pathseeker::3336"
+  accept 840 -- Accept Conscript of the Horde
+step
+  only Hunter,Horde
+  when onquest 840
+  turnin 840 -- Turn in Conscript of the Horde
+step
+  only Hunter,Horde
+  label next_220
+  zone map 1413
+  note "Talk to Kargal Battlescar::3337"
+  accept 842 -- Accept Crossroads Conscription
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  zone map 1411
+  goto 50.8,13.800085 map 1411 r 40 -- Go up the Zeppelin Tower
+  note "Conjure water while waiting" only Mage
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  along until DeliverytoSPF
+  zone map 1420
+  goto 61.519956,53.2 map 1420 r 80 -- Travel to Brill
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when level<13
+  zone map 1420
+  note "Talk to Deathguard Terrence::1738"
+  accept 96895 -- Accept The Argent Emissary
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when level<13
+  label DeliverytoSPF
+  zone map 1420
+  note "Talk to Apothecary Johaan::1518"
+  accept 445 -- Accept Delivery to Silverpine Forest
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when level<13
+  when onquest 96895
+  turnin 96895 -- Turn in The Argent Emissary
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when level<13
+  zone map 1420
+  note "Talk to Hadric Harlson::267009"
+  accept 96897 -- Accept The Cult of the Damned
+  accept 96898 -- Accept Remnants of War
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when onquest 96897,96898
+  zone map 1420
+  goto 70.015668,64.056432 map 1420 r 8
+  note "Kill Dark Enforcers::275437 and Dark Neophytes. Loot them for Necrotic Crystal Fragments"
+  note "Necrotic Crystal Fragments can also be looted on the ground"
+  note "Be careful! These mobs hit hard. Dark Enforcers::275437 also have an instant cast 50-70 damage ability"
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when onquest 96897,96898
+  kill 275437 x8 quest 96897.2 @70.015668,64.056432 map 1420 -- 8/8 Dark Enforcer slain
+  kill 267006 x8 quest 96897.1 @70.015668,64.056432 map 1420 -- 8/8 Dark Neophyte slain
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when onquest 96897,96898
+  collect 275851 x12 quest 96898.1 @70.015668,64.056432 map 1420 -- 12/12 Necrotic Crystal Fragment
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when complete 96897
+  when complete 96898
+  zone map 1420
+  goto 65.921615,61.115353 map 1420 r 8
+  note "Talk to Hadric Harlson::267009"
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when complete 96897
+  when complete 96898
+  when onquest 96897
+  turnin 96897 -- Turn in The Cult of the Damned
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when complete 96897
+  when complete 96898
+  when onquest 96898
+  turnin 96898 -- Turn in Remnants of War
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  along until UCflightpath1
+  zone map 1458
+  goto 66.090215,20.060021 map 1458 r 35 optional
+  goto 64.370345,23.940641 map 1458 r 35 optional
+  goto 65.929694,26.710503 map 1458 r 10 optional
+  goto 65.890085,34.029626 map 1458 r 10 optional
+  goto 64.220248,39.769319 map 1458 r 10 optional
+  goto 65.530476,43.620255 map 1458 r 15 optional -- Take the lift down to the Undercity
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  label UCflightpath1
+  zone map 1458
+  note "Talk to Michael Garrett::4551"
+  getfp "Undercity" @63.249824,48.560078 map 1458 -- Get the Undercity flight path
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when zone "Undercity"
+  when !turnedin 91920
+  zone map 1458
+  note "Talk to Auctioneer Cain::15682"
+  note "Buy three [Murloc Eyes] from the Auction House"
+  note "Skip this if you want, it's only a small time saver"
+  collect 730 x3 @67.637055,35.891824 map 1458 -- Collect Murloc Eyes (x3)
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when !zone "Silverpine Forest"
+  zone map 1458
+  zone map 1420
+  goto 47.249824,39.119424 map 1458 r 50 optional
+  goto 46.35028,43.859279 map 1458 r 10 optional
+  goto 45.240182,39.350637 map 1458 r 10 optional
+  goto 41.319922,38.399229 map 1458 r 10 optional
+  goto 40.740378,33.949952 map 1458 r 10 optional
+  goto 34.800052,33.1907 map 1458 r 15 optional
+  goto 27.39002,30.230244 map 1458 r 35 optional
+  goto 21.889564,43.349987 map 1458 r 35 optional
+  goto 51.100039,71.529959 map 1420 r 50
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when !zone "Silverpine Forest"
+  label Entersilverpine
+  zone map 1420
+  goto 53.199956,75.820083 map 1420 r 8
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  label Silverpineskip
+  note "Review this source step manually."
+step
+  when !turnedin 92550
+  note "Complete the 1-9 Skyborne guide before continuing. This guide requires the quests from Part 1."
+step
+  when !turnedin 93927
+  note "Complete the 1-9 Skyborne guide before continuing. This guide requires the quests from Part 1."
+step
+  zone map 2521
+  goto 45.67,45.5 map 2521 r 8 optional
+  note "Talk to Constable Aonda::251523."
+  accept 92579 only Horde -- Accept To Valanaar
+  accept 93948 -- Accept Deliver the Signet
+step
+  when !turnedin 93948
+  when !onquest 93317
+  zone map 2521
+  goto 49.4,58.76 map 2521 r 8
+  note "Jump off the mountain and use [Walk on Air] to fly towards the waypoint location."
+step
+  when complete 97967
+  when complete 92550
+  when onquest 97967
+  zone map 2521
+  note "Talk to Fenn Fairweather::251992"
+  turnin 97967 -- Turn in Camping 101: Fishing
+step
+  when onquest 93948
+  when !onquest 93317
+  zone map 2521
+  goto 49.4,58.76 map 2521 r 8
+  note "*Use the sit macro in combat to die faster."
+  note "*Otherwise, you may be sent to a different graveyard"
+  note "*Be careful if you go straight through the field; you can easily die."
+step
+  when onquest 93948
+  when !onquest 93317
+  zone map 2521
+  goto 54.99,68.14 map 2521 r 8
+  note "Talk to the Spirit Healer::6491."
+step
+  when onquest 93948
+  zone map 2521
+  note "Talk to Donaal Downbreeze::255940."
+  sethome "Valanaar" @54.99,68.14 map 2521 -- Set your Hearthstone to Valanaar
+  goto 62.18,72.616 map 2521 r 8
+step
+  label Accept_Blood_Tithe_2
+  along until next_243
+  zone map 2521
+  note "Talk to Alvarion Windfield::252448 on the second floor."
+  accept 92679 -- Accept Blood Tithe
+step
+  label next_243
+  zone map 2521
+  note "Talk to Alvarion Windfield::252448 on the second floor."
+  accept 92679 -- Accept Blood Tithe
+step
+  zone map 2521
+  note "Talk to Alvarion Windfield::252448 on the second floor."
+  accept 92679 -- Accept Blood Tithe
+step
+  when !onquest 94484
+  when !turnedin 93948
+  zone map 2521
+  goto 63.33,73.65 map 2521 r 15 optional
+  goto 63.973,75.095 map 2521 r 25 -- Go over the mountain
+step
+  zone map 2521
+  note "Talk to Lotheluum Starbreeze::252359."
+  accept 94484 -- Accept Unnerving Silence
+step
+  only Horde
+  zone map 2521
+  note "Talk to Ealaane Nimbuswalker::259012."
+  accept 94896 -- Accept Aid For The Refugees
+  accept 94897 -- Accept The Fate of a Loved One
+step
+  label DeliverTheSignetA_2
+  along until next_249
+  note "Talk to Talaanis Shadowsong::252476."
+  turnin 93948 -- Turn in Deliver the Signet
+step
+  label next_249
+  note "Talk to Talaanis Shadowsong::252476."
+  turnin 93948 -- Turn in Deliver the Signet
+step
+  label Deliver_the_Signet_2
+  zone map 2521
+  note "Talk to Talaanis Shadowsong::252476."
+  turnin 93948 -- Turn in Deliver the Signet
+step
+  when onquest 92579
+  turnin 92579 only Horde -- Turn in To Valanaar
+step
+  label BuggedAcceptedA_2
+  zone map 2521
+  goto 66.18,76.65 map 2521 r 8 optional
+  note "Talk to Valennia Stormfist::252383."
+  accept 92700 only Horde -- Accept The Grand Skyseer
+step
+  only Horde
+  when onquest 92700
+  zone map 2521
+  goto 66.488,76.498 map 2521 r 6 optional
+  goto 63.027,77.807 map 2521 r 8 optional only Hunter
+  goto 61.491,76.893 map 2521 r 8 only !Hunter
+  note "Jump off the tower and use [Walk on Air] to fly towards the waypoint locations."
+step
+  only Horde
+  when onquest 92700
+  turnin 92700 -- Turn in The Grand Skyseer
+step
+  only Horde
+  zone map 2521
+  note "Talk to Ayessa Dawnsinger::251968."
+  accept 92708 -- Accept A Grand Adventure
+  accept 93735 -- Accept The Broken Construct 1
+step
+  only Horde
+  when onquest 93735
+  zone map 2521
+  goto 59.154,79.783 map 2521 r 8
+  note "Use [Skysight] for the 10% movement speed buff."
+step
+  only Hunter,Horde
+  when level>=9
+  when !onquest 92679
+  when !turnedin 92679
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Bow]"
+  collect 277110 x1 @59.395,75.73 map 2521 optional -- Collect Zephrali Bow
+  vendor 271465 -- Vendor trash and repair if needed
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Warrior,Horde
+  when level>=9
+  when !onquest 92679
+  when !turnedin 92679
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Smasher]."
+  collect 277106 x1 @59.395,75.73 map 2521 optional -- Zephrali Smasher
+  vendor 271465 -- Vendor trash and repair if needed.
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Druid,Horde
+  when level>=9
+  when !onquest 92679
+  when !turnedin 92679
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Greatstaff]."
+  collect 277109 x1 @59.395,75.73 map 2521 optional -- Zephrali Greatstaff
+  vendor 271465 -- Vendor trash and repair if needed.
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Rogue,Horde
+  when level>=9
+  when !onquest 92679
+  when !turnedin 92679
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Bludgeon]."
+  collect 277107 x1 @59.395,75.73 map 2521 optional -- Zephrali Bludgeon
+  vendor 271465 -- Vendor trash and repair if needed.
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Horde
+  when complete 97968
+  when onquest 97968
+  zone map 2521
+  note "Talk to Syriel Nightrain::254345."
+  turnin 97968 -- Turn in Camping 101: Herbalism
+step
+  only Hunter,Horde
+  when onquest 93735
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Bow]"
+  collect 277110 x1 @59.395,75.73 map 2521 optional -- Collect Zephrali Bow
+  vendor 271465 -- Vendor trash and repair if needed
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Horde
+  when onquest 93735
+  turnin 93735 -- Turn in The Broken Construct 1
+step
+  only Horde
+  label LeavingValanaarA_2
+  zone map 2521
+  note "Talk to Riaani Nightwind::256083."
+  accept 93737 -- Accept The Broken Construct 2
+  kill 256083 x1 quest 93737.1 -- Listen to what Riaani Nightwind has to say
+step
+  only Horde
+  label BrokenConstructA_2
+  along until next_267
+  note "Click on the Construct Parts inside the cave on the bottom floor."
+  collect 260881 x1 quest 93737.2 -- Obtain Crystallized lightning from the Shriekling Cave
+step
+  label next_267
+  only Horde
+  note "Click on the Construct Parts inside the cave on the bottom floor."
+  collect 260881 x1 quest 93737.2 -- Obtain Crystallized lightning from the Shriekling Cave
+step
+  only Horde
+  loop
+  zone map 2521
+  goto 51.434,67.603 map 2521 r 15
+  goto 51.874,67.221 map 2521 r 15
+  goto 52.933,66.084 map 2521 r 15
+  goto 53.201,65.424 map 2521 r 15
+  goto 52.752,64.732 map 2521 r 15
+  note "Click on the Construct Parts inside the cave on the bottom floor."
+  collect 260881 x1 quest 93737.2 -- Obtain Crystallized lightning from the Shriekling Cave
+step
+  only Horde
+  label BrokenConstructB_2
+  along until FindAameliaWindfieldA_2
+  note "Talk to Aamelia Windfield::252800."
+  note "*She may be moving between locations during a roleplay sequence. Wait at the waypoint location."
+  kill 252800 x1 quest 92679.1 -- Find Aamelia Windfield
+step
+  label FindAameliaWindfieldA_2
+  loop
+  zone map 2521
+  goto 46.71,81.94 map 2521 r 30
+  goto 47.511,78.49 map 2521 r 10
+  note "Talk to Aamelia Windfield::252800."
+  note "*She may be moving between locations during a roleplay sequence."
+  note "*Look for her from a distance or follow her dialogue; the arrow marks only an approximate location."
+  note "*If a Tornado is present, use it for faster travel."
+  note "*If you walk through the orchard, watch out for stealthed bandits."
+  kill 252800 x1 quest 92679.1 -- Find Aamelia Windfield
+step
+  zone map 2521
+  note "Talk to Aamelia Windfield::252800."
+  note "*She may be moving between locations during a roleplay sequence."
+  note "*Look for her from a distance or follow her dialogue; the arrow marks only an approximate location."
+  turnin 92679 -- Turn in Blood Tithe
+  accept 92682 -- Accept Make Yourself Useful
+  accept 92684 -- Accept Ornery Ornery Galestriders
+  accept 92683 -- Accept Flutterfly Dust
+step
+  loop
+  zone map 2521
+  goto 46.164,78.043 map 2521 r 30
+  goto 48.92,84.441 map 2521 r 30
+  note "Click on the Ripe Stormapples."
+  note "Kill Hungry Bandits::252802 (stealthed)."
+  note "*Hunter tips: Spam tab to target them early, use Hunter's Mark on them so you can run away and hit them from farther away." only Hunter
+  collect 253591 x10 quest 92682.1 -- 10/10 Ripe Stormapple
+  kill 252802 x5 quest 92682.2 -- 5/5 Hungry Bandit slain
+step
+  only Horde
+  when onquest 92684
+  zone map 2521
+  goto 48.416,80.537 map 2521 r 8
+  note "Use [Skysight] for the 10% movement speed buff."
+step
+  along
+  zone map 2521
+  note "Kill Ornery Galestriders::251707. Loot them for [Lowlands Galestrider Tenderloins]."
+  collect 253597 x7 quest 92684.1 @48.416,80.537 map 2521 -- 7/7 Lowlands Galestrider Tenderloin
+step
+  along
+  zone map 2521
+  note "Repeatedly use the [Flutterfly Swatter] on the Flutterflies::251622"
+  note "Click on the Flutterfly Dust."
+  note "*If a Flutterfly doesn't fly away, use the swatter on it again" only !Mage,!Druid
+  note "*Repeatedly cast [Polymorph] and use the swatter on the same Flutterfly for extra dust." only Mage
+  note "*cast [Entangling Roots] and use the swatter on the same Flutterfly for extra dust." only Druid
+  collect 253595 x5 quest 92683.1 @48.416,80.537 map 2521 -- 5/5 Flutterfly Dust
+  note "Flutterfly Swatter"
+step
+  label WhatIsMyPurposeA_2
+  zone map 2521
+  note "Talk to Malfunctioning Cyclone Construct::250929."
+  accept 92698 -- Accept What Is My Purpose?
+step
+  along until next_280
+  zone map 2521
+  note "Kill Ornery Galestriders::251707. Loot them for [Lowlands Galestrider Tenderloins]."
+  collect 253597 x7 quest 92684.1 @49.24,81.79 map 2521 -- 7/7 Lowlands Galestrider Tenderloin
+step
+  label next_280
+  zone map 2521
+  note "Repeatedly use the [Flutterfly Swatter] on the Flutterflies::251622"
+  note "Click on the Flutterfly Dust."
+  note "*If a Flutterfly doesn't fly away, use the swatter on it again" only !Mage,!Druid
+  note "*Repeatedly cast [Polymorph] and use the swatter on the same Flutterfly for extra dust." only Mage
+  note "*cast [Entangling Roots] and use the swatter on the same Flutterfly for extra dust." only Druid
+  collect 253595 x5 quest 92683.1 @49.24,81.79 map 2521 -- 5/5 Flutterfly Dust
+  use 253666 @49.24,81.79 map 2521 -- Flutterfly Swatter
+step
+  label GalestriderTenderloinA_2
+  zone map 2521
+  note "Kill Ornery Galestriders::251707. Loot them for [Lowlands Galestrider Tenderloins]."
+  collect 253597 x7 quest 92684.1 @49.24,81.79 map 2521 -- 7/7 Lowlands Galestrider Tenderloin
+step
+  zone map 2521
+  note "Talk to Aamelia Windfield::252800."
+  note "*If a Tornado is nearby, use it for faster travel."
+  note "*She may be moving between locations during a roleplay sequence."
+  note "*Look for her from a distance or follow her dialogue; the arrow marks only an approximate location."
+  turnin 92682 -- Turn in Make Yourself Useful
+  turnin 92684 -- Turn in Ornery Ornery Galestriders
+  turnin 92698 -- Turn in What Is My Purpose?
+  turnin 92683 -- Turn in Flutterfly Dust
+  accept 92685 -- Accept The Hills Have Eyes
+step
+  only Shaman,Horde
+  zone map 2521
+  goto 50.017,77.659 map 2521 r 40 optional
+  goto 51.3,80.59 map 2521 r 40 optional
+  goto 50.868,83.289 map 2521 r 40 optional
+  goto 50.42,83.74 map 2521 r 40 optional
+  goto 49.24,81.79 map 2521 r 40 optional
+  level 10 -- Grind to level 10
+step
+  only Shaman,Horde
+  along until next_285
+  hearth "Valanaar" optional -- Hearth to Valanaar
+step
+  only Shaman,Horde
+  when !turnedin 97243
+  label next_285
+  zone map 2521
+  note "Talk to Donaal Downbreeze::255940."
+  vendor 255940 -- Vendor trash
+  collect 1179 x20 @49.24,81.79 map 2521 only Mage -- Buy [Ice Cold Milk]
+  collect 1179 x20 @49.24,81.79 map 2521 only Druid -- Buy [Ice Cold Milk]
+  collect 1179 x20 @49.24,81.79 map 2521 only Priest -- Buy [Ice Cold Milk]
+  collect 1179 x20 @49.24,81.79 map 2521 only Warlock -- Buy [Ice Cold Milk]
+  collect 1179 x20 @49.24,81.79 map 2521 only Paladin -- Buy [Ice Cold Milk]
+  collect 1179 x20 @49.24,81.79 map 2521 only Hunter -- Buy [Ice Cold Milk]
+  collect 1179 x20 @49.24,81.79 map 2521 only Shaman -- Buy [Ice Cold Milk]
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+  goto 62.18,72.616 map 2521 r 8
+step
+  only Shaman,Horde
+  zone map 2521
+  note "Talk to Sessaria Skystride::252382."
+  accept 97243 -- Accept Call of Fire
+step
+  only Shaman,Horde
+  when !turnedin 97243
+  when level>=10
+  zone map 2521
+  goto 58.313,78.499 map 2521 r 8
+  note "Talk to Sessaria Skystride::252382."
+  train class optional -- Train your class spells
+step
+  only Shaman,Horde
+  when onquest 97243
+  turnin 97243 -- Turn in Call of Fire
+step
+  only Shaman,Horde
+  label CallOfFireA_2
+  zone map 2521
+  goto 54.402,77.329 map 2521 r 30 optional
+  note "Talk to Olariaan Swiftburn::268592."
+  accept 97244 -- Accept Call of Fire
+step
+  only Shaman,Horde
+  zone map 2521
+  note "Kill Skypriest Faladiel::268602. Loot him for [Faladiel's Heart]."
+  collect 277267 x1 quest 97244.1 -- Faladiel's Heart
+step
+  only Shaman,Horde
+  when onquest 97244
+  turnin 97244 -- Turn in Call of Fire
+step
+  only Shaman,Horde
+  label CallOfFireB_2
+  zone map 2521
+  note "Talk to Olariaan Swiftburn::268592."
+  accept 97245 -- Accept Call of Fire
+step
+  label Bandit_Highwaymen_2
+  along until next_292
+  zone map 2521
+  note "*Equip the [Flutterfly Swatter] if you don't have [Zephrali Bludgeon]." only Rogue
+  note "Kill Bandit Highwaymen::252820. Loot them for the [Blood-Stained Bandit Masks]."
+  note "*Watch for stealthed enemies in the apple orchard."
+  collect 253596 x7 quest 92685.1 @51.241,86.193 map 2521 -- 7/7 Blood-Stained Bandit Mask
+  use 263329 @51.241,86.193 map 2521 only Rogue -- Flutterfly Swatter
+step
+  label next_292
+  only Horde
+  along until next_294
+  note "Click on the Construct Parts."
+  collect 260880 x1 quest 93737.4 -- Obtain Air Construct Core from the Bandit Camp
+step
+  zone map 2521
+  note "*Equip the [Flutterfly Swatter] if you don't have [Zephrali Bludgeon]." only Rogue
+  note "Kill Bandit Highwaymen::252820. Loot them for the [Blood-Stained Bandit Masks]."
+  note "*Watch for stealthed enemies in the apple orchard."
+  collect 253596 x7 quest 92685.1 @51.241,86.193 map 2521 -- 7/7 Blood-Stained Bandit Mask
+  use 263329 @51.241,86.193 map 2521 only Rogue -- Flutterfly Swatter
+step
+  label next_294
+  loop
+  zone map 2521
+  goto 45.615,72.361 map 2521 r 35
+  goto 43.551,74.999 map 2521 r 35
+  note "Kill Bandit Highwaymen::252820. Loot them for the [Blood-Stained Bandit Masks]."
+  collect 253596 x7 quest 92685.1 -- 7/7 Blood-Stained Bandit Mask
+step
+  only Horde
+  loop
+  zone map 2521
+  goto 45.615,72.361 map 2521 r 35
+  goto 43.551,74.999 map 2521 r 35
+  note "Click on the Construct Parts."
+  collect 260880 x1 quest 93737.4 -- Obtain Air Construct Core from the Bandit Camp
+step
+  only Shaman,Horde
+  zone map 2521
+  note "Click on Kuramaa's Stump."
+  note "Kill Kuramaa::268605. Loot it for [Kuramaa's Mask]."
+  note "*He knocks you back and takes additional fire damage."
+  collect 277269 x1 quest 97245.1 -- Kuramaa's Mask
+step
+  zone map 2521
+  goto 45.615,72.361 map 2521 r 35 optional
+  goto 43.551,74.999 map 2521 r 35 optional
+  level 10 -- Grind to level 10
+step
+  along until next_299
+  note "Talk to Aamelia Windfield::252800."
+  note "*She may be moving between locations during a roleplay sequence."
+  note "*Look for her from a distance or follow her dialogue; the arrow marks only an approximate location."
+  turnin 92685 -- Turn in The Hills Have Eyes
+step
+  when onquest 92685
+  label next_299
+  zone map 2521
+  goto 43.84,75.53 map 2521 r 30 optional
+  goto 44.06,76.19 map 2521 r 15 optional
+  goto 47.511,78.49 map 2521 r 8
+  note "Jump off the mountain and use [Walk on Air] in midair to fly towards the waypoint location."
+step
+  zone map 2521
+  note "Talk to Aamelia Windfield::252800."
+  note "*She may be moving between locations during a roleplay sequence."
+  note "*Look for her from a distance or follow her dialogue; the arrow marks only an approximate location."
+  note "*You can jump off the mountain and use [Walk on Air] in midair to fly towards the waypoint location."
+  note "*Watch out for stealthed bandits along the way."
+  turnin 92685 -- Turn in The Hills Have Eyes
+step
+  only Horde
+  when onquest 92703
+  zone map 2521
+  goto 48.445,80.591 map 2521 r 8
+  note "Use [Skysight] for the 10% movement speed buff."
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid,Horde
+  when !turnedin 92703
+  hearth "Valanaar" optional -- Hearth to Valanaar
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Mage,Warlock,Druid,Horde
+  when !turnedin 92703
+  zone map 2521
+  note "Talk to Donaal Downbreeze::255940."
+  note "*Buy [Forest Mushroom Cap] from him. You will use this to feed your pet later" only Hunter
+  vendor 255940 -- Vendor trash
+  collect 1179 x20 @48.445,80.591 map 2521 only Mage -- Buy [Ice Cold Milk]
+  collect 1179 x20 @48.445,80.591 map 2521 only Druid -- Buy [Ice Cold Milk]
+  collect 1179 x20 @48.445,80.591 map 2521 only Priest -- Buy [Ice Cold Milk]
+  collect 1179 x20 @48.445,80.591 map 2521 only Warlock -- Buy [Ice Cold Milk]
+  collect 1179 x20 @48.445,80.591 map 2521 only Paladin -- Buy [Ice Cold Milk]
+  collect 1179 x20 @48.445,80.591 map 2521 only Hunter -- Buy [Ice Cold Milk]
+  collect 4604 x5 @48.445,80.591 map 2521 only Hunter -- Forest Mushroom
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+  goto 62.18,72.616 map 2521 r 8
+step
+  only Shaman,Horde
+  when onquest 97245
+  turnin 97245 -- Turn in Call of Fire
+step
+  only Shaman,Horde
+  zone map 2521
+  note "Talk to Olariaan Swiftburn::268592."
+  accept 97257 -- Accept Call of Fire
+step
+  only Shaman,Horde
+  zone map 2521
+  note "Wait for the roleplay. Use the [Torch of Eternal Flame] on the burning Brazier of Offering."
+  kill 268762 x1 quest 97257.1 -- Complete the Ritual with Olariaan
+  use 277329 @51.265,85.927 map 2521 -- Torch of Eternal Flame
+step
+  only Shaman,Horde
+  zone map 2521
+  goto 52.4,81.309 map 2521 r 25 optional
+  goto 54.907,76.598 map 2521 r 15 optional
+  note "You have roughly 5 minutes to run back."
+  note "*If a Tornado is nearby, use it for faster travel."
+  kill 268679 x1 quest 97257.2 -- Light the Brazier of Eternal Flame
+step
+  only Shaman,Horde
+  when onquest 97257
+  zone map 2521
+  note "Talk to Sessaria Skystride::252382."
+  turnin 97257 -- Turn in Call of Fire
+step
+  when complete 92703
+  when onquest 92703
+  zone map 2521
+  goto 61.94,72.8 map 2521 r 10 optional
+  goto 62.05,73.09 map 2521 r 8 optional
+  goto 62.11,73.33 map 2521 r 8 optional
+  note "Talk to Alvarion Windfield::252448 on the second floor."
+  turnin 92703 only Warrior -- Turn in Deliver the News
+  turnin 92703 only Shaman -- Turn in Deliver the News
+  turnin 92703 only Paladin -- Turn in Deliver the News
+  turnin 92703 only Druid -- Turn in Deliver the News
+  turnin 92703 only Priest -- Turn in Deliver the News
+  turnin 92703 only Rogue -- Turn in Deliver the News
+  turnin 92703 only Hunter -- Turn in Deliver the News
+  turnin 92703 only Mage -- Turn in Deliver the News
+  turnin 92703 only Warlock -- Turn in Deliver the News
+step
+  only Mage
+  zone map 2521
+  goto 62.887,77.324 map 2521 r 8
+  note "Talk to Belann Windwood::256507."
+  note "Quest 93791 excluded by Forever faction reference: .accept 93791. Accept Speak with Belann"
+  note "Quest 93791 excluded by Forever faction reference: .turnin 93791. Turn in Speak with Belann"
+  note "Quest 93797 excluded by Forever faction reference: .accept 93797. Accept Boughs in the Wind"
+step
+  only Warrior
+  zone map 2521
+  note "Talk to Seena Skybreaker::252377."
+  accept 94003 -- Accept The Skybreaker Bulwark
+step
+  only Warrior
+  when level>=10
+  zone map 2521
+  goto 59.55,73.3 map 2521 r 25 optional
+  goto 59.89,72.87 map 2521 r 8 optional
+  note "Talk to Seena Skybreaker::252377."
+  learn 6546 "Rend (Rank 2)"
+  learn 2687 "Bloodrage"
+step
+  only Warrior
+  when level>=9
+  when !onquest 92679
+  when !turnedin 92679
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Smasher]."
+  collect 277106 x1 @59.395,75.73 map 2521 optional -- Zephrali Smasher
+  vendor 271465 -- Vendor trash and repair if needed.
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Paladin
+  when level>=9
+  when !onquest 92679
+  when !turnedin 92679
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Smasher]."
+  collect 277106 x1 @59.395,75.73 map 2521 optional -- Zephrali Smasher
+  vendor 271465 -- Vendor trash and repair if needed.
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Warrior
+  when level>=9
+  when has 277106
+  zone map 2521
+  note "Equip the [Zephrali Smasher]."
+  use 277106 @59.395,75.73 map 2521 -- Zephrali Smasher
+step
+  only Paladin
+  when level>=9
+  when has 277106
+  zone map 2521
+  note "Equip the [Zephrali Smasher]."
+  use 277106 @59.395,75.73 map 2521 -- Zephrali Smasher
+step
+  only Shaman
+  when level>=9
+  when !onquest 92679
+  when !turnedin 92679
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Greatstaff]."
+  collect 277109 x1 @59.395,75.73 map 2521 optional -- Zephrali Greatstaff
+  vendor 271465 -- Vendor trash and repair if needed.
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Druid
+  when level>=9
+  when !onquest 92679
+  when !turnedin 92679
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Greatstaff]."
+  collect 277109 x1 @59.395,75.73 map 2521 optional -- Zephrali Greatstaff
+  vendor 271465 -- Vendor trash and repair if needed.
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Shaman
+  when level>=9
+  when has 277109
+  zone map 2521
+  note "Equip the [Zephrali Greatstaff]."
+  use 277109 @59.395,75.73 map 2521 -- Zephrali Greatstaff
+step
+  only Druid
+  when level>=9
+  when has 277109
+  zone map 2521
+  note "Equip the [Zephrali Greatstaff]."
+  use 277109 @59.395,75.73 map 2521 -- Zephrali Greatstaff
+step
+  only Rogue
+  when level>=10
+  zone map 2521
+  goto 59.55,73.3 map 2521 r 30 optional
+  goto 59.9,72.48 map 2521 r 8 optional
+  note "Talk to Eltheen Nightbreeze::252379."
+  learn 674 "Dual Wield"
+  learn 6770 "Sap"
+  learn 5171 "Slice and Dice"
+  learn 2983 "Sprint"
+step
+  only Rogue
+  when level>=9
+  when !onquest 92679
+  when !turnedin 92679
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Bludgeon]."
+  collect 277107 x1 @59.395,75.73 map 2521 optional -- Zephrali Bludgeon
+  vendor 271465 -- Vendor trash and repair if needed.
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Rogue
+  when level>=9
+  when has 277107
+  zone map 2521
+  note "Equip the [Zephrali Bludgeon]."
+  use 277107 @59.395,75.73 map 2521 -- Zephrali Bludgeon
+step
+  only Hunter
+  zone map 2521
+  note "Talk to Quel'ana Quickgale::252389."
+  accept 94978 -- Accept Taming the Beast
+step
+  only Hunter
+  when level>=10
+  zone map 2521
+  goto 59.571,72.639 map 2521 r 8 optional
+  note "Talk to Quel'ana Quickgale::252389."
+  learn 13165 "Aspect of the Hawk"
+  learn 13549 "Serpent Sting (Rank 2)"
+step
+  only Hunter
+  when level>=9
+  when !onquest 92679
+  when !turnedin 92679
+  zone map 2521
+  goto 59.395,75.73 map 2521 r 8 optional
+  note "Talk to Falfaan Halfwind::271465 inside the house."
+  note "Buy and equip a [Zephrali Bow]"
+  collect 277110 x1 @59.395,75.73 map 2521 optional -- Collect Zephrali Bow
+  vendor 271465 -- Vendor trash and repair if needed
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Hunter
+  when level>=9
+  when has 277110
+  zone map 2521
+  note "Equip the [Zephrali Bow]."
+  use 277110 @59.395,75.73 map 2521 -- Zephrali Bow
+step
+  only Druid,Horde
+  when !onquest 94006
+  when !turnedin 94006
+  along until next_325
+  zone map 2521
+  goto 63.33,73.65 map 2521 r 15 optional
+  goto 63.973,75.095 map 2521 r 25 optional -- Go over the mountain
+step
+  only Druid,Horde
+  label next_325
+  zone map 2521
+  note "Talk to Lotheluum Starbreeze::252359."
+  accept 94006 -- Accept The Great Ursera Spirit
+step
+  only Druid
+  when level>=10
+  zone map 2521
+  goto 63.983,75.093 map 2521 r 8 optional
+  note "Talk to Lotheluum Starbreeze::252359."
+  learn 16689 "Nature's Grasp"
+  learn 1058 "Rejuvenation (Rank 2)"
+  learn 5232 "Mark of the Wild (Rank 2)"
+  learn 8924 "Moonfire (Rank 2)"
+step
+  only Mage
+  when level>=10
+  zone map 2521
+  goto 65.91,80.58 map 2521 r 8 optional
+  note "Talk to Anathamaas Aetherwind::252373"
+  learn 168 "Frost Armor"
+  learn 122 "Frost Nova"
+  learn 5504 "Conjure Water"
+  learn 5505 "Conjure Water (Rank 2)"
+step
+  only Hunter,Horde
+  when onquest 94978
+  kill 254588 x1 quest 94978.1 -- Tame a Windsong Crawler
+step
+  only Hunter,Horde
+  zone map 2521
+  goto 54.46,78.811 map 2521 r 48 optional
+  use 267272 @51.268,69.758 map 2521 -- Use your [Taming Rod] on a Windsong Crawler::254588 at max range.
+step
+  only Hunter,Horde
+  when onquest 94978
+  turnin 94978 -- Turn in Taming the Beast
+step
+  only Hunter,Horde
+  zone map 2521
+  note "Talk to Quel'ana Quickgale::252389."
+  accept 94979 -- Accept Taming the Beast
+step
+  only Hunter,Horde
+  along until next_331
+  note "Dismiss your Windsong Crawler::254588 by right clicking its unit frame and clicking dismiss, otherwise you'll be unable to tame an Ornery Galestrider::251707"
+  note "*Be careful; it will attack you when dismissed."
+step
+  only Hunter,Horde
+  when onquest 94979
+  kill 251707 x1 quest 94979.1 -- Tame an Ornery Galestrider
+step
+  only Hunter,Horde
+  label next_331
+  zone map 2521
+  goto 60.905,69.414 map 2521 r 35 optional
+  goto 58.339,68.476 map 2521 r 35 optional
+  use 267298 @53.799,72.161 map 2521 -- Use your [Taming Rod] on an Ornery Galestrider::251707 at max range.
+step
+  only Hunter,Horde
+  when onquest 94979
+  turnin 94979 -- Turn in Taming the Beast
+step
+  only Hunter,Horde
+  zone map 2521
+  note "Talk to Quel'ana Quickgale::252389."
+  accept 94013 -- Accept Taming the Beast
+step
+  only Hunter,Horde
+  along until next_334
+  note "Dismiss your Ornery Galestrider::251707 by right clicking its unit frame and clicking dismiss, otherwise you'll be unable to tame an Vuldren::250874"
+  note "*Be careful; it will attack you when dismissed."
+step
+  only Hunter,Horde
+  when onquest 94013
+  kill 250874 x1 quest 94013.1 -- Tame a Vuldren
+step
+  only Hunter,Horde
+  label next_334
+  zone map 2521
+  goto 54.08,74.719 map 2521 r 35 optional
+  goto 52.625,77.864 map 2521 r 25 optional
+  goto 53.021,81.568 map 2521 r 25 optional
+  use 264163 @48.981,82.669 map 2521 -- Use your [Taming Rod] on a Vuldren::250874 at max range.
+step
+  only Hunter,Horde
+  when onquest 94013
+  turnin 94013 -- Turn in Taming the Beast
+step
+  only Hunter,Horde
+  zone map 2521
+  note "Talk to Quel'ana Quickgale::252389."
+  accept 94050 -- Accept Training the Beast
+step
+  only Hunter,Horde
+  when onquest 94050
+  zone map 2521
+  note "Talk to Quel'dora Quickgale::254411."
+  turnin 94050 -- Turn in Training the Beast
+step
+  only Hunter,Horde
+  when level>=10
+  zone map 2521
+  goto 59.605,72.527 map 2521 r 8
+  note "Talk to Quel'dora Quickgale::254411."
+  learn 4195 "Great Stamina"
+  learn 24547 "Natural Armor"
+step
+  only Hunter,Horde
+  along
+  note "Cast [Tame Beast] on a Windsong Crawler::254588 to tame it -- .tame 1997"
+  note "*NOTE: If all crabs are dead then you can also tame an Ornery Galestrider::251707 until you find a crab."
+  learn 2981 "Claw (Rank 2)"
+step
+  only Mage
+  zone map 2521
+  goto 48.59,67.77 map 2521 r 8
+  note "Click on the Branch."
+  note "Quest 93797 excluded by Forever faction reference: .complete 93797,1. 1/1 Wind-Infused Bough"
+step
+  only Mage
+  label SkyhopperMultiClass_2
+  zone map 2521
+  goto 62.89,77.44 map 2521 r 8
+  note "Talk to Belann Windwood::256507."
+  note "Quest 93797 excluded by Forever faction reference: .turnin 93797. Turn in Boughs in the Wind"
+step
+  only Mage
+  zone map 2521
+  goto 62.71,77.75 map 2521 r 15 optional
+  goto 63.06,77.3 map 2521 r 20 optional
+  goto 62.67,76.59 map 2521 r 25 optional
+  goto 62.16,75.12 map 2521 r 30 optional
+  goto 63.03,74.51 map 2521 r 30 optional
+  goto 63.72,76.13 map 2521 r 30 optional
+  goto 64.18,78.18 map 2521 r 30 optional
+  goto 63.19,79.17 map 2521 r 30 optional
+  goto 64.36,80.69 map 2521 r 30
+  note "Kill Skyhoppers::251314."
+  note "Enchanted Skyhopper Exterminated"
+step
+  only Druid,Horde
+  when onquest 94006
+  zone map 2521
+  goto 65.424,71.472 map 2521 r 35 optional
+  goto 65.905,68.024 map 2521 r 8
+step
+  only Druid,Horde
+  when onquest 94006
+  zone map 2521
+  goto 69.01,65.86 map 2521 r 20 optional
+  goto 69.84,61.73 map 2521 r 8
+  note "Jump off the mountain and use [Walk on Air] to fly towards the questgiver."
+step
+  only Druid,Horde
+  when onquest 94006
+  turnin 94006 -- Turn in The Great Ursera Spirit
+step
+  only Druid,Horde
+  zone map 2521
+  note "Talk to Urs'endris::255853."
+  accept 94638 -- Accept Strength and Mercy
+step
+  only Druid,Horde
+  zone map 2521
+  note "Talk to Fendaal Windstone::273017."
+  note "*If a Tornado is nearby, touch it to gain 40% increased movement speed for 5 minutes. Dealing damage removes the effect."
+  accept 98512 -- Accept Al'Aketh Assassins
+step
+  only Druid,Horde
+  when onquest 98512
+  loop
+  zone map 2521
+  goto 55.27,59.58 map 2521 r 35
+  goto 54.58,60.52 map 2521 r 35
+  goto 55.93,60.3 map 2521 r 35
+  goto 56.04,59.08 map 2521 r 35
+  note "Kill Al'Aketh Assassins::254626."
+  kill 254626 x10 quest 98512.1 -- 10/10 Al'Aketh Assassin slain
+step
+  only Druid,Horde
+  when onquest 98512
+  zone map 2521
+  note "Talk to Fendaal Windstone::273017."
+  turnin 98512 -- Turn in Al'Aketh Assassins
+step
+  only Druid,Horde
+  zone map 2521
+  goto 56.8,61.1 map 2521 r 25 optional
+  note "Kill Ur'endra::258443 inside the cave."
+  kill 258443 x1 quest 94638.1 -- Ur'endra slain
+step
+  only Druid,Horde
+  when onquest 94638
+  zone map 2521
+  goto 56.83,63.121 map 2521 r 15 optional
+  goto 57.299,63.465 map 2521 r 15 optional
+  goto 60.25,62.742 map 2521 r 20 optional
+  goto 69.803,61.66 map 2521 r 8
+  note "Jump off the lower (not the one you're on) mountain and use [Walk on Air] to fly towards the questgiver."
+step
+  only Druid,Horde
+  when onquest 94638
+  zone map 2521
+  note "Talk to Urs'endris::255853."
+  turnin 94638 -- Turn in Strength and Mercy
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Warlock,Horde
+  zone map 2521
+  note "Talk to Fendaal Windstone::273017."
+  note "*If a Tornado is nearby, touch it to gain 40% increased movement speed for 5 minutes. Dealing damage removes the effect."
+  accept 98512 -- Accept Al'Aketh Assassins
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Warlock,Horde
+  when onquest 98512
+  loop
+  zone map 2521
+  goto 55.27,59.58 map 2521 r 35
+  goto 54.58,60.52 map 2521 r 35
+  goto 55.93,60.3 map 2521 r 35
+  goto 56.04,59.08 map 2521 r 35
+  note "Kill Al'Aketh Assassins::254626."
+  kill 254626 x10 quest 98512.1 -- 10/10 Al'Aketh Assassin slain
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Warlock,Horde
+  when onquest 98512
+  zone map 2521
+  note "Talk to Fendaal Windstone::273017."
+  turnin 98512 -- Turn in Al'Aketh Assassins
+step
+  only Druid,Horde
+  zone map 2521
+  goto 56.8,61.1 map 2521 r 25 -- 1
+step
+  only Horde
+  loop
+  zone map 2521
+  goto 53.029,51.423 map 2521 r 35
+  goto 53.621,50.493 map 2521 r 35
+  goto 52.878,49.641 map 2521 r 35
+  goto 53.129,47.738 map 2521 r 35
+  goto 52.528,45.922 map 2521 r 35
+  goto 51.574,46.567 map 2521 r 35
+  goto 49.511,45.931 map 2521 r 35
+  goto 49.917,44.806 map 2521 r 35
+  goto 50.642,44.296 map 2521 r 35
+  note "Click on the Construct Parts."
+  collect 260883 x1 quest 93737.3 -- Obtain Enchanted Gyrozephyr from Windsong Lake
+step
+  only Warrior
+  when onquest 94003
+  zone map 2521
+  note "Kill Zaal Stormshield::257196. Loot him for the [Skybreaker Bulwark]."
+  collect 263993 x1 quest 94003.1 @56.56,50.36 map 2521 -- 1/1 Skybreaker Bulwark
+step
+  label Learn_2
+  zone map 2521
+  note "Talk to Strange Hermit::251684."
+  accept 93159 -- Accept The Strange Hermit
+  kill 251684 x1 quest 93159.1 -- Learn more about the Strange Hermit
+  turnin 93159 -- Turn in The Strange Hermit
+  accept 93160 -- Accept The Forest's Bounty
+  accept 93172 -- Accept Free the Hollows
+step
+  zone map 2521
+  note "Talk to Strange Hermit::251684."
+  accept 98285 -- Accept Camping 101: Engineering
+step
+  along
+  note "Click on the Seeds"
+  collect 257128 x1 quest 93160.1 -- Zephyrseed
+step
+  along
+  zone map 2521
+  note "Kill Wind Hollows::251676."
+  kill 251676 x10 quest 93172.1 @53.95,38.9 map 2521 -- 10/10 Wind Hollow freed
+step
+  label Resaan_s_Heirloom_2
+  zone map 2521
+  note "Click on the Resaan Nimbuswalker"
+  collect 266434 x1 quest 94897.1 -- Resaan's Heirloom
+step
+  label Wind_Hollow_2
+  zone map 2521
+  note "Kill Wind Hollows::251676."
+  kill 251676 x10 quest 93172.1 @56.61,29.26 map 2521 -- 10/10 Wind Hollow freed
+step
+  along
+  note "Click on the Seeds especially around trees."
+  collect 257128 x1 quest 93160.1 -- Zephyrseed
+step
+  zone map 2521
+  note "Talk to Elegael Thornpaw::257944."
+  turnin 94484 -- Turn in Unnerving Silence
+  accept 94485 -- Accept Tears of the Lady
+  accept 94486 -- Accept Feathers for Binding
+  accept 94487 -- Accept Unwanted and Unworthy
+step
+  along
+  zone map 2521
+  note "Click on the Tear Moss on trees."
+  collect 265105 x8 quest 94485.1 @61.76,39.14 map 2521 -- 8/8 Lady's Tear Moss
+step
+  zone map 2521
+  note "Talk to Vayn Moongaze::254151."
+  accept 93165 -- Accept Mercy Falls on Deaf Ears
+step
+  label Unnerving_Silence_2
+  loop
+  zone map 2521
+  goto 63.04,37.12 map 2521 r 40
+  goto 61.99,35.62 map 2521 r 30
+  goto 61.97,36.71 map 2521 r 30
+  goto 62.47,37.3 map 2521 r 40
+  goto 62.96,39.3 map 2521 r 40
+  goto 63.33,38.01 map 2521 r 35
+  goto 64.14,39.18 map 2521 r 40
+  goto 65.7,36.82 map 2521 r 40
+  goto 65.63,35.57 map 2521 r 40
+  note "Kill Al'Aketh Footsoldiers::252665 and Al'Aketh Stormchasers::252664."
+  note "*Loot them for [Bloody Heirlooms]." only Horde
+  collect 265141 x1 quest 94487.1 -- Bloody Heirloom
+step
+  loop
+  zone map 2521
+  goto 62.83,38.25 map 2521 r 35
+  goto 62.08,36.7 map 2521 r 35
+  goto 61.17,35.44 map 2521 r 35
+  goto 60.82,37.23 map 2521 r 35
+  goto 60.33,37.46 map 2521 r 35
+  goto 60.9,38.88 map 2521 r 35
+  goto 59.79,38.95 map 2521 r 35
+  goto 59.9,40.38 map 2521 r 35
+  goto 58.53,39.85 map 2521 r 35
+  goto 57.94,39.99 map 2521 r 35
+  goto 57.36,40.86 map 2521 r 35
+  goto 57.24,42.8 map 2521 r 35
+  goto 55.38,42.17 map 2521 r 35
+  goto 54.55,42.17 map 2521 r 35
+  goto 55.59,39.23 map 2521 r 35
+  collect 257128 x1 quest 93160.1 -- Zephyrseed
+  collect 265105 x8 quest 94485.1 -- 8/8 Lady's Tear Moss
+  collect 265140 x20 quest 94486.1 -- 20/20 Pristine Shriekling Feathers
+step
+  zone map 2521
+  note "Kill Shadowgale Shrieklings::256092."
+  note "*Loot them for the [Pristine Shriekling Feathers]."
+  collect 265140 x20 quest 94486.1 @55.59,39.23 map 2521 -- 20/20 Pristine Shriekling Feathers
+step
+  only Horde
+  along
+  zone map 2521
+  note "Click on the Tear Moss on trees."
+  collect 265105 x8 quest 94485.1 @55.59,39.23 map 2521 -- 8/8 Lady's Tear Moss
+step
+  only Horde
+  label ForestHollowsA_2
+  note "Click on the Seeds especially around trees."
+  collect 257128 x1 quest 93160.1 -- Zephyrseed
+step
+  only Horde
+  label ForestHollowsB_2
+  zone map 2521
+  note "Talk to Strange Hermit::251684."
+  turnin 93160 -- Turn in The Forest's Bounty
+  turnin 93172 -- Turn in Free the Hollows
+step
+  when complete 98285
+  zone map 2521
+  note "Talk to Strange Hermit::251684."
+  turnin 98285 -- Turn in Camping 101: Engineering
+step
+  along until next_377
+  zone map 2521
+  note "Kill Shadowgale Shrieklings::256092. Loot them for the [Pristine Shriekling Feathers]."
+  collect 265140 x20 quest 94486.1 @59.67,40.26 map 2521 -- 20/20 Pristine Shriekling Feathers
+step
+  label next_377
+  zone map 2521
+  note "Click on the Tear Moss"
+  collect 265105 x8 quest 94485.1 @59.67,40.26 map 2521 -- 8/8 Lady's Tear Moss
+step
+  label Pristine_Shriekling_Feathers_2
+  zone map 2521
+  note "Kill Shadowgale Shrieklings::256092. Loot them for the [Pristine Shriekling Feathers]."
+  collect 265140 x20 quest 94486.1 @59.67,40.26 map 2521 -- 20/20 Pristine Shriekling Feathers
+step
+  zone map 2521
+  note "Talk to Elegael Thornpaw::257944."
+  turnin 94485 -- Turn in Tears of the Lady
+  turnin 94487 -- Turn in Unwanted and Unworthy
+  turnin 94486 -- Turn in Feathers for Binding
+  accept 94488 -- Accept The Ties That Bind
+  accept 94489 -- Accept The Wounds of Betrayal
+step
+  when !turnedin 94490
+  zone map 2521
+  note "Kill Commander Haalien::253622. Loot him for [Severed Head] and [Ripped Missive]."
+  collect 265475 x1 quest 94488.1 -- Commander Haalien's Severed Head
+  collect 265476 x1 @65.54,36.3 map 2521 -- Ripped Missive
+step
+  along until next_382
+  zone map 2521
+  note "Use the [Ripped Missive] in your bags to begin the quest."
+  accept 94490 -- Accept Ripped Missive
+  use 265476 @65.54,36.3 map 2521 -- Ripped Missive
+step
+  label next_382
+  zone map 2521
+  note "Talk to Vayn Moongaze::254151 at the entrance of the cave."
+  turnin 93165 -- Turn in Mercy Falls on Deaf Ears
+step
+  zone map 2521
+  note "Click on the Druids"
+  kill 258134 x1 quest 94489.1 -- Injured Druids healed
+step
+  along until next_385
+  zone map 2521
+  goto 64.703,30.067 map 2521 r 20 -- 1
+step
+  label next_385
+  zone map 2521
+  note "Click on the Druids."
+  kill 258134 x1 quest 94489.1 -- Injured Druids healed
+step
+  loop
+  zone map 2521
+  goto 64.98,34.96 map 2521 r 10
+  goto 64.51,34.89 map 2521 r 10
+  note "Click on the Druids"
+  kill 258134 x1 quest 94489.1 -- Injured Druids healed
+step
+  zone map 2521
+  note "Click on Jorel Windsinger inside the cave."
+  kill 258130 x1 quest 94489.2 -- Find Jorel Windsinger
+step
+  label Wounds_of_Betrayal_2
+  along until next_389
+  zone map 2521
+  goto 63.93,34.5 map 2521 r 15 optional
+  note "Talk to Elegael Thornpaw::257944."
+  turnin 94489 -- Turn in The Wounds of Betrayal
+step
+  label next_389
+  zone map 2521
+  goto 63.93,34.5 map 2521 r 15 optional
+  note "Talk to Elegael Thornpaw::257944."
+  turnin 94489 -- Turn in The Wounds of Betrayal
+step
+  zone map 2521
+  note "Talk to Elegael Thornpaw::257944."
+  turnin 94489 -- Turn in The Wounds of Betrayal
+  turnin 94490 -- Turn in Ripped Missive
+  turnin 94488 -- Turn in The Ties That Bind
+  accept 94491 -- Accept The Fate of the Den
+step
+  zone map 2521
+  hearth "Valanaar" optional -- Hearth to Valanaar
+  use 6948 @61.77,39.14 map 2521 optional -- Hearthstone
+step
+  when onquest 94896
+  zone map 2521
+  note "Talk to Donaal Downbreeze::255940."
+  vendor 255940 -- Vendor trash
+  collect 1179 x20 @62.18,72.616 map 2521 optional only Mage -- Ice Cold Milk
+  collect 1179 x20 @62.18,72.616 map 2521 optional only Druid -- Ice Cold Milk
+  collect 1179 x20 @62.18,72.616 map 2521 optional only Shaman -- Ice Cold Milk
+  collect 1179 x20 @62.18,72.616 map 2521 optional only Priest -- Ice Cold Milk
+  collect 1179 x20 @62.18,72.616 map 2521 optional only Warlock -- Ice Cold Milk
+  collect 1179 x20 @62.18,72.616 map 2521 optional only Paladin -- Ice Cold Milk
+  note "*Don't sell [Small Eggs] and [Strider Meat]." only Horde
+  note "*We need them for Cooking later."
+step
+  only Horde
+  zone map 2521
+  note "Talk to Lotheluum Starbreeze::252359."
+  turnin 94491 -- Turn in The Fate of the Den
+step
+  only Horde
+  when complete 94896
+  zone map 2521
+  goto 65.95,74.31 map 2521 r 8
+  note "Talk to Ealaane Nimbuswalker::259012."
+step
+  only Horde
+  when complete 94896
+  when onquest 94896
+  turnin 94896 -- Turn in Aid For The Refugees
+step
+  only Horde
+  when complete 94896
+  when onquest 94897
+  turnin 94897 -- Turn in The Fate of a Loved One
+step
+  only Horde
+  when onquest 94897
+  zone map 2521
+  note "Talk to Ealaane Nimbuswalker::259012."
+  turnin 94897 -- Turn in The Fate of a Loved One
+step
+  only Horde
+  note "Abandon any remaining \"Camping 101\" quests."
+  note "*Click the macro in the Active Items frame to abandon them all at once."
+  note "Abandon Camping 101: Mining"
+  note "Abandon Camping 101: Skinning"
+  note "Abandon Camping 101: Cooking"
+  note "Abandon Camping 101: Herbalism"
+  note "Abandon Camping 101: First Aid"
+  note "Abandon Camping 101: Fishing"
+  note "Abandon Camping 101: Alchemy"
+  note "Abandon Camping 101: Blacksmithing"
+  note "Abandon Camping 101: Tailoring"
+  note "Abandon Camping 101: Enchanting"
+  note "Abandon Camping 101: Leatherworking"
+  note "Abandon Camping 101: Engineering"
+  note "Abandon WANTED: Vulgara the Insatiable"
+step
+  only Horde
+  when complete 93317
+  when onquest 93317
+  zone map 2521
+  note "Talk to Nyalah Brightfire::257006 inside the house."
+  turnin 93317 -- Turn in Crab Season
+step
+  only Warrior,Horde
+  when onquest 94003
+  zone map 2521
+  note "Talk to Seena Skybreaker::252377."
+  turnin 94003 -- Turn in The Skybreaker Bulwark
+step
+  only Warrior,Horde
+  when !turnedin 93736
+  when level>=12
+  zone map 2521
+  goto 59.89,72.87 map 2521 r 8 optional
+  note "Talk to Seena Skybreaker::252377."
+  learn 5242 "Battle Shout (Rank 2)"
+  learn 7384 "Overpower"
+  learn 72 "Shield Bash"
+step
+  only Warrior,Horde
+  when !turnedin 93736
+  when level>=14
+  zone map 2521
+  goto 59.89,72.87 map 2521 r 8 optional
+  note "Talk to Seena Skybreaker::252377."
+  learn 1160 "Demoralizing Shout"
+  learn 6572 "Revenge"
+  learn 1310185 "Tactical Mastery"
+step
+  only Rogue,Horde
+  when level>=12
+  zone map 2521
+  goto 59.9,72.48 map 2521 r 8 optional
+  note "Talk to Eltheen Nightbreeze::252379."
+  learn 1766 "Kick"
+  learn 3127 "Parry"
+step
+  only Horde
+  when complete 93737
+  when onquest 93737
+  zone map 2521
+  note "Talk to Riaani Nightwind::256083."
+  turnin 93737 -- Turn in The Broken Construct
+step
+  only Horde
+  when turnedin 93737
+  zone map 2521
+  note "Talk to Riaani Nightwind::256083."
+  accept 93738 -- Accept The Broken Construct
+step
+  only Horde
+  when complete 93736
+  when onquest 93736
+  zone map 2521
+  note "Talk to Endaria Mistgaze::254344."
+  turnin 93736 -- Turn in Unwelcome Spirits
+step
+  only Horde
+  when onquest 93736
+  when onquest 93738
+  zone map 2521
+  note "Talk to Ayessa Dawnsinger::251968."
+  turnin 93738 -- Turn in The Broken Construct
+step
+  only Horde
+  when complete 92708
+  when onquest 92708
+  zone map 2521
+  note "Talk to Ayessa Dawnsinger::251968."
+  turnin 92708 -- Turn in A Grand Adventure
+step
+  only Horde
+  when !turnedin 95350
+  label LeaveZephrasIsle_2
+  zone map 2521
+  goto 57.921,80.781 map 2521 r 8
+step
+  only Druid,Skyborne,Horde
+  zone map 1412
+  note "Talk to Muln Earthfury::259118."
+  accept 94911 -- Accept Child of Nature
+step
+  only Horde
+  zone map 1412
+  note "Talk to Alaana Stormwalker::259119."
+  accept 95350 -- Accept Welcome to Azeroth
+step
+  only Druid,Skyborne,Horde
+  when onquest 94911
+  along
+  turnin 94911 -- Turn in Child of Nature
+step
+  only Druid,Skyborne,Horde
+  label ChildOfNatureA_2
+  along
+  note "Talk to Turak Runetotem::3033."
+  accept 94913 -- Accept Moonglade
+step
+  label ChildOfNatureB_2
+  only Druid,Skyborne,Horde
+  zone map 1456
+  goto 60.087856,17.346116 map 1456 r 15 optional
+  goto 56.868695,25.293425 map 1456 r 15 optional
+  goto 54.176479,26.917378 map 1456 r 8 optional
+  goto 50.200431,34.433549 map 1456 r 25 -- Enter Thunder Bluff
+step
+  label ChildOfNatureC_2
+  only Druid,Skyborne,Horde
+  zone map 1456
+  goto 50.775281,37.120976 map 1456 r 12 optional
+  goto 53.994443,34.907801 map 1456 r 12 optional
+  goto 55.364503,35.554508 map 1456 r 8 optional
+  goto 68.47109,28.239534 map 1456 r 12 -- Cross the bridge.
+step
+  only Druid,Skyborne,Horde
+  when onquest 94911
+  turnin 94911 -- Turn in Child of Nature
+step
+  only Druid,Skyborne,Horde
+  zone map 1456
+  note "Talk to Turak Runetotem::3033."
+  accept 94913 -- Accept Moonglade
+step
+  only Druid,Skyborne,Horde
+  note "Talk to Turak Runetotem::3033."
+  accept 94913 -- Accept Moonglade
+step
+  only Druid,Skyborne,Horde
+  when level>=12
+  when level<14
+  zone map 1456
+  goto 76.47109,27.291031 map 1456 r 8
+  note "Talk to Turak Runetotem::3033."
+  learn 8936 "your class spells"
+step
+  only Druid,Skyborne,Horde
+  note "Talk to Turak Runetotem::3033."
+  accept 94913 -- Accept Moonglade
+step
+  only Druid,Skyborne,Horde
+  when level>=14
+  zone map 1456
+  goto 76.47109,27.291031 map 1456 r 8
+  note "Talk to Turak Runetotem::3033."
+  learn 5178 "your class spells"
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Warlock,Horde
+  when onquest 95350
+  when !zone "Orgrimmar"
+  label WelcomeToAzerothA_2
+  along until next_420
+  note "Talk to Tal::2995."
+  fly "Orgrimmar" -- Fly to Orgrimmar
+step
+  only Horde
+  label next_420
+  zone map 1456
+  note "Talk to Rahauro"
+  accept 5722 -- Accept Searching for the Lost Satchel
+  accept 5723 -- Accept Testing an Enemy's Strength
+step
+  only Horde
+  when onquest 95350
+  when !zone "Orgrimmar"
+  zone map 1456
+  goto 46.962108,49.825174 map 1456 r 8
+  note "Talk to Tal::2995."
+  fly "Orgrimmar" -- Fly to Orgrimmar
+step
+  only Horde
+  zone map 1454
+  note "Talk to Innkeeper Gryshka::6929"
+  sethome "Orgrimmar" @54.1,68.42 map 1454 -- Set your Hearthstone to Orgrimmar
+step
+  only Horde
+  zone map 1454
+  note "Talk to Thatog::268701"
+  note "He is upstairs in the building"
+  accept 97246 -- Accept Meal Appeal
+step
+  only Horde
+  when onquest 97246
+  turnin 97246 -- Turn in Meal Appeal
+step
+  only Horde
+  zone map 1454
+  note "Talk to Borstan::3368"
+  accept 97249 -- Accept Favorite Food
+step
+  only Horde
+  zone map 1454
+  note "Talk to Kor'geld::3348"
+  accept 97242 -- Accept Yelmak's Medley
+step
+  only Horde
+  along until next_428
+  zone map 1454
+  goto 62.697552,39.060375 map 1454 r 15 optional
+  goto 64.622542,38.012713 map 1454 r 15 optional
+  goto 66.119756,40.247013 map 1454 r 15 optional
+  goto 67.852246,38.728972 map 1454 r 15 optional -- Travel to the Valley of Honor
+step
+  only Horde
+  label next_428
+  loop
+  zone map 1454
+  goto 69.392238,34.591775 map 1454 r 1
+  goto 69.392238,34.591775 map 1454 r 20
+  goto 71.089081,32.314713 map 1454 r 20
+  goto 70.354733,29.599344 map 1454 r 20
+  goto 66.248088,27.835423 map 1454 r 20
+  goto 67.731043,32.688879 map 1454 r 20
+  note "Loot the Handful of Cattails and Speargrass Cuttings in the water"
+  collect 277278 x1 quest 97242.1 -- Handful of Cattails
+  collect 277279 x1 quest 97242.2 -- Speargrass Cuttings
+step
+  only Hunter,Horde
+  when level>=12
+  zone map 1454
+  goto 66.049886,18.519782 map 1454 r 8
+  note "Talk to Ormak Grimshot::3352"
+  learn 13795 "your class spells"
+step
+  only Hunter,Horde
+  zone map 1454
+  goto 66.34006,14.830514 map 1454 r 8
+  note "Talk to Xao'tsu::10088"
+  learn 24556 "your pet spells"
+step
+  only Warrior,Horde
+  when level>=12
+  when level<14
+  zone map 1454
+  goto 79.909811,31.360058 map 1454 r 8
+  note "Talk to Grezz Ragefist::3353"
+  learn 7384 "your class spells"
+step
+  only Warrior,Horde
+  when level>=14
+  zone map 1454
+  goto 79.909811,31.360058 map 1454 r 8
+  note "Talk to Grezz Ragefist::3353"
+  learn 1160 "your class spells"
+step
+  only Horde
+  when onquest 97242
+  zone map 1454
+  note "Talk to Kor'geld::3348"
+  turnin 97242 -- Turn in Yelmak's Medley
+step
+  only Horde
+  zone map 1454
+  note "Talk to Yelmak::3347"
+  note "You may have to wait about 10 seconds before you can accept this quest"
+  accept 97275 -- Accept Whuut's the Rush
+step
+  only Horde
+  when onquest 97275
+  zone map 1454
+  note "Talk to Whuut::11046"
+  turnin 97275 -- Turn in Whuut's the Rush
+step
+  only Horde
+  when onquest 97249
+  zone map 1454
+  note "Talk to Migi::268682"
+  turnin 97249 -- Turn in Favorite Food
+step
+  only Horde
+  zone map 1454
+  note "Talk to Thra::268684"
+  accept 97326 -- Accept Rocks to Rests
+step
+  only Horde
+  when onquest 97326
+  zone map 1454
+  note "Loot the orange Rocks on the ground"
+  note "Skip this quest if there is a lot of competition! There aren't that many Rocks and they do not respawn quickly"
+  collect 277952 x8 quest 97326.1 @43.704322,34.634537 map 1454 -- 8/8 Smooth Boulder
+step
+  only Horde
+  when complete 97326
+  when onquest 97326
+  zone map 1454
+  note "Talk to Thra::268684"
+  turnin 97326 -- Turn in Rocks to Rests
+step
+  only Horde
+  when onquest 95350
+  turnin 95350 -- Turn in Welcome to Azeroth
+step
+  only Horde
+  zone map 1454
+  note "Talk to Thrall::4949."
+  accept 98024 -- Accept Journey to the Crossroads
+step
+  only Horde
+  when level>=13
+  zone map 1454
+  note "Talk to Zor Lonetree::4047"
+  accept 1061 -- Accept The Spirits of Stonetalon
+step
+  only Shaman,Horde
+  when level>=12
+  when level<14
+  zone map 1454
+  goto 38.819839,36.410217 map 1454 r 8
+  note "Talk to Kardris Dreamseeker::3344"
+  learn 408341 "your class spells"
+step
+  only Shaman,Horde
+  when level>=14
+  zone map 1454
+  goto 38.819839,36.410217 map 1454 r 8
+  note "Talk to Kardris Dreamseeker::3344"
+  learn 8045 "your class spells"
+step
+  only Rogue,Horde
+  when level>=12
+  when level<14
+  zone map 1454
+  goto 43.899672,54.65023 map 1454 r 8
+  note "Talk to Ormok::3328"
+  learn 1766 "your class spells"
+step
+  only Rogue,Horde
+  when level>=14
+  zone map 1454
+  goto 43.899672,54.65023 map 1454 r 8
+  note "Talk to Ormok::3328"
+  learn 1758 "your class spells"
+step
+  only Mage,Horde
+  when level>=12
+  when level<14
+  zone map 1454
+  goto 38.35998,85.54023 map 1454 r 8
+  note "Talk to Pephredo::5882"
+  learn 145 "your class spells"
+step
+  only Mage,Horde
+  when level>=14
+  zone map 1454
+  goto 38.35998,85.54023 map 1454 r 8
+  note "Talk to Pephredo::5882"
+  learn 1449 "your class spells"
+step
+  only Hunter,Horde
+  label Conscript_2
+  zone map 1411
+  note "Talk to Takrin Pathseeker::3336"
+  accept 840 -- Accept Conscript of the Horde
+step
+  only Hunter,Horde
+  when onquest 840
+  turnin 840 -- Turn in Conscript of the Horde
+step
+  only Hunter,Horde
+  label next_453
+  zone map 1413
+  note "Talk to Kargal Battlescar::3337"
+  accept 842 -- Accept Crossroads Conscription
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  zone map 1411
+  goto 50.8,13.800085 map 1411 r 40 -- Go up the Zeppelin Tower
+  note "Conjure water while waiting" only Mage
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when level<13
+  zone map 1420
+  note "Talk to Deathguard Terrence::1738"
+  accept 96895 -- Accept The Argent Emissary
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when level<13
+  label DeliverytoSPF_2
+  zone map 1420
+  note "Talk to Apothecary Johaan::1518"
+  accept 445 -- Accept Delivery to Silverpine Forest
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when level<13
+  when onquest 96895
+  turnin 96895 -- Turn in The Argent Emissary
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when level<13
+  zone map 1420
+  note "Talk to Hadric Harlson::267009"
+  accept 96897 -- Accept The Cult of the Damned
+  accept 96898 -- Accept Remnants of War
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when onquest 96897,96898
+  zone map 1420
+  goto 70.015668,64.056432 map 1420 r 8
+  note "Kill Dark Enforcers::275437 and Dark Neophytes. Loot them for Necrotic Crystal Fragments"
+  note "Necrotic Crystal Fragments can also be looted on the ground"
+  note "Be careful! These mobs hit hard. Dark Enforcers::275437 also have an instant cast 50-70 damage ability"
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when onquest 96897,96898
+  kill 275437 x8 quest 96897.2 @70.015668,64.056432 map 1420 -- 8/8 Dark Enforcer slain
+  kill 267006 x8 quest 96897.1 @70.015668,64.056432 map 1420 -- 8/8 Dark Neophyte slain
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when onquest 96897,96898
+  collect 275851 x12 quest 96898.1 @70.015668,64.056432 map 1420 -- 12/12 Necrotic Crystal Fragment
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when complete 96897
+  when complete 96898
+  zone map 1420
+  goto 65.921615,61.115353 map 1420 r 8
+  note "Talk to Hadric Harlson::267009"
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when complete 96897
+  when complete 96898
+  when onquest 96897
+  turnin 96897 -- Turn in The Cult of the Damned
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when complete 96897
+  when complete 96898
+  when onquest 96898
+  turnin 96898 -- Turn in Remnants of War
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  label UCflightpath1_2
+  zone map 1458
+  note "Talk to Michael Garrett::4551"
+  getfp "Undercity" @63.249824,48.560078 map 1458 -- Get the Undercity flight path
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when zone "Undercity"
+  when !turnedin 91920
+  zone map 1458
+  note "Talk to Auctioneer Cain::15682"
+  note "Buy three [Murloc Eyes] from the Auction House"
+  note "Skip this if you want, it's only a small time saver"
+  collect 730 x3 @67.637055,35.891824 map 1458 -- Collect Murloc Eyes (x3)
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when !zone "Silverpine Forest"
+  zone map 1458
+  zone map 1420
+  goto 47.249824,39.119424 map 1458 r 50 optional
+  goto 46.35028,43.859279 map 1458 r 10 optional
+  goto 45.240182,39.350637 map 1458 r 10 optional
+  goto 41.319922,38.399229 map 1458 r 10 optional
+  goto 40.740378,33.949952 map 1458 r 10 optional
+  goto 34.800052,33.1907 map 1458 r 15 optional
+  goto 27.39002,30.230244 map 1458 r 35 optional
+  goto 21.889564,43.349987 map 1458 r 35 optional
+  goto 51.100039,71.529959 map 1420 r 50
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Horde
+  when !zone "Silverpine Forest"
+  label Entersilverpine_2
+  zone map 1420
+  goto 53.199956,75.820083 map 1420 r 8
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  label Silverpineskip_2
+  note "Review this source step manually."

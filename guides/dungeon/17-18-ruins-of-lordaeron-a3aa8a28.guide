@@ -1,0 +1,339 @@
+guide rxp-free/17-18-ruins-of-lordaeron-a3aa8a28
+title "17-18 Ruins of Lordaeron"
+levels 17-18
+zone map 1458
+coords era
+faction Horde
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · Dungeon Guide 1-22"
+next rxp-free/18-21-the-barrens-a90d90d0
+step
+  when !zone "Undercity"
+  when !zone "Silverpine Forest"
+  label next_2
+  zone map 1411
+  goto 50.8,13.800085 map 1411 r 40 -- Go up the Zeppelin Tower
+  note "Conjure water while waiting" only Mage
+step
+  zone map 1420
+  note "Talk to Deathguard Kristof::251001"
+  accept 92422 -- Accept The Wrath of Rath'mael
+step
+  along until UCPickups
+  note "If possible, have somebody in your group share the following quest"
+  accept 92401 -- Accept A Frightened Request
+step
+  along until UCPickups
+  zone map 1420
+  goto 61.7999,65.059917 map 1420 r 8
+step
+  along until UCPickups
+  zone map 1458
+  goto 66.090215,20.060021 map 1458 r 35 optional
+  goto 64.370345,23.940641 map 1458 r 35 optional
+  goto 65.929694,26.710503 map 1458 r 10 optional
+  goto 65.890085,34.029626 map 1458 r 10 optional
+  goto 64.220248,39.769319 map 1458 r 10 optional
+  goto 65.530476,43.620255 map 1458 r 15 optional
+  goto 63.259205,48.546018 map 1458 r 20 optional -- Take the lift down to the Undercity
+step
+  only Shaman,Tauren
+  zone map 1458
+  note "Talk to Michael Garrett::4551"
+  getfp "Undercity" @63.259205,48.546018 map 1458 -- Get the Undercity flight path
+step
+  only Shaman,Orc
+  zone map 1458
+  note "Talk to Michael Garrett::4551"
+  getfp "Undercity" @63.259205,48.546018 map 1458 -- Get the Undercity flight path
+step
+  zone map 1458
+  note "Talk to Theodore Griffs::11835"
+  accept 95216 -- Accept The New Plague
+step
+  zone map 1458
+  note "Talk to Morbin Lightbane::266484"
+  accept 92421 -- Accept Light's Justice
+step
+  when complete 5725
+  when onquest 5725
+  label UCPickups
+  zone map 1458
+  note "Talk to Varimathras::2425"
+  turnin 5725 -- Turn in The Power to Destroy...
+step
+  only Shaman,Tauren
+  when !turnedin 92401
+  when !onquest 92401
+  when zone "Undercity"
+  when !zone "Silverpine Forest"
+  zone map 1458
+  zone map 1420
+  goto 47.249824,39.119424 map 1458 r 50 optional
+  goto 46.35028,43.859279 map 1458 r 10 optional
+  goto 45.240182,39.350637 map 1458 r 10 optional
+  goto 41.319922,38.399229 map 1458 r 10 optional
+  goto 40.740378,33.949952 map 1458 r 10 optional
+  goto 34.800052,33.1907 map 1458 r 15 optional
+  goto 27.39002,30.230244 map 1458 r 35 optional
+  goto 21.889564,43.349987 map 1458 r 35 optional
+  goto 51.100039,71.529959 map 1420 r 50
+step
+  only Shaman,Orc
+  when !turnedin 92401
+  when !onquest 92401
+  when zone "Undercity"
+  when !zone "Silverpine Forest"
+  zone map 1458
+  zone map 1420
+  goto 47.249824,39.119424 map 1458 r 50 optional
+  goto 46.35028,43.859279 map 1458 r 10 optional
+  goto 45.240182,39.350637 map 1458 r 10 optional
+  goto 41.319922,38.399229 map 1458 r 10 optional
+  goto 40.740378,33.949952 map 1458 r 10 optional
+  goto 34.800052,33.1907 map 1458 r 15 optional
+  goto 27.39002,30.230244 map 1458 r 35 optional
+  goto 21.889564,43.349987 map 1458 r 35 optional
+  goto 51.100039,71.529959 map 1420 r 50
+step
+  only Shaman,Tauren
+  when !turnedin 92401
+  when !onquest 92401
+  when !zone "Silverpine Forest"
+  zone map 1420
+  zone map 1421
+  goto 53.199956,75.820083 map 1420 r 50 optional
+  goto 53.46,13.449893 map 1421 r 8
+step
+  only Shaman,Orc
+  when !turnedin 92401
+  when !onquest 92401
+  when !zone "Silverpine Forest"
+  zone map 1420
+  zone map 1421
+  goto 53.199956,75.820083 map 1420 r 50 optional
+  goto 53.46,13.449893 map 1421 r 8
+step
+  only Shaman,Tauren
+  when !turnedin 92401
+  when !onquest 92401
+  along until AFrightenedRequest
+  zone map 1421
+  goto 53.46,13.449893 map 1421 r 50 optional
+  goto 49.77,28.659893 map 1421 r 50 optional
+  goto 49.77,33.049893 map 1421 r 50 optional
+  goto 49.64,37.839893 map 1421 r 100 optional
+  goto 45.51,41.259893 map 1421 r 8 optional
+step
+  only Shaman,Orc
+  when !turnedin 92401
+  when !onquest 92401
+  along until AFrightenedRequest
+  zone map 1421
+  goto 53.46,13.449893 map 1421 r 50 optional
+  goto 49.77,28.659893 map 1421 r 50 optional
+  goto 49.77,33.049893 map 1421 r 50 optional
+  goto 49.64,37.839893 map 1421 r 100 optional
+  goto 45.51,41.259893 map 1421 r 8 optional
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Skyborne
+  when !turnedin 92401
+  when !onquest 92401
+  along until AFrightenedRequest
+  zone map 1458
+  goto 63.259205,48.546018 map 1458 r 8 optional
+  note "Talk to Michael Garrett::4551"
+  fly "Sepulcher" optional -- Fly to Sepulcher
+step
+  label AFrightenedRequest
+  zone map 1421
+  note "Talk to Tabitha Heartweaver::250686"
+  accept 92401 -- Accept A Frightened Request
+step
+  when zone "Silverpine Forest"
+  along until EnterRoL
+  zone map 1421
+  goto 45.62,42.579893 map 1421 r 8
+  note "Talk to Karos Razok::2226"
+  fly "Undercity" -- Fly to Undercity
+step
+  label EnterRoL
+  zone map 1458
+  goto 71.379075,11.473917 map 1458 r 8
+step
+  when onquest 92421
+  along until RuinsRathma
+  zone map 1458
+  note "Kill Undead. Loot them for their [Intact Limbs]"
+  collect 268580 x25 quest 92421.1 @71.379075,11.473917 map 1458 -- Intact Limbs (25)
+step
+  when !turnedin 95204
+  when !onquest 95204
+  along until RuinsLimbs
+  zone map 1458
+  note "Loot and use the [Crest of Lordaeron] to start the quest"
+  note "It has 5 possible spawn locations"
+  collect 275521 x1 @71.379075,11.473917 map 1458 optional -- Crest of Lordaeron (1)
+  accept 95204 -- Accept Crest of Lordaeron
+  use 275521 @71.379075,11.473917 map 1458
+step
+  when onquest 95216
+  zone map 1458
+  note "Kill Witherfang::250483. Loot it for a [Highly Toxic Strain]"
+  collect 275443 x1 quest 95216.1 @71.379075,11.473917 map 1458 -- Highly Toxic Strain (1)
+step
+  when !turnedin 97288
+  when !onquest 97288
+  zone map 1458
+  note "Kill The Baron::250660. Loot and use his [Abominable Head] to start the quest"
+  collect 280438 x1 @71.379075,11.473917 map 1458 optional -- Abominable Head (1)
+  accept 97288 -- Accept Unending Torment
+  use 280438 @71.379075,11.473917 map 1458
+step
+  when onquest 92422
+  label RuinsRathma
+  note "Kill Rath'mael::250657"
+  kill 250657 x1 quest 92422.1 -- Rath'mael Slain (1)
+step
+  when onquest 92401
+  note "Approach the body of Edward Heartweaver::250842 near Rath'mael::250657"
+  complete 92401
+step
+  when onquest 92421
+  label RuinsLimbs
+  zone map 1458
+  note "Kill Undead. Loot them for their [Intact Limbs]"
+  collect 268580 x25 quest 92421.1 @71.379075,11.473917 map 1458 -- Intact Limbs (25)
+step
+  when !turnedin 95204
+  when !onquest 95204
+  zone map 1458
+  note "Loot and use the [Crest of Lordaeron] to start the quest"
+  note "It has 5 possible spawn locations"
+  collect 275521 x1 @71.379075,11.473917 map 1458 optional -- Crest of Lordaeron (1)
+  accept 95204 -- Accept Crest of Lordaeron
+  use 275521 @71.379075,11.473917 map 1458
+step
+  zone map 1458
+  goto 71.379075,11.473917 map 1458 r 8
+step
+  when complete 92422
+  zone map 1420
+  note "Talk to Deathguard Kristof::251001"
+  turnin 92422 -- Turn in The Wrath of Rath'mael
+step
+  zone map 1420
+  goto 61.7999,65.059917 map 1420 r 8
+step
+  zone map 1458
+  goto 66.090215,20.060021 map 1458 r 35 optional
+  goto 64.370345,23.940641 map 1458 r 35 optional
+  goto 65.929694,26.710503 map 1458 r 10 optional
+  goto 65.890085,34.029626 map 1458 r 10 optional
+  goto 64.220248,39.769319 map 1458 r 10 optional
+  goto 65.530476,43.620255 map 1458 r 15 optional
+  goto 63.259205,48.546018 map 1458 r 20 -- Take the lift down to the Undercity
+step
+  when complete 95216
+  zone map 1458
+  note "Talk to Theodore Griffs::11835"
+  turnin 95216 -- Turn in The New Plague
+step
+  when onquest 97288
+  zone map 1458
+  note "Talk to Master Apothecary Faranell::2055"
+  turnin 97288 -- Turn in Unending Torment
+step
+  when turnedin 97288
+  zone map 1458
+  note "Talk to Master Apothecary Faranell::2055"
+  accept 97289 -- Accept Unending Torment
+step
+  when onquest 97289
+  zone map 1458
+  note "Talk to Unfinished Abomination::271613"
+  turnin 97289 -- Turn in Unending Torment
+step
+  when turnedin 97289
+  zone map 1458
+  note "Talk to Unfinished Abomination::271613"
+  accept 97290 -- Accept Unending Torment
+step
+  when onquest 97290
+  zone map 1458
+  note "Talk to Master Apothecary Faranell::2055"
+  turnin 97290 -- Turn in Unending Torment
+step
+  when turnedin 97290
+  zone map 1458
+  note "Talk to Master Apothecary Faranell::2055"
+  accept 97291 -- Accept Unending Torment
+step
+  when complete 92421
+  zone map 1458
+  note "Talk to Morbin Lightbane::266484"
+  turnin 92421 -- Turn in Light's Justice
+  note "*Choose [The Stitcher] for a main-hand upgrade. Train Maces if needed" only Rogue
+step
+  when onquest 97291
+  zone map 1458
+  goto 53.836404,49.124049 map 1458 r 8
+  note "Loot a [Blisterweed] from the pot behind Katrina Alliestar::4615"
+  note "Blisterweed (1)"
+step
+  when onquest 97291
+  zone map 1458
+  goto 75.225329,51.201836 map 1458 r 8
+  note "Talk to Ezekiel Graves::4585"
+  note "Buy an [Essence of Agony]"
+  note "Essence of Agony (1)"
+step
+  when onquest 95204
+  zone map 1458
+  note "Talk to Oran Snakewrithe::7825"
+  turnin 95204 -- Turn in Crest of Lordaeron
+step
+  when onquest 97291
+  zone map 1458
+  note "Talk to Tawny Grisette::4554"
+  note "Buy a [Toxic Skullcap]"
+  collect 281300 x1 quest 97291.1 -- Toxic Skullcap (1)
+step
+  when onquest 97291
+  zone map 1458
+  note "Talk to Master Apothecary Faranell::2055"
+  turnin 97291 -- Turn in Unending Torment
+step
+  when turnedin 97291
+  zone map 1458
+  note "Talk to Master Apothecary Faranell::2055"
+  accept 97292 -- Accept Unending Torment
+step
+  when onquest 97292
+  zone map 1458
+  use 281327 @45.278749,63.934142 map 1458 -- Use [Hissing Serum] by the worm upstairs
+  note "Finish Unending Torment"
+step
+  when complete 97292
+  zone map 1458
+  note "Talk to Master Apothecary Faranell::2055"
+  turnin 97292 -- Turn in Unending Torment
+step
+  only Rogue
+  when complete 92401
+  when zone "Undercity"
+  along until RuinsRogueTurnin
+  zone map 1458
+  goto 63.259205,48.546018 map 1458 r 8
+  note "Talk to Michael Garrett::4551"
+  fly "Sepulcher" -- Fly to Sepulcher if you have the flight path
+step
+  only Rogue
+  when complete 92401
+  label RuinsRogueTurnin
+  zone map 1421
+  note "Only turn in now for an off-hand upgrade"
+  note "Take the sewers and follow the road to the Sepulcher if you cannot fly"
+  note "Talk to Tabitha Heartweaver::250686"
+  turnin 92401 -- Turn in A Frightened Request

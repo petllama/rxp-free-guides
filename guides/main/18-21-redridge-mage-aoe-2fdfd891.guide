@@ -1,0 +1,330 @@
+guide rxp-free/18-21-redridge-mage-aoe-2fdfd891
+title "18-21 Redridge Mage AoE"
+levels 18-21
+zone map 1433
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · Speedrun Guide Mage"
+class Mage
+step
+  along until Gnolls
+  note "start AoEing needed quest mobs in groups of 3+ that you see."
+  note "Keep this tutorial open in another tab for the Redridge AoE Section if needed:"
+step
+  zone map 1429
+  note "Talk to Guard Parker. He patrols around the crossroads a little"
+  goto 99.049883,72.150232 map 1429 r 8 optional
+  note "Talk to Guard Parker"
+  accept 244 -- Accept Encroaching Gnolls
+step
+  label Gnolls
+  along
+  zone map 1433
+  note "Talk to Deputy Feldon"
+  turnin 244 -- Turn in Encroaching Gnolls
+  accept 246 -- Accept Assessing the Threat
+step
+  zone map 1433
+  getfp "Redridge Mountains" @30.589948,59.399855 map 1433 -- Get the Redridge Mountains flight path
+step
+  zone map 1433
+  note "Talk to Deputy Feldon"
+  turnin 244 -- Turn in Encroaching Gnolls
+  accept 246 -- Accept Assessing the Threat
+step
+  zone map 1433
+  note "Talk to Marshal Marris"
+  accept 20 -- Accept Blackrock Menace
+step
+  zone map 1433
+  note "Talk to Foreman Oslow"
+  accept 125 -- Accept The Lost Tools
+step
+  zone map 1433
+  note "Talk to Verner Osgood"
+  accept 118 -- Accept The Price of Shoes
+step
+  zone map 1433
+  note "Inside the Town Hall"
+  note "Talk to Bailiff Conacher"
+  accept 91 -- Accept Solomon's Law
+step
+  zone map 1433
+  note "Go inside the building"
+  note "Talk to Magistrate Solomon"
+  accept 120 -- Accept Messenger to Stormwind
+step
+  zone map 1433
+  note "Talk to Dockmaster Baren"
+  accept 127 -- Accept Selling Fish
+step
+  zone map 1433
+  accept 180 -- Accept Wanted: Lieutenant Fangore
+step
+  zone map 1433
+  note "Inside the Inn"
+  note "Talk to Darcy"
+  accept 129 -- Accept A Free Lunch
+step
+  zone map 1433
+  sethome "Lakeshire" @27.010218,44.82028 map 1433 -- Set your Hearth to Lakeshire
+step
+  zone map 1433
+  note "Talk to Shawn"
+  accept 3741 -- Accept Hilary's Necklace
+step
+  zone map 1433
+  note "Look for Hilary's Necklace underwater. It's in a brown patch of dirt"
+  collect 10958 x1 quest 3741.1 -- Hilary's Necklace (1)
+step
+  along until next_16
+  zone map 1433
+  goto 15.469953,62.400029 map 1433 r 1
+  note "AoE the gnolls in the camps"
+step
+  label next_16
+  zone map 1433
+  note "Talk to Guard Parker"
+  turnin 129 -- Turn in A Free Lunch
+  accept 130 -- Accept Visit the Herbalist
+step
+  zone map 1433
+  goto 30.589948,59.410214 map 1433 r 8
+  fly "Stormwind" -- Fly to Stormwind
+step
+  zone map 1453
+  note "Go into Stormwind. Go to the weapon trainer"
+  goto 57.129966,57.710347 map 1453 r 8
+  train class -- Train 1h Swords and Daggers
+step
+  zone map 1453
+  goto 53.620255,59.75976 map 1453 r 30 optional
+  goto 55.250136,7.0796806 map 1453 r 8
+  note "Go to the Auction House. Buy a Bronze Tube if its affordable"
+  note "If theres none here or they're too expensive, you can also potentially buy one from Billibub in the Dwarven District"
+  note "If you can't find one, skip this step"
+step
+  zone map 1453
+  note "Talk to General Marcus Jonathan"
+  turnin 120 -- Turn in Messenger to Stormwind
+  accept 121 -- Accept Messenger to Stormwind
+step
+  zone map 1429
+  note "Run to Goldshire"
+  note "Talk to Smith Argus"
+  turnin 118 -- Turn in The Price of Shoes
+  accept 119 -- Accept Return to Verner
+step
+  zone map 1436
+  note "Run to Sentinel Hill"
+  note "Talk to Gryan Stoutmantle"
+  accept 65 -- Accept The Defias Brotherhood
+step
+  label hsLakeshire
+  along until WFFP
+  hearth "Lakeshire" -- Hearth to Lakeshire if it's up
+step
+  label WFFP
+  zone map 1436
+  goto 56.549914,52.650008 map 1436 r 8
+  getfp "Westfall" @56.549914,52.650008 map 1436 only Gnome -- Get the Westfall flight path
+  fly "Redridge" -- Fly to Redridge
+step
+  zone map 1433
+  note "Talk to Verner Osgood"
+  turnin 119 -- Turn in Return to Verner
+  accept 122 -- Accept Underbelly Scales
+  accept 124 -- Accept A Baying of Gnolls
+step
+  zone map 1433
+  note "Go into the Keep"
+  note "Talk to Magistrate Solomon"
+  turnin 121 -- Turn in Messenger to Stormwind
+  accept 143 -- Accept Messenger to Westfall
+  note "Talk to Bailiff Conacher"
+  accept 91 -- Accept Solomon's Law
+step
+  zone map 1433
+  note "Go into the top floor of the Inn"
+  note "Talk to Wiley the Black"
+  turnin 65 -- Turn in The Defias Brotherhood
+  accept 132 -- Accept The Defias Brotherhood
+step
+  zone map 1433
+  note "Talk to Hilary"
+  turnin 3741 -- Turn in Hilary's Necklace
+step
+  along until Murlocs
+  zone map 1433
+  note "Grind the first 3 items for Redridge Goulash as you do other quests. Also get enough Chunks of Boar Meat to get you to 50 cooking"
+  note "Try to focus heavily on the Goretusks, don't really worry about spider meat yet"
+  collect 2296 x5 @29.239776,53.630183 map 1433 optional -- Great Goretusk Snout (5)
+  collect 1080 x5 @29.239776,53.630183 map 1433 optional -- Tough Condor Meat (5)
+  collect 1081 x5 @29.239776,53.630183 map 1433 optional -- Crisp Spider Meat (5)
+step
+  along until Murlocs
+  zone map 1433
+  note "Kill Dragon Whelps. Loot them for their scales"
+  collect 1221 x6 quest 122.1 @29.239776,53.630183 map 1433 -- Underbelly Whelp Scale (6)
+step
+  accept 246 -- Accept Assessing the Threat
+step
+  zone map 1433
+  note "AoE the gnolls in the area. Refer to the AoE video if needed"
+  note "Deadzone the Poachers during the AoE pull so you don't get shot"
+  goto 29.510179,84.169938 map 1433 r 50 optional
+  goto 34.599928,82.990312 map 1433 r 50 optional
+  goto 43.439848,71.109788 map 1433 r 50 optional
+  goto 29.510179,84.169938 map 1433 r 50 optional
+  goto 34.599928,82.990312 map 1433 r 50 optional
+  kill 423 x10 quest 246.1 @43.439848,71.109788 map 1433 -- Redridge Mongrel (10)
+  kill 424 x6 quest 246.2 @43.439848,71.109788 map 1433 -- Redridge Poacher (6)
+step
+  label Murlocs
+  zone map 1433
+  note "AoE the murlocs in the area. You'll have to single target the Tidecallers (lightning bolt + healing wave)"
+  note "You can AoE the Shorestrikers (Charge) and Flesheaters (25 damage instant lifesteal on attack chance). Creatively make pulls"
+  note "Save 8 Fins for later"
+  collect 1467 x10 quest 127.1 @48.819808,69.490219 map 1433 -- Spotted Sunfish (10)
+  collect 1468 x8 @48.819808,69.490219 map 1433 optional -- Murloc Fin (8)
+step
+  zone map 1433
+  note "Get the Condor Meat and Whelp scales from around this area. If you're waiting on respawns, then go east to get some Axes then come back here"
+  goto 61.039997,77.550079 map 1433 r 8 optional
+  collect 1080 x5 @61.039997,77.550079 map 1433 optional -- Tough Condor Meat (5)
+  collect 1221 x6 quest 122.1 @61.039997,77.550079 map 1433 -- Underbelly Whelp Scale (6)
+step
+  zone map 1433
+  note "AoE orcs in the area. Loot them for their axes. Be careful as the Outrunners Net and the Renegades shield bash."
+  note "Try to avoid killing the Renegades due to their high level. Pull 3 max at a time. AoEing here is Very high risk, medium reward"
+  note "Don't get all the axes yet, you have a better opportunity to finish it later"
+  collect 3014 x8 @75.529819,73.359919 map 1433 -- Battleworn Axe (8)
+step
+  zone map 1433
+  note "Go underwater. Loot the grey box"
+  collect 1309 x1 quest 125.1 -- Oslow's Toolbox (1)
+step
+  when !turnedin 92
+  zone map 1433
+  note "Finish off the Goretusk snouts here"
+  collect 2296 x5 @32.070025,70.540004 map 1433 -- Great Goretusk Snout (5)
+step
+  zone map 1433
+  note "Talk to Deputy Feldon"
+  turnin 246 -- Turn in Assessing the Threat
+step
+  when complete 20
+  zone map 1433
+  note "Talk to Marshal Marris"
+  turnin 20 -- Turn in Blackrock Menace
+step
+  zone map 1433
+  note "Talk to Foreman Oslow"
+  turnin 125 -- Turn in The Lost Tools
+  accept 89 -- Accept The Everstill Bridge
+step
+  zone map 1433
+  note "Talk to Verner Osgood"
+  turnin 122 -- Turn in Underbelly Scales
+step
+  when level>=20
+  zone map 1433
+  note "Talk to Dockmaster Baren"
+  turnin 127 -- Turn in Selling Fish
+  accept 150 -- Accept Murloc Poachers
+  turnin 150 -- Turn in Murloc Poachers
+step
+  zone map 1433
+  note "Talk to Dockmaster Baren"
+  turnin 127 -- Turn in Selling Fish
+step
+  zone map 1433
+  note "Talk to Martie Jainrose"
+  turnin 130 -- Turn in Visit the Herbalist
+  accept 131 -- Accept Delivering Daffodils
+  accept 34 -- Accept An Unwelcome Guest
+step
+  zone map 1433
+  note "Kill Bellygrub. Kite her back to Guard Adams all the way in the town"
+  note "Be careful as she tremors (instant 80 aoe damage), and charges (keep her slowed and nova'd if possible)"
+  note "Make sure you do majority damage (51%+)"
+  note "This quest is VERY hard"
+  collect 3631 x1 quest 34.1 -- Bellygrub's Tusk (1)
+step
+  zone map 1433
+  note "Talk to Martie Jainrose"
+  turnin 34 -- Turn in An Unwelcome Guest
+step
+  zone map 1433
+  goto 21.229951,36.169916 map 1433 r 60 optional
+  goto 34.200082,39.699817 map 1433 r 60 optional
+  goto 39.609984,31.459698 map 1433 r 60 optional
+  goto 34.200082,39.699817 map 1433 r 60 optional
+  goto 21.229951,36.169916 map 1433 r 60 optional
+  note "Kill Gnolls. Loot them for Pikes and Rivets"
+  collect 2856 x5 quest 89.1 @39.609984,31.459698 map 1433 -- Iron Pike (5)
+  collect 1013 x5 quest 89.2 @39.609984,31.459698 map 1433 -- Iron Rivet (5)
+  kill 426 x10 quest 124.1 @39.609984,31.459698 map 1433 -- Redridge Brute (10)
+  kill 430 x8 quest 124.2 @39.609984,31.459698 map 1433 -- Redridge Mystic (8)
+step
+  along until next_49
+  zone map 1433
+  note "Kill the nicely stacked groups of Orcs. Loot them to finish off the axes"
+  note "If you get unlucky after clearing the close groups, you have another opportunity later"
+  collect 3014 x10 quest 20.1 @40.459888,40.520306 map 1433 -- Blackrock Axe (10)
+step
+  label next_49
+  along until next_50
+  zone map 1433
+  goto 49.250058,39.659759 map 1433 r 150 -- Run toward the spiders
+step
+  when !turnedin 92
+  label next_50
+  zone map 1433
+  note "Kill Spiders. Loot them for the meat"
+  note "Be careful as their poison can do some damage"
+  note "Be careful of Chatter (rare), as he has an 8 second-long stun"
+  collect 1081 x5 @57.22994,45.240193 map 1433 -- Crisp Spider Meat (5)
+step
+  zone map 1433
+  note "Finish off killing Orcs for the axes"
+  collect 3014 x10 quest 20.1 @61.740188,42.820164 map 1433 -- Blackrock Axe (10)
+step
+  zone map 1433
+  note "Talk to Marshal Marris"
+  turnin 20 -- Turn in Blackrock Menace
+step
+  zone map 1433
+  note "Talk to Foreman Oslow"
+  turnin 89 -- Turn in The Everstill Bridge
+step
+  zone map 1433
+  note "Talk to Verner Osgood"
+  turnin 124 -- Turn in A Baying of Gnolls
+  accept 126 -- Accept Howling in the Hills
+step
+  zone map 1433
+  note "Talk to Darcy"
+  turnin 131 -- Turn in Delivering Daffodils
+step
+  zone map 1433
+  goto 27.010218,44.80992 map 1433 r 8
+  vendor nearest -- Buy level 15 drink
+step
+  zone map 1433
+  note "Exit the Inn. Go west then into the building"
+  note "Talk to Chef Breanna"
+  accept 92 -- Accept Redridge Goulash
+  turnin 92 -- Turn in Redridge Goulash
+step
+  along until next_59
+  zone map 1433
+  goto 26.539892,44.899704 map 1433 r 8
+  note "Cook all of the boar meat up until 50 cooking skill"
+  note "If you don't have enough meat, grind some boars en route to Darkshire"
+step
+  label next_59
+  zone map 1433
+  goto 6.5001285,91.180013 map 1433 r 90

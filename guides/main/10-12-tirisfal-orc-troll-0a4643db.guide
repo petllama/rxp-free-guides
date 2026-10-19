@@ -1,0 +1,447 @@
+guide rxp-free/10-12-tirisfal-orc-troll-0a4643db
+title "10-12 Tirisfal (Orc/Troll)"
+levels 10-12
+zone map 1458
+coords era
+faction Horde
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+next rxp-free/12-14-silverpine-forest-97e1dfe1
+step
+  along until DeliverytoSPF
+  zone map 1420
+  goto 61.519956,53.2 map 1420 r 80 -- Travel to Brill
+step
+  zone map 1420
+  note "Talk to Deathguard Terrence"
+  accept 96895 -- Accept The Argent Emissary
+step
+  only Warrior
+  when !turnedin 1498
+  zone map 1420
+  note "Talk to Austil"
+  accept 1818 -- Accept Speak with Dillinger
+step
+  only Warlock
+  when !turnedin 1504
+  zone map 1420
+  note "Talk to Ageron inside the inn"
+  accept 1478 -- Accept Halgar's Summons
+step
+  only Rogue,Undead
+  zone map 1420
+  note "Talk to Marion inside the inn"
+  accept 1885 -- Accept Mennet Carkad
+step
+  only Warrior
+  when !turnedin 1498
+  when onquest 1818
+  turnin 1818 -- Turn in Speak with Dillinger
+step
+  only Warrior
+  when !turnedin 1498
+  zone map 1420
+  note "Talk to Dillinger"
+  accept 1819 -- Accept Ulag the Cleaver
+step
+  only Warrior
+  when !turnedin 1498
+  zone map 1420
+  note "Click the Mausoleum Trigger on the ground. This will summon Ulag. Kill him"
+  kill 6390 x1 quest 1819.1 -- Ulag the Cleaver (1)
+step
+  only Warrior
+  when !turnedin 1498
+  when onquest 1819
+  turnin 1819 -- Turn in Ulag the Cleaver
+step
+  only Warrior
+  when !turnedin 1498
+  zone map 1420
+  note "Talk to Dillinger"
+  accept 1820 -- Accept Speak with Coleman
+step
+  label DeliverytoSPF
+  zone map 1420
+  note "Talk to Johaan"
+  accept 445 -- Accept Delivery to Silverpine Forest
+step
+  only Warrior
+  when onquest 1820
+  zone map 1420
+  note "Talk to Coleman"
+  turnin 1820 -- Turn in Speak with Coleman
+step
+  only Priest
+  when level>=12
+  zone map 1420
+  goto 61.56997,52.189876 map 1420 r 8
+  note "Talk to Beryl on the second floor"
+  learn 588 "Inner Fire"
+step
+  only Mage
+  when level>=12
+  zone map 1420
+  goto 61.97008,52.470041 map 1420 r 8
+  note "Talk to Cain on the second floor"
+  learn 145 "Fireball Rank 3"
+step
+  only Warrior
+  when level>=12
+  zone map 1420
+  goto 61.849914,52.530124 map 1420 r 8
+  note "Talk to Austil"
+  learn 7384 "Overpower"
+step
+  only Rogue
+  when level>=12
+  zone map 1420
+  goto 61.749887,52 map 1420 r 8 optional
+  note "Talk to Marion on the second floor"
+  learn 1766 "Kick"
+step
+  only Warlock
+  when level>=12
+  zone map 1420
+  goto 61.589887,52.390041 map 1420 r 8
+  note "Talk to Rupert"
+  learn 755 "Health Funnel"
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Warlock,Druid
+  zone map 1420
+  note "Talk to Innkeeper Renee"
+  note "Buy [Ice Cold Milk] from her" only Mage
+  note "Buy [Ice Cold Milk] from her" only Priest
+  note "Buy [Ice Cold Milk] from her" only Shaman
+  note "Buy [Red-speckled Mushroom] from her" only Warrior
+  note "Buy [Red-speckled Mushroom] from her" only Rogue
+  note "Buy [Ice Cold Milk] and [Red-speckled Mushroom] from her" only Warlock
+  note "Buy [Ice Cold Milk] and [Red-speckled Mushroom] from her" only Hunter
+  vendor 5688 -- Vendor Trash
+  collect 1179 x20 @61.710053,52.060083 map 1420 optional only Mage -- Ice Cold Milk (20)
+  collect 1179 x20 @61.710053,52.060083 map 1420 optional only Priest -- Ice Cold Milk (20)
+  collect 1179 x20 @61.710053,52.060083 map 1420 optional only Shaman -- Ice Cold Milk (20)
+  collect 4605 x20 @61.710053,52.060083 map 1420 optional only Rogue -- Red-speckled Mushroom (20)
+  collect 4605 x20 @61.710053,52.060083 map 1420 optional only Warrior -- Red-speckled Mushroom (20)
+  collect 1179 x15 @61.710053,52.060083 map 1420 optional only Warlock -- Ice Cold Milk (15)
+  collect 1179 x15 @61.710053,52.060083 map 1420 optional only Hunter -- Ice Cold Milk (15)
+  collect 4605 x15 @61.710053,52.060083 map 1420 optional only Warlock -- Red-speckled Mushroom (15)
+  collect 4605 x15 @61.710053,52.060083 map 1420 optional only Hunter -- Red-speckled Mushroom (15)
+step
+  when level<=11
+  zone map 1420
+  note "Talk to Linnea"
+  accept 356 -- Accept Rear Guard Patrol
+step
+  zone map 1420
+  note "Talk to Hadric Harlson"
+  turnin 96895 -- Turn in The Argent Emissary
+  accept 96897 -- Accept The Cult of the Damned
+  accept 96898 -- Accept Remnants of War
+step
+  zone map 1420
+  note "Kill Dark Enforcers and Dark Neophytes. Loot them for Necrotic Crystal Fragments"
+  note "Necrotic Crystal Fragments can also be looted on the ground"
+  note "Be careful! These mobs hit hard. Dark Enforcers also have an instant cast 50-70 damage ability"
+  kill 275437 x8 quest 96897.2 @70.015668,64.056432 map 1420 -- 8/8 Dark Enforcer slain
+  kill 267006 x8 quest 96897.1 @70.015668,64.056432 map 1420 -- 8/8 Dark Neophyte slain
+  collect 275851 x12 quest 96898.1 @70.015668,64.056432 map 1420 -- 12/12 Necrotic Crystal Fragment
+step
+  when onquest 356
+  label HorrorsandSpirits
+  loop
+  zone map 1420
+  goto 74.309997,60.979917 map 1420 r 1
+  goto 74.309997,60.979917 map 1420 r 50
+  goto 74.45008,59.640166 map 1420 r 50
+  goto 75.0799,58.56 map 1420 r 50
+  goto 76.44997,58.669876 map 1420 r 50
+  goto 77.40997,58.659917 map 1420 r 50
+  goto 78.549887,60.429876 map 1420 r 50
+  goto 77.450025,61.459917 map 1420 r 50
+  goto 76.789887,62.600166 map 1420 r 50
+  goto 74.990053,61.980083 map 1420 r 50
+  note "Kill Bleeding Horrors and Wandering Spirits"
+  kill 1529 x8 quest 356.1 -- Bleeding Horror (8)
+  kill 1532 x8 quest 356.2 -- Wandering Spirit (8)
+step
+  zone map 1420
+  note "Talk to Hadric Harlson"
+  turnin 96897 -- Turn in The Cult of the Damned
+  turnin 96898 -- Turn in Remnants of War
+step
+  when complete 356
+  label LinneaTurnin
+  zone map 1420
+  note "Talk to Linnea"
+  turnin 356 -- Turn in Rear Guard Patrol
+step
+  when !zone "Undercity"
+  along until UCflightpath1
+  zone map 1420
+  goto 61.7999,65.059917 map 1420 r 20 optional
+step
+  along until UCflightpath1
+  zone map 1458
+  goto 66.090215,20.060021 map 1458 r 35 optional
+  goto 64.370345,23.940641 map 1458 r 35 optional
+  goto 65.929694,26.710503 map 1458 r 10 optional
+  goto 65.890085,34.029626 map 1458 r 10 optional
+  goto 64.220248,39.769319 map 1458 r 10 optional
+  goto 65.530476,43.620255 map 1458 r 15 optional -- Take the lift down to the Undercity
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Skyborne
+  label UCflightpath1
+  zone map 1458
+  note "Talk to Michael"
+  getfp "Undercity" @63.249824,48.560078 map 1458 -- Get the Undercity flight path
+step
+  only Rogue,Orc
+  when zone "Undercity"
+  label RogueCutlass3_2
+  zone map 1458
+  goto 61.150541,40.889449 map 1458 r 8
+  note "Talk to Louis Warren in the Trade Quarter"
+  note "Buy a [Cutlass] from him"
+  note "Alternatively, check the Auction House for something better or cheaper"
+  collect 851 x1 @61.150541,40.889449 map 1458 optional -- Collect Cutlass (1)
+step
+  only Rogue,Undead
+  when onquest 1885
+  turnin 1885 -- Turn in Mennet Carkad
+step
+  only Rogue,Undead
+  when onquest 1885
+  zone map 1458
+  note "Talk to Mennet"
+  accept 1886 -- Accept The Deathstalkers
+step
+  only Rogue,Undead
+  when turnedin 1885
+  zone map 1458
+  note "Talk to Mennet"
+  accept 1886 -- Accept The Deathstalkers
+step
+  only Rogue
+  label Swordtraining3
+  zone map 1458
+  goto 57.289694,32.720464 map 1458 r 8 optional
+  note "Talk to Archibald in the War Quarter"
+  learn 201 "1h Swords"
+step
+  only Rogue
+  when has 851
+  along until Entersilverpine
+  zone map 1458
+  note "Equip the [Cutlass]"
+  use 851 @57.289694,32.720464 map 1458 optional
+step
+  when zone "Undercity"
+  when !turnedin 91920
+  zone map 1458
+  note "Talk to Auctioneer Cain"
+  note "Buy Three [Murloc Eyes] from the Auction House"
+  note "Skip this if you want, it's only a small time saver"
+  collect 730 x3 @67.637055,35.891824 map 1458 -- Collect Murloc Eyes (x3)
+step
+  only Warlock
+  when !turnedin 1504
+  when onquest 1478
+  turnin 1478 -- Turn in Halgar's Summons
+step
+  only Warlock
+  when !turnedin 1504
+  zone map 1458
+  note "Talk to Carendin in the Magic Quarter"
+  accept 1473 -- Accept Creature of the Void
+step
+  only Warlock
+  when !zone "Tirisfal Glades"
+  zone map 1458
+  zone map 1420
+  goto 47.249824,39.119424 map 1458 r 50 optional
+  goto 46.35028,43.859279 map 1458 r 10 optional
+  goto 45.240182,39.350637 map 1458 r 10 optional
+  goto 41.319922,38.399229 map 1458 r 10 optional
+  goto 40.740378,33.949952 map 1458 r 10 optional
+  goto 34.800052,33.1907 map 1458 r 15 optional
+  goto 27.39002,30.230244 map 1458 r 35 optional
+  goto 21.889564,43.349987 map 1458 r 35 optional
+  goto 51.100039,71.529959 map 1420 r 50
+step
+  only Warlock
+  when !turnedin 1504
+  along until next_36
+  zone map 1420
+  note "Loot Perrine's Chest for [Egalin's Grimoire]"
+  collect 6285 x1 quest 1473.1 -- Egalin's Grimoire (1)
+step
+  only Warlock
+  when !turnedin 1504
+  label next_36
+  zone map 1420
+  note "Loot Perrine's Chest on the ground for [Egalin's Grimoire]"
+  collect 6285 x1 quest 1473.1 -- Egalin's Grimoire (1)
+step
+  only Warlock
+  along until next_38
+  zone map 1458
+  goto 16.51002,42.759458 map 1458 r 35 optional
+  goto 22.979857,39.759945 map 1458 r 35 optional
+  goto 24.930085,32.539244 map 1458 r 35 optional
+  goto 34.780248,33.240692 map 1458 r 10 optional
+  goto 40.83002,34.079618 map 1458 r 10 optional
+  goto 41.35015,38.399229 map 1458 r 10 optional
+  goto 45.249564,39.200661 map 1458 r 10 optional
+  goto 45.669629,43.599946 map 1458 r 10 optional
+step
+  only Warlock
+  when !turnedin 1504
+  when onquest 1473
+  turnin 1473 -- Turn in Creature of the Void
+step
+  only Warlock
+  when !turnedin 1504
+  label next_38
+  zone map 1458
+  note "Talk to Carendin in the Magic Quarter"
+  accept 1471 -- Accept The Binding
+step
+  only Warlock
+  along until next_40
+  zone map 1458
+  note "Use the [Runes of Summoning] at the Summoning Circle"
+  use 6284 @86.640052,27.099503 map 1458
+step
+  only Warlock
+  when !turnedin 1504
+  label next_40
+  zone map 1458
+  note "Kill the Summoned Voidwalker"
+  kill 5676 x1 quest 1471.1 -- Kill Summoned Voidwalker (1)
+  use 6284 @86.640052,27.099503 map 1458
+step
+  only Warlock
+  when !turnedin 1504
+  when onquest 1471
+  zone map 1458
+  note "Talk to Carendin"
+  turnin 1471 -- Turn in The Binding
+step
+  only Priest
+  zone map 1458
+  goto 62.47015,61.800114 map 1458 r 8 optional
+  note "Talk to Lavinia"
+  learn 7411 "Enchanting"
+step
+  only Priest
+  zone map 1458
+  goto 70.770345,30.689544 map 1458 r 8 optional
+  note "Talk to Josef"
+  learn 3908 "Tailoring"
+step
+  only Priest
+  zone map 1458
+  goto 70.759922,30.669235 map 1458 r 8
+  note "Turn all your [Linen Cloth] into [Bolt of Linen Cloth]"
+  collect 2996 x30 @70.759922,30.669235 map 1458 optional -- Bolt of Linen Cloth (30)
+step
+  only Priest
+  zone map 1458
+  goto 70.759922,30.669235 map 1458 r 8 optional
+  note "Talk to Josef"
+  learn 7623 "Brown Linen Robe"
+step
+  only Priest
+  zone map 1458
+  goto 70.570215,30.169316 map 1458 r 8
+  note "Talk to Millie"
+  note "Buy [Coarse Thread] from her"
+  collect 2320 x30 @70.570215,30.169316 map 1458 optional -- Coarse Thread (30)
+step
+  only Priest
+  zone map 1458
+  note "Create as many [Brown Linen Robes] as you can"
+  collect 6238 x9 @70.570215,30.169316 map 1458 optional -- Brown Linen Robe(9)
+step
+  only Priest
+  zone map 1458
+  goto 62.35028,60.989308 map 1458 r 8
+  note "Talk to Thaddeus. Buy a [Copper Rod] and [Simple Wood] from him"
+  note "Disenchant all the [Brown Linen Robes] that you made and create a [Runed Copper Rod]"
+  note "If you did not get a [Lesser Magic Essence] then buy one from Thaddeus if there is one available. Otherwise finish this step later"
+  collect 6218 x1 @62.35028,60.989308 map 1458 optional -- Runed Copper Rod (1)
+  collect 4470 x1 @62.35028,60.989308 map 1458 optional -- Simple Wood (1)
+step
+  only Priest
+  zone map 1458
+  goto 62.539987,60.339414 map 1458 r 8 optional
+  note "Talk to Malcomb"
+  learn 14293 "Lesser Magic Wand"
+step
+  only Priest
+  zone map 1458
+  note "Create a [Lesser Magic Wand]"
+  note "If you did not get a [Lesser Magic Essence] then buy one from Thaddeus if there is one available. Otherwise finish this step later"
+  collect 11287 x1 @62.539987,60.339414 map 1458 optional -- Lesser Magic Wand (1)
+step
+  only Priest
+  when has 11287
+  along until Entersilverpine
+  zone map 1458
+  note "Equip the [Lesser Magic Wand]"
+  use 11287 @62.539987,60.339414 map 1458 optional
+step
+  only Rogue
+  when level>=12
+  zone map 1458
+  goto 83.860117,72.059384 map 1458 r 8 optional
+  note "Talk to Carolyn"
+  learn 1766 "Kick"
+step
+  only Mage
+  when level>=12
+  zone map 1458
+  goto 85.140117,10.019466 map 1458 r 8 optional
+  note "Talk to Anastasia"
+  learn 145 "Fireball Rank 3"
+step
+  only Warlock
+  when level>=12
+  zone map 1458
+  goto 88.930085,15.860704 map 1458 r 8 optional
+  note "Talk to Richard"
+  learn 755 "Health Funnel"
+step
+  only Priest
+  when level>=12
+  zone map 1458
+  goto 47.560443,18.889899 map 1458 r 8 optional
+  note "Talk to Lazarus"
+  learn 588 "Inner Fire"
+step
+  only Warrior
+  when level>=12
+  zone map 1458
+  goto 47.410345,17.329215 map 1458 r 8 optional
+  note "Talk to Baltus Fowler"
+  learn 7384 "Overpower"
+step
+  when !zone "Silverpine Forest"
+  label LeaveUndercity3
+  zone map 1458
+  zone map 1420
+  goto 47.249824,39.119424 map 1458 r 50 optional
+  goto 46.35028,43.859279 map 1458 r 10 optional
+  goto 45.240182,39.350637 map 1458 r 10 optional
+  goto 41.319922,38.399229 map 1458 r 10 optional
+  goto 40.740378,33.949952 map 1458 r 10 optional
+  goto 34.800052,33.1907 map 1458 r 15 optional
+  goto 27.39002,30.230244 map 1458 r 35 optional
+  goto 21.889564,43.349987 map 1458 r 35 optional
+  goto 51.100039,71.529959 map 1420 r 50
+step
+  when !zone "Silverpine Forest"
+  label Entersilverpine
+  zone map 1420
+  goto 53.199956,75.820083 map 1420 r 8

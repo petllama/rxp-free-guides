@@ -1,0 +1,282 @@
+guide rxp-free/1-6-shadowglen-093c0de2
+title "1-6 Shadowglen"
+levels 1-6
+zone map 1438
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · RXP Survival Guide 1-20"
+next rxp-free/6-11-teldrassil-aa19792d
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  along until next_1
+  note "You have selected a guide meant for Night Elves. You should choose the same starter zone that you start in"
+step
+  label next_1
+  zone map 1438
+  note "Talk to Conservator Ilthalaine"
+  accept 456 -- Accept The Balance of Nature
+step
+  label balance1
+  along
+  zone map 1438
+  note "Kill Young Nightsabers and Young Thistle Boars"
+  kill 2031 x7 quest 456.1 @62,42.6 map 1438 -- Kill Young Nightsaber (x7)
+  kill 1984 x4 quest 456.2 @62,42.6 map 1438 -- Kill Young Thistle Boar (x4)
+step
+  level 2
+step
+  zone map 1438
+  note "Talk to Dirania Silvershine and Melithar Staghelm"
+  accept 4495 -- Accept A Good Friend
+  accept 458 -- Accept The Woodland Protector
+  goto 59.924,42.474 map 1438 r 8 optional
+step
+  only Hunter
+  zone map 1438
+  goto 59.8,34.1 map 1438 r 8
+  note "XP checkpoint: 4-610 Grind until you are 610xp away from level 4 (790/1400)"
+step
+  only Hunter
+  zone map 1438
+  note "Talk to Iverron"
+  turnin 4495 -- Turn in A Good Friend
+  accept 3519 -- Accept A Friend in Need
+step
+  only Hunter
+  along until next_8
+  hearth "Shadowglen" optional -- Hearth to Shadowglen
+step
+  only Hunter
+  label next_8
+  zone map 1438
+  note "Talk to Tarindrella"
+  turnin 458 -- Turn in The Woodland Protector
+  accept 459 -- Accept The Woodland Protector
+step
+  zone map 1438
+  note "Kill Young Nightsabers and Young Thistle Boars"
+  kill 2031 x7 quest 456.1 @62,42.6 map 1438 -- Kill Young Nightsaber (x7)
+  kill 1984 x4 quest 456.2 @62,42.6 map 1438 -- Kill Young Thistle Boar (x4)
+step
+  zone map 1438
+  goto 58.695,44.266 map 1438 r 8 optional
+  note "Talk to Conservator Ilthalaine"
+  turnin 456 only Hunter -- Turn in The Balance of Nature
+  turnin 456 only !Hunter -- Turn in The Balance of Nature
+  accept 457 -- Accept The Balance of Nature
+  accept 3116 only Warrior -- Accept Simple Sigil
+  accept 3117 only Hunter -- Accept Etched Sigil
+  accept 3119 only Priest -- Accept Hallowed Sigil
+  accept 3120 only Druid -- Accept Verdant Sigil
+step
+  only Warrior
+  zone map 1438
+  note "Talk to Keina"
+  vendor 3589 -- Vendor trash
+step
+  only Warrior
+  when onquest 3116
+  turnin 3116 -- Turn in Simple Sigil
+step
+  only Warrior
+  zone map 1438
+  note "Talk to Alyissia"
+  train 3593 -- Train your class spells
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  zone map 1438
+  note "Kill Mangy Nightsabers and Thistle Boars"
+  kill 2032 x7 quest 457.1 @59.8,34.1 map 1438 -- Kill Mangy Nightsaber (x7)
+  kill 1985 x7 quest 457.2 @59.8,34.1 map 1438 -- Kill Thistle Boar (x7)
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  zone map 1438
+  note "Talk to Iverron"
+  turnin 4495 -- Turn in A Good Friend
+  accept 3519 -- Accept A Friend in Need
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  along until next_15
+  hearth "Shadowglen" optional -- Hearth to Shadowglen
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  label next_15
+  zone map 1438
+  note "Talk to Tarindrella"
+  turnin 458 -- Turn in The Woodland Protector
+  accept 459 -- Accept The Woodland Protector
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  zone map 1438
+  note "Talk to Conservator Ilthalaine"
+  turnin 457 -- Turn in The Balance of Nature
+step
+  when onquest 3519
+  turnin 3519 -- Turn in A Friend in Need
+step
+  zone map 1438
+  note "Talk to Dirania Silvershine"
+  accept 3521 -- Accept Iverron's Antidote
+step
+  zone map 1438
+  note "Talk to Gilshalan Windwalker"
+  accept 916 -- Accept Webwood Venom
+step
+  only Hunter
+  note "XP checkpoint: 4-40"
+step
+  only Hunter
+  when onquest 3117
+  zone map 1438
+  note "Ascend the Aldrassil Tree"
+  note "Talk to Ayanna Everstride"
+  turnin 3117 -- Turn in Etched Sigil
+  learn 1978 "Serpent Sting"
+step
+  zone map 1438
+  note "Loot the Moonpetal Lilies on the ground"
+  collect 10641 x4 quest 3521.2 @57.95,38.2 map 1438 -- Collect Moonpetal Lily (x4)
+step
+  zone map 1438
+  note "Kill Webwood Spiders. Loot them for their Ichor and Venom Sacs"
+  collect 10640 x1 quest 3521.3 @56.8,31.7 map 1438 -- Collect Webwood Ichor (x1)
+  collect 5166 x10 quest 916.1 @56.8,31.7 map 1438 -- Collect Webwood Venom Sac (x10)
+step
+  when onquest 459
+  collect 3297 x8 quest 459.1 @55,43.7 map 1438 -- Collect Fel Moss (x8)
+step
+  zone map 1438
+  note "Kill Grell and Grellkin. Loot them for their Mushrooms and Fel Moss"
+  collect 10639 x7 quest 3521.1 @55,43.7 map 1438 -- Collect Hyacinth Mushroom (x7)
+step
+  when onquest 459
+  zone map 1438
+  note "Talk to Tarindrella"
+  turnin 459 -- Turn in The Woodland Protector
+step
+  zone map 1438
+  note "Talk to Dirania Silvershine"
+  turnin 3521 -- Turn in Iverron's Antidote
+  accept 3522 -- Accept Iverron's Antidote
+step
+  only Warrior,Paladin,Hunter,Rogue,Shaman,Mage,Warlock,Druid
+  along until next_28
+  zone map 1438
+  goto 59.306,41.091 map 1438 r 8
+  note "Talk to Keina"
+  vendor 3589 only !Hunter -- Vendor trash
+  vendor 3589 only Hunter -- Buy 3 or 4 stacks of [Rough Arrows]
+step
+  only Warrior
+  label next_28
+  zone map 1438
+  note "Talk to Alyissia"
+  train 3593 -- Train your class spells
+step
+  only Priest
+  along until next_30
+  zone map 1438
+  note "Talk to Janna Brightmoon up stairs"
+  vendor 3590 -- Vendor trash
+step
+  only Priest
+  when onquest 3119
+  turnin 3119 -- Turn in Hallowed Sigil
+step
+  only Priest
+  label next_30
+  zone map 1438
+  note "Talk to Shanda up stairs"
+  train 3595 -- Train your class spells
+step
+  zone map 1438
+  note "Talk to Gilshalan Windwalker"
+  turnin 916 -- Turn in Webwood Venom
+  accept 917 -- Accept Webwood Egg
+step
+  only Druid
+  when onquest 3120
+  zone map 1438
+  note "Ascend the Aldrassil Tree"
+  note "Talk to Mardant Strongoak"
+  turnin 3120 -- Turn in Verdant Sigil
+  learn 8921 "Moonfire"
+step
+  zone map 1438
+  note "Talk to Iverron"
+  turnin 3522 -- Turn in Iverron's Antidote
+step
+  along until next_35
+  zone map 1438
+  goto 56.73,31.17 map 1438 r 25 -- Enter the Shadowthread Cave
+step
+  label next_35
+  zone map 1438
+  note "Loot a Webwood Egg on the ground at the back of the Cave"
+  collect 5167 x1 quest 917.1 @57,26.4 map 1438 -- Collect Webwood Egg (x1)
+step
+  label next_37
+  zone map 1438
+  note "Talk to Gilshalan Windwalker"
+  turnin 917 -- Turn in Webwood Egg
+  accept 920 -- Accept Tenaron's Summons
+step
+  zone map 1438
+  note "Ascend the Aldrassil Tree"
+  note "Talk to Tenaron Stormgrip"
+  turnin 920 -- Turn in Tenaron's Summons
+  accept 921 -- Accept Crown of the Earth
+step
+  label vial1
+  along
+  zone map 1438
+  note "Use the [Crystal Phial] at the Moonwell"
+  collect 5184 x1 quest 921.1 -- Collect Filled Crystal Phial (x1)
+step
+  only Hunter
+  zone map 1438
+  note "Kill Mangy Nightsabers and Thistle Boars"
+  kill 2032 x7 quest 457.1 @59.8,34.1 map 1438 -- Kill Mangy Nightsaber (x7)
+  kill 1985 x7 quest 457.2 @59.8,34.1 map 1438 -- Kill Thistle Boar (x7)
+step
+  zone map 1438
+  use 5185 @59.9,33 map 1438 -- Use the [Crystal Phial] at the Moonwell
+  collect 5184 x1 quest 921.1 -- Collect Filled Crystal Phial (x1)
+step
+  along until next_42
+  note "Die and respawn at the Spirit Healer"
+step
+  zone map 1438
+  use 5185 @59.9,33 map 1438 -- Use the [Crystal Phial] at the Moonwell
+  collect 5184 x1 quest 921.1 -- Collect Filled Crystal Phial (x1)
+step
+  only Hunter
+  label next_42
+  zone map 1438
+  note "Talk to Conservator Ilthalaine"
+  turnin 457 -- Turn in The Balance of Nature
+step
+  zone map 1438
+  use 5185 @59.9,33 map 1438 -- Use the [Crystal Phial] at the Moonwell
+  collect 5184 x1 quest 921.1 -- Collect Filled Crystal Phial (x1)
+step
+  only Priest
+  zone map 1438
+  note "Talk to Shanda"
+  accept 5622 -- Accept In Favor of Elune
+step
+  zone map 1438
+  use 5185 @59.9,33 map 1438 -- Use the [Crystal Phial] at the Moonwell
+  collect 5184 x1 quest 921.1 -- Collect Filled Crystal Phial (x1)
+step
+  zone map 1438
+  note "Ascend the Aldrassil Tree"
+  note "Talk to Tenaron Stormgrip"
+  turnin 921 -- Turn in Crown of the Earth
+  accept 928 -- Accept Crown of the Earth
+step
+  zone map 1438
+  note "Talk to Porthannius"
+  accept 2159 -- Accept Dolanaar Delivery

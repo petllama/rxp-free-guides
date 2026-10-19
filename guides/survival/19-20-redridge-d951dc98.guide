@@ -1,0 +1,915 @@
+guide rxp-free/19-20-redridge-d951dc98
+title "19-20 Redridge"
+levels 19-20
+zone map 1433
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · RXP Survival Guide 1-20"
+next rxp-free/20-21-darkshore-ashenvale-197db66e
+step
+  only Hunter
+  note "Talk to Einris Brightspear"
+  train 5515 -- Train your class spells
+step
+  only Hunter
+  note "Talk to Einris Brightspear"
+  train 2879 -- Train your pet spells
+step
+  when onquest 1338
+  note "Talk to Furen Longbeard"
+  turnin 1338 -- Turn in Stormpike's Order
+step
+  only Hunter
+  along until start
+  note "Talk to Frederick Stover"
+  note "Buy a [Heavy Recurve Bow] or something better from the Auction House"
+  collect 3027 x1 optional -- Heavy Recurve Bow (1)
+step
+  only Hunter
+  note "Talk to Frederick Stover"
+  note "Buy [Sharp Arrows]"
+  collect 2515 x1800 -- Sharp Arrow (1800)
+step
+  only Hunter
+  when has 3027
+  when level>=20
+  note "Equip the [Heavy Recurve Bow]"
+  use 3027 optional
+step
+  only Mage
+  label next_10
+  note "Talk to Elsharin"
+  train 5498 -- Train your class spells
+step
+  only Paladin
+  label next_12
+  note "Talk to Arthur the Faithful"
+  train 5491 -- Train your class spells
+step
+  only Priest
+  note "Talk to Brother Joshua"
+  train 5489 -- Train your class spells
+step
+  only Warlock
+  note "Talk to Ardwyn Cailen"
+  note "Buy a [Burning Wand] if it's an upgrade"
+  note "It's important to buy a non-shadow damage wand. You'll have to deal with mobs resistant to shadow damage later"
+  collect 5210 x1
+step
+  only Priest
+  note "Talk to Ardwyn Cailen"
+  note "Buy a [Burning Wand] if it's an upgrade"
+  note "It's important to buy a non-shadow damage wand. You'll have to deal with mobs resistant to shadow damage later"
+  collect 5210 x1
+step
+  only Warlock
+  label next_16
+  note "Talk to Ursula Deline"
+  train 5495 -- Train your class spells
+step
+  only Rogue
+  note "Talk to Osborne"
+  train 918 -- Train your class spells
+step
+  only Warrior
+  note "Talk to Wu or Ilsa"
+  train class -- Train your class spells
+step
+  only Druid
+  note "Talk to Sheldras Moontree"
+  train 5504 -- Train your class spells
+step
+  only Warrior,Paladin,Rogue,Shaman,Mage,Warlock,Druid
+  note "Talk to Woo Ping"
+  learn 201 "1h Swords" only Mage
+  learn 201 "1h Swords" only Rogue
+  learn 201 "1h Swords" only Warlock
+  learn 1180 "Daggers" only Mage
+  learn 1180 "Daggers" only Druid
+  learn 202 "2h Swords" only Warrior
+  learn 202 "2h Swords" only Paladin
+step
+  only Rogue
+  note "Talk to Marda Weller"
+  note "Buy a [Longsword] and [Kris]"
+  note "Equip the [Longsword] in your Mainhand when you are 21 and [Kris] in your Offhand"
+  collect 923 x1 -- Longsword
+  collect 2209 x1 -- Kris
+step
+  zone map 1453
+  goto 53.612,59.764 map 1453 r 8
+  note "Talk to Auctioneer Jaxon"
+  note "Buy the following items for faster turn ins at Redridge Mountains shortly"
+  note "This will save you time as you won't need to run around looking for mobs to kill. Skip this step if you wish to not buy any"
+  note "[Great Goretusk Snout]"
+  note "[Tough Condor Meat]"
+  note "[Crisp Spider Meat]"
+  note "[Rethban Ore]"
+  collect 2296 x5 @53.612,59.764 map 1453 optional -- Great Goretusk Snout (5)
+  collect 1080 x5 @53.612,59.764 map 1453 optional -- Tough Condor Meat (5)
+  collect 1081 x5 @53.612,59.764 map 1453 optional -- Crisp Spider Meat (5)
+  collect 2798 x5 @53.612,59.764 map 1453 optional -- Rethban Ore (5)
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  note "Talk to Dungar Longdrink"
+  fly "Redridge" -- Fly to Redridge
+step
+  only NightElf
+  label start
+  along until GParker
+  zone map 1433
+  goto 15.27,71.45 map 1433 r 8
+step
+  only NightElf
+  label GParker
+  zone map 1433
+  note "Talk to Guard Parker"
+  accept 244 -- Accept Encroaching Gnolls
+step
+  only NightElf
+  when onquest 244
+  turnin 244 -- Turn in Encroaching Gnolls
+step
+  only NightElf
+  zone map 1433
+  note "Talk to Deputy Feldon"
+  accept 246 -- Accept Assessing the Threat
+step
+  zone map 1433
+  note "Talk to Foreman Oslow"
+  accept 125 -- Accept The Lost Tools
+step
+  zone map 1433
+  note "Talk to Verner Osgood"
+  accept 118 -- Accept The Price of Shoes
+step
+  zone map 1433
+  note "Talk to Magistrate Solomon"
+  accept 120 -- Accept Messenger to Stormwind
+step
+  zone map 1433
+  note "Talk to Darcy"
+  note "Darcy walks around inside the Inn"
+  accept 129 -- Accept A Free Lunch
+step
+  when onquest 65
+  turnin 65 -- Turn in The Defias Brotherhood
+step
+  zone map 1433
+  note "Talk to Wiley the Black up stairs"
+  accept 132 -- Accept The Defias Brotherhood
+step
+  zone map 1433
+  note "Exit the Inn"
+  note "Talk to Chef Breanna"
+  accept 92 -- Accept Redridge Goulash
+step
+  zone map 1433
+  note "Talk to Shawn"
+  accept 3741 -- Accept Hilary's Necklace
+step
+  zone map 1433
+  note "Jump into the Lake"
+  note "Open the Glinting Mud. Loot it for Hilary's Necklace"
+  note "It has multiple spawn locations in the Lake"
+  collect 10958 x1 quest 3741.1 -- Hilary's Necklace (1)
+step
+  zone map 1433
+  note "Talk to Hilary"
+  turnin 3741 -- Turn in Hilary's Necklace
+step
+  zone map 1433
+  goto 30.59,59.42 map 1433 r 8
+  note "Talk to Ariena Stormfeather"
+  fly "Westfall" -- Fly to Westfall
+step
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  turnin 132 -- Turn in The Defias Brotherhood
+  accept 135 -- Accept The Defias Brotherhood
+step
+  zone map 1436
+  goto 56.55,52.64 map 1436 r 8
+  note "Talk to Thor"
+  fly "Stormwind" -- Fly to Stormwind City
+step
+  note "Talk to General Marcus Jonathan"
+  turnin 120 -- Turn in Messenger to Stormwind
+  accept 121 -- Accept Messenger to Stormwind
+step
+  label next_42
+  note "Talk to Master Mathias Shaw"
+  turnin 135 -- Turn in The Defias Brotherhood
+  accept 141 -- Accept The Defias Brotherhood
+step
+  along until next_44
+  note "Talk to Dungar Longdrink"
+  fly "Westfall" -- Fly to Westfall
+step
+  label next_44
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  turnin 141 -- Turn in The Defias Brotherhood
+  accept 142 -- Accept The Defias Brotherhood
+step
+  along until next_46
+  zone map 1436
+  goto 44.5,69.62 map 1436 r 55 -- Travel to Moonbrook
+step
+  label next_46
+  zone map 1436
+  note "Kill the Defias Messenger. Loot him for his Mysterious Message"
+  note "The Defias Messenger spawns in Moonbrook. He walks along the road north of Moonbrook, to the Gold Coast Quarry and Jangolode Mine. If you don't see him along the road, wait for him to spawn in Moonbrook"
+  note "He has a 4-5 minute respawn timer"
+  collect 1381 x1 quest 142.1 -- A Mysterious Message (1)
+step
+  along until next_48
+  zone map 1436
+  goto 30.01,86.02 map 1436 r 40 -- Travel to the Westfall Lighthouse
+step
+  label next_48
+  zone map 1436
+  note "Talk to Captain Grayson"
+  accept 104 -- Accept The Coastal Menace
+  accept 103 -- Accept Keeper of the Flame
+step
+  when has 814 x5
+  zone map 1436
+  note "Talk to Captain Grayson"
+  turnin 103 -- Turn in Keeper of the Flame
+step
+  zone map 1436
+  note "Kill Old Murk-Eye. Loot him for his Scale"
+  note "Old Murk-Eye patrols up and down the Longshore. If you don't see him along the Longshore, wait for him to spawn in the most southern Murloc camp"
+  collect 3636 x1 quest 104.1 @34.43,83.93 map 1436 -- Scale of Old Murk-Eye (1)
+step
+  zone map 1436
+  note "Talk to Captain Grayson"
+  turnin 104 -- Turn in The Coastal Menace
+step
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  turnin 142 -- Turn in The Defias Brotherhood
+step
+  zone map 1436
+  note "Talk to The Defias Traitor"
+  note "You may need to wait for The Defias Traitor to spawn if he's not there"
+  accept 155 -- Accept The Defias Brotherhood
+step
+  zone map 1436
+  goto 42.56,71.71 map 1436 r 8
+  note "Escort the The Defias Traitor to The Deadmines"
+  note "Stay beside The Defias Traitor at all times! Be ready to fight The Defias upon reaching Moonbrook"
+  complete 155 -- Escort The Defias Traitor to discover where VanCleef is hiding (1)
+step
+  when has 1357
+  zone map 1436
+  note "Use [Captain Sander's Treasure Map] to start the quest"
+  use 1357 @25.9,47.76 map 1436
+  accept 136 -- Accept Captain Sander's Hidden Treasure
+step
+  when has 1357
+  zone map 1436
+  note "Click the Captain's Footlocker"
+  turnin 136 -- Turn in Captain Sander's Hidden Treasure
+step
+  when turnedin 136
+  zone map 1436
+  note "Click the Captain's Footlocker"
+  accept 138 -- Accept Captain Sander's Hidden Treasure
+step
+  when turnedin 136
+  zone map 1436
+  note "Click the Broken Barrel"
+  turnin 138 -- Turn in Captain Sander's Hidden Treasure
+  accept 139 -- Accept Captain Sander's Hidden Treasure
+step
+  when turnedin 138
+  zone map 1436
+  note "Click the Old Jug"
+  turnin 139 -- Turn in Captain Sander's Hidden Treasure
+  accept 140 -- Accept Captain Sander's Hidden Treasure
+step
+  when onquest 140
+  along until next_62
+  zone map 1436
+  goto 25.97,16.9 map 1436 r 30 -- Swim out to the Island
+step
+  when onquest 140
+  label next_62
+  zone map 1436
+  note "Click the Locked Chest"
+  turnin 140 -- Turn in Captain Sander's Hidden Treasure
+step
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  turnin 155 -- Turn in The Defias Brotherhood
+step
+  when zone "Westfall"
+  label next_69
+  zone map 1436
+  goto 56.55,52.64 map 1436 r 8
+  note "Talk to Thor"
+  note "Fly to Redridge if you are still in Westfall"
+  fly "Redridge" -- Fly to Redridge
+step
+  when zone "Stormwind City"
+  label next_88
+  note "Talk to Dungar Longdrink"
+  fly "Redridge" -- Fly to Redridge
+step
+  zone map 1433
+  note "Talk to Guard Parker"
+  accept 244 -- Accept Encroaching Gnolls
+step
+  zone map 1433
+  note "Talk to Guard Parker"
+  turnin 129 -- Turn in A Free Lunch
+  accept 130 -- Accept Visit the Herbalist
+step
+  zone map 1433
+  note "Talk to Deputy Feldon"
+  turnin 244 -- Turn in Encroaching Gnolls
+  accept 246 -- Accept Assessing the Threat
+step
+  when turnedin 118
+  zone map 1433
+  note "Talk to Verner Osgood"
+  accept 124 -- Accept A Baying of Gnolls
+  accept 122 -- Accept Underbelly Scales
+step
+  along until MongrelPoacher
+  zone map 1433
+  note "Kill Great Goretusks. Loot them for their Great Goretusk Snouts"
+  note "Kill Tarantulas. Loot them for their Crisp Spider Meat"
+  note "Kill Dire Condors. Loot them for their Tough Condor Meat"
+  note "Do NOT sell any of these items until you turn the Redridge Goulash quest"
+  note "Save any [Chunks of Boar Meat] you loot as well as you can use them to level [Cooking] to 50 which is required for Duskwood later"
+  collect 2296 x5 @30.97,47.27 map 1433 optional
+  collect 1080 x5 @30.97,47.27 map 1433 optional
+  collect 1081 x5 @30.97,47.27 map 1433 optional
+step
+  when onquest 122
+  along until Toolbox
+  zone map 1433
+  note "Kill Black Dragon Whelps. Loot them for their Scales"
+  note "You don't have to complete this quest now"
+  collect 1221 x6 quest 122.1 @30.97,47.27 map 1433 -- Underbelly Whelp Scale (6)
+step
+  label MongrelPoacher
+  zone map 1433
+  goto 15.91,62.76 map 1433 r 1 optional
+  goto 43.44,70.61 map 1433 r 1 optional
+  goto 29.49,82.8 map 1433 r 45 optional
+  goto 32.52,81.78 map 1433 r 45 optional
+  goto 43.18,72.22 map 1433 r 45 optional
+  note "Kill Redridge Mongrels and Redridge Poachers"
+  kill 423 x10 quest 246.1 @31.13,82.18 map 1433 -- Redridge Mongrel (10)
+  kill 424 x6 quest 246.2 @31.13,82.18 map 1433 -- Redridge Poacher (6)
+step
+  along until next_105
+  zone map 1433
+  note "Kill Great Goretusks. Loot them for their Great Goretusk Snouts"
+  note "Kill Dire Condors. Loot them for their Tough Condor Meat"
+  note "Do NOT sell any of these items until you turn the Redridge Goulash quest"
+  note "Save any [Chunks of Boar Meat] you loot as well as you can use them to level [Cooking] to 50 which is required for Duskwood later"
+  collect 2296 x5 @31.13,82.18 map 1433 optional
+  collect 1080 x5 @31.13,82.18 map 1433 optional
+step
+  when !turnedin 92
+  label next_105
+  zone map 1433
+  note "Kill Tarantulas. Loot them for their Crisp Spider Meat"
+  collect 1081 x5 @18.86,73.63 map 1433
+step
+  when !turnedin 92
+  zone map 1433
+  note "Kill Great Goretusks. Loot them for their Great Goretusk Snouts"
+  note "Kill Dire Condors. Loot them for their Tough Condor Meat"
+  note "Do NOT sell any of these items until you turn the Redridge Goulash quest"
+  note "Save any [Chunks of Boar Meat] you loot as well as you can use them to level [Cooking] to 50 which is required for Duskwood later"
+  collect 1080 x5 @18.86,73.63 map 1433
+  goto 66.4,76.6 map 1433 r 60 optional
+  goto 35.6,69.6 map 1433 r 60 optional
+  goto 45.4,76.6 map 1433 r 8 optional
+  collect 2296 x5 @35.6,69.6 map 1433
+  goto 15.73,52.83 map 1433 r 60 optional
+  goto 32.25,70.2 map 1433 r 60 optional
+  goto 31.02,72.14 map 1433 r 60 optional
+  goto 15.73,52.83 map 1433 r 8 optional
+step
+  label Toolbox
+  zone map 1433
+  note "Jump into the Lake. Be aware of the patrolling Elite Lake Thresher in the water"
+  note "Open the Sunken Chest. Loot it for Oslow's Toolbox"
+  collect 1309 x1 quest 125.1 -- Oslow's Toolbox (1)
+step
+  zone map 1433
+  goto 49,70 map 1433 r 8
+  note "XP checkpoint: 20-3000 Grind until you are 3000 xp away from level 20"
+step
+  along until next_110
+  zone map 1433
+  goto 30.73,59.99 map 1433 r 150 -- Travel to Lakeshire
+step
+  label next_110
+  zone map 1433
+  note "Talk to Foreman Oslow"
+  turnin 125 -- Turn in The Lost Tools
+  accept 89 -- Accept The Everstill Bridge
+step
+  when complete 122
+  zone map 1433
+  note "Talk to Verner Osgood"
+  note "Skip this step if you have not completed Underbelly Scales yet, you will do it later"
+  turnin 122 -- Turn in Underbelly Scales
+step
+  zone map 1433
+  note "Talk to Magistrate Solomon"
+  turnin 121 -- Turn in Messenger to Stormwind
+step
+  zone map 1433
+  note "Talk to Martie Jainrose"
+  turnin 130 -- Turn in Visit the Herbalist
+  accept 131 -- Accept Delivering Daffodils
+step
+  when complete 92
+  zone map 1433
+  note "Talk to Chef Breanna"
+  turnin 92 -- Turn in Redridge Goulash
+step
+  zone map 1433
+  note "Talk to Darcy"
+  note "Darcy walks around inside the Inn"
+  turnin 131 -- Turn in Delivering Daffodils
+step
+  zone map 1433
+  note "Talk to Deputy Feldon"
+  turnin 246 -- Turn in Assessing the Threat
+step
+  level 20 -- Ensure you are level 20 before flying to Stormwind
+step
+  zone map 1433
+  goto 30.59,59.42 map 1433 r 8
+  note "Talk to Ariena Stormfeather"
+  fly "Stormwind" -- Fly to Stormwind City
+step
+  only Warlock
+  label next_120
+  note "Talk to Ursula Deline"
+  train 5495 -- Train your class spells
+step
+  only Warlock
+  note "Talk to Spackle Thornberry"
+  vendor 5520 -- Buy [Grimoire of Torment (Rank 2)]
+step
+  only Warlock
+  note "Talk to Gakin the Darkbinder"
+  accept 1716 -- Accept Devourer of Souls
+step
+  only Mage
+  label next_124
+  note "Talk to Elsharin"
+  train 5498 -- Train your class spells
+step
+  only Mage
+  when level>=20
+  note "Talk to Larimaine"
+  learn 3561 "Teleport: Stormwind"
+step
+  only Druid
+  note "Talk to Sheldras Moontree"
+  train 5504 -- Train your class spells
+  learn 768 "Cat Form"
+step
+  only Rogue
+  zone map 1433
+  note "Talk to Marda Weller"
+  note "Buy a [Longsword] and equip it at 21"
+  note "Buy something from the Auction House if there's something cheaper/better"
+  note "Skip this step if you have something better"
+  collect 923 x1 @30.59,59.42 map 1433 -- Longsword (1)
+step
+  only Rogue,Human,Gnome,NightElf,Orc,Troll,Tauren,Undead,Skyborne
+  when !turnedin 2359
+  zone map 1453
+  note "Talk to Auctioneer Jaxon"
+  note "Buy the [Anti-Venom] for your [Poisons] quest later"
+  note "This will save you time as you won't need to run around looking for mobs to kill. Skip this step if you wish to not buy it"
+  collect 6452 x1 @53.612,59.764 map 1453 -- Anti-Venom (1)
+step
+  only Rogue
+  zone map 1453
+  note "Talk to Marda Weller"
+  note "Buy a [Longsword] and equip it at 21"
+  note "Skip this step if you have something better"
+  collect 923 x1 @53.612,59.764 map 1453 -- Longsword (1)
+step
+  only Warrior
+  zone map 1453
+  note "Talk to Gunther Weller"
+  note "Buy a [Dacian Falx] if you have enough money. Equip it at 21"
+  note "Buy something from the Auction House if there's something cheaper/better"
+  note "Skip this step if you have something better"
+  collect 922 x1 @53.612,59.764 map 1453 -- Dacian Falx (1)
+step
+  only Paladin
+  zone map 1453
+  note "Talk to Gunther Weller"
+  note "Buy a [Dacian Falx] if you have enough money. Equip it at 21"
+  note "Buy something from the Auction House if there's something cheaper/better"
+  note "Skip this step if you have something better"
+  collect 922 x1 @53.612,59.764 map 1453 -- Dacian Falx (1)
+step
+  only Warrior
+  zone map 1453
+  note "Talk to Gunther Weller"
+  note "Buy a [Dacian Falx] if you have enough money. Equip it at 21"
+  note "Skip this step if you have something better"
+  collect 922 x1 @53.612,59.764 map 1453 -- Dacian Falx (1)
+step
+  only Paladin
+  zone map 1453
+  note "Talk to Gunther Weller"
+  note "Buy a [Dacian Falx] if you have enough money. Equip it at 21"
+  note "Skip this step if you have something better"
+  collect 922 x1 @53.612,59.764 map 1453 -- Dacian Falx (1)
+step
+  note "Talk to Argos Nightwhisper"
+  accept 3765 -- Accept The Corruption Abroad
+step
+  note "Talk to Brother Kristoff"
+  accept 343 -- Accept Speaking of Fortitude
+step
+  only Paladin
+  label next_135
+  zone map 1453
+  note "Talk to Duthorian Rall. He will give you the [Tome of Valor]"
+  use 6776 @53.612,59.764 map 1453 -- Use the [Tome of Valor] to start the quest
+  collect 6776 x1 @53.612,59.764 map 1453 optional -- Tome of Valor (1)
+  accept 1649 @53.612,59.764 map 1453 -- Accept The Tome of Valor
+step
+  only Paladin
+  when onquest 1649
+  note "Talk to Duthorian Rall"
+  turnin 1649 -- Turn in The Tome of Valor
+step
+  only Paladin
+  note "Talk to Arthur the Faithful"
+  train 5491 -- Train your class spells
+step
+  only Priest
+  note "Talk to Brother Joshua"
+  train 5489 -- Train your class spells
+step
+  label next_140
+  note "Talk to Milton Sheaf"
+  turnin 343 -- Turn in Speaking of Fortitude
+  accept 344 -- Accept Brother Paxton
+step
+  only Hunter
+  note "Talk to Einris Brightspear"
+  train 5515 -- Train your class spells
+step
+  only Rogue
+  note "Talk to Osborne"
+  train 918 -- Train your class spells
+  learn 1804 "Pick Lock"
+step
+  only Rogue
+  label next_144
+  note "Talk to Renzik \"The Shiv\" and Master Mathias Shaw"
+  accept 2281 -- Accept Redridge Rendezvous
+  accept 2360 -- Accept Mathias and the Defias
+step
+  only Warrior
+  note "Talk to Wu or Ilsa"
+  train class -- Train your class spells
+step
+  along until next_147
+  zone map 1429
+  goto 32.24,49.723 map 1429 r 60 -- Exit Stormwind. Travel to Goldshire
+step
+  label next_147
+  zone map 1429
+  note "Talk to Smith Argus"
+  turnin 118 -- Turn in The Price of Shoes
+  accept 119 -- Accept Return to Verner
+step
+  along until next_149
+  zone map 1429
+  goto 45.81,47.73 map 1429 r 20 optional
+  goto 48.61,41.8 map 1429 r 15 optional -- Travel to the Northshire Abbey
+step
+  label next_149
+  zone map 1429
+  note "Talk to Brother Paxton"
+  turnin 344 -- Turn in Brother Paxton
+  accept 345 -- Accept Ink Supplies
+step
+  along until next_151
+  zone map 1429
+  goto 57.518,51.595 map 1429 r 25 optional
+  goto 58.14,52.5 map 1429 r 20 optional
+  goto 65.2,69.8 map 1429 r 50 optional -- Travel to the Tower of Azora. Ascend the tower. Follow the arrow for a shortcut through the mountains
+step
+  label next_151
+  zone map 1429
+  note "Talk to Theocritus at the top"
+  accept 94 -- Accept A Watchful Eye
+step
+  zone map 1429
+  goto 64.88,69.192 map 1429 r 8 optional
+  note "Talk to Dawn Brightstar"
+  vendor 958 only !Warrior,!Rogue -- Dawn Brightstar has has limited supply items such as [Scrolls] and [Potions] as well, which you should buy if available
+  vendor 958 optional only Warrior -- Dawn Brightstar has has limited supply items such as [Scrolls] and [Potions] as well, which you should buy if available
+  vendor 958 optional only Rogue -- Dawn Brightstar has has limited supply items such as [Scrolls] and [Potions] as well, which you should buy if available
+step
+  when zone "Elwynn Forest"
+  along until TravelRM
+  zone map 1433
+  goto 6.7,72.4 map 1433 r 8
+step
+  when zone "Stormwind City"
+  note "Talk to Dungar Longdrink"
+  note "Fly to Redridge if you are in Stormwind"
+  fly "Redridge" -- Fly to Redridge
+step
+  zone map 1433
+  note "Talk to Foreman Oslow"
+  turnin 345 -- Turn in Ink Supplies
+step
+  zone map 1433
+  note "Talk to Verner Osgood"
+  turnin 119 -- Turn in Return to Verner
+  accept 124 -- Accept A Baying of Gnolls
+step
+  zone map 1433
+  note "Talk to Verner Osgood"
+  accept 122 -- Accept Underbelly Scales
+step
+  only Rogue
+  when onquest 2281
+  turnin 2281 -- Turn in Redridge Rendezvous
+step
+  only Rogue
+  zone map 1433
+  note "Talk to Lucius"
+  accept 2282 -- Accept Alther's Mill
+step
+  along until TravelRM
+  zone map 1433
+  note "Kill Black Dragon Whelps. Loot them for their Scales"
+  collect 1221 x6 quest 122.1 @28.07,52.02 map 1433 -- Underbelly Whelp Scale (6)
+step
+  label TravelRM
+  zone map 1433
+  goto 21.23,36.17 map 1433 r 60 optional
+  goto 34.2,39.7 map 1433 r 60 optional
+  goto 39.61,31.46 map 1433 r 60 optional
+  goto 34.2,39.7 map 1433 r 60 optional
+  goto 21.23,36.17 map 1433 r 60 optional
+  goto 34.2,39.7 map 1433 r 60 optional
+  goto 39.61,31.46 map 1433 r 60 optional
+  note "Kill Redridge Brutes and Redridge Mystics. Loot them for their Iron Pikes and Iron Rivets"
+  kill 426 x10 quest 124.1 @22.5,35.7 map 1433 -- Redridge Brute (10)
+  kill 430 x8 quest 124.2 @22.5,35.7 map 1433 -- Redridge Mystic (8)
+  collect 2856 x5 quest 89.1 @22.5,35.7 map 1433 -- Iron Pike (5)
+  collect 1013 x5 quest 89.2 @22.5,35.7 map 1433 -- Iron Rivet (5)
+step
+  only Rogue
+  zone map 1433
+  goto 52.1,45.24 map 1433 r 8
+  note "Open the Practice Lockboxes until you reach 80 in [Lockpicking]"
+  note "Skill predicate: lockpicking,80,1"
+step
+  only Rogue
+  zone map 1433
+  goto 52.05,44.69 map 1433 r 8
+  note "Open Lucius's Lockbox. Loot it for the Token of Thievery"
+  collect 7871 x1 quest 2282.1 @52.05,44.69 map 1433 optional -- Token of Thievery
+  note "Skill predicate: lockpicking,<80,1"
+step
+  zone map 1433
+  goto 43.47,31.68 map 1433 r 50 optional
+  goto 46.52,35.66 map 1433 r 50 optional
+  note "Kill Black Dragon Whelps. Loot them for their Scales"
+  collect 1221 x6 quest 122.1 @36.58,73.93 map 1433 -- Underbelly Whelp Scale (6)
+step
+  along until next_165
+  zone map 1433
+  goto 15.55,50.06 map 1433 r 1 optional
+  goto 19.24,41.53 map 1433 r 1 optional
+  goto 16.9,55.02 map 1433 r 1 optional
+  goto 26.52,44.95 map 1433 r 8 optional
+  note "Level up your [Cooking] using the [Chunks of Boar Meat] you farmed earlier. You need level 50 [Cooking]"
+  note "If you need more [Chunks of Boar Meat] travel to the west near Bellygrub and kill more Great Goretusks"
+step
+  label next_165
+  zone map 1433
+  note "Talk to Foreman Oslow"
+  turnin 89 -- Turn in The Everstill Bridge
+step
+  zone map 1433
+  note "Talk to Verner Osgood"
+  turnin 124 -- Turn in A Baying of Gnolls
+  turnin 122 -- Turn in Underbelly Scales
+step
+  only Rogue
+  when onquest 2282
+  zone map 1433
+  note "Talk to Lucius"
+  turnin 2282 -- Turn in Alther's Mill
+step
+  only Rogue,NightElf
+  when onquest 2360
+  along until next_170
+  zone map 1433
+  goto 30.59,59.42 map 1433 r 8
+  note "Talk to Ariena Stormfeather"
+  fly "Stormwind" -- Fly to Stormwind
+step
+  only Rogue,NightElf
+  when onquest 2360
+  label next_170
+  zone map 1436
+  goto 56.55,52.64 map 1436 r 5
+step
+  only Rogue,NightElf
+  when onquest 2360
+  zone map 1436
+  note "Talk to Thor"
+  getfp "Westfall" @56.55,52.64 map 1436 -- Get the Westfall flight path
+step
+  only Rogue,Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  when onquest 2360
+  zone map 1433
+  goto 30.59,59.42 map 1433 r 8
+  note "Talk to Ariena Stormfeather"
+  fly "Westfall" -- Fly to Westfall
+step
+  only Rogue,Human,Gnome,NightElf,Orc,Troll,Tauren,Undead,Skyborne
+  when !has 6452
+  when onquest 2360
+  zone map 1431
+  goto 15.9,72.1 map 1431 r 60 optional
+  goto 14.86,64.56 map 1431 r 50 optional
+  goto 10.43,53.97 map 1431 r 8
+  note "Kill Pygmy Venom Web Spiders and Venom Web Spiders. Loot them for a Small Venom Sac and their Gooey Spider Legs"
+  note "You need a Small Venom Sac to make an [Anti-Venom] later to remove the [Touch of Zanzil] debuff later"
+  note "Save the Gooey Spider Legs for later"
+  note "If you have a Paladin or Druid friend you can skip this step and ask them to remove it for you later"
+  collect 1475 x1 @10.43,53.97 map 1431 optional -- Small Venom Sac (1)
+  collect 2251 x6 @10.43,53.97 map 1431 optional -- Gooey Spider Legs (6)
+step
+  only Rogue
+  along until TowerKey
+  note "==PAY ATTENTION TO THE UPCOMING SECTION=="
+  note "Press Escape, then go into -> Options -> Controls"
+  note "Check \"Enable Interact Key\" and bind the \"Interact with Target\" option to a key"
+  note "Additionally, it's recommended you enable Enemy Nameplates (Default Key: V) as it allows you to see enemies behind some of the corners inside the tower"
+step
+  only Rogue
+  when onquest 2360
+  turnin 2360 -- Turn in Mathias and the Defias
+step
+  only Rogue
+  when onquest 2360
+  zone map 1436
+  note "Talk to Agent Kearnen"
+  note "You MUST do this quest your [Poisons]"
+  accept 2359 -- Accept Klaven's Tower
+step
+  only Rogue
+  when turnedin 2360
+  zone map 1436
+  note "Talk to Agent Kearnen"
+  note "You MUST do this quest your [Poisons]"
+  accept 2359 -- Accept Klaven's Tower
+step
+  only Rogue
+  when turnedin 2360
+  zone map 1436
+  note "Talk to Agent Kearnen"
+  note "You MUST do this quest your [Poisons]"
+  accept 2359 -- Accept Klaven's Tower
+step
+  only Rogue
+  when onquest 2359
+  label TowerKey
+  loop
+  zone map 1436
+  goto 71.49,73.49 map 1436 r 1
+  goto 71.01,75.72 map 1436 r 1
+  goto 69.58,73.07 map 1436 r 1
+  goto 71.49,73.49 map 1436 r 30
+  goto 71.01,75.72 map 1436 r 30
+  goto 69.58,73.07 map 1436 r 30
+  note "[Pick Pocket] the Malformed Defias Drone. Loot it for the Defias Tower Key"
+  note "You must be in [Stealth] to use [Pick Pocket]"
+  note "The Malformed Defias Drone spawns at the entrance to the tower, then patrols around the outside of it"
+  note "Be careful as he deals a LOT of damage. If your [Stealth] breaks, quickly use [Sprint] and run away"
+  collect 7923 x1 quest 2359.2 -- Collect Defias Tower Key (x1)
+step
+  only Rogue
+  when has 15396
+  when onquest 2359
+  along until Mortwake
+  zone map 1436
+  note "Equip the [Curvewood Dagger] for this quest if you don't already have a [Dagger] equipped"
+  use 15396 @69.58,73.07 map 1436
+step
+  only Rogue
+  when onquest 2359
+  label Mortwake
+  zone map 1436
+  note "Travel up to 2nd top floor of the tower. Whilst in [Stealth] and the Defias Tower Sentries aren't next to you, Jump onto the chair, then onto the lamp, then onto the bookshelf on top of the waypoint location"
+  note "Manually [Unstealth], then press your \"Interact with Target\" keybind to open the Duskwood Chest. Loot it for Klaven Mortwake's Journal"
+  note "NOTE: Your [Stealth] will temporarily stop working after looting Klaven Mortwake's Journal"
+  note "Be prepared to run if you don't kill the Defias Tower Sentries on the 2nd floor. They will most likely aggro you permanently (but not attack you) when you are on top of the bookshelf as it is an evade spot"
+  note "If you have a [Dagger] in your bags or equipped, you can cast [Ambush] on the Defias Tower Patrollers and Defias Tower Sentries inside to kill them instantly. Be prepared to run after you kill the first Defias Tower Sentry and remember you can be hit from above. This is slower, but a LOT safer"
+  note "Be careful as the Malformed Defias Drone and Defias Drones can be at the entrance of the tower if you have to run out of it"
+  collect 7908 x1 quest 2359.1 -- Collect Klaven Mortwake's Journal (x1)
+step
+  only Rogue,Human,Gnome,NightElf,Orc,Troll,Tauren,Undead,Skyborne
+  when !has 6452
+  when complete 2359
+  label AntiVenomStart
+  along
+  zone map 1436
+  collect 6452 x1 @70.421,74.031 map 1436 -- Craft an [Anti-Venom]
+step
+  only Rogue,Human,Gnome,NightElf,Orc,Troll,Tauren,Undead,Skyborne
+  when !has 6452
+  when complete 2359
+  zone map 1436
+  collect 6452 x1 @70.421,74.031 map 1436 -- Craft an [Anti-Venom]
+step
+  only Rogue,Human,Gnome,NightElf,Orc,Troll,Tauren,Undead,Skyborne
+  when has 6452
+  when complete 2359
+  label AntiVenomEnd
+  zone map 1436
+  note "Use the [Anti-Venom] in your bags to remove the [Touch of Zanzil] debuff"
+  use 6452 @70.421,74.031 map 1436
+step
+  label AntiVenomEnd2
+  only Rogue
+  when complete 2359
+  along until KlavenEnd
+  zone map 1436
+  goto 56.55,52.64 map 1436 r 8
+  note "Talk to Thor"
+  fly "Stormwind" -- Fly to Stormwind
+step
+  only Rogue,Human,Gnome,NightElf,Orc,Troll,Tauren,Undead,Skyborne
+  when complete 2359
+  along until FirstAidEnd
+  zone map 1453
+  goto 42.938,33.878 map 1453 r 20 optional
+  goto 41.544,31.33 map 1453 r 20 optional
+  goto 41.688,28.049 map 1453 r 20 optional
+  goto 43.07,26.155 map 1453 r 15 optional -- Travel toward Shaina Fuller
+step
+  only Rogue,Human,Gnome,NightElf,Orc,Troll,Tauren,Undead,Skyborne
+  when !has 6452
+  when complete 2359
+  zone map 1453
+  goto 43.07,26.155 map 1453 r 8
+  note "Talk to Shaina Fuller"
+  note "If you have a Paladin or Druid friend, ask them to remove the [Touch of Zanzil] for you instead"
+  skill "First Aid" 80 -- Level your [First Aid] to 80
+step
+  only Rogue,Human,Gnome,NightElf,Orc,Troll,Tauren,Undead,Skyborne
+  when !has 6452
+  when complete 2359
+  label FirstAidEnd
+  zone map 1453
+  goto 43.07,26.155 map 1453 r 8
+  note "Talk to Shaina Fuller"
+  note "If you have a Paladin or Druid friend, ask them to remove the [Touch of Zanzil] for you instead"
+  learn 7934 "Anti-Venom"
+step
+  only Rogue,Human,Gnome,NightElf,Orc,Troll,Tauren,Undead,Skyborne
+  when !has 6452
+  when complete 2359
+  label AntiVenomStart2
+  along
+  zone map 1453
+  collect 6452 x1 @43.07,26.155 map 1453 -- Craft an [Anti-Venom]
+step
+  only Rogue,Human,Gnome,NightElf,Orc,Troll,Tauren,Undead,Skyborne
+  when !has 6452
+  when complete 2359
+  zone map 1453
+  collect 6452 x1 @43.07,26.155 map 1453 -- Craft an [Anti-Venom]
+step
+  only Rogue
+  when complete 2359
+  when onquest 2359
+  label KlavenEnd
+  note "Talk to Master Mathias Shaw"
+  note "Remember to re-equip your main weapon if you switched to a [Dagger] earlier" only Rogue
+  turnin 2359 -- Turn in Klaven's Tower

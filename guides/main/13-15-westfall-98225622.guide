@@ -1,0 +1,738 @@
+guide rxp-free/13-15-westfall-98225622
+title "13-15 Westfall"
+levels 13-15
+zone map 1436
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+race Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+next rxp-free/14-16-darkshore-f2ec54c2
+step
+  zone map 1453
+  note "Talk to Innkeeper Allison"
+  sethome "Stormwind City" @52.622687,65.700493 map 1453 -- Set your Hearthstone to Stormwind City
+step
+  label NEWestfallStart
+  note "Review this source step manually."
+step
+  zone map 1453
+  goto 53.612072,59.764223 map 1453 r 8
+  note "Talk to Auctioneer Jaxon"
+  note "Buy the following items for faster turn ins at Westfall shortly:"
+  note "If you don't want to or can't do this, skip this step"
+  note "[Stringy Vulture Meat]"
+  note "[Murloc Eye]"
+  note "[Goretusk Snout]"
+  note "[Okra]"
+  note "[Goretusk Liver]"
+  note "[Golem Isospring]"
+  note "[Harvester Gyrostabilizer]"
+  collect 729 x3 @53.612072,59.764223 map 1453 optional -- Stringy Vulture Meat (3)
+  collect 730 x3 @53.612072,59.764223 map 1453 optional -- Murloc Eye (3)
+  collect 731 x3 @53.612072,59.764223 map 1453 optional -- Goretusk Snout (3)
+  collect 732 x3 @53.612072,59.764223 map 1453 optional -- Okra (3)
+  collect 723 x8 @53.612072,59.764223 map 1453 optional -- Goretusk Liver (8)
+  collect 255007 x14 @53.612072,59.764223 map 1453 optional -- Golem Isospring (14)
+  collect 255010 x5 @53.612072,59.764223 map 1453 optional -- Harvester Gyrostabilizer (5)
+step
+  only Human
+  when onquest 6261
+  turnin 6261 -- Turn in Dungar Longdrink
+step
+  only Human
+  zone map 1453
+  note "Talk to Dungar Longdrink"
+  accept 6285 -- Accept Return to Lewis
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Undead
+  zone map 1453
+  goto 66.276938,62.137169 map 1453 r 8
+  note "Talk to Dungar Longdrink"
+  fly "Westfall" only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne -- Fly to Westfall
+  getfp "Stormwind" @66.276938,62.137169 map 1453 only NightElf -- Get the Stormwind Flight Path
+step
+  along until SaldeanVendor
+  zone map 1429
+  goto 18.999958,81.000206 map 1429 r 8
+step
+  zone map 1436
+  note "Talk to Farmer Furlbrow"
+  accept 64 -- Accept The Forgotten Heirloom
+step
+  zone map 1436
+  note "Talk to Verna Furlbrow"
+  accept 36 -- Accept Westfall Stew
+  accept 151 -- Accept Poor Old Blanchy
+step
+  along until SalmaS
+  zone map 1436
+  goto 56.039914,31.230004 map 1436 r 65 -- Travel to Saldean's Farm
+step
+  zone map 1436
+  note "Talk to Farmer Saldean"
+  accept 9 -- Accept The Killing Fields
+  accept 109 only NightElf -- Accept Report to Gryan Stoutmantle
+step
+  label SalmaS
+  zone map 1436
+  note "Talk to Salma Saldean"
+  turnin 36 -- Turn in Westfall Stew
+  accept 38 -- Accept Westfall Stew
+  accept 22 -- Accept Goretusk Liver Pie
+step
+  only Human
+  when onquest 6285
+  label Lewis
+  zone map 1436
+  note "Talk to Quartermaster Lewis"
+  turnin 6285 -- Turn in Return to Lewis
+step
+  only Gnome
+  when onquest 109
+  along until next_14
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  turnin 109 -- Turn in Report to Gryan Stoutmantle
+step
+  only Dwarf
+  when onquest 109
+  along until next_14
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  turnin 109 -- Turn in Report to Gryan Stoutmantle
+step
+  only NightElf
+  when onquest 109
+  along until next_14
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  turnin 109 -- Turn in Report to Gryan Stoutmantle
+step
+  when onquest 98021
+  turnin 98021 only Skyborne -- Turn in Journey to Sentinel Hill
+step
+  label next_14
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  accept 12 -- Accept The People's Militia
+step
+  zone map 1436
+  note "Talk to Captain Danuvin"
+  accept 102 -- Accept Patrolling Westfall
+step
+  only Human
+  zone map 1436
+  note "Talk to Scout Galiaan"
+  accept 153 -- Accept Red Leather Bandanas
+step
+  only Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Undead,Skyborne
+  zone map 1436
+  note "Talk to Scout Galiaan"
+  accept 153 -- Accept Red Leather Bandanas
+step
+  zone map 1436
+  note "Talk to Innkeeper Heather"
+  vendor 8931 -- Buy food/water if needed
+step
+  zone map 1436
+  note "Talk to Alba Fairmoon::253092"
+  accept 92742 -- Accept Testing the Wells
+  accept 92744 -- Accept Murloc Gills
+step
+  along until GnollPaws
+  zone map 1436
+  note "Open the Sacks of Oats on the ground. Loot them for the Handful of Oats"
+  note "You can usually find them near Farm Fences or Buildings"
+  collect 1528 x8 quest 151.1 @52.481914,52.954336 map 1436 -- Handful of Oats (8)
+step
+  along until TravelCompass
+  zone map 1436
+  note "Kill Young Goretusks and Young Fleshrippers. Loot them for their Vulture Meat, Snouts and Livers"
+  collect 729 x3 @52.481914,52.954336 map 1436 optional -- Stringy Vulture Meat (3)
+  collect 731 x3 @52.481914,52.954336 map 1436 optional -- Goretusk Snout (3)
+  collect 723 x8 @52.481914,52.954336 map 1436 optional -- Goretusk Liver (8)
+step
+  when onquest 153
+  along until TravelCompass
+  collect 829 x15 quest 153.1 @52.481914,52.954336 map 1436 -- Red Leather Bandana (15)
+step
+  along until TravelCompass
+  zone map 1436
+  note "Kill Defias Trappers and Defias Smugglers. Loot them for their Red Leather Bandanas"
+  kill 504 x15 quest 12.1 @52.481914,52.954336 map 1436 -- Defias Trapper slain (15)
+  kill 95 x15 quest 12.2 @52.481914,52.954336 map 1436 -- Defias Smuggler slain (15)
+step
+  when onquest 399
+  label TravelCompass
+  zone map 1436
+  goto 40.399914,52.70015 map 1436 r 75 -- Travel to the Alexston's Farmstead
+  note "Work on completing the other quest objectives as you move there"
+step
+  along until bennytime
+  zone map 1436
+  note "Kill Harvest Watchers located on any of the fields as you run by them"
+  note "Loot them for their Okra and Flasks of Oil"
+  kill 114 x20 quest 9.1 @40.399914,52.70015 map 1436 -- Havest Watcher slain (20)
+  collect 732 x3 @40.399914,52.70015 map 1436 optional -- Okra (3)
+  collect 814 x5 @40.399914,52.70015 map 1436 optional -- Flask of Oil (5)
+step
+  when onquest 399
+  zone map 1436
+  goto 36.239914,54.519865 map 1436 r 8
+  note "Open Alexston's Chest. Loot it for A Simple Compass"
+  note "Avoid the mobs in front of the burnt building. Loot it from the back, beside the chimney. Use the chimney to LoS the casts of Pillagers if required"
+  note "A Simple Compass (1)"
+step
+  zone map 1436
+  use 254545 @46.070486,38.181434 map 1436 -- Use the [Well Water Sample Kit] at the Molsen Farm well
+  collect 254547 x1 quest 92742.2 -- Molsen Farm Water Sample
+step
+  along until bennytime
+  zone map 1436
+  note "Kill Young Goretusks and Young Fleshrippers. Loot them for their Vulture Meat, Snouts and Livers"
+  collect 729 x3 @46.070486,38.181434 map 1436 optional -- Stringy Vulture Meat (3)
+  collect 731 x3 @46.070486,38.181434 map 1436 optional -- Goretusk Snout (3)
+  collect 723 x8 @46.070486,38.181434 map 1436 optional -- Goretusk Liver (8)
+step
+  when onquest 153
+  along until bennytime
+  collect 829 x15 quest 153.1 @46.070486,38.181434 map 1436 -- Red Leather Bandana (15)
+step
+  along until bennytime
+  zone map 1436
+  note "Kill Defias Trappers and Defias Smugglers. Loot them for their Red Leather Bandanas"
+  kill 504 x15 quest 12.1 @46.070486,38.181434 map 1436 -- Defias Trapper slain (15)
+  kill 95 x15 quest 12.2 @46.070486,38.181434 map 1436 -- Defias Smuggler slain (15)
+step
+  zone map 1436
+  goto 49.999914,22.59986 map 1436 r 75 -- Travel to the Jansen Stead, work on the other quest objectives as you move there
+step
+  label bennytime
+  zone map 1436
+  note "Open Furlbrow's Wardrobe. Loot it for Furlbrow's Pocket Watch"
+  note "You can loot Furlbrow's Wardrobe from outside if you angle your camera correctly"
+  note "Be aware of Benny Blanco. He hits hard"
+  collect 841 x1 quest 64.1 -- Furlbrow's Pocket Watch
+step
+  label GnollPaws
+  zone map 1436
+  note "Kill Riverpaw Gnolls and Riverpaw Scouts. Loot them for their Gnoll Paws"
+  collect 725 x8 quest 102.1 @56.809914,13.299859 map 1436 -- Gnoll Paw (8)
+step
+  zone map 1436
+  goto 52.129914,10.359859 map 1436 r 60 optional
+  goto 56.399914,9.3998585 map 1436 r 60 optional
+  goto 52.129914,10.359859 map 1436 r 60 optional
+  goto 56.399914,9.3998585 map 1436 r 60 optional
+  goto 52.129914,10.359859 map 1436 r 8 optional
+  goto 56.399914,9.3998585 map 1436 r 1 optional
+  note "Kill Murloc Raiders and Murloc Coastrunners. Loot them for their Eyes and Gills"
+  collect 730 x3 @56.399914,9.3998585 map 1436 optional -- Murloc Eye (3)
+  collect 254548 x7 quest 92744.1 @56.399914,9.3998585 map 1436 -- Longshore Murloc Gills 7/7
+step
+  zone map 1436
+  note "Open the Sacks of Oats on the ground. Loot them for the Handful of Oats"
+  note "You can usually find them near Farm Fences or Buildings"
+  collect 1528 x8 quest 151.1 @57.229914,19.77986 map 1436 -- Handful of Oats (8)
+step
+  zone map 1436
+  use 254545 @56.610486,18.647188 map 1436 -- Use the [Well Water Sample Kit] at the Jansen Stead well
+  collect 254546 x1 quest 92742.1 -- Jansen Stead Water Sample
+step
+  only Warlock,Human
+  when onquest 184
+  turnin 184 -- Turn in Furlbrow's Deed
+step
+  only Warlock,Human
+  when onquest 184
+  label FurlbrowFarm
+  zone map 1436
+  note "Talk to Farmer Furlbrow and Verna Furlbrow"
+  turnin 64 -- Turn in The Forgotten Heirloom
+  turnin 151 -- Turn in Poor Old Blanchy
+  goto 59.919914,19.41986 map 1436 r 8 optional
+step
+  only Warlock,Human
+  when turnedin 184
+  zone map 1436
+  note "Talk to Farmer Furlbrow and Verna Furlbrow"
+  turnin 64 -- Turn in The Forgotten Heirloom
+  turnin 151 -- Turn in Poor Old Blanchy
+  goto 59.919914,19.41986 map 1436 r 8 optional
+step
+  zone map 1436
+  note "Talk to Farmer Furlbrow and Verna Furlbrow"
+  turnin 64 -- Turn in The Forgotten Heirloom
+  turnin 151 -- Turn in Poor Old Blanchy
+  goto 59.919914,19.41986 map 1436 r 8 optional
+step
+  along until SaldeanVendor
+  zone map 1436
+  note "Talk to Farmer Saldean"
+  vendor 233 -- Vendor trash
+  note "Do NOT sell [Murloc Eyes], [Goretusk Snouts], [Goretusk Livers] or [Stringy Vulture Meat]"
+step
+  when complete 9
+  zone map 1436
+  note "Talk to Farmer Saldean"
+  turnin 9 -- Turn in The Killing Fields
+step
+  when complete 22
+  when complete 38
+  zone map 1436
+  note "Talk to Salma Saldean"
+  turnin 22 -- Turn in Goretusk Liver Pie
+  turnin 38 -- Turn in Westfall Stew
+step
+  when complete 22
+  zone map 1436
+  note "Talk to Salma Saldean"
+  turnin 22 -- Turn in Goretusk Liver Pie
+step
+  when complete 38
+  zone map 1436
+  note "Talk to Salma Saldean"
+  turnin 38 -- Turn in Westfall Stew
+step
+  when has 255007 x14
+  when has 255010 x5
+  zone map 1436
+  note "Talk to Ozwin Ironsprocket::253395"
+  accept 92909 -- Accept Harvesting the Harvesters
+  turnin 92909 -- Turn in Harvesting the Harvesters
+step
+  when !turnedin 38
+  zone map 1436
+  note "Kill Harvest Watchers. Loot them for their Okra and Flasks of Oil"
+  kill 114 x20 quest 9.1 @50.799914,21.75986 map 1436 -- Harvest Watcher (20)
+  collect 732 x3 @50.799914,21.75986 map 1436 optional -- Okra (3)
+  collect 814 x5 @50.799914,21.75986 map 1436 optional -- Flask of Oil (5)
+step
+  when turnedin 38
+  label HarvestW
+  zone map 1436
+  note "Kill Harvest Watchers. Loot them for their Flasks of Oil"
+  kill 114 x20 quest 9.1 @50.799914,21.75986 map 1436 -- Harvest Watcher (20)
+  collect 814 x5 @50.799914,21.75986 map 1436 optional -- Flask of Oil (5)
+step
+  when complete 9
+  zone map 1436
+  note "Talk to Farmer Saldean"
+  goto 56.039914,31.230004 map 1436 r 8
+  turnin 9 optional -- Turn in The Killing Fields
+step
+  when has 255007 x14
+  when has 255010 x5
+  zone map 1436
+  note "Talk to Ozwin Ironsprocket::253395"
+  accept 92909 -- Accept Harvesting the Harvesters
+  turnin 92909 -- Turn in Harvesting the Harvesters
+step
+  zone map 1436
+  goto 52.489914,42.110149 map 1436 r 75 optional
+  goto 53.669914,46.070149 map 1436 r 75 optional
+  goto 61.599914,45.549864 map 1436 r 75 optional
+  goto 60.359914,27.380147 map 1436 r 75 optional
+  goto 54.629914,19.200003 map 1436 r 75 optional
+  goto 49.089914,26.919861 map 1436 r 75 optional
+  goto 47.889914,42.939863 map 1436 r 75 optional
+  goto 54.419914,40.380006 map 1436 r 8
+  note "Kill Young Goretusks and Young Fleshrippers. Loot them for their Vulture Meat, Snouts and Livers"
+  collect 729 x3 @54.419914,40.380006 map 1436 optional -- Stringy Vulture Meat (3)
+  collect 731 x3 @54.419914,40.380006 map 1436 optional -- Goretusk Snout (3)
+  collect 723 x8 @54.419914,40.380006 map 1436 optional -- Goretusk Liver (8)
+step
+  zone map 1436
+  note "Talk to Farmer Saldean"
+  turnin 9 -- Turn in The Killing Fields
+step
+  label SaldeanVendor
+  zone map 1436
+  note "Talk to Salma Saldean"
+  turnin 38 -- Turn in Westfall Stew
+  turnin 22 -- Turn in Goretusk Liver Pie
+step
+  when has 255007 x14
+  when has 255010 x5
+  zone map 1436
+  note "Talk to Ozwin Ironsprocket::253395"
+  accept 92909 -- Accept Harvesting the Harvesters
+  turnin 92909 -- Turn in Harvesting the Harvesters
+step
+  when onquest 153
+  along until next_52
+  collect 829 x15 quest 153.1 @51.521914,32.305719 map 1436 -- Red Leather Bandana (15)
+step
+  along until next_52
+  zone map 1436
+  note "Kill Defias Trappers and Defias Smugglers. Loot them for their Red Leather Bandanas"
+  note "It is a dynamic respawn area meaning if you kill enough they will keep respawning"
+  kill 504 x15 quest 12.1 @51.521914,32.305719 map 1436 -- Defias Trapper slain (15)
+  kill 95 x15 quest 12.2 @51.521914,32.305719 map 1436 -- Defias Smuggler slain (15)
+step
+  when onquest 153
+  collect 829 x15 quest 153.1 @48.3562,46.731435 map 1436 -- Red Leather Bandana (15)
+step
+  label next_52
+  zone map 1436
+  note "Kill Defias Trappers and Defias Smugglers. Loot them for their Red Leather Bandanas"
+  note "It is a dynamic respawn area meaning if you kill enough they will keep respawning"
+  kill 504 x15 quest 12.1 @48.3562,46.731435 map 1436 -- Defias Trapper slain (15)
+  kill 95 x15 quest 12.2 @48.3562,46.731435 map 1436 -- Defias Smuggler slain (15)
+step
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  turnin 12 -- Turn in The People's Militia
+step
+  when level>=14
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  accept 65 -- Accept The Defias Brotherhood
+step
+  zone map 1436
+  note "Talk to Captain Danuvin"
+  turnin 102 -- Turn in Patrolling Westfall
+step
+  when onquest 153
+  zone map 1436
+  note "Talk to Scout Galiaan"
+  turnin 153 -- Turn in Red Leather Bandanas
+step
+  zone map 1436
+  note "Talk to Alba Fairmoon::253092"
+  turnin 92742 -- Turn in Testing the Wells
+  turnin 92744 -- Turn in Murloc Gills
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Undead
+  when !zone "Stormwind City"
+  when !zone "Darkshore"
+  hearth "Stormwind" optional -- Hearth to Stormwind
+step
+  when !zone "Stormwind City"
+  when !zone "Darkshore"
+  along until DarkshoreBoat
+  zone map 1436
+  goto 56.549914,52.64015 map 1436 r 8
+  note "Talk to Thor"
+  fly "Stormwind" -- Fly to Stormwind
+step
+  label endOfTheGuide
+  note "Review this source step manually."
+step
+  only Rogue,Human
+  zone map 1453
+  note "Talk to Marda Weller"
+  vendor 1287 -- Buy a [Scimitar] from her or something better from the Auction House and equip it your off-hand
+step
+  only Skyborne
+  zone map 1453
+  note "Talk to Innkeeper Allison"
+  sethome "Stormwind City" @52.622687,65.700493 map 1453 -- Set your Hearthstone to Stormwind City
+step
+  only Skyborne
+  when !zone "Ironforge"
+  along until TramEnd
+  zone map 1453
+  goto 60.900786,11.875777 map 1453 r 20 optional
+  goto 63.898696,8.1719945 map 1453 r 8 optional
+step
+  only Skyborne
+  label TramEnd
+  zone map 1453
+  note "Take the Deeprun Tram to the Ironforge side"
+  note "Talk to Monty on the middle platform on the Ironforge side of the Deeprun Tram"
+  accept 6661 @63.898696,8.1719945 map 1453 -- Accept Deeprun Rat Roundup
+step
+  only Skyborne
+  when onquest 6661
+  kill 13016 x5 quest 6661.1 @63.898696,8.1719945 map 1453 -- Rats Captured (x5)
+step
+  only Skyborne
+  zone map 1453
+  note "Use the [Rat Catcher's Flute] on Deeprun Rats inside the Deeprun Tram"
+  use 17117 @63.898696,8.1719945 map 1453
+step
+  only Skyborne
+  when onquest 6661
+  zone map 1453
+  note "Talk to Monty inside the Deeprun Tram"
+  turnin 6661 @63.898696,8.1719945 map 1453 -- Turn in Deeprun Rat Roundup
+step
+  only Skyborne
+  zone map 1455
+  note "Talk to Gryth Thurden"
+  getfp "Ironforge" @55.491,47.751 map 1455 -- Get the Ironforge flight path
+step
+  only Warrior,Skyborne
+  zone map 1455
+  note "Talk to Bixi Wobblebonk and Buliwyf Stonehand"
+  note "Train Thrown and 2h Maces if you didn't earlier"
+  learn 2567 "Thrown"
+  goto 62.236711,89.627468 map 1455 r 8 optional
+  learn 199 "2h Maces"
+  goto 61.176791,89.50806 map 1455 r 8
+step
+  only Warrior,Skyborne
+  zone map 1455
+  goto 62.378,88.671 map 1455 r 8
+  note "Talk to Brenwyn Wintersteel downstairs"
+  note "Buy the [Keen Throwing Knives] from her"
+  collect 3107 x1 @62.378,88.671 map 1455 optional -- Collect Keen Throwing Knife (200)
+step
+  only Warrior,Skyborne
+  when has 3107
+  zone map 1455
+  note "Equip the [Keen Throwing Knives]"
+  use 3107 @62.378,88.671 map 1455 optional
+step
+  only Skyborne
+  when !zone "Stormwind City"
+  when !zone "Darkshore"
+  hearth "Stormwind" optional -- Hearth to Stormwind
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  zone map 1453
+  note "Talk to Thurman Mullby"
+  note "Buy a [Simple Wood] and a [Flint and Tinder] from him"
+  note "This is used to make [Basic Campfires] on Boats to level your [Cooking] skill without losing time"
+  note "You need 50 [Cooking] for a quest in Duskwood later"
+  collect 4470 x1 @58.364094,61.677529 map 1453 -- Simple Wood (1)
+  collect 4471 x1 @58.364094,61.677529 map 1453 -- Flint and Tinder (1)
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  zone map 1453
+  goto 53.612072,59.764223 map 1453 r 8
+  note "Talk to Auctioneer Jaxon"
+  note "Buy [Chunks of Boar Meat] and/or [Stringy Wolf Meat] to level your [Cooking] with later"
+  note "You need 50 [Cooking] for a quest in Darkshire later"
+  note "If you don't want to or can't do this, skip this step"
+  note "Buy the following items for faster turn ins at Westfall and Darkshore shortly:"
+  note "[Strider Meat]"
+  note "[Darkshore Grouper]"
+  note "[Chunks of Boar Meat]"
+  note "[Stringy Wolf Meat]"
+  collect 5469 x5 @53.612072,59.764223 map 1453 optional -- Strider Meat (5)
+  collect 12238 x6 @53.612072,59.764223 map 1453 optional -- Darkshore Grouper (6)
+  collect 769 x50 @53.612072,59.764223 map 1453 optional -- Chunk of Boar Meat (1-50)
+  collect 2672 x50 @53.612072,59.764223 map 1453 optional -- Stringy Wolf Meat (1-50)
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  zone map 1453
+  goto 53.612072,59.764223 map 1453 r 8
+  note "Talk to Auctioneer Jaxon"
+  note "If you don't want to or can't do this, skip this step"
+  note "Buy the following items for faster turn ins at Westfall and Darkshore shortly:"
+  note "[Strider Meat]"
+  note "[Darkshore Grouper]"
+  collect 5469 x5 @53.612072,59.764223 map 1453 optional -- Strider Meat (5)
+  collect 12238 x6 @53.612072,59.764223 map 1453 optional -- Darkshore Grouper (6)
+step
+  only Hunter,NightElf
+  zone map 1453
+  goto 50.199811,57.599899 map 1453 r 8
+  note "Talk to Frederick Stover"
+  note "Buy a [Heavy Recurve Bow] from him. If you can afford to, buy a [Reinforced Bow] and a [Medium Quiver] as well"
+  collect 3027 x1 @50.199811,57.599899 map 1453 optional -- Heavy Recurve Bow (1)
+  collect 11362 x1 @50.199811,57.599899 map 1453 optional -- Medium Quiver (1)
+  collect 3026 x1 @50.199811,57.599899 map 1453 optional -- Reinforced Bow (1)
+step
+  only Rogue
+  zone map 1453
+  note "Talk to Osborne"
+  train 918 -- Train your class spells
+step
+  only Warrior
+  zone map 1453
+  note "Talk to Wu or Ilsa"
+  goto 76.080029,50.139677 map 1453 r 15 optional
+  goto 80.219822,45.370356 map 1453 r 15 optional
+  goto 78.679953,45.789833 map 1453 r 8 optional
+  train class -- Train your class spells
+step
+  only Hunter
+  zone map 1453
+  note "Talk to Einris Brightspear inside"
+  note "If you just trained earlier, skip this step"
+  train 5515 -- Train your class spells
+step
+  when complete 399
+  when onquest 399
+  zone map 1453
+  note "Talk to Baros Alexston"
+  turnin 399 -- Turn in Humble Beginnings
+step
+  only Druid,NightElf
+  zone map 1453
+  note "Talk to Theridran"
+  train 5505 -- Train your class spells
+step
+  only Warlock
+  along until next_83
+  zone map 1453
+  goto 29.200309,73.99967 map 1453 r 20 optional
+  goto 27.199967,78.099612 map 1453 r 15 optional -- Travel to The Slaughtered Lamb and go downstairs
+step
+  only Warlock
+  label next_83
+  zone map 1453
+  note "Talk to Ursula Deline"
+  train 5495 -- Train your class spells
+step
+  only Mage
+  along until next_85
+  zone map 1453
+  goto 37.689675,82.090223 map 1453 r 10 -- Travel to the Mage Tower
+step
+  only Mage
+  label next_85
+  zone map 1453
+  note "Talk to Elsharin"
+  train 5498 -- Train your class spells
+step
+  only Priest
+  zone map 1453
+  goto 42.510136,33.510086 map 1453 r 20 -- Travel to the Stormwind Cathedral
+step
+  only Paladin
+  zone map 1453
+  goto 42.510136,33.510086 map 1453 r 20 -- Travel to the Stormwind Cathedral
+step
+  only Paladin,Human
+  when onquest 1780
+  zone map 1453
+  note "Talk to Duthorian Rall"
+  turnin 1780 -- Turn in The Tome of Divinity
+step
+  only Paladin
+  label train19742
+  zone map 1453
+  note "Talk to Arthur the Faithful"
+  train 5491 -- Train your class spells
+step
+  only Priest
+  zone map 1453
+  note "Talk to Brother Joshua"
+  train 5489 -- Train your class spells
+step
+  label NEWestfallEnd
+  note "Review this source step manually."
+step
+  when !turnedin 95065
+  zone map 1453
+  note "Talk to Catherine Leland"
+  note "Buy one [Shiny Bauble] and three [Nightcrawlers] from her. This is for a 900xp quest"
+  collect 6529 x1 @45.769897,58.587232 map 1453 -- 1/1 Shiny Bauble
+  collect 6530 x3 @45.769897,58.587232 map 1453 -- 3/3 Nightcrawlers
+step
+  zone map 1453
+  note "Talk to Gilbert Gray::267118"
+  accept 95065 -- Accept Fishin' Time
+  turnin 95065 -- Turn in Fishin' Time
+step
+  when !zone "Darkshore"
+  when has 769
+  when has 2672
+  when has 4470
+  when has 4471
+  label DarkshoreCook1
+  along until DarkshoreBoat
+  note "While waiting for the Boat on the dock:"
+  note "Create a [Basic Campfire] (in your Profession Book)"
+step
+  when !zone "Darkshore"
+  when has 769
+  when has 2672
+  when has 4470
+  when has 4471
+  note "While waiting for the Boat on the dock:"
+  note "Create a [Basic Campfire] (in your Profession Book)"
+step
+  when !zone "Darkshore"
+  when !has 769
+  when has 2672
+  when has 4470
+  when has 4471
+  label DarkshoreCook2
+  along until DarkshoreBoat
+  note "While waiting for the Boat on the dock:"
+  note "Create a [Basic Campfire] (in your Profession Book)"
+step
+  when !zone "Darkshore"
+  when !has 769
+  when has 2672
+  when has 4470
+  when has 4471
+  note "While waiting for the Boat on the dock:"
+  note "Create a [Basic Campfire] (in your Profession Book)"
+step
+  when !zone "Darkshore"
+  when has 769
+  when !has 2672
+  when has 4470
+  when has 4471
+  label DarkshoreCook3
+  along until DarkshoreBoat
+  note "While waiting for the Boat on the dock:"
+  note "Create a [Basic Campfire] (in your Profession Book)"
+step
+  when !zone "Darkshore"
+  when has 769
+  when !has 2672
+  when has 4470
+  when has 4471
+  note "While waiting for the Boat on the dock:"
+  note "Create a [Basic Campfire] (in your Profession Book)"
+step
+  when !zone "Darkshore"
+  when has 769
+  when has 2672
+  when has 4471
+  label DarkshoreCook4
+  along until DarkshoreBoat
+  note "You need 50 [Cooking] for a quest in Duskwood later"
+  note "[Cook] the following items:"
+  note "[Cook] the [Chunks of Boar Meat] into [Roasted Boar Meat]"
+  note "[Cook] the [Stringy Wolf Meat] into [Charred Wolf Meat]"
+step
+  when !zone "Darkshore"
+  when has 769
+  when has 2672
+  when has 4471
+  note "You need 50 [Cooking] for a quest in Duskwood later"
+  note "[Cook] the following items:"
+  note "[Cook] the [Chunks of Boar Meat] into [Roasted Boar Meat]"
+  note "[Cook] the [Stringy Wolf Meat] into [Charred Wolf Meat]"
+step
+  when !zone "Darkshore"
+  when !has 769
+  when has 2672
+  when has 4471
+  label DarkshoreCook5
+  along until DarkshoreBoat
+  note "You need 50 [Cooking] for a quest in Duskwood later"
+  note "[Cook] the [Stringy Wolf Meat] into [Charred Wolf Meat]"
+step
+  when !zone "Darkshore"
+  when !has 769
+  when has 2672
+  when has 4471
+  note "You need 50 [Cooking] for a quest in Duskwood later"
+  note "[Cook] the [Stringy Wolf Meat] into [Charred Wolf Meat]"
+step
+  when !zone "Darkshore"
+  when has 769
+  when !has 2672
+  when has 4471
+  label DarkshoreCook6
+  along until DarkshoreBoat
+  note "You need 50 [Cooking] for a quest in Duskwood later"
+  note "[Cook] the [Chunks of Boar Meat] into [Roasted Boar Meat]"
+step
+  zone map 1453
+  goto 3.7842844,40.89333 map 1453 r 8
+  note "Level your [First Aid] while waiting for the boat to Darkshore if needed"
+step
+  label DarkshoreBoat
+  zone map 1453
+  goto 3.7842844,40.89333 map 1453 r 8

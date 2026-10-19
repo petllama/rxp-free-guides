@@ -1,0 +1,797 @@
+guide rxp-free/18-20-adv-darkshore-3-mage-aoe-4d6addf6
+title "18-20 ADV Darkshore 3 Mage AoE"
+levels 18-20
+zone map 1439
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · ADV AoE Alliance Mage"
+class Mage
+next rxp-free/20-22-adv-redridge-1-mage-aoe-820a48c4
+step
+  zone map 1439
+  goto 36.830031,43.909999 map 1439 r 8
+  note "Talk to Taldan"
+  note "Buy 45 [Melon Juice] from him"
+  collect 1205 x45 @36.830031,43.909999 map 1439 optional -- Melon Juice (45)
+step
+  zone map 1439
+  goto 36.830031,43.909999 map 1439 r 8
+  note "Talk to Taldan"
+  note "Buy 40 [Melon Juice] from him"
+  collect 1205 x40 @36.830031,43.909999 map 1439 optional -- Melon Juice (40)
+step
+  zone map 1439
+  goto 36.830031,43.909999 map 1439 r 8
+  note "Talk to Taldan"
+  note "Buy 35 [Melon Juice] from him"
+  collect 1205 x35 @36.830031,43.909999 map 1439 optional -- Melon Juice (35)
+step
+  zone map 1439
+  goto 36.830031,43.909999 map 1439 r 8
+  note "Talk to Taldan"
+  note "Buy 30 [Melon Juice] from him"
+  collect 1205 x30 @36.830031,43.909999 map 1439 optional -- Melon Juice (30)
+step
+  zone map 1439
+  goto 36.830031,43.909999 map 1439 r 8
+  note "Talk to Taldan"
+  note "Buy 25 [Melon Juice] from him"
+  collect 1205 x25 @36.830031,43.909999 map 1439 optional -- Melon Juice (25)
+step
+  zone map 1439
+  goto 36.830031,43.909999 map 1439 r 8
+  note "Talk to Taldan"
+  note "Buy 20 [Melon Juice] from him"
+  collect 1205 x20 @36.830031,43.909999 map 1439 optional -- Melon Juice (20)
+step
+  zone map 1439
+  goto 36.830031,43.909999 map 1439 r 8
+  note "Talk to Taldan"
+  note "Buy 15 [Melon Juice] from him"
+  collect 1205 x15 @36.830031,43.909999 map 1439 optional -- Melon Juice (15)
+step
+  zone map 1439
+  goto 36.830031,43.909999 map 1439 r 8
+  note "Talk to Taldan"
+  note "Buy 10 [Melon Juice] from him"
+  collect 1205 x10 @36.830031,43.909999 map 1439 optional -- Melon Juice (10)
+step
+  zone map 1439
+  goto 36.830031,43.909999 map 1439 r 8
+  note "Talk to Taldan"
+  note "Buy 5 [Melon Juice] from him"
+  collect 1205 x5 @36.830031,43.909999 map 1439 optional -- Melon Juice (5)
+step
+  when !turnedin 4740
+  zone map 1439
+  note "Talk to Laird"
+  note "Buy up to 40 [Longjaw Mud Snappers] from him"
+  collect 4592 x40 @36.770031,44.280075 map 1439 -- Longjaw Mud Snapper (40)
+step
+  zone map 1439
+  note "REMOVE THIS STEP LATER"
+  accept 4740 -- Accept WANTED: Murkdeep!
+  goto 37.219954,44.220075 map 1439 r 8 optional
+step
+  zone map 1439
+  note "Talk to Gubber"
+  accept 1138 -- Accept Fruit of the Sea
+step
+  when onquest 948
+  turnin 948 -- Turn in Onu
+step
+  zone map 1439
+  note "Talk to Onu"
+  accept 944 -- Accept The Master's Glaive
+step
+  zone map 1439
+  note "Talk to Kerlonian"
+  note "If Kerlonian is not there, skip this step"
+  accept 5321 -- Accept The Sleeper Has Awakened
+step
+  when onquest 5321
+  zone map 1439
+  note "Open Kerlonian's Chest. Loot it for the Horn of Awakening"
+  note "Use the [Horn of Awakening] on Kerlonian when he falls asleep"
+  note "These both have a 5 second cast time"
+  collect 13536 x1 quest 5321.1 -- Horn of Awakening (1)
+step
+  when onquest 5321
+  when onquest 986
+  along until Glaive1
+  collect 5386 x5 quest 986.1 @44.390031,76.299928 map 1439 -- Fine Moonstalker Pelt (5)
+step
+  when onquest 5321
+  along until Glaive1
+  zone map 1439
+  note "AoE Moonstalker Sires. Loot them for their Fine Moonstalker Pelts"
+  note "Moonstalker Sires share spawns with Grizzled Thistle Bears and Giant Foreststriders"
+  use 13536 @44.390031,76.299928 map 1439
+step
+  when onquest 5321
+  when onquest 1003
+  along until Glaive1
+  collect 5414 x4 quest 1003.1 @44.390031,76.299928 map 1439 -- Grizzled Scalp (4)
+step
+  when onquest 5321
+  along until Glaive1
+  zone map 1439
+  note "AoE Grizzled Thistle Bears. Loot them for their Grizzled Scalps"
+  note "Grizzled Thistle Bears share spawns with Moonstalker Sires and Giant Foreststriders"
+  use 13536 @44.390031,76.299928 map 1439
+step
+  when onquest 5321
+  label Glaive1
+  zone map 1439
+  goto 38.650031,87.339929 map 1439 r 8 optional
+  note "Travel to The Master's Glaive"
+  complete 944 -- Enter the Master's Glaive (1)
+  use 13536 @38.650031,87.339929 map 1439
+step
+  when onquest 5321
+  along until Therylune1
+  zone map 1439
+  note "AoE Twilight Disciples and Twilight Thugs. Loot them for the [Book: The Powers Below]"
+  note "Use the [Book: The Powers Below] to start the quest"
+  collect 5352 x1 @38.650031,87.339929 map 1439 optional -- Book: The Powers Below (1)
+  accept 968 -- Accept The Powers Below
+  use 13536 @38.650031,87.339929 map 1439
+step
+  when onquest 5321
+  along until next_20
+  zone map 1439
+  note "Place the [Phial of Scrying] on the ground"
+  note "This has a 5 second cast time"
+  note "Click the Phial of Scrying on the ground"
+  turnin 944 -- Turn in The Master's Glaive
+  accept 949 -- Accept The Twilight Camp
+  use 13536 @38.650031,87.339929 map 1439
+  use 5251 @38.650031,87.339929 map 1439
+step
+  when onquest 5321
+  label next_20
+  zone map 1439
+  note "Talk to Therylune"
+  note "If Therylune is not there, AoE Twilight Disciples and Twilight Thugs for [Book: The Powers Below] until she's up"
+  accept 945 -- Accept Therylune's Escape
+  use 13536 @38.650031,87.339929 map 1439
+step
+  when onquest 5321
+  along until Tome1
+  zone map 1439
+  note "Escort Therylune"
+  complete 945 -- Escort Therylune away from the Master's Glaive (1)
+  use 13536 @38.650031,87.339929 map 1439
+step
+  when onquest 5321
+  zone map 1439
+  note "Place the [Phial of Scrying] on the ground"
+  note "This has a 5 second cast time"
+  note "Click the Phial of Scrying on the ground"
+  turnin 944 -- Turn in The Master's Glaive
+  accept 949 -- Accept The Twilight Camp
+  use 13536 @38.550031,86.030006 map 1439
+  use 5251 @38.550031,86.030006 map 1439
+step
+  when onquest 5321
+  label Tome1
+  zone map 1439
+  note "Click the Twilight Tome"
+  turnin 949 -- Turn in The Twilight Camp
+  accept 950 -- Accept Return to Onu
+  use 13536 @38.550031,86.030006 map 1439
+step
+  when onquest 950
+  label Therylune1
+  zone map 1439
+  note "Escort Therylune"
+  note "Make sure Therylune stays in render range or you will fail the quest"
+  complete 945 -- Escort Therylune away from the Master's Glaive (1)
+  use 13536 @38.550031,86.030006 map 1439
+step
+  when onquest 950
+  when onquest 986
+  along until Remtravel1
+  collect 5386 x5 quest 986.1 @38.550031,86.030006 map 1439 -- Fine Moonstalker Pelt (5)
+step
+  when onquest 950
+  along until Remtravel1
+  zone map 1439
+  note "AoE Moonstalker Sires. Loot them for their Fine Moonstalker Pelts"
+  note "Moonstalker Sires share spawns with Grizzled Thistle Bears and Giant Foreststriders"
+  use 13536 @38.550031,86.030006 map 1439
+step
+  when onquest 950
+  when onquest 1003
+  along until Remtravel1
+  collect 5414 x4 quest 1003.1 @38.550031,86.030006 map 1439 -- Grizzled Scalp (4)
+step
+  when onquest 950
+  along until Remtravel1
+  zone map 1439
+  note "AoE Grizzled Thistle Bears. Loot them for their Grizzled Scalps"
+  note "Grizzled Thistle Bears share spawns with Moonstalker Sires and Giant Foreststriders"
+  use 13536 @38.550031,86.030006 map 1439
+step
+  when onquest 950
+  when onquest 729
+  turnin 729 -- Turn in The Absent Minded Prospector
+step
+  when onquest 950
+  label Remtravel1
+  zone map 1439
+  note "Talk to Remtravel to start the escort"
+  accept 731 -- Accept The Absent Minded Prospector
+  use 13536 @35.719954,83.690005 map 1439
+step
+  when onquest 950
+  zone map 1439
+  goto 35.350031,84.720082 map 1439 r 40 optional
+  goto 36.219954,86.120006 map 1439 r 40 optional
+  goto 35.350031,84.720082 map 1439 r 40 optional
+  goto 35.719954,83.690005 map 1439 r 40 optional
+  goto 31.279954,87.390082 map 1439 r 8 optional
+  note "Escort Remtravel"
+  note "When the Gravelflint Bonesnapper and Gravelflint Geomancer spawn, let the Gravelflint Geomancer cast [Fireball] on Remtravel, then cast [Polymorph] on it. Kill the Gravelflint Bonesnapper and then the Gravelflint Geomancer"
+  complete 731 -- Escort Prospector Remtravel (1)
+  use 13536 @31.279954,87.390082 map 1439
+step
+  when onquest 950
+  when onquest 986
+  along until SeaC
+  collect 5386 x5 quest 986.1 @31.279954,87.390082 map 1439 -- Fine Moonstalker Pelt (5)
+step
+  when onquest 950
+  along until SeaC
+  zone map 1439
+  note "AoE Moonstalker Sires. Loot them for their Fine Moonstalker Pelts"
+  note "Moonstalker Sires share spawns with Grizzled Thistle Bears and Giant Foreststriders"
+  use 13536 @31.279954,87.390082 map 1439
+step
+  when onquest 950
+  when onquest 1003
+  along until SeaC
+  collect 5414 x4 quest 1003.1 @31.279954,87.390082 map 1439 -- Grizzled Scalp (4)
+step
+  when onquest 950
+  along until SeaC
+  zone map 1439
+  note "AoE Grizzled Thistle Bears. Loot them for their Grizzled Scalps"
+  note "Grizzled Thistle Bears share spawns with Moonstalker Sires and Giant Foreststriders"
+  use 13536 @31.279954,87.390082 map 1439
+step
+  when onquest 950
+  along until SeaC
+  note "Don't re-awaken Kerlonian from now on"
+  note "Keep an eye out for Strider Clutchmother"
+step
+  when onquest 950
+  label SeaC
+  zone map 1439
+  note "Loot the Beached Sea Creature on the ground"
+  note "Loot it at the Neck"
+  note "This has a 5 second cast time"
+  accept 4733 -- Accept Beached Sea Creature
+step
+  when onquest 950
+  when onquest 5321
+  along until next_34
+  note "Abandon The Sleeper has Awakened"
+step
+  when onquest 950
+  label next_34
+  zone map 1439
+  note "Loot the Beached Sea Turtle on the ground"
+  note "The Turtle Shell has LoS"
+  note "This has a 5 second cast time"
+  accept 4732 -- Accept Beached Sea Turtle
+step
+  when onquest 950
+  along until SeaCreature
+  zone map 1439
+  note "AoE Encrusted Tide Crawlers. Loot them for their Fine Crab Chunks"
+  collect 12237 x6 quest 1138.1 @31.219954,85.560082 map 1439 -- Fine Crab Chunks (6)
+step
+  when onquest 950
+  zone map 1439
+  note "Loot the Beached Sea Turtle on the ground"
+  note "The Turtle Shell has LoS"
+  note "This has a 5 second cast time"
+  accept 4731 -- Accept Beached Sea Turtle
+step
+  when onquest 950
+  label SeaCreature
+  zone map 1439
+  note "Loot the Beached Sea Creature on the ground"
+  note "This has a 5 second cast time"
+  accept 4730 -- Accept Beached Sea Creature
+step
+  when onquest 950
+  along until next_39
+  zone map 1439
+  note "AoE Reef Crawlers. Loot them for their Fine Crab Chunks"
+  collect 12237 x6 quest 1138.1 @32.699954,80.730081 map 1439 -- Fine Crab Chunks (6)
+step
+  when onquest 950
+  label next_39
+  zone map 1439
+  note "Clear the Murloc Camp without moving to the center of the camp"
+  note "Once you clear everything, move to the center of the camp to summon 3 waves (3 Coastrunners, 2 Warriors, Murkdeep and a Hunter)"
+  note "If you're lucky, Murkdeep might already be up about 30 yards off the shore to the west (if someone died on him before)"
+  kill 10323 x1 quest 4740.1 -- Murkdeep (1)
+step
+  when onquest 950
+  along until next_41
+  zone map 1439
+  note "AoE Reef Crawlers. Loot them for their Fine Crab Chunks"
+  collect 12237 x6 quest 1138.1 @35.419954,71.52008 map 1439 -- Fine Crab Chunks (6)
+step
+  when onquest 950
+  label next_41
+  zone map 1439
+  note "Loot the Beached Sea Creature on the ground"
+  note "This has a 5 second cast time"
+  accept 4728 -- Accept Beached Sea Creature
+step
+  when onquest 950
+  zone map 1439
+  note "AoE Reef Crawlers. Loot them for their Fine Crab Chunks"
+  collect 12237 x6 quest 1138.1 @34.179954,80.709928 map 1439 -- Fine Crab Chunks (6)
+step
+  when onquest 986
+  along until SeaCreatureGiga
+  collect 5386 x5 quest 986.1 @34.179954,80.709928 map 1439 -- Fine Moonstalker Pelt (5)
+step
+  along until SeaCreatureGiga
+  zone map 1439
+  note "AoE Moonstalker Sires. Loot them for their Fine Moonstalker Pelts"
+  note "Moonstalker Sires share spawns with Grizzled Thistle Bears and Giant Foreststriders"
+  use 13536 @34.179954,80.709928 map 1439
+step
+  when onquest 1003
+  along until SeaCreatureGiga
+  collect 5414 x4 quest 1003.1 @34.179954,80.709928 map 1439 -- Grizzled Scalp (4)
+step
+  along until SeaCreatureGiga
+  zone map 1439
+  note "AoE Grizzled Thistle Bears. Loot them for their Grizzled Scalps"
+  note "Grizzled Thistle Bears share spawns with Moonstalker Sires and Giant Foreststriders"
+  use 13536 @34.179954,80.709928 map 1439
+step
+  when complete 950
+  label Onu2
+  zone map 1439
+  note "Talk to Onu"
+  turnin 950 -- Turn in Return to Onu
+step
+  label SeaCreatureGiga
+  zone map 1439
+  note "Loot the Beached Sea Creature on the ground"
+  note "This has a 5 second cast time"
+  accept 4728 -- Accept Beached Sea Creature
+step
+  along until next_48
+  zone map 1439
+  note "AoE Reef Crawlers. Loot them for their Fine Crab Chunks"
+  collect 12237 x6 quest 1138.1 @35.959954,75.219928 map 1439 -- Fine Crab Chunks (6)
+step
+  label next_48
+  zone map 1439
+  note "Clear the Murloc Camp without moving to the center of the camp"
+  note "Once you clear everything, move to the center of the camp to summon 3 waves (3 Coastrunners, 2 Warriors, Murkdeep and a Hunter)"
+  note "If you're lucky, Murkdeep might already be up about 30 yards off the shore to the west (if someone died on him before)"
+  kill 10323 x1 quest 4740.1 -- Murkdeep (1)
+step
+  along until next_50
+  zone map 1439
+  note "AoE Reef Crawlers. Loot them for their Fine Crab Chunks"
+  collect 12237 x6 quest 1138.1 @34.179954,80.709928 map 1439 -- Fine Crab Chunks (6)
+step
+  label next_50
+  zone map 1439
+  note "Loot the Beached Sea Creature on the ground"
+  note "This has a 5 second cast time"
+  accept 4730 -- Accept Beached Sea Creature
+step
+  zone map 1439
+  note "AoE Encrusted Tide Crawlers. Loot them for their Fine Crab Chunks"
+  collect 12237 x6 quest 1138.1 @32.079954,83.280081 map 1439 -- Fine Crab Chunks (6)
+step
+  zone map 1439
+  note "Loot the Beached Sea Turtle on the ground"
+  note "The Turtle Shell has LoS"
+  note "This has a 5 second cast time"
+  accept 4731 -- Accept Beached Sea Turtle
+step
+  zone map 1439
+  note "Loot the Beached Sea Turtle on the ground"
+  note "The Turtle Shell has LoS"
+  note "This has a 5 second cast time"
+  accept 4732 -- Accept Beached Sea Turtle
+step
+  zone map 1439
+  note "Loot the Beached Sea Creature on the ground"
+  note "Loot it at the Neck"
+  note "This has a 5 second cast time"
+  accept 4733 -- Accept Beached Sea Creature
+step
+  when onquest 986
+  along until Remtravel3
+  collect 5386 x5 quest 986.1 @31.279954,87.390082 map 1439 -- Fine Moonstalker Pelt (5)
+step
+  along until Remtravel3
+  zone map 1439
+  note "AoE Moonstalker Sires. Loot them for their Fine Moonstalker Pelts"
+  note "Moonstalker Sires share spawns with Grizzled Thistle Bears and Giant Foreststriders"
+  use 13536 @31.279954,87.390082 map 1439
+step
+  when onquest 1003
+  along until Remtravel3
+  collect 5414 x4 quest 1003.1 @31.279954,87.390082 map 1439 -- Grizzled Scalp (4)
+step
+  along until Remtravel3
+  zone map 1439
+  note "AoE Grizzled Thistle Bears. Loot them for their Grizzled Scalps"
+  note "Grizzled Thistle Bears share spawns with Moonstalker Sires and Giant Foreststriders"
+  use 13536 @31.279954,87.390082 map 1439
+step
+  along until Remtravel3
+  note "Don't re-awaken Kerlonian from now on"
+  note "Keep an eye out for Strider Clutchmother"
+step
+  when onquest 729
+  turnin 729 -- Turn in The Absent Minded Prospector
+step
+  label Remtravel3
+  zone map 1439
+  note "Talk to Remtravel to start the escort"
+  accept 731 -- Accept The Absent Minded Prospector
+step
+  zone map 1439
+  goto 35.350031,84.720082 map 1439 r 40 optional
+  goto 36.219954,86.120006 map 1439 r 40 optional
+  goto 35.350031,84.720082 map 1439 r 40 optional
+  goto 35.719954,83.690005 map 1439 r 40 optional
+  goto 38.650031,87.339929 map 1439 r 8
+  note "Escort Remtravel"
+  note "When the Gravelflint Bonesnapper and Gravelflint Geomancer spawn, let the Gravelflint Geomancer cast [Fireball] on Remtravel, then cast [Polymorph] on it. Kill the Gravelflint Bonesnapper and then the Gravelflint Geomancer"
+  complete 731 -- Escort Prospector Remtravel (1)
+step
+  when onquest 986
+  along until Glaive2
+  zone map 1439
+  note "AoE Moonstalker Sires. Loot them for their Fine Moonstalker Pelts"
+  note "Moonstalker Sires share spawns with Grizzled Thistle Bears and Giant Foreststriders"
+  collect 5386 x5 quest 986.1 @38.650031,87.339929 map 1439 -- Fine Moonstalker Pelt (5)
+step
+  when onquest 1003
+  along until Glaive2
+  zone map 1439
+  note "AoE Grizzled Thistle Bears. Loot them for their Grizzled Scalps"
+  note "Grizzled Thistle Bears share spawns with Moonstalker Sires and Giant Foreststriders"
+  collect 5414 x4 quest 1003.1 @38.650031,87.339929 map 1439 -- Grizzled Scalp (4)
+step
+  label Glaive2
+  zone map 1439
+  goto 38.650031,87.339929 map 1439 r 8
+  note "Travel to The Master's Glaive"
+  complete 944 -- Enter the Master's Glaive (1)
+step
+  along until Therylune2
+  zone map 1439
+  note "AoE Twilight Disciples and Twilight Thugs. Loot them for the [Book: The Powers Below]"
+  note "Use the [Book: The Powers Below] to start the quest"
+  collect 5352 x1 @38.650031,87.339929 map 1439 optional -- Book: The Powers Below (1)
+  accept 968 -- Accept The Powers Below
+step
+  along until next_65
+  zone map 1439
+  note "Place the [Phial of Scrying] on the ground"
+  note "This has a 5 second cast time"
+  note "Click the Phial of Scrying on the ground"
+  turnin 944 -- Turn in The Master's Glaive
+  accept 949 -- Accept The Twilight Camp
+  use 5251 @38.650031,87.339929 map 1439
+step
+  label next_65
+  zone map 1439
+  note "Talk to Therylune"
+  note "If Therylune is not there, AoE Twilight Disciples and Twilight Thugs for [Book: The Powers Below] until she's up"
+  accept 945 -- Accept Therylune's Escape
+step
+  along until Tome2
+  note "Escort Therylune"
+  complete 945 -- Escort Therylune away from the Master's Glaive (1)
+step
+  zone map 1439
+  note "Place the [Phial of Scrying] on the ground"
+  note "This has a 5 second cast time"
+  note "Click the Phial of Scrying on the ground"
+  turnin 944 -- Turn in The Master's Glaive
+  accept 949 -- Accept The Twilight Camp
+  use 5251 @38.550031,86.030006 map 1439
+step
+  label Tome2
+  zone map 1439
+  note "Click the Twilight Tome"
+  turnin 949 -- Turn in The Twilight Camp
+  accept 950 -- Accept Return to Onu
+  use 13536 @38.550031,86.030006 map 1439
+step
+  label Therylune2
+  zone map 1439
+  note "Escort Therylune"
+  note "Make sure Therylune stays in render range or you will fail the quest"
+  complete 945 -- Escort Therylune away from the Master's Glaive (1)
+  use 13536 @38.550031,86.030006 map 1439
+step
+  when onquest 986
+  along until Onu3
+  zone map 1439
+  note "AoE Moonstalker Sires. Loot them for their Fine Moonstalker Pelts"
+  note "Moonstalker Sires share spawns with Grizzled Thistle Bears and Giant Foreststriders"
+  collect 5386 x5 quest 986.1 @38.550031,86.030006 map 1439 -- Fine Moonstalker Pelt (5)
+step
+  when onquest 1003
+  label Scalps2
+  along until Onu3
+  zone map 1439
+  note "AoE Grizzled Thistle Bears. Loot them for their Grizzled Scalps"
+  note "Grizzled Thistle Bears share spawns with Moonstalker Sires and Giant Foreststriders"
+  collect 5414 x4 quest 1003.1 @38.550031,86.030006 map 1439 -- Grizzled Scalp (4)
+step
+  when onquest 1003
+  zone map 1439
+  note "AoE Grizzled Thistle Bears. Loot them for their Grizzled Scalps"
+  note "Grizzled Thistle Bears share spawns with Moonstalker Sires and Giant Foreststriders"
+  collect 5414 x4 quest 1003.1 @38.550031,86.030006 map 1439 -- Grizzled Scalp (4)
+step
+  when onquest 1003
+  along until Onu3
+  zone map 1439
+  note "Click Buzzbox 525"
+  turnin 1003 -- Turn in Buzzbox 525
+step
+  label Onu3
+  zone map 1439
+  note "Talk to Onu"
+  turnin 950 -- Turn in Return to Onu
+step
+  zone map 1439
+  note "Talk to Kerlonian"
+  note "If Kerlonian is not there, skip this step"
+  accept 5321 -- Accept The Sleeper Has Awakened
+step
+  when onquest 5321
+  zone map 1439
+  note "Open Kerlonian's Chest. Loot it for the Horn of Awakening"
+  note "This has a 5 second cast time"
+  collect 13536 x1 quest 5321.1 -- Horn of Awakening (1)
+step
+  when onquest 986
+  along until 525
+  zone map 1439
+  note "AoE Moonstalker Sires. Loot them for their Fine Moonstalker Pelts"
+  note "Moonstalker Sires share spawns with Grizzled Thistle Bears and Giant Foreststriders"
+  collect 5386 x5 quest 986.1 @44.390031,76.299928 map 1439 -- Fine Moonstalker Pelt (5)
+step
+  when onquest 1003
+  collect 5414 x4 quest 1003.1 @40.519954,80.570005 map 1439 -- Grizzled Scalp (4)
+step
+  zone map 1439
+  goto 43.939954,80.139928 map 1439 r 60 optional
+  goto 43.090031,81.720081 map 1439 r 60 optional
+  goto 41.590031,83.520081 map 1439 r 60 optional
+  goto 40.150031,83.019929 map 1439 r 60 optional
+  goto 38.699954,82.440081 map 1439 r 60 optional
+  goto 38.130031,79.749928 map 1439 r 60 optional
+  goto 40.519954,80.570005 map 1439 r 60 optional
+  goto 43.939954,80.139928 map 1439 r 60 optional
+  note "AoE Grizzled Thistle Bears. Loot them for their Grizzled Scalps"
+  note "Grizzled Thistle Bears share spawns with Moonstalker Sires and Giant Foreststriders"
+  use 13536 @40.519954,80.570005 map 1439
+step
+  when onquest 1003
+  turnin 1003 -- Turn in Buzzbox 525
+step
+  label 525
+  zone map 1439
+  note "Click Buzzbox 525"
+  use 13536 @41.399954,80.559928 map 1439
+step
+  when onquest 986
+  collect 5386 x5 quest 986.1 @44.570031,93.030083 map 1439 -- Fine Moonstalker Pelt (5)
+step
+  zone map 1439
+  goto 41.099954,84.170005 map 1439 r 70 optional
+  goto 40.379954,90.48993 map 1439 r 70 optional
+  goto 36.579954,90.54993 map 1439 r 70 optional
+  goto 36.699954,94.59993 map 1439 r 70 optional
+  goto 42.759954,90.69993 map 1439 r 70 optional
+  goto 41.770031,87.879929 map 1439 r 70 optional
+  goto 44.570031,93.030083 map 1439 r 70 optional
+  goto 41.099954,84.170005 map 1439 r 70 optional
+  goto 40.379954,90.48993 map 1439 r 70 optional
+  goto 36.579954,90.54993 map 1439 r 70 optional
+  goto 36.699954,94.59993 map 1439 r 70 optional
+  goto 42.759954,90.69993 map 1439 r 70 optional
+  goto 41.770031,87.879929 map 1439 r 70 optional
+  note "AoE Moonstalker Matriarchs and Moonstalker Sires. Loot them for their Fine Moonstalker Pelts"
+  note "Moonstalker Sires share spawns with Grizzled Thistle Bears and Giant Foreststriders"
+  use 13536 @44.570031,93.030083 map 1439
+step
+  when onquest 5321
+  along until Sleeper
+  level 19+4635 -- Grind to 4635+/21300xp
+step
+  along until Delgren
+  zone map 1439
+  note "AoE Ghostpaw Runners. Loot them for their Lean Wolf Flanks"
+  collect 1015 x10 @44.570031,93.030083 map 1439 optional -- Lean Wolf Flank (10)
+step
+  when onquest 5321
+  label Sleeper
+  zone map 1440
+  note "Talk to Liladris"
+  turnin 5321 -- Turn in The Sleeper Has Awakened
+  use 13536 @27.259941,35.58002 map 1440
+step
+  when onquest 967
+  label Delgren
+  zone map 1440
+  note "Talk to Delgren"
+  turnin 967 -- Turn in The Tower of Althalaxx
+step
+  zone map 1440
+  note "Talk to Therysil"
+  turnin 945 -- Turn in Therylune's Escape
+step
+  zone map 1440
+  goto 34.409998,47.990036 map 1440 r 8
+  level 19+8720 -- Grind to 8720+/21300xp
+step
+  along until next_87
+  zone map 1440
+  goto 34.409998,47.990036 map 1440 r 8
+  note "Talk to Daelyshia"
+  fly "Auberdine" -- Fly to Auberdine
+step
+  label next_87
+  zone map 1439
+  note "Talk to Gwennyth and Gubber"
+  turnin 4728 -- Turn in Beached Sea Creature
+  turnin 4730 -- Turn in Beached Sea Creature
+  turnin 4731 -- Turn in Beached Sea Turtle
+  turnin 4732 -- Turn in Beached Sea Turtle
+  turnin 4733 -- Turn in Beached Sea Creature
+  turnin 1138 -- Turn in Fruit of the Sea
+  goto 36.090031,44.929999 map 1439 r 8 optional
+step
+  zone map 1439
+  note "Talk to Glynda"
+  turnin 4740 -- Turn in WANTED: Murkdeep!
+step
+  zone map 1439
+  note "Talk to Terenthis and Gershala"
+  goto 39.370031,43.479923 map 1439 r 8 optional
+  goto 38.319954,43.039999 map 1439 r 8
+step
+  when onquest 986
+  turnin 986 -- Turn in A Lost Master
+step
+  when onquest 3765
+  turnin 3765 -- Turn in The Corruption Abroad
+step
+  when has 6889 x20
+  when !turnedin 90
+  zone map 1439
+  note "Talk to Gorbold"
+  note "Buy 20 [Mild Spices] from him"
+  collect 2678 x20 @38.110031,41.160075 map 1439 -- Mild Spices (20)
+step
+  when has 6889 x15
+  when !turnedin 90
+  zone map 1439
+  note "Talk to Gorbold"
+  note "Buy 15 [Mild Spices] from him"
+  collect 2678 x15 @38.110031,41.160075 map 1439 -- Mild Spices (15)
+step
+  when has 6889 x10
+  when !turnedin 90
+  zone map 1439
+  note "Talk to Gorbold"
+  note "Buy 10 [Mild Spices] from him"
+  collect 2678 x10 @38.110031,41.160075 map 1439 -- Mild Spices (10)
+step
+  when has 6889 x5
+  when !turnedin 90
+  zone map 1439
+  note "Talk to Gorbold"
+  note "Buy 5 [Mild Spices] from him"
+  collect 2678 x5 @38.110031,41.160075 map 1439 -- Mild Spices (5)
+step
+  when !turnedin 90
+  zone map 1439
+  note "Talk to Dalmond"
+  note "Buy a [Simple Wood] and [Flint and Tinder] from him"
+  collect 4470 x1 @37.450031,40.500075 map 1439 -- Simple Wood (1)
+  collect 4471 x1 @37.450031,40.500075 map 1439 -- Flint and Tinder (1)
+step
+  zone map 1439
+  note "Talk to Hollee"
+  turnin 731 -- Turn in The Absent Minded Prospector
+  accept 741 -- Accept The Absent Minded Prospector
+step
+  label BoatT
+  along until Teldrassil
+  zone map 1439
+  goto 37.470031,42.450075 map 1439 r 20 optional
+  goto 37.439954,43.029923 map 1439 r 20 optional
+  goto 36.850031,44.049923 map 1439 r 20 optional
+  goto 32.959954,41.880075 map 1439 r 20 optional
+  goto 33.230031,39.909922 map 1439 r 50 optional -- Travel toward the Darnassus Boat
+step
+  zone map 1439
+  goto 37.470031,42.450075 map 1439 r 20 optional
+  goto 37.439954,43.029923 map 1439 r 20 optional
+  goto 36.850031,44.049923 map 1439 r 20 optional
+  goto 32.959954,41.880075 map 1439 r 20 optional
+  goto 33.230031,39.909922 map 1439 r 50 -- Travel toward the Darnassus Boat
+step
+  along until Teldrassil
+  note "Cast [Basic Campfire] on the Boat (or Dock if the boat isn't visible yet)"
+  note "This has a 5 second cast time"
+step
+  zone map 1439
+  goto 37.470031,42.450075 map 1439 r 20 optional
+  goto 37.439954,43.029923 map 1439 r 20 optional
+  goto 36.850031,44.049923 map 1439 r 20 optional
+  goto 32.959954,41.880075 map 1439 r 20 optional
+  goto 33.230031,39.909922 map 1439 r 50 -- Travel toward the Darnassus Boat
+step
+  when has 769
+  label BoarM
+  along until Teldrassil
+  note "Cook any [Chunks of Boar Meat] into [Roasted Boar Meat]"
+step
+  when has 769
+  note "Cook any [Chunks of Boar Meat] into [Roasted Boar Meat]"
+step
+  along until Teldrassil
+  note "Start spam casting [Conjure Water r2] to conjure as much water as possible"
+step
+  label Teldrassil
+  zone map 1438
+  goto 54.909984,96.249871 map 1438 r 100 -- Take the Boat to Teldrassil
+step
+  along until next_102
+  zone map 1438
+  goto 55.520001,93.679853 map 1438 r 60 optional
+  goto 56.799935,92.89989 map 1438 r 40 optional
+  goto 57.47005,92.970018 map 1438 r 20 optional
+  goto 58.400001,94.000118 map 1438 r 20 optional -- Travel toward Vesprystus
+step
+  label next_102
+  zone map 1438
+  note "Talk to Vesprystus"
+  getfp "Rut'theran" @58.400001,94.000118 map 1438 -- Get the Rut'theran Village flight path
+step
+  along until next_104
+  zone map 1438
+  goto 55.885,89.35 map 1438 r 8
+step
+  label next_104
+  along until next_105
+  zone map 1457
+  goto 37.940138,48.139725 map 1457 r 30 optional
+  goto 38.199981,65.959596 map 1457 r 30 optional
+  goto 36.790216,72.439421 map 1457 r 30 optional
+  goto 31.239978,84.490789 map 1457 r 20 optional -- Travel toward Greywhisker
+step
+  label next_105
+  zone map 1457
+  note "Talk to Greywhisker"
+  turnin 741 -- Turn in The Absent Minded Prospector
+  accept 942 -- Accept The Absent Minded Prospector

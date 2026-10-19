@@ -1,0 +1,961 @@
+guide rxp-free/21-22-wailing-caverns-abf4653a
+title "21-22 Wailing Caverns"
+levels 21-22
+zone map 1413
+coords era
+faction Horde
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · Dungeon Guide 1-22"
+step
+  along until EnterWC
+  zone map 1414
+  goto 52.399997,55.200015 map 1414 r 30 -- Now you should be looking for a group to Wailing Caverns
+step
+  when turnedin 851
+  label Hezrul
+  zone map 1413
+  goto 45.640033,38.160074 map 1413 r 1 optional
+  goto 45.640033,38.160074 map 1413 r 50 optional
+  goto 45.839967,37.860056 map 1413 r 50 optional
+  goto 45.779967,37.409954 map 1413 r 50 optional
+  goto 45.95,37.109935 map 1413 r 50 optional
+  goto 45.929967,36.909972 map 1413 r 50 optional
+  goto 46.139967,36.850028 map 1413 r 50 optional
+  goto 46.19,36.880074 map 1413 r 50 optional
+  goto 46.28,36.859944 map 1413 r 50 optional
+  goto 46.46,37.170028 map 1413 r 50 optional
+  goto 46.58,37.310046 map 1413 r 50 optional
+  goto 46.630033,37.930065 map 1413 r 50 optional
+  goto 46.750033,38.389935 map 1413 r 50 optional
+  goto 47.27,38.980056 map 1413 r 50 optional
+  goto 47.470033,39.270009 map 1413 r 50 optional
+  goto 48.2,39.570028 map 1413 r 50 optional
+  goto 48.400033,39.579944 map 1413 r 50 optional
+  goto 48.599967,39.509935 map 1413 r 50 optional
+  goto 48.539967,39.960037 map 1413 r 50 optional
+  goto 48.580033,40.519963 map 1413 r 50 optional
+  goto 48.269967,40.819981 map 1413 r 50 optional
+  goto 48.059967,40.819981 map 1413 r 50 optional
+  goto 47.860033,41.130065 map 1413 r 50 optional
+  goto 47.489967,41.330028 map 1413 r 50 optional
+  goto 47.339967,41.610065 map 1413 r 50 optional
+  goto 47.219967,41.639963 map 1413 r 50 optional
+  goto 46.85,42.049954 map 1413 r 50 optional
+  goto 46.559967,41.930065 map 1413 r 50 optional
+  goto 46.270033,41.76 map 1413 r 50 optional
+  goto 46.030033,41.150046 map 1413 r 50 optional
+  goto 45.86,41.319963 map 1413 r 50 optional
+  goto 46.090033,40.979981 map 1413 r 50 optional
+  goto 46.079967,40.679963 map 1413 r 50 optional
+  goto 45.71,40.560074 map 1413 r 50 optional
+  goto 45.640033,38.160074 map 1413 r 50
+  note "Find & kill Hezrul Bloodmark. Loot him for his Head"
+  note "Hezrul patrols around the lake"
+  note "Hezrul's Head"
+step
+  along until next_5
+  zone map 1413
+  zone map 1414
+  goto 46.949967,35.180019 map 1413 r 1 optional
+  goto 46.949967,35.180019 map 1413 r 30 optional
+  goto 46.829967,34.739981 map 1413 r 20 optional
+  goto 51.979995,55.360002 map 1414 r 20 optional
+  goto 51.889995,55.549989 map 1414 r 10 optional
+  goto 51.869995,55.500016 map 1414 r 10 optional -- Run up the mountain at the Wailing Caverns meeting stone
+  note "Follow the arrow closely to reach the hidden cave"
+step
+  label next_5
+  zone map 1414
+  note "Talk to Nalpak and Ebru"
+  note "They are located above the the Wailing Caverns cave entrance"
+  accept 1486 -- Accept Deviate Hides
+  goto 51.909995,55.420002 map 1414 r 8 optional
+  accept 1487 -- Accept Deviate Eradication
+  goto 51.919995,55.440016 map 1414 r 8 optional
+step
+  when onquest 962,1486
+  along until EnterWC
+  note "It is recommended to divide the quests \"Serpentbloom\" and \"Deviate Hides\" if you're doing only 1 run"
+  note "There won't enough Serpentbloom and Deviate Hides for everybody"
+step
+  when onquest 962
+  along until EnterWC
+  zone map 1414
+  note "Loot the Serpentbloom on the ground"
+  note "Cast [Find Herbs] to see them on your minimap"
+  collect 5339 x10 quest 962.1 @51.919995,55.440016 map 1414 -- Serpentbloom (10)
+step
+  when onquest 962
+  along until EnterWC
+  zone map 1414
+  note "Loot the Serpentbloom on the ground"
+  collect 5339 x10 quest 962.1 @51.919995,55.440016 map 1414 -- Serpentbloom (10)
+step
+  when onquest 1486
+  along until EnterWC
+  zone map 1414
+  note "Kill all the Deviate Beasts you see. Loot them for their Hides"
+  collect 6443 x20 quest 1486.1 @51.919995,55.440016 map 1414 -- Deviate Hide (20)
+step
+  when onquest 1491
+  along until EnterWC
+  zone map 1414
+  note "Kill Ectoplasms. Loot them for their Essence"
+  collect 6464 x6 quest 1491.1 @51.919995,55.440016 map 1414 -- Wailing Essence (6)
+step
+  when onquest 959
+  label MadMagg
+  loop
+  zone map 1414
+  goto 51.969995,55.230015 map 1414 r 1
+  goto 51.819994,54.859986 map 1414 r 1
+  goto 52.009995,55.020014 map 1414 r 1
+  goto 52.149996,55.150001 map 1414 r 1
+  goto 51.969995,55.230015 map 1414 r 30
+  goto 51.819994,54.859986 map 1414 r 30
+  goto 52.009995,55.020014 map 1414 r 30
+  goto 52.149996,55.150001 map 1414 r 30
+  note "Kill Mad Magglish. Loot him for the 99-Year-Old Port"
+  note "He has a long respawn timer. Skip this step if you cannot find him"
+  collect 5334 x1 quest 959.1 -- 99-Year-Old Port (1)
+step
+  label EnterWC
+  zone map 1414
+  goto 51.889995,54.769985 map 1414 r 20 optional
+  goto 51.949995,54.559984 map 1414 r 20 optional
+  goto 52.269997,54.649985 map 1414 r 30 optional
+  goto 52.399997,55.200015 map 1414 r 30 -- Enter the WC Instance portal. Zone in
+step
+  when onquest 962
+  along until GlowingShard
+  zone map 1414
+  note "Loot the Serpentbloom on the ground"
+  note "It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough Serpentbloom for everybody"
+  note "Cast [Find Herbs] to see them on your minimap"
+  collect 5339 x10 quest 962.1 @52.399997,55.200015 map 1414 -- Serpentbloom (10)
+step
+  when onquest 962
+  along until GlowingShard
+  zone map 1414
+  note "Loot the Serpentbloom on the ground"
+  note "It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough Serpentbloom for everybody"
+  collect 5339 x10 quest 962.1 @52.399997,55.200015 map 1414 -- Serpentbloom (10)
+step
+  when onquest 1491
+  along until GlowingShard
+  zone map 1414
+  note "Kill Ectoplasms. Loot them for their Essence"
+  note "It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough Hides for everybody"
+  collect 6464 x6 quest 1491.1 @52.399997,55.200015 map 1414 -- Wailing Essence (6)
+step
+  when onquest 1487
+  along until GlowingShard
+  zone map 1414
+  note "Kill Deviate Ravagers, Vipers, Shamblers and Dreadfangs"
+  kill 3636 x7 quest 1487.1 @52.399997,55.200015 map 1414 -- Deviate Ravager (7)
+  kill 5755 x7 quest 1487.2 @52.399997,55.200015 map 1414 -- Deviate Viper (7)
+  kill 5761 x7 quest 1487.3 @52.399997,55.200015 map 1414 -- Deviate Shambler (7)
+  kill 5056 x7 quest 1487.4 @52.399997,55.200015 map 1414 -- Deviate Dreadfang (7)
+  collect 6443 x20 quest 1486.1 @52.399997,55.200015 map 1414 -- Deviate Hide (20)
+step
+  when onquest 914
+  label Gems
+  note "Kill Lord Cobrahn, Lady Anacondra, Lord Pythas and Lord Serpentis. Loot them for their Gems"
+  note "Gem of Cobrahn (1)"
+  note "Gem of Anacondra (1)"
+  note "Gem of Pythas (1)"
+  note "Gem of Serpentis (1)"
+step
+  along until GlowingShard
+  note "Talk to the Disciple of Naralex at the entrance of Wailing Caverns. Escort him safely to Naralex"
+step
+  label GlowingShard
+  zone map 1414
+  note "Once you have reached Naralex you will get attack by two waves of enemies and finally by Mutanus the Devourer"
+  note "Kill him and loot him for the [Glowing Shard] and use it to start the quest"
+  collect 10441 x1 @52.399997,55.200015 map 1414 -- Collect Glowing Shard (x1)
+  accept 6981 -- Accept The Glowing Shard
+  use 10441 @52.399997,55.200015 map 1414
+step
+  when onquest 1491
+  along until DeviateRaptors
+  zone map 1414
+  note "Kill Ectoplasms. Loot them for their Essence"
+  collect 6464 x6 quest 1491.1 @52.399997,55.200015 map 1414 -- Wailing Essence (6)
+step
+  when onquest 962
+  along until Ectoplasms
+  zone map 1414
+  note "Loot the Serpentbloom on the ground"
+  note "It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough Serpentbloom for everybody"
+  note "Cast [Find Herbs] to see them on your minimap"
+  collect 5339 x10 quest 962.1 @52.399997,55.200015 map 1414 -- Serpentbloom (10)
+step
+  when onquest 962
+  along until Ectoplasms
+  zone map 1414
+  note "Loot the Serpentbloom on the ground"
+  note "It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough Serpentbloom for everybody"
+  collect 5339 x10 quest 962.1 @52.399997,55.200015 map 1414 -- Serpentbloom (10)
+step
+  when onquest 1487
+  when onquest 1486
+  zone map 1414
+  note "Kill Deviate Ravagers, Vipers, Shamblers and Dreadfangs. . Loot them for their Hides"
+  kill 3636 x7 quest 1487.1 @52.399997,55.200015 map 1414 -- Deviate Ravager (7)
+  kill 5755 x7 quest 1487.2 @52.399997,55.200015 map 1414 -- Deviate Viper (7)
+  kill 5761 x7 quest 1487.3 @52.399997,55.200015 map 1414 -- Deviate Shambler (7)
+  kill 5056 x7 quest 1487.4 @52.399997,55.200015 map 1414 -- Deviate Dreadfang (7)
+  collect 6443 x20 quest 1486.1 @52.399997,55.200015 map 1414 -- Deviate Hide (20)
+step
+  when onquest 1487
+  zone map 1414
+  note "Kill Deviate Ravagers, Vipers, Shamblers and Dreadfangs"
+  kill 3636 x7 quest 1487.1 @52.399997,55.200015 map 1414 -- Deviate Ravager (7)
+  kill 5755 x7 quest 1487.2 @52.399997,55.200015 map 1414 -- Deviate Viper (7)
+  kill 5761 x7 quest 1487.3 @52.399997,55.200015 map 1414 -- Deviate Shambler (7)
+  kill 5056 x7 quest 1487.4 @52.399997,55.200015 map 1414 -- Deviate Dreadfang (7)
+step
+  when onquest 1486
+  label DeviateRaptors
+  zone map 1414
+  note "Kill Deviate Raptors. Loot them for their Hides"
+  collect 6443 x20 quest 1486.1 @52.399997,55.200015 map 1414 -- Deviate Hide (20)
+step
+  when onquest 1491
+  label Ectoplasms
+  zone map 1414
+  note "Kill Ectoplasms. Loot them for their Essence"
+  collect 6464 x6 quest 1491.1 @52.399997,55.200015 map 1414 -- Wailing Essence (6)
+step
+  when onquest 962
+  zone map 1414
+  note "Loot the Serpentbloom on the ground"
+  note "It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough Serpentbloom for everybody"
+  note "Cast [Find Herbs] to see them on your minimap"
+  collect 5339 x10 quest 962.1 @52.399997,55.200015 map 1414 -- Serpentbloom (10)
+step
+  when onquest 962
+  zone map 1414
+  note "Loot the Serpentbloom on the ground"
+  note "It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough Serpentbloom for everybody"
+  collect 5339 x10 quest 962.1 @52.399997,55.200015 map 1414 -- Serpentbloom (10)
+step
+  when !turnedin 97003
+  along until Cholaruk
+  note "Check with your group if they would like to do the quest \"Chol'aruk the Ravener\" (lvl 20 elite)"
+step
+  zone map 1413
+  note "Talk to Gur'ak"
+  accept 97003 -- Accept Chol'aruk the Ravener
+step
+  along until Cholaruk
+  zone map 1413
+  goto 58.028453,25.540796 map 1413 r 15 optional
+  goto 57.631743,26.052914 map 1413 r 10 optional
+  goto 57.818256,26.502868 map 1413 r 10 optional
+  goto 58.052138,26.906938 map 1413 r 10 optional
+  goto 57.728453,27.387974 map 1413 r 10 optional -- Travel to Chol'aruk the Ravener in the back of the cave
+step
+  when onquest 97003
+  label Cholaruk
+  zone map 1413
+  note "Kill Chol'aruk the Ravener. Loot him for his Head"
+  collect 276070 x1 quest 97003.1 -- Chol'aruk's Head (x1)
+step
+  along until GShard
+  zone map 1413
+  goto 51.5,30.340056 map 1413 r 8 optional
+  note "Talk to Devrak"
+  fly "Ratchet" optional -- Fly to Ratchet
+step
+  when complete 1491
+  when onquest 1491
+  zone map 1413
+  note "Talk to Mebok"
+  turnin 1491 -- Turn in Smart Drinks
+step
+  when complete 959
+  when onquest 959
+  zone map 1413
+  note "Talk to Bigglefuzz"
+  turnin 959 -- Turn in Trouble at the Docks
+step
+  when onquest 6981
+  label GShard
+  zone map 1413
+  note "Talk to Sputtervalve"
+  kill 3442 x1 quest 6981.1 -- Speak with someone in Ratchet about the Glowing Shard
+step
+  only Shaman
+  when onquest 1529
+  turnin 1529 -- Turn in Call of Water
+step
+  only Shaman
+  when onquest 1529
+  when onquest 874
+  turnin 874 -- Turn in Mahren Skyseer
+step
+  only Shaman
+  when onquest 1529
+  zone map 1413
+  note "Talk to Islen and Mahren Skyseer"
+  accept 1530 -- Accept Call of Water
+  accept 873 -- Accept Isha Awak
+  goto 65.83,43.86 map 1413 r 8 optional
+step
+  only Shaman
+  when turnedin 1529
+  zone map 1413
+  note "Talk to Islen and Mahren Skyseer"
+  accept 1530 -- Accept Call of Water
+  accept 873 -- Accept Isha Awak
+  goto 65.83,43.86 map 1413 r 8 optional
+step
+  only Shaman
+  when onquest 1528
+  turnin 1528 -- Turn in Call of Water
+step
+  only Shaman
+  when onquest 1528
+  when onquest 874
+  turnin 874 -- Turn in Mahren Skyseer
+step
+  only Shaman
+  when onquest 1528
+  zone map 1413
+  note "Talk to Islen and Mahren Skyseer"
+  accept 1530 -- Accept Call of Water
+  accept 873 -- Accept Isha Awak
+  goto 65.83,43.86 map 1413 r 8 optional
+step
+  only Shaman
+  when turnedin 1528
+  zone map 1413
+  note "Talk to Islen and Mahren Skyseer"
+  accept 1530 -- Accept Call of Water
+  accept 873 -- Accept Isha Awak
+  goto 65.83,43.86 map 1413 r 8 optional
+step
+  only Shaman
+  when turnedin 1529
+  when onquest 874
+  turnin 874 -- Turn in Mahren Skyseer
+step
+  only Shaman
+  when turnedin 1529
+  zone map 1413
+  note "Talk to Islen and Mahren Skyseer"
+  accept 1530 -- Accept Call of Water
+  accept 873 -- Accept Isha Awak
+  goto 65.83,43.86 map 1413 r 8 optional
+step
+  only Shaman
+  when turnedin 1528
+  when onquest 874
+  turnin 874 -- Turn in Mahren Skyseer
+step
+  only Shaman
+  when turnedin 1528
+  zone map 1413
+  note "Talk to Islen and Mahren Skyseer"
+  accept 1530 -- Accept Call of Water
+  accept 873 -- Accept Isha Awak
+  goto 65.83,43.86 map 1413 r 8 optional
+step
+  when onquest 874
+  turnin 874 -- Turn in Mahren Skyseer
+step
+  when onquest 874
+  zone map 1413
+  note "Talk to Mahren"
+  accept 873 -- Accept Isha Awak
+step
+  when turnedin 874
+  zone map 1413
+  note "Talk to Mahren"
+  accept 873 -- Accept Isha Awak
+step
+  when turnedin 874
+  zone map 1413
+  note "Talk to Mahren"
+  accept 873 -- Accept Isha Awak
+step
+  when turnedin 874
+  loop
+  zone map 1413
+  goto 65.669966,46.630009 map 1413 r 1
+  goto 64.739966,50.349972 map 1413 r 1
+  goto 63.599966,53.540056 map 1413 r 1
+  goto 65.770032,45.28 map 1413 r 50
+  goto 65.669966,46.630009 map 1413 r 50
+  goto 64.739966,50.349972 map 1413 r 50
+  goto 63.599966,53.540056 map 1413 r 50
+  note "Kill Isha Awak. Loot him for the Heart of Isha Awak"
+  note "He has four different spawn locations alongside the coast"
+  collect 5104 x1 quest 873.1 -- Heart of Isha Awak
+step
+  when complete 873
+  zone map 1413
+  note "Talk to Mahren"
+  turnin 873 -- Turn in Isha Awak
+step
+  along until TopofWCturnins
+  zone map 1413
+  goto 63.089966,37.159963 map 1413 r 8 optional
+  note "Talk to Bragok"
+  fly "Crossroads" optional -- Fly to The Crossroads
+step
+  when complete 97003
+  zone map 1413
+  note "Talk to Gur'ak"
+  accept 97003 -- Accept Chol'aruk the Ravener
+step
+  when complete 852
+  when onquest 852
+  zone map 1413
+  note "Talk to Regthar"
+  turnin 852 -- Turn in Hezrul Bloodmark
+step
+  when complete 855
+  when onquest 855
+  zone map 1413
+  note "Talk to Regthar"
+  turnin 855 -- Turn in Centaur Bracers
+step
+  along until CounterattackTurnin2
+  note "This next quest is very hard & grouping up is recommended. You can kite Warlord Krom'zar around using the building where the quest giver is located"
+step
+  when turnedin 852
+  zone map 1413
+  note "Talk to Regthar"
+  accept 4021 -- Accept Counterattack!
+step
+  when turnedin 852
+  zone map 1413
+  note "Kill Warlord Krom'zar once he appears. Loot the Banner that he drops on the ground"
+  note "Be careful! He is a strong elite and is guarded by at least two Kolkar mobs"
+  note "It can take up to 3 minutes until he spawns"
+  collect 11227 x1 quest 4021.1 @44.48,28.149935 map 1413 -- Piece of Krom'zar's Banner (1)
+step
+  when complete 4021
+  label CounterattackTurnin2
+  zone map 1413
+  note "Talk to Regthar"
+  turnin 4021 -- Turn in Counterattack!
+step
+  when complete 855
+  when onquest 855
+  zone map 1413
+  note "Talk to Regthar"
+  turnin 855 -- Turn in Centaur Bracers
+step
+  when onquest 855
+  along until TopofWCturnins
+  note "Abandon Centaur Bracers"
+step
+  along until next_58
+  zone map 1413
+  goto 50.489967,34.360037 map 1413 r 20 optional
+  goto 49.61,34.540019 map 1413 r 20 optional
+  goto 49.139967,34.020056 map 1413 r 20 optional
+  goto 48.179967,32.780019 map 1413 r 50 optional -- Travel up the mountain
+step
+  when onquest 6981
+  label next_58
+  zone map 1413
+  note "Talk to Falla"
+  turnin 6981 -- Turn in The Glowing Shard
+  accept 3369 -- Accept In Nightmares
+step
+  when turnedin 6981
+  zone map 1413
+  note "Talk to Falla"
+  accept 3369 -- Accept In Nightmares
+step
+  when complete 1487
+  when complete 1486
+  zone map 1414
+  note "Talk to Nalpak and Ebru"
+  note "They are located above the the Wailing Caverns cave entrance"
+  turnin 1486 -- Turn in Deviate Hides
+  goto 51.909995,55.420002 map 1414 r 8 optional
+  turnin 1487 -- Turn in Deviate Eradication
+  goto 51.919995,55.440016 map 1414 r 8 optional
+step
+  when complete 1487
+  zone map 1414
+  goto 51.919995,55.440016 map 1414 r 8 optional
+  note "Talk to Ebru"
+  note "He is located above the the Wailing Caverns cave entrance"
+  turnin 1487 -- Turn in Deviate Eradication
+step
+  when complete 1486
+  label TopofWCturnins
+  zone map 1414
+  goto 51.909995,55.420002 map 1414 r 8 optional
+  note "Talk to Nalpak"
+  note "He is located above the the Wailing Caverns cave entrance"
+  turnin 1486 -- Turn in Deviate Hides
+step
+  when !zone "Thunder Bluff"
+  along until WCEnd
+  zone map 1414
+  hearth "Thunder Bluff" optional -- Hearth to Thunder Bluff
+  use 6948 @51.909995,55.420002 map 1414
+step
+  when complete 914
+  when onquest 914
+  zone map 1456
+  note "Talk to Nara"
+  turnin 914 -- Turn in Leaders of the Fang
+step
+  when onquest 3369
+  zone map 1456
+  note "Talk to Hamuul"
+  turnin 3369 -- Turn in In Nightmares
+step
+  when complete 962
+  along until WCEnd
+  zone map 1456
+  goto 28.510371,28.949475 map 1456 r 10 -- Travel to the Spirit Rise and enter the pools of vision
+step
+  when complete 962
+  when onquest 962
+  label WCEnd
+  zone map 1456
+  note "Talk to Apothecary Zamah"
+  turnin 962 -- Turn in Serpentbloom
+step
+  only Paladin
+  when level>=20
+  when level<22
+  zone map 1456
+  goto 25.175281,14.400007 map 1456 r 8
+  note "Talk to Alodan"
+  learn 1866 "your class spells"
+step
+  only Paladin
+  when level>=22
+  zone map 1456
+  goto 25.175281,14.400007 map 1456 r 8
+  note "Talk to Alodan"
+  learn 1026 "your class spells"
+step
+  only Warlock
+  when !zone "The Barrens"
+  zone map 1456
+  goto 47.000431,49.819425 map 1456 r 8
+  note "Talk to Tal"
+  fly "Camp Taurajo" -- Fly to Camp Taurajo
+step
+  only Shaman
+  when !zone "The Barrens"
+  zone map 1456
+  goto 47.000431,49.819425 map 1456 r 8
+  note "Talk to Tal"
+  fly "Camp Taurajo" -- Fly to Camp Taurajo
+step
+  only Warlock
+  when onquest 1511
+  turnin 1511 -- Turn in Ken'zigla's Draught
+step
+  only Warlock
+  zone map 1413
+  note "Talk to Logmar"
+  accept 1515 -- Accept Dogran's Captivity
+step
+  only Warlock
+  when onquest 1515
+  turnin 1515 -- Turn in Dogran's Captivity
+step
+  only Warlock
+  zone map 1413
+  note "Talk to Dogran"
+  accept 1512 -- Accept Love's Gift
+step
+  only Shaman
+  along until CallofWater2
+  zone map 1413
+  goto 43.420033,77.409954 map 1413 r 60 -- Travel South toward Brine
+step
+  only Shaman
+  when onquest 1530
+  turnin 1530 -- Turn in Call of Water
+step
+  only Shaman
+  label CallofWater2
+  zone map 1413
+  note "Talk to Brine"
+  accept 1535 -- Accept Call of Water
+step
+  only Warlock
+  when !zone "Orgrimmar"
+  label next_82
+  zone map 1413
+  goto 44.45,59.160037 map 1413 r 8
+  note "Talk to Omusa"
+  fly "Orgrimmar" -- Fly to Orgrimmar
+step
+  only Shaman
+  when !zone "Orgrimmar"
+  zone map 1413
+  goto 44.45,59.160037 map 1413 r 8
+  note "Talk to Omusa"
+  fly "Orgrimmar" -- Fly to Orgrimmar
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  when !zone "Orgrimmar"
+  zone map 1456
+  goto 47.000431,49.819425 map 1456 r 8
+  note "Talk to Tal"
+  fly "Orgrimmar" -- Fly to Orgrimmar
+step
+  only Warlock
+  when onquest 1512
+  turnin 1512 -- Turn in Love's Gift
+step
+  only Warlock
+  zone map 1454
+  note "Talk to Gan'rul"
+  accept 1513 -- Accept The Binding
+step
+  only Warlock
+  along until next_86
+  zone map 1454
+  note "Use [Dogran's Pendant] at the Summoning Circle"
+  use 6626 @48.250149,45.270447 map 1454
+step
+  only Warlock
+  label next_86
+  zone map 1454
+  note "Kill the Summoned Succubus"
+  kill 5677 x1 quest 1513.1 -- Kill Summoned Succubus (1)
+  use 6626 @49.659669,50.149559 map 1454
+step
+  only Warlock
+  when onquest 1513
+  zone map 1454
+  note "Talk to Gan'rul"
+  turnin 1513 -- Turn in The Binding
+step
+  only Warlock
+  when level>=22
+  when level<24
+  zone map 1454
+  goto 48.620175,46.949913 map 1454 r 8
+  note "Talk to Mirket"
+  learn 6202 "your class spells"
+step
+  only Warlock
+  when level>=24
+  zone map 1454
+  goto 48.620175,46.949913 map 1454 r 8
+  note "Talk to Mirket"
+  learn 6223 "your class spells"
+step
+  only Rogue
+  along until next_91
+  zone map 1454
+  note "Talk to Kareth. Buy a [Jambiya] from him if you do not have a dagger"
+  collect 2207 x1 @45.640006,55.950187 map 1454 -- Collect Jambiya (1)
+step
+  only Rogue
+  label next_91
+  zone map 1454
+  note "Talk to Shenthul"
+  learn 921 "Pick Pocket"
+  learn 8676 "Ambush"
+  learn 1943 "Rupture"
+  learn 1856 "Vanish"
+  learn 1725 "Distract"
+  learn 1785 "Stealth Rank 2"
+  accept 2460 -- Accept The Shattered Salute
+step
+  only Rogue
+  zone map 1454
+  note "After Shenthul does his salute, type /Salute while targeting him"
+  kill 3401 x1 quest 2460.1 -- Shattered Salute Performed (1)
+step
+  only Rogue
+  when onquest 2460
+  turnin 2460 -- Turn in The Shattered Salute
+step
+  only Rogue
+  zone map 1454
+  note "Talk to Shenthul"
+  accept 2458 -- Accept Deep Cover
+step
+  only Rogue
+  when !turnedin 2479
+  zone map 1454
+  note "Talk to Rekkul. Buy [Flash Powder] from him"
+  collect 2928 x40 @42.100164,49.48996 map 1454 -- Collect Dust of Decay (40)
+  collect 3371 x40 @42.100164,49.48996 map 1454 -- Collect Empty Vial (40)
+  collect 5140 x20 @42.100164,49.48996 map 1454 -- Collect Flash Powder (20)
+step
+  only Priest
+  zone map 1454
+  goto 44.159902,48.449781 map 1454 r 8
+  note "Talk to Katis. Buy a [Burning Wand] from her"
+  collect 5210 x1 @44.159902,48.449781 map 1454 optional -- Collect Burning Wand (1)
+step
+  only Warlock
+  zone map 1454
+  goto 44.159902,48.449781 map 1454 r 8
+  note "Talk to Katis. Buy a [Burning Wand] from her"
+  collect 5210 x1 @44.159902,48.449781 map 1454 optional -- Collect Burning Wand (1)
+step
+  only Mage
+  when level>=22
+  when level<24
+  zone map 1454
+  goto 38.35998,85.54023 map 1454 r 8
+  note "Talk to Pephredo"
+  learn 2138 "your class spells"
+step
+  only Mage
+  when level>=24
+  zone map 1454
+  goto 38.35998,85.54023 map 1454 r 8
+  note "Talk to Pephredo"
+  learn 2121 "your class spells"
+step
+  only Mage
+  zone map 1454
+  goto 38.660136,85.409807 map 1454 r 8
+  note "Talk to Thuul at the top of the hut"
+  learn 3567 "Teleport: Orgrimmar"
+step
+  only Priest,Troll
+  when onquest 5642
+  turnin 5642 -- Turn in Shadowguard
+step
+  only Priest,Troll
+  zone map 1454
+  note "Talk to Ur'kyo"
+  train 6018 -- Train your class spells
+step
+  only Priest,Undead
+  when level>=22
+  when level<24
+  zone map 1454
+  goto 35.590134,87.800187 map 1454 r 8
+  note "Talk to Ur'kyo"
+  learn 8103 "your class spells"
+step
+  only Priest,Undead
+  when level>=24
+  zone map 1454
+  goto 35.590134,87.800187 map 1454 r 8
+  note "Talk to Ur'kyo"
+  learn 3747 "your class spells"
+step
+  only Rogue
+  when !zone "The Barrens"
+  along until MissionProbable
+  zone map 1454
+  goto 26.219713,61.579768 map 1454 r 80 optional
+  goto 15.660075,63.329791 map 1454 r 30 optional
+  goto 18.029951,60.509656 map 1454 r 50 optional -- Enter The Barrens through the Western Exit
+step
+  only Druid
+  when !zone "The Barrens"
+  along until MissionProbable
+  zone map 1454
+  goto 26.219713,61.579768 map 1454 r 80 optional
+  goto 15.660075,63.329791 map 1454 r 30 optional
+  goto 18.029951,60.509656 map 1454 r 50 optional -- Enter The Barrens through the Western Exit
+step
+  only Rogue
+  along until MissionProbable
+  zone map 1413
+  goto 57.629967,7.480037 map 1413 r 120 -- Travel toward The Sludge Fen
+step
+  only Druid
+  along until MissionProbable
+  zone map 1413
+  goto 57.629967,7.480037 map 1413 r 120 -- Travel toward The Sludge Fen
+step
+  only Druid
+  when !turnedin 31
+  zone map 1413
+  note "Loot the Strange Lockbox in the water for the [Half Pendant of Aquatic Agility]"
+  collect 15883 x1 @56.669967,8.32 map 1413 -- Half Pendant of Aquatic Agility (1)
+step
+  only Rogue
+  along until next_106
+  zone map 1413
+  note "Target Taskmaster Fizzule, then use your [Flare Gun] TWICE and type /Salute"
+  note "Be careful! Do NOT approach him until he becomes friendly or he will attack you!"
+  use 8051 @55.7,5.8899537 map 1413
+step
+  only Rogue
+  when onquest 2458
+  turnin 2458 -- Turn in Deep Cover
+step
+  only Rogue
+  label next_106
+  zone map 1413
+  note "Talk to Taskmaster Fizzule"
+  accept 2478 -- Accept Mission: Possible But Not Probable
+step
+  only Rogue
+  label MissionProbable
+  note "Review this source step manually."
+step
+  only Druid
+  note "Review this source step manually."
+step
+  only Rogue
+  zone map 1413
+  note "Use [Pick Pocket] on Foreman Silixiz for his Tower Key"
+  collect 8072 x1 quest 2478.5 -- Silixiz's Tower Key (1)
+step
+  only Rogue
+  along until roguetowerq
+  note "Each mob here will take increased damage to certain abilities"
+  note "Use [Ambush] on the Mutated Venture Co. Drones"
+  note "Use [Rupture] on the Venture Co. Patrollers"
+  note "Use [Eviscerate] on the Venture Co. Lookouts once (1 combo point)"
+step
+  only Rogue
+  when onquest 2478
+  label roguetowerq
+  zone map 1413
+  note "Run into the Rogue Tower and kill Drones, Patrollers and Lookouts"
+  kill 7310 x2 quest 2478.1 @54.719967,5.7400185 map 1413 -- Mutated Venture Co. Drone (2)
+  kill 7308 x2 quest 2478.3 @54.719967,5.7400185 map 1413 -- Venture Co. Patroller (2)
+  kill 7307 x2 quest 2478.2 @54.719967,5.7400185 map 1413 -- Venture Co. Lookout (2)
+step
+  only Rogue
+  zone map 1413
+  note "At the top of the tower you'll find Gallywix. Loot him for his Head"
+  note "Use [Ambush] to reduce his HP to half. Use [Gouge] to restore energy and use [Evasion]"
+  note "Remember to use a Potion and [Thistle Tea] if needed"
+  collect 8074 x1 quest 2478.4 -- Gallywix's Head (1)
+step
+  only Rogue
+  when onquest 2478
+  zone map 1413
+  note "Use your lock picking to open Gallywix's Lockbox & loot the Mixture"
+  collect 8073 x1 quest 2478.6 @54.77,5.5699537 map 1413 -- Cache of Zanzil's Altered Mixture (1)
+step
+  only Rogue
+  along until next_114
+  note "Die and respawn at the Spirit Healer"
+step
+  only Druid
+  along until next_114
+  note "Die and respawn at the Spirit Healer"
+step
+  only Rogue
+  when !zone "Orgrimmar"
+  label next_114
+  zone map 1413
+  goto 51.5,30.340056 map 1413 r 8
+  note "Talk to Devrak"
+  fly "Orgrimmar" -- Fly to Orgrimmar
+step
+  only Druid
+  when !zone "Orgrimmar"
+  zone map 1413
+  goto 51.5,30.340056 map 1413 r 8
+  note "Talk to Devrak"
+  fly "Orgrimmar" -- Fly to Orgrimmar
+step
+  only Rogue
+  when onquest 2478
+  turnin 2478 -- Turn in Mission: Possible But Not Probable
+step
+  only Rogue
+  zone map 1454
+  note "Talk to Shenthul"
+  accept 2479 -- Accept Hinott's Assistance
+step
+  only Rogue
+  when !turnedin 2479
+  zone map 1454
+  note "Talk to Rekkul. Buy [Dust of Decay] and [Empty Vials] from him"
+  collect 2928 x20 @42.100164,49.48996 map 1454 -- Collect Dust of Decay (20)
+  collect 3371 x20 @42.100164,49.48996 map 1454 -- Collect Empty Vial (20)
+step
+  only Shaman
+  when level>=22
+  when level<24
+  zone map 1454
+  goto 38.819839,36.410217 map 1454 r 8
+  note "Talk to Kardris"
+  learn 8498 "your class spells"
+step
+  only Shaman
+  when level>=24
+  zone map 1454
+  goto 38.819839,36.410217 map 1454 r 8
+  note "Talk to Kardris"
+  learn 905 "your class spells"
+step
+  only Warrior
+  when level>=22
+  when level<24
+  zone map 1454
+  goto 79.909811,31.360058 map 1454 r 8
+  note "Talk to Grezz"
+  learn 6192 "your class spells"
+step
+  only Warrior
+  when level>=24
+  zone map 1454
+  goto 79.909811,31.360058 map 1454 r 8
+  note "Talk to Grezz"
+  learn 5308 "your class spells"
+step
+  only Hunter
+  when level>=22
+  when level<24
+  zone map 1454
+  goto 66.049886,18.519782 map 1454 r 8
+  note "Talk to Ormak"
+  learn 14323 "your class spells"
+step
+  only Hunter
+  when level>=24
+  zone map 1454
+  goto 66.049886,18.519782 map 1454 r 8
+  note "Talk to Ormak"
+  learn 14262 "your class spells"
+step
+  only Hunter
+  when level>=24
+  zone map 1454
+  goto 66.34006,14.830514 map 1454 r 8
+  note "Talk to Xao'tsu"
+  learn 24558 "your pet spells"
+step
+  when !onquest 2842
+  zone map 1454
+  goto 75.500159,25.340276 map 1454 r 8
+step
+  zone map 1454
+  note "Talk to Sovik"
+  accept 2842 -- Accept Chief Engineer Scooty
+step
+  only Rogue
+  when !turnedin 6544
+  zone map 1454
+  note "Talk to Trak'gen. Buy [Deadly Throwing Axe] from him"
+  collect 3137 x1 @48.119677,80.520004 map 1454 -- Deadly Throwing Axe (200)
+step
+  only Rogue
+  when has 6452
+  zone map 1454
+  note "If you have any [Anti-Venom], use one to cure yourself of [Touch of Zanzil]"
+  use 6452 @48.119677,80.520004 map 1454
+step
+  only Rogue
+  note "Delete the [Flare Gun] from your bags, as it's no longer needed"
+  note "Delete [Fizzule's Whistle] from your bags, as it's no longer needed"
+step
+  label flytoORG
+  note "Review this source step manually."

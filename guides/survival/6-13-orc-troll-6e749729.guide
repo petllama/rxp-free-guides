@@ -1,0 +1,4037 @@
+guide rxp-free/6-13-orc-troll-6e749729
+title "6-13 Orc/Troll"
+levels 6-13
+zone map 1411
+coords era
+faction Horde
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · RXP Survival Guide 1-20"
+next rxp-free/13-15-silverpine-forest-5cc233ec
+step
+  zone map 1411
+  note "Talk to Lar. He patrols a little"
+  accept 786 -- Accept Thwarting Kolkar Aggression
+step
+  when onquest 805
+  turnin 805 -- Turn in Report to Sen'jin Village
+step
+  label SenjinPickups
+  zone map 1411
+  note "Talk to Vel'rin, Vornal and Gadrin"
+  accept 817 -- Accept Practical Prey
+  accept 818 -- Accept A Solvent Spirit
+  accept 808 -- Accept Minshina's Skull
+  accept 826 -- Accept Zalazane
+  accept 823 -- Accept Report to Orgnil
+  goto 55.94,74.72 map 1411 r 8 optional
+step
+  along until next_3
+  zone map 1411
+  goto 56.16,74.43 map 1411 r 8 optional
+  goto 56.31,73.8 map 1411 r 8 optional -- Enter the big hut
+step
+  only Rogue
+  label next_3
+  zone map 1411
+  goto 56.29,73.41 map 1411 r 8
+  note "Talk to K'waii. Buy [Weighted Throwing Axe] from her"
+  collect 3131 x200 @56.29,73.41 map 1411 optional -- Weighted Throwing Axe (200)
+step
+  only Warlock
+  zone map 1411
+  goto 56.29,73.41 map 1411 r 8
+  note "Talk to K'waii"
+  note "Buy [Refreshing Spring Water] from her --Refreshing Spring Water (20)"
+  collect 159 x20 @56.29,73.41 map 1411 optional
+step
+  only Mage
+  zone map 1411
+  goto 56.29,73.41 map 1411 r 8
+  note "Talk to K'waii"
+  note "Buy [Refreshing Spring Water] from her --Refreshing Spring Water (20)"
+  collect 159 x20 @56.29,73.41 map 1411 optional
+step
+  only Priest
+  zone map 1411
+  goto 56.29,73.41 map 1411 r 8
+  note "Talk to K'waii"
+  note "Buy [Refreshing Spring Water] from her --Refreshing Spring Water (20)"
+  collect 159 x20 @56.29,73.41 map 1411 optional
+step
+  only Warlock
+  zone map 1411
+  goto 56.29,73.41 map 1411 r 8
+  note "Talk to K'waii"
+  note "Buy [Refreshing Spring Water] from her --Refreshing Spring Water (10)"
+  collect 159 x10 @56.29,73.41 map 1411 optional
+step
+  only Mage
+  zone map 1411
+  goto 56.29,73.41 map 1411 r 8
+  note "Talk to K'waii"
+  note "Buy [Refreshing Spring Water] from her --Refreshing Spring Water (10)"
+  collect 159 x10 @56.29,73.41 map 1411 optional
+step
+  only Priest
+  zone map 1411
+  goto 56.29,73.41 map 1411 r 8
+  note "Talk to K'waii"
+  note "Buy [Refreshing Spring Water] from her --Refreshing Spring Water (10)"
+  collect 159 x10 @56.29,73.41 map 1411 optional
+step
+  only Shaman
+  zone map 1411
+  note "Talk to Trayexir"
+  vendor 10369 -- Vendor trash. Sell your weapon if it gives you enough money for a [Walking Stick] (5s 04c). You'll come back later if you don't have enough yet
+step
+  only Shaman
+  zone map 1411
+  goto 56.47,73.12 map 1411 r 8
+  note "Talk to Trayexir. Buy a [Walking Stick] from him"
+  collect 2495 x1 @56.47,73.12 map 1411 optional -- Collect Walking Stick (1)
+step
+  only Rogue
+  zone map 1411
+  note "Talk to Trayexir"
+  vendor 10369 -- Vendor trash. Sell your weapon if it gives you enough money for a [Stiletto] (4s 01c). You'll come back later if you don't have enough yet
+step
+  only Rogue
+  zone map 1411
+  goto 56.47,73.12 map 1411 r 8
+  note "Talk to Trayexir. Buy a [Stiletto] from him"
+  collect 2494 x1 @56.47,73.12 map 1411 optional -- Collect Stiletto (1)
+step
+  only Warrior,Orc
+  zone map 1411
+  note "Talk to Trayexir"
+  vendor 10369 -- Vendor trash. Sell your weapon if it gives you enough money for a [Large Axe] (4s 84c). You'll come back later if you don't have enough yet
+step
+  only Warrior,Orc
+  zone map 1411
+  goto 56.47,73.12 map 1411 r 8
+  note "Talk to Trayexir. Buy a [large Axe] from him"
+  collect 2491 x1 @56.47,73.12 map 1411 optional -- Collect Large Axe (1)
+step
+  only Warrior,Troll
+  zone map 1411
+  note "Talk to Trayexir"
+  vendor 10369 -- Vendor trash. Sell your weapon if it gives you enough money for a [Tomahawk] (5s 40c). You'll come back later if you don't have enough yet
+step
+  only Warrior,Troll
+  zone map 1411
+  goto 56.47,73.12 map 1411 r 8
+  note "Talk to Trayexir. Buy a [Tomahawk] from him"
+  collect 2490 x1 @56.47,73.12 map 1411 optional -- Collect Tomahawk (1)
+step
+  only Hunter
+  zone map 1411
+  note "Talk to Trayexir"
+  vendor 10369 -- Vendor trash. Sell your weapon if it gives you enough money for a [Hornwood Recurve Bow] (2s 83c). You'll come back later if you don't have enough yet
+step
+  only Hunter
+  zone map 1411
+  goto 56.47,73.12 map 1411 r 8
+  note "Talk to Trayexir. Buy a [Hornwood Recurve Bow] from him"
+  collect 2506 x1 @56.47,73.12 map 1411 optional -- Collect Hornwood Recurve Bow (1)
+step
+  only Rogue
+  when has 3131
+  along until Bonfire
+  zone map 1411
+  note "Equip the [Weighted Throwing Axe]"
+  use 3131 @56.47,73.12 map 1411 optional
+step
+  only Shaman
+  when has 2495
+  along until Bonfire
+  zone map 1411
+  note "Equip the [Walking Stick]"
+  use 2495 @56.47,73.12 map 1411 optional
+step
+  only Rogue
+  when has 2494
+  along until Bonfire
+  zone map 1411
+  note "Equip the [Stiletto]"
+  use 2494 @56.47,73.12 map 1411 optional
+step
+  only Warrior,Orc
+  when has 2491
+  along until Bonfire
+  zone map 1411
+  note "Equip the [large Axe]"
+  use 2491 @56.47,73.12 map 1411 optional
+step
+  only Warrior,Troll
+  when has 2490
+  along until Bonfire
+  zone map 1411
+  note "Equip the [Tomahawk]"
+  use 2490 @56.47,73.12 map 1411 optional
+step
+  only Hunter
+  when has 2506
+  along until Bonfire
+  zone map 1411
+  note "Equip the [Hornwood Recurve Bow]"
+  use 2506 @56.47,73.12 map 1411 optional
+step
+  only Mage
+  zone map 1411
+  goto 56.3,75.11 map 1411 r 8
+  note "Talk to Un'Thuwa"
+  learn 143 "Fireball"
+  learn 2136 "Fire Blast"
+step
+  along until next_24
+  zone map 1411
+  note "Run down the beach. Kill Crawlers and Makruras. Loot them for their Mucus and Eyes. You do not have to finish this step here."
+  collect 4888 x8 quest 818.2 @52.2,83 map 1411 -- Crawler Mucus (8)
+  collect 4887 x4 quest 818.1 @52.2,83 map 1411 -- Intact Makrura Eye (4)
+step
+  when onquest 818
+  label next_24
+  zone map 1411
+  goto 52.2,83 map 1411 r 75 -- Reach the end of the beach
+step
+  when onquest 786
+  zone map 1411
+  goto 50.9,79.2 map 1411 r 40 -- Enter the Kolkar base
+step
+  only Priest
+  label Linen
+  along until HorrorsandSpirits
+  zone map 1411
+  note "Start collecting 3 stacks of [Linen Cloth] as you quest throughout Durotar. This will be used to make your wand later"
+  collect 2589 x60 @50.9,79.2 map 1411 -- Linen Cloth (60)
+step
+  only Warlock
+  along until HorrorsandSpirits
+  zone map 1411
+  note "Start collecting 3 stacks of [Linen Cloth] as you quest throughout Durotar. This will be used to make your wand later"
+  collect 2589 x60 @50.9,79.2 map 1411 -- Linen Cloth (60)
+step
+  along until Bonfire
+  note "Be careful if Kolkanis is up, he is a level 9 rare. You may have to use a [Minor Healing Potion] if you have it"
+step
+  zone map 1411
+  note "Burn the Attack Plan inside the tent, on the ground"
+  goto 49.8,81.2 map 1411 r 8
+  interact 3189 quest 786.1 -- Attack Plan: Valley of Trials destroyed (1)
+step
+  zone map 1411
+  note "Burn the Attack Plan on the ground"
+  goto 47.7,77.4 map 1411 r 8
+  interact 3190 quest 786.2 -- Attack Plan: Sen'jin Village destroyed (1)
+step
+  label Bonfire
+  zone map 1411
+  note "Burn the Attack Plan on the ground"
+  goto 46.3,79 map 1411 r 8
+  interact 3192 quest 786.3 -- Attack Plan: Orgrimmar destroyed (1)
+step
+  when complete 786
+  along until next_32
+  zone map 1411
+  goto 50.95,79.14 map 1411 r 30 -- Leave the Kolkar base
+step
+  label next_32
+  zone map 1411
+  goto 54.2,73.36 map 1411 r 1 optional
+  goto 54.09,76.31 map 1411 r 25 optional
+  goto 54.52,74.83 map 1411 r 25 optional
+  goto 54.2,73.36 map 1411 r 25 optional
+  note "Talk to Lar. He patrols a little"
+  turnin 786 only Shaman -- Turn in Thwarting Kolkar Aggression
+  turnin 786 only !Shaman -- Turn in Thwarting Kolkar Aggression
+step
+  when complete 818
+  zone map 1411
+  note "Talk to Vornal"
+  turnin 818 -- Turn in A Solvent Spirit
+step
+  only Warlock
+  zone map 1411
+  goto 56.29,73.41 map 1411 r 8
+  note "Talk to K'waii"
+  note "Buy [Refreshing Spring Water] from her --Refreshing Spring Water (20)"
+  collect 159 x20 @56.29,73.41 map 1411 optional
+step
+  only Mage
+  zone map 1411
+  goto 56.29,73.41 map 1411 r 8
+  note "Talk to K'waii"
+  note "Buy [Refreshing Spring Water] from her --Refreshing Spring Water (20)"
+  collect 159 x20 @56.29,73.41 map 1411 optional
+step
+  only Priest
+  zone map 1411
+  goto 56.29,73.41 map 1411 r 8
+  note "Talk to K'waii"
+  note "Buy [Refreshing Spring Water] from her --Refreshing Spring Water (20)"
+  collect 159 x20 @56.29,73.41 map 1411 optional
+step
+  only Warlock
+  zone map 1411
+  goto 56.29,73.41 map 1411 r 8
+  note "Talk to K'waii"
+  note "Buy [Refreshing Spring Water] from her --Refreshing Spring Water (10)"
+  collect 159 x10 @56.29,73.41 map 1411 optional
+step
+  only Mage
+  zone map 1411
+  goto 56.29,73.41 map 1411 r 8
+  note "Talk to K'waii"
+  note "Buy [Refreshing Spring Water] from her --Refreshing Spring Water (10)"
+  collect 159 x10 @56.29,73.41 map 1411 optional
+step
+  only Priest
+  zone map 1411
+  goto 56.29,73.41 map 1411 r 8
+  note "Talk to K'waii"
+  note "Buy [Refreshing Spring Water] from her --Refreshing Spring Water (10)"
+  collect 159 x10 @56.29,73.41 map 1411 optional
+step
+  only Warrior
+  zone map 1411
+  note "Talk to Hai'zan"
+  note "Buy [Haunch of Meat] from him"
+  vendor 3933 -- Vendor trash
+  collect 2287 x10 @55.62,73.61 map 1411 optional -- Haunch of Meat (10)
+step
+  only Rogue
+  zone map 1411
+  note "Talk to Hai'zan"
+  note "Buy [Haunch of Meat] from him"
+  vendor 3933 -- Vendor trash
+  collect 2287 x10 @55.62,73.61 map 1411 optional -- Haunch of Meat (10)
+step
+  only Shaman
+  zone map 1411
+  note "Talk to Hai'zan"
+  note "Buy [Haunch of Meat] from him"
+  vendor 3933 -- Vendor trash
+  collect 2287 x10 @55.62,73.61 map 1411 optional -- Haunch of Meat (10)
+step
+  only Shaman
+  zone map 1411
+  note "Talk to Trayexir"
+  vendor 10369 -- Vendor trash. Sell your weapon if it gives you enough money for a [Walking Stick] (5s 04c). You'll come back later if you don't have enough yet
+step
+  only Shaman
+  zone map 1411
+  goto 56.47,73.12 map 1411 r 8
+  note "Talk to Trayexir. Buy a [Walking Stick] from him"
+  collect 2495 x1 @56.47,73.12 map 1411 optional -- Collect Walking Stick (1)
+step
+  only Rogue
+  zone map 1411
+  note "Talk to Trayexir"
+  vendor 10369 -- Vendor trash. Sell your weapon if it gives you enough money for a [Stiletto] (4s 01c). You'll come back later if you don't have enough yet
+step
+  only Rogue
+  zone map 1411
+  goto 56.47,73.12 map 1411 r 8
+  note "Talk to Trayexir. Buy a [Stiletto] from him"
+  collect 2494 x1 @56.47,73.12 map 1411 optional -- Collect Stiletto (1)
+step
+  only Warrior,Orc
+  zone map 1411
+  note "Talk to Trayexir"
+  vendor 10369 -- Vendor trash. Sell your weapon if it gives you enough money for a [Large Axe] (4s 84c). You'll come back later if you don't have enough yet
+step
+  only Warrior,Orc
+  zone map 1411
+  goto 56.47,73.12 map 1411 r 8
+  note "Talk to Trayexir. Buy a [large Axe] from him"
+  collect 2491 x1 @56.47,73.12 map 1411 optional -- Collect Large Axe (1)
+step
+  only Warrior,Troll
+  zone map 1411
+  note "Talk to Trayexir"
+  vendor 10369 -- Vendor trash. Sell your weapon if it gives you enough money for a [Tomahawk] (5s 40c). You'll come back later if you don't have enough yet
+step
+  only Warrior,Troll
+  zone map 1411
+  goto 56.47,73.12 map 1411 r 8
+  note "Talk to Trayexir. Buy a [Tomahawk] from him"
+  collect 2490 x1 @56.47,73.12 map 1411 optional -- Collect Tomahawk (1)
+step
+  only Hunter
+  zone map 1411
+  note "Talk to Trayexir"
+  vendor 10369 -- Vendor trash. Sell your weapon if it gives you enough money for a [Hornwood Recurve Bow] (2s 83c). You'll come back later if you don't have enough yet
+step
+  only Hunter
+  zone map 1411
+  goto 56.47,73.12 map 1411 r 8
+  note "Talk to Trayexir. Buy a [Hornwood Recurve Bow] from him"
+  collect 2506 x1 @56.47,73.12 map 1411 optional -- Collect Hornwood Recurve Bow (1)
+step
+  only Rogue
+  when has 3131
+  along until TravelToTiragarde
+  zone map 1411
+  note "Equip the [Weighted Throwing Axe]"
+  use 3131 @56.47,73.12 map 1411 optional
+step
+  only Shaman
+  when has 2495
+  along until TravelToTiragarde
+  zone map 1411
+  note "Equip the [Walking Stick]"
+  use 2495 @56.47,73.12 map 1411 optional
+step
+  only Rogue
+  when has 2494
+  along until TravelToTiragarde
+  zone map 1411
+  note "Equip the [Stiletto]"
+  use 2494 @56.47,73.12 map 1411 optional
+step
+  only Warrior,Orc
+  when has 2491
+  along until TravelToTiragarde
+  zone map 1411
+  note "Equip the [large Axe]"
+  use 2491 @56.47,73.12 map 1411 optional
+step
+  only Warrior,Troll
+  when has 2490
+  along until TravelToTiragarde
+  zone map 1411
+  note "Equip the [Tomahawk]"
+  use 2490 @56.47,73.12 map 1411 optional
+step
+  only Hunter
+  when has 2506
+  along until TravelToTiragarde
+  zone map 1411
+  note "Equip the [Hornwood Recurve Bow]"
+  use 2506 @56.47,73.12 map 1411 optional
+step
+  label Betrayers
+  zone map 1411
+  note "You can talk to him from outside or on top of the bunker"
+  note "Talk to Gar'thok"
+  accept 784 -- Accept Vanquish the Betrayers
+step
+  only Hunter
+  along until next_56
+  zone map 1411
+  note "Talk to Grimtak"
+  vendor 3881 -- Vendor Trash
+step
+  label next_56
+  along until next_57
+  zone map 1411
+  goto 50.22,43.06 map 1411 r 12 optional
+  goto 50.09,42.97 map 1411 r 8 optional
+  goto 50.2,42.3 map 1411 r 12 optional
+  goto 49.96,40.96 map 1411 r 12 optional
+  goto 49.67,40.42 map 1411 r 10 optional -- Travel toward the tower
+step
+  label next_57
+  along until next_58
+  zone map 1411
+  goto 49.75,40.38 map 1411 r 6 optional
+  goto 49.77,40.24 map 1411 r 6 optional
+  goto 49.69,40.21 map 1411 r 6 optional
+  goto 49.68,40.3 map 1411 r 6 optional
+  goto 49.78,40.34 map 1411 r 6 optional
+  goto 49.79,39.96 map 1411 r 6 optional
+  goto 49.6,40.04 map 1411 r 8 optional -- Travel up the tower toward Furl
+step
+  label next_58
+  zone map 1411
+  note "Talk to Furl"
+  accept 791 -- Accept Carry Your Weight
+step
+  only Warrior
+  zone map 1411
+  goto 51.81,40.89 map 1411 r 8
+  note "Talk to Krunn"
+  note "This will allow you to find [Rough Stones] from nodes in order to craft [Sharpening Stones] (+2 Weapon Damage for 30 minutes)"
+step
+  only Rogue
+  zone map 1411
+  goto 51.81,40.89 map 1411 r 8
+  note "Talk to Krunn"
+  note "This will allow you to find [Rough Stones] from nodes in order to craft [Sharpening Stones] (+2 Weapon Damage for 30 minutes)"
+step
+  only Warrior
+  when !turnedin 9144
+  zone map 1411
+  note "Talk to Wuark"
+  note "Buy a [Mining Pick] from him"
+  collect 2901 x1 @51.9,41.14 map 1411 -- Mining Pick (1)
+step
+  only Rogue
+  when !turnedin 9144
+  zone map 1411
+  note "Talk to Wuark"
+  note "Buy a [Mining Pick] from him"
+  collect 2901 x1 @51.9,41.14 map 1411 -- Mining Pick (1)
+step
+  only Warrior
+  zone map 1411
+  goto 52.05,40.73 map 1411 r 8
+  note "Talk to Dwukk"
+  learn 2018 "Blacksmithing"
+step
+  only Rogue
+  zone map 1411
+  goto 52.05,40.73 map 1411 r 8
+  note "Talk to Dwukk"
+  learn 2018 "Blacksmithing"
+step
+  only Warrior
+  along until TravelToTiragarde
+  zone map 1411
+  note "Cast [Find Minerals] and mine any Copper Vein you find for [Rough Stones]. Make [Sharpening Stones] from them"
+  collect 2862 x1 @52.05,40.73 map 1411 optional
+step
+  only Rogue
+  along until TravelToTiragarde
+  zone map 1411
+  note "Cast [Find Minerals] and mine any Copper Vein you find for [Rough Stones]. Make [Sharpening Stones] from them"
+  collect 2862 x1 @52.05,40.73 map 1411 optional
+step
+  when onquest 784
+  label TravelToTiragarde
+  zone map 1411
+  goto 57.26,54.69 map 1411 r 60
+  note "Grind mobs on the way"
+step
+  along until AgedEnvelope
+  note "Be careful if Watch Commander Zalaphil is up, as he is a level 9 rare. You may have to use a [Minor Healing Potion] if you have one"
+step
+  along until Benedict
+  zone map 1411
+  goto 59.81,58.22 map 1411 r 8 optional
+  goto 59.64,58.44 map 1411 r 8 optional
+  goto 59.55,57.89 map 1411 r 8 optional
+  goto 59.29,57.89 map 1411 r 8 optional -- Move toward the second floor of the keep
+step
+  along until AgedEnvelope
+  zone map 1411
+  note "Kill Kul Tiras Sailors and Kul Tiras Marines"
+  kill 3128 x10 quest 784.1 @59.29,57.89 map 1411 -- Kul Tiras Sailor (10)
+  kill 3129 x8 quest 784.2 @59.29,57.89 map 1411 -- Kul Tiras Marine (8)
+  collect 4870 x8 quest 791.1 @59.29,57.89 map 1411 -- Canvas Scraps (8)
+step
+  label Benedict
+  zone map 1411
+  note "Kill Lieutenant Benedict. Loot him for his Key"
+  kill 3192 x1 quest 784.3 -- Lieutenant Benedict (1)
+  collect 4882 x1 @59.75,58.27 map 1411 -- Collect Benedict's Key (1)
+step
+  label AgedEnvelope
+  zone map 1411
+  goto 59.87,57.87 map 1411 r 5 optional
+  goto 59.83,57.58 map 1411 r 5 optional
+  goto 59.8,57.82 map 1411 r 5 optional
+  goto 59.94,57.82 map 1411 r 5 optional
+  goto 59.94,57.61 map 1411 r 5 optional
+  goto 59.27,57.65 map 1411 r 8 optional
+  note "Go upstairs in the keep"
+  note "Open Benedict's Chest. Loot it for the [Aged Envelope]"
+  note "Use the [Aged Envelope] to start the quest"
+  collect 4881 x1 @59.27,57.65 map 1411 optional -- Collect Aged Envelope (1)
+  accept 830 -- Accept The Admiral's Orders
+  use 4881 @59.27,57.65 map 1411
+step
+  when !has 4870 x8
+  loop
+  zone map 1411
+  goto 58.99,58.3 map 1411 r 1
+  goto 57.65,58.52 map 1411 r 30
+  goto 57.36,56.59 map 1411 r 30
+  goto 58.1,55.52 map 1411 r 30
+  goto 58.54,53.68 map 1411 r 30
+  goto 56.54,54.52 map 1411 r 30
+  goto 56.37,58.35 map 1411 r 30
+  goto 58.99,58.3 map 1411 r 30
+  note "Kill Kul Tiras Sailors and Kul Tiras Marines. Loot them for their Canvas Scraps"
+  kill 3128 x10 quest 784.1 -- Kul Tiras Sailor (10)
+  kill 3129 x8 quest 784.2 -- Kul Tiras Marine (8)
+  collect 4870 x8 quest 791.1 -- Canvas Scraps (8)
+step
+  loop
+  zone map 1411
+  goto 58.99,58.3 map 1411 r 1
+  goto 57.65,58.52 map 1411 r 30
+  goto 57.36,56.59 map 1411 r 30
+  goto 58.1,55.52 map 1411 r 30
+  goto 58.54,53.68 map 1411 r 30
+  goto 56.54,54.52 map 1411 r 30
+  goto 56.37,58.35 map 1411 r 30
+  goto 58.99,58.3 map 1411 r 30
+  note "Kill Kul Tiras Sailors and Kul Tiras Marines"
+  kill 3128 x10 quest 784.1 -- Kul Tiras Sailor (10)
+  kill 3129 x8 quest 784.2 -- Kul Tiras Marine (8)
+step
+  label ScrapsFinished
+  loop
+  zone map 1411
+  goto 58.99,58.3 map 1411 r 1
+  goto 57.65,58.52 map 1411 r 30
+  goto 57.36,56.59 map 1411 r 30
+  goto 58.1,55.52 map 1411 r 30
+  goto 58.54,53.68 map 1411 r 30
+  goto 56.54,54.52 map 1411 r 30
+  goto 56.37,58.35 map 1411 r 30
+  goto 58.99,58.3 map 1411 r 30
+  note "Kill Kul Tiras Sailors and Kul Tiras Marines. Loot them for their Canvas Scraps"
+  collect 4870 x8 quest 791.1 -- Canvas Scraps (8)
+step
+  only Warrior,Paladin,Hunter,Rogue,Shaman,Warlock,Druid
+  zone map 1411
+  goto 59.02,50.24 map 1411 r 50 optional
+  goto 57.93,47.71 map 1411 r 50 optional
+  goto 59.2,44.3 map 1411 r 50 optional
+  goto 57.96,42.46 map 1411 r 50 optional
+  goto 56.47,43.45 map 1411 r 50 optional
+  goto 55.5,48.97 map 1411 r 50
+  level 7+2200 -- Grind to 2200+/4500xp
+step
+  only Priest
+  zone map 1411
+  goto 59.02,50.24 map 1411 r 50 optional
+  goto 57.93,47.71 map 1411 r 50 optional
+  goto 59.2,44.3 map 1411 r 50 optional
+  goto 57.96,42.46 map 1411 r 50 optional
+  goto 56.47,43.45 map 1411 r 50 optional
+  goto 55.5,48.97 map 1411 r 50
+  level 7+1750 -- Grind to 1750+/4500xp
+step
+  label next_75
+  zone map 1411
+  note "Talk to Orgnil, Gar'Thok and Torka"
+  turnin 823 -- Turn in Report to Orgnil
+  turnin 784 -- Turn in Vanquish the Betrayers
+  turnin 830 -- Turn in The Admiral's Orders
+  accept 825 -- Accept From The Wreckage....
+  accept 831 -- Accept The Admiral's Orders
+  accept 837 -- Accept Encroachment
+  accept 815 -- Accept Break a Few Eggs
+  goto 51.09,42.49 map 1411 r 8 optional
+step
+  along until next_78
+  zone map 1411
+  goto 50.22,43.06 map 1411 r 12 optional
+  goto 50.09,42.97 map 1411 r 8 optional
+  goto 50.2,42.3 map 1411 r 12 optional
+  goto 49.96,40.96 map 1411 r 12 optional
+  goto 49.67,40.42 map 1411 r 10 optional -- Travel toward the tower
+step
+  label next_78
+  along until next_79
+  zone map 1411
+  goto 49.75,40.38 map 1411 r 6 optional
+  goto 49.77,40.24 map 1411 r 6 optional
+  goto 49.69,40.21 map 1411 r 6 optional
+  goto 49.68,40.3 map 1411 r 6 optional
+  goto 49.78,40.34 map 1411 r 6 optional
+  goto 49.79,39.96 map 1411 r 6 optional
+  goto 49.6,40.04 map 1411 r 8 optional -- Travel up the tower toward Furl
+step
+  label next_79
+  zone map 1411
+  note "Talk to Furl"
+  turnin 791 -- Turn in Carry Your Weight
+step
+  only Warrior
+  zone map 1411
+  goto 51.81,40.89 map 1411 r 8
+  note "Talk to Krunn"
+  learn 2575 "Mining"
+  note "This will allow you to find [Rough Stones] from nodes in order to craft [Sharpening Stones] (+2 Weapon Damage for 30 minutes)"
+step
+  only Rogue
+  zone map 1411
+  goto 51.81,40.89 map 1411 r 8
+  note "Talk to Krunn"
+  learn 2575 "Mining"
+  note "This will allow you to find [Rough Stones] from nodes in order to craft [Sharpening Stones] (+2 Weapon Damage for 30 minutes)"
+step
+  only Warrior
+  when !turnedin 9144
+  zone map 1411
+  note "Talk to Wuark"
+  note "Buy a [Mining Pick] from Wuark"
+  collect 2901 x1 @51.9,41.14 map 1411 -- Mining Pick (1)
+step
+  only Rogue
+  when !turnedin 9144
+  zone map 1411
+  note "Talk to Wuark"
+  note "Buy a [Mining Pick] from Wuark"
+  collect 2901 x1 @51.9,41.14 map 1411 -- Mining Pick (1)
+step
+  only Warrior
+  zone map 1411
+  goto 52.05,40.73 map 1411 r 8
+  note "Talk to Dwukk"
+  learn 2018 "Blacksmithing"
+step
+  only Rogue
+  zone map 1411
+  goto 52.05,40.73 map 1411 r 8
+  note "Talk to Dwukk"
+  learn 2018 "Blacksmithing"
+step
+  only Shaman
+  zone map 1411
+  note "Talk to Uhgar"
+  vendor 3163 -- Vendor trash. Sell your weapon if it gives you enough money for a [Walking Stick] (5s 04c). You'll come back later if you don't have enough yet
+step
+  only Shaman
+  zone map 1411
+  goto 52.02,40.46 map 1411 r 8
+  note "Talk to Uhgar. Buy a [Walking Stick] from him"
+  collect 2495 x1 @52.02,40.46 map 1411 optional -- Collect Walking Stick (1)
+step
+  only Rogue
+  zone map 1411
+  note "Talk to Uhgar"
+  vendor 3163 -- Vendor trash. Sell your weapon if it gives you enough money for a [Stiletto] (4s 01c). You'll come back later if you don't have enough yet
+step
+  only Rogue
+  zone map 1411
+  goto 52.02,40.46 map 1411 r 8
+  note "Talk to Uhgar. Buy a [Stiletto] from him"
+  collect 2494 x1 @52.02,40.46 map 1411 optional -- Collect Stiletto (1)
+step
+  only Warrior,Orc
+  zone map 1411
+  note "Talk to Uhgar"
+  vendor 3163 -- Vendor trash. Sell your weapon if it gives you enough money for a [Large Axe] (4s 84c). You'll come back later if you don't have enough yet
+step
+  only Warrior,Orc
+  zone map 1411
+  goto 52.02,40.46 map 1411 r 8
+  note "Talk to Uhgar. Buy a [large Axe] from him"
+  collect 2491 x1 @52.02,40.46 map 1411 optional -- Collect Large Axe (1)
+step
+  only Warrior,Troll
+  zone map 1411
+  note "Talk to Uhgar"
+  vendor 3163 -- Vendor trash. Sell your weapon if it gives you enough money for a [Tomahawk] (5s 40c). You'll come back later if you don't have enough yet
+step
+  only Warrior,Troll
+  zone map 1411
+  goto 52.02,40.46 map 1411 r 8
+  note "Talk to Uhgar. Buy a [Tomahawk] from him"
+  collect 2490 x1 @52.02,40.46 map 1411 optional -- Collect Tomahawk (1)
+step
+  only Hunter
+  zone map 1411
+  note "Talk to Ghrawt"
+  vendor 3165 -- Vendor trash. Sell your weapon if it gives you enough money for a [Hornwood Recurve Bow] (2s 83c). You'll come back later if you don't have enough yet
+step
+  only Hunter
+  zone map 1411
+  goto 52.97,41.04 map 1411 r 8
+  note "Talk to Ghrawt. Buy a [Hornwood Recurve Bow] from him"
+  collect 2506 x1 @52.97,41.04 map 1411 optional -- Collect Hornwood Recurve Bow (1)
+step
+  only Hunter
+  when !turnedin 818
+  zone map 1411
+  goto 52.97,41.04 map 1411 r 8
+  note "Talk to Ghrawt. Buy [Rough Arrows] from him"
+  collect 2512 x1000 @52.97,41.04 map 1411 only Hunter -- Rough Arrow (1000)
+step
+  when onquest 2161
+  turnin 2161 -- Turn in A Peon's Burden
+step
+  zone map 1411
+  note "Talk to Innkeeper Grosk"
+  note "Buy [Ice Cold Milk] from him" only Mage
+  note "Buy [Ice Cold Milk] from him" only Warlock
+  note "Buy [Ice Cold Milk] from him" only Priest
+  note "Buy [Ice Cold Milk] from him" only Shaman
+  note "Buy [Ice Cold Milk] from him" only Druid
+  note "Buy [Haunch of Meat] from him" only Rogue
+  note "Buy [Haunch of Meat] from him" only Warrior
+  note "Save 4 silver for your class spells!" only Rogue
+  note "Save 4 silver for your class spells!" only Warrior
+  note "Save 4 silver for your class spells!" only Shaman
+  note "Save 4 silver for your class spells!" only Warlock
+  note "Save 2 silver for your class spells!" only Priest
+  vendor 6928 -- Vendor Trash
+  sethome "Razor Hill" @51.51,41.64 map 1411 -- Set your Hearthstone to Razor Hill
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Warlock
+  when onquest 2161
+  turnin 2161 -- Turn in A Peon's Burden
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Warlock
+  zone map 1411
+  note "Talk to Innkeeper Grosk"
+  note "Buy [Ice Cold Milk] from him" only Mage
+  note "Buy [Ice Cold Milk] from him" only Warlock
+  note "Buy [Ice Cold Milk] from him" only Priest
+  note "Buy [Ice Cold Milk] from him" only Shaman
+  note "Buy [Ice Cold Milk] from him" only Druid
+  note "Buy [Haunch of Meat] from him" only Rogue
+  note "Buy [Haunch of Meat] from him" only Warrior
+  vendor 6928 -- Vendor Trash
+  sethome "Razor Hill" @51.51,41.64 map 1411 -- Set your Hearthstone to Razor Hill
+step
+  only Warrior
+  zone map 1411
+  goto 54.18,42.46 map 1411 r 8
+  note "Talk to Tarshaw"
+  learn 284 "your class spells"
+step
+  only Shaman
+  zone map 1411
+  goto 54.42,42.59 map 1411 r 8
+  note "Talk to Swart"
+  learn 8044 "your class spells"
+step
+  only Warlock
+  zone map 1411
+  goto 54.7,41.49 map 1411 r 8
+  note "Talk to Kitha and buy [Firebolt Rank 2]"
+  collect 16302 x1 @54.7,41.49 map 1411 optional -- Grimoire of Firebolt (Rank 2) (1)
+step
+  only Hunter
+  zone map 1411
+  goto 51.85,43.49 map 1411 r 8
+  note "Talk to Thotar"
+  learn 5116 "your class spells"
+step
+  only Rogue
+  zone map 1411
+  goto 51.98,43.69 map 1411 r 8
+  note "Talk to Kaplak"
+  learn 6760 "your class spells"
+step
+  only Priest,Troll
+  when onquest 5649
+  turnin 5649 -- Turn in In Favor of Spirituality
+step
+  only Priest,Troll
+  zone map 1411
+  note "Talk to Tai'jin"
+  accept 5648 -- Accept Garments of Spirituality
+  learn 2052 "Lesser Heal Rank 2"
+step
+  only Priest,Troll
+  zone map 1411
+  note "Cast [Lesser Heal] and [Power Word: Fortitude] on Kor'ja"
+  kill 12430 x1 quest 5648.1 -- Heal and fortify Grunt Kor'ja
+step
+  only Priest
+  when onquest 5648
+  turnin 5648 only Troll,Priest -- Turn in Garments of Spirituality
+step
+  only Priest
+  zone map 1411
+  note "Talk to Tai'jin"
+  train 3706 -- Train your class spells
+step
+  zone map 1411
+  goto 54.17,41.93 map 1411 r 8 optional
+  note "Talk to Rawrk"
+  learn 3273 "First Aid"
+step
+  zone map 1411
+  goto 54.39,42.18 map 1411 r 8
+  note "Talk to Jark"
+  note "Buy a [Small Brown Pouch] from him"
+  collect 4496 x1 @54.39,42.18 map 1411 optional -- Small Brown Pouch (1)
+step
+  along until Tools
+  zone map 1411
+  note "Kill Crawlers and Makruras. Loot them for their Mucus and Eyes. This does not need to be finished now"
+  collect 4888 x8 quest 818.2 @54.39,42.18 map 1411 -- Crawler Mucus (8)
+  collect 4887 x4 quest 818.1 @54.39,42.18 map 1411 -- Intact Makrura Eye (4)
+step
+  label Tools
+  loop
+  zone map 1411
+  goto 61.96,55.46 map 1411 r 1
+  goto 61.96,55.46 map 1411 r 20
+  goto 62.25,56.34 map 1411 r 20
+  goto 62.43,59.84 map 1411 r 20
+  goto 62.09,60.68 map 1411 r 20
+  goto 62.51,60.56 map 1411 r 20
+  goto 63.24,58.1 map 1411 r 20
+  goto 62.25,56.34 map 1411 r 20
+  note "Loot the Gnomish Toolboxes inside and around the boats"
+  collect 4863 x3 quest 825.1 -- Gnomish Tools (3)
+step
+  along until TaillasherEggs
+  zone map 1411
+  goto 67.1,69.29 map 1411 r 100 -- Swim to the Island
+step
+  along until MinshinasSkull
+  zone map 1411
+  note "Kill Tigers. Loot them for their Fur. This does not need to be finished now"
+  collect 4892 x4 quest 817.1 @67.1,69.29 map 1411 -- Durotar Tiger Fur (4)
+step
+  along until TaillasherEggs
+  zone map 1411
+  note "Kill Pygmy Surf Crawlers and Surf Crawlers. Loot them for their Mucus"
+  note "Kill Makrura Shellhides and Makrura Clackers. Loot them for their Eyes"
+  collect 4888 x8 quest 818.2 @67.1,69.29 map 1411 -- Crawler Mucus (8)
+  collect 4887 x4 quest 818.1 @67.1,69.29 map 1411 -- Intact Makrura Eye (4)
+step
+  label TaillasherEggs
+  loop
+  zone map 1411
+  goto 67.04,71.4 map 1411 r 1
+  goto 70.23,70.84 map 1411 r 1
+  goto 67.04,71.4 map 1411 r 40
+  goto 67.66,73.86 map 1411 r 40
+  goto 68.67,74.47 map 1411 r 40
+  goto 69.76,74.69 map 1411 r 40
+  goto 70.29,73.31 map 1411 r 40
+  goto 70.23,70.84 map 1411 r 40
+  goto 69.69,70.35 map 1411 r 40
+  goto 69.21,69.69 map 1411 r 40
+  goto 67.74,69.86 map 1411 r 40
+  note "Loot the Taillasher Eggs on the ground"
+  note "They're usually guarded by a Bloodtalon Taillasher"
+  collect 4890 x3 quest 815.1 -- Taillasher Egg (3)
+step
+  along until next_119
+  zone map 1411
+  note "Kill Pygmy Surf Crawlers and Surf Crawlers. Loot them for their Mucus"
+  note "Kill Makrura Shellhides and Makrura Clackers. Loot them for their Eyes"
+  collect 4888 x8 quest 818.2 @67.74,69.86 map 1411 -- Crawler Mucus (8)
+  collect 4887 x4 quest 818.1 @67.74,69.86 map 1411 -- Intact Makrura Eye (4)
+step
+  label next_119
+  zone map 1411
+  goto 66.94,84.41 map 1411 r 150 -- Swim to the main island
+step
+  along until ZalazaneKill
+  zone map 1411
+  note "Kill Hexed Trolls and Voodoo Trolls."
+  note "Be careful! Voodoo Trolls can cast [Healing Wave]"
+  kill 3207 x8 quest 826.1 @66.94,84.41 map 1411 -- Hexed Troll (8)
+  kill 3206 x8 quest 826.2 @66.94,84.41 map 1411 -- Voodoo Troll (8)
+step
+  along until MinshinasSkull
+  note "Kill Zalazane. Loot him for his Head"
+  note "Save your [Earth Shock] for when he casts [Healing Wave]" only Shaman
+  note "Save your [Gouge] for when he casts [Healing Wave]" only Rogue
+  note "Be careful. He can cast [Healing Wave]. Use your [Potion] if needed" only !Shaman,!Rogue
+  collect 4866 x1 quest 826.3 -- Zalazane's Head (1)
+step
+  label MinshinasSkull
+  zone map 1411
+  note "Loot one of the Skulls on the ground"
+  collect 4864 x1 quest 808.1 -- Minshina's Skull (1)
+step
+  label ZalazaneKill
+  zone map 1411
+  note "Kill Zalazane. Loot him for his Head"
+  note "Save your [Earth Shock] for when he casts [Healing Wave]" only Shaman
+  note "Save your [Gouge] for when he casts [Healing Wave]" only Rogue
+  note "Be careful. He can cast [Healing Wave]. Use your [Potion] if needed" only !Shaman,!Rogue
+  collect 4866 x1 quest 826.3 -- Zalazane's Head (1)
+step
+  along until Fur
+  zone map 1411
+  note "Kill Tigers. Loot them for their Fur"
+  collect 4892 x4 quest 817.1 @67.4,87.8 map 1411 -- Durotar Tiger Fur (4)
+step
+  label Fur
+  loop
+  zone map 1411
+  goto 67.23,88.76 map 1411 r 1
+  goto 67.23,88.76 map 1411 r 40
+  goto 66.52,87.74 map 1411 r 40
+  goto 65.94,86.72 map 1411 r 40
+  goto 65.9,84.04 map 1411 r 40
+  goto 65.88,82.85 map 1411 r 40
+  goto 67.38,82.61 map 1411 r 40
+  goto 68.42,82.43 map 1411 r 40
+  goto 68.5,84.32 map 1411 r 40
+  goto 68.47,86.77 map 1411 r 40
+  goto 67.23,88 map 1411 r 40
+  note "Kill Hexed Trolls and Voodoo Trolls."
+  note "Be careful! Voodoo Trolls can cast [Healing Wave]"
+  kill 3207 x8 quest 826.1 -- Hexed Troll (8)
+  kill 3206 x8 quest 826.2 -- Voodoo Troll (8)
+step
+  along until next_127
+  zone map 1411
+  note "Kill Pygmy Surf Crawlers and Surf Crawlers. Loot them for their Mucus"
+  note "Kill Makrura Shellhides and Makrura Clackers. Loot them for their Eyes"
+  collect 4888 x8 quest 818.2 @67.23,88 map 1411 -- Crawler Mucus (8)
+  collect 4887 x4 quest 818.1 @67.23,88 map 1411 -- Intact Makrura Eye (4)
+step
+  label next_127
+  loop
+  zone map 1411
+  goto 59.79,83.44 map 1411 r 1
+  goto 65.27,87.86 map 1411 r 50
+  goto 64.72,88.53 map 1411 r 50
+  goto 64.7,84.89 map 1411 r 50
+  goto 64.68,80.8 map 1411 r 50
+  goto 65.35,80.11 map 1411 r 50
+  goto 65.87,81.23 map 1411 r 50
+  goto 60.28,80.04 map 1411 r 50
+  goto 60.6,82.26 map 1411 r 50
+  goto 59.88,83.51 map 1411 r 50
+  goto 59.56,84.86 map 1411 r 50
+  goto 60.84,88.79 map 1411 r 50
+  goto 61.41,89.69 map 1411 r 50
+  goto 61.48,91.37 map 1411 r 50
+  goto 60.37,91.36 map 1411 r 50
+  goto 59.04,90.51 map 1411 r 50
+  goto 59.79,83.44 map 1411 r 50
+  note "Kill Tigers. Loot them for their Fur"
+  collect 4892 x4 quest 817.1 -- Durotar Tiger Fur (4)
+step
+  loop
+  zone map 1411
+  goto 59.64,73.84 map 1411 r 1
+  goto 59.64,73.84 map 1411 r 60
+  goto 58.11,77.3 map 1411 r 60
+  goto 57.27,79.38 map 1411 r 60
+  goto 55.66,80.47 map 1411 r 60
+  goto 53.8,83.14 map 1411 r 60
+  note "Kill Pygmy Surf Crawlers and Surf Crawlers. Loot them for their Mucus"
+  note "Kill Makrura Shellhides and Makrura Clackers. Loot them for their Eyes"
+  collect 4888 x8 quest 818.2 -- Crawler Mucus (8)
+  collect 4887 x4 quest 818.1 -- Intact Makrura Eye (4)
+step
+  along until Zalazaneturnin
+  zone map 1411
+  goto 56.06,74.72 map 1411 r 150 optional -- Travel to Sen'Jin Village
+step
+  when !turnedin 837
+  zone map 1411
+  note "Talk to Trayexir"
+  vendor 10369 -- Vendor trash and repair. You can talk to him from outside the hut
+step
+  only Mage
+  zone map 1411
+  goto 56.3,75.1 map 1411 r 8
+  note "Talk to Un'Thuwa"
+  learn 118 "your class spells"
+step
+  label Zalazaneturnin
+  zone map 1411
+  note "Talk to Gadrin, Vornal and Vel'rin"
+  turnin 808 -- Turn in Minshina's Skull
+  turnin 826 only Shaman -- Turn in Zalazane
+  turnin 826 only !Shaman -- Turn in Zalazane
+  turnin 818 -- Turn in A Solvent Spirit
+  turnin 817 -- Turn in Practical Prey
+  goto 55.95,73.93 map 1411 r 8 optional
+step
+  along until Stolensupplies
+  note "Bind your [Faintly Glowing Skull] and [Really Sticky Glue]. Save them for emergency situations"
+step
+  loop
+  zone map 1411
+  goto 49.22,48.96 map 1411 r 1
+  goto 50.21,50.78 map 1411 r 30
+  goto 50.18,49.23 map 1411 r 30
+  goto 49.48,49.14 map 1411 r 30
+  goto 49.32,48.18 map 1411 r 30
+  goto 48.81,49 map 1411 r 30
+  goto 48.49,49.29 map 1411 r 30
+  goto 47.58,49.62 map 1411 r 30
+  goto 47.06,49.53 map 1411 r 30
+  goto 46.9,48.11 map 1411 r 30
+  goto 49.22,48.96 map 1411 r 30
+  note "Kill Razormane Quilboars and Razormane Scouts"
+  kill 3111 x4 quest 837.1 -- Razormane Quilboar (4)
+  kill 3112 x4 quest 837.2 -- Razormane Scout (4)
+step
+  only Shaman
+  loop
+  zone map 1411
+  goto 44.45,39.74 map 1411 r 1
+  goto 44.45,39.74 map 1411 r 50
+  goto 44.49,37.47 map 1411 r 50
+  goto 43.3,37.32 map 1411 r 50
+  goto 41.7,37.09 map 1411 r 50
+  goto 41.64,38.27 map 1411 r 50
+  goto 41.94,40.46 map 1411 r 50
+  goto 43.3,40.4 map 1411 r 50
+  note "Kill Razormane Dustrunners and Razormane Battleguards"
+  note "Be careful. Dustrunners cast Rejuvenation (Heal) and Battleguards are tanky"
+  kill 3113 x4 quest 837.3 -- Razormane Dustrunner (4)
+  kill 3114 x4 quest 837.4 -- Razormane Battleguard (4)
+step
+  only Hunter
+  loop
+  zone map 1411
+  goto 44.45,39.74 map 1411 r 1
+  goto 44.45,39.74 map 1411 r 50
+  goto 44.49,37.47 map 1411 r 50
+  goto 43.3,37.32 map 1411 r 50
+  goto 41.7,37.09 map 1411 r 50
+  goto 41.64,38.27 map 1411 r 50
+  goto 41.94,40.46 map 1411 r 50
+  goto 43.3,40.4 map 1411 r 50
+  note "Kill Razormane Dustrunners and Razormane Battleguards"
+  note "Be careful. Dustrunners cast Rejuvenation (Heal) and Battleguards are tanky"
+  kill 3113 x4 quest 837.3 -- Razormane Dustrunner (4)
+  kill 3114 x4 quest 837.4 -- Razormane Battleguard (4)
+step
+  only Shaman
+  zone map 1411
+  goto 47.52,48.67 map 1411 r 1 optional
+  goto 47.52,48.67 map 1411 r 50 optional
+  goto 46.12,45.47 map 1411 r 50 optional
+  goto 43.65,43.91 map 1411 r 50 optional
+  goto 41.68,44.69 map 1411 r 50 optional
+  goto 41,46.13 map 1411 r 50 optional
+  goto 42.47,48.5 map 1411 r 50 optional
+  goto 44.21,49.68 map 1411 r 50 optional
+  goto 47.17,49.44 map 1411 r 50
+  level 9+4470 -- Grind to 4470+/6500xp
+step
+  only Hunter
+  zone map 1411
+  goto 47.52,48.67 map 1411 r 1 optional
+  goto 47.52,48.67 map 1411 r 50 optional
+  goto 46.12,45.47 map 1411 r 50 optional
+  goto 43.65,43.91 map 1411 r 50 optional
+  goto 41.68,44.69 map 1411 r 50 optional
+  goto 41,46.13 map 1411 r 50 optional
+  goto 42.47,48.5 map 1411 r 50 optional
+  goto 44.21,49.68 map 1411 r 50 optional
+  goto 47.17,49.44 map 1411 r 50
+  level 9+4470 -- Grind to 4470+/6500xp
+step
+  along until next_138
+  zone map 1411
+  goto 51.12,42.46 map 1411 r 150 -- Run to Razor Hill
+step
+  only Shaman
+  label next_138
+  zone map 1411
+  note "Talk to Torka and Gar'Thok"
+  turnin 815 -- Turn in Break a Few Eggs
+  turnin 825 -- Turn in From The Wreckage....
+  turnin 837 -- Turn in Encroachment
+  goto 51.95,43.5 map 1411 r 8 optional
+step
+  only Hunter
+  zone map 1411
+  note "Talk to Torka and Gar'Thok"
+  turnin 815 -- Turn in Break a Few Eggs
+  turnin 825 -- Turn in From The Wreckage....
+  turnin 837 -- Turn in Encroachment
+  goto 51.95,43.5 map 1411 r 8 optional
+step
+  only Warrior,Paladin,Rogue,Priest,Mage,Warlock,Druid
+  zone map 1411
+  note "Talk to Torka and Gar'Thok"
+  turnin 815 -- Turn in Break a Few Eggs
+  turnin 825 -- Turn in From The Wreckage....
+  goto 51.95,43.5 map 1411 r 8 optional
+step
+  only Hunter
+  zone map 1411
+  note "Talk to Thotar"
+  accept 6062 -- Accept Taming the Beast
+  train 3171 -- Train your class spells
+step
+  only Hunter
+  when !turnedin 837
+  zone map 1411
+  goto 52.97,41.04 map 1411 r 8
+  note "Talk to Ghrawt"
+  collect 2515 x1200 @52.97,41.04 map 1411 only Hunter -- Sharp Arrow (1200)
+step
+  zone map 1411
+  goto 54.17,41.93 map 1411 r 8
+  note "Talk to Rawrk"
+  learn 3273 "First Aid"
+step
+  only Warrior
+  when level>=10
+  zone map 1411
+  goto 54.18,42.46 map 1411 r 8
+  note "Talk to Tarshaw"
+  learn 6546 "your class spells"
+step
+  only Shaman
+  when !onquest 1522
+  zone map 1411
+  note "Talk to Swart"
+  learn 8050 "your class spells"
+  accept 2983 -- Accept Call of Fire
+step
+  only Shaman
+  zone map 1411
+  goto 54.42,42.59 map 1411 r 8
+  note "Talk to Swart"
+  learn 8050 "your class spells"
+step
+  only Warlock
+  when level>=10
+  zone map 1411
+  goto 54.37,41.2 map 1411 r 8
+  note "Talk to Dhugru"
+  learn 1120 "your class spells"
+step
+  only Warlock
+  zone map 1411
+  goto 54.7,41.49 map 1411 r 8
+  note "Talk to Kitha and buy [Firebolt Rank 2]"
+  collect 16302 x1 @54.7,41.49 map 1411 optional -- Grimoire of Firebolt (Rank 2) (1)
+step
+  only Rogue
+  when level>=10
+  zone map 1411
+  goto 51.98,43.69 map 1411 r 8
+  note "Talk to Kaplak"
+  learn 674 "your class spells"
+step
+  only Priest
+  when level>=10
+  zone map 1411
+  goto 54.26,42.93 map 1411 r 8 optional
+  note "Talk to Tai'jin"
+  accept 5654 only Troll -- Accept Hex of Weakness
+  accept 5660 only Undead -- Accept Touch of Weakness
+  train 3706 -- Train your class spells
+step
+  only Hunter
+  when onquest 6062
+  kill 3099 x1 quest 6062.1 -- Tame a Dire Mottled Boar
+step
+  only Hunter
+  zone map 1411
+  use 15917 @50.82,53.65 map 1411 -- Use your [Taming Rod] on a Dire Mottled Boar at max range
+step
+  only Hunter
+  when onquest 6062
+  turnin 6062 -- Turn in Taming the Beast
+step
+  only Hunter
+  zone map 1411
+  note "Talk to Thotar"
+  accept 6083 -- Accept Taming the Beast
+step
+  only Hunter
+  when onquest 6083
+  kill 3107 x1 quest 6083.1 -- Tame a Surf Crawler
+step
+  only Hunter
+  zone map 1411
+  note "Don't kill the Armored Scorpids you see. You'll need them later"
+  use 15919 @60.04,24.79 map 1411 -- Use your [Taming Rod] on a Surf Crawler at max range
+step
+  only Hunter
+  when onquest 6083
+  turnin 6083 -- Turn in Taming the Beast
+step
+  only Hunter
+  zone map 1411
+  note "Talk to Thotar"
+  accept 6082 -- Accept Taming the Beast
+step
+  only Hunter
+  when onquest 6082
+  kill 3126 x1 quest 6082.1 -- Tame an Armored Scorpid
+step
+  only Hunter
+  zone map 1411
+  goto 54.84,36.94 map 1411 r 1 optional
+  goto 54.84,36.94 map 1411 r 40 optional
+  goto 54.01,33.81 map 1411 r 40 optional
+  goto 54.22,30.5 map 1411 r 40 optional
+  use 15920 @57.15,25.59 map 1411 -- Use your [Taming Rod] on an Armored Scorpid at max range
+step
+  only Hunter
+  when onquest 6082
+  turnin 6082 -- Turn in Taming the Beast
+step
+  only Hunter
+  zone map 1411
+  note "Talk to Thotar"
+  accept 6081 -- Accept Training the Beast
+step
+  only Hunter
+  zone map 1411
+  note "Talk to Grimtak"
+  note "Buy [Tough Jerky] from him. You will use this to feed your pet later"
+  vendor 3881 -- Vendor Trash
+  collect 117 x5 @51.13,42.63 map 1411 optional -- Tough Jerky (5)
+step
+  when level>=10
+  zone map 1411
+  note "Talk to Takrin"
+  accept 840 -- Accept Conscript of the Horde
+step
+  loop
+  zone map 1411
+  goto 44.45,39.74 map 1411 r 1
+  goto 44.45,39.74 map 1411 r 50
+  goto 44.49,37.47 map 1411 r 50
+  goto 43.3,37.32 map 1411 r 50
+  goto 41.7,37.09 map 1411 r 50
+  goto 41.64,38.27 map 1411 r 50
+  goto 41.94,40.46 map 1411 r 50
+  goto 43.3,40.4 map 1411 r 50
+  note "Kill Razormane Dustrunners and Razormane Battleguards"
+  note "Be careful. Dustrunners cast Rejuvenation (Heal) and Battleguards are tanky"
+  kill 3113 x4 quest 837.3 -- Razormane Dustrunner (4)
+  kill 3114 x4 quest 837.4 -- Razormane Battleguard (4)
+step
+  only Shaman
+  label next_160
+  zone map 1413
+  note "Talk to Kargal"
+  turnin 840 -- Turn in Conscript of the Horde
+  accept 842 -- Accept Crossroads Conscription
+step
+  only Shaman
+  when onquest 2983
+  turnin 2983 -- Turn in Call of Fire
+step
+  only Shaman
+  zone map 1413
+  note "Talk to Kranal"
+  accept 1524 -- Accept Call of Fire
+step
+  only Shaman
+  along until CallofFire2
+  zone map 1411
+  goto 36.74,57.78 map 1411 r 10 optional
+  goto 36.63,58.15 map 1411 r 8 optional
+  goto 36.63,58.15 map 1411 r 8 optional
+  goto 36.77,58.98 map 1411 r 8 optional
+  goto 36.85,58.32 map 1411 r 8 optional
+  goto 37.24,58.13 map 1411 r 8 optional
+  goto 37.86,58.18 map 1411 r 8 optional
+  goto 38.05,57.79 map 1411 r 8 optional
+  goto 38.93,57.54 map 1411 r 8 optional
+  goto 39.19,57.9 map 1411 r 8 optional
+  goto 39.16,58.56 map 1411 r 10 optional -- Travel the path up the mountain to Telf
+  note "Be careful to not fall of the mountain, the path is very narrow. You could die if you fall"
+step
+  only Shaman
+  when onquest 1524
+  turnin 1524 -- Turn in Call of Fire
+step
+  only Shaman
+  label CallofFire2
+  zone map 1411
+  note "Talk to Telf"
+  accept 1525 -- Accept Call of Fire
+step
+  only Shaman
+  along until next_167
+  zone map 1411
+  goto 39.13,58.63 map 1411 r 10 optional
+  goto 39.17,57.93 map 1411 r 10 optional
+  goto 38.95,57.58 map 1411 r 8 optional
+  goto 38.61,57.67 map 1411 r 8 optional
+  goto 38.06,57.78 map 1411 r 8 optional
+  goto 37.76,58.19 map 1411 r 8 optional
+  goto 36.96,58.07 map 1411 r 15 optional -- Travel the path back down the mountain
+  note "Be careful to not fall of the mountain, the path is very narrow. You could die if you fall"
+step
+  only Shaman
+  when onquest 1525
+  label next_167
+  loop
+  zone map 1413
+  goto 53.57,25.51 map 1413 r 1
+  goto 54.97,25.23 map 1413 r 50
+  goto 54.2,24.6 map 1413 r 50
+  goto 53.57,25.51 map 1413 r 50
+  note "Kill a Razormane Water Seeker or Razormane Thornweaver. Loot them for a Fire Tar"
+  collect 5026 x1 quest 1525.1 -- Fire Tar (1)
+step
+  only Shaman
+  along until next_169
+  zone map 1413
+  goto 52.34,29.27 map 1413 r 150 -- Travel to The Crossroads
+step
+  only Shaman
+  when onquest 842
+  turnin 842 -- Turn in Crossroads Conscription
+step
+  only Shaman
+  label next_169
+  zone map 1413
+  note "Talk to Zargh, Sergra, Thork and Gazrog"
+  accept 6365 -- Accept Meats to Orgrimmar
+  accept 844 -- Accept Plainstrider Menace
+  accept 871 -- Accept Disrupt the Attacks
+  accept 5041 -- Accept Supplies for the Crossroads
+  accept 869 -- Accept Raptor Thieves
+  goto 51.93,30.32 map 1413 r 8 optional
+step
+  only Shaman
+  when onquest 6365
+  turnin 6365 -- Turn in Meats to Orgrimmar
+step
+  only Shaman
+  zone map 1413
+  note "Talk to Devrak"
+  accept 6384 -- Accept Ride to Orgrimmar
+step
+  only Shaman
+  when !zone "Orgrimmar"
+  along until NeedforaCureAccept
+  zone map 1413
+  goto 51.5,30.34 map 1413 r 8
+  note "Talk to Devrak"
+  fly "Orgrimmar" -- Fly to Orgrimmar
+step
+  only Shaman
+  zone map 1454
+  goto 47.54,68.39 map 1454 r 8
+  note "Talk to Zendo'jian. Buy a [Quarter Staff] from him"
+  collect 854 x1 @47.54,68.39 map 1454 optional -- Collect Quarter Staff (1)
+step
+  only Shaman
+  when has 854
+  along until NeedforaCureAccept
+  zone map 1454
+  note "Equip the [Quarter Staff] when you are level 11"
+  use 854 @47.54,68.39 map 1454 optional
+step
+  only Shaman
+  when onquest 6384
+  turnin 6384 -- Turn in Ride to Orgrimmar
+step
+  only Shaman
+  label Gryhskaturnin1
+  zone map 1454
+  note "Talk to Gryshka"
+  accept 6385 -- Accept Doras the Wind Rider Master
+step
+  only Shaman
+  when onquest 6385
+  turnin 6385 -- Turn in Doras the Wind Rider Master
+step
+  only Shaman
+  zone map 1454
+  note "Talk to Doras"
+  accept 6386 -- Accept Return to the Crossroads
+step
+  only Shaman
+  label NeedforaCureAccept
+  zone map 1411
+  note "Talk to Rhinag"
+  note "This will start a 45 minute timer for the quest. Do NOT go AFK or log out for the next 5 minutes"
+  accept 812 -- Accept Need for a Cure
+step
+  only Hunter
+  zone map 1411
+  note "Talk to Misha"
+  accept 816 -- Accept Lost But Not Forgotten
+step
+  when onquest 834
+  label Stolensupplies
+  loop
+  zone map 1411
+  goto 49.05,22.49 map 1411 r 1
+  goto 47.34,33.38 map 1411 r 30
+  goto 47.92,33.1 map 1411 r 30
+  goto 49.11,33.11 map 1411 r 30
+  goto 48.53,32 map 1411 r 30
+  goto 47.36,30.98 map 1411 r 30
+  goto 47.14,29.68 map 1411 r 30
+  goto 46.49,34.67 map 1411 r 30
+  goto 50.13,32.35 map 1411 r 30
+  goto 49.78,28.26 map 1411 r 30
+  goto 50.83,25.94 map 1411 r 30
+  goto 49.68,24.38 map 1411 r 30
+  goto 49.05,22.49 map 1411 r 30
+  note "Loot the Stolen Supply Sacks from the ground"
+  collect 4918 x5 quest 834.1 -- Sack of Supplies (5)
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  along until next_181
+  zone map 1411
+  goto 46.37,22.94 map 1411 r 50 -- Travel to Rezlak
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  label next_181
+  zone map 1411
+  note "Talk to Rezlak"
+  accept 834 -- Accept Winds in the Desert
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  when onquest 834
+  loop
+  zone map 1411
+  goto 49.7,21.9 map 1411 r 1
+  goto 49.7,21.9 map 1411 r 40
+  goto 49.7,24.33 map 1411 r 40
+  goto 50.13,25.7 map 1411 r 40
+  goto 50.85,25.96 map 1411 r 40
+  goto 51.65,27.67 map 1411 r 40
+  goto 49.85,27.07 map 1411 r 40
+  goto 50.68,31.55 map 1411 r 40
+  goto 48.1,34.36 map 1411 r 40
+  goto 47.35,33.4 map 1411 r 40
+  goto 48.49,32.01 map 1411 r 40
+  goto 47.19,30.87 map 1411 r 40
+  note "Loot the Stolen Supply Sacks from the ground"
+  collect 4918 x5 quest 834.1 -- Sack of Supplies (5)
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  when onquest 834
+  turnin 834 -- Turn in Winds in the Desert
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  zone map 1411
+  note "Talk to Rezlak"
+  accept 835 -- Accept Securing the Lines
+step
+  only Hunter
+  zone map 1411
+  note "Talk to Rhinag"
+  note "This will start a 45 minute timer for the quest. Do NOT go AFK or log out for the next 5 minutes"
+  accept 812 -- Accept Need for a Cure
+step
+  only Hunter
+  when !zone "Orgrimmar"
+  along until BeastTraining
+  zone map 1454
+  goto 48.97,92.84 map 1454 r 50 optional
+step
+  only Hunter
+  zone map 1454
+  note "Talk to Nazgrel"
+  turnin 831 -- Turn in The Admiral's Orders
+step
+  only Hunter
+  when onquest 812
+  zone map 1454
+  note "Talk to Kor'ghan"
+  accept 813 -- Accept Finding the Antidote
+step
+  only Hunter
+  when onquest 812
+  along until BeastTraining
+  note "Abandon Need for a Cure. This will remove the timer on the quest but you will still be able to do it"
+  note "Abandon Need for a Cure"
+step
+  only Hunter
+  along until BeastTraining
+  zone map 1454
+  goto 68.02,38.69 map 1454 r 30 -- Travel to the Valley of Honor
+step
+  only Hunter
+  when onquest 6081
+  label BeastTraining
+  zone map 1454
+  note "Talk to Ormak"
+  turnin 6081 -- Turn in Training the Beast
+step
+  only Hunter
+  zone map 1454
+  goto 66.34,14.83 map 1454 r 8
+  note "Talk to Xao'tsu"
+  learn 24547 "your pet spells"
+step
+  only Hunter
+  along until Rezlak
+  note "Drag [Beast Training] onto your Action Bars. Teach skills to your pet"
+step
+  only Hunter
+  zone map 1454
+  goto 81.17,18.69 map 1454 r 8
+  note "Talk to Zendo'jian. Buy a [Laminated Recurve Bow] from him"
+  collect 2507 x1 @81.17,18.69 map 1454 optional -- Collect Laminated Recurve Bow (1)
+step
+  only Hunter
+  when has 2507
+  along until Rezlak
+  zone map 1454
+  note "Equip the [Laminated Recurve Bow] when you are level 11"
+  use 2507 @81.17,18.69 map 1454 optional
+step
+  only Hunter
+  label next_196
+  along until Rezlak
+  zone map 1411
+  goto 43.8,17.2 map 1411 r 40 optional
+  goto 43.53,18.35 map 1411 r 40 optional
+  goto 42.19,19.7 map 1411 r 40 optional
+  goto 41.08,20.42 map 1411 r 40 optional
+  goto 42.76,21.08 map 1411 r 40 optional
+  goto 40.44,17.51 map 1411 r 40 optional
+  note "Tame a pet. A Scorpid or Raptor will have the highest dps"
+step
+  only Hunter
+  along until Rezlak
+  zone map 1411
+  goto 46.37,22.94 map 1411 r 50 -- Travel to Rezlak
+step
+  only Hunter
+  label Rezlak
+  zone map 1411
+  note "Talk to Rezlak"
+  accept 834 -- Accept Winds in the Desert
+step
+  only Hunter
+  when onquest 834
+  loop
+  zone map 1411
+  goto 49.7,21.9 map 1411 r 1
+  goto 49.7,21.9 map 1411 r 40
+  goto 49.7,24.33 map 1411 r 40
+  goto 50.13,25.7 map 1411 r 40
+  goto 50.85,25.96 map 1411 r 40
+  goto 51.65,27.67 map 1411 r 40
+  goto 49.85,27.07 map 1411 r 40
+  goto 50.68,31.55 map 1411 r 40
+  goto 48.1,34.36 map 1411 r 40
+  goto 47.35,33.4 map 1411 r 40
+  goto 48.49,32.01 map 1411 r 40
+  goto 47.19,30.87 map 1411 r 40
+  note "Loot the Stolen Supply Sacks from the ground"
+  collect 4918 x5 quest 834.1 -- Sack of Supplies (5)
+step
+  only Hunter
+  when onquest 834
+  turnin 834 -- Turn in Winds in the Desert
+step
+  only Hunter
+  zone map 1411
+  note "Talk to Rezlak"
+  accept 835 -- Accept Securing the Lines
+step
+  along until next_202
+  zone map 1411
+  goto 53.41,27.81 map 1411 r 15 -- Travel through the cave
+step
+  when onquest 835
+  label next_202
+  loop
+  zone map 1411
+  goto 53.98,23.7 map 1411 r 1
+  goto 54.02,27.23 map 1411 r 40
+  goto 52.82,24.27 map 1411 r 40
+  goto 51.85,23.95 map 1411 r 40
+  goto 54.01,23.63 map 1411 r 40
+  goto 52.13,20.77 map 1411 r 40
+  goto 51.26,19.19 map 1411 r 40
+  goto 53.98,23.7 map 1411 r 40
+  note "Kill Dustwind Savages and Dustwind Storm Witches"
+  note "These mobs flee. Be careful not to double pull"
+  kill 3117 x12 quest 835.1 -- Dustwind Savage (12)
+  kill 3118 x8 quest 835.2 -- Dustwind Storm Witch (8)
+step
+  only Warrior,Troll
+  along until next_204
+  note "Pick the [Blemished Wooden Staff] as your quest reward and save it. You will get staff training in Orgrimmar"
+step
+  when onquest 835
+  label next_204
+  zone map 1411
+  note "Talk to Rezlak"
+  turnin 835 -- Turn in Securing the Lines
+step
+  only Shaman
+  zone map 1411
+  note "Talk to Misha"
+  accept 816 -- Accept Lost But Not Forgotten
+step
+  only Shaman
+  label next_207
+  zone map 1411
+  hearth "Razor Hill" optional -- Hearth to Razor Hill
+  use 6948 @42.13,26.67 map 1411 optional
+step
+  only Shaman
+  zone map 1411
+  note "Talk to Innkeeper Grosk"
+  vendor 6928 -- Vendor Trash
+  note "Buy [Ice Cold Milk] from him" only Mage
+  note "Buy [Ice Cold Milk] from him" only Warlock
+  note "Buy [Ice Cold Milk] from him" only Priest
+  note "Buy [Ice Cold Milk] from him" only Shaman
+  note "Buy [Haunch of Meat] from him" only Rogue
+  note "Buy [Haunch of Meat] from him" only Warrior
+  collect 1179 x15 @51.51,41.64 map 1411 optional only Mage -- Ice Cold Milk (15)
+  collect 1179 x15 @51.51,41.64 map 1411 optional only Warlock -- Ice Cold Milk (15)
+  collect 1179 x15 @51.51,41.64 map 1411 optional only Priest -- Ice Cold Milk (15)
+  collect 1179 x15 @51.51,41.64 map 1411 optional only Shaman -- Ice Cold Milk (15)
+  collect 2287 x15 @51.51,41.64 map 1411 optional only Rogue -- Haunch of Meat (15)
+  collect 2287 x15 @51.51,41.64 map 1411 optional only Warrior -- Haunch of Meat (15)
+step
+  only Shaman
+  zone map 1411
+  note "Talk to Gar'Thok"
+  turnin 837 -- Turn in Encroachment
+step
+  only Shaman
+  zone map 1411
+  goto 54.42,42.59 map 1411 r 8
+  note "Talk to Swart"
+  learn 8050 "your class spells"
+step
+  only Shaman
+  label MargozTurnIn
+  along until Collars1
+  zone map 1411
+  goto 53.18,29.15 map 1411 r 50 -- Travel toward Dustwind Cave
+step
+  only Shaman
+  when onquest 1525
+  label next_230
+  loop
+  zone map 1411
+  goto 53.18,29.15 map 1411 r 1
+  goto 53.18,29.15 map 1411 r 20
+  goto 52.7,27.97 map 1411 r 12
+  goto 53.05,27.87 map 1411 r 12
+  goto 53.14,27.24 map 1411 r 12
+  goto 52.84,26.8 map 1411 r 12
+  goto 52.07,26.85 map 1411 r 12
+  goto 52.7,27.97 map 1411 r 12
+  note "Kill Cultists. Loot them for a Reagent Pouch"
+  collect 6652 x1 quest 1525.2 -- Reagent Pouch (1)
+step
+  label Collars1
+  note "Review this source step manually."
+step
+  label next_235
+  level 10 -- Grind to level 10
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  when !zone "Orgrimmar"
+  along until Admiralorders1
+  zone map 1454
+  goto 48.97,92.84 map 1454 r 50 optional
+step
+  only Warrior,Paladin,Hunter,Priest,Shaman,Mage,Warlock,Druid
+  zone map 1454
+  note "Talk to Trak'gen"
+  vendor 3313 -- Vendor your trash
+step
+  only Rogue
+  zone map 1454
+  goto 48.12,80.52 map 1454 r 8 optional
+  note "Talk to Trak'gen. Buy [Sharp Throwing Axe] from him"
+  collect 3135 x200 @48.12,80.52 map 1454 optional -- Sharp Throwing Axe (200)
+  vendor 3313 -- Vendor your trash
+step
+  only Rogue
+  when has 3135
+  along until ZeptoUC1
+  zone map 1454
+  note "Equip the [Sharp Throwing Axe] when you are level 11"
+  use 3135 @48.12,80.52 map 1454 optional
+step
+  only Shaman
+  when onquest 6385
+  turnin 6385 -- Turn in Doras the Wind Rider Master
+step
+  only Shaman
+  when onquest 6385
+  zone map 1454
+  note "Talk to Doras"
+  accept 6386 -- Accept Return to the Crossroads
+step
+  only Shaman
+  when turnedin 6385
+  zone map 1454
+  note "Talk to Doras"
+  accept 6386 -- Accept Return to the Crossroads
+step
+  only Priest,Troll
+  when onquest 5654
+  turnin 5654 -- Turn in Hex of Weakness
+step
+  only Priest,Troll
+  when onquest 5654
+  zone map 1454
+  note "Talk to Ur'kyo"
+  train 6018 -- Train your class spells
+step
+  only Priest,Troll
+  when turnedin 5654
+  zone map 1454
+  note "Talk to Ur'kyo"
+  train 6018 -- Train your class spells
+step
+  only Priest,Troll
+  when onquest 5652
+  turnin 5652 -- Turn in Hex of Weakness
+step
+  only Priest,Troll
+  zone map 1454
+  note "Talk to Ur'kyo"
+  train 6018 -- Train your class spells
+step
+  only Mage
+  zone map 1454
+  goto 38.33,85.55 map 1454 r 8
+  note "Talk to Pephredo"
+  learn 122 "your class spells"
+step
+  label Admiralorders1
+  zone map 1454
+  note "Talk to Nazgrel"
+  turnin 831 -- Turn in The Admiral's Orders
+step
+  only Rogue
+  zone map 1454
+  goto 42.75,53.53 map 1454 r 8 optional
+  note "Talk to Therzok"
+  accept 1963 only Orc,Rogue -- Accept The Shattered Hand
+  train 6446 -- Train your class spells
+step
+  only Shaman
+  when onquest 812
+  zone map 1454
+  note "Talk to Kor'ghan"
+  accept 813 -- Accept Finding the Antidote
+step
+  only Shaman
+  when onquest 812
+  along until CallofFire3
+  note "Abandon Need for a Cure. This will remove the timer on the quest but you will still be able to do it"
+  note "Abandon Need for a Cure"
+step
+  only Warlock
+  label NeeruFireblade
+  zone map 1454
+  goto 48.59,46.97 map 1454 r 8
+  note "Talk to Mirket"
+  learn 1120 "your class spells"
+step
+  only Warrior,Troll
+  along until StaveTraining1
+  zone map 1454
+  goto 68.02,38.69 map 1454 r 30 -- Travel to the Valley of Honor
+step
+  only Warrior
+  zone map 1454
+  goto 79.93,31.26 map 1454 r 8
+  note "Talk to Grezz"
+  learn 6546 "your class spells"
+step
+  only Warrior,Troll
+  label StaveTraining1
+  zone map 1454
+  goto 81.52,19.6 map 1454 r 8
+  note "Talk to Hanashi"
+  learn 227 "Staves"
+step
+  only Warrior,Troll
+  zone map 1454
+  goto 81.17,18.69 map 1454 r 8
+  note "Talk to Zendo'jian. Buy a [Quarter Staff] from him"
+  collect 854 x1 @81.17,18.69 map 1454 optional -- Collect Quarter Staff (1)
+step
+  only Warrior,Troll
+  when has 854
+  along until ZeptoUC1
+  zone map 1454
+  note "Equip the [Quarter Staff] when you are level 11"
+  use 854 @81.17,18.69 map 1454 optional
+step
+  only Warrior,Orc
+  zone map 1454
+  note "Talk to Urtharo"
+  vendor 3314 -- Vendor trash. Sell your weapon if it gives you enough money for a [Tabar] (22s 14c). You'll come back later if you don't have enough yet
+step
+  only Warrior,Orc
+  zone map 1454
+  goto 47.54,68.39 map 1454 r 8
+  note "Talk to Urtharo. Buy a [Tabar] from him"
+  collect 1196 x1 @47.54,68.39 map 1454 optional -- Collect Tabar (1)
+step
+  only Warrior,Orc
+  when has 1196
+  along until ZeptoUC1
+  zone map 1454
+  note "Equip the [Tabar]"
+  use 1196 @47.54,68.39 map 1454 optional
+step
+  only Shaman
+  zone map 1454
+  goto 47.54,68.39 map 1454 r 8
+  note "Talk to Urtharo. Buy a [Quarter Staff] from him"
+  collect 854 x1 @47.54,68.39 map 1454 optional -- Collect Quarter Staff (1)
+step
+  only Shaman
+  when has 854
+  along until ZeptoUC1
+  zone map 1454
+  note "Equip the [Quarter Staff] when you are level 11"
+  use 854 @47.54,68.39 map 1454 optional
+step
+  only Shaman
+  when onquest 813
+  label VenomPoisonSacs
+  loop
+  zone map 1411
+  goto 36.4,30.95 map 1411 r 1
+  goto 42.47,19.99 map 1411 r 50
+  goto 41.07,19.85 map 1411 r 50
+  goto 40.21,17.21 map 1411 r 50
+  goto 38.89,16.91 map 1411 r 50
+  goto 38.13,19.9 map 1411 r 50
+  goto 38.67,22.13 map 1411 r 50
+  goto 36.91,25.63 map 1411 r 50
+  goto 36.64,28.18 map 1411 r 50
+  goto 36.4,30.95 map 1411 r 50
+  note "Kill Venomtail Scorpids. Loot them for their Poison Sacs"
+  collect 4886 x4 quest 813.1 -- Venomtail Poison Sac (4)
+step
+  only Hunter
+  when onquest 813
+  loop
+  zone map 1411
+  goto 36.4,30.95 map 1411 r 1
+  goto 42.47,19.99 map 1411 r 50
+  goto 41.07,19.85 map 1411 r 50
+  goto 40.21,17.21 map 1411 r 50
+  goto 38.89,16.91 map 1411 r 50
+  goto 38.13,19.9 map 1411 r 50
+  goto 38.67,22.13 map 1411 r 50
+  goto 36.91,25.63 map 1411 r 50
+  goto 36.64,28.18 map 1411 r 50
+  goto 36.4,30.95 map 1411 r 50
+  note "Kill Venomtail Scorpids. Loot them for their Poison Sacs"
+  collect 4886 x4 quest 813.1 -- Venomtail Poison Sac (4)
+step
+  only Hunter
+  zone map 1411
+  note "Travel south alongside the river toward Far Watch Post"
+  note "Kill Dreadmaw Crocolisks on the way. Loot them for Kron's Amulet"
+  note "Skip and abandon this quest if it won't drop"
+  collect 4891 x1 quest 816.1 -- Kron's Amulet (1)
+step
+  only Shaman
+  along until CallofFire3
+  zone map 1411
+  note "Travel south alongside the river. Kill Dreadmaw Crocolisks on the way. Loot them for Kron's Amulet"
+  collect 4891 x1 quest 816.1 -- Kron's Amulet (1)
+step
+  only Shaman
+  along until CallofFire3
+  zone map 1411
+  goto 36.74,57.78 map 1411 r 10 optional
+  goto 36.63,58.15 map 1411 r 8 optional
+  goto 36.63,58.15 map 1411 r 8 optional
+  goto 36.77,58.98 map 1411 r 8 optional
+  goto 36.85,58.32 map 1411 r 8 optional
+  goto 37.24,58.13 map 1411 r 8 optional
+  goto 37.86,58.18 map 1411 r 8 optional
+  goto 38.05,57.79 map 1411 r 8 optional
+  goto 38.93,57.54 map 1411 r 8 optional
+  goto 39.19,57.9 map 1411 r 8 optional
+  goto 39.16,58.56 map 1411 r 10 optional -- Travel the path up the mountain toward Telf
+  note "Be careful to not fall of the mountain, the path is very narrow. You could die if you fall"
+step
+  only Shaman
+  when onquest 1525
+  turnin 1525 -- Turn in Call of Fire
+step
+  only Shaman
+  label CallofFire3
+  zone map 1411
+  note "Talk to Telf"
+  accept 1526 -- Accept Call of Fire
+step
+  only Shaman
+  along until next_274
+  zone map 1411
+  note "Use the [Fire Sapta]"
+  use 6636 @38.18,58.58 map 1411
+step
+  only Shaman
+  when onquest 1526
+  label next_274
+  zone map 1411
+  note "Kill the Minor Manifestation of Fire. Loot him for a Glowing Ember"
+  collect 6655 x1 quest 1526.1 @38.96,58.22 map 1411 -- Glowing Ember (1)
+step
+  only Shaman
+  when onquest 1526
+  turnin 1526 -- Turn in Call of Fire
+step
+  only Shaman
+  zone map 1411
+  note "Click the Brazier on the ground"
+  accept 1527 -- Accept Call of Fire
+step
+  only Shaman
+  along until next_277
+  zone map 1411
+  goto 39.13,58.63 map 1411 r 10 optional
+  goto 39.17,57.93 map 1411 r 10 optional
+  goto 38.95,57.58 map 1411 r 8 optional
+  goto 38.61,57.67 map 1411 r 8 optional
+  goto 38.06,57.78 map 1411 r 8 optional
+  goto 37.76,58.19 map 1411 r 8 optional
+  goto 36.96,58.07 map 1411 r 15 optional -- Travel the path back down the mountain
+  note "Be careful to not fall of the mountain, the path is very narrow. You could die if you fall"
+step
+  only Shaman
+  label next_277
+  zone map 1411
+  note "Kill Dreadmaw Crocolisks. Loot them for Kron's Amulet."
+  note "Skip and abandon this quest if it won't drop"
+  collect 4891 x1 quest 816.1 -- Kron's Amulet (1)
+step
+  only Shaman
+  when complete 816
+  when onquest 816
+  zone map 1411
+  note "Talk to Misha"
+  turnin 816 -- Turn in Lost But Not Forgotten
+step
+  only Hunter
+  when complete 816
+  when onquest 816
+  zone map 1411
+  note "Talk to Misha"
+  turnin 816 -- Turn in Lost But Not Forgotten
+step
+  only Shaman
+  when !zone "The Barrens"
+  label FarWatchPost
+  zone map 1413
+  goto 62.26,19.38 map 1413 r 40 -- Travel to Far Watch Post
+step
+  only Hunter
+  when !zone "The Barrens"
+  zone map 1413
+  goto 62.26,19.38 map 1413 r 40 -- Travel to Far Watch Post
+step
+  only Shaman
+  zone map 1413
+  note "Talk to Kargal"
+  turnin 840 -- Turn in Conscript of the Horde
+  accept 842 -- Accept Crossroads Conscription
+step
+  only Hunter
+  zone map 1413
+  note "Talk to Kargal"
+  turnin 840 -- Turn in Conscript of the Horde
+  accept 842 -- Accept Crossroads Conscription
+step
+  only Shaman
+  when onquest 1527
+  label Akzeloth
+  zone map 1413
+  note "Talk to Kranal"
+  turnin 1527 -- Turn in Call of Fire
+step
+  only Hunter
+  along until HunterCrossRoadsVisit1
+  zone map 1413
+  goto 52.34,29.27 map 1413 r 150 -- Travel to The Crossroads
+step
+  only Hunter
+  when onquest 842
+  turnin 842 -- Turn in Crossroads Conscription
+step
+  only Hunter
+  label HunterCrossRoadsVisit1
+  zone map 1413
+  note "Talk to Zargh, Sergra, Thork and Gazrog"
+  accept 6365 -- Accept Meats to Orgrimmar
+  accept 844 -- Accept Plainstrider Menace
+  accept 871 -- Accept Disrupt the Attacks
+  accept 5041 -- Accept Supplies for the Crossroads
+  accept 869 -- Accept Raptor Thieves
+  goto 51.93,30.32 map 1413 r 8 optional
+step
+  only Hunter
+  zone map 1413
+  goto 51.11,29.07 map 1413 r 8
+  note "Talk to Uthrok. Buy a [Laminated Recurve Bow] from him"
+  collect 2507 x1 @51.11,29.07 map 1413 optional -- Collect Laminated Recurve Bow (1)
+step
+  only Hunter
+  when has 2507
+  along until DisruptTheAttacks
+  zone map 1413
+  note "Equip the [Laminated Recurve Bow]"
+  use 2507 @51.11,29.07 map 1413 optional
+step
+  only Shaman
+  zone map 1413
+  use 4926 @55.78,20 map 1413 -- Loot Chen's Empty Keg from the ground and start the quest. If it's not up you'll get it later
+  collect 4926 x1 @55.78,20 map 1413 optional -- Collect Chen's Empty Keg
+  accept 819 -- Accept Chen's Empty Keg
+step
+  only Shaman
+  when onquest 844
+  along until DemonSeed
+  zone map 1413
+  note "Kill Plainstriders. Loot them for their Beaks"
+  collect 5087 x7 quest 844.1 @55.78,20 map 1413 -- Plainstrider Beak (7)
+step
+  only Hunter
+  when onquest 844
+  along until DemonSeed
+  zone map 1413
+  note "Kill Plainstriders. Loot them for their Beaks"
+  collect 5087 x7 quest 844.1 @55.78,20 map 1413 -- Plainstrider Beak (7)
+step
+  only Shaman
+  when onquest 924
+  zone map 1413
+  goto 51.09,22.68 map 1413 r 40 optional
+  goto 50.33,21.85 map 1413 r 40 optional
+  goto 49.21,20.42 map 1413 r 40 optional
+  goto 47.58,19.38 map 1413 r 100 -- Travel to the top of the mountain
+step
+  only Hunter
+  when onquest 924
+  zone map 1413
+  goto 51.09,22.68 map 1413 r 40 optional
+  goto 50.33,21.85 map 1413 r 40 optional
+  goto 49.21,20.42 map 1413 r 40 optional
+  goto 47.58,19.38 map 1413 r 100 -- Travel to the top of the mountain
+step
+  only Shaman
+  along until DemonSeed
+  note "Be careful if Rathorian is up, he is a level 15 rare. Be ready to use your [Faintly Glowing Skull] and [Really Sticky Glue] if needed"
+step
+  only Hunter
+  along until DemonSeed
+  note "Be careful if Rathorian is up, he is a level 15 rare. Be ready to use your [Faintly Glowing Skull] and [Really Sticky Glue] if needed"
+step
+  only Shaman
+  when onquest 924
+  when !turnedin 924
+  label DemonSeed
+  zone map 1413
+  note "Right click the Altar"
+  note "Make sure you have a [Flawed Power Stone] (30 minute duration) on you"
+  collect 4986 x1 @47.98,19.08 map 1413 -- Collect Flawed Power Stone
+step
+  only Hunter
+  when onquest 924
+  when !turnedin 924
+  zone map 1413
+  note "Right click the Altar"
+  note "Make sure you have a [Flawed Power Stone] (30 minute duration) on you"
+  collect 4986 x1 @47.98,19.08 map 1413 -- Collect Flawed Power Stone
+step
+  only Shaman
+  when onquest 924
+  along until DisruptTheAttacks
+  zone map 1413
+  goto 47.58,19.38 map 1413 r 40 optional
+  goto 49.21,20.42 map 1413 r 40 optional
+  goto 50.33,21.85 map 1413 r 40 optional
+  goto 51.09,22.68 map 1413 r 40 optional -- Travel down the mountain where you came from
+step
+  only Hunter
+  when onquest 924
+  along until DisruptTheAttacks
+  zone map 1413
+  goto 47.58,19.38 map 1413 r 40 optional
+  goto 49.21,20.42 map 1413 r 40 optional
+  goto 50.33,21.85 map 1413 r 40 optional
+  goto 51.09,22.68 map 1413 r 40 optional -- Travel down the mountain where you came from
+step
+  only Shaman
+  when onquest 844
+  along until DisruptTheAttacks
+  zone map 1413
+  note "Kill Plainstriders. Loot them for their beaks"
+  collect 5087 x7 quest 844.1 @51.09,22.68 map 1413 -- Plainstrider Beak (7)
+step
+  only Hunter
+  when onquest 844
+  along until DisruptTheAttacks
+  zone map 1413
+  note "Kill Plainstriders. Loot them for their beaks"
+  collect 5087 x7 quest 844.1 @51.09,22.68 map 1413 -- Plainstrider Beak (7)
+step
+  only Hunter
+  when onquest 871
+  along until next_296
+  zone map 1413
+  note "Kill Water Seekers, Thornweavers and Hunters"
+  kill 3267 x8 quest 871.1 @51.09,22.68 map 1413 -- Razormane Water Seeker (8)
+  kill 3268 x8 quest 871.2 @51.09,22.68 map 1413 -- Razormane Thornweaver (8)
+  kill 3265 x3 quest 871.3 @51.09,22.68 map 1413 -- Razormane Hunter (3)
+step
+  only Hunter
+  label next_296
+  zone map 1413
+  use 4926 @55.7,27.3 map 1413 -- Loot Chen's Empty Keg from the ground and start the quest. If it's not up you'll get it later
+  collect 4926 x1 @55.7,27.3 map 1413 optional -- Collect Chen's Empty Keg
+  accept 819 -- Accept Chen's Empty Keg
+step
+  only Shaman
+  when onquest 871
+  label DisruptTheAttacks
+  loop
+  zone map 1413
+  goto 53.63,24.5 map 1413 r 1
+  goto 53.63,24.5 map 1413 r 50
+  goto 54.26,24.64 map 1413 r 50
+  goto 54.81,25.19 map 1413 r 50
+  goto 55.5,25.61 map 1413 r 50
+  goto 55.86,26.3 map 1413 r 50
+  goto 55.83,27.15 map 1413 r 50
+  goto 55.41,27.41 map 1413 r 50
+  goto 54.5,26.97 map 1413 r 50
+  goto 54.05,26.11 map 1413 r 50
+  goto 53.51,25.24 map 1413 r 50
+  note "Kill Water Seekers, Thornweavers and Hunters"
+  kill 3267 x8 quest 871.1 -- Razormane Water Seeker (8)
+  kill 3268 x8 quest 871.2 -- Razormane Thornweaver (8)
+  kill 3265 x3 quest 871.3 -- Razormane Hunter (3)
+step
+  only Hunter
+  when onquest 871
+  loop
+  zone map 1413
+  goto 53.63,24.5 map 1413 r 1
+  goto 53.63,24.5 map 1413 r 50
+  goto 54.26,24.64 map 1413 r 50
+  goto 54.81,25.19 map 1413 r 50
+  goto 55.5,25.61 map 1413 r 50
+  goto 55.86,26.3 map 1413 r 50
+  goto 55.83,27.15 map 1413 r 50
+  goto 55.41,27.41 map 1413 r 50
+  goto 54.5,26.97 map 1413 r 50
+  goto 54.05,26.11 map 1413 r 50
+  goto 53.51,25.24 map 1413 r 50
+  note "Kill Water Seekers, Thornweavers and Hunters"
+  kill 3267 x8 quest 871.1 -- Razormane Water Seeker (8)
+  kill 3268 x8 quest 871.2 -- Razormane Thornweaver (8)
+  kill 3265 x3 quest 871.3 -- Razormane Hunter (3)
+step
+  only Shaman
+  when onquest 844
+  loop
+  zone map 1413
+  goto 53.71,29.19 map 1413 r 1
+  goto 53.36,26.28 map 1413 r 80
+  goto 53.23,28.41 map 1413 r 80
+  goto 53.57,29.58 map 1413 r 80
+  goto 52.91,32.9 map 1413 r 80
+  goto 51.31,32.91 map 1413 r 80
+  goto 50.5,31.05 map 1413 r 80
+  goto 50.05,29.77 map 1413 r 80
+  goto 50.93,27.72 map 1413 r 80
+  goto 52.83,27.91 map 1413 r 80
+  goto 53.71,29.19 map 1413 r 80
+  note "Kill Plainstriders. Loot them for their Beaks"
+  collect 5087 x7 quest 844.1 -- Plainstrider Beak (7)
+step
+  only Hunter
+  when onquest 844
+  loop
+  zone map 1413
+  goto 53.71,29.19 map 1413 r 1
+  goto 53.36,26.28 map 1413 r 80
+  goto 53.23,28.41 map 1413 r 80
+  goto 53.57,29.58 map 1413 r 80
+  goto 52.91,32.9 map 1413 r 80
+  goto 51.31,32.91 map 1413 r 80
+  goto 50.5,31.05 map 1413 r 80
+  goto 50.05,29.77 map 1413 r 80
+  goto 50.93,27.72 map 1413 r 80
+  goto 52.83,27.91 map 1413 r 80
+  goto 53.71,29.19 map 1413 r 80
+  note "Kill Plainstriders. Loot them for their Beaks"
+  collect 5087 x7 quest 844.1 -- Plainstrider Beak (7)
+step
+  only Hunter
+  zone map 1413
+  goto 53.12,28.72 map 1413 r 1 optional
+  goto 53.12,28.72 map 1413 r 60 optional
+  goto 53.97,28.1 map 1413 r 60 optional
+  goto 54.64,27.09 map 1413 r 60 optional
+  goto 55.47,26.94 map 1413 r 60 optional
+  goto 55.44,25.7 map 1413 r 60 optional
+  goto 55.51,24.54 map 1413 r 60 optional
+  goto 54.75,23.51 map 1413 r 60 optional
+  goto 53.74,23.66 map 1413 r 60 optional
+  goto 53.35,25.16 map 1413 r 60 optional
+  goto 52.99,26.88 map 1413 r 60
+  level 11+6980 -- Grind to 6980/8800xp
+step
+  only Shaman
+  when onquest 6386
+  turnin 6386 -- Turn in Return to the Crossroads
+step
+  only Hunter
+  when onquest 6386
+  turnin 6386 -- Turn in Return to the Crossroads
+step
+  only Shaman
+  when onquest 6386
+  when onquest 844
+  turnin 844 -- Turn in Plainstrider Menace
+step
+  only Hunter
+  when onquest 6386
+  when onquest 844
+  turnin 844 -- Turn in Plainstrider Menace
+step
+  only Shaman
+  when onquest 6386
+  when onquest 871
+  turnin 871 -- Turn in The Disruption Ends
+step
+  only Hunter
+  when onquest 6386
+  when onquest 871
+  turnin 871 -- Turn in The Disruption Ends
+step
+  only Shaman
+  when onquest 6386
+  zone map 1413
+  note "Talk to Zargh, Sergra and Thork"
+  accept 845 -- Accept The Zhevra
+  accept 872 -- Accept Disrupt the Attacks
+  goto 51.5,30.87 map 1413 r 8 optional
+step
+  only Shaman
+  when turnedin 6386
+  zone map 1413
+  note "Talk to Zargh, Sergra and Thork"
+  accept 845 -- Accept The Zhevra
+  accept 872 -- Accept Disrupt the Attacks
+  goto 51.5,30.87 map 1413 r 8 optional
+step
+  only Hunter
+  when onquest 6386
+  zone map 1413
+  note "Talk to Zargh, Sergra and Thork"
+  accept 845 -- Accept The Zhevra
+  accept 872 -- Accept Disrupt the Attacks
+  goto 51.5,30.87 map 1413 r 8 optional
+step
+  only Hunter
+  when turnedin 6386
+  zone map 1413
+  note "Talk to Zargh, Sergra and Thork"
+  accept 845 -- Accept The Zhevra
+  accept 872 -- Accept Disrupt the Attacks
+  goto 51.5,30.87 map 1413 r 8 optional
+step
+  only Shaman
+  when onquest 844
+  turnin 844 -- Turn in Plainstrider Menace
+step
+  only Hunter
+  when onquest 844
+  turnin 844 -- Turn in Plainstrider Menace
+step
+  only Shaman
+  when onquest 871
+  turnin 871 -- Turn in The Disruption Ends
+step
+  only Hunter
+  when onquest 871
+  turnin 871 -- Turn in The Disruption Ends
+step
+  only Shaman
+  zone map 1413
+  note "Talk to Sergra and Thork"
+  accept 845 -- Accept The Zhevra
+  accept 872 -- Accept Disrupt the Attacks
+  goto 51.5,30.87 map 1413 r 8 optional
+step
+  only Hunter
+  zone map 1413
+  note "Talk to Sergra and Thork"
+  accept 845 -- Accept The Zhevra
+  accept 872 -- Accept Disrupt the Attacks
+  goto 51.5,30.87 map 1413 r 8 optional
+step
+  only Shaman
+  zone map 1413
+  goto 51.99,29.89 map 1413 r 8
+  note "Talk to Innkeeper Boorand"
+  sethome "Crossroads" @51.99,29.89 map 1413 optional -- Set your Hearthstone to Crossroads
+step
+  only Hunter
+  zone map 1413
+  goto 51.99,29.89 map 1413 r 8
+  note "Talk to Innkeeper Boorand"
+  sethome "Crossroads" @51.99,29.89 map 1413 optional -- Set your Hearthstone to Crossroads
+step
+  only Hunter
+  when !turnedin 398
+  zone map 1413
+  goto 51.67,29.95 map 1413 r 8
+  note "Talk to Barg"
+  collect 2515 x1200 @51.67,29.95 map 1413 only Hunter -- Sharp Arrow (1200)
+step
+  only Hunter
+  when onquest 6365
+  turnin 6365 -- Turn in Meats to Orgrimmar
+step
+  only Hunter
+  zone map 1413
+  note "Talk to Devrak"
+  accept 6384 -- Accept Ride to Orgrimmar
+step
+  only Hunter
+  when !zone "Orgrimmar"
+  along until ZeptoUC1
+  zone map 1413
+  goto 51.5,30.34 map 1413 r 8
+  note "Talk to Devrak"
+  fly "Orgrimmar" -- Fly to Orgrimmar
+step
+  only Shaman
+  when !zone "Orgrimmar"
+  along until ZeptoUC1
+  zone map 1413
+  goto 51.5,30.34 map 1413 r 8
+  note "Talk to Devrak"
+  fly "Orgrimmar" -- Fly to Orgrimmar
+step
+  only Hunter
+  when onquest 6384
+  turnin 6384 -- Turn in Ride to Orgrimmar
+step
+  only Hunter
+  label Gryhskaturnin1_2
+  zone map 1454
+  note "Talk to Gryshka"
+  accept 6385 -- Accept Doras the Wind Rider Master
+step
+  only Hunter
+  when onquest 6385
+  turnin 6385 -- Turn in Doras the Wind Rider Master
+step
+  only Hunter
+  zone map 1454
+  note "Talk to Doras"
+  accept 6386 -- Accept Return to the Crossroads
+step
+  only Shaman
+  when complete 813
+  when !turnedin 812
+  when onquest 813
+  label FindingAntidoteTurnin
+  zone map 1454
+  note "Talk to Kor'ghan"
+  turnin 813 -- Turn in Finding the Antidote
+step
+  only Hunter
+  when complete 813
+  when !turnedin 812
+  when onquest 813
+  zone map 1454
+  note "Talk to Kor'ghan"
+  turnin 813 -- Turn in Finding the Antidote
+step
+  only Shaman
+  when level>=12
+  label Shaman12training
+  zone map 1454
+  goto 38.82,36.41 map 1454 r 8
+  note "Talk to Kardris"
+  learn 547 "your class spells"
+step
+  only Shaman
+  zone map 1454
+  note "Talk to Urtharo"
+  vendor 3314 -- Vendor trash. Sell your weapon if it gives you enough money for a [Quarter Staff] (30s 22c). You'll get it later if you don't have enough yet
+step
+  only Shaman
+  zone map 1454
+  goto 47.54,68.39 map 1454 r 8
+  note "Talk to Urtharo. Buy a [Quarter Staff] from him"
+  collect 854 x1 @47.54,68.39 map 1454 optional -- Collect Quarter Staff (1)
+step
+  only Shaman
+  when has 854
+  along until ZeptoUC1
+  zone map 1454
+  note "Equip the [Quarter Staff]"
+  use 854 @47.54,68.39 map 1454 optional
+step
+  only Hunter
+  along until next_315
+  zone map 1454
+  goto 68.02,38.69 map 1454 r 30 -- Travel to the Valley of Honor
+step
+  only Hunter
+  when level>=12
+  label next_315
+  zone map 1454
+  goto 66.06,18.5 map 1454 r 8
+  note "Talk to Ormak"
+  learn 14281 "your class spells"
+step
+  only Hunter
+  when level>=12
+  zone map 1454
+  goto 66.34,14.83 map 1454 r 8
+  note "Talk to Xao'tsu"
+  learn 24556 "your pet spells"
+step
+  only Hunter
+  zone map 1454
+  goto 81.17,18.69 map 1454 r 8
+  note "Talk to Zendo'jian. Buy a [Laminated Recurve Bow] from him"
+  collect 2507 x1 @81.17,18.69 map 1454 optional -- Collect Laminated Recurve Bow (1)
+step
+  only Hunter
+  when has 2507
+  along until ZeptoUC1
+  zone map 1454
+  note "Equip the [Laminated Recurve Bow]"
+  use 2507 @81.17,18.69 map 1454 optional
+step
+  only Shaman
+  label next_320
+  zone map 1411
+  note "Talk to Rhinag"
+  accept 812 -- Accept Need for a Cure
+step
+  only Hunter
+  zone map 1411
+  note "Talk to Rhinag"
+  accept 812 -- Accept Need for a Cure
+step
+  only Shaman
+  when onquest 812
+  turnin 812 -- Turn in Need for a Cure
+step
+  only Hunter
+  when onquest 812
+  turnin 812 -- Turn in Need for a Cure
+step
+  when !zone "Tirisfal Glades"
+  label ZeptoUC1
+  zone map 1411
+  goto 50.8,13.8 map 1411 r 40 -- Go up the Zeppelin Tower
+  note "Conjure water while waiting" only Mage
+step
+  only Rogue,Orc
+  when !zone "Undercity"
+  along until Swordtraining1
+  zone map 1420
+  goto 61.8,65.06 map 1420 r 20 optional
+step
+  only Rogue,Orc
+  along until Swordtraining1
+  zone map 1458
+  goto 66.09,20.06 map 1458 r 20 optional
+  goto 64.37,23.94 map 1458 r 20 optional
+  goto 65.93,26.71 map 1458 r 10 optional
+  goto 65.89,34.03 map 1458 r 10 optional
+  goto 64.22,39.77 map 1458 r 10 optional
+  goto 65.53,43.62 map 1458 r 15 optional -- Take the lift down to the Undercity
+step
+  only Rogue,Orc
+  zone map 1458
+  goto 63.25,48.56 map 1458 r 8
+  note "Talk to Michael"
+  getfp "Undercity" @63.25,48.56 map 1458 optional -- Get the Undercity flight path
+step
+  only Rogue,Orc
+  label Swordtraining1
+  zone map 1458
+  goto 57.29,32.72 map 1458 r 8 optional
+  note "Talk to Archibald in the War Quarter"
+  learn 201 "1h Swords"
+step
+  only Rogue,Orc
+  when zone "Undercity"
+  label RogueCutlass1_2
+  zone map 1458
+  goto 61.15,40.89 map 1458 r 8
+  note "Talk to Louis Warren in the Trade Quarter"
+  note "Buy a [Cutlass] from him"
+  note "Alternatively, check the Auction House for something better or cheaper"
+  collect 851 x1 @61.15,40.89 map 1458 optional -- Collect Cutlass (1)
+step
+  only Rogue,Orc
+  when has 851
+  along until KillDevlin
+  zone map 1458
+  note "Equip the [Cutlass]"
+  use 851 @61.15,40.89 map 1458 optional
+step
+  only Rogue,Orc
+  when zone "Undercity"
+  when !turnedin 429
+  zone map 1458
+  note "Talk to Auctioneer Rhyker"
+  collect 3164 x6 @64.2,49.6 map 1458 -- Buy Six [Discolored Worg Hearts] from the Auction House
+  note "Skip this if you want, it's only a small time saver"
+step
+  label next_331
+  along until next_332
+  zone map 1420
+  goto 61.52,53.2 map 1420 r 80 optional -- Travel to Brill
+step
+  when level<=12
+  label next_332
+  zone map 1420
+  note "Talk to Coleman and Gretchen inside the inn"
+  note "Gretchen is on the second floor"
+  accept 354 -- Accept Deaths in the Family
+  accept 362 -- Accept The Haunted Mills
+  accept 375 -- Accept The Chill of Death
+  goto 61.89,52.73 map 1420 r 8 optional
+step
+  only Warrior
+  when level>=10
+  when !turnedin 1498
+  zone map 1420
+  note "Talk to Austil"
+  accept 1818 -- Accept Speak with Dillinger
+step
+  only Warlock
+  when !turnedin 1504
+  when level>=10
+  zone map 1420
+  note "Talk to Ageron inside the inn"
+  accept 1478 -- Accept Halgar's Summons
+step
+  only Rogue,Undead
+  when level>=10
+  zone map 1420
+  note "Talk to Marion inside the inn"
+  accept 1885 -- Accept Mennet Carkad
+step
+  only Mage
+  when level>=10
+  zone map 1420
+  note "Talk to Cain inside the inn"
+  accept 1881 -- Accept Speak with Anastasia
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Warlock,Druid
+  zone map 1420
+  note "Talk to Innkeeper Renee"
+  note "Buy [Ice Cold Milk] from her" only Mage
+  note "Buy [Ice Cold Milk] from her" only Priest
+  note "Buy [Ice Cold Milk] from her" only Shaman
+  note "Buy [Red-speckled Mushrooms] from her" only Warrior
+  note "Buy [Red-speckled Mushrooms] from her" only Rogue
+  note "Buy [Ice Cold Milk] and [Red-speckled Mushrooms] from her" only Warlock
+  vendor 5688 -- Vendor Trash
+  collect 1179 x20 @61.71,52.06 map 1420 optional only Mage -- Ice Cold Milk (20)
+  collect 1179 x20 @61.71,52.06 map 1420 optional only Priest -- Ice Cold Milk (20)
+  collect 1179 x20 @61.71,52.06 map 1420 optional only Shaman -- Ice Cold Milk (20)
+  collect 4605 x20 @61.71,52.06 map 1420 optional only Rogue -- Red-speckled Mushroom (20)
+  collect 4605 x20 @61.71,52.06 map 1420 optional only Warrior -- Red-speckled Mushroom (20)
+  collect 1179 x15 @61.71,52.06 map 1420 optional only Warlock -- Ice Cold Milk (15)
+  collect 4605 x15 @61.71,52.06 map 1420 optional only Warlock -- Red-speckled Mushroom (15)
+step
+  zone map 1420
+  goto 61.15,52.59 map 1420 r 8
+  note "Talk to Mrs. Winters"
+  note "Buy one or more [Small Brown Pouches] from her"
+  collect 4496 x1 @61.15,52.59 map 1420 optional -- Small Brown Pouch (1)
+step
+  when level<=11
+  zone map 1420
+  note "Talk to Zygand"
+  accept 427 -- Accept At War With The Scarlet Crusade
+step
+  zone map 1420
+  note "Talk to Wanted Poster"
+  accept 398 -- Accept Wanted: Maggot Eye
+step
+  when level<=12
+  zone map 1420
+  note "Talk to Sevren inside the building"
+  accept 358 -- Accept Graverobbers
+step
+  zone map 1420
+  note "Talk to Johaan"
+  accept 445 -- Accept Delivery to Silverpine Forest
+  accept 367 -- Accept A New Plague
+step
+  when level<=11
+  zone map 1420
+  note "Talk to Dillinger"
+  accept 404 -- Accept A Putrid Task
+step
+  only Warrior
+  when onquest 1818
+  turnin 1818 -- Turn in Speak with Dillinger
+step
+  only Warrior
+  when onquest 1818
+  zone map 1420
+  note "Talk to Dillinger"
+  accept 1819 -- Accept Ulag the Cleaver
+step
+  only Warrior
+  when turnedin 1818
+  zone map 1420
+  note "Talk to Dillinger"
+  accept 1819 -- Accept Ulag the Cleaver
+step
+  only Warrior
+  when turnedin 1818
+  zone map 1420
+  note "Click the Mausoleum Trigger on the ground. This will summon Ulag. Kill him"
+  kill 6390 x1 quest 1819.1 -- Ulag the Cleaver (1)
+step
+  only Warrior
+  when turnedin 1818
+  when onquest 1819
+  turnin 1819 -- Turn in Ulag the Cleaver
+step
+  only Warrior
+  when turnedin 1818
+  zone map 1420
+  note "Talk to Dillinger"
+  accept 1820 -- Accept Speak with Coleman
+step
+  along until Pumpkins
+  zone map 1420
+  note "Kill any Darkhound you see. Loot them for their Blood"
+  note "You will receive [Slumber Sand] from the follow-up of this quest"
+  collect 2858 x5 quest 367.1 @58.19,51.44 map 1420 -- Darkhound Blood (5)
+step
+  when onquest 404
+  label Claws
+  loop
+  zone map 1420
+  goto 52.63,56.98 map 1420 r 1
+  goto 54.95,50.53 map 1420 r 50
+  goto 53.35,50.29 map 1420 r 50
+  goto 52.12,50.38 map 1420 r 50
+  goto 51.28,51.63 map 1420 r 50
+  goto 52.03,53.74 map 1420 r 50
+  goto 52.29,56.72 map 1420 r 50
+  goto 53.95,56.53 map 1420 r 50
+  goto 53.55,58.25 map 1420 r 50
+  goto 52.63,56.98 map 1420 r 50
+  note "Kill Rotting Dead and Ravaged Corpses. Loot them for their Claws"
+  collect 2855 x7 quest 404.1 -- Putrid Claw (7)
+step
+  when onquest 375
+  along until Pumpkins
+  zone map 1420
+  note "Kill any Duskbat that you see. Loot them for their Pelts"
+  collect 2876 x5 quest 375.1 @52.63,56.98 map 1420 -- Duskbat Pelt (5)
+step
+  when level<=11
+  label Pumpkins
+  zone map 1420
+  note "Talk to Simmer"
+  accept 365 -- Accept Fields of Grief
+step
+  when onquest 365
+  loop
+  zone map 1420
+  goto 36.63,50.09 map 1420 r 1
+  goto 37.2,52.17 map 1420 r 50
+  goto 36.64,50.09 map 1420 r 50
+  goto 36.1,49.07 map 1420 r 50
+  goto 35.08,49.82 map 1420 r 50
+  goto 35.3,50.91 map 1420 r 50
+  goto 34.57,51.58 map 1420 r 50
+  goto 36.63,50.09 map 1420 r 50
+  note "Loot the Pumpkins found in the field."
+  collect 2846 x10 quest 365.1 -- Tirisfal Pumpkin (10)
+step
+  when onquest 427
+  zone map 1420
+  note "Kill Scarlet Warriors"
+  kill 1535 x10 quest 427.1 @34.1,47.88 map 1420 -- Scarlet Warrior (10)
+step
+  when onquest 375
+  along until Darkhounds1
+  zone map 1420
+  note "Kill any Duskbat that you see. Loot them for their Pelts"
+  collect 2876 x5 quest 375.1 @34.1,47.88 map 1420 -- Duskbat Pelt (5)
+step
+  label Darkhounds1
+  loop
+  zone map 1420
+  goto 50.36,49.51 map 1420 r 1
+  goto 45.9,50.95 map 1420 r 50
+  goto 45.11,48.06 map 1420 r 50
+  goto 47.07,45.37 map 1420 r 50
+  goto 50.36,49.51 map 1420 r 50
+  note "Kill any Darkhound you see. Loot them for their Blood"
+  note "You will receive [Slumber Sand] from the follow-up of this quest"
+  collect 2858 x5 quest 367.1 -- Darkhound Blood (5)
+step
+  when complete 404
+  zone map 1420
+  note "Talk to Dillinger"
+  turnin 404 -- Turn in A Putrid Task
+  accept 426 -- Accept The Mills Overrun
+step
+  when turnedin 404
+  zone map 1420
+  note "Talk to Dillinger"
+  accept 426 -- Accept The Mills Overrun
+step
+  when complete 365
+  zone map 1420
+  note "Talk to Johaan"
+  turnin 367 -- Turn in A New Plague
+  turnin 365 -- Turn in Fields of Grief
+  accept 368 -- Accept A New Plague
+  accept 407 -- Accept Fields of Grief
+step
+  when turnedin 365
+  zone map 1420
+  note "Talk to Johaan"
+  accept 407 -- Accept Fields of Grief
+step
+  zone map 1420
+  note "Talk to Johaan"
+  turnin 367 -- Turn in A New Plague
+  accept 368 -- Accept A New Plague
+step
+  when complete 427
+  zone map 1420
+  note "Talk to Zygand"
+  turnin 427 -- Turn in At War With The Scarlet Crusade
+  accept 370 -- Accept At War With The Scarlet Crusade
+step
+  when turnedin 427
+  zone map 1420
+  note "Talk to Zygand"
+  accept 370 -- Accept At War With The Scarlet Crusade
+step
+  when turnedin 427
+  zone map 1420
+  note "Talk to Burgess"
+  accept 374 -- Accept Proof of Demise
+step
+  label Brillturnins2
+  note "Review this source step manually."
+step
+  only Warrior
+  when !turnedin 1498
+  zone map 1420
+  note "Talk to Austil"
+  accept 1818 -- Accept Speak with Dillinger
+step
+  only Warrior
+  when !turnedin 1498
+  when onquest 1818
+  turnin 1818 -- Turn in Speak with Dillinger
+step
+  only Warrior
+  when !turnedin 1498
+  zone map 1420
+  note "Talk to Dillinger"
+  accept 1819 -- Accept Ulag the Cleaver
+step
+  only Warrior
+  when !turnedin 1498
+  zone map 1420
+  note "Click the Mausoleum Trigger on the ground. This will summon Ulag. Kill him"
+  kill 6390 x1 quest 1819.1 -- Ulag the Cleaver (1)
+step
+  only Warrior
+  when !turnedin 1498
+  when onquest 1819
+  turnin 1819 -- Turn in Ulag the Cleaver
+step
+  only Warrior
+  when !turnedin 1498
+  zone map 1420
+  note "Talk to Dillinger"
+  accept 1820 -- Accept Speak with Coleman
+step
+  only Warlock
+  when !turnedin 1504
+  zone map 1420
+  note "Talk to Ageron inside the inn"
+  accept 1478 -- Accept Halgar's Summons
+step
+  only Rogue,Undead
+  zone map 1420
+  note "Talk to Marion inside the inn"
+  accept 1885 -- Accept Mennet Carkad
+step
+  only Mage
+  zone map 1420
+  note "Talk to Cain inside the inn"
+  accept 1881 -- Accept Speak with Anastasia
+step
+  only Warlock
+  when !zone "Undercity"
+  along until UCflightpath1
+  zone map 1420
+  goto 61.8,65.06 map 1420 r 20 optional
+step
+  only Mage
+  when !zone "Undercity"
+  along until UCflightpath1
+  zone map 1420
+  goto 61.8,65.06 map 1420 r 20 optional
+step
+  only Warlock
+  along until UCflightpath1
+  zone map 1458
+  goto 66.09,20.06 map 1458 r 35 optional
+  goto 64.37,23.94 map 1458 r 35 optional
+  goto 65.93,26.71 map 1458 r 10 optional
+  goto 65.89,34.03 map 1458 r 10 optional
+  goto 64.22,39.77 map 1458 r 10 optional
+  goto 65.53,43.62 map 1458 r 15 optional -- Take the lift down to the Undercity
+step
+  only Mage
+  along until UCflightpath1
+  zone map 1458
+  goto 66.09,20.06 map 1458 r 35 optional
+  goto 64.37,23.94 map 1458 r 35 optional
+  goto 65.93,26.71 map 1458 r 10 optional
+  goto 65.89,34.03 map 1458 r 10 optional
+  goto 64.22,39.77 map 1458 r 10 optional
+  goto 65.53,43.62 map 1458 r 15 optional -- Take the lift down to the Undercity
+step
+  only Warlock
+  label UCflightpath1
+  zone map 1458
+  note "Talk to Michael"
+  getfp "Undercity" @63.25,48.56 map 1458 -- Get the Undercity flight path
+step
+  only Mage
+  zone map 1458
+  note "Talk to Michael"
+  getfp "Undercity" @63.25,48.56 map 1458 -- Get the Undercity flight path
+step
+  only Warlock
+  when zone "Undercity"
+  when !turnedin 429
+  zone map 1458
+  note "Talk to Auctioneer Rhyker"
+  note "Buy Six [Discolored Worg Hearts] from the Auction House"
+  note "Skip this if you want, it's only a small time saver"
+  collect 3164 x6 @64.2,49.6 map 1458 -- Collect Discolored Worg Heart (x6)
+step
+  only Mage
+  when zone "Undercity"
+  when !turnedin 429
+  zone map 1458
+  note "Talk to Auctioneer Rhyker"
+  note "Buy Six [Discolored Worg Hearts] from the Auction House"
+  note "Skip this if you want, it's only a small time saver"
+  collect 3164 x6 @64.2,49.6 map 1458 -- Collect Discolored Worg Heart (x6)
+step
+  only Warlock
+  when !turnedin 1504
+  when onquest 1478
+  turnin 1478 -- Turn in Halgar's Summons
+step
+  only Warlock
+  when !turnedin 1504
+  zone map 1458
+  note "Talk to Carendin in the Magic Quarter"
+  accept 1473 -- Accept Creature of the Void
+step
+  only Mage
+  when onquest 1881
+  turnin 1881 -- Turn in Speak with Anastasia
+step
+  only Mage
+  zone map 1458
+  note "Talk to Anastasia in the Magic Quarter"
+  accept 1882 -- Accept The Balnir Farmstead
+step
+  only Priest,Undead
+  when !zone "Undercity"
+  along until TouchofWeakness
+  zone map 1420
+  goto 61.8,65.06 map 1420 r 20 optional
+step
+  only Priest,Undead
+  along until TouchofWeakness
+  zone map 1458
+  goto 66.09,20.06 map 1458 r 35 optional
+  goto 64.37,23.94 map 1458 r 35 optional
+  goto 65.93,26.71 map 1458 r 10 optional
+  goto 65.89,34.03 map 1458 r 10 optional
+  goto 64.22,39.77 map 1458 r 10 optional
+  goto 65.53,43.62 map 1458 r 15 optional -- Take the lift down to the Undercity
+step
+  only Priest,Undead
+  when zone "Undercity"
+  when !turnedin 429
+  zone map 1458
+  note "Talk to Auctioneer Rhyker"
+  note "Buy Six [Discolored Worg Hearts] from the Auction House"
+  note "Skip this if you want, it's only a small time saver"
+  collect 3164 x6 @64.2,49.6 map 1458 -- Collect Discolored Worg Heart (x6)
+step
+  only Priest,Undead
+  when onquest 5660
+  zone map 1458
+  note "Talk to Aelthalyste"
+  turnin 5660 -- Turn in Touch of Weakness
+step
+  only Priest,Undead
+  label TouchofWeakness
+  zone map 1458
+  note "Talk to Aelthalyste"
+  accept 5658 -- Accept Touch of Weakness
+step
+  only Priest,Undead
+  when onquest 5658
+  turnin 5658 -- Turn in Touch of Weakness
+step
+  only Rogue
+  when !zone "Undercity"
+  along until Swordtraining2
+  zone map 1420
+  goto 61.8,65.06 map 1420 r 20 optional
+step
+  only Rogue
+  along until Swordtraining2
+  zone map 1458
+  goto 66.09,20.06 map 1458 r 20 optional
+  goto 64.37,23.94 map 1458 r 20 optional
+  goto 65.93,26.71 map 1458 r 10 optional
+  goto 65.89,34.03 map 1458 r 10 optional
+  goto 64.22,39.77 map 1458 r 10 optional
+  goto 65.53,43.62 map 1458 r 15 optional -- Take the lift down to the Undercity
+step
+  only Rogue
+  zone map 1458
+  goto 63.25,48.56 map 1458 r 8
+  getfp "Undercity" @63.25,48.56 map 1458 optional -- Get the Undercity flight path
+step
+  only Rogue,Orc
+  when zone "Undercity"
+  label RogueCutlass2_2
+  zone map 1458
+  goto 61.15,40.89 map 1458 r 8
+  note "Talk to Louis Warren in the Trade Quarter"
+  note "Buy a [Cutlass] from him"
+  note "Alternatively, check the Auction House for something better or cheaper"
+  collect 851 x1 @61.15,40.89 map 1458 optional -- Collect Cutlass (1)
+step
+  only Rogue,Undead
+  zone map 1458
+  note "Talk to Mennet"
+  turnin 1885 -- Turn in Mennet Carkad
+  accept 1886 -- Accept The Deathstalkers
+step
+  only Rogue
+  when zone "Undercity"
+  label Swordtraining2
+  zone map 1458
+  goto 57.29,32.72 map 1458 r 8 optional
+  note "Talk to Archibald in the War Quarter"
+  learn 201 "1h Swords"
+step
+  only Rogue
+  when has 851
+  along until KillDevlin
+  zone map 1458
+  note "Equip the [Cutlass]"
+  use 851 @57.29,32.72 map 1458 optional
+step
+  only Rogue
+  when zone "Undercity"
+  when !turnedin 429
+  zone map 1458
+  note "Talk to Auctioneer Rhyker"
+  note "Buy Six [Discolored Worg Hearts] from the Auction House"
+  note "Skip this if you want, it's only a small time saver"
+  collect 3164 x6 @64.2,49.6 map 1458 -- Collect Discolored Worg Heart (x6)
+step
+  only Warlock
+  when !zone "Tirisfal Glades"
+  zone map 1458
+  zone map 1420
+  goto 47.25,39.12 map 1458 r 50 optional
+  goto 46.35,43.86 map 1458 r 10 optional
+  goto 45.24,39.35 map 1458 r 10 optional
+  goto 41.32,38.4 map 1458 r 10 optional
+  goto 40.74,33.95 map 1458 r 10 optional
+  goto 34.8,33.19 map 1458 r 15 optional
+  goto 27.39,30.23 map 1458 r 35 optional
+  goto 21.89,43.35 map 1458 r 35 optional
+  goto 51.1,71.53 map 1420 r 50
+step
+  only Mage
+  when !zone "Tirisfal Glades"
+  zone map 1458
+  zone map 1420
+  goto 47.25,39.12 map 1458 r 50 optional
+  goto 46.35,43.86 map 1458 r 10 optional
+  goto 45.24,39.35 map 1458 r 10 optional
+  goto 41.32,38.4 map 1458 r 10 optional
+  goto 40.74,33.95 map 1458 r 10 optional
+  goto 34.8,33.19 map 1458 r 15 optional
+  goto 27.39,30.23 map 1458 r 35 optional
+  goto 21.89,43.35 map 1458 r 35 optional
+  goto 51.1,71.53 map 1420 r 50
+step
+  only Rogue
+  when !zone "Tirisfal Glades"
+  zone map 1458
+  zone map 1420
+  goto 47.25,39.12 map 1458 r 50 optional
+  goto 46.35,43.86 map 1458 r 10 optional
+  goto 45.24,39.35 map 1458 r 10 optional
+  goto 41.32,38.4 map 1458 r 10 optional
+  goto 40.74,33.95 map 1458 r 10 optional
+  goto 34.8,33.19 map 1458 r 15 optional
+  goto 27.39,30.23 map 1458 r 35 optional
+  goto 21.89,43.35 map 1458 r 35 optional
+  goto 51.1,71.53 map 1420 r 50
+step
+  only Priest,Undead
+  when !zone "Tirisfal Glades"
+  zone map 1458
+  zone map 1420
+  goto 47.25,39.12 map 1458 r 50 optional
+  goto 46.35,43.86 map 1458 r 10 optional
+  goto 45.24,39.35 map 1458 r 10 optional
+  goto 41.32,38.4 map 1458 r 10 optional
+  goto 40.74,33.95 map 1458 r 10 optional
+  goto 34.8,33.19 map 1458 r 15 optional
+  goto 27.39,30.23 map 1458 r 35 optional
+  goto 21.89,43.35 map 1458 r 35 optional
+  goto 51.1,71.53 map 1420 r 50
+step
+  when onquest 374
+  along until ScarletCrusade1
+  zone map 1420
+  note "Collect Scarlet Insignia Rings. You don't have to complete this step now"
+  collect 2875 x10 quest 374.1 @51.1,71.53 map 1420 -- Scarlet Insignia Ring (10)
+step
+  only Warlock
+  when !turnedin 1504
+  along until ScarletCrusade1
+  zone map 1420
+  note "Loot Perrine's Chest for [Egalin's Grimoire]"
+  collect 6285 x1 quest 1473.1 -- Egalin's Grimoire (1)
+step
+  when onquest 370
+  label ScarletCrusade1
+  loop
+  zone map 1420
+  goto 51.03,69.55 map 1420 r 1
+  goto 50.07,68.87 map 1420 r 40
+  goto 50.23,66.94 map 1420 r 40
+  goto 51.16,65.73 map 1420 r 40
+  goto 51.75,66.04 map 1420 r 40
+  goto 52.93,67.62 map 1420 r 40
+  goto 52.72,69.33 map 1420 r 40
+  goto 51.96,69.57 map 1420 r 40
+  goto 51.03,69.55 map 1420 r 40
+  note "Kill Captain Perrine, Zealots and Missionaries."
+  kill 1662 x1 quest 370.1 -- Captain Perrine (1)
+  kill 1537 x3 quest 370.2 -- Scarlet Zealot (3)
+  kill 1536 x3 quest 370.3 -- Scarlet Missionary (3)
+step
+  only Warlock
+  when !turnedin 1504
+  zone map 1420
+  note "Loot Perrine's Chest on the ground for [Egalin's Grimoire]"
+  collect 6285 x1 quest 1473.1 -- Egalin's Grimoire (1)
+step
+  only Warlock
+  along until next_404
+  zone map 1458
+  goto 16.51,42.76 map 1458 r 35 optional
+  goto 22.98,39.76 map 1458 r 35 optional
+  goto 24.93,32.54 map 1458 r 35 optional
+  goto 34.78,33.24 map 1458 r 10 optional
+  goto 40.83,34.08 map 1458 r 10 optional
+  goto 41.35,38.4 map 1458 r 10 optional
+  goto 45.25,39.2 map 1458 r 10 optional
+  goto 45.67,43.6 map 1458 r 10 optional
+step
+  only Warlock
+  when !turnedin 1504
+  when onquest 1473
+  turnin 1473 -- Turn in Creature of the Void
+step
+  only Warlock
+  when !turnedin 1504
+  label next_404
+  zone map 1458
+  note "Talk to Carendin in the Magic Quarter"
+  accept 1471 -- Accept The Binding
+step
+  only Warlock
+  along until next_406
+  zone map 1458
+  note "Use the [Runes of Summoning] at the Summoning Circle"
+  use 6284 @86.64,27.1 map 1458
+step
+  only Warlock
+  when !turnedin 1504
+  label next_406
+  zone map 1458
+  note "Kill the Summoned Voidwalker"
+  kill 5676 x1 quest 1471.1 -- Kill Summoned Voidwalker (1)
+  use 6284 @86.64,27.1 map 1458
+step
+  only Warlock
+  when !turnedin 1504
+  when onquest 1471
+  zone map 1458
+  note "Talk to Carendin"
+  turnin 1471 -- Turn in The Binding
+step
+  only Warlock
+  when !zone "Tirisfal Glades"
+  along until next_409
+  zone map 1420
+  goto 61.92,64.85 map 1420 r 50 optional
+step
+  when onquest 375
+  label next_409
+  along until next_410
+  zone map 1420
+  note "Kill any Duskbat that you see. Loot them for their Pelts"
+  collect 2876 x5 quest 375.1 @61.92,64.85 map 1420 -- Duskbat Pelt (5)
+step
+  when onquest 362
+  label next_410
+  zone map 1420
+  goto 47.6,44.03 map 1420 r 150 -- Travel northwest toward Agamand Mills
+step
+  when onquest 362
+  along until MillsOverun
+  zone map 1420
+  note "[Thurman's Letter] may drop from these mobs. Accept the quest if it does"
+  collect 2839 x1 @47.6,44.03 map 1420 optional -- Collect A Letter to Yvette (1)
+  accept 361 -- Accept A Letter Undelivered
+  use 2839 @47.6,44.03 map 1420
+step
+  when onquest 426
+  along until ThurmanGregor
+  zone map 1420
+  note "Kill Soldiers and Bonecasters. Loot them for their Ribs and Skulls"
+  collect 3162 x5 quest 426.1 @47.6,44.03 map 1420 -- Notched Rib (5)
+  collect 3163 x3 quest 426.2 @47.6,44.03 map 1420 -- Blackened Skull (3)
+step
+  when onquest 362
+  label KillDevlin
+  zone map 1420
+  note "Kill Devlin. Loot him for his Remains"
+  collect 2831 x1 quest 362.1 -- Devlin's Remains (1)
+step
+  when onquest 354
+  zone map 1420
+  note "Kill Nissa. Loot her for her Remains. She can be inside the building"
+  collect 2828 x1 quest 354.2 -- Nissa's Remains (1)
+step
+  when onquest 354
+  label ThurmanGregor
+  loop
+  zone map 1420
+  goto 45.08,31.15 map 1420 r 1
+  goto 43.71,35.25 map 1420 r 60
+  goto 45.03,30.99 map 1420 r 60
+  goto 46.79,29.8 map 1420 r 60
+  goto 42.82,31.93 map 1420 r 60
+  goto 42.82,31.93 map 1420 r 60
+  goto 45.08,31.15 map 1420 r 60
+  note "Kill Thurman and Gregor. Loot them for their Remains. They can patrol around"
+  collect 2830 x1 quest 354.3 -- Thurman's Remains (1)
+  collect 2829 x1 quest 354.1 -- Gregor's Remains (1)
+step
+  when onquest 426
+  label MillsOverun
+  loop
+  zone map 1420
+  goto 45.08,31.15 map 1420 r 1
+  goto 43.71,35.25 map 1420 r 60
+  goto 45.03,30.99 map 1420 r 60
+  goto 46.79,29.8 map 1420 r 60
+  goto 42.82,31.93 map 1420 r 60
+  goto 42.82,31.93 map 1420 r 60
+  goto 45.08,31.15 map 1420 r 60
+  note "Kill Soldiers and Bonecasters. Loot them for their Ribs and Skulls"
+  collect 3162 x5 quest 426.1 -- Notched Rib (5)
+  collect 3163 x3 quest 426.2 -- Blackened Skull (3)
+step
+  when complete 354
+  along until MaggotEye
+  zone map 1420
+  goto 54.32,31.56 map 1420 r 15 optional
+  goto 54.78,32.75 map 1420 r 15 optional
+  goto 55.84,32.28 map 1420 r 15 optional
+  goto 56.55,32.43 map 1420 r 40 optional
+  goto 57.77,31.69 map 1420 r 50 optional -- Travel down the hills.
+  note "Be careful. Don't take too much fall damage. Follow the waypoint for safety"
+step
+  when onquest 358
+  along until MaggotEye
+  zone map 1420
+  note "Kill Gnolls and Mongrels. Loot them for their Ichor"
+  kill 1675 x1 quest 358.2 -- Rot Hide Mongrel (5)
+  kill 1941 x1 quest 358.1 -- Rot Hide Graverobber (8)
+  collect 2834 x8 quest 358.3 @57.77,31.69 map 1420 -- Embalming Ichor (8)
+step
+  label MaggotEye
+  zone map 1420
+  note "Kill Maggot Eye. Loot him for his Paw"
+  collect 3635 x1 quest 398.1 -- Maggot Eye's Paw (1)
+step
+  loop
+  zone map 1420
+  goto 59.54,27.86 map 1420 r 1
+  goto 59.38,29.05 map 1420 r 50
+  goto 59.54,27.86 map 1420 r 50
+  goto 60.64,28.66 map 1420 r 50
+  goto 61.49,29.4 map 1420 r 50
+  goto 62.96,29.46 map 1420 r 50
+  goto 65.68,30.22 map 1420 r 50
+  goto 67.48,28.97 map 1420 r 50
+  goto 68.22,26.46 map 1420 r 50
+  goto 59.54,27.86 map 1420 r 50
+  note "Kill Murlocs. Loot them for their Scales"
+  collect 2859 x5 quest 368.1 -- Vile Fin Scale (5)
+step
+  when onquest 375
+  along until RotHideGnolls
+  zone map 1420
+  note "Kill any Duskbat that you see. Loot them for their Pelts"
+  collect 2876 x5 quest 375.1 @59.54,27.86 map 1420 -- Duskbat Pelt (5)
+step
+  when onquest 358
+  label RotHideGnolls
+  loop
+  zone map 1420
+  goto 56.43,43.92 map 1420 r 1
+  goto 56.31,39.67 map 1420 r 40
+  goto 54.71,41.19 map 1420 r 40
+  goto 53.9,43.93 map 1420 r 40
+  goto 55.24,42.54 map 1420 r 40
+  goto 56.43,43.92 map 1420 r 40
+  note "Kill Mongrels and Graverobbers. Loot them for their Ichor"
+  kill 1675 x1 quest 358.2 -- Rot Hide Mongrel (5)
+  kill 1941 x1 quest 358.1 -- Rot Hide Graverobber (8)
+  collect 2834 x8 quest 358.3 -- Embalming Ichor (8)
+step
+  when complete 426
+  zone map 1420
+  note "Talk to Dillinger"
+  turnin 426 -- Turn in The Mills Overrun
+step
+  zone map 1420
+  note "Talk to Johaan"
+  turnin 368 -- Turn in A New Plague
+  accept 369 -- Accept A New Plague
+step
+  when turnedin 368
+  zone map 1420
+  note "Talk to Johaan"
+  accept 369 -- Accept A New Plague
+step
+  when complete 370
+  zone map 1420
+  note "Talk to Zygand"
+  turnin 398 -- Turn in Wanted: Maggot Eye
+  turnin 370 -- Turn in At War With The Scarlet Crusade
+  accept 371 -- Accept At War With The Scarlet Crusade
+step
+  when complete 398
+  zone map 1420
+  note "Talk to Zygand"
+  turnin 398 -- Turn in Wanted: Maggot Eye
+step
+  when turnedin 370
+  zone map 1420
+  note "Talk to Zygand"
+  accept 371 -- Accept At War With The Scarlet Crusade
+step
+  when complete 358
+  zone map 1420
+  note "Talk to Dillinger, Johaan, Zygand and Sevren"
+  turnin 358 -- Turn in Graverobbers
+  accept 359 -- Accept Forsaken Duties
+step
+  when turnedin 358
+  zone map 1420
+  note "Talk to Dillinger, Johaan, Zygand and Sevren"
+  accept 359 -- Accept Forsaken Duties
+step
+  along until HorrorsandSpirits
+  note "Bind your [Slumber Sand]. Save it for emergency situations"
+step
+  when has 2876 x5
+  when onquest 375
+  zone map 1420
+  goto 61.03,52.35 map 1420 r 8
+  note "Talk to Abigail"
+  note "Buy a [Coarse Thread] from her"
+  collect 2320 x1 quest 375.2 @61.03,52.35 map 1420 -- Coarse Thread (1)
+step
+  when onquest 362
+  accept 361 -- Accept A Letter Undelivered
+step
+  when complete 375
+  when onquest 361
+  zone map 1420
+  note "Talk to Yvette, Coleman and Gretchen inside the inn"
+  note "Gretchen is on the second floor"
+  turnin 361 -- Turn in A Letter Undelivered
+  turnin 354 -- Turn in Deaths in the Family
+  turnin 362 -- Turn in The Haunted Mills
+  accept 355 -- Accept Speak with Sevren
+  turnin 375 -- Turn in The Chill of Death
+  goto 61.89,52.73 map 1420 r 8 optional
+step
+  when complete 375
+  zone map 1420
+  note "Talk to Coleman and Gretchen inside the inn"
+  note "Gretchen is on the second floor"
+  turnin 354 -- Turn in Deaths in the Family
+  turnin 362 -- Turn in The Haunted Mills
+  accept 355 -- Accept Speak with Sevren
+  turnin 375 -- Turn in The Chill of Death
+  goto 61.89,52.73 map 1420 r 8 optional
+step
+  when onquest 361
+  zone map 1420
+  note "Talk to Yvette and Coleman inside the inn"
+  note "Gretchen is on the second floor"
+  turnin 361 -- Turn in A Letter Undelivered
+  turnin 354 -- Turn in Deaths in the Family
+  turnin 362 -- Turn in The Haunted Mills
+  accept 355 -- Accept Speak with Sevren
+  goto 61.72,52.29 map 1420 r 8 optional
+step
+  when complete 354
+  zone map 1420
+  note "Talk to Coleman inside the inn"
+  turnin 354 -- Turn in Deaths in the Family
+  turnin 362 -- Turn in The Haunted Mills
+  accept 355 -- Accept Speak with Sevren
+  goto 61.72,52.29 map 1420 r 8 optional
+step
+  only Warrior
+  when turnedin 1819
+  when onquest 1820
+  zone map 1420
+  note "Talk to Coleman inside the inn"
+  turnin 1820 -- Turn in Speak with Coleman
+step
+  only Priest
+  when level>=12
+  zone map 1420
+  goto 61.57,52.19 map 1420 r 8
+  note "Talk to Beryl on the second floor"
+  learn 588 "Inner Fire"
+step
+  only Mage
+  when level>=12
+  zone map 1420
+  goto 61.97,52.47 map 1420 r 8
+  note "Talk to Cain on the second floor"
+  learn 145 "Fireball Rank 3"
+step
+  only Warrior
+  when level>=12
+  zone map 1420
+  goto 61.85,52.53 map 1420 r 8
+  note "Talk to Austil"
+  learn 7384 "Overpower"
+step
+  only Rogue
+  when level>=12
+  zone map 1420
+  goto 61.75,52 map 1420 r 8
+  note "Talk to Marion on the second floor"
+  learn 1766 "Kick"
+step
+  only Warlock
+  when level>=12
+  zone map 1420
+  goto 61.59,52.39 map 1420 r 8
+  note "Talk to Rupert"
+  learn 755 "Health Funnel"
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Warlock,Druid
+  zone map 1420
+  note "Talk to Innkeeper Renee"
+  note "Buy [Ice Cold Milk] from her" only Mage
+  note "Buy [Ice Cold Milk] from her" only Priest
+  note "Buy [Ice Cold Milk] from her" only Shaman
+  note "Buy [Red-speckled Mushroom] from her" only Warrior
+  note "Buy [Red-speckled Mushroom] from her" only Rogue
+  note "Buy [Ice Cold Milk] and [Red-speckled Mushroom] from her" only Warlock
+  note "Buy [Ice Cold Milk] and [Red-speckled Mushroom] from her" only Hunter
+  vendor 5688 -- Vendor Trash
+  collect 1179 x20 @61.71,52.06 map 1420 optional only Mage -- Ice Cold Milk (20)
+  collect 1179 x20 @61.71,52.06 map 1420 optional only Priest -- Ice Cold Milk (20)
+  collect 1179 x20 @61.71,52.06 map 1420 optional only Shaman -- Ice Cold Milk (20)
+  collect 4605 x20 @61.71,52.06 map 1420 optional only Rogue -- Red-speckled Mushroom (20)
+  collect 4605 x20 @61.71,52.06 map 1420 optional only Warrior -- Red-speckled Mushroom (20)
+  collect 1179 x15 @61.71,52.06 map 1420 optional only Warlock -- Ice Cold Milk (15)
+  collect 1179 x15 @61.71,52.06 map 1420 optional only Hunter -- Ice Cold Milk (15)
+  collect 4605 x15 @61.71,52.06 map 1420 optional only Warlock -- Red-speckled Mushroom (15)
+  collect 4605 x15 @61.71,52.06 map 1420 optional only Hunter -- Red-speckled Mushroom (15)
+step
+  when turnedin 358
+  when level<=13
+  zone map 1420
+  note "Talk to Linnea"
+  turnin 359 -- Turn in Forsaken Duties
+  accept 360 -- Accept Return to the Magistrate
+  accept 356 -- Accept Rear Guard Patrol
+step
+  when level<=13
+  zone map 1420
+  note "Talk to Linnea"
+  accept 356 -- Accept Rear Guard Patrol
+step
+  when onquest 375
+  along until HorrorsandSpirits
+  zone map 1420
+  note "Kill any Duskbat that you see. Loot them for their Pelts"
+  collect 2876 x5 quest 375.1 @65.49,60.25 map 1420 -- Duskbat Pelt (5)
+step
+  only Mage
+  when onquest 356
+  along until next_453
+  zone map 1420
+  note "Kill Bleeding Horrors and Wandering Spirits"
+  kill 1529 x8 quest 356.1 @65.49,60.25 map 1420 -- Bleeding Horror (8)
+  kill 1532 x8 quest 356.2 @65.49,60.25 map 1420 -- Wandering Spirit (8)
+step
+  only Mage
+  label next_453
+  zone map 1420
+  note "Loot any of the plants on the ground for a Balnir Snapdragon"
+  collect 7227 x1 quest 1882.1 -- Balnir Snapdragons (1)
+step
+  when onquest 356
+  label HorrorsandSpirits
+  loop
+  zone map 1420
+  goto 74.31,60.98 map 1420 r 1
+  goto 74.31,60.98 map 1420 r 50
+  goto 74.45,59.64 map 1420 r 50
+  goto 75.08,58.56 map 1420 r 50
+  goto 76.45,58.67 map 1420 r 50
+  goto 77.41,58.66 map 1420 r 50
+  goto 78.55,60.43 map 1420 r 50
+  goto 77.45,61.46 map 1420 r 50
+  goto 76.79,62.6 map 1420 r 50
+  goto 74.99,61.98 map 1420 r 50
+  note "Kill Bleeding Horrors and Wandering Spirits"
+  kill 1529 x8 quest 356.1 -- Bleeding Horror (8)
+  kill 1532 x8 quest 356.2 -- Wandering Spirit (8)
+step
+  only Priest
+  when onquest 371
+  along
+  zone map 1420
+  note "Collect 3 stacks of [Linen Cloth] for your Lesser Magic Wand. This is the last chance to get enough before Silverpine Forest"
+  collect 2589 x60 @74.99,61.98 map 1420 optional -- Linen Cloth (60)
+step
+  only Warlock
+  when onquest 371
+  along
+  zone map 1420
+  note "Collect 3 stacks of [Linen Cloth] for your Lesser Magic Wand. This is the last chance to get enough before Silverpine Forest"
+  collect 2589 x60 @74.99,61.98 map 1420 optional -- Linen Cloth (60)
+step
+  when onquest 374
+  along until next_457
+  zone map 1420
+  note "Collect Scarlet Insignia Rings"
+  collect 2875 x10 quest 374.1 @74.99,61.98 map 1420 -- Scarlet Insignia Ring (10)
+step
+  when onquest 371
+  label next_457
+  loop
+  zone map 1420
+  goto 79.82,56.4 map 1420 r 1
+  goto 78.82,56.14 map 1420 r 20
+  goto 80.95,57.21 map 1420 r 40
+  goto 81.62,54.84 map 1420 r 40
+  goto 81.56,53.07 map 1420 r 40
+  goto 79.31,55.25 map 1420 r 40
+  goto 77.14,54.92 map 1420 r 40
+  goto 76.15,55.3 map 1420 r 40
+  goto 76.12,57.22 map 1420 r 40
+  goto 77.16,56.75 map 1420 r 40
+  goto 79.82,56.4 map 1420 r 40
+  note "Kill Captain Vachon and Scarlet Friars"
+  note "Be careful! Scarlet Friars can cast [Lesser Heal]"
+  kill 1664 x1 quest 371.1 -- Captain Vachon (1)
+  kill 1538 x5 quest 371.2 -- Scarlet Friar (5)
+step
+  when onquest 374
+  label ScarletRings
+  loop
+  zone map 1420
+  goto 79.82,56.4 map 1420 r 1
+  goto 80.95,57.21 map 1420 r 40
+  goto 81.62,54.84 map 1420 r 40
+  goto 81.56,53.07 map 1420 r 40
+  goto 79.31,55.25 map 1420 r 40
+  goto 77.14,54.92 map 1420 r 40
+  goto 76.15,55.3 map 1420 r 40
+  goto 76.12,57.22 map 1420 r 40
+  goto 77.16,56.75 map 1420 r 40
+  goto 79.82,56.4 map 1420 r 40
+  note "Collect Scarlet Insignia Rings"
+  collect 2875 x10 quest 374.1 -- Scarlet Insignia Ring (10)
+step
+  only Priest
+  when !turnedin 435
+  loop
+  zone map 1420
+  goto 79.82,56.4 map 1420 r 1
+  goto 80.95,57.21 map 1420 r 40
+  goto 81.62,54.84 map 1420 r 40
+  goto 81.56,53.07 map 1420 r 40
+  goto 79.31,55.25 map 1420 r 40
+  goto 77.14,54.92 map 1420 r 40
+  goto 76.15,55.3 map 1420 r 40
+  goto 76.12,57.22 map 1420 r 40
+  goto 77.16,56.75 map 1420 r 40
+  goto 79.82,56.4 map 1420 r 40
+  note "Collect 3 stacks of [Linen Cloth] for your Lesser Magic Wand. This is the last chance to get enough before Silverpine Forest"
+  collect 2589 x60 -- Linen Cloth (60)
+step
+  only Warlock
+  when !turnedin 435
+  loop
+  zone map 1420
+  goto 79.82,56.4 map 1420 r 1
+  goto 80.95,57.21 map 1420 r 40
+  goto 81.62,54.84 map 1420 r 40
+  goto 81.56,53.07 map 1420 r 40
+  goto 79.31,55.25 map 1420 r 40
+  goto 77.14,54.92 map 1420 r 40
+  goto 76.15,55.3 map 1420 r 40
+  goto 76.12,57.22 map 1420 r 40
+  goto 77.16,56.75 map 1420 r 40
+  goto 79.82,56.4 map 1420 r 40
+  note "Collect 3 stacks of [Linen Cloth] for your Lesser Magic Wand. This is the last chance to get enough before Silverpine Forest"
+  collect 2589 x60 -- Linen Cloth (60)
+step
+  when onquest 375
+  along until next_461
+  zone map 1420
+  note "Kill any Duskbat that you see. Loot them for their Pelts"
+  collect 2876 x5 quest 375.1 @79.82,56.4 map 1420 -- Duskbat Pelt (5)
+step
+  when onquest 369
+  label next_461
+  loop
+  zone map 1420
+  goto 85.03,54.72 map 1420 r 1
+  goto 83.5,55.56 map 1420 r 30
+  goto 85.03,54.72 map 1420 r 30
+  goto 86.56,54.51 map 1420 r 30
+  goto 88.06,54.99 map 1420 r 30
+  goto 88.94,53.56 map 1420 r 30
+  goto 89.7,51.88 map 1420 r 30
+  goto 90.92,50.56 map 1420 r 30
+  goto 90.87,48.33 map 1420 r 30
+  goto 89.87,46.65 map 1420 r 30
+  goto 85.04,46.68 map 1420 r 30
+  goto 84.52,49.29 map 1420 r 30
+  goto 83.46,52.09 map 1420 r 30
+  note "Kill Vicious Night Web Spiders. Loot them for their Venom"
+  collect 2872 x4 quest 369.1 -- Vicious Night Web Spider Venom (4)
+step
+  when complete 356
+  along until LinneaTurnin
+  zone map 1420
+  goto 65.49,60.25 map 1420 r 60 -- Travel back toward Linnea
+step
+  when onquest 375
+  along until LinneaTurnin
+  zone map 1420
+  note "Finish killing Duskbats. Loot them for their Pelts"
+  note "You can skip this quest if your rng has been bad"
+  collect 2876 x5 quest 375.1 @65.49,60.25 map 1420 -- Duskbat Pelt (5)
+step
+  when complete 356
+  label LinneaTurnin
+  zone map 1420
+  note "Talk to Linnea"
+  turnin 356 -- Turn in Rear Guard Patrol
+step
+  when has 2876 x5
+  when onquest 375
+  zone map 1420
+  goto 61.03,52.35 map 1420 r 8
+  note "Talk to Abigail"
+  note "Buy a [Coarse Thread] from her"
+  collect 2320 x1 quest 375.2 @61.03,52.35 map 1420 -- Coarse Thread (1)
+step
+  when complete 371
+  when complete 374
+  zone map 1420
+  note "Talk to Burgess, Zygand, Sevren and Johaan"
+  turnin 374 -- Turn in Proof of Demise
+  turnin 371 -- Turn in At War With The Scarlet Crusade
+  turnin 360 -- Turn in Return to the Magistrate
+  turnin 355 -- Turn in Speak with Sevren
+  turnin 369 -- Turn in A New Plague
+  accept 492 -- Accept A New Plague
+  accept 445 -- Accept Delivery to Silverpine Forest
+  goto 59.45,52.39 map 1420 r 8 optional
+step
+  when onquest 360
+  when complete 369
+  zone map 1420
+  note "Talk to Sevren and Johaan"
+  turnin 360 -- Turn in Return to the Magistrate
+  turnin 355 -- Turn in Speak with Sevren
+  turnin 369 -- Turn in A New Plague
+  accept 492 -- Accept A New Plague
+  accept 445 -- Accept Delivery to Silverpine Forest
+  goto 59.45,52.39 map 1420 r 8 optional
+step
+  zone map 1420
+  note "Talk to Johaan"
+  turnin 369 -- Turn in A New Plague
+  accept 492 -- Accept A New Plague
+  accept 445 -- Accept Delivery to Silverpine Forest
+step
+  when complete 375
+  zone map 1420
+  note "Talk to Gretchen upstairs"
+  turnin 375 -- Turn in The Chill of Death
+step
+  only Priest
+  when level>=12
+  zone map 1420
+  goto 61.57,52.19 map 1420 r 8
+  note "Talk to Beryl on the second floor"
+step
+  only Mage
+  when level>=12
+  zone map 1420
+  goto 61.97,52.47 map 1420 r 8
+  note "Talk to Cain on the second floor"
+step
+  only Warrior
+  when level>=12
+  zone map 1420
+  goto 61.85,52.53 map 1420 r 8
+  note "Talk to Austil"
+step
+  only Rogue
+  when level>=12
+  zone map 1420
+  goto 61.75,52 map 1420 r 8
+  note "Talk to Marion on the second floor"
+step
+  only Warlock
+  when level>=12
+  zone map 1420
+  goto 61.59,52.39 map 1420 r 8
+  note "Talk to Rupert"
+step
+  when onquest 407
+  label CaptainDargol
+  zone map 1420
+  note "Talk to Captured Scarlet Zealot downstairs in the back of the inn"
+  turnin 407 -- Turn in Fields of Grief
+step
+  when onquest 492
+  label NewPlagueFinal
+  zone map 1420
+  note "Talk to the Captured Mountaineer downstairs in the back of the inn"
+  turnin 492 -- Turn in A New Plague
+step
+  only Priest
+  when level>=12
+  when level<14
+  zone map 1420
+  goto 61.57,52.19 map 1420 r 8
+  note "Talk to Beryl on the second floor"
+step
+  only Priest
+  when level>=14
+  zone map 1420
+  goto 61.57,52.19 map 1420 r 8
+  note "Talk to Beryl on the second floor"
+  learn 6074 "your class spells"
+step
+  only Mage
+  when level>=12
+  when level<14
+  zone map 1420
+  goto 61.97,52.47 map 1420 r 8
+  note "Talk to Cain on the second floor"
+step
+  only Mage
+  when level>=14
+  zone map 1420
+  goto 61.97,52.47 map 1420 r 8
+  note "Talk to Cain on the second floor"
+  learn 2137 "your class spells"
+step
+  only Warrior
+  when level>=12
+  when level<14
+  zone map 1420
+  goto 61.85,52.53 map 1420 r 8
+  note "Talk to Austil"
+step
+  only Warrior
+  when level>=14
+  zone map 1420
+  goto 61.85,52.53 map 1420 r 8
+  note "Talk to Austil"
+  learn 1160 "your class spells"
+step
+  only Rogue
+  when level>=12
+  when level<14
+  zone map 1420
+  goto 61.75,52 map 1420 r 8
+  note "Talk to Marion on the second floor"
+step
+  only Rogue
+  when level>=14
+  zone map 1420
+  goto 61.75,52 map 1420 r 8
+  note "Talk to Marion on the second floor"
+  learn 1758 "your class spells"
+step
+  only Warlock
+  when level>=12
+  when level<14
+  zone map 1420
+  goto 61.59,52.39 map 1420 r 8
+  note "Talk to Rupert"
+step
+  only Warlock
+  when level>=14
+  zone map 1420
+  goto 61.59,52.39 map 1420 r 8
+  note "Talk to Rupert"
+  learn 6222 "your class spells"
+step
+  only Mage
+  when !zone "Undercity"
+  along until next_501
+  zone map 1420
+  goto 61.8,65.06 map 1420 r 20 optional
+step
+  only Mage
+  label next_501
+  along until next_502
+  zone map 1458
+  goto 66.09,20.06 map 1458 r 20 optional
+  goto 64.37,23.94 map 1458 r 20 optional
+  goto 65.93,26.71 map 1458 r 10 optional
+  goto 65.89,34.03 map 1458 r 10 optional
+  goto 64.22,39.77 map 1458 r 10 optional
+  goto 65.53,43.62 map 1458 r 15 optional -- Take the lift down to the Undercity
+step
+  only Mage
+  when onquest 1882
+  label next_502
+  zone map 1458
+  note "Talk to Anastasia in the Magic Quarter"
+  turnin 1882 -- Turn in The Balnir Farmstead
+step
+  only Rogue
+  when !zone "Undercity"
+  along until Swordtraining3
+  zone map 1420
+  goto 61.8,65.06 map 1420 r 20 optional
+step
+  only Rogue
+  along until Swordtraining3
+  zone map 1458
+  goto 66.09,20.06 map 1458 r 20 optional
+  goto 64.37,23.94 map 1458 r 20 optional
+  goto 65.93,26.71 map 1458 r 10 optional
+  goto 65.89,34.03 map 1458 r 10 optional
+  goto 64.22,39.77 map 1458 r 10 optional
+  goto 65.53,43.62 map 1458 r 15 optional -- Take the lift down to the Undercity
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Skyborne
+  when !zone "Undercity"
+  along until UCflightpath3
+  zone map 1420
+  goto 61.8,65.06 map 1420 r 20 optional
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Skyborne
+  along until UCflightpath3
+  zone map 1458
+  goto 66.09,20.06 map 1458 r 20 optional
+  goto 64.37,23.94 map 1458 r 20 optional
+  goto 65.93,26.71 map 1458 r 10 optional
+  goto 65.89,34.03 map 1458 r 10 optional
+  goto 64.22,39.77 map 1458 r 10 optional
+  goto 65.53,43.62 map 1458 r 15 optional -- Take the lift down to the Undercity
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Skyborne
+  label UCflightpath3
+  zone map 1458
+  note "Talk to Michael"
+  getfp "Undercity" @63.25,48.56 map 1458 -- Get the Undercity flight path
+  note "Skip this step if you already took the flight path!"
+step
+  only Rogue,Orc
+  when zone "Undercity"
+  label RogueCutlass3_2
+  zone map 1458
+  goto 61.15,40.89 map 1458 r 8
+  note "Talk to Louis Warren in the Trade Quarter"
+  note "Buy a [Cutlass] from him"
+  note "Alternatively, check the Auction House for something better or cheaper"
+  collect 851 x1 @61.15,40.89 map 1458 optional -- Collect Cutlass (1)
+step
+  only Rogue
+  when zone "Undercity"
+  label Swordtraining3
+  zone map 1458
+  goto 57.29,32.72 map 1458 r 8 optional
+  note "Talk to Archibald in the War Quarter"
+  learn 201 "1h Swords"
+step
+  only Rogue
+  zone map 1458
+  goto 77.08,49.4 map 1458 r 8
+  note "Talk to Charles in the Rogue's Quarter. Buy a [Cutlass] from him"
+  collect 851 x1 @77.08,49.4 map 1458 optional -- Collect Cutlass (1)
+step
+  when zone "Undercity"
+  when !turnedin 429
+  zone map 1458
+  note "Talk to Auctioneer Rhyker"
+  note "Buy Six [Discolored Worg Hearts] from the Auction House"
+  note "Skip this if you want, it's only a small time saver"
+  collect 3164 x6 @64.2,49.6 map 1458 -- Collect Discolored Worg Heart (x6)
+step
+  only Priest
+  zone map 1458
+  goto 62.47,61.8 map 1458 r 8 optional
+  note "Talk to Lavinia"
+  learn 7411 "Enchanting"
+step
+  only Priest
+  zone map 1458
+  goto 70.06,29.84 map 1458 r 8 optional
+  note "Talk to Victor"
+  learn 3908 "Tailoring"
+step
+  only Warlock
+  zone map 1458
+  goto 70.06,29.84 map 1458 r 8 optional
+  note "Talk to Victor"
+  learn 3908 "Tailoring"
+step
+  only Priest
+  zone map 1458
+  goto 70.76,30.67 map 1458 r 8
+  note "Turn all your [Linen Cloth] into [Bolt of Linen Cloth]"
+  collect 2996 x30 @70.76,30.67 map 1458 optional -- Bolt of Linen Cloth (30)
+step
+  only Warlock
+  zone map 1458
+  goto 70.76,30.67 map 1458 r 8
+  note "Turn all your [Linen Cloth] into [Bolt of Linen Cloth]"
+  collect 2996 x30 @70.76,30.67 map 1458 optional -- Bolt of Linen Cloth (30)
+step
+  only Priest
+  zone map 1458
+  goto 70.06,29.84 map 1458 r 8 optional
+  note "Talk to Victor"
+  learn 7623 "Brown Linen Robe"
+step
+  only Warlock
+  zone map 1458
+  goto 70.06,29.84 map 1458 r 8 optional
+  note "Talk to Victor"
+  learn 7623 "Brown Linen Robe"
+step
+  only Priest
+  zone map 1458
+  goto 70.57,30.17 map 1458 r 8
+  note "Talk to Millie"
+  note "Buy [Coarse Thread] from her"
+  collect 2320 x30 @70.57,30.17 map 1458 optional -- Coarse Thread (30)
+step
+  only Warlock
+  zone map 1458
+  goto 70.57,30.17 map 1458 r 8
+  note "Talk to Millie"
+  note "Buy [Coarse Thread] from her"
+  collect 2320 x30 @70.57,30.17 map 1458 optional -- Coarse Thread (30)
+step
+  only Priest
+  zone map 1458
+  note "Create as many [Brown Linen Robes] as you can"
+  collect 6238 x9 @70.57,30.17 map 1458 optional -- Brown Linen Robe(9)
+step
+  only Warlock
+  zone map 1458
+  note "Create as many [Brown Linen Robes] as you can"
+  collect 6238 x9 @70.57,30.17 map 1458 optional -- Brown Linen Robe(9)
+step
+  only Priest
+  zone map 1458
+  goto 62.35,60.99 map 1458 r 8
+  note "Talk to Thaddeus. Buy a [Copper Rod] and [Simple Wood] from him"
+  note "Disenchant all the [Brown Linen Robes] that you made and create a [Runed Copper Rod]"
+  note "If you did not get a [Lesser Magic Essence] then buy one from Thaddeus if there is one available. Otherwise finish this step later"
+  collect 6218 x1 @62.35,60.99 map 1458 optional -- Runed Copper Rod (1)
+  collect 4470 x1 @62.35,60.99 map 1458 optional -- Simple Wood (1)
+step
+  only Warlock
+  zone map 1458
+  goto 62.35,60.99 map 1458 r 8
+  note "Talk to Thaddeus. Buy a [Copper Rod] and [Simple Wood] from him"
+  note "Disenchant all the [Brown Linen Robes] that you made and create a [Runed Copper Rod]"
+  note "If you did not get a [Lesser Magic Essence] then buy one from Thaddeus if there is one available. Otherwise finish this step later"
+  collect 6218 x1 @62.35,60.99 map 1458 optional -- Runed Copper Rod (1)
+  collect 4470 x1 @62.35,60.99 map 1458 optional -- Simple Wood (1)
+step
+  only Priest
+  zone map 1458
+  goto 62.54,60.34 map 1458 r 8 optional
+  note "Talk to Malcomb"
+  learn 14293 "Lesser Magic Wand"
+step
+  only Warlock
+  zone map 1458
+  goto 62.54,60.34 map 1458 r 8 optional
+  note "Talk to Malcomb"
+  learn 14293 "Lesser Magic Wand"
+step
+  only Priest
+  zone map 1458
+  note "Create a [Lesser Magic Wand]"
+  note "If you did not get a [Lesser Magic Essence] then buy one from Thaddeus if there is one available. Otherwise finish this step later"
+  collect 11287 x1 @62.54,60.34 map 1458 optional -- Lesser Magic Wand (1)
+step
+  only Warlock
+  zone map 1458
+  note "Create a [Lesser Magic Wand]"
+  note "If you did not get a [Lesser Magic Essence] then buy one from Thaddeus if there is one available. Otherwise finish this step later"
+  collect 11287 x1 @62.54,60.34 map 1458 optional -- Lesser Magic Wand (1)
+step
+  when !zone "Tirisfal Glades"
+  when !zone "Silverpine Forest"
+  label LeaveUndercity3
+  zone map 1458
+  zone map 1420
+  goto 47.25,39.12 map 1458 r 50 optional
+  goto 46.35,43.86 map 1458 r 10 optional
+  goto 45.24,39.35 map 1458 r 10 optional
+  goto 41.32,38.4 map 1458 r 10 optional
+  goto 40.74,33.95 map 1458 r 10 optional
+  goto 34.8,33.19 map 1458 r 15 optional
+  goto 27.39,30.23 map 1458 r 35 optional
+  goto 21.89,43.35 map 1458 r 35 optional
+  goto 51.1,71.53 map 1420 r 50

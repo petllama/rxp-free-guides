@@ -1,0 +1,444 @@
+guide rxp-free/1-6-tauren-4c25ea7e
+title "1-6 Tauren"
+levels 1-6
+zone map 1412
+coords era
+faction Horde
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · RXP Survival Guide 1-20"
+next rxp-free/6-13-tauren-e86a873f
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Undead,Skyborne
+  along until next_1
+  zone map 1412
+  goto 44.92,77.12 map 1412 r 8
+  note "You have selected a guide meant for Tauren. This zone will NOT work well for you due to missing one of the main questlines that are gated for Tauren only. It is recommended you choose the same starter zone that you start in"
+step
+  label next_1
+  zone map 1412
+  note "Talk to Grull"
+  accept 747 -- Accept The Hunt Begins
+step
+  zone map 1412
+  note "Talk to Chief Hawkwind"
+  accept 752 -- Accept A Humble Task
+step
+  only Warrior
+  along until next_4
+  zone map 1412
+  goto 46.05,75.32 map 1412 r 30 optional
+  note "Kill Plainstriders. Loot them until you have 10 copper worth of vendor items (including your armor)" only Warrior
+  note "Kill Plainstriders. Loot them until you have 10 copper worth of vendor items (including your armor)" only Shaman
+step
+  only Shaman
+  along until next_4
+  zone map 1412
+  goto 46.05,75.32 map 1412 r 30 optional
+  note "Kill Plainstriders. Loot them until you have 10 copper worth of vendor items (including your armor)" only Warrior
+  note "Kill Plainstriders. Loot them until you have 10 copper worth of vendor items (including your armor)" only Shaman
+step
+  only Warrior
+  label next_4
+  zone map 1412
+  note "Talk to Kawnie"
+  vendor 3072 -- Vendor Trash
+step
+  only Shaman
+  zone map 1412
+  note "Talk to Kawnie"
+  vendor 3072 -- Vendor Trash
+step
+  only Warrior
+  zone map 1412
+  goto 44.02,76.14 map 1412 r 8
+  note "Talk to Harutt"
+  learn 6673 "Battle Shout"
+step
+  only Shaman
+  zone map 1412
+  goto 45.01,75.95 map 1412 r 8
+  note "Talk to Meela"
+  learn 8017 "Rockbiter Weapon"
+step
+  along until next_8
+  zone map 1412
+  note "Kill Plainstriders. Loot them for their Meat and Feathers"
+  collect 4739 x7 quest 747.1 @45.01,75.95 map 1412 -- Plainstrider Meat (7)
+  collect 4740 x7 quest 747.2 @45.01,75.95 map 1412 -- Plainstrider Feather (7)
+step
+  label next_8
+  zone map 1412
+  note "Talk to Greatmother Hawkwind"
+  turnin 752 -- Turn in A Humble Task
+  accept 753 -- Accept A Humble Task
+step
+  zone map 1412
+  note "Loot the Water Pitcher on the well behind Hawkwind"
+  collect 4755 x1 quest 753.1 @50.22,81.37 map 1412 -- Water Pitcher (1)
+step
+  loop
+  zone map 1412
+  goto 47.36,83.05 map 1412 r 1
+  goto 50.23,79.38 map 1412 r 50
+  goto 51.02,78.68 map 1412 r 50
+  goto 50.85,75.68 map 1412 r 50
+  goto 48.43,77.18 map 1412 r 50
+  goto 47.1,76.54 map 1412 r 50
+  goto 45.77,80.39 map 1412 r 50
+  goto 45.56,82.39 map 1412 r 50
+  goto 47.36,83.05 map 1412 r 50
+  note "Kill Plainstriders. Loot them for their Meat and Feathers"
+  collect 4739 x7 quest 747.1 -- Plainstrider Meat (7)
+  collect 4740 x7 quest 747.2 -- Plainstrider Feather (7)
+step
+  zone map 1412
+  goto 44.92,77.12 map 1412 r 8 optional
+  note "Talk to Grull"
+  turnin 747 only Druid -- Turn in The Hunt Begins
+  turnin 747 only !Druid -- Turn in The Hunt Begins
+  accept 3091 only Warrior -- Accept Simple Note
+  accept 3092 only Hunter -- Accept Etched Note
+  accept 3093 only Shaman -- Accept Rune-Inscribed Note
+  accept 3094 only Druid -- Accept Verdant Note
+  accept 750 -- Accept The Hunt Continues
+step
+  zone map 1412
+  goto 45.3,76.52 map 1412 r 8
+  note "Talk to Kawnie"
+  note "Buy [Light Shots] from her" only Hunter
+  collect 2516 x1000 @45.3,76.52 map 1412 optional only Hunter -- Light Shot (1000)
+  vendor 3072 -- Vendor Trash
+step
+  zone map 1412
+  note "Talk to Chief Hawkwind"
+  turnin 753 -- Turn in A Humble Task
+  accept 755 -- Accept Rites of the Earthmother
+step
+  only Shaman
+  zone map 1412
+  goto 44.07,77.47 map 1412 r 8
+  note "Talk to Marjak. Buy a [Short Staff] from him"
+  collect 2132 x1 @44.07,77.47 map 1412 optional -- Collect Short Staff (1)
+step
+  only Shaman
+  when has 2132
+  along until RitesoftheEarthmother
+  zone map 1412
+  note "Equip the [Short Staff]"
+  use 2132 @44.07,77.47 map 1412 optional
+step
+  along until RitesoftheEarthmother
+  zone map 1412
+  note "Kill Mountain Cougars. Loot them for their Pelts"
+  collect 4742 x10 quest 750.1 @44.07,77.47 map 1412 -- Mountain Cougar Pelt (10)
+step
+  label RitesoftheEarthmother
+  zone map 1412
+  note "Talk to Seer Graytongue"
+  note "Grind mobs on the way"
+  turnin 755 -- Turn in Rites of the Earthmother
+  accept 757 -- Accept Rite of Strength
+step
+  loop
+  zone map 1412
+  goto 44.6,90.86 map 1412 r 1
+  goto 43.21,89.26 map 1412 r 50
+  goto 44.64,91.58 map 1412 r 50
+  goto 45.82,90.52 map 1412 r 50
+  goto 46.35,91.45 map 1412 r 50
+  goto 48.05,91.83 map 1412 r 50
+  goto 49.25,90.69 map 1412 r 50
+  goto 50.98,90.37 map 1412 r 50
+  goto 49.1,89.5 map 1412 r 50
+  goto 47.06,88.64 map 1412 r 50
+  goto 45.06,89.89 map 1412 r 50
+  goto 44.6,90.86 map 1412 r 50
+  note "Kill Mountain Cougars. Loot them for their Pelts"
+  collect 4742 x10 quest 750.1 -- Mountain Cougar Pelt (10)
+step
+  zone map 1412
+  goto 45.56,87.95 map 1412 r 40 optional
+  goto 46.92,87.84 map 1412 r 40 optional
+  goto 48.67,86.83 map 1412 r 40 optional
+  goto 50.65,85.87 map 1412 r 40 optional
+  goto 51.01,83.71 map 1412 r 40 optional
+  goto 52.06,81.53 map 1412 r 40 optional
+  goto 51.87,79.58 map 1412 r 40 optional
+  goto 51.67,77.39 map 1412 r 40 optional
+  goto 51.95,75.16 map 1412 r 40 optional
+  goto 50.32,76.33 map 1412 r 40 optional
+  goto 48.85,75.82 map 1412 r 40 optional
+  goto 47.41,75.3 map 1412 r 40 optional
+  goto 46.8,78.21 map 1412 r 40 optional
+  goto 45.84,80.41 map 1412 r 40 optional
+  goto 45.03,82.15 map 1412 r 40 optional
+  goto 44.09,83.89 map 1412 r 40 optional
+  goto 43.9,86.08 map 1412 r 40
+  level 3+1150 -- Grind to 1150+/1400xp
+step
+  only Warrior
+  along until GrullTurnin2
+  note "Grind Plainstriders. Loot them until you have 2 silver worth of vendor items"
+step
+  only Druid
+  along until GrullTurnin2
+  note "Grind Plainstriders. Loot them until you have 2 silver worth of vendor items"
+step
+  only Paladin,Hunter,Rogue,Priest,Shaman,Mage,Warlock
+  along until GrullTurnin2
+  note "Grind Plainstriders. Loot them until you have 1 silver worth of vendor items"
+step
+  label GrullTurnin2
+  zone map 1412
+  note "Talk to Grull"
+  turnin 750 -- Turn in The Hunt Continues
+  accept 780 -- Accept The Battleboars
+step
+  zone map 1412
+  note "Talk to Kawnie"
+  vendor 3072 -- Vendor Trash
+step
+  zone map 1412
+  note "Talk to Brave"
+  accept 3376 -- Accept Break Sharptusk!
+step
+  only Warrior
+  zone map 1412
+  note "Talk to Harutt"
+  turnin 3091 -- Turn in Simple Note
+  learn 100 "Charge"
+  learn 772 "Rend"
+step
+  only Warrior
+  when onquest 3091
+  zone map 1412
+  note "Talk to Harutt"
+  turnin 3091 -- Turn in Simple Note
+  learn 772 "Rend"
+step
+  only Hunter
+  when onquest 3092
+  zone map 1412
+  note "Talk to Lanka"
+  turnin 3092 -- Turn in Etched Note
+  learn 1978 "Serpent Sting"
+step
+  only Druid
+  when onquest 3094
+  zone map 1412
+  note "Talk to Gart"
+  turnin 3094 -- Turn in Verdant Note
+  learn 8921 "Moonfire"
+step
+  only Shaman
+  zone map 1412
+  note "Talk to Ravenfeather"
+  accept 1519 -- Accept Call of Earth
+step
+  only Shaman
+  when onquest 3093
+  zone map 1412
+  note "Talk to Meela"
+  turnin 3093 -- Turn in Rune-Inscribed Note
+  learn 8042 "Earth Shock"
+step
+  loop
+  zone map 1412
+  goto 55.99,85.46 map 1412 r 1
+  goto 52.7,79.32 map 1412 r 50
+  goto 54.19,79.83 map 1412 r 50
+  goto 55.73,80.28 map 1412 r 50
+  goto 56.48,81.67 map 1412 r 50
+  goto 55.63,83.86 map 1412 r 50
+  goto 56.03,85.53 map 1412 r 50
+  goto 55.8,87.71 map 1412 r 50
+  goto 56.72,89.27 map 1412 r 50
+  goto 57.92,89.27 map 1412 r 50
+  goto 57.69,86.77 map 1412 r 50
+  goto 57.31,85.39 map 1412 r 50
+  goto 55.99,85.46 map 1412 r 50
+  note "Kill Battleboars. Loot them for their Flanks and Snouts"
+  collect 4849 x8 quest 780.2 -- Battleboar Flank (8)
+  collect 4848 x8 quest 780.1 -- Battleboar Snout (8)
+step
+  along until next_33
+  zone map 1412
+  goto 59.67,83.33 map 1412 r 30 -- Travel through the cave
+step
+  label next_33
+  along until DirtyMap
+  zone map 1412
+  note "Kill Bristleback Quilboars. Loot them for their Belts"
+  collect 4770 x12 quest 757.1 @59.67,83.33 map 1412 -- Bristleback Belt (12)
+step
+  only Shaman
+  when onquest 1519
+  along until DirtyMap
+  zone map 1412
+  note "Kill Bristleback Shamans. Loot them for their Salves"
+  collect 6634 x2 quest 1519.1 @59.67,83.33 map 1412 -- Ritual Salve (2)
+step
+  zone map 1412
+  goto 60.54,81.04 map 1412 r 35 optional
+  note "Kill Chief Sharptusk Thornmantle inside the big hut. Loot him for his Head"
+  collect 10459 x1 quest 3376.1 -- Chief Sharptusk Thornmantle's Head (1)
+step
+  label DirtyMap
+  zone map 1412
+  goto 63.24,82.7 map 1412 r 8 optional
+  note "Travel into the cave. Loot the [Dirt-stained Map] on the ground and use it to start the quest"
+  collect 4851 x1 @63.24,82.7 map 1412 optional -- Collect Dirt-Stained Map
+  accept 781 -- Accept Attack on Camp Narache
+  use 4851 @63.24,82.7 map 1412
+step
+  only Shaman
+  when onquest 1519
+  along until next_38
+  zone map 1412
+  note "Kill Bristleback Shamans. Loot them for their Salves"
+  collect 6634 x2 quest 1519.1 @63.24,82.7 map 1412 -- Ritual Salve (2)
+step
+  label next_38
+  loop
+  zone map 1412
+  goto 63.93,78.34 map 1412 r 1
+  goto 63.81,76.65 map 1412 r 40
+  goto 62.92,76.91 map 1412 r 40
+  goto 61.31,77.22 map 1412 r 40
+  goto 61.58,78.89 map 1412 r 40
+  goto 62.53,79.52 map 1412 r 40
+  goto 64.2,79.01 map 1412 r 40
+  goto 65.82,78.13 map 1412 r 40
+  goto 63.93,78.34 map 1412 r 40
+  note "Kill Bristleback Quilboars. Loot them for their Belts"
+  collect 4770 x12 quest 757.1 -- Bristleback Belt (12)
+step
+  only Shaman
+  when onquest 1519
+  loop
+  zone map 1412
+  goto 63.86,80.14 map 1412 r 1
+  goto 63.74,81.18 map 1412 r 40
+  goto 63.86,79.97 map 1412 r 40
+  goto 65,78.6 map 1412 r 40
+  goto 66.05,77.83 map 1412 r 40
+  goto 65.93,77.1 map 1412 r 40
+  goto 63.57,76.25 map 1412 r 40
+  goto 63.86,80.14 map 1412 r 40
+  note "Kill Bristleback Shamans. Loot them for their Salves"
+  collect 6634 x2 quest 1519.1 -- Ritual Salve (2)
+step
+  zone map 1412
+  goto 62.27,82.03 map 1412 r 1 optional
+  goto 63.98,80.08 map 1412 r 40 optional
+  goto 64.31,78.29 map 1412 r 40 optional
+  goto 63.67,76.18 map 1412 r 40 optional
+  goto 62.67,76.1 map 1412 r 40 optional
+  goto 61.34,77.13 map 1412 r 40 optional
+  goto 61.72,78.98 map 1412 r 40 optional
+  goto 62.29,81.53 map 1412 r 40 optional
+  goto 60.82,80.81 map 1412 r 40 optional
+  goto 60.08,81.93 map 1412 r 40 optional
+  goto 61.03,82.32 map 1412 r 40 optional
+  goto 62.27,82.03 map 1412 r 40 optional
+  level 5+880 only !Shaman -- Grind to 880+/2800xp
+  level 5 only Shaman -- Grind to level 5
+step
+  along until next_42
+  zone map 1412
+  hearth "Camp Narache" optional -- Hearth to Camp Narache
+  use 6948 @62.27,82.03 map 1412
+step
+  when onquest 1519
+  turnin 1519 only Shaman -- Turn in Call of Earth
+step
+  label next_42
+  zone map 1412
+  note "Talk to Grull, Brave and Hawkwind" only !Shaman
+  note "Talk to Grull, Brave, Seer and Hawkwind" only Shaman
+  turnin 780 -- Turn in The Battleboars
+  turnin 3376 -- Turn in Break Sharptusk!
+  goto 44.67,76.68 map 1412 r 8 optional
+  accept 1520 only Shaman -- Accept Call of Earth
+  goto 44.73,76.18 map 1412 r 8 optional only Shaman
+  turnin 781 -- Turn in Attack on Camp Narache
+  turnin 757 -- Turn in Rite of Strength
+  accept 763 -- Accept Rites of the Earthmother
+  goto 44.18,76.07 map 1412 r 8 optional
+step
+  label Rock
+  only Shaman
+  zone map 1412
+  goto 53.74,80.15 map 1412 r 30 -- Travel toward the rock
+step
+  only Shaman
+  along until next_45
+  zone map 1412
+  note "Use the [Earth Sapta]"
+  use 6635 @53.74,80.15 map 1412
+step
+  only Shaman
+  when onquest 1520
+  turnin 1520 -- Turn in Call of Earth
+step
+  only Shaman
+  label next_45
+  zone map 1412
+  note "Talk to the Manifestation"
+  accept 1521 -- Accept Call of Earth
+step
+  only Shaman
+  when onquest 1521
+  zone map 1412
+  note "Talk to Canaga"
+  turnin 1521 -- Turn in Call of Earth
+step
+  only Shaman
+  zone map 1412
+  goto 45.01,75.95 map 1412 r 8
+  note "Talk to Meela"
+  learn 332 "Healing Wave"
+step
+  only Hunter
+  zone map 1412
+  goto 44.26,75.7 map 1412 r 8 optional
+  note "Talk to Lanka"
+  learn 1130 "Hunter's Mark"
+  learn 3044 "Arcane Shot"
+step
+  only Hunter
+  zone map 1412
+  goto 44.26,75.7 map 1412 r 8
+  note "Talk to Lanka"
+  learn 3044 "Arcane Shot"
+step
+  only Druid
+  zone map 1412
+  goto 45.09,75.93 map 1412 r 8 optional
+  note "Talk to Gart"
+  learn 467 "Thorns"
+  learn 5177 "Wrath"
+step
+  only Druid
+  zone map 1412
+  goto 45.09,75.93 map 1412 r 8
+  note "Talk to Gart"
+  learn 5177 "Wrath"
+step
+  only Warrior
+  zone map 1412
+  goto 44.02,76.14 map 1412 r 8 optional
+  note "Talk to Harutt"
+  learn 3127 "Parry"
+  learn 6343 "Thunder Clap"
+step
+  only Warrior
+  zone map 1412
+  goto 44.02,76.14 map 1412 r 8
+  note "Talk to Harutt"
+  learn 3127 "Parry"
+step
+  zone map 1412
+  note "Talk to Antur"
+  accept 1656 -- Accept A Task Unfinished

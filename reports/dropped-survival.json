@@ -1,0 +1,2036 @@
+{
+ "style": {
+  "group": false,
+  "hardcore": true,
+  "ssf": false,
+  "xprate": 1.0
+ },
+ "guides": {
+  "1-6-coldridge-valley-46698c7b.guide": [
+   {
+    "step": 69,
+    "dropped": "money >= 25"
+   }
+  ],
+  "1-6-northshire-345ba55a.guide": [
+   {
+    "line": 62,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "1-6-orc-troll-2097e635.guide": [
+   {
+    "step": 3,
+    "dropped": "money < 100"
+   },
+   {
+    "step": 5,
+    "dropped": "money < 100"
+   },
+   {
+    "step": 12,
+    "dropped": "money >= 25"
+   },
+   {
+    "step": 23,
+    "dropped": "money < 100"
+   },
+   {
+    "step": 33,
+    "dropped": "money >= 400"
+   },
+   {
+    "step": 37,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 38,
+    "dropped": "money < 100"
+   },
+   {
+    "step": 39,
+    "dropped": "money < 100"
+   },
+   {
+    "step": 57,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 76,
+    "dropped": "not knows 116"
+   },
+   {
+    "step": 77,
+    "dropped": "money >= 210"
+   },
+   {
+    "step": 78,
+    "dropped": "money >= 110"
+   },
+   {
+    "step": 79,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 79,
+    "dropped": "not knows 589"
+   },
+   {
+    "step": 82,
+    "dropped": "not knows 1978"
+   },
+   {
+    "step": 83,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 85,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 104,
+    "dropped": "money < 300"
+   },
+   {
+    "step": 111,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 113,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 116,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 119,
+    "dropped": "money >= 300"
+   },
+   {
+    "step": 119,
+    "dropped": "not knows 6307"
+   },
+   {
+    "step": 120,
+    "dropped": "money >= 200"
+   },
+   {
+    "line": 44,
+    "goal": "along waypoint dropped: goto 41.52,68.36 map 1411 r 12 optional"
+   },
+   {
+    "line": 44,
+    "goal": "along waypoint dropped: goto 41.24,68.16 map 1411 r 12 optional"
+   },
+   {
+    "line": 44,
+    "goal": "along waypoint dropped: goto 40.82,68.03 map 1411 r 12 optional"
+   },
+   {
+    "line": 44,
+    "goal": "along waypoint dropped: goto 40.65,68.52 map 1411 r 12 optional -- Travel toward Nartok"
+   },
+   {
+    "line": 44,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 122,
+    "goal": "along waypoint dropped: goto 42.13,68.41 map 1411 r 15 optional"
+   },
+   {
+    "line": 122,
+    "goal": "along waypoint dropped: goto 41.52,68.36 map 1411 r 12 optional"
+   },
+   {
+    "line": 122,
+    "goal": "along waypoint dropped: goto 41.27,68 map 1411 r 12 optional -- Travel toward Rwag"
+   },
+   {
+    "line": 122,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "1-6-shadowglen-093c0de2.guide": [
+   {
+    "line": 22,
+    "goal": "along goal that never checks off, as a note: Buy 3 stacks of [Rough Arrows]"
+   },
+   {
+    "line": 22,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 44,
+    "goal": "along goal that never checks off, as a note: Use the [Crystal Phial] at the Moonwell"
+   }
+  ],
+  "1-6-tauren-4c25ea7e.guide": [
+   {
+    "step": 4,
+    "dropped": "money < 100"
+   },
+   {
+    "step": 5,
+    "dropped": "money < 100"
+   },
+   {
+    "step": 15,
+    "dropped": "money >= 102"
+   },
+   {
+    "step": 21,
+    "dropped": "money < 200"
+   },
+   {
+    "step": 22,
+    "dropped": "money < 100"
+   },
+   {
+    "step": 26,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 52,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 54,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 56,
+    "dropped": "money >= 200"
+   },
+   {
+    "line": 48,
+    "goal": "along waypoint dropped: goto 53.74,80.15 map 1412 r 30 -- Travel toward the rock"
+   },
+   {
+    "line": 48,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "1-6-undead-ea16136b.guide": [
+   {
+    "step": 5,
+    "dropped": "money < 100"
+   },
+   {
+    "step": 11,
+    "dropped": "money < 1000"
+   },
+   {
+    "step": 15,
+    "dropped": "money < 1000"
+   },
+   {
+    "step": 20,
+    "dropped": "money < 25"
+   },
+   {
+    "step": 25,
+    "dropped": "money < 33"
+   },
+   {
+    "step": 26,
+    "dropped": "money >= 50"
+   },
+   {
+    "step": 27,
+    "dropped": "money < 50"
+   },
+   {
+    "step": 37,
+    "dropped": "money < 75"
+   },
+   {
+    "step": 39,
+    "dropped": "money >= 210"
+   },
+   {
+    "step": 40,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 41,
+    "dropped": "money >= 110"
+   },
+   {
+    "step": 42,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 46,
+    "dropped": "money < 1000"
+   },
+   {
+    "step": 47,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 48,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 49,
+    "dropped": "money >= 400"
+   },
+   {
+    "line": 14,
+    "goal": "along waypoint dropped: goto 30.98,66.41 map 1420 r 8 optional only Warlock"
+   },
+   {
+    "line": 14,
+    "goal": "along waypoint dropped: goto 30.84,66.2 map 1420 r 8 optional"
+   },
+   {
+    "line": 15,
+    "goal": "along waypoint dropped: goto 30.98,66.41 map 1420 r 8 optional only Warlock"
+   },
+   {
+    "line": 15,
+    "goal": "along waypoint dropped: goto 30.84,66.2 map 1420 r 8 optional"
+   }
+  ],
+  "10-11-elwynn-dwarf-gnome-1419a546.guide": [
+   {
+    "line": 69,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "11-13-darkshore-night-elf-11979324.guide": [
+   {
+    "step": 15,
+    "dropped": "skill Mining < 1"
+   },
+   {
+    "step": 16,
+    "dropped": "skill Blacksmithing < 1"
+   },
+   {
+    "step": 74,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 76,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 77,
+    "dropped": "skill Cooking >= 10"
+   }
+  ],
+  "11-13-loch-modan-10b9df58.guide": [
+   {
+    "step": 32,
+    "dropped": "money < 7579"
+   }
+  ],
+  "11-13-loch-modan-dwarf-gnome-75fa3fe6.guide": [
+   {
+    "step": 21,
+    "dropped": "money >= 1300"
+   },
+   {
+    "step": 65,
+    "dropped": "money >= 3815"
+   },
+   {
+    "step": 66,
+    "dropped": "money >= 3815"
+   },
+   {
+    "line": 18,
+    "goal": "along goal that never checks off, as a note: Buy [Small Brown Pouches] if needed"
+   },
+   {
+    "line": 18,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 19,
+    "goal": "along waypoint dropped: goto 35.534,48.404 map 1432 r 8"
+   },
+   {
+    "line": 19,
+    "goal": "along goal that never checks off, as a note: Buy some [Freshly Baked Bread] if needed"
+   },
+   {
+    "line": 19,
+    "goal": "along goal that never checks off, as a note: Buy some [Freshly Baked Bread] if needed"
+   },
+   {
+    "line": 19,
+    "goal": "along goal that never checks off, as a note: Buy some [Freshly Baked Bread] and [Ice Cold Milk] if needed"
+   },
+   {
+    "line": 19,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "13-15-silverpine-forest-5cc233ec.guide": [
+   {
+    "step": 10,
+    "dropped": "money >= 500"
+   },
+   {
+    "step": 41,
+    "dropped": "money >= 1400"
+   },
+   {
+    "step": 42,
+    "dropped": "money >= 2633"
+   },
+   {
+    "step": 43,
+    "dropped": "money >= 2633"
+   },
+   {
+    "step": 44,
+    "dropped": "money >= 2000"
+   },
+   {
+    "step": 57,
+    "dropped": "goal of quest 481, accepted only for another play style: turnin 481 -- Turn in Dalar's Analysis"
+   },
+   {
+    "step": 68,
+    "dropped": "money >= 5544"
+   },
+   {
+    "step": 70,
+    "dropped": "money >= 5304"
+   },
+   {
+    "step": 72,
+    "dropped": "money >= 6286"
+   },
+   {
+    "step": 74,
+    "dropped": "money >= 5544"
+   },
+   {
+    "step": 76,
+    "dropped": "money >= 3815"
+   },
+   {
+    "step": 88,
+    "dropped": "money >= 3515"
+   },
+   {
+    "step": 97,
+    "dropped": "skill \"First Aid\" >= 40"
+   },
+   {
+    "step": 98,
+    "dropped": "skill \"First Aid\" >= 50"
+   },
+   {
+    "step": 129,
+    "dropped": "money >= 2633"
+   },
+   {
+    "line": 196,
+    "goal": "objective 437.2 kept as a note"
+   },
+   {
+    "line": 117,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 118,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 119,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 120,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 121,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "13-15-westfall-9d146499.guide": [
+   {
+    "step": 50,
+    "dropped": "money >= 800"
+   },
+   {
+    "line": 375,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 1,
+    "goal": "along waypoint dropped: goto 19,81 map 1429 r 8"
+   },
+   {
+    "line": 1,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "15-18-darkshore-9e0895c0.guide": [
+   {
+    "step": 86,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 87,
+    "dropped": "skill Cooking < 10"
+   },
+   {
+    "step": 89,
+    "dropped": "skill Cooking >= 10"
+   },
+   {
+    "step": 146,
+    "dropped": "skill Cooking >= 10"
+   },
+   {
+    "line": 777,
+    "goal": "note \"1\" dropped"
+   },
+   {
+    "line": 82,
+    "goal": "along waypoint dropped: goto 57.56,46.72 map 1457 r 8"
+   },
+   {
+    "line": 91,
+    "goal": "along goal that never checks off, as a note: Use the [Empty Water Tube] at the Auberdine Moonwell"
+   }
+  ],
+  "15-19-the-barrens-b6e37e17.guide": [
+   {
+    "step": 101,
+    "dropped": "money >= 5544"
+   },
+   {
+    "step": 103,
+    "dropped": "money >= 5304"
+   },
+   {
+    "step": 105,
+    "dropped": "money >= 6286"
+   },
+   {
+    "step": 107,
+    "dropped": "money >= 5544"
+   },
+   {
+    "step": 109,
+    "dropped": "money >= 3815"
+   },
+   {
+    "step": 110,
+    "dropped": "money >= 3815"
+   },
+   {
+    "step": 123,
+    "dropped": "money >= 5544"
+   },
+   {
+    "step": 125,
+    "dropped": "money >= 5304"
+   },
+   {
+    "step": 127,
+    "dropped": "money >= 6286"
+   },
+   {
+    "step": 129,
+    "dropped": "money >= 5544"
+   },
+   {
+    "step": 131,
+    "dropped": "money >= 3815"
+   },
+   {
+    "step": 132,
+    "dropped": "money >= 3815"
+   },
+   {
+    "step": 188,
+    "dropped": "money >= 1500"
+   },
+   {
+    "step": 189,
+    "dropped": "money >= 1500"
+   },
+   {
+    "step": 207,
+    "dropped": "skill \"First Aid\" >= 1"
+   },
+   {
+    "step": 208,
+    "dropped": "skill \"First Aid\" >= 1"
+   },
+   {
+    "step": 209,
+    "dropped": "skill \"First Aid\" >= 1"
+   },
+   {
+    "step": 210,
+    "dropped": "skill \"First Aid\" >= 1"
+   },
+   {
+    "line": 12,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 55,
+    "goal": "along goal that never checks off, as a note: Use item 2030"
+   },
+   {
+    "line": 55,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 57,
+    "goal": "along goal that never checks off, as a note: Use item 2025"
+   },
+   {
+    "line": 57,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 59,
+    "goal": "along goal that never checks off, as a note: Use item 2026"
+   },
+   {
+    "line": 59,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 61,
+    "goal": "along goal that never checks off, as a note: Use item 2030"
+   },
+   {
+    "line": 61,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 182,
+    "goal": "along waypoint dropped: goto 52.23,31 map 1413 r 8"
+   },
+   {
+    "line": 182,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 234,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "19-20-redridge-d951dc98.guide": [
+   {
+    "step": 6,
+    "dropped": "money >= 6722"
+   },
+   {
+    "step": 7,
+    "dropped": "money >= 6722"
+   },
+   {
+    "step": 96,
+    "dropped": "goal of quest 345, accepted only for another play style: turnin 345 -- Turn in Ink Supplies"
+   },
+   {
+    "step": 97,
+    "dropped": "goal of quest 119, accepted only for another play style: turnin 119 -- Turn in Return to Verner"
+   },
+   {
+    "step": 157,
+    "dropped": "skill Cooking < 50"
+   },
+   {
+    "step": 162,
+    "dropped": "knows 1856"
+   },
+   {
+    "step": 163,
+    "dropped": "knows 1856"
+   },
+   {
+    "step": 164,
+    "dropped": "knows 1856"
+   },
+   {
+    "step": 165,
+    "dropped": "knows 1856"
+   },
+   {
+    "step": 166,
+    "dropped": "knows 1856"
+   },
+   {
+    "step": 167,
+    "dropped": "knows 1856"
+   },
+   {
+    "step": 169,
+    "dropped": "knows 1856"
+   },
+   {
+    "step": 170,
+    "dropped": "knows 1856"
+   },
+   {
+    "step": 171,
+    "dropped": "knows 1856"
+   },
+   {
+    "step": 172,
+    "dropped": "knows 1856"
+   },
+   {
+    "step": 173,
+    "dropped": "knows 1856"
+   },
+   {
+    "step": 174,
+    "dropped": "knows 7934"
+   },
+   {
+    "step": 175,
+    "dropped": "knows 7934"
+   },
+   {
+    "step": 182,
+    "dropped": "knows 7934"
+   },
+   {
+    "step": 183,
+    "dropped": "knows 7934"
+   },
+   {
+    "line": 3,
+    "goal": "along goal that never checks off, as a note: Buy a [Bronze Tube]"
+   },
+   {
+    "line": 3,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 49,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 132,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 149,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 156,
+    "goal": "along goal that never checks off, as a note: Use item 6452"
+   },
+   {
+    "line": 156,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "19-23-stonetalon-barrens-ashenvale-712ee21c.guide": [
+   {
+    "step": 23,
+    "dropped": "money >= 9860"
+   },
+   {
+    "step": 25,
+    "dropped": "money >= 9784"
+   },
+   {
+    "step": 27,
+    "dropped": "money >= 10972"
+   },
+   {
+    "step": 29,
+    "dropped": "money >= 9860"
+   },
+   {
+    "step": 31,
+    "dropped": "money >= 8743"
+   },
+   {
+    "step": 72,
+    "dropped": "money >= 6190"
+   },
+   {
+    "step": 73,
+    "dropped": "money >= 3515"
+   },
+   {
+    "step": 73,
+    "dropped": "too many cases (5): (((Rogue) or (Hunter) or (Warrior) or (Shaman) or (Druid)) and money >= 3515)"
+   },
+   {
+    "step": 76,
+    "dropped": "too many cases (5): (((Rogue) or (Hunter) or (Warrior) or (Shaman) or (Druid)) and has 4794)"
+   },
+   {
+    "step": 92,
+    "dropped": "money >= 5808"
+   },
+   {
+    "step": 177,
+    "dropped": "skill \"First Aid\" >= 1"
+   },
+   {
+    "step": 178,
+    "dropped": "skill \"First Aid\" >= 1"
+   },
+   {
+    "step": 201,
+    "dropped": "money >= 8743"
+   },
+   {
+    "step": 204,
+    "dropped": "money >= 9860"
+   },
+   {
+    "step": 206,
+    "dropped": "money >= 9860"
+   },
+   {
+    "step": 208,
+    "dropped": "money >= 5643"
+   },
+   {
+    "step": 217,
+    "dropped": "skill Herbalism >= 1"
+   },
+   {
+    "step": 218,
+    "dropped": "skill Herbalism < 1"
+   },
+   {
+    "step": 223,
+    "dropped": "skill Herbalism >= 1"
+   },
+   {
+    "step": 224,
+    "dropped": "skill Herbalism < 1"
+   },
+   {
+    "step": 231,
+    "dropped": "skill Herbalism >= 1"
+   },
+   {
+    "step": 232,
+    "dropped": "skill Herbalism < 1"
+   },
+   {
+    "step": 237,
+    "dropped": "skill Herbalism >= 1"
+   },
+   {
+    "step": 238,
+    "dropped": "skill Herbalism < 1"
+   },
+   {
+    "step": 239,
+    "dropped": "skill Herbalism >= 1"
+   },
+   {
+    "step": 240,
+    "dropped": "skill Herbalism < 1"
+   },
+   {
+    "step": 353,
+    "dropped": "money >= 5808"
+   },
+   {
+    "line": 74,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 277,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 278,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 279,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 280,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 281,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 282,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 283,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 284,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 285,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 286,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 287,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 288,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "20-21-darkshore-ashenvale-197db66e.guide": [
+   {
+    "line": 316,
+    "goal": "objective 5321.2 kept as a note"
+   },
+   {
+    "line": 3,
+    "goal": "along goal that never checks off, as a note: Hearth to Auberdine"
+   },
+   {
+    "line": 3,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 34,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 36,
+    "goal": "along waypoint dropped: goto 18.08,64.03 map 1448 r 8 optional"
+   }
+  ],
+  "6-10-dun-morogh-f8ba799e.guide": [
+   {
+    "step": 25,
+    "dropped": "money >= 536"
+   },
+   {
+    "step": 26,
+    "dropped": "money >= 460"
+   },
+   {
+    "step": 27,
+    "dropped": "money >= 400"
+   },
+   {
+    "step": 28,
+    "dropped": "money >= 631"
+   },
+   {
+    "step": 35,
+    "dropped": "money >= 91"
+   },
+   {
+    "step": 48,
+    "dropped": "money >= 414"
+   },
+   {
+    "step": 59,
+    "dropped": "money >= 536"
+   },
+   {
+    "step": 60,
+    "dropped": "money >= 460"
+   },
+   {
+    "step": 61,
+    "dropped": "money >= 400"
+   },
+   {
+    "step": 62,
+    "dropped": "money >= 631"
+   },
+   {
+    "step": 100,
+    "dropped": "money >= 536"
+   },
+   {
+    "step": 101,
+    "dropped": "money >= 460"
+   },
+   {
+    "step": 102,
+    "dropped": "money >= 400"
+   },
+   {
+    "step": 103,
+    "dropped": "money >= 631"
+   },
+   {
+    "step": 144,
+    "dropped": "money < 1030"
+   },
+   {
+    "step": 211,
+    "dropped": "money >= 2000"
+   },
+   {
+    "line": 960,
+    "goal": "objective 287.2 kept as a note"
+   }
+  ],
+  "6-11-elwynn-forest-37cccb2b.guide": [
+   {
+    "step": 4,
+    "dropped": "money >= 536"
+   },
+   {
+    "step": 5,
+    "dropped": "money >= 400"
+   },
+   {
+    "step": 6,
+    "dropped": "money >= 631"
+   },
+   {
+    "step": 22,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 23,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 59,
+    "dropped": "money >= 536"
+   },
+   {
+    "step": 60,
+    "dropped": "money >= 400"
+   },
+   {
+    "step": 61,
+    "dropped": "money >= 631"
+   },
+   {
+    "step": 69,
+    "dropped": "too many cases (5): (((Mage) or (Priest) or (Rogue) or (Warrior) or (Paladin)))"
+   },
+   {
+    "step": 74,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 75,
+    "dropped": "money >= 1250"
+   },
+   {
+    "step": 121,
+    "dropped": "money < 3152"
+   },
+   {
+    "step": 135,
+    "dropped": "money < 3129"
+   },
+   {
+    "step": 150,
+    "dropped": "money < 3152"
+   },
+   {
+    "line": 1298,
+    "goal": "objective 287.2 kept as a note"
+   }
+  ],
+  "6-11-teldrassil-aa19792d.guide": [
+   {
+    "step": 138,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 182,
+    "dropped": "money >= 1751"
+   },
+   {
+    "step": 183,
+    "dropped": "money >= 3022"
+   },
+   {
+    "step": 184,
+    "dropped": "money >= 2023"
+   },
+   {
+    "line": 80,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 147,
+    "goal": "along waypoint dropped: goto 41.2,44.4 map 1438 r 1 optional"
+   },
+   {
+    "line": 147,
+    "goal": "along waypoint dropped: goto 44.2,39.8 map 1438 r 1 optional"
+   },
+   {
+    "line": 147,
+    "goal": "along waypoint dropped: goto 45.6,31.4 map 1438 r 1 optional"
+   },
+   {
+    "line": 147,
+    "goal": "along waypoint dropped: goto 37.6,28.8 map 1438 r 1 optional"
+   },
+   {
+    "line": 160,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "6-13-orc-troll-6e749729.guide": [
+   {
+    "step": 6,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 7,
+    "dropped": "money < 10"
+   },
+   {
+    "step": 7,
+    "dropped": "money >= 50"
+   },
+   {
+    "step": 9,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 11,
+    "dropped": "money >= 401"
+   },
+   {
+    "step": 13,
+    "dropped": "money >= 484"
+   },
+   {
+    "step": 15,
+    "dropped": "money >= 540"
+   },
+   {
+    "step": 17,
+    "dropped": "money >= 283"
+   },
+   {
+    "step": 36,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 37,
+    "dropped": "money >= 50"
+   },
+   {
+    "step": 38,
+    "dropped": "money >= 250"
+   },
+   {
+    "step": 40,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 42,
+    "dropped": "money >= 401"
+   },
+   {
+    "step": 44,
+    "dropped": "money >= 484"
+   },
+   {
+    "step": 46,
+    "dropped": "money >= 540"
+   },
+   {
+    "step": 48,
+    "dropped": "money >= 283"
+   },
+   {
+    "step": 62,
+    "dropped": "skill Blacksmithing < 1"
+   },
+   {
+    "step": 63,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 63,
+    "dropped": "skill Blacksmithing >= 1"
+   },
+   {
+    "step": 82,
+    "dropped": "skill Blacksmithing < 1"
+   },
+   {
+    "step": 84,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 86,
+    "dropped": "money >= 401"
+   },
+   {
+    "step": 88,
+    "dropped": "money >= 484"
+   },
+   {
+    "step": 90,
+    "dropped": "money >= 540"
+   },
+   {
+    "step": 97,
+    "dropped": "money >= 283"
+   },
+   {
+    "step": 106,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 106,
+    "dropped": "not knows 7799"
+   },
+   {
+    "step": 114,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 115,
+    "dropped": "money >= 500"
+   },
+   {
+    "step": 151,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 151,
+    "dropped": "not knows 7799"
+   },
+   {
+    "step": 183,
+    "dropped": "money >= 3022"
+   },
+   {
+    "step": 206,
+    "dropped": "money >= 1751"
+   },
+   {
+    "step": 223,
+    "dropped": "money >= 375"
+   },
+   {
+    "step": 224,
+    "dropped": "money >= 375"
+   },
+   {
+    "step": 236,
+    "dropped": "money >= 1751"
+   },
+   {
+    "step": 275,
+    "dropped": "money >= 3022"
+   },
+   {
+    "step": 278,
+    "dropped": "money >= 2214"
+   },
+   {
+    "step": 280,
+    "dropped": "money >= 3022"
+   },
+   {
+    "step": 303,
+    "dropped": "money >= 1751"
+   },
+   {
+    "step": 309,
+    "dropped": "goal of quest 924, accepted only for another play style: complete 924.1 -- Destroy the Demon Seed (1)"
+   },
+   {
+    "step": 337,
+    "dropped": "money >= 3022"
+   },
+   {
+    "step": 342,
+    "dropped": "money >= 1751"
+   },
+   {
+    "step": 347,
+    "dropped": "money >= 3023"
+   },
+   {
+    "step": 348,
+    "dropped": "money >= 3023"
+   },
+   {
+    "step": 349,
+    "dropped": "money >= 3023"
+   },
+   {
+    "step": 350,
+    "dropped": "money >= 3023"
+   },
+   {
+    "step": 351,
+    "dropped": "money >= 2023"
+   },
+   {
+    "step": 352,
+    "dropped": "money >= 2023"
+   },
+   {
+    "step": 364,
+    "dropped": "money >= 500"
+   },
+   {
+    "step": 418,
+    "dropped": "money >= 3023"
+   },
+   {
+    "step": 419,
+    "dropped": "money >= 3023"
+   },
+   {
+    "step": 420,
+    "dropped": "money >= 3023"
+   },
+   {
+    "step": 421,
+    "dropped": "money >= 3023"
+   },
+   {
+    "step": 422,
+    "dropped": "money >= 3023"
+   },
+   {
+    "step": 423,
+    "dropped": "money >= 3023"
+   },
+   {
+    "step": 424,
+    "dropped": "money >= 1000"
+   },
+   {
+    "step": 505,
+    "dropped": "not knows 588"
+   },
+   {
+    "step": 506,
+    "dropped": "not knows 145"
+   },
+   {
+    "step": 507,
+    "dropped": "not knows 7384"
+   },
+   {
+    "step": 508,
+    "dropped": "not knows 1766"
+   },
+   {
+    "step": 509,
+    "dropped": "not knows 755"
+   },
+   {
+    "step": 522,
+    "dropped": "not knows 588"
+   },
+   {
+    "step": 524,
+    "dropped": "not knows 145"
+   },
+   {
+    "step": 526,
+    "dropped": "not knows 7384"
+   },
+   {
+    "step": 528,
+    "dropped": "not knows 1766"
+   },
+   {
+    "step": 530,
+    "dropped": "not knows 755"
+   },
+   {
+    "step": 540,
+    "dropped": "money >= 2023"
+   },
+   {
+    "step": 541,
+    "dropped": "money >= 2023"
+   },
+   {
+    "step": 542,
+    "dropped": "money >= 1000"
+   },
+   {
+    "step": 545,
+    "dropped": "money >= 3022"
+   },
+   {
+    "step": 546,
+    "dropped": "money >= 3022"
+   },
+   {
+    "line": 108,
+    "goal": "along goal that never checks off, as a note: Use item 3131"
+   },
+   {
+    "line": 108,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 109,
+    "goal": "along goal that never checks off, as a note: Use item 2495"
+   },
+   {
+    "line": 109,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 110,
+    "goal": "along goal that never checks off, as a note: Use item 2494"
+   },
+   {
+    "line": 110,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 111,
+    "goal": "along goal that never checks off, as a note: Use item 2491"
+   },
+   {
+    "line": 111,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 112,
+    "goal": "along goal that never checks off, as a note: Use item 2490"
+   },
+   {
+    "line": 112,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 115,
+    "goal": "along goal that never checks off, as a note: Use item 2506"
+   },
+   {
+    "line": 115,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 372,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 373,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 408,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 409,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 429,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 548,
+    "goal": "along goal that never checks off, as a note: Use item 851"
+   },
+   {
+    "line": 548,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 549,
+    "goal": "along waypoint dropped: goto 61.8,65.06 map 1420 r 20 optional"
+   },
+   {
+    "line": 549,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 550,
+    "goal": "along waypoint dropped: goto 66.09,20.06 map 1458 r 20 optional"
+   },
+   {
+    "line": 550,
+    "goal": "along waypoint dropped: goto 64.37,23.94 map 1458 r 20 optional"
+   },
+   {
+    "line": 550,
+    "goal": "along waypoint dropped: goto 65.93,26.71 map 1458 r 10 optional"
+   },
+   {
+    "line": 550,
+    "goal": "along waypoint dropped: goto 65.89,34.03 map 1458 r 10 optional"
+   },
+   {
+    "line": 550,
+    "goal": "along waypoint dropped: goto 64.22,39.77 map 1458 r 10 optional"
+   },
+   {
+    "line": 550,
+    "goal": "along waypoint dropped: goto 65.53,43.62 map 1458 r 15 optional -- Take the lift down to the Undercity"
+   },
+   {
+    "line": 550,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 569,
+    "goal": "along goal that never checks off, as a note: Use item 11287"
+   },
+   {
+    "line": 569,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 570,
+    "goal": "along goal that never checks off, as a note: Use item 11287"
+   },
+   {
+    "line": 570,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 571,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 572,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 573,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 574,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 575,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "6-13-tauren-e86a873f.guide": [
+   {
+    "step": 6,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 8,
+    "dropped": "money >= 701"
+   },
+   {
+    "step": 10,
+    "dropped": "money >= 414"
+   },
+   {
+    "step": 28,
+    "dropped": "money >= 250"
+   },
+   {
+    "step": 32,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 34,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 36,
+    "dropped": "money >= 701"
+   },
+   {
+    "step": 38,
+    "dropped": "money >= 414"
+   },
+   {
+    "step": 59,
+    "dropped": "money >= 504"
+   },
+   {
+    "step": 61,
+    "dropped": "money >= 701"
+   },
+   {
+    "step": 63,
+    "dropped": "money >= 414"
+   },
+   {
+    "step": 77,
+    "dropped": "money >= 250"
+   },
+   {
+    "step": 131,
+    "dropped": "money >= 500"
+   },
+   {
+    "step": 171,
+    "dropped": "skill Skinning < 1"
+   },
+   {
+    "step": 172,
+    "dropped": "skill Skinning < 1"
+   },
+   {
+    "step": 173,
+    "dropped": "skill Skinning < 1"
+   },
+   {
+    "step": 181,
+    "dropped": "money >= 3022"
+   },
+   {
+    "step": 183,
+    "dropped": "money >= 2666"
+   },
+   {
+    "step": 234,
+    "dropped": "money >= 500"
+   },
+   {
+    "step": 257,
+    "dropped": "money >= 500"
+   },
+   {
+    "step": 284,
+    "dropped": "money >= 1751"
+   },
+   {
+    "step": 287,
+    "dropped": "money >= 2666"
+   },
+   {
+    "step": 289,
+    "dropped": "money >= 3022"
+   },
+   {
+    "step": 313,
+    "dropped": "goal of quest 924, accepted only for another play style: complete 924.1 -- Destroy the Demon Seed (1)"
+   },
+   {
+    "step": 337,
+    "dropped": "money >= 1751"
+   },
+   {
+    "step": 339,
+    "dropped": "money >= 2666"
+   },
+   {
+    "step": 341,
+    "dropped": "money >= 3022"
+   },
+   {
+    "line": 109,
+    "goal": "along goal that never checks off, as a note: Hearth to Bloodhoof Village"
+   },
+   {
+    "line": 109,
+    "goal": "along goal that never checks off, as a note: Use item 6948"
+   },
+   {
+    "line": 109,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 110,
+    "goal": "along waypoint dropped: goto 47.33,57.17 map 1412 r 120 optional -- Travel back to Bloodhoof Village"
+   },
+   {
+    "line": 110,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 242,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 351,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 352,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 377,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 378,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 379,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 380,
+    "goal": "along waypoint dropped: goto 47.25,39.12 map 1458 r 50 optional"
+   },
+   {
+    "line": 380,
+    "goal": "along waypoint dropped: goto 46.35,43.86 map 1458 r 10 optional"
+   },
+   {
+    "line": 380,
+    "goal": "along waypoint dropped: goto 45.24,39.35 map 1458 r 10 optional"
+   },
+   {
+    "line": 380,
+    "goal": "along waypoint dropped: goto 41.32,38.4 map 1458 r 10 optional"
+   },
+   {
+    "line": 380,
+    "goal": "along waypoint dropped: goto 40.74,33.95 map 1458 r 10 optional"
+   },
+   {
+    "line": 380,
+    "goal": "along waypoint dropped: goto 34.8,33.19 map 1458 r 15 optional"
+   },
+   {
+    "line": 380,
+    "goal": "along waypoint dropped: goto 27.39,30.23 map 1458 r 35 optional"
+   },
+   {
+    "line": 380,
+    "goal": "along waypoint dropped: goto 21.89,43.35 map 1458 r 35 optional"
+   },
+   {
+    "line": 380,
+    "goal": "along waypoint dropped: goto 51.1,71.53 map 1420 r 50 optional -- Leave Undercity through the Sewers"
+   },
+   {
+    "line": 380,
+    "goal": "along step with no goal left dropped"
+   }
+  ],
+  "6-13-undead-b0dd307b.guide": [
+   {
+    "step": 8,
+    "dropped": "money >= 401"
+   },
+   {
+    "step": 12,
+    "dropped": "money >= 536"
+   },
+   {
+    "step": 19,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 20,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 21,
+    "dropped": "not knows 6307"
+   },
+   {
+    "step": 22,
+    "dropped": "money >= 200"
+   },
+   {
+    "step": 42,
+    "dropped": "money >= 401"
+   },
+   {
+    "step": 45,
+    "dropped": "money >= 536"
+   },
+   {
+    "step": 51,
+    "dropped": "skill Blacksmithing < 1"
+   },
+   {
+    "step": 59,
+    "dropped": "knows 2575"
+   },
+   {
+    "step": 59,
+    "dropped": "skill Blacksmithing >= 1"
+   },
+   {
+    "step": 66,
+    "dropped": "money >= 401"
+   },
+   {
+    "step": 68,
+    "dropped": "money >= 484"
+   },
+   {
+    "step": 70,
+    "dropped": "money >= 540"
+   },
+   {
+    "step": 87,
+    "dropped": "money >= 250"
+   },
+   {
+    "step": 89,
+    "dropped": "money >= 401"
+   },
+   {
+    "step": 91,
+    "dropped": "money >= 484"
+   },
+   {
+    "step": 93,
+    "dropped": "money >= 540"
+   },
+   {
+    "step": 116,
+    "dropped": "skill Blacksmithing < 1"
+   },
+   {
+    "step": 118,
+    "dropped": "money >= 401"
+   },
+   {
+    "step": 120,
+    "dropped": "money >= 484"
+   },
+   {
+    "step": 122,
+    "dropped": "money >= 540"
+   },
+   {
+    "step": 131,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 131,
+    "dropped": "not knows 7799"
+   },
+   {
+    "step": 135,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 136,
+    "dropped": "money >= 500"
+   },
+   {
+    "step": 165,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 165,
+    "dropped": "not knows 7799"
+   },
+   {
+    "step": 183,
+    "dropped": "money >= 375"
+   },
+   {
+    "step": 189,
+    "dropped": "money >= 100"
+   },
+   {
+    "step": 189,
+    "dropped": "not knows 7799"
+   },
+   {
+    "step": 219,
+    "dropped": "money >= 3022"
+   },
+   {
+    "step": 222,
+    "dropped": "money >= 2214"
+   },
+   {
+    "step": 251,
+    "dropped": "money >= 3023"
+   },
+   {
+    "step": 252,
+    "dropped": "money >= 3023"
+   },
+   {
+    "step": 253,
+    "dropped": "money >= 3023"
+   },
+   {
+    "step": 254,
+    "dropped": "money >= 3023"
+   },
+   {
+    "step": 255,
+    "dropped": "money >= 2023"
+   },
+   {
+    "step": 352,
+    "dropped": "not knows 588"
+   },
+   {
+    "step": 354,
+    "dropped": "not knows 145"
+   },
+   {
+    "step": 356,
+    "dropped": "not knows 7384"
+   },
+   {
+    "step": 358,
+    "dropped": "not knows 1766"
+   },
+   {
+    "step": 360,
+    "dropped": "not knows 755"
+   },
+   {
+    "step": 375,
+    "dropped": "money >= 3022"
+   },
+   {
+    "step": 376,
+    "dropped": "money >= 3022"
+   },
+   {
+    "line": 133,
+    "goal": "along goal that never checks off, as a note: Use item 3131"
+   },
+   {
+    "line": 133,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 134,
+    "goal": "along goal that never checks off, as a note: Use item 2494"
+   },
+   {
+    "line": 134,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 135,
+    "goal": "along goal that never checks off, as a note: Use item 2491"
+   },
+   {
+    "line": 135,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 136,
+    "goal": "along goal that never checks off, as a note: Use item 2490"
+   },
+   {
+    "line": 136,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 214,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 215,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 239,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 284,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 287,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 354,
+    "goal": "along goal that never checks off, as a note: Use item 851"
+   },
+   {
+    "line": 354,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 355,
+    "goal": "along waypoint dropped: goto 61.8,65.06 map 1420 r 20 optional -- Enter Undercity"
+   },
+   {
+    "line": 355,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 356,
+    "goal": "along waypoint dropped: goto 66.09,20.06 map 1458 r 20 optional"
+   },
+   {
+    "line": 356,
+    "goal": "along waypoint dropped: goto 64.37,23.94 map 1458 r 20 optional"
+   },
+   {
+    "line": 356,
+    "goal": "along waypoint dropped: goto 65.93,26.71 map 1458 r 10 optional"
+   },
+   {
+    "line": 356,
+    "goal": "along waypoint dropped: goto 65.89,34.03 map 1458 r 10 optional"
+   },
+   {
+    "line": 356,
+    "goal": "along waypoint dropped: goto 64.22,39.77 map 1458 r 10 optional"
+   },
+   {
+    "line": 356,
+    "goal": "along waypoint dropped: goto 65.53,43.62 map 1458 r 15 optional -- Take the lift down to the Undercity"
+   },
+   {
+    "line": 356,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 376,
+    "goal": "along goal that never checks off, as a note: Use item 11287"
+   },
+   {
+    "line": 376,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 377,
+    "goal": "along goal that never checks off, as a note: Use item 11287"
+   },
+   {
+    "line": 377,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 378,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 379,
+    "goal": "along step with no goal left dropped"
+   },
+   {
+    "line": 380,
+    "goal": "along step with no goal left dropped"
+   }
+  ]
+ }
+}

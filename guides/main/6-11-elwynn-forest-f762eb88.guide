@@ -1,0 +1,3689 @@
+guide rxp-free/6-11-elwynn-forest-f762eb88
+title "6-11 Elwynn Forest"
+levels 6-11
+zone map 1429
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+next rxp-free/11-13-loch-modan-d2d54b9c
+step
+  when onquest 91772
+  along until CampQuest
+  note "Click the green Kobold Tracks on the ground as you travel toward Goldshire"
+  use 247970 -- Use the [Kobold Tracking Kit] to track them on your minimap
+  note "Followed Kobold Tracks 6/6"
+step
+  when has 247841
+  along until CampQuest
+  note "Use the [Wild Harvest] to raise your [Herbalism] skill by 2 or to train [Herbalism] if you don't already have two professions"
+  use 247841
+step
+  when has 247846
+  along until CampQuest
+  note "Use the [Pelt Collecting for Beginners] to raise your [Skinning] skill by 2 or to train [Skinning] if you don't already have two professions"
+  use 247846
+step
+  when has 247840
+  along until CampQuest
+  note "Use the [Mining for Dummies] to raise your [Mining] skill by 2 or to train [Mining] if you don't already have two professions"
+  use 247840
+step
+  when onquest 96627
+  turnin 96627 -- Turn in The Adventurer
+step
+  label CampQuest
+  zone map 1429
+  note "Talk to Sam Sarsaparilla"
+  accept 95998 -- Accept The Great Outdoors
+step
+  zone map 1429
+  goto 44.900073,63.200024 map 1429 r 8
+  note "Type \"/sit\" in chat and wait for one minute around the campfire"
+  interact 460003 quest 95998.1 -- /sit emote in chat 1/1
+  interact 460003 quest 95998.2 -- Gain boosted rest buff 1/1
+step
+  zone map 1429
+  note "Talk to Sam Sarsaparilla"
+  turnin 95998 -- Turn in The Great Outdoors
+  accept 96626 -- Accept Camping 101: Cooking
+  accept 97924 -- Accept Camping 101: Skinning
+step
+  zone map 1429
+  note "Talk to Sam Sarsaparilla"
+  turnin 95998 -- Turn in The Great Outdoors
+  accept 96626 -- Accept Camping 101: Cooking
+  accept 97921 -- Accept Camping 101: Herbalism
+step
+  zone map 1429
+  note "Talk to Sam Sarsaparilla"
+  turnin 95998 -- Turn in The Great Outdoors
+  accept 96626 -- Accept Camping 101: Cooking
+  accept 97923 -- Accept Camping 101: Mining
+step
+  zone map 1429
+  note "Talk to Sam Sarsaparilla"
+  turnin 95998 -- Turn in The Great Outdoors
+  accept 96626 -- Accept Camping 101: Cooking
+step
+  when onquest 91772
+  zone map 1429
+  goto 46.47347,51.902092 map 1429 r 55 optional
+  note "Click the green Kobold Tracks on the ground"
+  use 247970 @42.336136,61.973021 map 1429 -- Use the [Kobold Tracking Kit] to track them on your minimap
+  note "Followed Kobold Tracks 6/6"
+step
+  only Warrior
+  zone map 1429
+  goto 41.706028,65.543858 map 1429 r 8
+  note "Talk to Smith Argus"
+  note "This will allow you to make [Rough Sharpening Stones] which increase your melee damage by 2" only Warrior
+  note "This will allow you to make [Rough Sharpening Stones] which increase your melee damage by 2" only Rogue
+  note "This will allow you to make [Rough Weightstones] which increase your melee damage by 2" only Paladin
+  note "If you don't want to do this, skip this step"
+  learn 2018 "Blacksmithing"
+step
+  only Rogue
+  zone map 1429
+  goto 41.706028,65.543858 map 1429 r 8
+  note "Talk to Smith Argus"
+  note "This will allow you to make [Rough Sharpening Stones] which increase your melee damage by 2" only Warrior
+  note "This will allow you to make [Rough Sharpening Stones] which increase your melee damage by 2" only Rogue
+  note "This will allow you to make [Rough Weightstones] which increase your melee damage by 2" only Paladin
+  note "If you don't want to do this, skip this step"
+  learn 2018 "Blacksmithing"
+step
+  only Paladin
+  zone map 1429
+  goto 41.706028,65.543858 map 1429 r 8
+  note "Talk to Smith Argus"
+  note "This will allow you to make [Rough Sharpening Stones] which increase your melee damage by 2" only Warrior
+  note "This will allow you to make [Rough Sharpening Stones] which increase your melee damage by 2" only Rogue
+  note "This will allow you to make [Rough Weightstones] which increase your melee damage by 2" only Paladin
+  note "If you don't want to do this, skip this step"
+  learn 2018 "Blacksmithing"
+step
+  only Warrior
+  zone map 1429
+  note "Talk to Corina Steele"
+  vendor 54 -- Buy a [Gladius] from her if you can afford it
+  collect 2488 x1 @41.529125,65.899862 map 1429 optional -- Collect Gladius (1)
+step
+  only Warrior
+  when has 2488
+  along until next_14
+  zone map 1429
+  note "Equip the [Gladius]"
+  use 2488 @41.529125,65.899862 map 1429 optional
+step
+  only Rogue
+  label next_14
+  zone map 1429
+  note "Talk to Corina Steele"
+  vendor 54 -- Buy a [Tomahawk] or [Stiletto] from her if you can afford it
+step
+  only Rogue
+  when has 2490
+  label RogueTomahawk
+  along until GSHS
+  zone map 1429
+  note "Equip the [Tomahawk]"
+  use 2490 @41.529125,65.899862 map 1429 optional
+step
+  only Rogue
+  when has 2494
+  along until GSHS
+  zone map 1429
+  note "Equip the [Stiletto]"
+  use 2494 @41.529125,65.899862 map 1429 optional
+step
+  only Paladin
+  zone map 1429
+  note "Talk to Corina Steele"
+  vendor 54 -- Buy a [Wooden Mallet] from her if you can afford it
+  collect 2493 x1 @41.529125,65.899862 map 1429 optional -- Collect Wooden Mallet (1)
+step
+  only Paladin
+  when has 2493
+  along until next_19
+  zone map 1429
+  note "Equip the [Wooden Mallet]"
+  use 2493 @41.529125,65.899862 map 1429 optional
+step
+  only Mage
+  label next_19
+  along until next_20
+  zone map 1429
+  note "Talk to Andrew Krighton"
+  vendor 2046 -- Vendor Trash
+step
+  only Priest
+  along until next_20
+  zone map 1429
+  note "Talk to Andrew Krighton"
+  vendor 2046 -- Vendor Trash
+step
+  only Warlock
+  along until next_20
+  zone map 1429
+  note "Talk to Andrew Krighton"
+  vendor 2046 -- Vendor Trash
+step
+  when onquest 91772
+  when onquest 54
+  turnin 54 -- Turn in Report to Goldshire
+step
+  when onquest 91772
+  turnin 91772 -- Turn in Shhh! We're Hunting Kobolds
+step
+  when onquest 91772
+  label next_20
+  zone map 1429
+  note "Talk to Marshal Dughan"
+  accept 62 -- Accept The Fargodeep Mine
+  accept 91775 -- Accept Book Return
+step
+  when turnedin 91772
+  zone map 1429
+  note "Talk to Marshal Dughan"
+  accept 62 -- Accept The Fargodeep Mine
+  accept 91775 -- Accept Book Return
+step
+  when turnedin 91772
+  when onquest 54
+  turnin 54 -- Turn in Report to Goldshire
+step
+  when turnedin 91772
+  zone map 1429
+  note "Talk to Marshal Dughan"
+  accept 62 -- Accept The Fargodeep Mine
+  accept 91775 -- Accept Book Return
+step
+  when onquest 54
+  turnin 54 -- Turn in Report to Goldshire
+step
+  label Goldshire
+  zone map 1429
+  note "Talk to Marshal Dughan"
+  accept 62 -- Accept The Fargodeep Mine
+step
+  zone map 1429
+  note "Talk to William Pestle"
+  accept 60 -- Accept Kobold Candles
+step
+  when onquest 2158
+  turnin 2158 only Rogue -- Turn in Rest and Relaxation
+  turnin 2158 only Warrior -- Turn in Rest and Relaxation
+  turnin 2158 only !Rogue,!Warrior -- Turn in Rest and Relaxation
+step
+  label GSHS
+  zone map 1429
+  note "Talk to Innkeeper Farley"
+  sethome "Goldshire" @43.77095,65.803084 map 1429 -- Set your Hearthstone to Goldshire
+step
+  zone map 1429
+  goto 44.399905,66.000096 map 1429 r 8 optional
+  note "Talk to Tomas"
+  note "Skip this step if you don't have 1 silver, or if you wish to do it later"
+  learn 2550 "Cooking"
+  turnin 96626 -- Turn in Camping 101: Cooking
+step
+  when complete 96626
+  zone map 1429
+  note "Talk to Tomas"
+  turnin 96626 -- Turn in Camping 101: Cooking
+step
+  level 6 -- Grind to 6
+step
+  only Rogue
+  zone map 1429
+  note "Talk to Brog Hamfist"
+  vendor 151 -- Buy the [Balanced Throwing Daggers] from him if you can afford it
+  collect 2946 x1 @43.959953,65.920168 map 1429 optional -- Collect Balanced Throwing Dagger (1)
+step
+  label BalancedDaggers1
+  only Rogue
+  when has 2946
+  zone map 1429
+  note "Equip the [Balanced Throwing Daggers]"
+  use 2946 @43.959953,65.920168 map 1429 optional
+step
+  label DeleteOldDaggers
+  only Warlock
+  along until next_32
+  zone map 1429
+  goto 44.399905,65.699826 map 1429 r 5 -- Travel downstairs
+step
+  only Warlock
+  label next_32
+  zone map 1429
+  note "Talk to Maximillian Crowe downstairs"
+  train 906 -- Train your class spells
+step
+  only Warlock
+  when !has 16321
+  zone map 1429
+  note "Talk to Cylina Darkheart"
+  vendor 6374 -- Buy the [Grimoire of Blood Pact (Rank 1)] from her if you can afford it. If not you can buy it later
+step
+  only Mage
+  along until next_35
+  zone map 1429
+  goto 43.876976,66.546199 map 1429 r 9 -- Travel upstairs in the Inn
+step
+  only Rogue
+  along until next_35
+  zone map 1429
+  goto 43.876976,66.546199 map 1429 r 9 -- Travel upstairs in the Inn
+step
+  only Priest
+  along until next_35
+  zone map 1429
+  goto 43.876976,66.546199 map 1429 r 9 -- Travel upstairs in the Inn
+step
+  only Mage
+  label next_35
+  zone map 1429
+  note "Talk to Zaldimar Wefhellt"
+  train 328 -- Train your class spells
+step
+  only Priest
+  when onquest 5623
+  turnin 5623 -- Turn in In Favor of the Light
+step
+  only Priest
+  zone map 1429
+  note "Talk to Priestess Josetta"
+  accept 5624 -- Accept Garments of the Light
+  train 377 -- Train your class spells
+step
+  only Rogue
+  zone map 1429
+  note "Talk to Keryn Sylvius"
+  goto 43.872078,65.937018 map 1429 r 8
+  train 917 optional -- Train your class spells
+step
+  only Warrior
+  when !has 414 x7
+  zone map 1429
+  goto 43.77095,65.803084 map 1429 r 8
+  note "Talk to Innkeeper Farley"
+  vendor 295 only Warrior -- Buy [Dalaran Sharp] from him until you're down to 1 Silver
+  vendor 295 only Rogue -- Buy up to 20 [Dalaran Sharp] from him if you can afford it
+  collect 414 x20 @43.77095,65.803084 map 1429 -- Dalaran Sharp (20)
+step
+  only Rogue
+  when !has 414 x7
+  zone map 1429
+  goto 43.77095,65.803084 map 1429 r 8
+  note "Talk to Innkeeper Farley"
+  vendor 295 only Warrior -- Buy [Dalaran Sharp] from him until you're down to 1 Silver
+  vendor 295 only Rogue -- Buy up to 20 [Dalaran Sharp] from him if you can afford it
+  collect 414 x20 @43.77095,65.803084 map 1429 -- Dalaran Sharp (20)
+step
+  only Warrior
+  zone map 1429
+  note "Talk to Lyria Du Lac"
+  train 913 -- Train your class spells
+step
+  only Paladin
+  zone map 1429
+  note "Talk to Brother Wilhelm"
+  train 927 -- Train your class spells
+step
+  zone map 1429
+  note "Talk to Remy \"Two Times\""
+  accept 47 -- Accept Gold Dust Exchange
+step
+  only Hunter
+  zone map 1429
+  goto 42.065308,66.565641 map 1429 r 8
+  note "Talk to Nordun Steadysight"
+  note "Buy and equip a [Hornwood Recurve Bow]"
+  note "Buy [Rough Arrows] until your Quiver is full"
+  collect 2506 x1 @42.065308,66.565641 map 1429 optional -- Collect Hornwood Recurve Bow
+step
+  only Hunter
+  zone map 1438
+  note "Talk to Jeena Featherbow"
+  vendor 3610 -- Buy [Rough Arrows] until your Quiver is full
+step
+  only Hunter
+  when has 2506
+  along until next_45
+  zone map 1438
+  note "Equip the [Hornwood Recurve Bow]"
+  use 2506 @55.890017,59.205009 map 1438
+step
+  only Hunter
+  label next_45
+  zone map 1429
+  note "Talk to Josephine Carson"
+  train 251507 -- Train your class spells
+step
+  only Priest
+  zone map 1429
+  note "Cast [Lesser Heal (Rank 2)] and [Power Word: Fortitude] on Guard Roberts"
+  kill 12423 x1 quest 5624.1 -- Heal and fortify Guard Roberts
+step
+  label BoarMeatQuest
+  along
+  loop
+  zone map 1429
+  goto 32.516018,85.442907 map 1429 r 1
+  goto 31.080916,81.487983 map 1429 r 1
+  goto 36.181995,87.798839 map 1429 r 1
+  goto 41.733111,86.986166 map 1429 r 1
+  goto 37.740987,78.26494 map 1429 r 1
+  goto 41.576088,69.499214 map 1429 r 1
+  goto 31.150064,85.359955 map 1429 r 40
+  goto 33.080147,86.640099 map 1429 r 40
+  goto 33.510015,85.219973 map 1429 r 40
+  goto 32.169991,83.880206 map 1429 r 40
+  note "Kill Stonetusk Boars. Loot them for their [Chunks of Boar Meat]"
+  collect 769 x4 optional -- Chunk of Boar Meat (4)
+step
+  zone map 1429
+  goto 32.516018,85.442907 map 1429 r 1 optional
+  goto 31.080916,81.487983 map 1429 r 1 optional
+  goto 36.181995,87.798839 map 1429 r 1 optional
+  goto 41.733111,86.986166 map 1429 r 1 optional
+  goto 37.740987,78.26494 map 1429 r 1 optional
+  goto 41.576088,69.499214 map 1429 r 1 optional
+  goto 31.150064,85.359955 map 1429 r 40 optional
+  goto 33.080147,86.640099 map 1429 r 40 optional
+  goto 33.510015,85.219973 map 1429 r 40 optional
+  goto 32.169991,83.880206 map 1429 r 40
+  note "Kill Stonetusk Boars. Loot them for their [Chunks of Boar Meat]"
+  collect 769 x4 optional -- Chunk of Boar Meat (4)
+step
+  label BoarMeatCooking1
+  along until Pie
+  zone map 1429
+  goto 32.516018,85.442907 map 1429 r 1 optional
+  goto 31.080916,81.487983 map 1429 r 1 optional
+  goto 36.181995,87.798839 map 1429 r 1 optional
+  goto 41.733111,86.986166 map 1429 r 1 optional
+  goto 37.740987,78.26494 map 1429 r 1 optional
+  goto 41.576088,69.499214 map 1429 r 1 optional
+  note "Kill Stonetusk Boars. Loot them for their [Chunks of Boar Meat]"
+  note "This will be used to level your [Cooking] later"
+  note "You need 10 [Cooking] for a quest in Auberdine later"
+  collect 769 x10 @41.576088,69.499214 map 1429 optional -- Chunk of Boar Meat (1-10)
+step
+  zone map 1429
+  goto 32.516018,85.442907 map 1429 r 1 optional
+  goto 31.080916,81.487983 map 1429 r 1 optional
+  goto 36.181995,87.798839 map 1429 r 1 optional
+  goto 41.733111,86.986166 map 1429 r 1 optional
+  goto 37.740987,78.26494 map 1429 r 1 optional
+  goto 41.576088,69.499214 map 1429 r 1
+  note "Kill Stonetusk Boars. Loot them for their [Chunks of Boar Meat]"
+  note "This will be used to level your [Cooking] later"
+  note "You need 10 [Cooking] for a quest in Auberdine later"
+  collect 769 x10 @41.576088,69.499214 map 1429 optional -- Chunk of Boar Meat (1-10)
+step
+  along until Pie
+  zone map 1429
+  goto 32.516018,85.442907 map 1429 r 1 optional
+  goto 31.080916,81.487983 map 1429 r 1 optional
+  goto 36.181995,87.798839 map 1429 r 1 optional
+  goto 41.733111,86.986166 map 1429 r 1 optional
+  goto 37.740987,78.26494 map 1429 r 1 optional
+  goto 41.576088,69.499214 map 1429 r 1 optional
+  note "Kill Stonetusk Boars. Loot them for their [Chunks of Boar Meat]"
+  note "This will be used to level your [Cooking] later"
+  note "You need 50 [Cooking] for a quest in Darkshire later."
+  note "Don't go out of your way to farm this now. Simply kill and loot all the boars you're passing by"
+  collect 769 x50 @41.576088,69.499214 map 1429 optional -- Chunk of Boar Meat (10-50)
+step
+  zone map 1429
+  note "Talk to \"Auntie\" Bernice Stonefield and Ma Stonefield"
+  accept 85 -- Accept Lost Necklace
+  accept 88 -- Accept Princess Must Die!
+  goto 34.659883,84.482043 map 1429 r 8 optional -- c:Elwynn Forest,34.660,84.482
+step
+  only Warrior
+  label RoughStone1
+  along until NecklaceStart
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @34.659883,84.482043 map 1429 -- Rough Stone (1+)
+step
+  only Paladin
+  along until NecklaceStart
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @34.659883,84.482043 map 1429 -- Rough Stone (1+)
+step
+  only Rogue
+  along until NecklaceStart
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @34.659883,84.482043 map 1429 -- Rough Stone (1+)
+step
+  only Warrior
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @34.659883,84.482043 map 1429 -- Rough Stone (1+)
+step
+  only Paladin
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @34.659883,84.482043 map 1429 -- Rough Stone (1+)
+step
+  only Rogue
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @34.659883,84.482043 map 1429 -- Rough Stone (1+)
+step
+  only Warrior
+  when has 2835
+  label RoughStoneCraft1
+  along until NecklaceStart
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @34.659883,84.482043 map 1429 only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @34.659883,84.482043 map 1429 only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @34.659883,84.482043 map 1429 only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @34.659883,84.482043 map 1429 -- Rough Stone (5)
+step
+  only Paladin
+  when has 2835
+  along until NecklaceStart
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @34.659883,84.482043 map 1429 only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @34.659883,84.482043 map 1429 only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @34.659883,84.482043 map 1429 only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @34.659883,84.482043 map 1429 -- Rough Stone (5)
+step
+  only Rogue
+  when has 2835
+  along until NecklaceStart
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @34.659883,84.482043 map 1429 only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @34.659883,84.482043 map 1429 only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @34.659883,84.482043 map 1429 only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @34.659883,84.482043 map 1429 -- Rough Stone (5)
+step
+  only Warrior
+  when has 2835
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @34.659883,84.482043 map 1429 only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @34.659883,84.482043 map 1429 only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @34.659883,84.482043 map 1429 only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @34.659883,84.482043 map 1429 -- Rough Stone (5)
+step
+  only Paladin
+  when has 2835
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @34.659883,84.482043 map 1429 only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @34.659883,84.482043 map 1429 only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @34.659883,84.482043 map 1429 only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @34.659883,84.482043 map 1429 -- Rough Stone (5)
+step
+  only Rogue
+  when has 2835
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @34.659883,84.482043 map 1429 only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @34.659883,84.482043 map 1429 only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @34.659883,84.482043 map 1429 only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @34.659883,84.482043 map 1429 -- Rough Stone (5)
+step
+  only Warrior
+  along until NecklaceStart
+  zone map 1429
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Warrior
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Rogue
+  note "Use the [Rough Weightstone] on your current weapon" only Paladin
+  use 2862 @34.659883,84.482043 map 1429 only Rogue -- Rough Sharpening Stone (1)
+  use 2862 @34.659883,84.482043 map 1429 only Warrior -- Rough Sharpening Stone (1)
+  use 3239 @34.659883,84.482043 map 1429 only Paladin -- Rough Weightstone (1)
+step
+  only Paladin
+  along until NecklaceStart
+  zone map 1429
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Warrior
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Rogue
+  note "Use the [Rough Weightstone] on your current weapon" only Paladin
+  use 2862 @34.659883,84.482043 map 1429 only Rogue -- Rough Sharpening Stone (1)
+  use 2862 @34.659883,84.482043 map 1429 only Warrior -- Rough Sharpening Stone (1)
+  use 3239 @34.659883,84.482043 map 1429 only Paladin -- Rough Weightstone (1)
+step
+  only Rogue
+  along until NecklaceStart
+  zone map 1429
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Warrior
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Rogue
+  note "Use the [Rough Weightstone] on your current weapon" only Paladin
+  use 2862 @34.659883,84.482043 map 1429 only Rogue -- Rough Sharpening Stone (1)
+  use 2862 @34.659883,84.482043 map 1429 only Warrior -- Rough Sharpening Stone (1)
+  use 3239 @34.659883,84.482043 map 1429 only Paladin -- Rough Weightstone (1)
+step
+  when !onquest 91775
+  along until NecklaceStart
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Loot them for their Kobold Candles and Gold Dust"
+  collect 772 x8 quest 60.1 @37.810134,85.400135 map 1429 -- Kobold Candle (8)
+  collect 773 x10 quest 47.1 @37.810134,85.400135 map 1429 -- Gold Dust (10)
+step
+  when onquest 91775
+  along until NecklaceStart
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Loot them for their Kobold Candles, Gold Dust and Lost Books"
+  collect 772 x8 quest 60.1 @37.810134,85.400135 map 1429 -- Kobold Candle (8)
+  collect 773 x10 quest 47.1 @37.810134,85.400135 map 1429 -- Gold Dust (10)
+  collect 248001 x6 quest 91775.2 @37.810134,85.400135 map 1429 -- Lost Book (6)
+step
+  label NecklaceStart
+  zone map 1429
+  note "Talk to Billy Maclure"
+  turnin 85 -- Turn in Lost Necklace
+  accept 86 -- Accept Pie for Billy
+step
+  zone map 1429
+  note "Talk to Maybell Maclure"
+  accept 106 -- Accept Young Lovers
+step
+  along until Lovers
+  zone map 1429
+  goto 42.35688,89.373205 map 1429 r 8 optional
+  note "Talk to Joshua Maclure"
+  vendor 258 optional only Priest -- Buy as much [Ice Cold Milk] as you can afford
+  vendor 258 optional only Warlock -- Buy as much [Ice Cold Milk] as you can afford
+  vendor 258 optional only Mage -- Buy as much [Ice Cold Milk] as you can afford
+  vendor 258 optional only !Priest,!Warlock,!Mage -- Vendor trash
+step
+  only Warrior
+  label RoughStone2
+  along until Lovers
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @42.35688,89.373205 map 1429 -- Rough Stone (1+)
+step
+  only Paladin
+  along until Lovers
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @42.35688,89.373205 map 1429 -- Rough Stone (1+)
+step
+  only Rogue
+  along until Lovers
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @42.35688,89.373205 map 1429 -- Rough Stone (1+)
+step
+  only Warrior
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @42.35688,89.373205 map 1429 -- Rough Stone (1+)
+step
+  only Paladin
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @42.35688,89.373205 map 1429 -- Rough Stone (1+)
+step
+  only Rogue
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @42.35688,89.373205 map 1429 -- Rough Stone (1+)
+step
+  only Warrior
+  when has 2835
+  label RoughStoneCraft2
+  along until Lovers
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @42.35688,89.373205 map 1429 only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @42.35688,89.373205 map 1429 only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @42.35688,89.373205 map 1429 only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @42.35688,89.373205 map 1429 -- Rough Stone (5)
+step
+  only Paladin
+  when has 2835
+  along until Lovers
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @42.35688,89.373205 map 1429 only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @42.35688,89.373205 map 1429 only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @42.35688,89.373205 map 1429 only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @42.35688,89.373205 map 1429 -- Rough Stone (5)
+step
+  only Rogue
+  when has 2835
+  along until Lovers
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @42.35688,89.373205 map 1429 only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @42.35688,89.373205 map 1429 only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @42.35688,89.373205 map 1429 only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @42.35688,89.373205 map 1429 -- Rough Stone (5)
+step
+  only Warrior
+  when has 2835
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @42.35688,89.373205 map 1429 only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @42.35688,89.373205 map 1429 only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @42.35688,89.373205 map 1429 only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @42.35688,89.373205 map 1429 -- Rough Stone (5)
+step
+  only Paladin
+  when has 2835
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @42.35688,89.373205 map 1429 only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @42.35688,89.373205 map 1429 only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @42.35688,89.373205 map 1429 only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @42.35688,89.373205 map 1429 -- Rough Stone (5)
+step
+  only Rogue
+  when has 2835
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @42.35688,89.373205 map 1429 only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @42.35688,89.373205 map 1429 only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @42.35688,89.373205 map 1429 only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @42.35688,89.373205 map 1429 -- Rough Stone (5)
+step
+  only Warrior
+  along until Lovers
+  zone map 1429
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Warrior
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Rogue
+  note "Use the [Rough Weightstone] on your current weapon" only Paladin
+  use 2862 @42.35688,89.373205 map 1429 only Rogue -- Rough Sharpening Stone (1)
+  use 2862 @42.35688,89.373205 map 1429 only Warrior -- Rough Sharpening Stone (1)
+  use 3239 @42.35688,89.373205 map 1429 only Paladin -- Rough Weightstone (1)
+step
+  only Paladin
+  along until Lovers
+  zone map 1429
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Warrior
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Rogue
+  note "Use the [Rough Weightstone] on your current weapon" only Paladin
+  use 2862 @42.35688,89.373205 map 1429 only Rogue -- Rough Sharpening Stone (1)
+  use 2862 @42.35688,89.373205 map 1429 only Warrior -- Rough Sharpening Stone (1)
+  use 3239 @42.35688,89.373205 map 1429 only Paladin -- Rough Weightstone (1)
+step
+  only Rogue
+  along until Lovers
+  zone map 1429
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Warrior
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Rogue
+  note "Use the [Rough Weightstone] on your current weapon" only Paladin
+  use 2862 @42.35688,89.373205 map 1429 only Rogue -- Rough Sharpening Stone (1)
+  use 2862 @42.35688,89.373205 map 1429 only Warrior -- Rough Sharpening Stone (1)
+  use 3239 @42.35688,89.373205 map 1429 only Paladin -- Rough Weightstone (1)
+step
+  when !onquest 91775
+  along until Lovers
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Loot them for their Kobold Candles and Gold Dust"
+  collect 772 x8 quest 60.1 @37.810134,85.400135 map 1429 -- Kobold Candle (8)
+  collect 773 x10 quest 47.1 @37.810134,85.400135 map 1429 -- Gold Dust (10)
+step
+  when onquest 91775
+  along until Lovers
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Loot them for their Kobold Candles, Gold Dust and Lost Books"
+  collect 772 x8 quest 60.1 @37.810134,85.400135 map 1429 -- Kobold Candle (8)
+  collect 773 x10 quest 47.1 @37.810134,85.400135 map 1429 -- Gold Dust (10)
+  collect 248001 x6 quest 91775.2 @37.810134,85.400135 map 1429 -- Lost Book (6)
+step
+  label Lovers
+  zone map 1429
+  note "Talk to Tommy Joe Stonefield"
+  turnin 106 -- Turn in Young Lovers
+  accept 111 -- Accept Speak with Gramma
+step
+  zone map 1429
+  goto 32.516018,85.442907 map 1429 r 1 optional
+  goto 31.080916,81.487983 map 1429 r 1 optional
+  goto 36.181995,87.798839 map 1429 r 1 optional
+  goto 41.733111,86.986166 map 1429 r 1 optional
+  goto 37.740987,78.26494 map 1429 r 1 optional
+  goto 41.576088,69.499214 map 1429 r 1 optional
+  goto 31.150064,85.359955 map 1429 r 40 optional
+  goto 33.080147,86.640099 map 1429 r 40 optional
+  goto 33.510015,85.219973 map 1429 r 40 optional
+  goto 32.169991,83.880206 map 1429 r 40
+  note "Kill Stonetusk Boars. Loot them for their [Chunks of Boar Meat]"
+  collect 769 x4 optional -- Chunk of Boar Meat (4)
+step
+  label Pie
+  zone map 1429
+  note "Talk to \"Auntie\" Bernice Stonefield"
+  turnin 86 -- Turn in Pie for Billy
+  accept 84 -- Accept Back to Billy
+step
+  zone map 1429
+  note "Talk to Gramma Stonefield inside"
+  turnin 111 -- Turn in Speak with Gramma
+  accept 107 -- Accept Note to William
+step
+  only Warrior
+  label RoughStone3
+  along until Exchange
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @34.945,83.855 map 1429 optional -- Rough Stone (1+)
+step
+  only Paladin
+  along until Exchange
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @34.945,83.855 map 1429 optional -- Rough Stone (1+)
+step
+  only Rogue
+  along until Exchange
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @34.945,83.855 map 1429 optional -- Rough Stone (1+)
+step
+  only Warrior
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @34.945,83.855 map 1429 optional -- Rough Stone (1+)
+step
+  only Paladin
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @34.945,83.855 map 1429 optional -- Rough Stone (1+)
+step
+  only Rogue
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @34.945,83.855 map 1429 optional -- Rough Stone (1+)
+step
+  only Warrior
+  when has 2835
+  label RoughStoneCraft3
+  along until Exchange
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @34.945,83.855 map 1429 optional only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @34.945,83.855 map 1429 optional only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @34.945,83.855 map 1429 optional only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @34.945,83.855 map 1429 optional -- Rough Stone (5)
+step
+  only Paladin
+  when has 2835
+  along until Exchange
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @34.945,83.855 map 1429 optional only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @34.945,83.855 map 1429 optional only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @34.945,83.855 map 1429 optional only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @34.945,83.855 map 1429 optional -- Rough Stone (5)
+step
+  only Rogue
+  when has 2835
+  along until Exchange
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @34.945,83.855 map 1429 optional only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @34.945,83.855 map 1429 optional only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @34.945,83.855 map 1429 optional only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @34.945,83.855 map 1429 optional -- Rough Stone (5)
+step
+  only Warrior
+  when has 2835
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @34.945,83.855 map 1429 optional only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @34.945,83.855 map 1429 optional only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @34.945,83.855 map 1429 optional only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @34.945,83.855 map 1429 optional -- Rough Stone (5)
+step
+  only Paladin
+  when has 2835
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @34.945,83.855 map 1429 optional only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @34.945,83.855 map 1429 optional only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @34.945,83.855 map 1429 optional only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @34.945,83.855 map 1429 optional -- Rough Stone (5)
+step
+  only Rogue
+  when has 2835
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @34.945,83.855 map 1429 optional only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @34.945,83.855 map 1429 optional only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @34.945,83.855 map 1429 optional only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @34.945,83.855 map 1429 optional -- Rough Stone (5)
+step
+  only Warrior
+  along until Exchange
+  zone map 1429
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Warrior
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Rogue
+  note "Use the [Rough Weightstone] on your current weapon" only Paladin
+  use 2862 @34.945,83.855 map 1429 optional only Rogue -- Rough Sharpening Stone (1)
+  use 2862 @34.945,83.855 map 1429 optional only Warrior -- Rough Sharpening Stone (1)
+  use 3239 @34.945,83.855 map 1429 optional only Paladin -- Rough Weightstone (1)
+step
+  only Paladin
+  along until Exchange
+  zone map 1429
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Warrior
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Rogue
+  note "Use the [Rough Weightstone] on your current weapon" only Paladin
+  use 2862 @34.945,83.855 map 1429 optional only Rogue -- Rough Sharpening Stone (1)
+  use 2862 @34.945,83.855 map 1429 optional only Warrior -- Rough Sharpening Stone (1)
+  use 3239 @34.945,83.855 map 1429 optional only Paladin -- Rough Weightstone (1)
+step
+  only Rogue
+  along until Exchange
+  zone map 1429
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Warrior
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Rogue
+  note "Use the [Rough Weightstone] on your current weapon" only Paladin
+  use 2862 @34.945,83.855 map 1429 optional only Rogue -- Rough Sharpening Stone (1)
+  use 2862 @34.945,83.855 map 1429 optional only Warrior -- Rough Sharpening Stone (1)
+  use 3239 @34.945,83.855 map 1429 optional only Paladin -- Rough Weightstone (1)
+step
+  when !onquest 91775
+  label KoboldEnd1
+  along
+  loop
+  zone map 1429
+  goto 37.810134,85.400135 map 1429 r 1
+  goto 39.140074,82.870089 map 1429 r 35
+  goto 39.159954,84.79009 map 1429 r 35
+  goto 37.810134,85.400135 map 1429 r 35
+  goto 36.759955,83.190233 map 1429 r 35
+  goto 38.019882,81.700116 map 1429 r 35
+  note "Kill Kobold Tunnelers and Kobold Miners. Loot them for their Kobold Candles and Gold Dust"
+  collect 772 x8 quest 60.1 -- Kobold Candle (8)
+  collect 773 x10 quest 47.1 -- Gold Dust (10)
+step
+  when onquest 91775
+  label KoboldEnd2
+  along
+  loop
+  zone map 1429
+  goto 37.810134,85.400135 map 1429 r 1
+  goto 39.140074,82.870089 map 1429 r 35
+  goto 39.159954,84.79009 map 1429 r 35
+  goto 37.810134,85.400135 map 1429 r 35
+  goto 36.759955,83.190233 map 1429 r 35
+  goto 38.019882,81.700116 map 1429 r 35
+  note "Kill Kobold Tunnelers and Kobold Miners. Loot them for their Kobold Candles, Gold Dust and Lost Books"
+  collect 772 x8 quest 60.1 -- Kobold Candle (8)
+  collect 773 x10 quest 47.1 -- Gold Dust (10)
+  collect 248001 x6 quest 91775.2 -- Lost Book (6)
+step
+  zone map 1429
+  note "Talk to Billy Maclure"
+  turnin 84 -- Turn in Back to Billy
+  accept 87 -- Accept Goldtooth
+step
+  zone map 1429
+  goto 39.010134,82.19999 map 1429 r 15 optional
+  goto 39.920002,80.110197 map 1429 r 8
+  note "Enter one of the larger open spaces in Fargodeep Mine"
+  complete 62 -- Scout Through the Fargodeep Mine
+step
+  zone map 1429
+  note "Kill Goldtooth. Loot him for Bernice's Necklace"
+  note "Be careful as he usually pulls with the Kobold Miner next to him"
+  collect 981 x1 quest 87.1 -- Bernice's Necklace (1)
+step
+  when onquest 91775
+  zone map 1429
+  note "Kill Nimsy inside Fargodeep Mine. Loot him for the Picture Book: Fun with Elementals"
+  note "Try to find a group for this step. The Kobolds respawn very fast in the cave"
+  note "He will also summon a Rumbler add. Be careful if you're attempting to solo this. Skip this step if you are unable to kill him"
+  collect 248002 x1 quest 91775.1 -- Picture Book: Fun with Elementals
+step
+  only Warrior
+  along until Exchange
+  note "Try to save a single [Minor Healing Potion] from now on as you will need it for Rolf's Corpse later"
+step
+  when !onquest 91775
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Loot them for their Kobold Candles and Gold Dust"
+  collect 772 x8 quest 60.1 -- Kobold Candle (8)
+  collect 773 x10 quest 47.1 -- Gold Dust (10)
+step
+  note "Review this source step manually."
+step
+  when onquest 91775
+  zone map 1429
+  note "Kill Kobold Tunnelers and Kobold Miners. Loot them for their Kobold Candles, Gold Dust and Lost Books"
+  collect 772 x8 quest 60.1 -- Kobold Candle (8)
+  collect 773 x10 quest 47.1 -- Gold Dust (10)
+  collect 248001 x6 quest 91775.2 -- Lost Book (6)
+step
+  note "Review this source step manually."
+step
+  when complete 91775
+  zone map 1429
+  goto 37.810134,85.400135 map 1429 r 1 optional
+  goto 39.140074,82.870089 map 1429 r 35 optional
+  goto 39.159954,84.79009 map 1429 r 35 optional
+  goto 37.810134,85.400135 map 1429 r 35 optional
+  goto 36.759955,83.190233 map 1429 r 35 optional
+  goto 38.019882,81.700116 map 1429 r 35
+  level 7+1140 -- Grind to 1140+/4500xp
+step
+  zone map 1429
+  goto 37.810134,85.400135 map 1429 r 1 optional
+  goto 39.140074,82.870089 map 1429 r 35 optional
+  goto 39.159954,84.79009 map 1429 r 35 optional
+  goto 37.810134,85.400135 map 1429 r 35 optional
+  goto 36.759955,83.190233 map 1429 r 35 optional
+  goto 38.019882,81.700116 map 1429 r 35
+  level 7+1815 -- Grind to 1815+/4500xp
+step
+  label Goldtooth
+  zone map 1429
+  note "Talk to \"Auntie\" Bernice Stonefield"
+  turnin 87 -- Turn in Goldtooth
+step
+  label BoarMeatCooking2
+  along until Exchange
+  zone map 1429
+  goto 32.516018,85.442907 map 1429 r 1 optional
+  goto 31.080916,81.487983 map 1429 r 1 optional
+  goto 36.181995,87.798839 map 1429 r 1 optional
+  goto 41.733111,86.986166 map 1429 r 1 optional
+  goto 37.740987,78.26494 map 1429 r 1 optional
+  goto 41.576088,69.499214 map 1429 r 1 optional
+  note "Kill Stonetusk Boars. Loot them for their [Chunks of Boar Meat]"
+  collect 769 x10 @41.576088,69.499214 map 1429 optional -- Chunk of Boar Meat (1-10)
+step
+  zone map 1429
+  goto 32.516018,85.442907 map 1429 r 1 optional
+  goto 31.080916,81.487983 map 1429 r 1 optional
+  goto 36.181995,87.798839 map 1429 r 1 optional
+  goto 41.733111,86.986166 map 1429 r 1 optional
+  goto 37.740987,78.26494 map 1429 r 1 optional
+  goto 41.576088,69.499214 map 1429 r 1
+  note "Kill Stonetusk Boars. Loot them for their [Chunks of Boar Meat]"
+  collect 769 x10 @41.576088,69.499214 map 1429 optional -- Chunk of Boar Meat (1-10)
+step
+  along until Exchange
+  zone map 1429
+  goto 32.516018,85.442907 map 1429 r 1 optional
+  goto 31.080916,81.487983 map 1429 r 1 optional
+  goto 36.181995,87.798839 map 1429 r 1 optional
+  goto 41.733111,86.986166 map 1429 r 1 optional
+  goto 37.740987,78.26494 map 1429 r 1 optional
+  goto 41.576088,69.499214 map 1429 r 1 optional
+  note "Kill Stonetusk Boars. Loot them for their [Chunks of Boar Meat]"
+  note "Don't go out of your way to farm this now. Simply kill and loot all the boars you're passing by"
+  collect 769 x50 @41.576088,69.499214 map 1429 optional -- Chunk of Boar Meat (10-50)
+step
+  along until Exchange
+  note "Die and respawn at the Spirit Healer"
+step
+  label Exchange
+  zone map 1429
+  note "Talk to Remy \"Two Times\""
+  note "Do NOT vendor the [Bag of Marbles] reward. This is an incredibly valuable item all the way through to level 60"
+  turnin 47 -- Turn in Gold Dust Exchange
+  accept 40 -- Accept A Fishy Peril
+step
+  when complete 91775
+  zone map 1429
+  note "Talk to Marshal Dughan"
+  turnin 62 -- Turn in The Fargodeep Mine
+  accept 76 -- Accept The Jasperlode Mine
+  turnin 40 -- Turn in A Fishy Peril
+  accept 35 -- Accept Further Concerns
+  turnin 91775 -- Turn in Book Return
+  accept 91777 -- Accept Rare Books
+step
+  when turnedin 91775
+  zone map 1429
+  note "Talk to Marshal Dughan"
+  accept 91777 -- Accept Rare Books
+step
+  zone map 1429
+  note "Talk to Marshal Dughan"
+  turnin 62 -- Turn in The Fargodeep Mine
+  accept 76 -- Accept The Jasperlode Mine
+  turnin 40 -- Turn in A Fishy Peril
+  accept 35 -- Accept Further Concerns
+step
+  along until CandlesEnd
+  zone map 1429
+  note "Talk to Corina Steele"
+  vendor 54 -- Vendor Trash
+step
+  only Warrior
+  zone map 1429
+  note "Talk to Corina Steele"
+  vendor 54 -- Buy a [Gladius] from her if you can afford it
+  collect 2488 x1 @41.529125,65.899862 map 1429 optional -- Collect Gladius (1)
+step
+  only Warrior
+  when has 2488
+  along until CandlesEnd
+  zone map 1429
+  note "Equip the [Gladius]"
+  use 2488 @41.529125,65.899862 map 1429 optional
+step
+  only Rogue
+  zone map 1429
+  note "Talk to Corina Steele"
+  vendor 54 -- Buy a [Tomahawk] from her if you can afford it
+  collect 2490 x1 @41.529125,65.899862 map 1429 optional -- Collect Tomahawk (1)
+step
+  only Rogue
+  when has 2490
+  label RogueTomahawk2
+  zone map 1429
+  note "Equip the [Tomahawk]"
+  use 2490 @41.529125,65.899862 map 1429 optional
+step
+  only Rogue
+  zone map 1429
+  note "Talk to Corina Steele"
+  vendor 54 -- Buy a [Stiletto] from her if you can afford it
+  collect 2494 x1 @41.529125,65.899862 map 1429 optional -- Collect Stiletto (1)
+step
+  only Rogue
+  when has 2494
+  along until CandlesEnd
+  zone map 1429
+  note "Equip the [Stiletto]"
+  use 2494 @41.529125,65.899862 map 1429 optional
+step
+  only Paladin
+  zone map 1429
+  note "Talk to Corina Steele"
+  vendor 54 -- Buy a [Wooden Mallet] from her if you can afford it
+  collect 2493 x1 @41.529125,65.899862 map 1429 optional -- Collect Wooden Mallet (1)
+step
+  only Paladin
+  when has 2493
+  along until CandlesEnd
+  zone map 1429
+  note "Equip the [Wooden Mallet]"
+  use 2493 @41.529125,65.899862 map 1429 optional
+step
+  label CandlesEnd
+  zone map 1429
+  note "Talk to William Pestle"
+  turnin 60 -- Turn in Kobold Candles
+  accept 61 -- Accept Shipment to Stormwind
+  turnin 107 -- Turn in Note to William
+  accept 112 -- Accept Collecting Kelp
+step
+  level 8 -- Grind to 8
+step
+  only Hunter
+  zone map 1429
+  note "Talk to Josephine Carson"
+  train 251507 -- Train your class spells
+step
+  only Warrior
+  zone map 1429
+  note "Talk to Lyria Du Lac"
+  train 913 -- Train your class spells
+step
+  only Paladin
+  zone map 1429
+  note "Talk to Brother Wilhelm"
+  train 927 -- Train your class spells
+step
+  only Warlock
+  along until next_105
+  zone map 1429
+  goto 44.099977,66.000096 map 1429 r 10 -- Travel downstairs in the Inn
+step
+  only Warlock
+  label next_105
+  zone map 1429
+  note "Talk to Maximillian Crowe"
+  train 906 -- Train your class spells
+step
+  only Warlock
+  when !has 16302
+  zone map 1429
+  note "Talk to Cylina Darkheart"
+  vendor 6374 -- Buy the [Grimoire of Firebolt (Rank 2)] from her if you can afford it. If not you can buy it later
+step
+  along until next_108
+  zone map 1429
+  goto 43.876976,66.546199 map 1429 r 9 -- Travel upstairs in the Inn
+step
+  only Mage
+  label next_108
+  zone map 1429
+  note "Talk to Zaldimar Wefhellt"
+  train 328 -- Train your class spells
+step
+  only Priest
+  when onquest 5624
+  turnin 5624 -- Turn in Garments of the Light
+step
+  only Priest
+  zone map 1429
+  note "Talk to Priestess Josetta"
+  train 377 -- Train your class spells
+step
+  only Rogue
+  zone map 1429
+  note "Talk to Keryn Sylvius"
+  train 917 -- Train your class spells
+step
+  only Rogue
+  zone map 1429
+  note "Talk to Michelle Belle"
+  goto 43.392078,65.549907 map 1429 r 8 optional
+  learn 3273 "First Aid"
+step
+  only Warrior
+  zone map 1429
+  note "Talk to Michelle Belle"
+  goto 43.392078,65.549907 map 1429 r 8 optional
+  learn 3273 "First Aid"
+step
+  only Paladin
+  zone map 1429
+  note "Talk to Michelle Belle"
+  goto 43.392078,65.549907 map 1429 r 8 optional
+  learn 3273 "First Aid"
+step
+  zone map 1429
+  note "Talk to Brog Hamfist"
+  vendor 151 -- Buy a [Small Brown Pouch] if needed
+step
+  along until WolfMeatCooking1
+  zone map 1429
+  goto 43.77095,65.803084 map 1429 r 8
+  note "Talk to Innkeeper Farley"
+  vendor 295 only !Warrior,!Rogue,!Paladin,!Hunter -- Buy up to 20 [Ice Cold Milk] from him if you can afford it
+  vendor 295 only Warrior -- Buy up to 20 [Dalaran Sharp] from him if you can afford it
+  vendor 295 only Rogue -- Buy up to 20 [Dalaran Sharp] from him if you can afford it
+  vendor 295 only Paladin -- Buy up to 10 [Dalaran Sharp] and 10 [Ice Cold Milk] from him if you can afford it
+  vendor 295 only Hunter -- Buy up to 10 [Dalaran Sharp] and 10 [Ice Cold Milk] from him if you can afford it
+step
+  label WolfMeatCooking1
+  along until Jasperlode
+  zone map 1429
+  goto 52.242,62.919 map 1429 r 1 optional
+  goto 53.837,60.95 map 1429 r 1 optional
+  goto 56.793,60.34 map 1429 r 1 optional
+  goto 59.033,60.673 map 1429 r 1 optional
+  note "Kill Mangy Wolves. Loot them for their [Stringy Wolf Meat]"
+  collect 2672 x10 @59.033,60.673 map 1429 optional -- Stringy Wolf Meat (1-10)
+step
+  zone map 1429
+  goto 52.242,62.919 map 1429 r 1 optional
+  goto 53.837,60.95 map 1429 r 1 optional
+  goto 56.793,60.34 map 1429 r 1 optional
+  goto 59.033,60.673 map 1429 r 1
+  note "Kill Mangy Wolves. Loot them for their [Stringy Wolf Meat]"
+  collect 2672 x10 @59.033,60.673 map 1429 optional -- Stringy Wolf Meat (1-10)
+step
+  along until Jasperlode
+  zone map 1429
+  goto 52.242,62.919 map 1429 r 1 optional
+  goto 53.837,60.95 map 1429 r 1 optional
+  goto 56.793,60.34 map 1429 r 1 optional
+  goto 59.033,60.673 map 1429 r 1 optional
+  note "Kill Mangy Wolves. Loot them for their [Stringy Wolf Meat]"
+  note "Don't go out of your way to farm this now. Simply kill and loot all the wolves you're passing by"
+  collect 2672 x50 @59.033,60.673 map 1429 optional -- Stringy Wolf Meat (10-50)
+step
+  zone map 1429
+  note "Talk to Jason Mathers"
+  accept 99127 -- Accept A Net Disaster
+step
+  zone map 1429
+  note "Talk to Lee Brown"
+  accept 99143 -- Accept Bottles and Baubles
+step
+  loop
+  zone map 1429
+  goto 48.5,58.3 map 1429 r 40
+  goto 47.7,65.9 map 1429 r 40
+  goto 49.9,66.5 map 1429 r 40
+  note "Loot the Fishing Nets in the water for the Half-Eaten Fish"
+  note "These can be difficult to see"
+  collect 286205 x1 quest 99127.1 -- Half-Eaten Fish (7)
+step
+  zone map 1429
+  note "Talk to Jason Mathers"
+  turnin 99127 -- Turn in A Net Disaster
+  accept 99128 -- Accept Slimy Menace
+step
+  loop
+  zone map 1429
+  goto 50.833,65.453 map 1429 r 1
+  goto 57.435,63.662 map 1429 r 1
+  goto 54.236,66.888 map 1429 r 1
+  goto 50.833,65.453 map 1429 r 50
+  goto 52.02,65.177 map 1429 r 50
+  goto 54.144,62.468 map 1429 r 50
+  goto 56.332,63.538 map 1429 r 50
+  goto 57.162,62.157 map 1429 r 50
+  goto 57.435,63.662 map 1429 r 50
+  goto 58.237,64.888 map 1429 r 50
+  goto 56.897,67.017 map 1429 r 50
+  goto 55.523,66.707 map 1429 r 50
+  goto 55.203,66.171 map 1429 r 50
+  goto 54.236,66.888 map 1429 r 50
+  note "Kill Murlocs and Murloc Streamrunners. Loot them for Crystal Kelp Fronds"
+  note "Loot the Junk Piles on the ground for Shiny Junk. If you are unable to loot these due to too many Murlocs, skip this objective"
+  kill 285 x1 quest 99128.2 -- Murloc slain (7)
+  kill 735 x1 quest 99128.1 -- Murloc Streamrunners slain (4)
+  collect 1256 x4 quest 112.1 -- Collect Crystal Kelp Frond (x4)
+  collect 286209 x6 quest 99143.1 -- Shiny Junk (6)
+step
+  loop
+  zone map 1429
+  goto 50.833,65.453 map 1429 r 1
+  goto 57.435,63.662 map 1429 r 1
+  goto 54.236,66.888 map 1429 r 1
+  goto 50.833,65.453 map 1429 r 50
+  goto 52.02,65.177 map 1429 r 50
+  goto 54.144,62.468 map 1429 r 50
+  goto 56.332,63.538 map 1429 r 50
+  goto 57.162,62.157 map 1429 r 50
+  goto 57.435,63.662 map 1429 r 50
+  goto 58.237,64.888 map 1429 r 50
+  goto 56.897,67.017 map 1429 r 50
+  goto 55.523,66.707 map 1429 r 50
+  goto 55.203,66.171 map 1429 r 50
+  goto 54.236,66.888 map 1429 r 50
+  note "Loot the Junk Piles on the ground for Shiny Junk"
+  note "If you are unable to loot these due to too many Murlocs, skip this step"
+  collect 286209 x6 quest 99143.1 -- Shiny Junk (6)
+step
+  when complete 99143
+  zone map 1429
+  note "Talk to Lee Brown"
+  turnin 99143 -- Turn in Bottles and Baubles
+step
+  zone map 1429
+  note "Talk to Jason Mathers"
+  turnin 99128 -- Turn in Slimy Menace
+  accept 99129 -- Accept A Man About a Murloc
+step
+  only Warrior
+  label RoughStone4
+  along until JasperlodeExplore
+  zone map 1429
+  note "Kill Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @47.5,62.2 map 1429 -- Rough Stone (1+)
+step
+  only Paladin
+  along until JasperlodeExplore
+  zone map 1429
+  note "Kill Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @47.5,62.2 map 1429 -- Rough Stone (1+)
+step
+  only Rogue
+  along until JasperlodeExplore
+  zone map 1429
+  note "Kill Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @47.5,62.2 map 1429 -- Rough Stone (1+)
+step
+  only Warrior
+  zone map 1429
+  note "Kill Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @47.5,62.2 map 1429 -- Rough Stone (1+)
+step
+  only Paladin
+  zone map 1429
+  note "Kill Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @47.5,62.2 map 1429 -- Rough Stone (1+)
+step
+  only Rogue
+  zone map 1429
+  note "Kill Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @47.5,62.2 map 1429 -- Rough Stone (1+)
+step
+  only Warrior
+  when has 2835
+  label RoughStoneCraft4
+  along until JasperlodeExplore
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @47.5,62.2 map 1429 only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @47.5,62.2 map 1429 only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @47.5,62.2 map 1429 only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @47.5,62.2 map 1429 -- Rough Stone (5)
+step
+  only Paladin
+  when has 2835
+  along until JasperlodeExplore
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @47.5,62.2 map 1429 only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @47.5,62.2 map 1429 only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @47.5,62.2 map 1429 only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @47.5,62.2 map 1429 -- Rough Stone (5)
+step
+  only Rogue
+  when has 2835
+  along until JasperlodeExplore
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @47.5,62.2 map 1429 only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @47.5,62.2 map 1429 only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @47.5,62.2 map 1429 only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @47.5,62.2 map 1429 -- Rough Stone (5)
+step
+  only Warrior
+  when has 2835
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @47.5,62.2 map 1429 only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @47.5,62.2 map 1429 only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @47.5,62.2 map 1429 only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @47.5,62.2 map 1429 -- Rough Stone (5)
+step
+  only Paladin
+  when has 2835
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @47.5,62.2 map 1429 only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @47.5,62.2 map 1429 only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @47.5,62.2 map 1429 only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @47.5,62.2 map 1429 -- Rough Stone (5)
+step
+  only Rogue
+  when has 2835
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @47.5,62.2 map 1429 only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @47.5,62.2 map 1429 only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @47.5,62.2 map 1429 only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @47.5,62.2 map 1429 -- Rough Stone (5)
+step
+  only Warrior
+  along until JasperlodeExplore
+  zone map 1429
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Warrior
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Rogue
+  note "Use the [Rough Weightstone] on your current weapon" only Paladin
+  use 2862 @47.5,62.2 map 1429 only Rogue -- Rough Sharpening Stone (1)
+  use 2862 @47.5,62.2 map 1429 only Warrior -- Rough Sharpening Stone (1)
+  use 3239 @47.5,62.2 map 1429 only Paladin -- Rough Weightstone (1)
+step
+  only Paladin
+  along until JasperlodeExplore
+  zone map 1429
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Warrior
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Rogue
+  note "Use the [Rough Weightstone] on your current weapon" only Paladin
+  use 2862 @47.5,62.2 map 1429 only Rogue -- Rough Sharpening Stone (1)
+  use 2862 @47.5,62.2 map 1429 only Warrior -- Rough Sharpening Stone (1)
+  use 3239 @47.5,62.2 map 1429 only Paladin -- Rough Weightstone (1)
+step
+  only Rogue
+  along until JasperlodeExplore
+  zone map 1429
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Warrior
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Rogue
+  note "Use the [Rough Weightstone] on your current weapon" only Paladin
+  use 2862 @47.5,62.2 map 1429 only Rogue -- Rough Sharpening Stone (1)
+  use 2862 @47.5,62.2 map 1429 only Warrior -- Rough Sharpening Stone (1)
+  use 3239 @47.5,62.2 map 1429 only Paladin -- Rough Weightstone (1)
+step
+  label Jasperlode
+  along until JasperlodeExplore
+  zone map 1429
+  goto 61.653971,53.608231 map 1429 r 15 -- Enter the Jasperlode Mine
+step
+  label JasperlodeExplore
+  zone map 1429
+  goto 61.199902,51.460112 map 1429 r 15 optional
+  goto 60.719902,50.850067 map 1429 r 15 optional
+  goto 60.39001,50.160094 map 1429 r 8
+  note "Follow the path through middle to explore Jasperlode Mine"
+  complete 76 -- Scout through the Jasperlode Mine
+step
+  when onquest 91777
+  zone map 1429
+  note "Kill Geosculptor Yip. Loot him for the Geomancy for Curious Young Wizards"
+  note "He will summon three Rumblers. Skip this step if you are unable to kill him"
+  collect 248003 x1 quest 91777.1 -- Geomancy for Curious Young Wizards
+step
+  when onquest 91777
+  zone map 1429
+  note "Kill Mother Fang. Loot her for the Arcane Explainer: Magical Stuff in Simple Words"
+  note "She Nets and Poisons. Skip this step if you are unable to kill her"
+  collect 248004 x1 quest 91777.2 -- Arcane Explainer: Magical Stuff in Simple Words
+step
+  when complete 91777
+  along until next_133
+  zone map 1429
+  goto 61.245136,54.805466 map 1429 r 10 optional
+  goto 58.885472,56.576843 map 1429 r 10 optional
+  goto 58.467705,54.801102 map 1429 r 10 optional
+  goto 58.441775,52.614963 map 1429 r 18 optional -- Follow the arrow closely to return to Northshire to turn in the quest you just completed for a weapon reward
+step
+  when complete 91777
+  label next_133
+  zone map 1429
+  note "Talk to Brother Paxton::951"
+  turnin 91777 -- Turn in Rare Books
+step
+  when turnedin 91777
+  along until Find
+  zone map 1429
+  goto 56.900359,50.934315 map 1429 r 25 optional
+  goto 57.733012,52.174279 map 1429 r 10 optional
+  goto 58.559902,53.288951 map 1429 r 20 optional -- Travel back to the hills you just ran over for a shortcut to eastern Elwynn Forest
+step
+  only Warrior
+  label RoughStone5
+  along until Find
+  zone map 1429
+  note "Kill Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @58.559902,53.288951 map 1429 optional -- Rough Stone (1+)
+step
+  only Paladin
+  along until Find
+  zone map 1429
+  note "Kill Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @58.559902,53.288951 map 1429 optional -- Rough Stone (1+)
+step
+  only Rogue
+  along until Find
+  zone map 1429
+  note "Kill Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @58.559902,53.288951 map 1429 optional -- Rough Stone (1+)
+step
+  only Warrior
+  zone map 1429
+  note "Kill Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @58.559902,53.288951 map 1429 optional -- Rough Stone (1+)
+step
+  only Paladin
+  zone map 1429
+  note "Kill Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @58.559902,53.288951 map 1429 optional -- Rough Stone (1+)
+step
+  only Rogue
+  zone map 1429
+  note "Kill Kobold Miners. Open Battered Chests. Loot them for their [Rough Stones]"
+  collect 2835 x1 @58.559902,53.288951 map 1429 optional -- Rough Stone (1+)
+step
+  only Warrior
+  when has 2835
+  label RoughStoneCraft5
+  along until Find
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @58.559902,53.288951 map 1429 optional only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @58.559902,53.288951 map 1429 optional only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @58.559902,53.288951 map 1429 optional only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @58.559902,53.288951 map 1429 optional -- Rough Stone (5)
+step
+  only Paladin
+  when has 2835
+  along until Find
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @58.559902,53.288951 map 1429 optional only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @58.559902,53.288951 map 1429 optional only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @58.559902,53.288951 map 1429 optional only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @58.559902,53.288951 map 1429 optional -- Rough Stone (5)
+step
+  only Rogue
+  when has 2835
+  along until Find
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @58.559902,53.288951 map 1429 optional only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @58.559902,53.288951 map 1429 optional only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @58.559902,53.288951 map 1429 optional only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @58.559902,53.288951 map 1429 optional -- Rough Stone (5)
+step
+  only Warrior
+  when has 2835
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @58.559902,53.288951 map 1429 optional only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @58.559902,53.288951 map 1429 optional only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @58.559902,53.288951 map 1429 optional only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @58.559902,53.288951 map 1429 optional -- Rough Stone (5)
+step
+  only Paladin
+  when has 2835
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @58.559902,53.288951 map 1429 optional only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @58.559902,53.288951 map 1429 optional only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @58.559902,53.288951 map 1429 optional only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @58.559902,53.288951 map 1429 optional -- Rough Stone (5)
+step
+  only Rogue
+  when has 2835
+  zone map 1429
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Warrior
+  note "[Blacksmith] the [Rough Stones] into [Rough Sharpening Stones]" only Rogue
+  note "[Blacksmith] the [Rough Stones] into [Rough Weightstones]" only Paladin
+  collect 2862 x5 @58.559902,53.288951 map 1429 optional only Rogue -- Rough Sharpening Stone (5)
+  collect 2862 x5 @58.559902,53.288951 map 1429 optional only Warrior -- Rough Sharpening Stone (5)
+  collect 3239 x5 @58.559902,53.288951 map 1429 optional only Paladin -- Rough Weightstone (5)
+  collect 2835 x5 @58.559902,53.288951 map 1429 optional -- Rough Stone (5)
+step
+  only Warrior
+  along until Find
+  zone map 1429
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Warrior
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Rogue
+  note "Use the [Rough Weightstone] on your current weapon" only Paladin
+  use 2862 @58.559902,53.288951 map 1429 optional only Rogue -- Rough Sharpening Stone (1)
+  use 2862 @58.559902,53.288951 map 1429 optional only Warrior -- Rough Sharpening Stone (1)
+  use 3239 @58.559902,53.288951 map 1429 optional only Paladin -- Rough Weightstone (1)
+step
+  only Paladin
+  along until Find
+  zone map 1429
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Warrior
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Rogue
+  note "Use the [Rough Weightstone] on your current weapon" only Paladin
+  use 2862 @58.559902,53.288951 map 1429 optional only Rogue -- Rough Sharpening Stone (1)
+  use 2862 @58.559902,53.288951 map 1429 optional only Warrior -- Rough Sharpening Stone (1)
+  use 3239 @58.559902,53.288951 map 1429 optional only Paladin -- Rough Weightstone (1)
+step
+  only Rogue
+  along until Find
+  zone map 1429
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Warrior
+  note "Use the [Rough Sharpening Stone] on your current weapon" only Rogue
+  note "Use the [Rough Weightstone] on your current weapon" only Paladin
+  use 2862 @58.559902,53.288951 map 1429 optional only Rogue -- Rough Sharpening Stone (1)
+  use 2862 @58.559902,53.288951 map 1429 optional only Warrior -- Rough Sharpening Stone (1)
+  use 3239 @58.559902,53.288951 map 1429 optional only Paladin -- Rough Weightstone (1)
+step
+  label ExitJasperlode
+  along until Find
+  zone map 1429
+  goto 61.82,53.871 map 1429 r 15 optional -- Exit Jasperlode Mine
+step
+  zone map 1429
+  goto 61.82,53.871 map 1429 r 15 -- Exit Jasperlode Mine
+step
+  label WolfMeatCooking2
+  along until Find
+  zone map 1429
+  goto 69.348,67.452 map 1429 r 1 optional
+  goto 67.244,63.88 map 1429 r 1 optional
+  goto 63.748,64.71 map 1429 r 1 optional
+  note "Kill Gray Forest Wolves. Loot them for their [Stringy Wolf Meat]"
+  collect 2672 x10 @63.748,64.71 map 1429 optional -- Stringy Wolf Meat (1-10)
+step
+  zone map 1429
+  goto 69.348,67.452 map 1429 r 1 optional
+  goto 67.244,63.88 map 1429 r 1 optional
+  goto 63.748,64.71 map 1429 r 1
+  note "Kill Gray Forest Wolves. Loot them for their [Stringy Wolf Meat]"
+  collect 2672 x10 @63.748,64.71 map 1429 optional -- Stringy Wolf Meat (1-10)
+step
+  along until Find
+  zone map 1429
+  goto 69.348,67.452 map 1429 r 1 optional
+  goto 67.244,63.88 map 1429 r 1 optional
+  goto 63.748,64.71 map 1429 r 1 optional
+  note "Kill Gray Forest Wolves. Loot them for their [Stringy Wolf Meat]"
+  note "Don't go out of your way to farm this now. Simply kill and loot all the wolves you're passing by"
+  collect 2672 x50 @63.748,64.71 map 1429 optional -- Stringy Wolf Meat (10-50)
+step
+  along until Find
+  note "Kite a Young Forest Bear toward Guard Thomas"
+  note "Try to talk to Guard Thomas before the Young Forest Bear dies to the Stormwind Guards get quest credit"
+  note "Make sure to deal 51%+ damage to get credit"
+step
+  label Find
+  zone map 1429
+  note "Talk to Guard Thomas"
+  turnin 35 -- Turn in Further Concerns
+  accept 37 -- Accept Find the Lost Guards
+  accept 52 -- Accept Protect the Frontier
+step
+  along until AcceptBundle
+  zone map 1429
+  note "Kill Prowlers and Young Forest Bears"
+  note "Prioritize killing any Young Forest Bears you see"
+  kill 118 x8 quest 52.1 @73.972913,72.179179 map 1429 -- Kill Prowler (x8)
+  kill 822 x5 quest 52.2 @73.972913,72.179179 map 1429 -- Kill Young Forest Bear (x5)
+step
+  label WolfMeatCooking3
+  along until LostGuards
+  zone map 1429
+  goto 73.679,67.978 map 1429 r 1 optional
+  goto 72.275,65.278 map 1429 r 1 optional
+  goto 71.605,61.294 map 1429 r 1 optional
+  note "Kill Gray Forest Wolves and Prowlers. Loot them for their [Stringy Wolf Meat]"
+  collect 2672 x10 @71.605,61.294 map 1429 optional -- Stringy Wolf Meat (1-10)
+step
+  zone map 1429
+  goto 73.679,67.978 map 1429 r 1 optional
+  goto 72.275,65.278 map 1429 r 1 optional
+  goto 71.605,61.294 map 1429 r 1
+  note "Kill Gray Forest Wolves and Prowlers. Loot them for their [Stringy Wolf Meat]"
+  collect 2672 x10 @71.605,61.294 map 1429 optional -- Stringy Wolf Meat (1-10)
+step
+  along until LostGuards
+  zone map 1429
+  goto 73.679,67.978 map 1429 r 1 optional
+  goto 72.275,65.278 map 1429 r 1 optional
+  goto 71.605,61.294 map 1429 r 1 optional
+  note "Kill Gray Forest Wolves and Prowlers. Loot them for their [Stringy Wolf Meat]"
+  note "Don't go out of your way to farm this now. Simply kill and loot all the wolves you're passing by"
+  collect 2672 x50 @71.605,61.294 map 1429 optional -- Stringy Wolf Meat (10-50)
+step
+  label LostGuards
+  zone map 1429
+  note "Click A half-eaten body on the ground"
+  turnin 37 -- Turn in Find the Lost Guards
+  accept 45 -- Accept Discover Rolf's Fate
+step
+  label WolfMeatCooking4
+  along until AcceptBundle
+  zone map 1429
+  goto 73.679,67.978 map 1429 r 1 optional
+  goto 72.275,65.278 map 1429 r 1 optional
+  goto 71.605,61.294 map 1429 r 1 optional
+  note "Kill Prowlers. Loot them for their [Stringy Wolf Meat]"
+  collect 2672 x10 @71.605,61.294 map 1429 optional -- Stringy Wolf Meat (1-10)
+step
+  zone map 1429
+  goto 73.679,67.978 map 1429 r 1 optional
+  goto 72.275,65.278 map 1429 r 1 optional
+  goto 71.605,61.294 map 1429 r 1
+  note "Kill Prowlers. Loot them for their [Stringy Wolf Meat]"
+  collect 2672 x10 @71.605,61.294 map 1429 optional -- Stringy Wolf Meat (1-10)
+step
+  along until AcceptBundle
+  zone map 1429
+  goto 73.679,67.978 map 1429 r 1 optional
+  goto 72.275,65.278 map 1429 r 1 optional
+  goto 71.605,61.294 map 1429 r 1 optional
+  note "Kill Prowlers. Loot them for their [Stringy Wolf Meat]"
+  note "Don't go out of your way to farm this now. Simply kill and loot all the wolves you're passing by"
+  collect 2672 x50 @71.605,61.294 map 1429 optional -- Stringy Wolf Meat (10-50)
+step
+  label AcceptBundle
+  zone map 1429
+  note "Talk to Supervisor Raelen"
+  accept 5545 -- Accept A Bundle of Trouble
+step
+  zone map 1429
+  note "Talk to Rallic Finn"
+  vendor 1198 -- Vendor trash
+step
+  label WolfMeatCooking5
+  along until Prowlers
+  zone map 1429
+  goto 73.679,67.978 map 1429 r 1 optional
+  goto 72.275,65.278 map 1429 r 1 optional
+  goto 71.605,61.294 map 1429 r 1 optional
+  note "Kill Prowlers. Loot them for their [Stringy Wolf Meat]"
+  note "Don't go out of your way to farm this now. Simply kill and loot all the wolves you're passing by"
+  collect 2672 x10 @71.605,61.294 map 1429 optional -- Stringy Wolf Meat (1-10)
+step
+  zone map 1429
+  goto 73.679,67.978 map 1429 r 1 optional
+  goto 72.275,65.278 map 1429 r 1 optional
+  goto 71.605,61.294 map 1429 r 1
+  note "Kill Prowlers. Loot them for their [Stringy Wolf Meat]"
+  note "Don't go out of your way to farm this now. Simply kill and loot all the wolves you're passing by"
+  collect 2672 x10 @71.605,61.294 map 1429 optional -- Stringy Wolf Meat (1-10)
+step
+  along until Prowlers
+  zone map 1429
+  goto 73.679,67.978 map 1429 r 1 optional
+  goto 72.275,65.278 map 1429 r 1 optional
+  goto 71.605,61.294 map 1429 r 1 optional
+  note "Kill Prowlers. Loot them for their [Stringy Wolf Meat]"
+  note "Don't go out of your way to farm this now. Simply kill and loot all the wolves you're passing by"
+  collect 2672 x50 @71.605,61.294 map 1429 optional -- Stringy Wolf Meat (10-50)
+step
+  along until Prowlers
+  zone map 1429
+  note "Kill Prowlers and Young Forest Bears"
+  note "Prioritize killing any Young Forest Bears you see"
+  kill 118 x8 quest 52.1 @71.605,61.294 map 1429 optional -- Kill Prowler (x8)
+  kill 822 x5 quest 52.2 @71.605,61.294 map 1429 optional -- Kill Young Forest Bear (x5)
+step
+  along until Prowlers
+  zone map 1429
+  note "Loot the Bundles of Wood on the ground at the base of the trees"
+  collect 13872 x8 quest 5545.1 @83.47985,59.19023 map 1429 -- Bundle of Wood (8)
+step
+  only Paladin
+  label Prowlers
+  zone map 1429
+  note "Run on top of Rolf's corpse, then cast [Divine Protection] and then immediately click Rolf's corpse"
+  note "Run away and reset the Murlocs after completing the quest"
+  turnin 45 -- Turn in Discover Rolf's Fate
+  accept 71 -- Accept Report to Thomas
+step
+  only Warrior,Hunter,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  label Prowlers_3
+  zone map 1429
+  note "Click Rolf's corpse on the ground"
+  note "Be careful as Murloc Foragers will cast [Drink Minor Potion] which heals themselves for 61-68 health"
+  note "Cast [Renew] and [Power Word: Shield] then get full mana. Pull the 2 Murlocs in front of the huts, move away, then nuke one. Run away when you kill one, then kill the other" only Priest
+  note "Pull the 2 Murlocs in front of the huts, move away and [Polymorph] one whilst killing the other. Kill the [Polymorphed] one after" only Mage
+  note "Pool 100 Rage. Pull the 2 Murlocs in front of the huts, move away and keep [Hamstring] on one whilst killing the other. Also use [Bag of Marbles] on the one you're killing. Run away and reset the one being kited with [Hamstring] after you've killed one" only Warrior
+  note "Pull the 2 Murlocs in front of the huts, move away and focus killing one of them. Use [Evasion] once they're both attacking you. This is a good opportunity to use [Bag of Marbles]. Run away and reset once you've killed one" only Rogue
+  note "Pull the 2 Murlocs in front of the huts, move away and cast [Fear] on one of them constantly, and try to keep DoTs on both" only Warlock
+  turnin 45 -- Turn in Discover Rolf's Fate
+  accept 71 -- Accept Report to Thomas
+step
+  label WolfMeatCooking6
+  along until BundleOT
+  zone map 1429
+  goto 73.679,67.978 map 1429 r 1 optional
+  goto 72.275,65.278 map 1429 r 1 optional
+  goto 71.605,61.294 map 1429 r 1 optional
+  note "Kill Prowlers. Loot them for their [Stringy Wolf Meat]"
+  collect 2672 x10 @71.605,61.294 map 1429 optional -- Stringy Wolf Meat (1-10)
+step
+  zone map 1429
+  goto 73.679,67.978 map 1429 r 1 optional
+  goto 72.275,65.278 map 1429 r 1 optional
+  goto 71.605,61.294 map 1429 r 1
+  note "Kill Prowlers. Loot them for their [Stringy Wolf Meat]"
+  collect 2672 x10 @71.605,61.294 map 1429 optional -- Stringy Wolf Meat (1-10)
+step
+  along until BundleOT
+  zone map 1429
+  goto 73.679,67.978 map 1429 r 1 optional
+  goto 72.275,65.278 map 1429 r 1 optional
+  goto 71.605,61.294 map 1429 r 1 optional
+  note "Kill Prowlers. Loot them for their [Stringy Wolf Meat]"
+  note "Don't go out of your way to farm this now. Simply kill and loot all the wolves you're passing by"
+  collect 2672 x50 @71.605,61.294 map 1429 optional -- Stringy Wolf Meat (10-50)
+step
+  along until BundleOT
+  zone map 1429
+  note "Kill Prowlers and Young Forest Bears"
+  note "Prioritize killing any Young Forest Bears you see"
+  kill 118 x8 quest 52.1 @71.605,61.294 map 1429 -- Kill Prowler (x8)
+  kill 822 x5 quest 52.2 @71.605,61.294 map 1429 -- Kill Young Forest Bear (x5)
+step
+  loop
+  zone map 1429
+  goto 80.479994,55.180004 map 1429 r 1
+  goto 80.150102,60.030122 map 1429 r 1
+  goto 83.47985,59.19023 map 1429 r 1
+  goto 80.479994,55.180004 map 1429 r 40
+  goto 80.879898,53.879986 map 1429 r 40
+  goto 79.679898,52.309941 map 1429 r 40
+  goto 80.860018,52.169959 map 1429 r 40
+  goto 80.879898,53.879986 map 1429 r 40
+  goto 80.479994,55.180004 map 1429 r 40
+  goto 79.759994,56.699933 map 1429 r 40
+  goto 80.150102,60.030122 map 1429 r 40
+  goto 80.239994,61.460185 map 1429 r 40
+  goto 81.270006,61.59023 map 1429 r 40
+  goto 81.580018,62.640095 map 1429 r 40
+  goto 82.790102,60.119987 map 1429 r 40
+  goto 83.249934,61.120167 map 1429 r 40
+  goto 83.47985,59.19023 map 1429 r 40
+  goto 81.769886,59.169924 map 1429 r 40
+  goto 80.479994,55.180004 map 1429 r 40
+  goto 83.249934,61.120167 map 1429 r 40
+  goto 83.47985,59.19023 map 1429 r 40
+  note "Loot the Bundles of Wood on the ground at the base of the trees"
+  collect 13872 x8 quest 5545.1 -- Bundle of Wood (8)
+step
+  label BundleOT
+  zone map 1429
+  note "Talk to Supervisor Raelen"
+  turnin 5545 -- Turn in A Bundle of Trouble
+step
+  zone map 1429
+  note "Talk to Sara Timberlain"
+  accept 83 -- Accept Red Linen Goods
+step
+  label WolfMeatCooking7
+  along until DeliverStart
+  zone map 1429
+  goto 73.679,67.978 map 1429 r 1 optional
+  goto 72.275,65.278 map 1429 r 1 optional
+  goto 71.605,61.294 map 1429 r 1 optional
+  note "Kill Prowlers. Loot them for their [Stringy Wolf Meat]"
+  collect 2672 x10 @71.605,61.294 map 1429 optional -- Stringy Wolf Meat (1-10)
+step
+  zone map 1429
+  goto 73.679,67.978 map 1429 r 1 optional
+  goto 72.275,65.278 map 1429 r 1 optional
+  goto 71.605,61.294 map 1429 r 1
+  note "Kill Prowlers. Loot them for their [Stringy Wolf Meat]"
+  collect 2672 x10 @71.605,61.294 map 1429 optional -- Stringy Wolf Meat (1-10)
+step
+  along until DeliverStart
+  zone map 1429
+  goto 73.679,67.978 map 1429 r 1 optional
+  goto 72.275,65.278 map 1429 r 1 optional
+  goto 71.605,61.294 map 1429 r 1 optional
+  note "Kill Prowlers. Loot them for their [Stringy Wolf Meat]"
+  note "Don't go out of your way to farm this now. Simply kill and loot all the wolves you're passing by"
+  collect 2672 x50 @71.605,61.294 map 1429 optional -- Stringy Wolf Meat (10-50)
+step
+  along until WaterloggedToolbox
+  zone map 1429
+  note "Kill Prowlers and Young Forest Bears"
+  kill 118 x8 quest 52.1 @71.605,61.294 map 1429 -- Kill Prowler (x8)
+  kill 822 x5 quest 52.2 @71.605,61.294 map 1429 -- Kill Young Forest Bear (x5)
+step
+  zone map 1429
+  note "Talk to Ormin Pelford"
+  accept 91733 -- Accept Downstream
+step
+  zone map 1429
+  note "Loot the Waterlogged Saw on the ground"
+  collect 247813 x1 quest 91733.2 -- Waterlogged Saw 1/1
+  goto 74.3,76.4 map 1429 r 8
+step
+  zone map 1429
+  note "Loot the Waterlogged Axe on the ground"
+  collect 247817 x1 quest 91733.1 @74.3,76.4 map 1429 -- Waterlogged Axe 1/1
+  goto 76.7,82.5 map 1429 r 8 optional
+step
+  label WaterloggedToolbox
+  zone map 1429
+  note "Loot the Waterlogged Toolbox on the ground"
+  collect 247818 x1 quest 91733.3 -- Waterlogged Toolbox 1/1
+  goto 77.3,86.8 map 1429 r 8
+step
+  loop
+  zone map 1429
+  goto 77.499,74.518 map 1429 r 1
+  goto 80.496,78.223 map 1429 r 1
+  goto 87.342,63.763 map 1429 r 1
+  goto 77.499,74.518 map 1429 r 55
+  goto 77.222,77.499 map 1429 r 55
+  goto 78.483,79.323 map 1429 r 55
+  goto 80.496,78.223 map 1429 r 55
+  goto 81.434,76.695 map 1429 r 55
+  goto 87.145,69.922 map 1429 r 55
+  goto 87.342,63.763 map 1429 r 55
+  note "Kill Prowlers and Young Forest Bears"
+  kill 118 x8 quest 52.1 -- Kill Prowler (x8)
+  kill 822 x5 quest 52.2 -- Kill Young Forest Bear (x5)
+step
+  zone map 1429
+  note "Kill Defias Bandits. Loot them for the [Westfall Deed]"
+  use 1972 @87.342,63.763 map 1429 -- Use the [Westfall Deed] to start the quest
+  note "The [Westfall Deed] is a very rare drop. Ignore this step if you don't get it"
+  collect 1972 x1 @87.342,63.763 map 1429 optional -- Collect Westfall Deed (x1)
+  accept 184 -- Accept Furlbrow's Deed
+step
+  when onquest 83
+  along until PrincessC
+  zone map 1429
+  note "Kill Defias Bandits. Loot them for their Red Linen Bandanas"
+  collect 1019 x6 quest 83.1 @87.342,63.763 map 1429 -- Collect Red Linen Bandana (x6)
+step
+  label PrincessC
+  zone map 1429
+  note "Kill Princess. Loot her for her Collar"
+  note "Princess will aggro with both of her Porcine Entourage"
+  note "Princess will also cast [Rushing Charge] which deals heavy damage"
+  note "Pool 100 Rage before you engage Princess" only Warrior
+  note "Be sure [Evasion] is ready. If you're struggling, you can use the Fence with Throwing Weapons to abuse pathing and buy time" only Rogue
+  note "Be ready to use a [Lesser Healing Potion]"
+  collect 1006 x1 quest 88.1 -- Collect Brass Collar (x1)
+step
+  when onquest 83
+  label DefiasBandits
+  zone map 1429
+  note "Kill Defias Bandits. Loot them for their Red Linen Bandanas"
+  collect 1019 x6 quest 83.1 @69.299972,78.999846 map 1429 -- Collect Red Linen Bandana (x6)
+step
+  when level>=9
+  when onquest 71
+  turnin 71 -- Turn in Report to Thomas
+step
+  when level>=9
+  zone map 1429
+  note "Talk to Guard Thomas"
+  turnin 52 -- Turn in Protect the Frontier
+  accept 39 -- Accept Deliver Thomas' Report
+  accept 109 -- Accept Report to Gryan Stoutmantle
+step
+  when onquest 71
+  turnin 71 -- Turn in Report to Thomas
+step
+  label DeliverStart
+  zone map 1429
+  note "Talk to Guard Thomas"
+  turnin 52 -- Turn in Protect the Frontier
+  accept 39 -- Accept Deliver Thomas' Report
+step
+  zone map 1429
+  note "Talk to Ormin Pelford"
+  turnin 91733 -- Turn in Downstream
+step
+  only Warlock
+  zone map 1429
+  goto 69.529888,79.469909 map 1429 r 8
+  level 9+3510 only Warlock -- Grind to 3510+/6500xp
+  level 9+3510 only Hunter -- Grind to 3510+/6500xp
+  level 9+3420 only Warrior -- Grind to 3420+/6500xp
+  level 9+3420 only Rogue -- Grind to 3420+/6500xp
+step
+  only Warrior
+  zone map 1429
+  goto 69.529888,79.469909 map 1429 r 8
+  level 9+3510 only Warlock -- Grind to 3510+/6500xp
+  level 9+3510 only Hunter -- Grind to 3510+/6500xp
+  level 9+3420 only Warrior -- Grind to 3420+/6500xp
+  level 9+3420 only Rogue -- Grind to 3420+/6500xp
+step
+  only Rogue
+  zone map 1429
+  goto 69.529888,79.469909 map 1429 r 8
+  level 9+3510 only Warlock -- Grind to 3510+/6500xp
+  level 9+3510 only Hunter -- Grind to 3510+/6500xp
+  level 9+3420 only Warrior -- Grind to 3420+/6500xp
+  level 9+3420 only Rogue -- Grind to 3420+/6500xp
+step
+  only Hunter
+  zone map 1429
+  goto 69.529888,79.469909 map 1429 r 8
+  level 9+3510 only Warlock -- Grind to 3510+/6500xp
+  level 9+3510 only Hunter -- Grind to 3510+/6500xp
+  level 9+3420 only Warrior -- Grind to 3420+/6500xp
+  level 9+3420 only Rogue -- Grind to 3420+/6500xp
+step
+  only Warlock
+  when complete 91740
+  label Level9Grind
+  zone map 1429
+  goto 69.529888,79.469909 map 1429 r 8
+  level 9+2670 only Warlock -- Grind to 2670+/6500xp
+  level 9+2670 only Hunter -- Grind to 2670+/6500xp
+  level 9+2580 only Warrior -- Grind to 2580+/6500xp
+  level 9+2580 only Rogue -- Grind to 2580+/6500xp
+step
+  only Warrior
+  when complete 91740
+  zone map 1429
+  goto 69.529888,79.469909 map 1429 r 8
+  level 9+2670 only Warlock -- Grind to 2670+/6500xp
+  level 9+2670 only Hunter -- Grind to 2670+/6500xp
+  level 9+2580 only Warrior -- Grind to 2580+/6500xp
+  level 9+2580 only Rogue -- Grind to 2580+/6500xp
+step
+  only Rogue
+  when complete 91740
+  zone map 1429
+  goto 69.529888,79.469909 map 1429 r 8
+  level 9+2670 only Warlock -- Grind to 2670+/6500xp
+  level 9+2670 only Hunter -- Grind to 2670+/6500xp
+  level 9+2580 only Warrior -- Grind to 2580+/6500xp
+  level 9+2580 only Rogue -- Grind to 2580+/6500xp
+step
+  only Hunter
+  when complete 91740
+  zone map 1429
+  goto 69.529888,79.469909 map 1429 r 8
+  level 9+2670 only Warlock -- Grind to 2670+/6500xp
+  level 9+2670 only Hunter -- Grind to 2670+/6500xp
+  level 9+2580 only Warrior -- Grind to 2580+/6500xp
+  level 9+2580 only Rogue -- Grind to 2580+/6500xp
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  when !zone "Redridge Mountains"
+  when level<10
+  label EVDeathskip
+  along until RedridgeS
+  note "Die and respawn at the Spirit Healer"
+step
+  when complete 83
+  zone map 1429
+  note "Talk to Sara Timberlain"
+  turnin 83 -- Turn in Red Linen Goods
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  when !zone "Redridge Mountains"
+  when level<10
+  label next_185
+  note "Die and respawn at the Spirit Healer"
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  label WolfMeatCooking8
+  along until RedridgeS
+  zone map 1429
+  goto 84.448,72.486 map 1429 r 1 optional
+  goto 88.611,71.379 map 1429 r 1 optional
+  goto 89.657,75.373 map 1429 r 1 optional
+  goto 87.25,75.853 map 1429 r 1 optional
+  note "Kill Prowlers. Loot them for their [Stringy Wolf Meat]"
+  collect 2672 x10 @87.25,75.853 map 1429 optional -- Stringy Wolf Meat (1-10)
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  zone map 1429
+  goto 84.448,72.486 map 1429 r 1 optional
+  goto 88.611,71.379 map 1429 r 1 optional
+  goto 89.657,75.373 map 1429 r 1 optional
+  goto 87.25,75.853 map 1429 r 1
+  note "Kill Prowlers. Loot them for their [Stringy Wolf Meat]"
+  collect 2672 x10 @87.25,75.853 map 1429 optional -- Stringy Wolf Meat (1-10)
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  along until RedridgeS
+  zone map 1429
+  goto 84.448,72.486 map 1429 r 1 optional
+  goto 88.611,71.379 map 1429 r 1 optional
+  goto 89.657,75.373 map 1429 r 1 optional
+  goto 87.25,75.853 map 1429 r 1 optional
+  note "Kill Prowlers. Loot them for their [Stringy Wolf Meat]"
+  note "Don't go out of your way to farm this now. Simply kill and loot all the wolves you're passing by"
+  collect 2672 x50 @87.25,75.853 map 1429 optional -- Stringy Wolf Meat (10-50)
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  label RedridgeS
+  zone map 1433
+  goto 17.400087,69.600032 map 1433 r 8
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  when level>=11
+  zone map 1433
+  note "Talk to Guard Parker"
+  accept 244 -- Accept Encroaching Gnolls
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  when level<10
+  along until RRFP
+  note "Die and respawn at the Spirit Healer"
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  when onquest 244
+  when level>=11
+  zone map 1433
+  note "Talk to Deputy Feldon"
+  turnin 244 -- Turn in Encroaching Gnolls
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  label RRFP
+  zone map 1433
+  note "Talk to Ariena Stormfeather"
+  getfp "Redridge Mountains" @30.590409,59.41643 map 1433 -- Get the Redridge Mountains flight path
+step
+  along until CollectKelp
+  hearth "Goldshire" optional -- Hearth to Goldshire
+step
+  only Warrior
+  along until Escape
+  note "Be careful with your money, as you should try to save 32s 8c for Stormwind later" only Rogue
+  note "Be careful with your money, as you need to save 31s 85c for Stormwind and Ironforge later" only Warrior
+  note "You'll receive 16s 50c from turnins until then" only Rogue
+  note "You'll receive 18s 25c from turnins until then" only Warrior
+step
+  only Rogue
+  along until Escape
+  note "Be careful with your money, as you should try to save 32s 8c for Stormwind later" only Rogue
+  note "Be careful with your money, as you need to save 31s 85c for Stormwind and Ironforge later" only Warrior
+  note "You'll receive 16s 50c from turnins until then" only Rogue
+  note "You'll receive 18s 25c from turnins until then" only Warrior
+step
+  label CollectKelp
+  zone map 1429
+  note "Talk to William Pestle"
+  turnin 112 -- Turn in Collecting Kelp
+  accept 114 -- Accept The Escape
+step
+  only Warrior
+  zone map 1429
+  goto 43.876976,66.546199 map 1429 r 9 -- Travel upstairs in the Inn
+step
+  only Rogue
+  zone map 1429
+  goto 43.876976,66.546199 map 1429 r 9 -- Travel upstairs in the Inn
+step
+  only Warrior
+  zone map 1429
+  goto 43.392078,65.549907 map 1429 r 8
+  note "Talk to Michelle Belle"
+  learn 3273 "First Aid"
+step
+  only Rogue
+  zone map 1429
+  goto 43.392078,65.549907 map 1429 r 8
+  note "Talk to Michelle Belle"
+  learn 3273 "First Aid"
+step
+  only Rogue
+  when level>=10
+  label RogueOptTrain
+  zone map 1429
+  goto 43.872078,65.937018 map 1429 r 8
+  note "Talk to Keryn Sylvius"
+  note "Only train [Dual Wield] and [Sprint]. Do not train other spells to save your money for later"
+  learn 674 "Dual Wield"
+  learn 2983 "Sprint"
+step
+  zone map 1429
+  note "Talk to Marshal Dughan"
+  turnin 39 -- Turn in Deliver Thomas' Report
+  turnin 76 -- Turn in The Jasperlode Mine
+  accept 239 -- Accept Westbrook Garrison Needs Help!
+  accept 59 only Warlock -- Accept Cloth and Leather Armor
+  accept 109 -- Accept Report to Gryan Stoutmantle
+step
+  label GoldshireVendor
+  zone map 1429
+  note "Talk to Smith Argus"
+  accept 1097 -- Accept Elmore's Task
+step
+  along until RoughWolfPelts
+  zone map 1429
+  goto 46.59736,62.310014 map 1429 r 5 -- Travel toward Helene Peltskinner in the house
+step
+  when complete 91746
+  when onquest 91746
+  zone map 1429
+  note "Talk to Helene Peltskinner"
+  turnin 91746 -- Turn in Elmpaw's Head
+step
+  when complete 97924
+  zone map 1429
+  note "Talk to Helene Peltskinner"
+  turnin 97924 -- Turn in Camping 101: Skinning
+step
+  when complete 91751
+  when onquest 91751
+  label RoughWolfPelts
+  zone map 1429
+  note "Talk to Helene Peltskinner"
+  turnin 91751 -- Turn in Rough Wolf Pelts
+step
+  zone map 1429
+  note "Talk to Corina Steele"
+  vendor 54 -- Vendor Trash
+step
+  only Warlock
+  level 10 -- Grind to 10
+step
+  only Warrior
+  level 10 -- Grind to 10
+step
+  only Hunter
+  level 10 -- Grind to 10
+step
+  only Hunter
+  zone map 1429
+  note "Talk to Josephine Carson::251507"
+  accept 94792 -- Accept Taming the Beast
+  train class -- Train your class spells
+step
+  only Hunter
+  when onquest 94792
+  kill 524 x1 quest 94792.1 -- Tame a Rockhide Boar (1)
+step
+  only Hunter
+  zone map 1429
+  use 266158 @45.277792,81.004527 map 1429 -- Use the [Taming Rod] on a Rockhide Boar
+step
+  only Hunter
+  when onquest 94792
+  turnin 94792 -- Turn in Taming the Beast
+step
+  only Hunter
+  zone map 1429
+  note "Talk to Josephine Carson::251507"
+  accept 94863 -- Accept Taming the Beast
+step
+  only Hunter
+  when onquest 94863
+  kill 1922 x1 quest 94863.1 -- Tame a Gray Forest Wolf (1)
+step
+  only Hunter
+  zone map 1429
+  use 266253 @62.279469,64.427026 map 1429 -- Use the [Taming Rod] on a Gray Forest Wolf
+  note "Ensure you have dismissed your previous Rockhide Boar"
+step
+  only Hunter
+  when onquest 94863
+  turnin 94863 -- Turn in Taming the Beast
+step
+  only Hunter
+  zone map 1429
+  note "Talk to Josephine Carson::251507"
+  accept 94864 -- Accept Taming the Beast
+step
+  only Hunter
+  when onquest 94864
+  kill 822 x1 quest 94864.1 -- Tame a Young Forest Bear (1)
+step
+  only Hunter
+  zone map 1429
+  goto 44.658344,80.283014 map 1429 r 40 optional
+  use 266254 @53.610083,82.292015 map 1429 -- Use the [Taming Rod] on a Young Forest Bear
+  note "Ensure you have dismissed your previous Gray Forest Wolf"
+step
+  only Hunter
+  when onquest 94864
+  turnin 94864 -- Turn in Taming the Beast
+step
+  only Hunter
+  zone map 1429
+  note "Talk to Josephine Carson::251507"
+  accept 94793 -- Accept Training the Beast
+step
+  only Hunter
+  when onquest 94793
+  turnin 94793 -- Turn in Training the Beast
+step
+  only Hunter
+  zone map 1429
+  goto 41.788717,66.371221 map 1429 r 8 optional
+  note "Talk to Isaac Chan::258930"
+  train class -- Train your pet spells
+step
+  only Warrior
+  zone map 1429
+  note "Talk to Lyria Du Lac"
+  accept 1638 -- Accept A Warrior's Training
+  train 913 optional -- Train your class spells
+step
+  only Warrior
+  zone map 1429
+  note "Talk to Lyria Du Lac"
+  note "Do not train as you need to save your money for later"
+  accept 1638 -- Accept A Warrior's Training
+step
+  zone map 1429
+  note "Talk to Corina Steele"
+  vendor 54 -- Vendor Trash
+step
+  only Paladin
+  when level>=10
+  when level<12
+  zone map 1429
+  note "Talk to Brother Wilhelm"
+  train 927 -- Train your class spells
+step
+  zone map 1429
+  note "Talk to Corina Steele"
+  vendor 54 -- Vendor Trash
+step
+  only Paladin
+  when level>=12
+  zone map 1429
+  note "Talk to Brother Wilhelm"
+  accept 2998 -- Accept Tome of Divinity
+  train 927 -- Train your class spells
+step
+  only Warlock
+  along until next_221
+  zone map 1429
+  goto 44.099977,66.000096 map 1429 r 10 -- Travel downstairs in the Inn
+step
+  only Warlock
+  label next_221
+  zone map 1429
+  note "Talk to Maximillian Crowe and Remen Marcot"
+  train class -- Train your class spells
+  accept 1685 -- Accept Gakin's Summons
+  goto 44.484899,66.267963 map 1429 r 8 optional
+step
+  zone map 1429
+  note "Talk to Corina Steele"
+  vendor 54 -- Vendor Trash
+step
+  only Mage
+  when level>=10
+  along until next_223
+  zone map 1429
+  goto 43.700073,66.400168 map 1429 r 10 -- Go Upstairs
+step
+  only Priest
+  when level>=10
+  along until next_223
+  zone map 1429
+  goto 43.700073,66.400168 map 1429 r 10 -- Go Upstairs
+step
+  zone map 1429
+  note "Talk to Corina Steele"
+  vendor 54 -- Vendor Trash
+step
+  only Priest
+  when level>=10
+  label next_223
+  zone map 1429
+  note "Talk to Priestess Josetta"
+  accept 94774 -- Accept Divine Grace
+  train 377 -- Train your class spells
+step
+  zone map 1429
+  note "Talk to Corina Steele"
+  vendor 54 -- Vendor Trash
+step
+  only Mage
+  when level>=10
+  zone map 1429
+  note "Talk to Zaldimar Wefhellt"
+  train 328 -- Train your class spells
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  when onquest 59
+  along until PrincessFinish
+  note "Abandon Cloth and Leather Armor"
+step
+  zone map 1429
+  note "Talk to Remy \"Two Times\""
+  turnin 99129 -- Turn in A Man About a Murloc
+step
+  label BoarMeatCooking3
+  along until Garrison
+  zone map 1429
+  goto 32.516018,85.442907 map 1429 r 1 optional
+  goto 31.080916,81.487983 map 1429 r 1 optional
+  goto 36.181995,87.798839 map 1429 r 1 optional
+  goto 41.733111,86.986166 map 1429 r 1 optional
+  goto 37.740987,78.26494 map 1429 r 1 optional
+  goto 41.576088,69.499214 map 1429 r 1 optional
+  note "Kill Stonetusk Boars. Loot them for their [Chunks of Boar Meat]"
+  collect 769 x10 @41.576088,69.499214 map 1429 optional -- Chunk of Boar Meat (1-10)
+step
+  zone map 1429
+  goto 32.516018,85.442907 map 1429 r 1 optional
+  goto 31.080916,81.487983 map 1429 r 1 optional
+  goto 36.181995,87.798839 map 1429 r 1 optional
+  goto 41.733111,86.986166 map 1429 r 1 optional
+  goto 37.740987,78.26494 map 1429 r 1 optional
+  goto 41.576088,69.499214 map 1429 r 1
+  note "Kill Stonetusk Boars. Loot them for their [Chunks of Boar Meat]"
+  collect 769 x10 @41.576088,69.499214 map 1429 optional -- Chunk of Boar Meat (1-10)
+step
+  along until Garrison
+  zone map 1429
+  goto 32.516018,85.442907 map 1429 r 1 optional
+  goto 31.080916,81.487983 map 1429 r 1 optional
+  goto 36.181995,87.798839 map 1429 r 1 optional
+  goto 41.733111,86.986166 map 1429 r 1 optional
+  goto 37.740987,78.26494 map 1429 r 1 optional
+  goto 41.576088,69.499214 map 1429 r 1 optional
+  note "Kill Stonetusk Boars. Loot them for their [Chunks of Boar Meat]"
+  note "Don't go out of your way to farm this now. Simply kill and loot all the boars you're passing by"
+  collect 769 x50 @41.576088,69.499214 map 1429 optional -- Chunk of Boar Meat (10-50)
+step
+  zone map 1429
+  note "Talk to Corina Steele"
+  vendor 54 -- Vendor Trash
+step
+  along until Escape
+  zone map 1429
+  goto 43.154095,89.625086 map 1429 r 50 -- Travel to The Maclure Vineyards
+step
+  zone map 1429
+  note "Talk to Corina Steele"
+  vendor 54 -- Vendor Trash
+step
+  label Escape
+  zone map 1429
+  note "Talk to Maybell Maclure"
+  turnin 114 -- Turn in The Escape
+step
+  label PrincessFinish
+  zone map 1429
+  goto 34.659883,84.482043 map 1429 r 8 optional -- c:Elwynn Forest,34.660,84.482
+  note "Talk to Ma Stonefield"
+  turnin 88 only Rogue -- Turn in Princess Must Die!
+  turnin 88 only Hunter -- Turn in Princess Must Die!
+  turnin 88 only Warrior -- Turn in Princess Must Die!
+  turnin 88 only Paladin -- Turn in Princess Must Die!
+  turnin 88 only !Rogue,!Hunter,!Warrior,!Paladin -- Turn in Princess Must Die!
+step
+  only Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  when has 1971
+  along until Garrison
+  level 9+4510 -- Grind en route to 4510+/6500xp
+step
+  only Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  when !has 1971
+  along until Garrison
+  level 9+5110 -- Grind en route to 5110+/6500xp
+step
+  along until Garrison
+  zone map 1429
+  goto 24.819885,76.24989 map 1429 r 80 -- Travel to Westbrook Garrison
+step
+  label Garrison
+  zone map 1429
+  note "Talk to Deputy Rainer"
+  turnin 239 -- Turn in Westbrook Garrison Needs Help!
+  accept 11 only Warlock -- Accept Riverpaw Gnoll Bounty
+  goto 24.234147,74.449998 map 1429 r 8 optional
+  note "Click the Wanted Poster" only Warlock
+  accept 176 only Warlock -- Accept Wanted: "Hogger"
+  goto 24.547904,74.672068 map 1429 r 8 optional only Warlock
+step
+  only Warlock
+  along until GnollEnd
+  zone map 1429
+  note "Kill Riverpaw Runts and Riverpaw Outrunners. Loot them for the [Gold Pickup Schedule]"
+  use 1307 @24.547904,74.672068 map 1429 -- Use the [Gold Pickup Schedule] to start the quest
+  note "The [Gold Pickup Schedule] is a very rare drop. Ignore this step if you don't get it"
+  note "Gruff Swiftbite a rare spawn, does have a 100% drop chance"
+  collect 1307 x1 @24.547904,74.672068 map 1429 optional -- Collect Gold Pickup Schedule (x1)
+  accept 123 -- Accept The Collector
+step
+  only Warlock
+  when onquest 11
+  along until next_238
+  zone map 1429
+  note "Kill Riverpaw Runts and Riverpaw Outrunners. Loot them for their Armbands"
+  collect 782 x8 quest 11.1 @24.547904,74.672068 map 1429 -- Painted Gnoll Armband (8)
+step
+  only Warlock
+  label next_238
+  zone map 1429
+  note "Kill Hogger. Loot him for his Claw"
+  note "Hogger can spawn in multiple locations"
+  note "Cast [Fear] on Hogger continously and use your regular DoTs to kill him"
+  note "Kite him back to the guard tower if required ensuring you've done at least 50% damage to him"
+  collect 1931 x1 quest 176.1 -- Huge Gnoll Claw (1)
+step
+  only Warlock
+  when onquest 11
+  label GnollEnd
+  zone map 1429
+  note "Kill Riverpaw Runts and Riverpaw Outrunners. Loot them for their Armbands"
+  collect 782 x8 quest 11.1 @25.900029,93.900154 map 1429 -- Painted Gnoll Armband (8)
+step
+  only Warlock
+  when onquest 11
+  zone map 1429
+  note "Talk to Deputy Rainer"
+  turnin 11 -- Turn in Riverpaw Gnoll Bounty
+step
+  only Paladin,Rogue,Priest,Shaman,Mage,Druid
+  when has 1971
+  along until WestEntry
+  level 9+4575 -- Grind en route to 4575+/6500xp
+step
+  only Paladin,Rogue,Priest,Shaman,Mage,Druid
+  when !has 1971
+  along until WestEntry
+  level 9+5175 -- Grind en route to 5175+/6500xp
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  when onquest 123
+  along until WestEntry
+  note "Abandon The Collector"
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  along until WestEntry
+  zone map 1436
+  goto 59.949914,19.350003 map 1436 r 8
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  when onquest 184
+  zone map 1436
+  note "Talk to Farmer Furlbrow and Verna Furlbrow"
+  accept 64 -- Accept The Forgotten Heirloom
+  turnin 184 -- Turn in Furlbrow's Deed
+  accept 151 -- Accept Poor Old Blanchy
+  accept 36 -- Accept Westfall Stew
+  goto 59.919914,19.41986 map 1436 r 8 optional
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  label WestEntry
+  zone map 1436
+  note "Talk to Farmer Furlbrow and Verna Furlbrow"
+  accept 64 -- Accept The Forgotten Heirloom
+  accept 151 -- Accept Poor Old Blanchy
+  accept 36 -- Accept Westfall Stew
+  goto 59.919914,19.41986 map 1436 r 8 optional
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  when onquest 151
+  along until Fields
+  note "Do not loot any of the [Sacks of Oats] yet unless you have sent yourself large capacity bags as you will need to preserve bagspace for the upcoming segment"
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  label Fields
+  along
+  zone map 1436
+  note "Talk to Farmer Saldean"
+  accept 9 -- Accept The Killing Fields
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  when onquest 36
+  turnin 36 -- Turn in Westfall Stew
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  zone map 1436
+  note "Talk to Salma Saldean inside"
+  accept 38 -- Accept Westfall Stew
+  accept 22 -- Accept Goretusk Liver Pie
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  zone map 1436
+  note "Talk to Farmer Saldean"
+  accept 9 -- Accept The Killing Fields
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  zone map 1436
+  goto 56.327057,47.520007 map 1436 r 8 optional
+  level 9+5775 -- Grind to 5775+/6500xp
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  zone map 1436
+  note "Talk to Farmer Saldean"
+  accept 9 -- Accept The Killing Fields
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  zone map 1436
+  goto 56.327057,47.520007 map 1436 r 8 optional
+  level 9+5410 -- Grind to 5410+/6500xp
+step
+  zone map 1436
+  note "Talk to Gryan Stoutmantle and Captain Danuvin" only !Hunter
+  note "Talk to Gryan Stoutmantle" only Hunter
+  turnin 109 -- Turn in Report to Gryan Stoutmantle
+  accept 12 only !Hunter -- Accept The People's Militia
+  goto 56.327057,47.520007 map 1436 r 8 optional
+  accept 102 only !Hunter -- Accept Patrolling Westfall
+  goto 56.421057,47.622864 map 1436 r 8 optional only !Hunter
+step
+  only Human
+  zone map 1436
+  goto 56.039914,31.230004 map 1436 r 8
+  level 10 -- Grind to level 10
+step
+  zone map 1436
+  goto 57.001914,47.169007 map 1436 r 8 optional
+  note "Talk to Quartermaster Lewis"
+  accept 6181 only Human -- Accept A Swift Message
+step
+  only Human
+  when onquest 6181
+  turnin 6181 -- Turn in A Swift Message
+step
+  only Human
+  zone map 1436
+  note "Talk to Thor"
+  accept 6281 -- Accept Continue To Stormwind
+step
+  label FlySW
+  zone map 1436
+  goto 56.549914,52.64015 map 1436 r 8
+  note "Talk to Thor"
+  fly "Stormwind" -- Fly to Stormwind
+step
+  zone map 1453
+  note "Talk to Morgan Pestle"
+  turnin 61 -- Turn in Shipment to Stormwind
+step
+  only Rogue
+  when level>=10+5890
+  zone map 1453
+  goto 58.361862,61.677529 map 1453 r 8
+  note "Talk to Thurman Mullby"
+  note "Buy the [Keen Throwing Knives] from him"
+  collect 3107 x1 @58.361862,61.677529 map 1453 optional -- Collect Keen Throwing Knife (1)
+step
+  only Rogue
+  when level<10+5890
+  zone map 1453
+  goto 58.361862,61.677529 map 1453 r 8
+  note "Talk to Thurman Mullby"
+  note "Buy the [Balanced Throwing Daggers] from him"
+  collect 2946 x1 @58.361862,61.677529 map 1453 optional -- Collect Balanced Throwing Dagger (1)
+step
+  only Rogue
+  when has 3107
+  when level>=11
+  along until Continue
+  zone map 1453
+  note "Equip the [Keen Throwing Knives]"
+  use 3107 @58.361862,61.677529 map 1453 optional
+step
+  only Rogue
+  when has 2946
+  along until Continue
+  zone map 1453
+  note "Equip the [Balanced Throwing Daggers]"
+  use 2946 @58.361862,61.677529 map 1453 optional
+step
+  zone map 1453
+  goto 57.129223,57.698075 map 1453 r 8
+  note "Talk to Woo Ping"
+  train 11867 only Warlock -- Train 1h Swords and Staves
+  train 11867 only Mage -- Train 1h Swords and Staves
+  train 11867 only Rogue -- Train 1h Swords
+  train 11867 only Priest -- Train Staves
+  train 11867 only Warrior -- Train 2h Swords
+  train 11867 only Paladin -- Train 2h Swords
+step
+  only Warlock
+  zone map 1453
+  note "Talk to Woo Ping"
+  train 11867 -- Train Staves
+step
+  only Mage
+  zone map 1453
+  note "Talk to Woo Ping"
+  train 11867 -- Train Staves
+step
+  only Priest
+  zone map 1453
+  note "Talk to Auctioneer Jaxon"
+  note "Buy the following if you can afford it:"
+  note "[Minor Wizard Oil] and [Smoked Sagefish]"
+  note "Also check for any high DPS [Wand] upgrades that you can use now/soon"
+  note "These will provide a high DPS increase in early levels. If you don't want to or can't do this, skip this step"
+  collect 20744 x1 @53.612072,59.764223 map 1453 -- Minor Wizard Oil (1)
+  collect 21072 x20 @53.612072,59.764223 map 1453 -- Smoked Sagefish (20)
+step
+  only Mage
+  zone map 1453
+  note "Talk to Auctioneer Jaxon"
+  note "Buy the following if you can afford it:"
+  note "[Minor Wizard Oil] and [Smoked Sagefish]"
+  note "Also check for any high DPS [Wand] upgrades that you can use now/soon"
+  note "These will provide a high DPS increase in early levels. If you don't want to or can't do this, skip this step"
+  collect 20744 x1 @53.612072,59.764223 map 1453 -- Minor Wizard Oil (1)
+  collect 21072 x20 @53.612072,59.764223 map 1453 -- Smoked Sagefish (20)
+step
+  only Warlock
+  zone map 1453
+  note "Talk to Auctioneer Jaxon"
+  note "Buy the following if you can afford it:"
+  note "[Minor Wizard Oil] and [Smoked Sagefish]"
+  note "Also check for any high DPS [Wand] upgrades that you can use now/soon"
+  note "These will provide a high DPS increase in early levels. If you don't want to or can't do this, skip this step"
+  collect 20744 x1 @53.612072,59.764223 map 1453 -- Minor Wizard Oil (1)
+  collect 21072 x20 @53.612072,59.764223 map 1453 -- Smoked Sagefish (20)
+step
+  only Rogue
+  when level<11
+  zone map 1453
+  goto 57.547293,57.075553 map 1453 r 8
+  note "Talk to Gunther Weller"
+  note "Buy a [Hatchet] from him. Equip it later when you're level 11"
+  note "Alternatively, check the Auction House for something better or cheaper"
+  note "Make sure you save 6s for training later"
+  collect 853 x1 @57.547293,57.075553 map 1453 optional -- Hatchet (1)
+step
+  only Rogue
+  when level>=11
+  zone map 1453
+  goto 57.547293,57.075553 map 1453 r 8
+  note "Talk to Gunther Weller"
+  note "Buy a [Hatchet] from him"
+  note "Alternatively, check the Auction House for something better or cheaper"
+  note "Make sure you save 6s for training later"
+  collect 853 x1 @57.547293,57.075553 map 1453 optional -- Hatchet (1)
+step
+  only Rogue
+  when has 853
+  when level>=11
+  along until Continue
+  zone map 1453
+  note "Equip the [Hatchet]"
+  use 853 @57.547293,57.075553 map 1453 optional
+step
+  zone map 1453
+  note "Talk to Innkeeper Allison"
+  sethome "Stormwind City" @52.622687,65.700493 map 1453 -- Set your Hearthstone to Stormwind City
+step
+  only Hunter
+  zone map 1453
+  goto 50.456456,57.226163 map 1453 r 8
+  note "Talk to Lina Stover"
+  note "Buy and equip a [Laminated Recurve Bow]"
+  collect 2507 x1 @50.456456,57.226163 map 1453 optional
+step
+  only Hunter
+  zone map 1453
+  note "Talk to Lina Stover"
+  vendor 1297 -- Buy 6 stacks of [Sharp Arrows] and destroy any remaining [Rough Arrows]
+step
+  only Hunter
+  when has 2507
+  along until next_275
+  zone map 1453
+  note "Equip the [Laminated Recurve Bow]"
+  use 2507 @50.456456,57.226163 map 1453
+step
+  only Warlock
+  label next_275
+  along until GakinStart
+  zone map 1453
+  goto 29.200309,73.99967 map 1453 r 20 optional
+  goto 27.199967,78.099612 map 1453 r 15 optional -- Travel to The Slaughtered Lamb and go downstairs
+step
+  only Warlock
+  when onquest 1685
+  turnin 1685 -- Turn in Gakin's Summons
+step
+  only Warlock
+  label GakinStart
+  zone map 1453
+  note "Talk to Gakin the Darkbinder"
+  accept 1688 -- Accept Surena Caledon
+step
+  only Warlock
+  along until WLHoggerEnd
+  zone map 1429
+  goto 42.105068,65.927081 map 1429 r 8
+step
+  only Warlock
+  when onquest 123
+  zone map 1429
+  goto 42.105068,65.927081 map 1429 r 8
+  note "Talk to Marshal Dughan"
+step
+  only Warlock
+  when onquest 123
+  when onquest 176
+  turnin 176 -- Turn in Wanted: "Hogger"
+step
+  only Warlock
+  when onquest 123
+  turnin 123 -- Turn in The Collector
+step
+  only Warlock
+  when onquest 176
+  label WLHoggerEnd
+  zone map 1429
+  note "Talk to Marshal Dughan"
+  turnin 176 -- Turn in Wanted: "Hogger"
+step
+  only Warlock
+  when has 6215
+  along until WLBandanaEnd
+  zone map 1429
+  note "Equip the [Balanced Fighting Stick]"
+  use 6215 @42.105068,65.927081 map 1429 optional
+step
+  only Warlock
+  label BoarMeatCooking4
+  along until SChoker
+  zone map 1429
+  goto 49.917,72.959 map 1429 r 1 optional
+  goto 54.444,75.879 map 1429 r 1 optional
+  goto 57.62,76.213 map 1429 r 1 optional
+  goto 61.911,78.274 map 1429 r 1 optional
+  goto 65.619,78.388 map 1429 r 1 optional
+  note "Kill Rockhide Boars. Loot them for their [Chunks of Boar Meat]"
+  collect 769 x10 @65.619,78.388 map 1429 optional -- Chunk of Boar Meat (1-10)
+step
+  only Warlock
+  zone map 1429
+  goto 49.917,72.959 map 1429 r 1 optional
+  goto 54.444,75.879 map 1429 r 1 optional
+  goto 57.62,76.213 map 1429 r 1 optional
+  goto 61.911,78.274 map 1429 r 1 optional
+  goto 65.619,78.388 map 1429 r 1
+  note "Kill Rockhide Boars. Loot them for their [Chunks of Boar Meat]"
+  collect 769 x10 @65.619,78.388 map 1429 optional -- Chunk of Boar Meat (1-10)
+step
+  only Warlock
+  along until SChoker
+  zone map 1429
+  goto 49.917,72.959 map 1429 r 1 optional
+  goto 54.444,75.879 map 1429 r 1 optional
+  goto 57.62,76.213 map 1429 r 1 optional
+  goto 61.911,78.274 map 1429 r 1 optional
+  goto 65.619,78.388 map 1429 r 1 optional
+  note "Kill Rockhide Boars. Loot them for their [Chunks of Boar Meat]"
+  note "Don't go out of your way to farm this now. Simply kill and loot all the boars you're passing by"
+  collect 769 x50 @65.619,78.388 map 1429 optional -- Chunk of Boar Meat (10-50)
+step
+  only Warlock
+  along until SChoker
+  zone map 1429
+  note "Kill Defias Bandits. Loot them for the [Westfall Deed]"
+  use 1972 @65.619,78.388 map 1429 -- Use the [Westfall Deed] to start the quest
+  note "The [Westfall Deed] is a very rare drop. Ignore this step if you don't get it"
+  collect 1972 x1 @65.619,78.388 map 1429 optional -- Collect Westfall Deed (x1)
+  accept 184 -- Accept Furlbrow's Deed
+step
+  only Warlock
+  when onquest 83
+  label WLBandanaEnd
+  along
+  loop
+  zone map 1429
+  goto 70.499972,77.600026 map 1429 r 1
+  goto 70.7999,80.899972 map 1429 r 1
+  goto 70.499972,77.600026 map 1429 r 60
+  goto 68.099973,77.500224 map 1429 r 60
+  goto 68.199948,81.399846 map 1429 r 60
+  goto 70.7999,80.899972 map 1429 r 60
+  note "Kill Defias Bandits. Loot them for their Red Linen Bandanas"
+  collect 1019 x6 quest 83.1 -- Collect Red Linen Bandana (x6)
+step
+  only Warlock
+  label SChoker
+  zone map 1429
+  note "Kill Surena Caledon. Loot her for her Choker"
+  note "Focus on killing Surena Caledon very quickly"
+  note "Cast [Fear] on Morgan the Collector continously"
+  collect 6810 x1 quest 1688.1 -- Surena's Choker (1)
+step
+  only Warlock
+  label WolfMeatCooking9
+  along until WlockRedridge
+  zone map 1429
+  goto 84.448,72.486 map 1429 r 1 optional
+  goto 88.611,71.379 map 1429 r 1 optional
+  goto 89.657,75.373 map 1429 r 1 optional
+  goto 87.25,75.853 map 1429 r 1 optional
+  note "Kill Prowlers. Loot them for their [Stringy Wolf Meat]"
+  collect 2672 x10 @87.25,75.853 map 1429 optional -- Stringy Wolf Meat (1-10)
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  zone map 1429
+  goto 84.448,72.486 map 1429 r 1 optional
+  goto 88.611,71.379 map 1429 r 1 optional
+  goto 89.657,75.373 map 1429 r 1 optional
+  goto 87.25,75.853 map 1429 r 1
+  note "Kill Prowlers. Loot them for their [Stringy Wolf Meat]"
+  collect 2672 x10 @87.25,75.853 map 1429 optional -- Stringy Wolf Meat (1-10)
+step
+  only Warlock
+  along until WlockRedridge
+  zone map 1429
+  goto 84.448,72.486 map 1429 r 1 optional
+  goto 88.611,71.379 map 1429 r 1 optional
+  goto 89.657,75.373 map 1429 r 1 optional
+  goto 87.25,75.853 map 1429 r 1 optional
+  note "Kill Prowlers. Loot them for their [Stringy Wolf Meat]"
+  note "Don't go out of your way to farm this now. Simply kill and loot all the wolves you're passing by"
+  collect 2672 x50 @87.25,75.853 map 1429 optional -- Stringy Wolf Meat (10-50)
+step
+  only Warlock
+  when onquest 83
+  zone map 1429
+  note "Kill Defias Bandits. Loot them for their Red Linen Bandanas"
+  collect 1019 x6 quest 83.1 -- Collect Red Linen Bandana (x6)
+step
+  only Warlock
+  when onquest 83
+  when onquest 59
+  turnin 59 -- Turn in Cloth and Leather Armor
+step
+  only Warlock
+  when onquest 83
+  zone map 1429
+  note "Talk to Sara Timberlain"
+  turnin 83 -- Turn in Red Linen Goods
+step
+  only Warlock
+  when onquest 83
+  zone map 1429
+  note "Kill Defias Bandits. Loot them for their Red Linen Bandanas"
+  collect 1019 x6 quest 83.1 -- Collect Red Linen Bandana (x6)
+step
+  only Warlock
+  when onquest 59
+  zone map 1429
+  note "Talk to Sara Timberlain"
+  turnin 59 -- Turn in Cloth and Leather Armor
+step
+  only Warlock
+  label SoulShards
+  along until Gnolls
+  zone map 1429
+  note "Grind en-route. Make sure you have at least 2 [Soul Shards] before reaching Redridge by using [Drain Soul] as mobs are about to die"
+  collect 6265 x2 @79.456897,68.788935 map 1429 -- Soul Shard (2)
+step
+  only Warlock
+  label WlockRedridge
+  along until Gnolls
+  zone map 1433
+  goto 17.400087,69.600032 map 1433 r 8
+step
+  only Warlock
+  zone map 1429
+  note "Grind en-route. Make sure you have at least 2 [Soul Shards] before reaching Redridge by using [Drain Soul] as mobs are about to die"
+  collect 6265 x2 @79.456897,68.788935 map 1429 -- Soul Shard (2)
+step
+  only Warlock
+  label Gnolls
+  zone map 1433
+  note "Talk to Guard Parker"
+  accept 244 -- Accept Encroaching Gnolls
+step
+  only Warlock
+  zone map 1433
+  goto 18.5812,69.207744 map 1433 r 15 optional
+  goto 23.324999,71.372925 map 1433 r 25 optional
+  goto 29.564997,67.930046 map 1433 r 25 optional
+  goto 30.733211,59.995884 map 1433 r 25 -- Travel towards Lakeshire
+  note "STICK TO THE MAIN ROAD AND AVOID ANY CLOSE MOBS EN-ROUTE"
+step
+  only Warlock
+  when onquest 244
+  zone map 1433
+  note "Talk to Deputy Feldon"
+  turnin 244 -- Turn in Encroaching Gnolls
+step
+  only Warlock
+  zone map 1433
+  goto 30.590409,59.41643 map 1433 r 8
+  note "Talk to Ariena Stormfeather"
+  getfp "Redridge Mountains" @30.590409,59.41643 map 1433 -- Get the Redridge Mountains flight path
+  fly "Stormwind" -- Fly to Stormwind
+step
+  only Warlock
+  along until TheBinding
+  zone map 1453
+  goto 29.200309,73.99967 map 1453 r 20 optional
+  goto 27.199967,78.099612 map 1453 r 15 optional -- Travel to The Slaughtered Lamb and go downstairs
+step
+  only Warlock
+  when level>=12
+  zone map 1453
+  note "Talk to Ursula Deline"
+  train 5495 -- Train your class spells
+step
+  only Warlock
+  when onquest 1688
+  turnin 1688 -- Turn in Surena Caledon
+step
+  only Warlock
+  label TheBinding
+  zone map 1453
+  note "Talk to Gakin the Darkbinder"
+  accept 1689 -- Accept The Binding
+step
+  only Warlock
+  along until next_304
+  zone map 1453
+  note "Travel to the bottom of The Slaughtered Lamb"
+  note "Use the [Bloodstone Choker] to call forth a Summoned Voidwalker"
+  use 6928 @25.154247,77.40569 map 1453
+step
+  only Warlock
+  label next_304
+  zone map 1453
+  use 6928 @25.154247,77.40569 map 1453 -- Kill the Summoned Voidwalker
+  kill 5676 x1 quest 1689.1 -- Kill Summoned Voidwalker (x1)
+step
+  only Warlock
+  when onquest 1689
+  zone map 1453
+  note "Talk to Gakin the Darkbinder"
+  turnin 1689 -- Turn in The Binding
+step
+  only Rogue
+  zone map 1453
+  goto 74.650256,52.829462 map 1453 r 8
+  note "Talk to Osborne the Night Man"
+  note "Only train [Dual Wield] and [Sprint]"
+  learn 674 "Dual Wield"
+  learn 2983 "Sprint"
+step
+  only Rogue
+  when has 2494
+  label StilettoDW
+  along until Continue
+  zone map 1453
+  note "Equip the [Stiletto] in your offhand"
+  use 2494 @74.650256,52.829462 map 1453 optional
+step
+  only Rogue
+  when has 2494
+  zone map 1453
+  note "Equip the [Stiletto] in your offhand"
+  use 2494 @74.650256,52.829462 map 1453 optional
+step
+  only Rogue
+  along until Continue
+  note "Don't worry if you're not [Dual Wielding] right now, you'll buy a weapon later when necessary"
+step
+  only Human
+  when onquest 6281
+  turnin 6281 -- Turn in Continue to Stormwind
+step
+  only Human
+  label Continue
+  zone map 1453
+  goto 74.311783,47.240153 map 1453 r 8 optional
+  note "Talk to Osric Strang"
+  accept 6261 only !Hunter -- Accept Dungar Longdrink
+step
+  only Warrior
+  when onquest 1638
+  turnin 1638 -- Turn in A Warrior's Training
+step
+  only Warrior
+  zone map 1453
+  note "Talk to Harry Burlguard"
+  accept 1639 -- Accept Bartleby the Drunk
+step
+  only Warrior
+  when onquest 1639
+  turnin 1639 -- Turn in Bartleby the Drunk
+step
+  only Warrior
+  zone map 1453
+  note "Talk to Bartleby"
+  accept 1640 -- Accept Beat Bartleby
+step
+  only Warrior
+  zone map 1453
+  note "Attack Bartleby. He will submit at 1%"
+  kill 6090 x1 quest 1640.1 -- Beat Bartleby
+step
+  only Warrior
+  when onquest 1640
+  turnin 1640 -- Turn in Beat Bartleby
+step
+  only Warrior
+  zone map 1453
+  note "Talk to Bartleby"
+  accept 1665 -- Accept Bartleby's Mug
+step
+  only Warrior
+  when onquest 1665
+  zone map 1453
+  note "Talk to Harry Burlguard"
+  turnin 1665 -- Turn in Bartleby's Mug
+step
+  only Priest
+  along until Prayer
+  zone map 1453
+  goto 42.510136,33.510086 map 1453 r 20 -- Enter the Stormwind Cathedral
+step
+  only Priest
+  zone map 1453
+  note "Talk to High Priestess Laurena"
+  note "Quest not in Forever reference: .turnin -94774. Turn in Divine Grace"
+  train 376 -- Train your class spells
+step
+  only Priest
+  label Prayer
+  zone map 1453
+  note "Talk to High Priestess Laurena"
+  train 376 -- Train your class spells
+step
+  zone map 1453
+  note "Talk to Grimand Elmore"
+  turnin 1097 -- Turn in Elmore's Task
+  accept 353 -- Accept Stormpike's Delivery
+step
+  only Warrior
+  along until DeeprunEnter
+  note "Put [Sunder Armor] on your action bar and ensure to use it constantly. It is more effective than using [Heroic Strike]"
+step
+  only Warrior
+  when !turnedin 432
+  zone map 1453
+  note "Talk to Kaita Deepforge"
+  collect 2901 x1 @56.299776,16.999868 map 1453 -- Buy a [Mining Pick] from her
+  note "You'll train [Mining] later"
+step
+  only Paladin
+  when !turnedin 432
+  zone map 1453
+  note "Talk to Kaita Deepforge"
+  collect 2901 x1 @56.299776,16.999868 map 1453 -- Buy a [Mining Pick] from her
+  note "You'll train [Mining] later"
+step
+  only Rogue
+  when !turnedin 432
+  zone map 1453
+  note "Talk to Kaita Deepforge"
+  collect 2901 x1 @56.299776,16.999868 map 1453 -- Buy a [Mining Pick] from her
+  note "You'll train [Mining] later"
+step
+  when !zone "Ironforge"
+  label DeeprunEnter
+  zone map 1453
+  goto 60.900786,11.875777 map 1453 r 20 optional
+  goto 63.898696,8.1719945 map 1453 r 8
+step
+  label TramEnd
+  zone map 1453
+  note "Take the Deeprun Tram to the Ironforge side"
+  note "Level your [First Aid] while waiting for the Tram to Ironforge if needed" only Rogue
+  note "Level your [First Aid] while waiting for the Tram to Ironforge if needed" only Warrior
+  note "Level your [First Aid] while waiting for the Tram to Ironforge if needed" only Paladin
+  note "You will need your [First Aid] to be 80 for a quest at level 24" only Rogue,Human,Gnome,NightElf,Orc,Troll,Tauren,Undead,Skyborne
+  note "Cast [Summon Voidwalker] and [Create Healthstone] while waiting for the Tram to Ironforge if needed" only Warlock
+  note "Talk to Monty on the middle platform on the Ironforge side of the Deeprun Tram"
+  accept 6661 @63.898696,8.1719945 map 1453 -- Accept Deeprun Rat Roundup
+step
+  zone map 1453
+  note "Use the [Rat Catcher's Flute] on Deeprun Rats inside the Deeprun Tram"
+  kill 13016 x5 quest 6661.1 @63.898696,8.1719945 map 1453 -- Rats Captured (x5)
+  use 17117 @63.898696,8.1719945 map 1453
+step
+  zone map 1453
+  note "Talk to Monty inside the Deeprun Tram"
+  turnin 6661 @63.898696,8.1719945 map 1453 -- Turn in Deeprun Rat Roundup
+step
+  only Warrior
+  along until next_330
+  zone map 1455
+  goto 67.4,84.909 map 1455 r 15 optional
+  goto 65.904696,88.404962 map 1455 r 12 optional -- Travel toward Bilban Tosslespanner
+step
+  only Warrior
+  when level>=10
+  when level<12
+  label next_330
+  zone map 1455
+  goto 65.904696,88.404962 map 1455 r 8
+  note "Talk to Bilban Tosslespanner"
+  note "Ensure you save 20s 70c for later"
+  learn 2687 "your class spells"
+step
+  only Warrior
+  along until next_332
+  zone map 1455
+  goto 61.552,85.636 map 1455 r 10 optional
+  goto 61.356,88.398 map 1455 r 6 optional -- Enter the Timberline Arms building
+step
+  only Warrior
+  label next_332
+  zone map 1455
+  note "Talk to Bixi Wobblebonk and Buliwyf Stonehand"
+  learn 2567 "Thrown"
+  goto 62.236711,89.627468 map 1455 r 8 optional
+  learn 199 "2h Maces"
+  goto 61.176791,89.50806 map 1455 r 8
+step
+  only Warrior
+  when level>=10+7405
+  zone map 1455
+  goto 62.374577,88.679789 map 1455 r 8
+  note "Talk to Brenwyn Wintersteel down stairs"
+  note "Buy the [Keen Throwing Knives] from her"
+  collect 3107 x1 @62.374577,88.679789 map 1455 optional -- Collect Keen Throwing Knife (1)
+step
+  only Warrior
+  when level<10+7405
+  zone map 1455
+  goto 62.374577,88.679789 map 1455 r 8
+  note "Talk to Brenwyn Wintersteel down stairs"
+  note "Buy the [Balanced Throwing Daggers] from her"
+  collect 2946 x1 @62.374577,88.679789 map 1455 optional -- Collect Balanced Throwing Dagger (1)
+step
+  only Warrior
+  when has 3107
+  when level>=11
+  along until Rudra
+  zone map 1455
+  note "Equip the [Keen Throwing Knives]"
+  use 3107 @62.374577,88.679789 map 1455 optional
+step
+  only Warrior
+  when has 2946
+  along until Rudra
+  zone map 1455
+  note "Equip the [Balanced Throwing Daggers]"
+  use 2946 @62.374577,88.679789 map 1455 optional
+step
+  only Warrior
+  along until next_338
+  zone map 1455
+  goto 61.356,88.398 map 1455 r 6 -- Exit the Timberline Arms building
+step
+  label next_338
+  zone map 1455
+  note "Talk to Gryth Thurden"
+  getfp "Ironforge" @55.501534,47.741966 map 1455 -- Get the Ironforge flight path
+step
+  only Mage
+  along until next_340
+  zone map 1455
+  goto 49.110387,56.020887 map 1455 r 30 optional
+  goto 44.08019,46.599066 map 1455 r 20 optional
+  goto 40.839715,44.589987 map 1455 r 20 optional
+  goto 35.299794,32.759166 map 1455 r 20 optional
+  goto 27.169518,12.579297 map 1455 r 20 optional only Paladin
+  goto 27.599557,11.05922 map 1455 r 20 optional only Mage
+  goto 27.169518,8.5800931 map 1455 r 12 optional only Mage -- Travel toward Dink
+  goto 23.130941,6.1426635 map 1455 r 12 optional only Paladin -- Travel toward Brandur Ironhammer
+step
+  only Paladin
+  along until next_340
+  zone map 1455
+  goto 49.110387,56.020887 map 1455 r 30 optional
+  goto 44.08019,46.599066 map 1455 r 20 optional
+  goto 40.839715,44.589987 map 1455 r 20 optional
+  goto 35.299794,32.759166 map 1455 r 20 optional
+  goto 27.169518,12.579297 map 1455 r 20 optional only Paladin
+  goto 27.599557,11.05922 map 1455 r 20 optional only Mage
+  goto 27.169518,8.5800931 map 1455 r 12 optional only Mage -- Travel toward Dink
+  goto 23.130941,6.1426635 map 1455 r 12 optional only Paladin -- Travel toward Brandur Ironhammer
+step
+  only Mage
+  label next_340
+  zone map 1455
+  goto 27.169518,8.5800931 map 1455 r 8
+  note "Talk to Dink inside"
+  learn 122 "your class spells"
+step
+  only Paladin
+  zone map 1455
+  goto 23.130941,6.1426635 map 1455 r 8
+  note "Talk to Brandur Ironhammer inside"
+  learn 633 "your class spells"
+step
+  when !zone "Dun Morogh"
+  when !turnedin 418
+  zone map 1455
+  goto 25.799715,75.499474 map 1455 r 1 optional -- c:Ironforge,25.800,75.500
+  goto 24.199715,74.599179 map 1455 r 1 optional -- c:Ironforge,24.200,74.600
+  goto 23.800032,71.799737 map 1455 r 1 -- c:Ironforge,23.800,71.800
+  note "Talk to an Ironforge Auctioneer"
+  note "Buy [Chunks of Boar Meat] and/or [Stringy Wolf Meat] to level your [Cooking] with later"
+  note "You need 50 [Cooking] for a quest in Darkshire later"
+  note "If you don't want to or can't do this, skip this step"
+  note "Buy the following items for a faster turn in at Loch Modan shortly and to level your [Cooking] skill with:"
+  note "[Boar Intestines]"
+  note "[Bear Meat]"
+  note "[Spider Ichor]"
+  note "[Chunks of Boar Meat]"
+  note "[Stringy Wolf Meat]"
+  collect 3172 x3 @23.800032,71.799737 map 1455 optional -- Boar Intestines (3)
+  collect 3173 x3 @23.800032,71.799737 map 1455 optional -- Bear Meat (3)
+  collect 3174 x3 @23.800032,71.799737 map 1455 optional -- Spider Ichor (3)
+  collect 769 x50 @23.800032,71.799737 map 1455 optional -- Chunk of Boar Meat (1-50)
+  collect 2672 x50 @23.800032,71.799737 map 1455 optional -- Stringy Wolf Meat (1-50)
+step
+  when !zone "Dun Morogh"
+  when !turnedin 418
+  zone map 1455
+  note "Talk to an Ironforge Auctioneer"
+  note "If you don't want to or can't do this, skip this step"
+  note "Buy the following items for a faster turn in at Loch Modan shortly:"
+  note "[Boar Intestines]"
+  note "[Bear Meat]"
+  note "[Spider Ichor]"
+  collect 3172 x3 @23.800032,71.799737 map 1455 -- Boar Intestines (3)
+  collect 3173 x3 @23.800032,71.799737 map 1455 -- Bear Meat (3)
+  collect 3174 x3 @23.800032,71.799737 map 1455 -- Spider Ichor (3)
+step
+  zone map 1426
+  goto 53.47,35.02 map 1426 r 8
+  note "Exit Ironforge"
+step
+  zone map 1426
+  note "Talk to Beldin Steelgrill::1376"
+  accept 96408 -- Accept A Visitor to Dun Morogh
+step
+  label BoarMeatDunMorogh1
+  along until Dirt
+  zone map 1426
+  goto 57.936,50.787 map 1426 r 1
+  note "Kill Elder Crag Boars. Loot them for their [Chunks of Boar Meat]"
+  note "This will be used to level your [Cooking] later"
+  note "You need 10 [Cooking] for a quest in Auberdine later"
+  collect 769 x10 @57.936,50.787 map 1426 optional -- Chunk of Boar Meat (1-10)
+step
+  zone map 1426
+  goto 57.936,50.787 map 1426 r 1
+  note "Kill Elder Crag Boars. Loot them for their [Chunks of Boar Meat]"
+  note "This will be used to level your [Cooking] later"
+  note "You need 10 [Cooking] for a quest in Auberdine later"
+  collect 769 x10 @57.936,50.787 map 1426 optional -- Chunk of Boar Meat (1-10)
+step
+  along until Dirt
+  zone map 1426
+  goto 57.936,50.787 map 1426 r 1
+  note "Kill Elder Crag Boars. Loot them for their [Chunks of Boar Meat]"
+  note "This will be used to level your [Cooking] later"
+  note "You need 50 [Cooking] for a quest in Darkshire later"
+  note "Don't go out of your way to farm this now. Simply kill and loot all the boars you're passing by"
+  collect 769 x50 @57.936,50.787 map 1426 optional -- Chunk of Boar Meat (10-50)
+step
+  when !turnedin 314
+  label Dirt
+  along until Rudra
+  zone map 1426
+  goto 59.840061,49.559899 map 1426 r 40 optional
+  goto 61.360061,47.070051 map 1426 r 40 optional -- Go up the dirt path
+step
+  when !turnedin 314
+  zone map 1426
+  goto 59.840061,49.559899 map 1426 r 40 optional
+  goto 61.360061,47.070051 map 1426 r 40 -- Go up the dirt path
+step
+  along until VagashEnd
+  zone map 1426
+  goto 62.778,54.591 map 1426 r 1 optional
+  goto 62.538,46.195 map 1426 r 1 optional
+  note "Kite Vagash down to Rudra"
+step
+  when !turnedin 314
+  zone map 1426
+  goto 59.840061,49.559899 map 1426 r 40 optional
+  goto 61.360061,47.070051 map 1426 r 40 -- Go up the dirt path
+step
+  only Warrior
+  when has 3107
+  when level>=11
+  along until VagashEnd
+  zone map 1426
+  note "Equip the [Keen Throwing Knives]"
+  use 3107 @62.538,46.195 map 1426 optional
+step
+  only Rogue
+  when has 3107
+  when level>=11
+  along until VagashEnd
+  zone map 1426
+  note "Equip the [Keen Throwing Knives]"
+  use 3107 @62.538,46.195 map 1426 optional
+step
+  label Rudra
+  zone map 1426
+  note "Talk to Rudra Amberstill"
+  accept 314 -- Accept Protecting the Herd
+step
+  label VagashEnd
+  zone map 1426
+  goto 62.778,54.591 map 1426 r 1 optional
+  note "Kill Vagash. Loot him for his Fang"
+  note "Kite him to the guard south of the ranch. Make sure you do 51%+ damage to him"
+  note "Watch the video below before you attempt to kill Vagash. It can be soloed on any class"
+  collect 3627 x1 quest 314.1 -- Collect Fang of Vagash (1)
+step
+  zone map 1426
+  note "Talk to Rudra Amberstill"
+  turnin 314 -- Turn in Protecting the Herd
+step
+  label BoarMeatDunMorogh2
+  along until QuarryStart
+  zone map 1426
+  goto 66.356,51.02 map 1426 r 1 optional
+  note "Kill Large Crag Boars. Loot them for their [Chunks of Boar Meat]"
+  collect 769 x10 @66.356,51.02 map 1426 optional -- Chunk of Boar Meat (1-10)
+step
+  zone map 1426
+  goto 66.356,51.02 map 1426 r 1
+  note "Kill Large Crag Boars. Loot them for their [Chunks of Boar Meat]"
+  collect 769 x10 @66.356,51.02 map 1426 optional -- Chunk of Boar Meat (1-10)
+step
+  along until QuarryStart
+  zone map 1426
+  goto 66.356,51.02 map 1426 r 1 optional
+  note "Kill Large Crag Boars. Loot them for their [Chunks of Boar Meat]"
+  note "Don't go out of your way to farm this now. Simply kill and loot all the boars you're passing by"
+  collect 769 x50 @66.356,51.02 map 1426 optional -- Chunk of Boar Meat (10-50)
+step
+  label QuarryStart
+  zone map 1426
+  note "Talk to Earthseer Farsen"
+  note "Quest not in Forever reference: .turnin -96408. Turn in A Visitor to Dun Morogh"
+  accept 96392 -- Accept Farsen's Watch
+step
+  when onquest 96392
+  zone map 1426
+  goto 64.899959,58.499897 map 1426 r 8
+  note "You can cancel the Farsight once the objective completes"
+step
+  zone map 1426
+  note "Talk to Earthseer Farsen"
+  note "Press ESCAPE to cancel the Farsight"
+  turnin 96392 -- Turn in Farsen's Watch
+  accept 96390 -- Accept Nip 'Em in the Bud
+step
+  zone map 1426
+  goto 68.378944,54.49208 map 1426 r 8
+  note "Talk to Cook Ghilm"
+  learn 2550 "Cooking"
+step
+  only Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Undead,Skyborne
+  when level<15
+  zone map 1426
+  goto 68.614071,54.643146 map 1426 r 8
+  note "Talk to Kazan Mogosh"
+  vendor 1237 only Warrior -- Buy [Freshly Baked Bread] if needed
+  vendor 1237 only Rogue -- Buy [Freshly Baked Bread] if needed
+  vendor 1237 only !Warrior,!Rogue -- Buy [Freshly Baked Bread] and [Ice Cold Milk] if needed
+step
+  zone map 1426
+  note "Talk to Senator Mehr Stonehallow and Foreman Stonebrow"
+  accept 433 -- Accept The Public Servant
+  accept 432 -- Accept Those Blasted Troggs!
+  goto 69.083919,56.330151 map 1426 r 8 optional
+step
+  only Warrior
+  zone map 1426
+  goto 69.323919,55.45604 map 1426 r 8
+  note "Talk to Dank Drizzlecut"
+  learn 2575 "Mining"
+  note "This is used in conjunction with [Blacksmithing] to make [Rough Sharpening Stones] and [Rough Weightstones] to increase your weapon damage"
+  note "If you don't want to do this, skip this step"
+step
+  only Paladin
+  zone map 1426
+  goto 69.323919,55.45604 map 1426 r 8
+  note "Talk to Dank Drizzlecut"
+  learn 2575 "Mining"
+  note "This is used in conjunction with [Blacksmithing] to make [Rough Sharpening Stones] and [Rough Weightstones] to increase your weapon damage"
+  note "If you don't want to do this, skip this step"
+step
+  only Rogue
+  zone map 1426
+  goto 69.323919,55.45604 map 1426 r 8
+  note "Talk to Dank Drizzlecut"
+  learn 2575 "Mining"
+  note "This is used in conjunction with [Blacksmithing] to make [Rough Sharpening Stones] and [Rough Weightstones] to increase your weapon damage"
+  note "If you don't want to do this, skip this step"
+step
+  only Warrior
+  along until QuarryEnd
+  note "Cast [Find Minerals]"
+step
+  only Paladin
+  along until QuarryEnd
+  note "Cast [Find Minerals]"
+step
+  only Rogue
+  along until QuarryEnd
+  note "Cast [Find Minerals]"
+step
+  zone map 1426
+  note "Kill Rockjaw Skullthumpers and Rockjaw Bonesnappers inside the cave. Loot them for the [Empty Powder Keg]"
+  use 268548 @70.699959,56.399897 map 1426 -- Use the [Empty Powder Keg] to start the quest
+  note "NOTE: This item has a low drop rate. Skip this step if you do not find it"
+  kill 1115 x6 quest 432.1 @70.699959,56.399897 map 1426 -- Kill Rockjaw Skullthumper (x6)
+  kill 1117 x10 quest 433.1 @70.699959,56.399897 map 1426 -- Kill Rockjaw Bonesnapper (x10)
+  collect 268548 x1 @70.699959,56.399897 map 1426 optional -- Empty Powder Keg (1)
+  accept 95213 -- Accept Stolen Blasting Powder
+step
+  label QuarryEnd
+  zone map 1426
+  note "Talk to Foreman Stonebrow and Senator Mehr Stonehallow"
+  turnin 432 -- Turn in Those Blasted Troggs!
+  turnin 433 -- Turn in The Public Servant
+  goto 68.670924,55.968933 map 1426 r 8 optional
+step
+  when onquest 95213
+  zone map 1426
+  note "Talk to Quarrymaster Thesten"
+  turnin 95213 -- Turn in Stolen Blasting Powder
+  accept 95214 -- Accept Stolen Blasting Powder
+step
+  when turnedin 95213
+  zone map 1426
+  note "Talk to Quarrymaster Thesten"
+  accept 95214 -- Accept Stolen Blasting Powder
+step
+  only Priest,Shaman,Mage,Warlock,Druid
+  when level<15
+  zone map 1426
+  note "Talk to Kazan Mogosh"
+  vendor 1237 -- Buy up to 20 [Ice Cold Milk] from him
+step
+  when onquest 95214
+  along until SpyMap
+  zone map 1426
+  note "Kill Rockjaw Ambushers. Loot them for their Stolen Blasting Powder"
+  collect 267415 x16 quest 95214.1 @68.614071,54.643146 map 1426 -- Stolen Blasting Powder (16)
+step
+  along until OII
+  zone map 1426
+  note "Kill Rockjaw Ambushers. Loot them for the [Empty Powder Keg]"
+  use 268548 @68.614071,54.643146 map 1426 -- Use the [Empty Powder Keg] to start the quest
+  note "NOTE: This item has a low drop rate. Skip this step if you do not find it by the time you are done with the Dark Iron Spies"
+  collect 268548 x1 @68.614071,54.643146 map 1426 optional -- Empty Powder Keg (1)
+  accept 95213 -- Accept Stolen Blasting Powder
+step
+  label SpyMap
+  zone map 1426
+  note "Kill Dark Iron Spies. Loot them for the [Dark Iron Map]"
+  use 274268 @77.899959,62.299998 map 1426 -- Use the [Dark Iron Map] to start the quest
+  kill 6123 x10 quest 96390.1 @77.899959,62.299998 map 1426 -- Dark Iron Spy slain 10/10
+  collect 274268 x1 @77.899959,62.299998 map 1426 optional -- Dark Iron Map (1)
+  accept 96391 -- Accept Underground Map
+step
+  when onquest 95214
+  loop
+  zone map 1426
+  goto 74.800061,56.599999 map 1426 r 50
+  goto 73.800061,51.599898 map 1426 r 50
+  goto 71.600061,53.599999 map 1426 r 50
+  goto 74.800061,56.599999 map 1426 r 1
+  goto 73.800061,51.599898 map 1426 r 1
+  goto 71.600061,53.599999 map 1426 r 1
+  note "Kill Rockjaw Ambushers. Loot them for their Stolen Blasting Powder"
+  collect 267415 x16 quest 95214.1 -- Stolen Blasting Powder (16)
+step
+  when complete 95214
+  zone map 1426
+  note "Talk to Quarrymaster Thesten"
+  turnin 95214 -- Turn in Stolen Blasting Powder
+step
+  label OII
+  zone map 1426
+  note "Talk to Earthseer Farsen"
+  turnin 96390 -- Turn in Nip 'Em in the Bud
+  turnin 96391 -- Turn in Underground Map
+  accept 96393 -- Accept Old Ironforge Incursion
+step
+  when onquest 95213
+  zone map 1426
+  note "Talk to Quarrymaster Thesten"
+  turnin 95213 -- Turn in Stolen Blasting Powder
+  accept 95214 -- Accept Stolen Blasting Powder
+step
+  when turnedin 95213
+  zone map 1426
+  note "Talk to Quarrymaster Thesten"
+  accept 95214 -- Accept Stolen Blasting Powder
+step
+  when onquest 95214
+  loop
+  zone map 1426
+  goto 74.800061,56.599999 map 1426 r 50
+  goto 73.800061,51.599898 map 1426 r 50
+  goto 71.600061,53.599999 map 1426 r 50
+  goto 74.800061,56.599999 map 1426 r 1
+  goto 73.800061,51.599898 map 1426 r 1
+  goto 71.600061,53.599999 map 1426 r 1
+  note "Kill Rockjaw Ambushers. Loot them for their Stolen Blasting Powder"
+  collect 267415 x16 quest 95214.1 -- Stolen Blasting Powder (16)
+step
+  when complete 95214
+  zone map 1426
+  note "Talk to Quarrymaster Thesten"
+  turnin 95214 -- Turn in Stolen Blasting Powder
+step
+  zone map 1426
+  note "Talk to Pilot Hammerfoot"
+  accept 419 -- Accept The Lost Pilot
+step
+  zone map 1426
+  note "Click the Dwarven Corpse on the ground"
+  turnin 419 -- Turn in The Lost Pilot
+  accept 417 -- Accept A Pilot's Revenge
+step
+  zone map 1426
+  note "Kill Mangeclaw. Loot him for his Claw"
+  collect 3183 x1 quest 417.1 -- Collect Mangy Claw (x1)
+step
+  label Revenge
+  zone map 1426
+  goto 83.892041,39.188124 map 1426 r 8 optional
+  note "Talk to Pilot Hammerfoot"
+  turnin 417 only Rogue -- Turn in A Pilot's Revenge
+  turnin 417 only !Rogue -- Turn in A Pilot's Revenge
+step
+  only Rogue
+  when has 2218
+  along until enterloch
+  zone map 1426
+  note "Equip the [Craftsman's Dagger] in your offhand"
+  use 2218 @83.892041,39.188124 map 1426 optional
+step
+  when !zone "Loch Modan"
+  label enterloch
+  zone map 1426
+  goto 84.400061,31.100004 map 1426 r 25 -- Go through the tunnel to Loch Modan

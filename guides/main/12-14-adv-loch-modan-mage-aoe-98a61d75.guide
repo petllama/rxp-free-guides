@@ -1,0 +1,673 @@
+guide rxp-free/12-14-adv-loch-modan-mage-aoe-98a61d75
+title "12-14 ADV Loch Modan Mage AoE"
+levels 12-14
+zone map 1432
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · ADV AoE Alliance Mage"
+class Mage
+next rxp-free/14-16-adv-darkshore-2-mage-aoe-9a417233
+step
+  along until next_1
+  note "As you quest through Loch Modan, save ALL of the [Chunks of Boar Meat] you loot for later"
+step
+  label next_1
+  zone map 1432
+  note "Talk to Cobbleflint"
+  accept 224 -- Accept In Defense of the King's Lands
+step
+  along until next_4
+  zone map 1432
+  goto 23.269852,75.649753 map 1432 r 12 optional
+  goto 23.620063,75.41981 map 1432 r 12 optional
+  goto 23.120124,73.929798 map 1432 r 12 optional -- Enter the Bunker. Go to the top floor
+step
+  label next_4
+  zone map 1432
+  note "Talk to Rugelfuss"
+  accept 267 -- Accept The Trogg Threat
+step
+  along until Rugel2
+  zone map 1432
+  note "Kill Mountain Boars. Loot them for their Boar Intestines"
+  note "Kill Elder Black Bears. Loot them for their Bear Meat"
+  note "Kill Forest Lurkers. Loot them for their Spider Ichor"
+  note "Remember to kite them to Mountaineers if needed"
+  note "Be careful as Mountain Boars cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 40-100 melee damage on hit. Only castable at range)"
+  collect 3172 x3 @23.232873,73.674849 map 1432 optional -- Collect Boar Intestines (x3)
+  collect 3173 x3 @23.232873,73.674849 map 1432 optional -- Collect Bear Meat (x3)
+  collect 3174 x3 @23.232873,73.674849 map 1432 optional -- Collect Spider Ichor (x3)
+step
+  zone map 1432
+  note "Kill Stonesplinter Troggs and Stonesplinter Scouts. Loot them for their Trogg Stone Teeth"
+  note "Be careful as Stonesplinter Scouts cast [Shoot] (Ranged Cast: Deals 14-20 damage)"
+  note "This is a hyperspawn area. You should not need to move from here"
+  kill 1161 x10 quest 224.1 @26.670094,56.940078 map 1432 -- Kill Stonesplinter Trogg (x10)
+  kill 1162 x10 quest 224.2 @26.670094,56.940078 map 1432 -- Kill Stonesplinter Scout (x10)
+  collect 2536 x8 quest 267.1 @26.670094,56.940078 map 1432 -- Collect Trogg Stone Tooth (x8)
+step
+  zone map 1432
+  note "Talk to Cobbleflint"
+  turnin 224 -- Turn in In Defense of the King's Lands
+step
+  along until Rugel2
+  zone map 1432
+  goto 23.269852,75.649753 map 1432 r 12 optional
+  goto 23.620063,75.41981 map 1432 r 12 optional
+  goto 23.120124,73.929798 map 1432 r 12 optional -- Enter the Bunker. Go to the top floor
+step
+  label Rugel2
+  zone map 1432
+  note "Talk to Rugelfuss"
+  turnin 267 -- Turn in The Trogg Threat
+step
+  along until next_11
+  zone map 1432
+  note "Kill Mountain Boars. Loot them for their Boar Intestines"
+  note "Kill Elder Black Bears. Loot them for their Bear Meat"
+  note "Kill Forest Lurkers. Loot them for their Spider Ichor"
+  note "Remember to kite them to Mountaineers if needed"
+  note "Be careful as Mountain Boars cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 40-100 melee damage on hit. Only castable at range)"
+  collect 3172 x3 @23.232873,73.674849 map 1432 optional -- Collect Boar Intestines (x3)
+  collect 3173 x3 @23.232873,73.674849 map 1432 optional -- Collect Bear Meat (x3)
+  collect 3174 x3 @23.232873,73.674849 map 1432 optional -- Collect Spider Ichor (x3)
+step
+  when onquest 1339
+  label next_11
+  zone map 1432
+  goto 23.570033,17.93015 map 1432 r 30 -- Travel to Algaz Station
+step
+  when onquest 1339
+  zone map 1432
+  note "Talk to Gothor"
+  vendor 1362 -- Vendor Trash
+step
+  when onquest 353
+  turnin 353 only Human -- Turn in Stormpike's Delivery
+step
+  when onquest 1339
+  turnin 1339 -- Turn in Mountaineer Stormpike's Task
+step
+  zone map 1432
+  note "Go Upstairs"
+  note "Talk to Stormpike"
+  accept 1338 -- Accept Stormpike's Order
+  accept 307 -- Accept Filthy Paws
+step
+  along until Entrance
+  zone map 1432
+  note "Kill Mountain Boars. Loot them for their Boar Intestines"
+  note "Kill Elder Black Bears. Loot them for their Bear Meat"
+  note "Kill Forest Lurkers. Loot them for their Spider Ichor"
+  note "Remember to kite them to Mountaineers if needed"
+  note "Be careful as Mountain Boars cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 40-100 melee damage on hit. Only castable at range)"
+  collect 3172 x3 @24.76387,18.397104 map 1432 optional -- Collect Boar Intestines (x3)
+  collect 3173 x3 @24.76387,18.397104 map 1432 optional -- Collect Bear Meat (x3)
+  collect 3174 x3 @24.76387,18.397104 map 1432 optional -- Collect Spider Ichor (x3)
+step
+  when onquest 416
+  along until Exit
+  zone map 1432
+  note "Kill Tunnel Rats. Loot them for their Tunnel Rat Ears"
+  collect 3110 x12 quest 416.1 @24.76387,18.397104 map 1432 -- Collect Tunnel Rat Ear (x12)
+step
+  when onquest 307
+  label Entrance
+  zone map 1432
+  goto 35.469974,18.949947 map 1432 r 40 -- Travel to the entrance of the Mine
+step
+  label Gear
+  zone map 1432
+  note "Loot the Miners' Gear on the ground. They share spawnpoints"
+  note "Be careful as the Tunnel Rat Geomancers cast [Quick Flame Ward] (Self Cast: Gives 10-second fire immunity) and [Fire Blast] (Ranged Instant: Deals 20-30 Fire damage)"
+  collect 2640 x4 quest 307.1 @34.930155,24.88988 map 1432 -- Collect Miners' Gear (x4)
+step
+  when onquest 307
+  label Exit
+  zone map 1432
+  goto 35.469974,18.949947 map 1432 r 40 -- Exit the Mine
+step
+  when onquest 416
+  loop
+  zone map 1432
+  goto 34.379823,17.669765 map 1432 r 40
+  goto 35.439883,15.33989 map 1432 r 40
+  goto 37.149974,10.530104 map 1432 r 40
+  goto 39.379944,10.919866 map 1432 r 40
+  goto 38.459823,14.429901 map 1432 r 40
+  goto 39.669975,18.119867 map 1432 r 40
+  goto 39.840005,24.830084 map 1432 r 40
+  goto 37.339944,26.820209 map 1432 r 40
+  goto 37.149974,24.530016 map 1432 r 40
+  goto 38.849914,21.249925 map 1432 r 40
+  goto 37.889914,18.879822 map 1432 r 40
+  goto 34.379823,17.669765 map 1432 r 40
+  note "Kill Tunnel Rat Scouts, Tunnel Rat Vermin, Tunnel Rat Kobolds, and Tunnel Rat Foragers. Loot them for their Tunnel Rat Ears"
+  note "Be careful as Tunnel Rat Kobolds cast [Thrash] (Charges 2 extra attacks every 10 seconds)"
+  collect 3110 x12 quest 416.1 -- Collect Tunnel Rat Ear (x12)
+step
+  along until next_21
+  zone map 1432
+  note "Kill Mountain Boars. Loot them for their Boar Intestines"
+  note "Kill Elder Black Bears. Loot them for their Bear Meat"
+  note "Kill Forest Lurkers. Loot them for their Spider Ichor"
+  note "Remember to kite them to Mountaineers if needed"
+  note "Be careful as Mountain Boars cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 40-100 melee damage on hit. Only castable at range)"
+  collect 3172 x3 @34.379823,17.669765 map 1432 optional -- Collect Boar Intestines (x3)
+  collect 3173 x3 @34.379823,17.669765 map 1432 optional -- Collect Bear Meat (x3)
+  collect 3174 x3 @34.379823,17.669765 map 1432 optional -- Collect Spider Ichor (x3)
+step
+  when onquest 307
+  label next_21
+  zone map 1432
+  goto 23.570033,17.93015 map 1432 r 30 -- Travel to Algaz Station
+step
+  when onquest 307
+  zone map 1432
+  note "Talk to Gothor"
+  vendor 1362 -- Vendor Trash
+step
+  zone map 1432
+  note "Go Upstairs"
+  note "Talk to Stormpike"
+  turnin 307 -- Turn in Filthy Paws
+step
+  when !turnedin 418
+  loop
+  zone map 1432
+  goto 31.010034,24.839869 map 1432 r 35
+  goto 32.690034,28.670084 map 1432 r 35
+  goto 34.930155,31.550085 map 1432 r 35
+  goto 36.779823,33.190131 map 1432 r 35
+  goto 39.650035,32.819938 map 1432 r 35
+  goto 38.149854,38.159735 map 1432 r 35
+  goto 33.530034,40.529837 map 1432 r 35
+  goto 29.869853,53.509953 map 1432 r 35
+  goto 29.579822,46.539895 map 1432 r 35
+  goto 29.949973,39.840007 map 1432 r 35
+  goto 27.089913,40.099849 map 1432 r 35
+  goto 29.029852,33.440187 map 1432 r 35
+  goto 27.189973,29.009835 map 1432 r 35
+  goto 25.769912,25.599823 map 1432 r 35
+  goto 23.640003,22.20014 map 1432 r 35
+  goto 31.010034,24.839869 map 1432 r 35
+  note "Kill Mountain Boars. Loot them for their Boar Intestines"
+  note "Kill Elder Black Bears. Loot them for their Bear Meat"
+  note "Kill Forest Lurkers. Loot them for their Spider Ichor"
+  note "Remember to kite them to Mountaineers if needed"
+  note "Be careful as Mountain Boars cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 40-100 melee damage on hit. Only castable at range)"
+  collect 3172 x3 -- Collect Boar Intestines (x3)
+  collect 3173 x3 -- Collect Bear Meat (x3)
+  collect 3174 x3 -- Collect Spider Ichor (x3)
+  note "XP checkpoint: <13+5500,1" only Gnome
+step
+  along until Boast
+  zone map 1432
+  note "Kill Mangy Mountain Boars and Mountain Boars. Loot them for their Boar Intestines"
+  note "Kill Grizzled Black Bears and Elder Black Bears. Loot them for their Bear Meat"
+  note "Kill Cliff Lurkers and Forest Lurkers. Loot them for their Spider Ichor"
+  note "Remember to kite them to Mountaineers if needed"
+  note "Be careful as Mountain Boars cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 40-100 melee damage on hit. Only castable at range)"
+  collect 3172 x3 @31.010034,24.839869 map 1432 optional -- Collect Boar Intestines (x3)
+  collect 3173 x3 @31.010034,24.839869 map 1432 optional -- Collect Bear Meat (x3)
+  collect 3174 x3 @31.010034,24.839869 map 1432 optional -- Collect Spider Ichor (x3)
+  note "XP checkpoint: >13+5500,1" only Gnome
+step
+  when onquest 6392
+  turnin 6392 only Gnome -- Turn in Return to Brock
+step
+  zone map 1432
+  note "Talk to Brock and Jern"
+  note "They can be inside or outside the building"
+  accept 436 -- Accept Ironband's Excavation
+  goto 37.230095,47.369975 map 1432 r 8 optional
+  note "XP checkpoint: >13+5500,1" only Gnome
+step
+  when turnedin 6392
+  zone map 1432
+  note "Talk to Jern"
+  note "He can be inside or outside the building"
+  accept 436 -- Accept Ironband's Excavation
+  note "XP checkpoint: >13+6550,1" only Gnome
+step
+  only Human
+  zone map 1432
+  goto 31.010034,24.839869 map 1432 r 50 optional
+  goto 32.690034,28.670084 map 1432 r 50 optional
+  goto 34.930155,31.550085 map 1432 r 50 optional
+  goto 36.779823,33.190131 map 1432 r 50 optional
+  goto 39.650035,32.819938 map 1432 r 50 optional
+  goto 38.149854,38.159735 map 1432 r 50 optional
+  goto 33.530034,40.529837 map 1432 r 50 optional
+  goto 29.869853,53.509953 map 1432 r 50 optional
+  goto 29.579822,46.539895 map 1432 r 50 optional
+  goto 29.949973,39.840007 map 1432 r 50 optional
+  goto 27.089913,40.099849 map 1432 r 50 optional
+  goto 29.029852,33.440187 map 1432 r 50 optional
+  goto 27.189973,29.009835 map 1432 r 50 optional
+  goto 25.769912,25.599823 map 1432 r 50 optional
+  goto 23.640003,22.20014 map 1432 r 50 optional
+  goto 31.010034,24.839869 map 1432 r 50
+  level 13+8675 -- Grind to 8675+/11400xp
+step
+  only Gnome
+  when level>=13+5500
+  when onquest 6392
+  zone map 1432
+  goto 31.010034,24.839869 map 1432 r 50 optional
+  goto 32.690034,28.670084 map 1432 r 50 optional
+  goto 34.930155,31.550085 map 1432 r 50 optional
+  goto 36.779823,33.190131 map 1432 r 50 optional
+  goto 39.650035,32.819938 map 1432 r 50 optional
+  goto 38.149854,38.159735 map 1432 r 50 optional
+  goto 33.530034,40.529837 map 1432 r 50 optional
+  goto 29.869853,53.509953 map 1432 r 50 optional
+  goto 29.579822,46.539895 map 1432 r 50 optional
+  goto 29.949973,39.840007 map 1432 r 50 optional
+  goto 27.089913,40.099849 map 1432 r 50 optional
+  goto 29.029852,33.440187 map 1432 r 50 optional
+  goto 27.189973,29.009835 map 1432 r 50 optional
+  goto 25.769912,25.599823 map 1432 r 50 optional
+  goto 23.640003,22.20014 map 1432 r 50 optional
+  goto 31.010034,24.839869 map 1432 r 50
+  level 13+6545 -- Grind to 6545+/11400xp
+step
+  only Gnome
+  along until next_31
+  zone map 1432
+  goto 46.139824,63.530159 map 1432 r 50 optional
+  goto 49.350097,67.359831 map 1432 r 50 optional
+  goto 51.909976,68.000194 map 1432 r 50 optional
+  goto 64.830098,66.049751 map 1432 r 20 optional -- Travel toward Aldren
+step
+  only Gnome
+  when !turnedin 298
+  label next_31
+  along until Boast
+  zone map 1432
+  note "Talk to Aldren"
+  vendor 1214 -- Buy the [Wise Man's Belt] from him (if it's up)
+step
+  only Gnome
+  when onquest 436
+  zone map 1432
+  note "Talk to Ironband and Magmar"
+  accept 298 -- Accept Excavation Progress Report
+  turnin 436 -- Turn in Ironband's Excavation
+  goto 64.889917,66.660216 map 1432 r 8 optional
+step
+  only Gnome
+  when turnedin 436
+  label ExcavationP
+  zone map 1432
+  note "Talk to Ironband"
+  accept 298 -- Accept Excavation Progress Report
+step
+  only Gnome
+  along until Boast
+  zone map 1432
+  goto 66.069978,70.600239 map 1432 r 30 optional
+  goto 73.230099,70.889979 map 1432 r 40 optional
+  goto 77.249919,68.200239 map 1432 r 40 optional
+  goto 82.110101,63.219762 map 1432 r 15 optional
+  goto 83.480131,65.619763 map 1432 r 20 optional -- Travel to Daryl
+step
+  only Gnome
+  when onquest 298
+  label Boast
+  zone map 1432
+  note "Talk to Daryl"
+  accept 257 -- Accept A Hunter's Boast
+step
+  only Gnome
+  when onquest 257
+  loop
+  zone map 1432
+  goto 79.889919,65.910046 map 1432 r 45
+  goto 76.699949,74.44024 map 1432 r 45
+  goto 74.740069,69.21025 map 1432 r 45
+  goto 77.029858,60.550136 map 1432 r 45
+  goto 76.09016,57.939761 map 1432 r 45
+  goto 77.389858,55.980078 map 1432 r 45
+  goto 79.629979,59.849977 map 1432 r 45
+  goto 79.889919,65.910046 map 1432 r 45
+  note "Kill Mountain Buzzards"
+  kill 1194 x6 quest 257.1 -- Mountain Buzzard (6)
+step
+  only Gnome
+  along until next_38
+  zone map 1432
+  goto 82.110101,63.219762 map 1432 r 15 optional
+  goto 83.480131,65.619763 map 1432 r 20 optional -- Travel to Daryl
+step
+  only Gnome
+  when complete 257
+  when onquest 257
+  label next_38
+  zone map 1432
+  note "Talk to Daryl"
+  turnin 257 -- Turn in A Hunter's Boast
+step
+  only Gnome
+  when !turnedin 418
+  loop
+  zone map 1432
+  goto 31.010034,24.839869 map 1432 r 50
+  goto 32.690034,28.670084 map 1432 r 50
+  goto 34.930155,31.550085 map 1432 r 50
+  goto 36.779823,33.190131 map 1432 r 50
+  goto 39.650035,32.819938 map 1432 r 50
+  goto 38.149854,38.159735 map 1432 r 50
+  goto 33.530034,40.529837 map 1432 r 50
+  goto 29.869853,53.509953 map 1432 r 50
+  goto 29.579822,46.539895 map 1432 r 50
+  goto 29.949973,39.840007 map 1432 r 50
+  goto 27.089913,40.099849 map 1432 r 50
+  goto 29.029852,33.440187 map 1432 r 50
+  goto 27.189973,29.009835 map 1432 r 50
+  goto 25.769912,25.599823 map 1432 r 50
+  goto 23.640003,22.20014 map 1432 r 50
+  goto 31.010034,24.839869 map 1432 r 50
+  note "Kill Mangy Mountain Boars and Mountain Boars. Loot them for their Boar Intestines"
+  note "Kill Grizzled Black Bears and Elder Black Bears. Loot them for their Bear Meat"
+  note "Kill Cliff Lurkers and Forest Lurkers. Loot them for their Spider Ichor"
+  note "Remember to kite them to Mountaineers if needed"
+  note "Be careful as Mountain Boars cast [Charge] (Self Instant: Increases movespeed for 3 seconds, dealing 40-100 melee damage on hit. Only castable at range)"
+  collect 3172 x3 -- Collect Boar Intestines (x3)
+  collect 3173 x3 -- Collect Bear Meat (x3)
+  collect 3174 x3 -- Collect Spider Ichor (x3)
+step
+  only Gnome
+  when onquest 298
+  zone map 1432
+  goto 31.010034,24.839869 map 1432 r 50 optional
+  goto 32.690034,28.670084 map 1432 r 50 optional
+  goto 34.930155,31.550085 map 1432 r 50 optional
+  goto 36.779823,33.190131 map 1432 r 50 optional
+  goto 39.650035,32.819938 map 1432 r 50 optional
+  goto 38.149854,38.159735 map 1432 r 50 optional
+  goto 33.530034,40.529837 map 1432 r 50 optional
+  goto 29.869853,53.509953 map 1432 r 50 optional
+  goto 29.579822,46.539895 map 1432 r 50 optional
+  goto 29.949973,39.840007 map 1432 r 50 optional
+  goto 27.089913,40.099849 map 1432 r 50 optional
+  goto 29.029852,33.440187 map 1432 r 50 optional
+  goto 27.189973,29.009835 map 1432 r 50 optional
+  goto 25.769912,25.599823 map 1432 r 50 optional
+  goto 23.640003,22.20014 map 1432 r 50 optional
+  goto 31.010034,24.839869 map 1432 r 50
+  level 13+6780 -- Grind to 6780+/11400xp
+step
+  when onquest 416
+  label Kadrell
+  along
+  zone map 1432
+  note "Talk to Kadrell"
+  note "Kadrell patrols along the main Thelsamar road"
+  turnin 416 -- Turn in Rat Catching
+step
+  only Gnome
+  when onquest 298
+  when onquest 6392
+  turnin 6392 -- Turn in Return to Brock
+step
+  only Gnome
+  when onquest 298
+  turnin 298 -- Turn in Excavation Progress Report
+step
+  only Gnome
+  when onquest 298
+  zone map 1432
+  note "Talk to Brock and Jern"
+  note "They can be inside or outside the building"
+  accept 301 -- Accept Report to Ironforge
+  goto 37.230095,47.369975 map 1432 r 8 optional
+step
+  only Gnome
+  when turnedin 298
+  zone map 1432
+  note "Talk to Brock and Jern"
+  note "They can be inside or outside the building"
+  accept 301 -- Accept Report to Ironforge
+  goto 37.230095,47.369975 map 1432 r 8 optional
+step
+  only Gnome
+  when turnedin 298
+  when onquest 6392
+  turnin 6392 -- Turn in Return to Brock
+step
+  only Gnome
+  when turnedin 298
+  zone map 1432
+  note "Talk to Brock and Jern"
+  note "They can be inside or outside the building"
+  accept 301 -- Accept Report to Ironforge
+  goto 37.230095,47.369975 map 1432 r 8 optional
+step
+  only Gnome
+  when onquest 6392
+  zone map 1432
+  note "Talk to Brock"
+  note "He can be inside or outside the building"
+  turnin 6392 -- Turn in Return to Brock
+step
+  along until next_46
+  zone map 1432
+  goto 35.249914,47.740167 map 1432 r 12 optional
+  goto 35.389853,48.359873 map 1432 r 12 optional
+  note "Go inside the Inn"
+  goto 34.82792,49.282908 map 1432 r 10 optional -- Travel toward Vidra
+step
+  label next_46
+  zone map 1432
+  note "Talk to Vidra"
+  accept 418 -- Accept Thelsamar Blood Sausages
+  turnin 418 -- Turn in Thelsamar Blood Sausages
+step
+  zone map 1432
+  goto 34.760125,48.620258 map 1432 r 8
+  note "Do NOT get rid of any of your extra [Chunks of Boar Meat]"
+  skill "Cooking" 10 -- Cook [Chunks of Boar Meat] into [Roasted Boar Meat] until your [Cooking] skill reaches 10
+step
+  when onquest 1338
+  zone map 1432
+  goto 34.760125,48.620258 map 1432 r 8
+  note "Talk to Yanni"
+  note "Buy as many [Small Brown Pouches] as you need/can"
+  note "Do NOT go below 45 Silver"
+  vendor nearest -- Vendor Trash
+step
+  when onquest 416
+  zone map 1432
+  note "Talk to Kadrell"
+  note "Kadrell patrols along the main Thelsamar road"
+  turnin 416 -- Turn in Rat Catching
+step
+  along until next_50
+  note "Start spam casting [Conjure Water r2] to conjure as much water as possible before taking the flight"
+step
+  when onquest 416
+  zone map 1432
+  note "Talk to Kadrell"
+  note "Kadrell patrols along the main Thelsamar road"
+  turnin 416 -- Turn in Rat Catching
+step
+  when onquest 1338
+  label next_50
+  zone map 1432
+  goto 33.940065,50.959919 map 1432 r 8
+  note "Talk to Thorgrum"
+  fly "Ironforge" -- Fly to Ironforge
+step
+  only Gnome
+  when onquest 301
+  zone map 1455
+  note "Talk to Stormpike"
+  turnin 301 -- Turn in Report to Ironforge
+step
+  when !has 4371
+  zone map 1455
+  note "Talk to Cogspinner"
+  vendor 5175 -- Buy a [Bronze Tube] from him if its up
+step
+  only Gnome
+  label Monty
+  zone map 1455
+  note "Go inside the Deeprun Tram"
+  note "Talk to Monty"
+  accept 6661 @76.410308,51.219947 map 1455 -- Accept Deeprun Rat Roundup
+step
+  only Gnome
+  when onquest 6661
+  kill 13016 x5 quest 6661.1 @76.410308,51.219947 map 1455 -- Rats Captured (x5)
+step
+  only Gnome
+  zone map 1455
+  note "Use the [Rat Catcher's Flute] on the Deeprun Rats in the Deeprun Tram"
+  use 17117 @76.410308,51.219947 map 1455
+step
+  when !zone "Stormwind City"
+  when onquest 6661
+  turnin 6661 @76.410308,51.219947 map 1455 only Gnome -- Turn in Deeprun Rat Roundup
+step
+  when !zone "Stormwind City"
+  zone map 1455
+  note "Talk to Monty"
+  note "Wait out the RP" only Gnome
+  accept 6662 @76.410308,51.219947 map 1455 -- Accept Me Brother, Nipsy
+step
+  when onquest 6662
+  zone map 1455
+  note "Ride the Deeprun Tram whilst spam casting [Conjure Water r2]"
+  note "Talk to Nipsy on the other side of the Deeprun Tram"
+  turnin 6662 @76.410308,51.219947 map 1455 -- Turn in Me Brother, Nipsy
+step
+  along until next_59
+  zone map 1453
+  goto 59.959755,12.210466 map 1453 r 20 optional
+  goto 57.030284,11.370396 map 1453 r 20 optional
+  goto 55.250136,7.0696399 map 1453 r 15 optional -- Travel toward Billibub
+step
+  when !has 4371
+  label next_59
+  zone map 1453
+  note "Talk to Billibub"
+  vendor 5519 -- Buy a [Bronze Tube] from him if its up
+step
+  zone map 1453
+  note "Talk to Furen"
+  turnin 1338 -- Turn in Stormpike's Order
+step
+  along until next_62
+  zone map 1453
+  goto 53.339805,19.290258 map 1453 r 20 optional
+  goto 51.639998,21.68998 map 1453 r 20 optional
+  goto 52.229909,31.660371 map 1453 r 20 optional
+  goto 49.819679,34.420441 map 1453 r 20 optional
+  goto 47.860251,31.130446 map 1453 r 12 optional
+  goto 49.179927,30.290376 map 1453 r 12 optional -- Travel toward Baros
+step
+  label next_62
+  zone map 1453
+  note "Go inside the building"
+  note "Talk to Baros"
+  accept 399 -- Accept Humble Beginnings
+step
+  along until next_64
+  zone map 1453
+  goto 47.719655,42.709577 map 1453 r 15 optional
+  goto 49.119671,46.879804 map 1453 r 15 optional
+  goto 48.549845,48.999502 map 1453 r 15 optional
+  goto 50.719796,51.880061 map 1453 r 15 optional
+  goto 52.569871,55.440038 map 1453 r 15 optional
+  goto 51.680168,59.860167 map 1453 r 8 optional
+  goto 51.829692,60.410173 map 1453 r 4 optional
+  goto 51.590157,60.150231 map 1453 r 6 optional
+  goto 39.170033,76.580123 map 1453 r 12 optional
+  note "Jump up onto the torch, then drop down to get under Stormwind"
+  note "With Shadows on \"Fair\" or \"Low\", get in the middle of Derek the Dinosaur's feet (the lighter part of the dirt) just before the blue void, then walk straight forward"
+  note "NOTE: There is a small chance of dying using this method. You can also walk to the Mage Tower normally if you wish"
+  goto 38.609877,79.390397 map 1453 r 10 optional -- Travel toward Jennea
+step
+  label next_64
+  zone map 1453
+  goto 38.609877,79.390397 map 1453 r 8 optional
+  note "Talk to Jennea"
+  accept 1861 only Gnome -- Accept Mirror Lake
+  train 5497 -- Train your class spells (Fire Blast r2, Arcane Intellect r2, Arcane Explosion)
+  note "Total Cost: 27s"
+  note "Remember you may want money for Potions (1-3s each) and Scrolls (50c-3s each)"
+step
+  along until next_66
+  zone map 1453
+  goto 36.730047,82.439416 map 1453 r 10 optional
+  goto 37.909869,81.919532 map 1453 r 10 optional
+  goto 38.100307,80.929967 map 1453 r 8 optional
+  goto 37.490311,81.349445 map 1453 r 6 optional
+  goto 38.460354,80.609781 map 1453 r 8 optional
+  goto 33.650308,81.58038 map 1453 r 15 optional
+  goto 31.120311,79.419403 map 1453 r 15 optional
+  goto 32.070269,81.500055 map 1453 r 10 optional
+  goto 32.62968,80.619822 map 1453 r 8 optional
+  note "Exit the Mage Tower"
+  goto 32.16028,79.839996 map 1453 r 10 optional -- Travel toward Charys
+step
+  label next_66
+  zone map 1453
+  note "Enter the building"
+  note "Talk to Charys"
+  vendor 1307 -- Buy [Lesser Mana Potions] and [Healing Potions] from her (if they're up)
+step
+  along until next_68
+  zone map 1453
+  goto 39.3203,71.539704 map 1453 r 20 optional
+  goto 41.060278,69.440087 map 1453 r 20 optional
+  goto 44.020249,69.809361 map 1453 r 20 optional
+  goto 46.319638,66.929918 map 1453 r 20 optional
+  goto 42.44988,61.760086 map 1453 r 20 optional
+  goto 41.169631,63.74033 map 1453 r 15 optional
+  goto 41.569848,65.459517 map 1453 r 10 optional -- Travel toward Adair
+step
+  label next_68
+  zone map 1453
+  note "Enter the building"
+  note "Talk to Adair"
+  vendor 1316 -- Buy non-intellect [Scrolls] from him (if they're up)
+step
+  along until next_70
+  zone map 1453
+  goto 52.099727,61.339493 map 1453 r 15 optional
+  goto 55.459915,65.259819 map 1453 r 8 optional -- Travel toward Keldric
+step
+  label next_70
+  zone map 1453
+  note "Talk to Keldric through the wall"
+  vendor 1257 -- Buy [Lesser Healing Potions] from him (if they're up)
+step
+  zone map 1453
+  goto 57.030284,72.969943 map 1453 r 8
+  note "Talk to Newton"
+  note "[Chunk of Boar Meat]"
+  note "[Bronze Tube]"
+  note "[Murloc Eyes]"
+  note "[Jennea's Flask]"
+  note "[Cask of Merlot]"
+  note "[Scrolls]"
+  note "[Small Egg]"
+step
+  along until next_74
+  zone map 1453
+  goto 53.449902,64.919552 map 1453 r 10 optional
+  note "Enter the Inn"
+  goto 52.610041,65.719459 map 1453 r 10 optional -- Travel Toward Allison
+step
+  when !zone "Darkshore"
+  label next_74
+  zone map 1453
+  goto 52.610041,65.719459 map 1453 r 8
+  note "===PAY ATTENTION==="
+  note "Talk to Allison"
+  note "Open the \"Set Hearthstone\" menu, then cast [Hearthstone]"
+  hearth "Auberdine" optional -- Hearthstone BATCH from Stormwind to Auberdine

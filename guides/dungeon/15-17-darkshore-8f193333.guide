@@ -1,0 +1,900 @@
+guide rxp-free/15-17-darkshore-8f193333
+title "15-17 Darkshore"
+levels 15-17
+zone map 1439
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · Dungeon Guide 1-20"
+race Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+next rxp-free/17-18-hall-of-thanes-d4f5ecd7
+step
+  zone map 1439
+  note "Talk to Cerellean Whiteclaw"
+  accept 963 -- Accept For Love Eternal
+step
+  along until next_2
+  zone map 1439
+  goto 36.883466,43.935877 map 1439 r 8 -- Travel up the ramp toward Wizbang Cranktoggle
+step
+  label next_2
+  zone map 1439
+  note "Talk to Wizbang Cranktoggle upstairs"
+  accept 983 -- Accept Buzzbox 827
+step
+  zone map 1439
+  note "Talk to Barithras Moonshade"
+  accept 947 -- Accept Cave Mushrooms
+step
+  zone map 1439
+  note "Talk to Sentinel Glynda Nal'Shea"
+  accept 4811 -- Accept The Red Crystal
+step
+  zone map 1439
+  note "Talk to Tharnariun Treetender"
+  accept 2118 -- Accept Plagued Lands
+step
+  zone map 1439
+  note "Talk to Terenthis"
+  accept 984 -- Accept How Big a Threat?
+step
+  zone map 1439
+  note "Click the Wanted Poster"
+  accept 98025 -- Accept WANTED: Jai'vhanel
+step
+  when has 12238 x6
+  zone map 1439
+  note "Talk to Gubber Blump"
+  accept 1141 -- Accept The Family and the Fishing Pole
+  turnin 1141 -- Turn in The Family and the Fishing Pole
+step
+  label WashedA
+  zone map 1439
+  note "Talk to Gwennyth Bly'Leggonde"
+  accept 3524 -- Accept Washed Ashore
+step
+  zone map 1439
+  note "Talk to Caylais Moonfeather"
+  getfp "Auberdine" @36.335985,45.573969 map 1439 -- Get the Auberdine flight path
+step
+  only Hunter,Dwarf
+  along until RabidThistle
+  zone map 1439
+  goto 40.750031,70.490003 map 1439 r 1 optional
+  goto 40.770031,78.560004 map 1439 r 1 optional
+  goto 38.210031,73.32008 map 1439 r 1 optional
+  goto 40.750031,70.490003 map 1439 r 40 optional
+  goto 40.770031,78.560004 map 1439 r 40 optional
+  goto 38.210031,73.32008 map 1439 r 40 optional
+  note "Send your pet to attack a Thistle Bear. Once your pet is stunned by the Thistle Bear, abandon your pet and start taming it"
+  learn 16828 "Tame Beast"
+step
+  when onquest 983
+  label BuzzBox1
+  along
+  loop
+  zone map 1439
+  goto 36.051,44.757 map 1439 r 1
+  goto 36.28,50.071 map 1439 r 1
+  goto 35.275,53.464 map 1439 r 1
+  goto 36.091,51.501 map 1439 r 60
+  goto 37.115,52.368 map 1439 r 60
+  goto 37.13,53.663 map 1439 r 60
+  goto 36.74,55.221 map 1439 r 60
+  goto 35.655,55.872 map 1439 r 60
+  goto 35.088,55.085 map 1439 r 60
+  goto 35.275,53.464 map 1439 r 60
+  goto 36.091,51.501 map 1439 r 60
+  goto 36.28,50.071 map 1439 r 60
+  goto 36.523,48.554 map 1439 r 60
+  goto 35.977,48.408 map 1439 r 60
+  goto 35.902,47.145 map 1439 r 60
+  goto 35.759,45.455 map 1439 r 60
+  goto 36.051,44.757 map 1439 r 60
+  note "Kill Pygmy Tide Crawlers and Young Reef Crawlers. Loot them for their Crawler Legs"
+  note "You may need to go in the water for them"
+  note "Even if some of these are gray, still complete the quest as it is part of a chain"
+  collect 5385 x6 quest 983.1 -- Crawler Leg (6)
+step
+  zone map 1439
+  note "Open the Beached Sea Creature. Loot it for the Sea Creature Bones"
+  collect 12242 x1 quest 3524.1 -- Sea Creature Bones (1)
+step
+  only Druid
+  label GatheringQ
+  along until CliffspringEnd
+  zone map 1439
+  skill "Herbalism" 15 -- Level your [Herbalism] to 15 to be able to herb [Earthroot] for an important class quest soon. You can unlearn it afterwards
+  note "If you would rather purchase 5 [Earthroot] from the Auction House later, skip this step"
+  collect 2449 x5 @36.371,50.92 map 1439 optional -- Earthroot (5)
+step
+  only Druid
+  label GatheringQ_2
+  zone map 1439
+  skill "Herbalism" 15 -- Level your [Herbalism] to 15 to be able to herb [Earthroot] for an important class quest soon. You can unlearn it afterwards
+  note "If you would rather purchase 5 [Earthroot] from the Auction House later, skip this step"
+  collect 2449 x5 @36.371,50.92 map 1439 optional -- Earthroot (5)
+step
+  only Druid
+  along until CliffspringEnd
+  zone map 1439
+  note "Collect 5 [Earthroot] via [Herbalism] and rarely Battered Chests for a future class quest"
+  collect 2449 x5 @36.371,50.92 map 1439 optional -- Earthroot (5)
+step
+  along until next_18
+  zone map 1439
+  note "Use [Tharnariun's Hope] on a Rabid Thistle Bear --. It can be used from any range as long as you're targeting the Bear"
+  note "You can waste the trap and make the quest impossible to complete! If it happens to you you need to return to the questgiver and ask for another trap"
+  kill 2164 x1 quest 2118.1 @36.371,50.92 map 1439 -- Rabid Thistle Bear Captured (1)
+  use 7586 @36.371,50.92 map 1439
+step
+  label next_18
+  zone map 1439
+  goto 38.899954,53.589924 map 1439 r 8
+  note "Run toward the edge of the Furbolg Camp"
+  complete 984 -- Find a corrupt furbolg camp
+step
+  label RabidThistle
+  along
+  loop
+  zone map 1439
+  goto 38.226,52.78 map 1439 r 1
+  goto 39.129,59.176 map 1439 r 1
+  goto 38.226,52.78 map 1439 r 50
+  goto 38.527,54.661 map 1439 r 50
+  goto 38.037,56.815 map 1439 r 50
+  goto 38.095,58.395 map 1439 r 50
+  goto 38.696,57.874 map 1439 r 50
+  goto 39.129,59.176 map 1439 r 50
+  note "Use [Tharnariun's Hope] on a Rabid Thistle Bear --. It can be used from any range as long as you're targeting the bear"
+  note "You can waste the trap and make the quest impossible to complete! If it happens to you you need to return to the questgiver and ask for another trap"
+  kill 2164 x1 quest 2118.1 -- Rabid Thistle Bear Captured (1)
+  use 7586 @39.129,59.176 map 1439
+step
+  zone map 1439
+  note "Use [Tharnariun's Hope] on a Rabid Thistle Bear --. It can be used from any range as long as you're targeting the bear"
+  note "You can waste the trap and make the quest impossible to complete! If it happens to you you need to return to the questgiver and ask for another trap"
+  kill 2164 x1 quest 2118.1 -- Rabid Thistle Bear Captured (1)
+  use 7586 @39.129,59.176 map 1439
+step
+  label invisThistle
+  note "Review this source step manually."
+step
+  when onquest 983
+  zone map 1439
+  note "Kill Pygmy Tide Crawlers and Young Reef Crawlers. Loot them for their Crawler Legs"
+  note "You may need to go in the water for them"
+  note "Even if some of these are gray, still complete the quest as it is part of a chain"
+  collect 5385 x6 quest 983.1 -- Crawler Leg (6)
+step
+  zone map 1439
+  note "Click the Buzzbox 827 on the ground"
+  turnin 983 -- Turn in Buzzbox 827
+  accept 1001 -- Accept Buzzbox 411
+step
+  zone map 1439
+  note "Talk to Gwennyth Bly'Leggonde"
+  turnin 3524 -- Turn in Washed Ashore
+  accept 4681 -- Accept Washed Ashore
+step
+  along until next_24
+  zone map 1439
+  goto 36.806,44.137 map 1439 r 8 optional
+  goto 35.743,43.71 map 1439 r 12 optional -- Travel toward Cerellean Whiteclaw on the dock
+step
+  label next_24
+  zone map 1439
+  note "Talk to Cerellean Whiteclaw"
+  accept 963 -- Accept For Love Eternal
+step
+  along until SeaT1
+  zone map 1439
+  goto 32.432,43.744 map 1439 r 15 -- Travel to the end of the dock, then jump into the water
+step
+  when onquest 1001
+  along until washed1
+  zone map 1439
+  note "Kill Darkshore Threshers. Loot them for their Thresher Eyes"
+  collect 5412 x3 quest 1001.1 @33.030031,48.129923 map 1439 -- Thresher Eye (3)
+step
+  label SeaT1
+  zone map 1439
+  note "Open the Skeletal Sea Turtle. Loot it for the Sea Turtle Remains"
+  collect 12289 x1 quest 4681.1 @31.841,46.304 map 1439 -- Sea Turtle Remains (1)
+step
+  label washed1
+  zone map 1439
+  note "Talk to Gwennyth Bly'Leggonde"
+  turnin 4681 -- Turn in Washed Ashore
+step
+  zone map 1439
+  note "Talk to Barithras Moonshade"
+  accept 947 -- Accept Cave Mushrooms
+step
+  zone map 1439
+  note "Talk to Sentinel Glynda Nal'Shea"
+  accept 4811 -- Accept The Red Crystal
+step
+  zone map 1439
+  note "Talk to Tharnariun Treetender"
+  turnin 2118 -- Turn in Plagued Lands
+  accept 2138 -- Accept Cleansing of the Infected
+step
+  zone map 1439
+  note "Talk to Terenthis"
+  turnin 984 -- Turn in How Big a Threat?
+  accept 985 -- Accept How Big a Threat?
+  accept 4761 -- Accept Thundris Windweaver
+step
+  zone map 1439
+  note "Talk to Gorbold Steelhand"
+  accept 982 -- Accept Deep Ocean, Vast Sea
+step
+  when has 5469 x5
+  zone map 1439
+  note "Talk to Alanndarian Nightsong"
+  accept 2178 -- Accept Easy Strider Living
+  turnin 2178 -- Turn in Easy Strider Living
+step
+  along until next_36
+  zone map 1439
+  note "Talk to Dalmond inside"
+  vendor 4182 -- Buy as many [Small Brown Pouches] or [Brown Leather Satchels] as you need from him
+  note "Buy [Sharp Arrows] or [Heavy Shots] from him until your Quiver/Ammo Pouch is full" only Hunter
+step
+  when level<16
+  label next_36
+  zone map 1439
+  note "Talk to Thundris Windweaver"
+  turnin 4761 -- Turn in Thundris Windweaver
+  accept 4762 -- Accept The Cliffspring River
+  accept 954 -- Accept Bashal'Aran
+  accept 958 -- Accept Tools of the Highborne
+step
+  when level<18
+  zone map 1439
+  note "Talk to Thundris Windweaver"
+  turnin 4761 -- Turn in Thundris Windweaver
+  accept 4762 -- Accept The Cliffspring River
+  accept 954 -- Accept Bashal'Aran
+step
+  zone map 1439
+  note "Talk to Thundris Windweaver"
+  turnin 4761 -- Turn in Thundris Windweaver
+  accept 4762 -- Accept The Cliffspring River
+step
+  when onquest 1001
+  when onquest 982
+  along until MistVeil
+  zone map 1439
+  note "Kill Darkshore Threshers. Loot them for their Thresher Eyes"
+  collect 5412 x3 quest 1001.1 @35.710031,32.269997 map 1439 -- Thresher Eye (3)
+step
+  along until next_41
+  note "Press Escape, then go into -> Options -> Controls"
+  note "Check \"Enable Interact Key\" and bind the \"Interact with Target\" option to a key"
+step
+  when onquest 982
+  label next_41
+  zone map 1439
+  note "==BE AWARE OF YOUR BREATH METER=="
+  note "Swim underwater to the outside of the back of the boat"
+  note "On the arrow location, press your \"Interact with Target\" keybind to loot the Silver Dawning's Lockbox from outside the boat"
+  note "If you don't want to do this, swim underwater into the bottom floor of the boat then loot the Silver Dawning's Lockbox inside"
+  collect 12191 x1 quest 982.1 @38.213,28.754 map 1439 -- Silver Dawning's Lockbox (1)
+step
+  when onquest 982
+  label MistVeil
+  zone map 1439
+  note "==BE AWARE OF YOUR BREATH METER=="
+  note "Swim underwater to the outside of the back of the boat"
+  note "On the arrow location, press your \"Interact with Target\" keybind to loot the Mist Veil's Lockbox from outside the boat"
+  note "If you don't want to do this, swim underwater into the bottom floor of the boat then loot the Mist Veil's Lockbox inside"
+  collect 12192 x1 quest 982.2 @39.581,27.487 map 1439 -- Mist Veil Lockbox (1)
+step
+  when onquest 1001
+  loop
+  zone map 1439
+  goto 40.170031,28.759997 map 1439 r 1
+  goto 38.730031,28.249997 map 1439 r 1
+  goto 36.699954,30.000073 map 1439 r 1
+  goto 40.170031,28.759997 map 1439 r 55
+  goto 38.730031,28.249997 map 1439 r 55
+  goto 36.699954,30.000073 map 1439 r 55
+  goto 35.710031,32.269997 map 1439 r 55
+  goto 35.439954,35.829922 map 1439 r 55
+  goto 35.710031,32.269997 map 1439 r 55
+  goto 35.439954,35.829922 map 1439 r 55
+  note "Kill Darkshore Threshers. Loot them for their Thresher Eyes"
+  collect 5412 x3 quest 1001.1 -- Thresher Eye (3)
+step
+  zone map 1439
+  note "Click the Beached Sea Creature"
+  accept 4723 -- Accept Beached Sea Creature
+step
+  when complete 1001
+  zone map 1439
+  note "Click the Buzzbox 411 on the ground"
+  turnin 1001 -- Turn in Buzzbox 411
+step
+  along until Bashal1
+  zone map 1439
+  goto 44.629,36.316 map 1439 r 20 optional
+  goto 44.168,36.289 map 1439 r 15 optional -- Travel toward Asterion
+step
+  when onquest 954
+  when level<16
+  zone map 1439
+  note "Talk to Asterion"
+  note "Avoid killing Wild Grells and Vile Sprites en-route"
+  turnin 954 -- Turn in Bashal'Aran
+  accept 955 -- Accept Bashal'Aran
+step
+  when onquest 954
+  label Bashal1
+  zone map 1439
+  note "Talk to Asterion"
+  note "Avoid killing Wild Grells and Vile Sprites en-route"
+  turnin 954 -- Turn in Bashal'Aran
+step
+  when onquest 955
+  loop
+  zone map 1439
+  goto 44.528,36.587 map 1439 r 1
+  goto 45.334,39.393 map 1439 r 1
+  goto 46.096,36.541 map 1439 r 1
+  goto 44.528,36.587 map 1439 r 50
+  goto 44.435,37.404 map 1439 r 50
+  goto 44.443,38.202 map 1439 r 50
+  goto 44.493,39.008 map 1439 r 50
+  goto 44.821,39.711 map 1439 r 50
+  goto 45.334,39.393 map 1439 r 50
+  goto 45.167,38.652 map 1439 r 50
+  goto 45.091,37.865 map 1439 r 50
+  goto 45.495,37.019 map 1439 r 50
+  goto 45.831,36.79 map 1439 r 50
+  goto 46.096,36.541 map 1439 r 50
+  goto 46.906,36.171 map 1439 r 50
+  goto 47.431,36.151 map 1439 r 50
+  goto 47.022,37.083 map 1439 r 50
+  goto 47.166,37.58 map 1439 r 50
+  goto 45.827,36.812 map 1439 r 50
+  note "Kill Wild Grells and Vile Sprites. Loot them for their Grell Earrings"
+  note "Avoid killing Deth'ryll Satyrs for now"
+  collect 5336 x8 quest 955.1 -- Grell Earring (8)
+step
+  when complete 955
+  zone map 1439
+  note "Talk to Asterion"
+  turnin 955 -- Turn in Bashal'Aran
+  accept 956 -- Accept Bashal'Aran
+step
+  when turnedin 955
+  zone map 1439
+  note "Talk to Asterion"
+  accept 956 -- Accept Bashal'Aran
+step
+  when turnedin 955
+  loop
+  zone map 1439
+  goto 45.393,36.472 map 1439 r 1
+  goto 45.429,39.773 map 1439 r 1
+  goto 47.368,36.774 map 1439 r 1
+  goto 45.393,36.472 map 1439 r 45
+  goto 45.938,37.8 map 1439 r 45
+  goto 45.938,38.04 map 1439 r 45
+  goto 46.531,39.134 map 1439 r 45
+  goto 45.429,39.773 map 1439 r 45
+  goto 47.262,37.674 map 1439 r 45
+  goto 47.92,37.228 map 1439 r 45
+  goto 47.368,36.774 map 1439 r 45
+  note "Kill Deth'ryll Satyrs. Loot them for the Ancient Moonstone Seal"
+  note "Be aware that they do not have dynamic respawns"
+  collect 5338 x1 quest 956.1 -- Ancient Moonstone Seal (1)
+step
+  when complete 956
+  zone map 1439
+  note "Talk to Asterion"
+  turnin 956 -- Turn in Bashal'Aran
+  accept 957 -- Accept Bashal'Aran
+step
+  when turnedin 956
+  zone map 1439
+  note "Talk to Asterion"
+  accept 957 -- Accept Bashal'Aran
+step
+  zone map 1439
+  goto 47.314,48.676 map 1439 r 8
+  note "Travel up to the Mysterious Red Crystal"
+  note "Be careful of the two group of 2 Raging Moonkins west of the Mysterious Red Crystal as the duos closest to each other are leashed together"
+  interact 175524 quest 4811.1 -- Locate the large, red crystal on Darkshore's eastern mountain range
+step
+  label Anaya
+  along
+  zone map 1439
+  note "Kill Anaya Dawnrunner. Loot her for her Pendant"
+  collect 5382 x1 quest 963.1 -- Anaya's Pendant (1)
+step
+  when onquest 958
+  label Relics
+  along
+  zone map 1439
+  note "Kill Cursed Highbornes, Writhing Highbornes and Wailing Highbornes. Loot them for their Relics"
+  collect 5360 x7 quest 958.1 @43.787,58.959 map 1439 -- Highborne Relic (7)
+step
+  when level<17
+  zone map 1439
+  note "Talk to Sentinel Tysha Moonblade"
+  accept 953 -- Accept The Fall of Ameth'Aran
+step
+  when onquest 953
+  zone map 1439
+  goto 42.652,63.145 map 1439 r 8
+  note "Click the The Fall of Ameth'Aran"
+  interact 17189 quest 953.2 -- Read The Fall of Ameth'Aran (1)
+step
+  when onquest 957
+  zone map 1439
+  goto 42.373,61.815 map 1439 r 8
+  note "Click the Ancient Flame"
+  interact 16393 quest 957.1 -- Destroy the seal at the ancient flame (1)
+step
+  when onquest 953
+  label TheLay
+  zone map 1439
+  goto 43.299954,58.700001 map 1439 r 8
+  note "Click the The Lay of Ameth'Aran"
+  interact 17188 quest 953.1 -- Read The Lay of Ameth'Aran (1)
+step
+  when onquest 98025
+  zone map 1439
+  note "Kill Jai'vhanel. Loot it for the Feather of Jai'vhanel"
+  collect 281038 x1 quest 98025.1 -- Feather of Jai'vhanel
+step
+  when onquest 958
+  zone map 1439
+  note "Kill Cursed Highbornes, Writhing Highbornes and Wailing Highbornes. Loot them for their Relics"
+  collect 5360 x7 quest 958.1 @43.787,58.959 map 1439 -- Highborne Relic (7)
+step
+  note "Review this source step manually."
+step
+  zone map 1439
+  note "Kill Anaya Dawnrunner. Loot her for her Pendant"
+  collect 5382 x1 quest 963.1 -- Anaya's Pendant (1)
+step
+  note "Review this source step manually."
+step
+  when complete 953
+  zone map 1439
+  note "Talk to Sentinel Tysha Moonblade"
+  turnin 953 -- Turn in The Fall of Ameth'Aran
+step
+  along until FurbolgGrind
+  zone map 1439
+  note "Kill Rabid Thistle Bears"
+  note "Be careful as they cast [Rabies] if you dont kill them fast enough (Instant Melee: Reduces ALL health regen by 50% for 10 Minutes)"
+  kill 2164 x20 quest 2138.1 @40.302,59.731 map 1439 -- Rabid Thistle Bear slain (20)
+step
+  zone map 1439
+  note "Click the Beached Sea Turtle"
+  accept 4722 -- Accept Beached Sea Turtle
+step
+  label FurbolgGrind
+  loop
+  zone map 1439
+  goto 39.899,54.745 map 1439 r 1
+  goto 40.181,56.229 map 1439 r 1
+  goto 39.267,53.092 map 1439 r 50
+  goto 39.754,53.444 map 1439 r 50
+  goto 40.234,54.325 map 1439 r 50
+  goto 39.899,54.745 map 1439 r 50
+  goto 40.181,56.229 map 1439 r 50
+  goto 39.388,56.671 map 1439 r 50
+  goto 39.191,56.382 map 1439 r 50
+  goto 39.957,55.3 map 1439 r 50
+  goto 39.332,54.079 map 1439 r 50
+  note "Kill Blackwood Pathfinders and Blackwood Windtalkers"
+  kill 2167 x8 quest 985.1 -- Blackwood Pathfinder (8)
+  kill 2324 x5 quest 985.2 -- Blackwood Windtalker (5)
+step
+  along until TOTH
+  zone map 1439
+  goto 36.701,45.122 map 1439 r 8
+step
+  zone map 1439
+  note "Talk to Gwennyth Bly'Leggonde"
+  turnin 4722 -- Turn in Beached Sea Turtle
+  turnin 4723 -- Turn in Beached Sea Creature
+step
+  along until next_73
+  zone map 1439
+  goto 36.806,44.137 map 1439 r 8 optional
+  goto 35.743,43.71 map 1439 r 12 optional -- Return to Cerellean Whiteclaw on the dock
+step
+  when complete 963
+  label next_73
+  zone map 1439
+  note "Talk to Cerellean Whiteclaw"
+  turnin 963 -- Turn in For Love Eternal
+step
+  when onquest 98025
+  zone map 1439
+  note "Talk to Sentinel Glynda Nal'Shea::2930"
+  turnin 98025 -- Turn in WANTED: Jai'vhanel
+step
+  zone map 1439
+  note "Talk to Sentinel Glynda Nal'Shea"
+  turnin 4811 -- Turn in The Red Crystal
+  accept 4812 -- Accept As Water Cascades
+step
+  zone map 1439
+  note "Use the [Empty Water Tube] at the Auberdine moonwell"
+  collect 14339 x1 quest 4812.1 -- Moonwell Water Tube (1)
+  use 14338 @37.767,44.001 map 1439
+step
+  when complete 2138
+  zone map 1439
+  note "Talk to Tharnariun Treetender"
+  turnin 2138 -- Turn in Cleansing of the Infected
+  accept 2139 -- Accept Tharnariun's Hope
+step
+  when turnedin 2138
+  zone map 1439
+  note "Talk to Tharnariun Treetender"
+  accept 2139 -- Accept Tharnariun's Hope
+step
+  zone map 1439
+  note "Talk to Terenthis"
+  turnin 985 -- Turn in How Big a Threat?
+step
+  along until next_81
+  zone map 1439
+  goto 39.28,43.121 map 1439 r 6 optional
+  goto 39.162,43.194 map 1439 r 6 optional -- Go upstairs
+step
+  label next_81
+  zone map 1439
+  note "Talk to Sentinel Elissa Starbreeze upstairs"
+  accept 965 -- Accept The Tower of Althalaxx
+step
+  when complete 982
+  zone map 1439
+  note "Talk to Gorbold Steelhand"
+  turnin 982 -- Turn in Deep Ocean, Vast Sea
+step
+  when has 5469 x5
+  zone map 1439
+  note "Talk to Alanndarian Nightsong"
+  accept 2178 -- Accept Easy Strider Living
+  turnin 2178 -- Turn in Easy Strider Living
+step
+  when complete 958
+  when onquest 958
+  label TOTH
+  zone map 1439
+  note "Talk to Thundris Windweaver"
+  turnin 958 -- Turn in Tools of the Highborne
+step
+  zone map 1439
+  note "Click the Mysterious Red Crystal"
+  note "Be careful of the 2 groups of 2 Raging Moonkins west of the Mysterious Red Crystal as the duos closest to each other are leashed together"
+  turnin 4812 -- Turn in As Water Cascades
+  accept 4813 -- Accept The Fragments Within
+step
+  when onquest 957
+  zone map 1439
+  note "Talk to Asterion"
+  turnin 957 -- Turn in Bashal'Aran
+step
+  along until CrabTurtle
+  zone map 1439
+  note "Kill Rabid Thistle Bears"
+  note "Be careful as they cast [Rabies] if you dont kill them fast enough (Instant Melee: Reduces ALL health regen by 50% for 10 Minutes)"
+  kill 2164 x20 quest 2138.1 @44.168,36.289 map 1439 -- Rabid Thistle Bear slain (20)
+step
+  label CrabTurtle
+  zone map 1439
+  note "Click the Beached Sea Turtle"
+  accept 4725 -- Accept Beached Sea Turtle
+step
+  zone map 1439
+  note "Use the [Empty Sampling Tube] at the base of the Cliffspring River"
+  collect 12349 x1 quest 4762.1 @50.810031,25.500073 map 1439 -- Cliffspring River Sample (1)
+  use 12350 @50.810031,25.500073 map 1439
+step
+  loop
+  zone map 1439
+  goto 53.629,26.054 map 1439 r 1
+  goto 54.204,30.475 map 1439 r 1
+  goto 49.775,30.351 map 1439 r 1
+  goto 48.894,26.514 map 1439 r 1
+  goto 48.022,27.199 map 1439 r 60
+  goto 48.894,26.514 map 1439 r 60
+  goto 49.558,26.087 map 1439 r 60
+  goto 49.902,27.511 map 1439 r 60
+  goto 49.776,28.393 map 1439 r 60
+  goto 49.775,30.351 map 1439 r 60
+  goto 50.818,30.486 map 1439 r 60
+  goto 50.689,32.001 map 1439 r 60
+  goto 51.267,32.319 map 1439 r 60
+  goto 54.204,30.475 map 1439 r 60
+  goto 53.899,28.638 map 1439 r 60
+  goto 53.049,27.983 map 1439 r 60
+  goto 52.764,26.312 map 1439 r 60
+  goto 53.629,26.054 map 1439 r 60
+  note "Kill Rabid Thistle Bears"
+  note "Be careful as they cast [Rabies] if you dont kill them fast enough (Instant Melee: Reduces ALL health regen by 50% for 10 Minutes)"
+  kill 2164 x20 quest 2138.1 -- Rabid Thistle Bear slain (20)
+step
+  along until next_92
+  zone map 1439
+  goto 54.934,32.721 map 1439 r 20 optional
+  goto 55.108,33.6 map 1439 r 40 optional -- Travel to the Cliffspring River Cave
+step
+  only Druid
+  when onquest 6122
+  label next_92
+  zone map 1439
+  note "Use the [Empty Cliffspring Falls Sampler] in the water at the entrance of the Cliffspring River Cave"
+  collect 15845 x1 quest 6122.1 @54.990031,33.409997 map 1439 -- Filled Cliffspring Falls Sampler (1)
+step
+  zone map 1439
+  note "Loot the Scaber Stalks and a Death Cap on the ground"
+  note "Stay on the upper section. If there is not a Death Cap at the end of the top side, drop down and get one from the southern room below"
+  note "Be careful as Stormscale Wave Riders cast [Aqua Jet] (Ranged Instant: Deals damage to nearby enemies and knocks them back) - make sure you're not in a position to get knocked off the upper level of the cave"
+  collect 5271 x5 quest 947.1 @55.890031,35.400074 map 1439 -- Scaber Stalk (5)
+  collect 5270 x1 quest 947.2 @55.039954,33.339921 map 1439 -- Death Cap (1)
+  goto 55.379954,36.339922 map 1439 r 8 optional
+step
+  note "Die and respawn at the Auberdine graveyard"
+step
+  label CliffspringEnd
+  zone map 1439
+  note "Talk to Thundris Windweaver"
+  turnin 4762 -- Turn in The Cliffspring River
+step
+  when has 5469 x5
+  zone map 1439
+  note "Talk to Alanndarian Nightsong"
+  accept 2178 -- Accept Easy Strider Living
+  turnin 2178 -- Turn in Easy Strider Living
+step
+  only Druid
+  when onquest 6122
+  turnin 6122 -- Turn in The Principal Source
+step
+  only Druid
+  when onquest 6122
+  zone map 1439
+  note "Talk to Alanndarian Nightsong"
+  note "Accept Gathering the Cure"
+step
+  only Druid
+  when turnedin 6122
+  zone map 1439
+  note "Talk to Alanndarian Nightsong"
+  note "Accept Gathering the Cure"
+step
+  only Druid
+  when turnedin 6123
+  zone map 1439
+  note "Talk to Alanndarian Nightsong"
+  note "Accept Gathering the Cure"
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Warlock
+  zone map 1439
+  note "Talk to Archaeologist Hollee"
+  accept 729 -- Accept The Absent Minded Prospector
+step
+  zone map 1439
+  note "Talk to Tharnariun Treetender"
+  turnin 2138 -- Turn in Cleansing of the Infected
+  accept 2139 -- Accept Tharnariun's Hope
+step
+  zone map 1439
+  note "Talk to Sentinel Glynda Nal'Shea"
+  note "Choose the [Curvewood Dagger] as you should try to save a [Dagger] for your [Poisons] quest later" only Rogue
+  turnin 4813 -- Turn in The Fragments Within
+step
+  zone map 1439
+  note "Talk to Barithras Moonshade"
+  turnin 947 -- Turn in Cave Mushrooms
+  accept 948 -- Accept Onu
+step
+  zone map 1439
+  note "Click the Wanted Poster"
+  accept 4740 -- Accept WANTED: Murkdeep!
+step
+  when onquest 4723
+  zone map 1439
+  note "Talk to Gwennyth Bly'Leggonde"
+  turnin 4723 -- Turn in Beached Sea Creature
+  turnin 4725 -- Turn in Beached Sea Turtle
+step
+  only Druid
+  when !zone "Darnassus"
+  along until TotL
+  zone map 1439
+  goto 33.213,39.883 map 1439 r 8
+step
+  only Druid
+  label DruidLesson
+  along until TotL
+  zone map 1438
+  goto 55.949919,89.879926 map 1438 r 8
+step
+  only Druid
+  zone map 1457
+  note "Talk to Mathrengyl Bearwalker"
+  note "Accept A Lesson to Learn"
+  train 4217 -- Train your class spells
+step
+  only Druid
+  when onquest 729
+  along until next_110
+  note "Abandon The Absent Minded Prospector to accept the quest Trouble In Darkshore?"
+step
+  only Druid
+  when !zone "Moonglade"
+  label next_110
+  along until TotL
+  note "Cast Teleport: Moonglade"
+step
+  only Druid
+  when onquest 26
+  turnin 26 -- Turn in A Lesson to Learn
+step
+  only Druid
+  zone map 1450
+  note "Talk to Dendrite Starblaze"
+  note "Accept Trial of the Lake"
+step
+  only Druid
+  when !turnedin 29
+  zone map 1450
+  note "Swim into Lake Elune'Ara"
+  note "Open a Bauble Container. Loot it for a [Shrine Bauble]"
+  note "It may spawn in different locations underwater"
+  collect 15877 x1 @52.599863,51.600076 map 1450 -- Shrine Bauble (1)
+step
+  only Druid
+  when has 15877
+  along until next_114
+  note "Cast Teleport: Moonglade"
+step
+  only Druid
+  label next_114
+  zone map 1450
+  note "Use the [Shrine Bauble] at the Shrine of Remulos tree"
+  note "Complete the Trial of the Lake."
+  use 15877 @36.025998,41.37393 map 1450
+step
+  only Druid
+  when onquest 29
+  turnin 29 -- Turn in Trial of the Lake
+step
+  only Druid
+  label TotL
+  zone map 1450
+  note "Talk to Tajarri"
+  accept 272 -- Accept Trial of the Sea Lion
+step
+  when !zone "Stormwind City"
+  when !zone "Darkshore"
+  when !zone "Ironforge"
+  hearth "Stormwind" optional -- Hearth to Stormwind
+step
+  when onquest 97220
+  turnin 97220 -- Turn in Philmor's Favor
+step
+  zone map 1453
+  note "Talk to Elaine Trias::483"
+  accept 97222 -- Accept Gatehouse Goods
+step
+  zone map 1453
+  use 277198 @60.454447,65.080203 map 1453 -- Use the [Gatehouse Shipment] in front of the Gatehouse Door upstairs
+  note "Gatehouse Shipment delivered"
+step
+  label Gatehouse
+  zone map 1453
+  note "Talk to Elaine Trias::483"
+  turnin 97222 -- Turn in Gatehouse Goods
+step
+  only Druid
+  when !zone "Dun Morogh"
+  when !zone "Ironforge"
+  zone map 1453
+  note "Talk to Theridran"
+  train 5505 -- Train your class spells
+step
+  only Warlock
+  when !zone "Dun Morogh"
+  when !zone "Ironforge"
+  along until next_122
+  zone map 1453
+  goto 29.200309,73.99967 map 1453 r 20 optional
+  goto 27.199967,78.099612 map 1453 r 15 optional -- Travel to The Slaughtered Lamb and go downstairs
+step
+  only Warlock
+  when !zone "Dun Morogh"
+  when !zone "Ironforge"
+  label next_122
+  zone map 1453
+  note "Talk to Ursula Deline"
+  train 5495 -- Train your class spells
+step
+  only Mage
+  when !zone "Dun Morogh"
+  when !zone "Ironforge"
+  along until next_124
+  zone map 1453
+  goto 37.689675,82.090223 map 1453 r 10 -- Travel to the Mage Tower
+step
+  only Mage
+  when !zone "Dun Morogh"
+  when !zone "Ironforge"
+  label next_124
+  zone map 1453
+  note "Talk to Elsharin"
+  train 5498 -- Train your class spells
+step
+  only Priest
+  when !zone "Dun Morogh"
+  when !zone "Ironforge"
+  along until next_126
+  zone map 1453
+  goto 42.510136,33.510086 map 1453 r 20 -- Travel to the Stormwind Cathedral
+step
+  only Paladin
+  when !zone "Dun Morogh"
+  when !zone "Ironforge"
+  along until next_126
+  zone map 1453
+  goto 42.510136,33.510086 map 1453 r 20 -- Travel to the Stormwind Cathedral
+step
+  only Paladin
+  when !zone "Dun Morogh"
+  when !zone "Ironforge"
+  label next_126
+  zone map 1453
+  note "Talk to Arthur the Faithful"
+  train 5491 -- Train your class spells
+step
+  only Priest
+  when !zone "Dun Morogh"
+  when !zone "Ironforge"
+  zone map 1453
+  note "Talk to Brother Joshua"
+  train 5489 -- Train your class spells
+step
+  only Hunter
+  when !zone "Dun Morogh"
+  when !zone "Ironforge"
+  zone map 1453
+  note "Talk to Einris Brightspear"
+  train 5515 -- Train your class spells
+step
+  only Hunter
+  when !zone "Dun Morogh"
+  when !zone "Ironforge"
+  zone map 1453
+  note "Talk to Karrina Mekenda"
+  train 2879 -- Train your pet spells
+step
+  only Rogue
+  when !zone "Dun Morogh"
+  when !zone "Ironforge"
+  zone map 1453
+  note "Talk to Osborne"
+  train 918 -- Train your class spells
+step
+  only Warrior
+  when !zone "Dun Morogh"
+  when !zone "Ironforge"
+  zone map 1453
+  note "Talk to Wu or Ilsa"
+  goto 76.080029,50.139677 map 1453 r 15 optional
+  goto 80.219822,45.370356 map 1453 r 15 optional
+  goto 78.679953,45.789833 map 1453 r 8 optional
+  train class -- Train your class spells

@@ -1,0 +1,1032 @@
+guide rxp-free/6-11-teldrassil-aa19792d
+title "6-11 Teldrassil"
+levels 6-11
+zone map 1438
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · RXP Survival Guide 1-20"
+next rxp-free/11-13-darkshore-night-elf-11979324
+step
+  zone map 1438
+  note "Talk to Zenn Foulhoof"
+  accept 488 -- Accept Zenn's Bidding
+step
+  along until zenn
+  zone map 1438
+  note "Kill Nightsabers. Loot them for their Fangs"
+  note "Kill Strigid Owls. Loot them for their Feathers"
+  note "Kill Webwood Lurkers. Loot them for their Silk"
+  collect 3409 x3 quest 488.1 @60.5,56.3 map 1438 -- Collect Nightsaber Fang (x3)
+  collect 3411 x3 quest 488.2 @60.5,56.3 map 1438 -- Collect Strigid Owl Feather (x3)
+  collect 3412 x3 quest 488.3 @60.5,56.3 map 1438 -- Collect Webwood Spider Silk (x3)
+step
+  along until spiderLegs
+  zone map 1438
+  note "Kill Webwood Lurkers and Webwood Venomfangs. Loot them for their Small Spider Legs"
+  note "You need these for a later quest"
+  collect 5465 x7 @60.5,56.3 map 1438 optional -- Collect Small Spider Leg (x7)
+step
+  zone map 1438
+  note "Talk to Syral Bladeleaf"
+  accept 997 -- Accept Denalan's Earth
+step
+  zone map 1438
+  note "Talk to Athridas Bearmantle"
+  accept 475 -- Accept A Troubling Breeze
+step
+  only Priest
+  when onquest 5622
+  turnin 5622 -- Turn in In Favor of Elune
+step
+  only Priest
+  zone map 1438
+  note "Talk to Laurna Morninglight"
+  accept 5621 -- Accept Garments of the Moon
+  train 3600 -- Train your class spells
+step
+  only Rogue
+  zone map 1438
+  note "Talk to Aldia up stairs"
+  vendor 3608 -- Buy and equip a [Small Throwing Knife]
+step
+  zone map 1438
+  note "Talk to Tallonkai Swiftroot atop the Tree"
+  accept 932 -- Accept Twisted Hatred
+  accept 2438 -- Accept The Emerald Dreamcatcher
+step
+  only Hunter
+  zone map 1438
+  note "Talk to Jeena Featherbow"
+  note "Buy and equip a [Hornwood Recurve Bow] if you can afford it (2s 85c), if not skip this step"
+  note "Buy [Rough Arrows] until your Quiver is full"
+  collect 2506 x1 @55.89,59.205 map 1438 -- Collect Hornwood Recurve Bow
+step
+  only Warrior
+  zone map 1438
+  note "Talk to Kyra Windblade"
+  train 3598 -- Train your class spells
+step
+  only Rogue
+  zone map 1438
+  note "Talk to Jannok Breezesong"
+  train 3599 -- Train your class spells
+step
+  only Warrior
+  zone map 1438
+  note "Talk to Shalomon"
+  note "Buy and equip a [Gladius] if you can afford it (5s 36c), if not skip this step"
+  collect 2488 x1 @56.308,59.488 map 1438 -- Collect Gladius
+step
+  only Rogue
+  zone map 1438
+  note "Talk to Shalomon"
+  note "Buy and equip a [Stiletto] if you can afford it (4s 1c), if not skip this step"
+  collect 2494 x1 @56.308,59.488 map 1438 -- Stiletto (1)
+step
+  only Druid
+  zone map 1438
+  note "Talk to Shalomon"
+  note "Buy and equip a [Walking Stick] if you can afford it (5s 4c), if not skip this step"
+  collect 2495 x1 @56.308,59.488 map 1438 -- Walking Stick (1)
+step
+  when onquest 2159
+  turnin 2159 only Hunter -- Turn in Dolanaar Delivery
+  turnin 2159 only !Hunter -- Turn in Dolanaar Delivery
+step
+  zone map 1438
+  note "Talk to Innkeeper Keldamyr"
+  sethome "Dolanaar" @55.619,59.788 map 1438 -- Set your Hearthstone to Dolanaar
+step
+  only Hunter
+  zone map 1438
+  goto 56.676,59.489 map 1438 r 8
+  note "Talk to Dazalar"
+  learn 3044 "Arcane Shot"
+step
+  only Druid
+  zone map 1438
+  note "Talk to Kal"
+  train 3602 -- Train your class spells
+step
+  when onquest 928
+  turnin 928 -- Turn in Crown of the Earth
+step
+  zone map 1438
+  note "Talk to Corithras Moonrage"
+  accept 929 -- Accept Crown of the Earth
+step
+  only Druid
+  zone map 1438
+  goto 57.721,60.641 map 1438 r 8
+  note "Talk to Malorne Bladeleaf"
+  learn 2366 "Herbalism"
+  note "[Herbalism] is required to gather 5 [Earthroot] for a level 15 quest later. You can unlearn it afterwards"
+step
+  only Druid
+  along until end
+  zone map 1438
+  note "Level [Herbalism] to 15"
+  note "Pick 5 Earthroot off the ground for a level 15 quest later"
+  collect 2449 x5 @57.721,60.641 map 1438
+step
+  only Priest
+  zone map 1438
+  note "Target Sentinel Shaya"
+  note "Cast [Lesser Heal (Rank 2)] and [Power Word: Fortitude] on Sentinel Shaya"
+  kill 12429 x1 quest 5621.1 -- Heal and fortify Sentinel Shaya
+step
+  zone map 1438
+  note "Talk to Denalan"
+  turnin 997 -- Turn in Denalan's Earth
+  accept 918 -- Accept Timberling Seeds
+  accept 919 -- Accept Timberling Sprouts
+step
+  zone map 1438
+  goto 61.63,68.89 map 1438 r 55 optional
+  goto 60.52,70.47 map 1438 r 55 optional
+  goto 59.04,72.52 map 1438 r 55 optional
+  goto 57.69,69.92 map 1438 r 55 optional
+  goto 55.33,67.22 map 1438 r 55 optional
+  note "Kill Timberlings. Loot them for their Seeds"
+  note "Loot the Timberling Sprouts on the ground"
+  collect 5168 x8 quest 918.1 @61.21,66.28 map 1438 -- Collect Timberling Seed (x8)
+  collect 5169 x12 quest 919.1 @61.21,66.28 map 1438 -- Collect Timberling Sprout (x12)
+step
+  zone map 1438
+  note "Talk to Denalan"
+  turnin 918 -- Turn in Timberling Seeds
+  accept 922 -- Accept Rellian Greenspyre
+  turnin 919 -- Turn in Timberling Sprouts
+step
+  along until next_25
+  zone map 1438
+  goto 68.02,59.66 map 1438 r 120 -- Travel to Starbreeze Village
+step
+  label next_25
+  zone map 1438
+  note "Open Tallonkai's Dresser. Loot it for the Emerald Dreamcatcher"
+  collect 8048 x1 quest 2438.1 @68.02,59.66 map 1438 -- Collect Emerald Dreamcatcher (x1)
+step
+  zone map 1438
+  note "Talk to Gaerolas Talvethren up stairs"
+  turnin 475 -- Turn in A Troubling Breeze
+  accept 476 -- Accept Gnarlpine Corruption
+step
+  label zenn
+  zone map 1438
+  note "Use the [Jade Phial] at the Starbreeze Village Moonwell"
+  collect 5639 x1 quest 929.1 -- Collect Filled Jade Phial (x1)
+step
+  zone map 1438
+  note "Kill Nightsabers. Loot them for their Fangs"
+  note "Kill Strigid Owls. Loot them for their Feathers"
+  note "Kill Webwood Lurkers. Loot them for their Silk"
+  note "Save any [Small Eggs] and [Small Spider Legs] to use for leveling [Cooking] later"
+  collect 3409 x3 quest 488.1 @63.38,58.1 map 1438 -- Collect Nightsaber Fang (x3)
+  collect 3411 x3 quest 488.2 @59.14,60.91 map 1438 -- Collect Strigid Owl Feather (x3)
+  collect 3412 x3 quest 488.3 @59.14,60.91 map 1438 -- Collect Webwood Spider Silk (x3)
+  goto 61.06,54.66 map 1438 r 50 optional
+  goto 60.17,59.62 map 1438 r 50 optional
+  goto 58.22,56.32 map 1438 r 8 optional
+step
+  zone map 1438
+  goto 60.7,54.4 map 1438 r 8
+  level 7+3500 -- Grind to level 7 +3500xp
+step
+  zone map 1438
+  note "Talk to Zenn Foulhoof"
+  turnin 488 -- Turn in Zenn's Bidding
+step
+  zone map 1438
+  note "Talk to Syral Bladeleaf"
+  accept 489 -- Accept Seek Redemption!
+step
+  zone map 1438
+  note "Talk to Athridas Bearmantle"
+  turnin 476 -- Turn in Gnarlpine Corruption
+step
+  only Priest
+  when onquest 5621
+  turnin 5621 -- Turn in Garments of the Moon
+step
+  only Priest
+  zone map 1438
+  note "Talk to Laurna Morninglight"
+  train 3600 -- Train your class spells
+step
+  zone map 1438
+  note "Talk to Tallonkai Swiftroot atop the Tree"
+  turnin 2438 -- Turn in The Emerald Dreamcatcher
+  accept 2459 -- Accept Ferocitas the Dream Eater
+step
+  only Hunter
+  zone map 1438
+  note "Talk to Jeena Featherbow"
+  note "Buy and equip a [Hornwood Recurve Bow] if you can afford it (2s 85c), if not skip this step"
+  collect 2506 x1 @55.89,59.205 map 1438 -- Collect Hornwood Recurve Bow
+step
+  only Hunter
+  zone map 1438
+  note "Talk to Jeena Featherbow"
+  vendor 3610 -- Buy up to 800 [Rough Arrows]
+step
+  only Hunter
+  zone map 1438
+  note "Talk to Dazalar"
+  train 3601 -- Train your class spells
+step
+  only Warrior
+  zone map 1438
+  note "Talk to Kyra Windblade"
+  train 3598 -- Train your class spells
+step
+  only Rogue
+  zone map 1438
+  note "Talk to Jannok Breezesong"
+  train 3599 -- Train your class spells
+step
+  only Warrior
+  zone map 1438
+  note "Talk to Shalomon"
+  note "Buy and equip a [Gladius] if you can afford it (5s 36c), if not skip this step"
+  collect 2488 x1 @56.308,59.488 map 1438 -- Collect Gladius
+step
+  only Rogue
+  zone map 1438
+  note "Talk to Shalomon"
+  note "Buy and equip a [Stiletto] if you can afford it (4s 1c), if not skip this step"
+  collect 2494 x1 @56.308,59.488 map 1438 -- Stiletto (1)
+step
+  only Druid
+  zone map 1438
+  note "Talk to Shalomon"
+  note "Buy and equip a [Walking Stick] if you can afford it (5s 4c), if not skip this step"
+  collect 2495 x1 @56.308,59.488 map 1438 -- Walking Stick (1)
+step
+  only Druid
+  zone map 1438
+  note "Talk to Corithras Moonrage"
+  turnin 929 -- Turn in Crown of the Earth
+  accept 933 -- Accept Crown of the Earth
+step
+  only Druid
+  zone map 1438
+  note "Talk to Kal"
+  train 3602 -- Train your class spells
+step
+  along until jewel
+  zone map 1438
+  note "Loot the Fel Cones on the ground"
+  note "They are usually located next to tree trunks"
+  collect 3418 x3 quest 489.1 @55.945,61.566 map 1438 -- Collect Fel Cone (x3)
+step
+  along until next_47
+  zone map 1438
+  note "Kill Gnarlpine Mystics"
+  note "If there aren't many Gnarlpine Mystics you may have to kill Gnarlpine Warriors to make them spawn"
+  kill 7235 x7 quest 2459.1 @55.945,61.566 map 1438 -- Kill Gnarlpine Mystic (x7)
+step
+  label next_47
+  zone map 1438
+  note "Kill Ferocitas the Dream Eater. Loot him for the [Gnarlpine Necklace]"
+  use 8049 @69.37,53.41 map 1438 -- Use the [Gnarlpine Necklace] to loot Tallonkai's Jewel
+  collect 8050 x1 quest 2459.2 -- Collect Tallonkai's Jewel (x1)
+step
+  label jewel
+  zone map 1438
+  note "Kill Gnarlpine Mystics"
+  note "If there aren't many Gnarlpine Mystics you may have to kill Gnarlpine Warriors to make them spawn"
+  kill 7235 x7 quest 2459.1 @69.37,53.41 map 1438 -- Kill Gnarlpine Mystic (x7)
+step
+  zone map 1438
+  note "Loot the Fel Cones on the ground"
+  note "They are usually located next to tree trunks"
+  collect 3418 x3 quest 489.1 @58.7,55.7 map 1438 -- Collect Fel Cone (x3)
+step
+  zone map 1438
+  note "Talk to Zenn Foulhoof"
+  turnin 489 -- Turn in Seek Redemption!
+step
+  along until next_52
+  zone map 1438
+  goto 54.68,52.84 map 1438 r 20 optional
+  goto 54.42,51.19 map 1438 r 15 optional -- Travel to Fel Rock
+step
+  only Hunter
+  label next_52
+  zone map 1438
+  note "Kill Lord Melenas. Loot him for his Head"
+  note "Lord Melenas may be located in many different spawn locations throughout Fel Rock"
+  collect 5221 x1 quest 932.1 -- Collect Melenas' Head (x1)
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  zone map 1438
+  note "Kill Lord Melenas. Loot him for his Head"
+  note "Lord Melenas may be located in many different spawn locations throughout Fel Rock"
+  collect 5221 x1 quest 932.1 -- Collect Melenas' Head (x1)
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Warlock
+  label next_55
+  zone map 1438
+  note "Talk to Corithras Moonrage"
+  turnin 929 -- Turn in Crown of the Earth
+step
+  zone map 1438
+  note "Talk to Corithras Moonrage"
+  accept 933 -- Accept Crown of the Earth
+step
+  along until next_58
+  zone map 1438
+  goto 42.61,76.18 map 1438 r 50 -- Travel to southwestern Teldrassil
+step
+  label next_58
+  zone map 1438
+  note "Click the Strange Fruited Plant"
+  accept 930 -- Accept The Glowing Fruit
+step
+  along until spiderLegs
+  zone map 1438
+  goto 42.41,67.07 map 1438 r 50 -- Travel to the Pools of Arlithrien
+step
+  label spiderLegs
+  zone map 1438
+  use 5621 @42.41,67.07 map 1438 -- Use the [Tourmaline Phial] at the Pools of Arlithrien moonwell
+  collect 5645 x1 quest 933.1
+step
+  when !turnedin 4161
+  zone map 1438
+  note "Kill Webwood Lurkers and Webwood Venomfangs. Loot them for their Small Spider Legs"
+  collect 5465 x7 @44.88,73.83 map 1438 -- Collect Small Spider Leg (x7)
+step
+  along until next_63
+  zone map 1438
+  goto 56.142,61.714 map 1438 r 90 -- Travel to Dolanaar
+step
+  label next_63
+  zone map 1438
+  note "Talk to Corithras Moonrage"
+  turnin 933 -- Turn in Crown of the Earth
+  accept 7383 -- Accept Crown of the Earth
+step
+  zone map 1438
+  note "Talk to Zarrin"
+  learn 2550 "Cooking"
+  accept 4161 -- Accept Recipe of the Kaldorei
+  turnin 4161 -- Turn in Recipe of the Kaldorei
+step
+  zone map 1438
+  goto 55.29,56.82 map 1438 r 8
+  note "Talk to Byancie"
+  learn 3273 "First Aid"
+step
+  zone map 1438
+  note "Talk to Tallonkai Swiftroot atop the Tree"
+  turnin 932 -- Turn in Twisted Hatred
+  turnin 2459 -- Turn in Ferocitas the Dream Eater
+step
+  zone map 1438
+  note "Talk to Moon Priestess Amara"
+  note "Moon Priestess Amara patrols the road west of Dolanaar"
+  accept 487 -- Accept The Road to Darnassus
+step
+  zone map 1438
+  note "Kill Gnarlpine Ambushers"
+  kill 2152 x6 quest 487.1 @46.6,53 map 1438 -- Kill Gnarlpine Ambusher (x6)
+step
+  only Druid
+  zone map 1438
+  note "Talk to Moon Priestess Amara"
+  note "Moon Priestess Amara patrols the road west of Dolanaar"
+  turnin 487 -- Turn in The Road to Darnassus
+step
+  along until next_71
+  zone map 1438
+  goto 38.32,34.36 map 1438 r 50 -- Travel to The Oracle Glade
+step
+  label next_71
+  zone map 1438
+  note "Talk to Sentinel Arynia Cloudsbreak"
+  accept 937 -- Accept The Enchanted Glade
+step
+  zone map 1438
+  use 18152 @38.43,34.03 map 1438 -- Use the [Amethyst Phial] at The Oracle Glade moonwell
+  collect 18151 x1 quest 7383.1 -- Collect Filled Amethyst Phial (x1)
+step
+  label harpies
+  along until xp10
+  zone map 1438
+  note "Kill Bloodfeather Harpies. Loot them for their Belts"
+  note "Bloodfeather Matriarchs cast [Healing Wave] and [Lightning Bolt] which does a lot of damage. Try to burst them fast"
+  collect 5204 x6 quest 937.1 @38.43,34.03 map 1438 -- Collect Bloodfeather Belt (x6)
+step
+  zone map 1438
+  note "Click the Strange Fronded Plant"
+  accept 931 -- Accept The Shimmering Frond
+step
+  only Hunter
+  label mist1
+  along until xp10
+  zone map 1438
+  note "Talk to Mist"
+  note "This will start an escort quest"
+  accept 938 -- Accept Mist
+step
+  label xp10
+  only Hunter
+  zone map 1438
+  note "Talk to Mist"
+  note "This will start an escort quest"
+  accept 938 -- Accept Mist
+step
+  only Hunter
+  when onquest 938
+  along
+  zone map 1438
+  note "Talk to Sentinel Arynia Cloudsbreak"
+  turnin 938 -- Turn in Mist
+step
+  zone map 1438
+  note "Kill Bloodfeather Harpies. Loot them for their Belts"
+  note "Bloodfeather Matriarchs cast [Healing Wave] and [Lightning Bolt] which does a lot of damage. Try to burst them fast"
+  collect 5204 x6 quest 937.1 @38.43,34.03 map 1438 -- Collect Bloodfeather Belt (x6)
+step
+  only Hunter
+  along
+  zone map 1438
+  note "Talk to Sentinel Arynia Cloudsbreak"
+  turnin 937 -- Turn in The Enchanted Glade
+  accept 940 -- Accept Teldrassil
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  label mist1_2
+  zone map 1438
+  note "Talk to Mist"
+  note "This will start an escort quest"
+  accept 938 -- Accept Mist
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  when onquest 938
+  turnin 938 -- Turn in Mist
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  zone map 1438
+  note "Talk to Sentinel Arynia Cloudsbreak"
+  turnin 937 -- Turn in The Enchanted Glade
+  accept 940 -- Accept Teldrassil
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  label xp10_2
+  note "XP checkpoint: 10-750" only Druid
+  note "XP checkpoint: 10-3110" only !Druid
+step
+  only Hunter
+  note "XP checkpoint: 10-2670 Grind until you are 2670 xp off level 10 (3830/6500)"
+  note "Once you reach this xp breakpoint, skip the harpy/escort quest and go straight to Darnassus. You will have another opportunity to finish those quests later"
+step
+  only Warrior,Paladin,Hunter,Priest,Shaman,Mage,Warlock,Druid
+  along until next_83
+  zone map 1457
+  goto 82.01,36.7 map 1457 r 100 -- Travel to Darnassus
+step
+  only Hunter
+  note "XP checkpoint: 10-2670 Grind until you are 2670 xp off level 10 (3830/6500)"
+  note "Once you reach this xp breakpoint, skip the harpy/escort quest and go straight to Darnassus. You will have another opportunity to finish those quests later"
+step
+  only Warrior,Paladin,Hunter,Priest,Shaman,Mage,Warlock,Druid
+  label next_83
+  zone map 1457
+  note "Talk to Rellian Greenspyre"
+  turnin 922 -- Turn in Rellian Greenspyre
+  accept 923 -- Accept Tumors
+step
+  only Warrior,Paladin,Priest,Shaman,Mage,Warlock,Druid
+  when onquest 940
+  zone map 1457
+  note "Talk to Arch Druid Fandral Staghelm atop the Tree"
+  turnin 940 -- Turn in Teldrassil
+step
+  only Druid
+  zone map 1457
+  note "Talk to Mathrengyl Bearwalker on the middle level"
+  accept 5921 -- Accept Moonglade
+  train 4217 -- Train your class spells
+step
+  only Warrior,Paladin,Hunter,Priest,Shaman,Mage,Warlock,Druid
+  zone map 1457
+  note "Talk to Priestess A'moora"
+  accept 2518 -- Accept Tears of the Moon
+step
+  only Druid
+  when !zone "Moonglade"
+  along until next_88
+  note "Cast Teleport: Moonglade"
+  note "It will be in your spellbook"
+step
+  only Druid
+  when onquest 5921
+  turnin 5921 -- Turn in Moonglade
+step
+  only Druid
+  label next_88
+  zone map 1450
+  note "Talk to Dendrite Starblaze up stairs"
+  accept 5929 -- Accept Great Bear Spirit
+step
+  only Druid
+  zone map 1450
+  note "Talk to the Great Bear Spirit"
+  kill 11956 x1 quest 5929.1 -- Seek out the Great Bear Spirit and learn what it has to share with you about the nature of the bear.
+step
+  only Druid
+  along until next_91
+  note "Cast Teleport: Moonglade"
+  note "This will make you return faster"
+step
+  only Druid
+  when onquest 5929
+  turnin 5929 -- Turn in Great Bear Spirit
+step
+  only Druid
+  label next_91
+  zone map 1450
+  note "Talk to Dendrite Starblaze up stairs"
+  accept 5931 -- Accept Back to Darnassus
+step
+  hearth "Dolanaar" optional -- Hearth to Dolanaar
+step
+  only Hunter
+  zone map 1438
+  note "Talk to Jeena Featherbow"
+  vendor 3610 -- Buy 4 stacks of [Sharp Arrows]. Equip them as soon as you reach level 10
+step
+  only Hunter
+  when level>=10
+  label beast1
+  along until L10
+  zone map 1438
+  note "Talk to Dazalar"
+  accept 6063 -- Accept Taming the Beast
+  learn 13165 "your level 10 spells"
+step
+  only Hunter
+  when level>=10
+  zone map 1438
+  note "Talk to Dazalar"
+  accept 6063 -- Accept Taming the Beast
+  learn 13165 "your level 10 spells"
+step
+  only Hunter
+  when level>=10
+  when onquest 6063
+  along until L10
+  kill 1998 x1 quest 6063.1 @59.9,58.8 map 1438 -- Tame a Webwood Lurker
+step
+  only Hunter
+  when level>=10
+  label beast2
+  along until L10
+  zone map 1438
+  use 15921 @59.9,58.8 map 1438 -- Use the [Taming Rod] on a Webwood Lurker
+step
+  only Hunter
+  when level>=10
+  zone map 1438
+  use 15921 @59.9,58.8 map 1438 -- Use the [Taming Rod] on a Webwood Lurker
+step
+  only Hunter
+  when level>=10
+  when onquest 6063
+  along until L10
+  turnin 6063 -- Turn in Taming the Beast
+step
+  only Hunter
+  when level>=10
+  along until L10
+  zone map 1438
+  note "Talk to Dazalar"
+  accept 6101 -- Accept Taming the Beast
+step
+  zone map 1438
+  note "Talk to Corithras Moonrage"
+  turnin 7383 -- Turn in Crown of the Earth
+  accept 935 -- Accept Crown of the Earth
+step
+  zone map 1438
+  note "Talk to Denalan"
+  turnin 931 -- Turn in The Shimmering Frond
+  turnin 930 -- Turn in The Glowing Fruit
+step
+  when onquest 927
+  zone map 1438
+  note "Talk to Denalan"
+  turnin 927 -- Turn in The Moss-twined Heart
+step
+  when turnedin 927
+  when onquest 941
+  zone map 1438
+  note "Click on Denalans Planter"
+  turnin 941 -- Turn in Planting the Heart
+step
+  only Hunter
+  when onquest 6101
+  kill 2043 x1 quest 6101.1 @62.6,72.2 map 1438 -- Tame a Nightsaber Stalker
+step
+  only Hunter
+  when onquest 6101
+  zone map 1438
+  use 15922 @62.6,72.2 map 1438 -- Use the [Taming Rod] on a Nightsaber Stalker
+  note "You must right click your Pet Frame and Dismiss your pet before you can tame another one"
+step
+  only Hunter
+  when turnedin 6101
+  zone map 1438
+  use 15922 @62.6,72.2 map 1438 -- Use the [Taming Rod] on a Nightsaber Stalker
+  note "You must right click your Pet Frame and Dismiss your pet before you can tame another one"
+step
+  label L10
+  level 10
+step
+  only Priest
+  zone map 1438
+  note "Talk to Laurna Morninglight"
+  train 3600 -- Train your class spells
+step
+  only Warrior
+  zone map 1438
+  note "Talk to Kyra Windblade"
+  train 3598 -- Train your class spells
+step
+  only Rogue
+  zone map 1438
+  note "Talk to Jannok Breezesong"
+  train 3599 -- Train your class spells
+step
+  only Hunter
+  zone map 1438
+  note "Talk to Dazalar"
+  accept 6063 -- Accept Taming the Beast
+  train 3601 -- Train your class spells
+step
+  only Hunter
+  when onquest 6063
+  kill 1998 x1 quest 6063.1 @59.9,58.8 map 1438 -- Tame a Webwood Lurker
+step
+  only Hunter
+  zone map 1438
+  use 15921 @59.9,58.8 map 1438 -- Use the [Taming Rod] on a Webwood Lurker
+step
+  only Hunter
+  when onquest 6063
+  turnin 6063 -- Turn in Taming the Beast
+step
+  only Hunter
+  zone map 1438
+  note "Talk to Dazalar"
+  accept 6101 -- Accept Taming the Beast
+step
+  only Hunter
+  when onquest 6101
+  kill 2043 x1 quest 6101.1 @62.6,72.2 map 1438 -- Tame a Nightsaber Stalker
+step
+  only Hunter
+  zone map 1438
+  use 15922 @62.6,72.2 map 1438 -- Use the [Taming Rod] on a Nightsaber Stalker
+  note "You must right click your Pet Frame and Dismiss your pet before you can tame another one"
+step
+  only Hunter
+  when onquest 6101
+  turnin 6101 -- Turn in Taming the Beast
+step
+  only Hunter
+  zone map 1438
+  note "Talk to Dazalar"
+  accept 6102 -- Accept Taming the Beast
+step
+  only Hunter
+  when onquest 6102
+  kill 1996 x1 quest 6102.1 @64.7,66.7 map 1438 -- Tame a Strigid Screecher
+step
+  only Hunter
+  zone map 1438
+  use 15923 @64.7,66.7 map 1438 -- Use the [Taming Rod] on a Strigid Screecher
+  note "You must right click your Pet Frame and Dismiss your pet before you can tame another one"
+step
+  only Hunter
+  when onquest 6102
+  turnin 6102 -- Turn in Taming the Beast
+step
+  only Hunter
+  zone map 1438
+  note "Talk to Dazalar"
+  accept 6103 -- Accept Training the Beast
+step
+  only Warrior
+  zone map 1438
+  note "Talk to Moon Priestess Amara"
+  note "Moon Priestess Amara patrols the road west of Dolanaar"
+  accept 1684 -- Accept Elanaria
+step
+  only Rogue
+  zone map 1438
+  note "Talk to Jannok Breezesong"
+  accept 2241 -- Accept The Apple Falls
+step
+  only Hunter
+  zone map 1438
+  goto 56.308,59.488 map 1438 r 8
+  note "Talk to Shalomon"
+  note "Buy a [Walking Stick]"
+  note "You will equip this later. Skip this step if you happened to find a different staff"
+  collect 2495 x1 @56.308,59.488 map 1438 optional -- Walking Stick (1)
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Warlock
+  zone map 1438
+  note "Talk to Moon Priestess Amara"
+  note "Moon Priestess Amara patrols the road west of Dolanaar"
+  turnin 487 -- Turn in The Road to Darnassus
+step
+  only Rogue
+  along until next_118
+  zone map 1457
+  goto 82.01,36.7 map 1457 r 100 -- Travel to Darnassus
+step
+  only Rogue
+  label next_118
+  zone map 1457
+  note "Talk to Rellian Greenspyre"
+  turnin 922 -- Turn in Rellian Greenspyre
+  accept 923 -- Accept Tumors
+step
+  only Rogue
+  when onquest 940
+  turnin 940 -- Turn in Teldrassil
+step
+  only Rogue
+  zone map 1457
+  note "Talk to Arch Druid Fandral Staghelm atop the Tree"
+  turnin 935 -- Turn in Crown of the Earth
+  accept 952 -- Accept Grove of the Ancients
+step
+  only Rogue
+  when onquest 2241
+  turnin 2241 -- Turn in The Apple Falls
+step
+  only Rogue
+  zone map 1457
+  note "Talk to Syurna"
+  accept 2242 -- Accept Destiny Calls
+step
+  only Rogue
+  zone map 1457
+  note "Talk to Priestess A'moora"
+  accept 2518 -- Accept Tears of the Moon
+step
+  only Hunter
+  along
+  zone map 1438
+  note "Cast [Tame Beast] on a Strigid Hunter to tame it -- .tame 1997"
+  learn 2981 "Claw (Rank 2)"
+step
+  when onquest 923
+  zone map 1438
+  note "Kill Timberling Tramplers, Timberling Mire Beasts and Elder Timberlings. Loot them for their Tumors"
+  collect 5170 x5 quest 923.1 @43.2,42.8 map 1438 -- Collect Mossy Tumor (x5)
+step
+  label Spinnerets
+  zone map 1438
+  note "Kill Lady Sathrah. Loot it for its Spinnerets"
+  note "Lady Sathrah can spawn in 3 different locations"
+  collect 8344 x1 quest 2518.1 -- Collect Silvery Spinnerets (x1)
+step
+  only Rogue
+  zone map 1438
+  note "Cast [Pick Pocket] on Sethir the Ancient"
+  note "You must be in [Stealth] to use [Pick Pocket]"
+  note "Sethir the Ancient walks along the big tree branch"
+  note "Avoid fighting Sethir the Ancient. Let him walk passed you, then [Stealth] and [Pick Pocket] when you're behind him"
+  collect 7737 x1 quest 2242.1
+step
+  zone map 1438
+  note "Talk to Sentinel Arynia Cloudsbreak"
+  accept 937 -- Accept The Enchanted Glade
+step
+  label harpies2
+  along
+  zone map 1438
+  note "Kill Bloodfeather Harpies. Loot them for their Belts"
+  note "Bloodfeather Matriarchs cast [Healing Wave] and [Lightning Bolt] which does a lot of damage. Try to burst them fast"
+  collect 5204 x6 quest 937.1 @33.619,29.819 map 1438 -- Collect Bloodfeather Belt (x6)
+step
+  zone map 1438
+  note "Talk to Mist"
+  note "This will start an escort quest"
+  accept 938 -- Accept Mist
+step
+  zone map 1438
+  note "Talk to Sentinel Arynia Cloudsbreak"
+  turnin 938 -- Turn in Mist
+step
+  zone map 1438
+  note "Kill Bloodfeather Harpies. Loot them for their Belts"
+  note "Bloodfeather Matriarchs cast [Healing Wave] and [Lightning Bolt] which does a lot of damage. Try to burst them fast"
+  collect 5204 x6 quest 937.1 @33.619,29.819 map 1438 -- Collect Bloodfeather Belt (x6)
+step
+  zone map 1438
+  note "Talk to Sentinel Arynia Cloudsbreak"
+  turnin 937 -- Turn in The Enchanted Glade
+  accept 940 -- Accept Teldrassil
+step
+  along until NessaShadowsong
+  zone map 1457
+  goto 82.01,36.7 map 1457 r 100 -- Travel to Darnassus
+step
+  zone map 1457
+  goto 56.245,54.039 map 1457 r 1 optional
+  goto 56.374,51.82 map 1457 r 1
+  note "Talk to a Darnassus Auctioneer"
+  note "Buy the following items for a instant turn ins at Darkshore shortly. Skip this step if you wish to not buy any"
+  note "[Strider Meat]"
+  note "[Darkshore Grouper]"
+  collect 5469 x5 @56.374,51.82 map 1457 optional -- Strider Meat (5)
+  collect 12238 x6 @56.374,51.82 map 1457 optional -- Darkshore Grouper (6)
+step
+  label NessaShadowsong
+  zone map 1457
+  note "Talk to Mydrannul"
+  accept 6344 -- Accept Nessa Shadowsong
+step
+  only Warrior
+  when onquest 1684
+  turnin 1684 -- Turn in Elanaria
+step
+  only Warrior
+  zone map 1457
+  note "Talk to Elanaria"
+  accept 1683 -- Accept Vorlus Vilehoof
+step
+  only Warrior
+  along until next_137
+  zone map 1438
+  goto 48.7,62.2 map 1438 r 18 -- Travel toward Vorlus Vilehoof
+step
+  only Warrior
+  when onquest 1683
+  label next_137
+  zone map 1438
+  note "Kill Vorlus Vilehoof. Loot him for his Horn"
+  collect 6805 x1 quest 1683.1 @47.2,63.7 map 1438 -- Collect Horn of Vorlus (x1)
+step
+  only Warrior
+  along until next_139
+  zone map 1457
+  goto 82.01,36.7 map 1457 r 100 -- Travel to Darnassus
+step
+  only Warrior
+  when onquest 1683
+  label next_139
+  zone map 1457
+  note "Talk to Elanaria"
+  turnin 1683 -- Turn in Vorlus Vilehoof
+step
+  only Druid
+  when onquest 5931
+  turnin 5931 -- Turn in Back to Darnassus
+step
+  only Druid
+  zone map 1457
+  note "Talk to Mathrengyl Bearwalker on the middle level"
+  accept 6001 -- Accept Body and Heart
+step
+  zone map 1457
+  note "Talk to Arch Druid Fandral Staghelm"
+  turnin 935 -- Turn in Crown of the Earth
+  turnin 940 only Hunter -- Turn in Teldrassil
+  accept 952 -- Accept Grove of the Ancients
+step
+  only Hunter
+  when onquest 6103
+  zone map 1457
+  note "Talk to Jocaste"
+  turnin 6103 -- Turn in Training the Beast
+step
+  only Rogue
+  when onquest 2242
+  zone map 1457
+  note "Talk to Syurna"
+  turnin 2242 -- Turn in Destiny Calls
+step
+  when onquest 923
+  zone map 1457
+  note "Talk to Rellian Greenspyre"
+  turnin 923 -- Turn in Tumors
+step
+  only Rogue
+  along until next_146
+  zone map 1457
+  goto 62.68,65.58 map 1457 r 30 -- Travel toward Turian
+step
+  only Rogue
+  label next_146
+  zone map 1457
+  note "Talk to Rellian Greenspyre on the second floor"
+  note "Buy a [Balanced Throwing Dagger]"
+  collect 2946 x1 @62.68,65.58 map 1457 -- Balanced Throwing Dagger
+step
+  when onquest 2518
+  turnin 2518 -- Turn in Tears of the Moon
+step
+  zone map 1457
+  note "Talk to Priestess A'moora"
+  accept 2520 -- Accept Sathrah's Sacrifice
+step
+  zone map 1457
+  use 8155 @39.7,85.8 map 1457 -- Use [Sathrah's Sacrifice] at the fountain
+  interact 138498 quest 2520.1 -- Offer the sacrifice at the fountain
+step
+  label end
+  zone map 1457
+  note "Talk to Priestess A'moora"
+  turnin 2520 -- Turn in Sathrah's Sacrifice
+step
+  only Druid
+  zone map 1457
+  goto 47.95,68.03 map 1457 r 8
+  note "Talk to Firodren Mooncaller"
+  learn 2366 "Herbalism"
+  note "[Herbalism] is required to gather 5 [Earthroot] for a level 15 quest later. You can unlearn it afterwards"
+step
+  only Hunter
+  zone map 1457
+  goto 57.56,46.73 map 1457 r 8
+  note "Talk to Ilyenia Moonfire"
+  note "11866,1"
+  learn 227 "Staves"
+  note "If you have a Staff in your bags, equip it" only Hunter
+step
+  only Warrior
+  zone map 1457
+  goto 57.56,46.73 map 1457 r 8
+  note "Talk to Ilyenia Moonfire"
+  note "11866,1"
+  learn 227 "Staves"
+  note "If you have a Staff in your bags, equip it" only Hunter
+step
+  only Priest
+  zone map 1457
+  goto 57.56,46.73 map 1457 r 8
+  note "Talk to Ilyenia Moonfire"
+  note "11866,1"
+  learn 227 "Staves"
+  note "If you have a Staff in your bags, equip it" only Hunter
+step
+  only Hunter
+  when has 2495
+  along until FlyDS
+  zone map 1457
+  note "Equip the [Walking Stick]"
+  use 2495 @57.56,46.73 map 1457 optional
+step
+  only Hunter
+  zone map 1457
+  goto 58.76,44.48 map 1457 r 8
+  note "Talk to Ariyell Skyshadow"
+  note "Buy and equip a [Laminated Recurve Bow]"
+  note "Buy [Sharp Arrows]"
+  collect 2507 x1 @58.76,44.48 map 1457 optional
+step
+  only Warrior
+  zone map 1457
+  goto 58.76,44.48 map 1457 r 8
+  note "Talk to Ariyell Skyshadow"
+  note "Buy a [Quarter Staff]. Equip it at level 11"
+  collect 854 x1 @58.76,44.48 map 1457 optional
+step
+  only Warrior
+  zone map 1457
+  goto 58.76,44.48 map 1457 r 8
+  note "Talk to Ariyell Skyshadow"
+  note "Buy and equip a [Cutlass] if you can't afford a [Quarter Staff]"
+  collect 851 x1 @58.76,44.48 map 1457 optional
+step
+  along until next_157
+  zone map 1457
+  goto 30,41.43 map 1457 r 10 -- Travel through the purple portal to Rut'theran Village
+step
+  label next_157
+  zone map 1438
+  note "Talk to Nessa Shadowsong"
+  turnin 6344 -- Turn in Nessa Shadowsong
+  accept 6341 -- Accept The Bounty of Teldrassil
+step
+  zone map 1438
+  note "Talk to Vesprystus"
+  turnin 6341 -- Turn in The Bounty of Teldrassil
+  accept 6342 -- Accept Flight to Auberdine
+step
+  label FlyDS
+  zone map 1438
+  goto 58.399,94.016 map 1438 r 8
+  note "Talk to Vesprystus"
+  fly "Darkshore" -- Fly to Darkshore

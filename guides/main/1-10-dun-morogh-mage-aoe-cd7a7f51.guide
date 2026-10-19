@@ -1,0 +1,542 @@
+guide rxp-free/1-10-dun-morogh-mage-aoe-cd7a7f51
+title "1-10 Dun Morogh Mage AoE"
+levels 1-10
+zone map 1426
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · Speedrun Guide Mage"
+class Mage
+race Gnome
+next rxp-free/10-12-loch-modan-mage-aoe-2618a1c1
+step
+  along until next_1
+  zone map 1426
+  goto 29.926964,71.201011 map 1426 r 8
+  note "You have selected a guide meant for Gnomes and Dwarves. You should choose the same starter zone that you start in" only Human
+  note "Note that you have selected the AoE guide. AoE is typically a lot harder than single target mage, but a LOT faster"
+step
+  label next_1
+  along until next_2
+  zone map 1426
+  goto 29.926964,71.201011 map 1426 r 8
+  note "You have selected a guide meant for Gnomes and Dwarves. You should choose the same starter zone that you start in" only Human
+  note "Note that you have selected the AoE guide. AoE is typically a lot harder than single target mage, but with the recent 100% quest xp changes, is also slower"
+step
+  label next_2
+  zone map 1426
+  note "Delete your Hearthstone"
+  note "Talk to Sten Stoutarm"
+  accept 179 -- Accept Dwarven Outfitters
+step
+  zone map 1426
+  note "Kill Wolves. Loot them for Meat"
+  collect 750 x8 quest 179.1 @28.699959,74.800096 map 1426 -- Collect Tough Wolf Meat (x8)
+step
+  level 2 -- Grind to 2
+step
+  zone map 1426
+  note "vendor trash. Buy 15 Water. Grind extra wolves if you don't have enough money"
+  collect 159 x15 @30.000061,71.500097 map 1426 -- Collect Refreshing Spring Water (x15)
+step
+  zone map 1426
+  note "Talk to Sten Stoutarm"
+  turnin 179 -- Turn in Dwarven Outfitters
+  accept 233 -- Accept Coldridge Valley Mail Delivery
+  accept 3114 -- Accept Glyphic Memorandum
+step
+  zone map 1426
+  note "Talk to Balir Frosthammer"
+  accept 170 -- Accept A New Threat
+step
+  along until Rockjaw
+  zone map 1426
+  note "Kill Normal Rockjaw Troggs that you see"
+  kill 707 x6 quest 170.1 @29.699959,71.200097 map 1426 -- Kill Rockjaw Trogg (x6)
+step
+  zone map 1426
+  note "Kill Burly Rockjaw Troggs"
+  kill 724 x6 quest 170.2 @25.099959,72.100097 map 1426 -- Kill Burly Rockjaw Trogg (x6)
+step
+  zone map 1426
+  note "Talk to Talin Keeneye"
+  turnin 233 -- Turn in Coldridge Valley Mail Delivery
+  accept 183 -- Accept The Boar Hunter
+  accept 234 -- Accept Coldridge Valley Mail Delivery
+step
+  zone map 1426
+  note "Kill Boars in the area"
+  kill 708 x12 quest 183.1 @22.800061,69.599894 map 1426 -- Kill Small Crag Boar (x12)
+step
+  zone map 1426
+  note "Talk to Talin Keeneye"
+  turnin 183 -- Turn in The Boar Hunter
+step
+  zone map 1426
+  level 3+860 -- Grind to 860+/1400xp
+  goto 23.000061,74.999893 map 1426 r 40 optional
+  goto 24.200061,72.499995 map 1426 r 40 optional
+  goto 27.699959,76.300096 map 1426 r 40 optional
+  goto 23.000061,74.999893 map 1426 r 40 optional
+  goto 24.200061,72.499995 map 1426 r 40 optional
+  goto 27.699959,76.300096 map 1426 r 40
+step
+  label Rockjaw
+  zone map 1426
+  note "Talk to Grelin Whitebeard"
+  turnin 234 -- Turn in Coldridge Valley Mail Delivery
+  accept 182 -- Accept The Troll Cave
+step
+  zone map 1426
+  note "Talk to Nori Pridedrift"
+  accept 3364 -- Accept Scalding Mornbrew Delivery
+  note "Once accepted, a 5 minute timer will start. Relax and follow the guide"
+step
+  zone map 1426
+  note "Go up here and kill Troggs if you're not done with them by now"
+  kill 707 x6 quest 170.1 @28.699959,77.500096 map 1426 -- Kill Rockjaw Trogg (x6)
+step
+  along until Scalding1
+  zone map 1426
+  note "If you were too slow and failed the timed quest, go and pick it up again"
+  note "Talk to Nori Pridedrift"
+  accept 3364 -- Accept Scalding Mornbrew Delivery
+  note "Talk to Durnan Furcutter"
+  turnin 3364 -- Turn in Scalding Mornbrew Delivery
+step
+  label Scalding1
+  zone map 1426
+  note "Talk to Durnan Furcutter"
+  turnin 3364 -- Turn in Scalding Mornbrew Delivery
+  accept 3365 -- Accept Bring Back the Mug
+  vendor 836 -- vendor trash
+step
+  zone map 1426
+  note "Talk to Marryk Nurribit"
+  turnin 3114 -- Turn in Glyphic Memorandum
+  train 944 -- Train your class spells
+step
+  zone map 1426
+  note "Run back out the bunker"
+  note "Talk to Balir Frosthammer"
+  turnin 170 -- Turn in A New Threat
+step
+  zone map 1426
+  goto 30.000061,71.500097 map 1426 r 8
+  vendor nearest -- Vendor, buy 10 water
+  collect 159 x10 @30.000061,71.500097 map 1426 -- Collect Refreshing Spring Water (x10)
+step
+  zone map 1426
+  note "Kill Frostmane Troll Whelps"
+  kill 706 x14 quest 182.1 @20.899959,75.700096 map 1426 -- Kill Frostmane Troll Whelp (x14)
+step
+  label Mug
+  along
+  zone map 1426
+  note "Talk to Nori Pridedrift"
+  turnin 3365 -- Turn in Bring Back the Mug
+step
+  zone map 1426
+  note "Talk to Grelin Whitebeard"
+  turnin 182 -- Turn in The Troll Cave
+  accept 218 -- Accept The Stolen Journal
+step
+  zone map 1426
+  note "Talk to Nori Pridedrift"
+  turnin 3365 -- Turn in Bring Back the Mug
+step
+  zone map 1426
+  note "Enter the Troll cave. Kill Grik'nir, then loot him for Grelin's journal"
+  collect 2004 x1 quest 218.1 -- Collect Grelin Whitebeard's Journal (x1)
+step
+  zone map 1426
+  note "Grind a bit back to here"
+  note "Talk to Grelin Whitebeard"
+  turnin 218 -- Turn in The Stolen Journal
+  accept 282 -- Accept Senir's Observations
+step
+  zone map 1426
+  note "Grind some mobs up to here"
+  note "Talk to Mountaineer Thalos"
+  turnin 282 -- Turn in Senir's Observations
+  accept 420 -- Accept Senir's Observations
+step
+  zone map 1426
+  note "Talk to Hands Springsprocket"
+  accept 2160 -- Accept Supplies to Tannok
+step
+  zone map 1426
+  goto 34.099959,71.599996 map 1426 r 20 optional
+  goto 35.699959,65.999895 map 1426 r 20 -- Go through the tunnel
+step
+  when onquest 317
+  along until BoarMeat44
+  zone map 1426
+  note "Kill boars to get 4 Boar Meat for later"
+  collect 769 x4 quest 317.1 @35.699959,65.999895 map 1426 -- Collect Chunk of Boar Meat (x4)
+step
+  along until Ribs
+  zone map 1426
+  note "Kill boars to get 6 Boar Ribs for later"
+  collect 2886 x6 @35.699959,65.999895 map 1426 -- Collect Crag Boar Rib (x6)
+step
+  zone map 1426
+  note "grind boars north-east to Kharanos"
+  goto 36.400061,62.899997 map 1426 r 45 optional
+  goto 37.699959,60.499998 map 1426 r 45 optional
+  goto 43.899959,55.699999 map 1426 r 8
+  level 5+2415 -- Grind to 2415/+2800xp
+step
+  zone map 1426
+  goto 47.000061,55.099999 map 1426 r 120 -- Die and respawn at the Spirit Healer, or run to Kharanos. Make sure your subzone is NOT Coldridge Pass
+step
+  zone map 1426
+  note "Talk to Senir Whitebeard"
+  turnin 420 -- Turn in Senir's Observations
+step
+  along until next_36
+  zone map 1426
+  goto 46.699959,53.500101 map 1426 r 8
+  vendor nearest -- vendor trash
+step
+  label next_36
+  zone map 1426
+  note "Talk to Ragnar Thunderbrew"
+  accept 384 -- Accept Beer Basted Boar Ribs
+step
+  zone map 1426
+  goto 48.299959,56.999897 map 1426 r 8
+  level 6 -- Grind to 6
+step
+  zone map 1426
+  note "Talk to Tannok Frosthammer"
+  turnin 2160 -- Turn in Supplies to Tannok
+step
+  zone map 1426
+  note "Upstairs"
+  goto 47.499959,52.1 map 1426 r 8
+  train class -- Train your class spells
+step
+  zone map 1426
+  sethome "Thunderbrew Distillery" @47.400061,52.499898 map 1426 -- Set your Hearthstone to Thunderbrew Distillery
+  vendor nearest -- Buy as much level 5 drink as you can afford
+step
+  zone map 1426
+  note "Talk to Tharek Blackstone"
+  accept 400 -- Accept Tools for Steelgrill
+step
+  zone map 1426
+  note "DON'T kill bears en route"
+  note "Talk to Pilot Bellowfiz"
+  accept 317 -- Accept Stocking Jetsteam
+step
+  zone map 1426
+  note "Talk to Pilot Stonegear"
+  accept 313 -- Accept The Grizzled Den
+step
+  zone map 1426
+  note "Talk to Beldin Steelgrill"
+  turnin 400 -- Turn in Tools for Steelgrill
+step
+  label BoarMeat44
+  zone map 1426
+  note "Talk to Loslor Rudge"
+  accept 5541 -- Accept Ammo for Rumbleshot
+step
+  zone map 1426
+  note "Get the items for Stocking Jetsteam"
+  collect 769 x4 quest 317.1 @43.499959,52.499898 map 1426 -- Collect Chunk of Boar Meat (x4)
+  collect 6952 x2 quest 317.2 @43.499959,52.499898 map 1426 -- Collect Thick Bear Fur (x2)
+step
+  zone map 1426
+  note "Talk to Pilot Bellowfiz"
+  turnin 317 -- Turn in Stocking Jetsteam
+  accept 318 -- Accept Evershine
+step
+  zone map 1426
+  note "Go back to the Inn"
+  goto 46.899959,52.1 map 1426 r 20 optional
+  goto 47.400061,52.499898 map 1426 r 8 optional
+  vendor nearest -- Buy as much level 5 drink as you can afford
+  note "You can buy a Skinning Knife outside the inn if you want, it's better than a staff until you get a +stats weapon"
+step
+  zone map 1426
+  note "Go into the cave. Kill Wendigos. Loot them for their Manes"
+  collect 2671 x8 quest 313.1 @41.000061,49.4 map 1426 -- Collect Wendigo Mane (x8)
+step
+  zone map 1426
+  note "Loot the crate"
+  collect 13850 x1 quest 5541.1 -- Collect Rumbleshot's Ammo (x1)
+step
+  label BearFur
+  zone map 1426
+  note "Talk to Hegnar Rumbleshot"
+  turnin 5541 -- Turn in Ammo for Rumbleshot
+  vendor 1243 -- Vendor and repair
+step
+  level 7 -- Grind to 7
+step
+  zone map 1426
+  note "Grind some mobs en route"
+  note "Talk to Tundra MacGrann"
+  accept 312 -- Accept Tundra MacGrann's Stolen Stash
+step
+  zone map 1426
+  goto 30.499959,46.000102 map 1426 r 8
+  vendor nearest -- Vendor. Buy up to 20 level 5 drink
+step
+  label Evershine
+  along
+  zone map 1426
+  note "Talk to Rejold Barleybrew"
+  turnin 318 -- Turn in Evershine
+  accept 319 -- Accept A Favor for Evershine
+  accept 315 -- Accept The Perfect Stout
+step
+  zone map 1426
+  note "Talk to Marleth Barleybrew"
+  accept 310 -- Accept Bitter Rivals
+step
+  zone map 1426
+  note "Talk to Rejold Barleybrew"
+  turnin 318 -- Turn in Evershine
+  accept 319 -- Accept A Favor for Evershine
+  accept 315 -- Accept The Perfect Stout
+step
+  accept 319 -- Accept A Favor for Evershine
+step
+  label Ribs
+  zone map 1426
+  note "Kill Bears, Boars and Leopards. Go from north->west->south"
+  kill 1196 x6 quest 319.1 @30.000061,51.8 map 1426 -- Kill Ice Claw Bear (x6)
+  kill 1127 x8 quest 319.2 @30.000061,51.8 map 1426 -- Kill Elder Crag Boar (x8)
+  kill 1201 x8 quest 319.3 @30.000061,51.8 map 1426 -- Kill Snow Leopard (x8)
+step
+  zone map 1426
+  note "Finish off getting the Boar Ribs"
+  collect 2886 x6 quest 384.1 @30.000061,51.8 map 1426 -- Collect Crag Boar Rib (x6)
+step
+  zone map 1426
+  note "Talk to Rejold Barleybrew"
+  turnin 319 -- Turn in A Favor for Evershine
+  accept 320 -- Accept Return to Bellowfiz
+step
+  when turnedin 384
+  level 7+4360 -- Grind until 4360+/4500xp
+step
+  level 7+3735 -- Grind until 3735+/4500xp
+step
+  hearth "Kharanos" optional -- Hearth to Kharanos
+step
+  zone map 1426
+  note "Buy a Rhapsody Malt and Thunder Ale from Belm"
+  collect 2894 x1 quest 384.2 @47.400061,52.499898 map 1426 -- Collect Rhapsody Malt (x1)
+  collect 2686 x1 @47.400061,52.499898 map 1426 -- Collect Thunder Ale (x1)
+step
+  zone map 1426
+  note "Go downstairs, then talk to Jarven, and give him the Thunder Ale"
+  note "Wait for the barrel mouseover to become \"unguarded\", then handin"
+  turnin 310 -- Turn in Bitter Rivals
+  accept 311 -- Accept Return to Marleth
+step
+  zone map 1426
+  note "Talk to Ragnar Thunderbrew"
+  turnin 384 -- Turn in Beer Basted Boar Ribs
+  note "Sell the recipe when you next vendor"
+step
+  level 8 -- Grind to 8
+step
+  zone map 1426
+  goto 47.499959,52.1 map 1426 r 8
+  train class -- Train your class spells
+  note "Make sure you train Polymorph"
+step
+  zone map 1426
+  goto 47.400061,52.499898 map 1426 r 8
+  vendor nearest -- Buy up to 30 level 5 drink from the innkeeper
+step
+  zone map 1426
+  note "Talk to Senir Whitebeard"
+  accept 287 -- Accept Frostmane Hold
+step
+  zone map 1426
+  note "Talk to Pilot Stonegear"
+  turnin 313 -- Turn in The Grizzled Den
+step
+  zone map 1426
+  note "Talk to Pilot Bellowfiz"
+  turnin 320 -- Turn in Return to Bellowfiz
+step
+  zone map 1426
+  note "Inside the building"
+  note "Talk to Razzle Sprysprocket"
+  accept 412 -- Accept Operation Recombobulation
+step
+  zone map 1426
+  goto 43.099959,44.999899 map 1426 r 25 optional
+  goto 42.099959,45.400102 map 1426 r 25 -- Run up the ramp to Shimmerweed
+step
+  accept 315 -- Accept The Perfect Stout
+step
+  zone map 1426
+  note "Clear mobs in this area. Be careful if you need to clear the middle camp. You can pull the mobs in the huts and line of sight (LoS) them behind the huts if you need 2 more mobs. If you get unlucky, run to the other area"
+  note "Loot boxes on the ground"
+  collect 2676 x6 quest 315.1 @42.099959,34.300105 map 1426 -- Collect Shimmerweed (x6)
+step
+  zone map 1426
+  note "Polymorph Old Icebeard, then loot the meats"
+  collect 2667 x1 quest 312.1 -- Collect MacGrann's Dried Meats (x1)
+step
+  zone map 1426
+  note "Talk to Tundra MacGrann"
+  turnin 312 -- Turn in Tundra MacGrann's Stolen Stash
+step
+  zone map 1426
+  goto 30.400061,45.800001 map 1426 r 8
+  vendor nearest -- Buy up to 20 more level 5 drink
+step
+  label Stout
+  along
+  zone map 1426
+  note "Talk to Rejold Barleybrew"
+  turnin 315 -- Turn in The Perfect Stout
+  accept 413 -- Accept Shimmer Stout
+step
+  zone map 1426
+  note "Talk to Marleth Barleybrew"
+  turnin 311 -- Turn in Return to Marleth
+step
+  zone map 1426
+  note "Talk to Rejold Barleybrew"
+  turnin 315 -- Turn in The Perfect Stout
+  accept 413 -- Accept Shimmer Stout
+step
+  zone map 1426
+  note "Kill Leper Gnomes. Loot them for Gears and Cogs"
+  collect 3084 x8 quest 412.2 @25.400061,45.400102 map 1426 -- Collect Gyromechanic Gear (x8)
+  collect 3083 x8 quest 412.1 @25.400061,45.400102 map 1426 -- Collect Restabilization Cog (x8)
+step
+  level 9 -- Grind to 9
+step
+  zone map 1426
+  goto 24.499959,50.800101 map 1426 r 35 -- Enter the cave
+step
+  zone map 1426
+  note "Kill Headhunters inside the cave"
+  kill 1123 x5 quest 287.1 @21.299959,52.900101 map 1426 -- Kill Frostmane Headhunter (x5)
+step
+  zone map 1426
+  goto 23.400061,51.5 map 1426 r 15 -- Go back up the cave
+step
+  zone map 1426
+  note "Jump down, you die after"
+  goto 23.000061,52.199898 map 1426 r 8
+  note "Fully explore Frostmane Hold"
+step
+  note "Die and respawn at the Spirit Healer"
+step
+  zone map 1426
+  note "Talk to Senir Whitebeard"
+  turnin 287 -- Turn in Frostmane Hold
+  accept 291 -- Accept The Reports
+step
+  zone map 1426
+  note "Talk to Razzle Sprysprocket"
+  turnin 412 -- Turn in Operation Recombobulation
+step
+  zone map 1426
+  note "Talk to Rudra Amberstill"
+  accept 314 -- Accept Protecting the Herd
+step
+  along until next_93
+  zone map 1426
+  goto 62.299959,50.3 map 1426 r 14 optional
+  goto 62.200061,49.4 map 1426 r 10 optional -- Run up this part of the mountain
+step
+  label next_93
+  zone map 1426
+  note "Kill Vagash. Loot him for his Fang"
+  note "Kite him to the guard south of the ranch. Make sure you do 51%+ damage to him"
+  note "Be careful as this quest can be difficult"
+  collect 3627 x1 quest 314.1 -- Collect Fang of Vagash (1)
+step
+  zone map 1426
+  note "Talk to Rudra Amberstill"
+  turnin 314 -- Turn in Protecting the Herd
+step
+  zone map 1426
+  note "Grind a little en route"
+  goto 68.600061,54.700101 map 1426 r 8
+  vendor nearest -- vendor trash. Buy some food/water if needed
+step
+  zone map 1426
+  note "Talk to Senator Mehr Stonehallow"
+  accept 433 -- Accept The Public Servant
+step
+  along until next_98
+  zone map 1426
+  goto 68.899959,55.9001 map 1426 r 8
+  vendor nearest -- vendor trash, repair
+step
+  label next_98
+  zone map 1426
+  note "Talk to Foreman Stonebrow"
+  accept 432 -- Accept Those Blasted Troggs!
+step
+  zone map 1426
+  note "Kill Troggs in the cave"
+  kill 1115 x6 quest 432.1 @72.899959,53.099898 map 1426 -- Kill Rockjaw Skullthumper (x6)
+  kill 1117 x10 quest 433.1 @72.899959,53.099898 map 1426 -- Kill Rockjaw Bonesnapper (x10)
+step
+  zone map 1426
+  note "Talk to Foreman Stonebrow"
+  turnin 432 -- Turn in Those Blasted Troggs!
+step
+  along until next_102
+  zone map 1426
+  goto 68.899959,55.9001 map 1426 r 8
+  vendor nearest -- vendor trash, repair
+step
+  label next_102
+  zone map 1426
+  note "Talk to Senator Mehr Stonehallow"
+  turnin 433 -- Turn in The Public Servant
+step
+  zone map 1426
+  goto 67.099959,59.699897 map 1426 r 40 optional
+  goto 70.699959,58.199897 map 1426 r 40 optional
+  goto 71.000061,53.899999 map 1426 r 40 optional
+  level 10 -- Grind to 10 at the troggs
+step
+  zone map 1426
+  goto 68.600061,54.700101 map 1426 r 8
+  vendor nearest -- vendor trash, buy up to 30 level 5 drink from Kazan
+  train class -- Train Cooking from Ghilm. You'll need this to pick up 2 extra quests later
+step
+  zone map 1426
+  note "Talk to Pilot Hammerfoot"
+  accept 419 -- Accept The Lost Pilot
+step
+  zone map 1426
+  note "Grind en route"
+  turnin 419 -- Turn in The Lost Pilot
+  accept 417 -- Accept A Pilot's Revenge
+step
+  zone map 1426
+  note "Kill Mangeclaw. Loot him for his Claw"
+  collect 3183 x1 quest 417.1 -- Collect Mangy Claw (x1)
+step
+  zone map 1426
+  note "Talk to Pilot Hammerfoot"
+  turnin 417 -- Turn in A Pilot's Revenge
+step
+  accept 413 -- Accept Shimmer Stout
+step
+  zone map 1426
+  note "Go back through the tunnel you came from"
+  goto 79.600061,50.699898 map 1426 r 50 optional
+  goto 82.299959,53.500101 map 1426 r 25 optional
+  note "Talk to Mountaineer Barleybrew"
+  turnin 413 -- Turn in Shimmer Stout
+  accept 414 -- Accept Stout to Kadrell

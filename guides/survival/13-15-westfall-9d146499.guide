@@ -1,0 +1,479 @@
+guide rxp-free/13-15-westfall-9d146499
+title "13-15 Westfall"
+levels 13-15
+zone map 1436
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · RXP Survival Guide 1-20"
+next rxp-free/15-18-darkshore-9e0895c0
+step
+  zone map 1436
+  note "Talk to Farmer Furlbrow"
+  accept 64 -- Accept The Forgotten Heirloom
+  accept 109 -- Accept Report to Gryan Stoutmantle
+step
+  zone map 1436
+  note "Talk to Verna Furlbrow"
+  accept 36 -- Accept Westfall Stew
+  accept 151 -- Accept Poor Old Blanchy
+step
+  along until SalmaS
+  zone map 1436
+  goto 56.04,31.23 map 1436 r 65 -- Travel to Saldean's Farm
+step
+  zone map 1436
+  note "Talk to Farmer Saldean"
+  accept 9 -- Accept The Killing Fields
+step
+  label SalmaS
+  zone map 1436
+  note "Talk to Salma Saldean"
+  turnin 36 -- Turn in Westfall Stew
+  accept 38 -- Accept Westfall Stew
+  accept 22 -- Accept Goretusk Liver Pie
+step
+  only Human
+  when onquest 6285
+  label Lewis
+  zone map 1436
+  note "Talk to Quartermaster Lewis"
+  turnin 6285 -- Turn in Return to Lewis
+step
+  when onquest 109
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  turnin 109 -- Turn in Report to Gryan Stoutmantle
+step
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  accept 12 -- Accept The People's Militia
+step
+  zone map 1436
+  note "Talk to Captain Danuvin"
+  accept 102 -- Accept Patrolling Westfall
+step
+  only Human
+  zone map 1436
+  note "Talk to Scout Galiaan"
+  accept 153 -- Accept Red Leather Bandanas
+step
+  only Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Undead,Skyborne
+  zone map 1436
+  note "Talk to Scout Galiaan"
+  accept 153 -- Accept Red Leather Bandanas
+step
+  zone map 1436
+  note "Talk to Innkeeper Heather"
+  note "Buy food/water if needed" only !Warrior,!Rogue
+  note "Buy food if needed" only Warrior
+  note "Buy food if needed" only Rogue
+  vendor 8931 -- [Longjaw Mud Snapper] is very cheap
+step
+  along until bennytime
+  zone map 1436
+  note "Open the Sacks of Oats on the ground. Loot them for the Handful of Oats"
+  note "You can usually find them near Farm Fences or Buildings"
+  collect 1528 x8 quest 151.1 @52.86,53.71 map 1436 -- Handful of Oats (8)
+step
+  along until HarvestW
+  zone map 1436
+  note "Kill Young Goretusks and Young Fleshrippers. Loot them for their Vulture Meat, Snouts and Livers"
+  collect 729 x3 @52.86,53.71 map 1436 optional -- Stringy Vulture Meat (3)
+  collect 731 x3 @52.86,53.71 map 1436 optional -- Goretusk Snout (3)
+  collect 723 x8 @52.86,53.71 map 1436 optional -- Goretusk Liver (8)
+step
+  when onquest 153
+  collect 829 x15 quest 153.1 @41.21,40.75 map 1436 -- Red Leather Bandana (15)
+step
+  zone map 1436
+  note "Kill Defias Trappers and Defias Smugglers. Loot them for their Red Leather Bandanas"
+  kill 504 x15 quest 12.1 @41.21,40.75 map 1436 -- Defias Trapper slain (15)
+  kill 95 x15 quest 12.2 @41.21,40.75 map 1436 -- Defias Smuggler slain (15)
+step
+  label bennytime
+  zone map 1436
+  note "Open Furlbrow's Wardrobe. Loot it for Furlbrow's Pocket Watch"
+  note "You can loot Furlbrow's Wardrobe from outside if you angle your camera correctly"
+  note "Be aware of Benny Blanco. He hits hard"
+  collect 841 x1 quest 64.1 -- Furlbrow's Pocket Watch
+step
+  along until next_18
+  zone map 1436
+  note "Open the Sacks of Oats on the ground. Loot them for the Handful of Oats"
+  note "You can usually find them near Farm Fences or Buildings"
+  collect 1528 x8 quest 151.1 @49.34,19.27 map 1436 -- Handful of Oats (8)
+step
+  label next_18
+  zone map 1436
+  note "Kill Riverpaw Gnolls and Riverpaw Scouts. Loot them for their Gnoll Paws"
+  collect 725 x8 quest 102.1 @45.83,13.75 map 1436 -- Gnoll Paw (8)
+step
+  when !turnedin 38
+  zone map 1436
+  note "Kill Murloc Raiders and Murloc Coastrunners. Loot them for their Eyes"
+  collect 730 x3 @56.4,9.4 map 1436 -- Murloc Eye (3)
+step
+  zone map 1436
+  note "Open the Sacks of Oats on the ground. Loot them for the Handful of Oats"
+  note "You can usually find them near Farm Fences or Buildings"
+  collect 1528 x8 quest 151.1 @57.23,19.78 map 1436 -- Handful of Oats (8)
+step
+  zone map 1436
+  note "Talk to Farmer Furlbrow and Verna Furlbrow"
+  turnin 64 -- Turn in The Forgotten Heirloom
+  turnin 151 -- Turn in Poor Old Blanchy
+  goto 59.92,19.42 map 1436 r 8 optional
+step
+  when complete 22
+  zone map 1436
+  note "Talk to Salma Saldean"
+  turnin 22 -- Turn in Goretusk Liver Pie
+step
+  along until HarvestW
+  zone map 1436
+  note "Talk to Farmer Saldean"
+  vendor 233
+  note "Do NOT sell [Murloc Eyes], [Goretusk Snouts], [Goretusk Livers] or [Stringy Vulture Meat]"
+step
+  label HarvestW
+  zone map 1436
+  note "Kill Harvest Watchers. Loot them for their Flask of Oil and Okra"
+  kill 114 x20 quest 9.1 @50.8,21.76 map 1436 -- Harvest Watcher (20)
+  collect 732 x3 @50.8,21.76 map 1436 optional -- Okra (3)
+  collect 814 x5 @50.8,21.76 map 1436 optional
+step
+  zone map 1436
+  goto 52.49,42.11 map 1436 r 75 optional
+  goto 53.67,46.07 map 1436 r 75 optional
+  goto 61.6,45.55 map 1436 r 75 optional
+  goto 60.36,27.38 map 1436 r 75 optional
+  goto 54.63,19.2 map 1436 r 75 optional
+  goto 49.09,26.92 map 1436 r 75 optional
+  goto 47.89,42.94 map 1436 r 75 optional
+  goto 54.42,40.38 map 1436 r 8
+  note "Kill Young Goretusks and Young Fleshrippers. Loot them for their Vulture Meat, Snouts and Livers"
+  collect 729 x3 @54.42,40.38 map 1436 optional -- Stringy Vulture Meat (3)
+  collect 731 x3 @54.42,40.38 map 1436 optional -- Goretusk Snout (3)
+  collect 723 x8 @54.42,40.38 map 1436 optional -- Goretusk Liver (8)
+step
+  zone map 1436
+  note "Talk to Farmer Saldean"
+  turnin 9 -- Turn in The Killing Fields
+step
+  zone map 1436
+  note "Talk to Salma Saldean"
+  turnin 38 -- Turn in Westfall Stew
+  turnin 22 -- Turn in Goretusk Liver Pie
+step
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  turnin 12 -- Turn in The People's Militia
+step
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  accept 65 -- Accept The Defias Brotherhood
+step
+  zone map 1436
+  note "Talk to Captain Danuvin"
+  turnin 102 -- Turn in Patrolling Westfall
+step
+  when onquest 153
+  zone map 1436
+  note "Talk to Scout Galiaan"
+  turnin 153 -- Turn in Red Leather Bandanas
+step
+  only Druid
+  zone map 1436
+  goto 32.6,22.6 map 1436 r 30 optional
+  goto 38.8,18.2 map 1436 r 30 optional
+  goto 41,12 map 1436 r 30 optional
+  goto 47.6,9 map 1436 r 30 optional
+  goto 51.8,9.4 map 1436 r 30 optional
+  goto 32.6,22.6 map 1436 r 8 optional
+  goto 38.8,18.2 map 1436 r 1 optional
+  goto 41,12 map 1436 r 1 optional
+  goto 47.6,9 map 1436 r 1 optional
+  goto 51.8,9.4 map 1436 r 1 optional
+  level 16 -- Grind crabs in Westfall to level 16
+step
+  only Warrior,Hunter,Rogue,Priest,Shaman,Mage,Warlock,Druid,Dwarf
+  label end
+  hearth "Thelsamar" optional -- Hearth to Thelsamar
+step
+  only Warrior,Hunter,Rogue,Priest,Shaman,Mage,Warlock,Druid,Dwarf
+  zone map 1432
+  goto 33.94,50.95 map 1432 r 8
+  note "Talk to Thorgrum Borrelson"
+  fly "Ironforge" -- Fly to Ironforge
+step
+  only Paladin,Human
+  label end_2
+  zone map 1436
+  goto 56.55,52.64 map 1436 r 8
+  note "Talk to Thor"
+  fly "Ironforge" -- Fly to Ironforge
+step
+  only Paladin,Dwarf
+  zone map 1436
+  goto 56.55,52.64 map 1436 r 8
+  note "Talk to Thor"
+  fly "Ironforge" -- Fly to Ironforge
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  zone map 1455
+  goto 55.093,58.269 map 1455 r 8
+  note "Talk to Nissa Firestone"
+  note "Level up your [First Aid]"
+  learn 3274 "Journeyman First Aid"
+step
+  only Warrior,Human
+  zone map 1455
+  goto 62,89.6 map 1455 r 8
+  note "Talk to Bixi Wobblebonk"
+  learn 2567 "Thrown"
+step
+  only Paladin,Dwarf
+  zone map 1455
+  note "Talk to Beldruk Doombrow"
+  train 5148 -- Train your class spells
+step
+  only Paladin,Dwarf
+  along until next_40
+  zone map 1455
+  goto 25.27,1.53 map 1455 r 6 optional
+  goto 24.35,11.9 map 1455 r 10 optional -- Travel toward Muiredon upstairs
+step
+  only Paladin,Dwarf
+  when onquest 1784
+  turnin 1784 -- Turn in The Tome of Divinity
+step
+  only Paladin,Dwarf
+  label next_40
+  zone map 1455
+  note "Talk to Muiredon Battleforge"
+  accept 1785 -- Accept The Tome of Divinity
+step
+  only Paladin,Dwarf
+  when onquest 1785
+  zone map 1455
+  note "Talk to Tiza Battleforge"
+  turnin 1785 -- Turn in The Tome of Divinity
+step
+  when onquest 291
+  zone map 1455
+  note "Talk to Senator Barin Redstone"
+  turnin 291 -- Turn in The Reports
+step
+  when zone "Ironforge"
+  zone map 1455
+  goto 25.8,75.5 map 1455 r 1 optional
+  goto 24.2,74.6 map 1455 r 1 optional
+  goto 23.8,71.8 map 1455 r 1
+  note "Talk to an Ironforge Auctioneer"
+  note "Buy the following items for instant turn ins at Darkshore shortly. Skip this step if you wish to not buy any"
+  note "[Strider Meat]"
+  note "[Darkshore Grouper]"
+  collect 5469 x5 @23.8,71.8 map 1455 optional -- Strider Meat (5)
+  collect 12238 x6 @23.8,71.8 map 1455 optional -- Darkshore Grouper (6)
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  zone map 1426
+  goto 53.5,34.9 map 1426 r 8
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  along until next_46
+  zone map 1426
+  goto 59.43,42.85 map 1426 r 150 -- Travel to the Dun Morogh -> Wetlands skip spot
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  label next_46
+  zone map 1426
+  zone map 1437
+  goto 59.5,42.8 map 1426 r 40 optional
+  goto 60.4,44.1 map 1426 r 40 optional
+  goto 61.1,44.1 map 1426 r 40 optional
+  goto 61.2,42.3 map 1426 r 40 optional
+  goto 60.8,40.9 map 1426 r 40 optional
+  goto 59,39.5 map 1426 r 40 optional
+  goto 60.3,38.6 map 1426 r 40 optional
+  goto 61.7,38.7 map 1426 r 40 optional
+  goto 65.7,21.6 map 1426 r 40 optional
+  goto 65.8,12.5 map 1426 r 40 optional
+  goto 65.6,10.8 map 1426 r 40 optional
+  goto 66.5,10 map 1426 r 40 optional
+  goto 66.9,8.5 map 1426 r 40 optional
+  goto 20.6,67.2 map 1437 r 50 optional
+  goto 17.7,67.7 map 1437 r 40 optional
+  goto 16.8,65.3 map 1437 r 40 optional
+  goto 15.1,64 map 1437 r 40 optional
+  goto 12.1,60.3 map 1437 r 40 optional
+  note "Watch the video guide for a reference on how to do the skip first!"
+  note "Do the Deathless Dun Morogh -> Wetlands skip"
+  note "Avoid the Wetlands Crocolisks and Murlocs when crossing the water"
+  goto 12.1,60.3 map 1437 r 80 -- Travel to Menethil Harbor
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  zone map 1437
+  note "Talk to Neal Allen"
+  vendor 1448 -- Buy a [Bronze Tube]
+  note "This is a limited supply item. Skip this step if Neal Allen doesn't have one"
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  zone map 1437
+  note "Talk to Samor Festivus upstairs"
+  vendor 1457 -- Buy as many [Healing Potions] that are available
+  note "This is a limited supply item. Skip this step if Samor Festivus doesn't have any"
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  zone map 1437
+  note "Talk to Shellei"
+  getfp "Wetlands" @9.49,59.69 map 1437 -- Get the Wetlands flight path
+step
+  only Hunter,Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  zone map 1437
+  note "Talk to Murndan Derth"
+  note "Buy a [Large Bore Blunderbuss]"
+  note "Skip this step if you cannot afford it"
+  collect 3023 x1 @11.334,59.554 map 1437 -- Large Bore Blunderbuss
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  zone map 1437
+  note "Talk to Dewin Shimmerdawn"
+  vendor 1453 -- Buy as many [Healing Potions] that are available
+  note "This is a limited supply item. Skip this step if Dewin Shimmerdawn doesn't have any"
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  along until next_53
+  zone map 1437
+  goto 7.1,57.96 map 1437 r 30 optional
+  goto 4.61,57.26 map 1437 r 15 optional -- Travel to the Menethil Harbor docks. Wait for the boat to Darkshore
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  label next_53
+  note "Level your [First Aid] and [Cooking] while waiting for the boat to Darkshore"
+  note "Level up your [Cooking] using the [Chunks of Boar Meat] you farmed earlier. Level it to 10 ideally"
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Warlock,NightElf
+  zone map 1436
+  goto 56.556,52.643 map 1436 r 8
+  note "Talk to Thor"
+  getfp "Westfall" @56.556,52.643 map 1436 -- Get the Westfall flight path
+  fly "Stormwind" -- Fly to Stormwind
+step
+  only Druid
+  when !zone "Moonglade"
+  along until next_56
+  note "Cast Teleport: Moonglade"
+step
+  only Druid
+  label next_56
+  zone map 1450
+  goto 44.1444,45.227 map 1450 r 8
+  note "Talk to Silva Fil'naveth"
+  fly "Teldrassil" -- Fly to Rut'theran Village
+step
+  only Druid
+  along until next_58
+  zone map 1438
+  goto 55.889,89.456 map 1438 r 8
+step
+  only Druid
+  label next_58
+  zone map 1457
+  note "Talk to Mathrengyl Bearwalker"
+  accept 6121 -- Accept Lessons Anew
+  accept 26 -- Accept A Lesson to Learn
+  train 4217 -- Train your class spells
+step
+  only Druid
+  when !zone "Moonglade"
+  along until next_60
+  note "Cast Teleport: Moonglade"
+step
+  only Druid
+  when onquest 6121
+  turnin 6121 -- Turn in Lessons Anew
+step
+  only Druid
+  when onquest 26
+  turnin 26 -- Turn in A Lesson to Learn
+step
+  only Druid
+  label next_60
+  zone map 1450
+  note "Talk to Dendrite Starblaze up stairs"
+  accept 6122 -- Accept The Principal Source
+  accept 29 -- Accept Trial of the Lake
+step
+  only Druid
+  when !turnedin 29
+  zone map 1450
+  note "Swim into Lake Elune'Ara"
+  note "Open a Bauble Container. Loot it for a [Shrine Bauble]"
+  note "It may spawn in different locations underwater"
+  collect 15877 x1 @52.6,51.6 map 1450 -- Shrine Bauble (1)
+step
+  only Druid
+  along until next_63
+  note "Cast Teleport: Moonglade"
+  note "It will be faster this way so you don't need to swim for a longer time"
+step
+  only Druid
+  label next_63
+  zone map 1450
+  use 15877 @36.026,41.374 map 1450 -- Use the [Shrine Bauble] at the Shrine of Remulos tree
+  interact 15885 quest 29.1 -- Complete the Trial of the Lake.
+step
+  only Druid
+  when onquest 29
+  turnin 29 -- Turn in Trial of the Lake
+step
+  only Druid
+  zone map 1450
+  note "Talk to Tajarri"
+  accept 272 -- Accept Trial of the Sea Lion
+step
+  only Priest,NightElf
+  note "Talk to Brother Joshua"
+  train 5489 -- Train your class spells
+step
+  only Warrior,NightElf
+  note "Talk to Gunther Weller"
+  vendor 1289 -- Buy T133046:0[Rock Hammer] if you can afford it
+step
+  only Rogue,NightElf
+  note "Talk to Gunther Weller"
+  vendor 1289 -- Buy T133052:0[Hammer] if you can afford it
+step
+  only Rogue,NightElf
+  note "Talk to Woo Ping"
+  learn 201 "1h Swords"
+step
+  only Hunter,NightElf
+  zone map 1450
+  note "Talk to Frederick Stover"
+  note "Buy a [Reinforced Bow]"
+  note "Stock up on [Sharp Arrows]"
+  collect 3026 x1 @36.517,40.104 map 1450
+step
+  only NightElf
+  note "Talk to Shaina Fuller"
+  note "Level up your [First Aid]"
+  learn 3274 "Journeyman First Aid"
+step
+  only Warrior,NightElf
+  note "Talk to Wu or Ilsa"
+  train class -- Train your class spells
+step
+  only Rogue,NightElf
+  note "Talk to Osborne"
+  train 918 -- Train your class spells
+step
+  only Hunter,NightElf
+  note "Talk to Einris Brightspear"
+  train 5515 -- Train your class spells
+step
+  only NightElf
+  hearth "Auberdine" optional -- Hearth to Auberdine

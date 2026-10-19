@@ -1,0 +1,688 @@
+guide rxp-free/1-10-elwynn-forest-mage-aoe-335daf91
+title "1-10 Elwynn Forest Mage AoE"
+levels 1-10
+zone map 1429
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · Speedrun Guide Mage"
+class Mage
+race Human
+next rxp-free/10-12-loch-modan-mage-aoe-2618a1c1
+step
+  along until next_1
+  zone map 1429
+  goto 48.171045,42.942811 map 1429 r 8
+  note "You have selected a guide meant for Humans. You should choose the same starter zone that you start in" only Gnome
+  note "Note that you have selected the AoE guide. AoE is typically a lot harder than single target mage, but a LOT faster"
+step
+  label next_1
+  zone map 1429
+  note "Delete your Hearthstone"
+  note "Talk to Deputy Willem"
+  accept 783 -- Accept A Threat Within
+step
+  zone map 1429
+  note "Talk to Marshal McBride"
+  turnin 783 -- Turn in A Threat Within
+  accept 7 -- Accept Kobold Camp Cleanup
+step
+  zone map 1429
+  note "Talk to Deputy Willem"
+  accept 5261 -- Accept Eagan Peltskinner
+step
+  zone map 1429
+  goto 46.200049,40.399804 map 1429 r 8
+  vendor nearest -- Kill wolves until you have 50c worth of vendor trash. Vendor, then buy x10 water from Brother Danil.
+  collect 159 x10 @46.200049,40.399804 map 1429 -- Collect Refreshing Spring Water (x10)
+step
+  level 2 -- Grind to 2
+step
+  zone map 1429
+  note "Talk to Eagan Peltskinner"
+  turnin 5261 -- Turn in Eagan Peltskinner
+  accept 33 -- Accept Wolves Across The Border
+step
+  zone map 1429
+  note "Kill Young Wolves in the area for Meat"
+  collect 750 x8 quest 33.1 @47.6,37.200092 map 1429 -- Collect Tough Wolf Meat (x8)
+step
+  zone map 1429
+  note "Kill Kobold Vermin in the area"
+  kill 6 x10 quest 7.1 @49.700072,36.199912 map 1429 -- Kill Kobold Vermin (x10)
+step
+  zone map 1429
+  note "Talk to Eagan Peltskinner"
+  turnin 33 -- Turn in Wolves Across The Border
+step
+  zone map 1429
+  goto 47.6,41.500218 map 1429 r 8
+  vendor nearest -- vendor trash, then buy x10 more water from Brother Danil
+step
+  zone map 1429
+  note "Talk to Marshal McBride"
+  turnin 7 -- Turn in Kobold Camp Cleanup
+  accept 15 -- Accept Investigate Echo Ridge
+  accept 3104 -- Accept Glyphic Letter
+step
+  level 3 -- Grind to 3
+step
+  zone map 1429
+  note "Kill Kobold Workers"
+  kill 257 x10 quest 15.1 @48.600048,33.999947 map 1429 -- Kill Kobold Worker (x10)
+step
+  zone map 1429
+  goto 47.699976,41.399984 map 1429 r 8
+  level 3+1110 -- Grind to 1110+/1400xp on your way back to town
+step
+  zone map 1429
+  goto 47.699976,41.399984 map 1429 r 8
+  vendor nearest -- vendor trash
+step
+  zone map 1429
+  note "Talk to Marshal McBride"
+  turnin 15 -- Turn in Investigate Echo Ridge
+  accept 21 -- Accept Skirmish at Echo Ridge
+step
+  zone map 1429
+  note "Go upstairs"
+  note "Talk to Khelden Bremen"
+  turnin 3104 -- Turn in Glyphic Letter
+  train 198 -- Train your class spells
+step
+  zone map 1429
+  note "Talk to Deputy Willem"
+  accept 18 -- Accept Brotherhood of Thieves
+step
+  zone map 1429
+  note "Kill Defias Thugs. Loot them for Bandanas"
+  collect 752 x12 quest 18.1 @54.700023,41.899858 map 1429 -- Collect Red Burlap Bandana (x12)
+step
+  zone map 1429
+  note "Talk to Deputy Willem"
+  turnin 18 -- Turn in Brotherhood of Thieves
+  accept 6 -- Accept Bounty on Garrick Padfoot
+  accept 3903 -- Accept Milly Osworth
+step
+  zone map 1429
+  goto 47.699976,41.399984 map 1429 r 8
+  vendor nearest -- vendor trash, repair
+step
+  zone map 1429
+  goto 54.700023,41.899858 map 1429 r 60 optional
+  note "Kill Laborers in the mine"
+  kill 80 x12 quest 21.1 @50.399904,26.999982 map 1429 -- Kill Kobold Laborer (x12)
+step
+  level 5 -- Grind to 5
+step
+  zone map 1429
+  note "Talk to Milly Osworth"
+  turnin 3903 -- Turn in Milly Osworth
+  accept 3904 -- Accept Milly's Harvest
+step
+  zone map 1429
+  note "Loot the Buckets of Grapes in the field"
+  collect 11119 x8 quest 3904.1 @54.500071,49.40013 map 1429 -- Collect Milly's Harvest (x8)
+step
+  zone map 1429
+  note "Kill Garrick and loot his Head"
+  collect 182 x1 quest 6.1 -- Collect Garrick's Head (x1)
+step
+  zone map 1429
+  level 5+1175 -- Grind on your way back to 1175+/2800xp
+  goto 50.70012,39.20002 map 1429 r 8
+step
+  zone map 1429
+  note "Talk to Milly Osworth"
+  turnin 3904 -- Turn in Milly's Harvest
+  accept 3905 -- Accept Grape Manifest
+step
+  zone map 1429
+  note "Talk to Deputy Willem"
+  turnin 6 -- Turn in Bounty on Garrick Padfoot
+step
+  zone map 1429
+  note "Talk to Marshal McBride"
+  turnin 21 -- Turn in Skirmish at Echo Ridge
+  accept 54 -- Accept Report to Goldshire
+step
+  zone map 1429
+  note "Go upstairs the main staircase"
+  note "Talk to Brother Neals"
+  turnin 3905 -- Turn in Grape Manifest
+step
+  zone map 1429
+  note "Talk to Falkhaan Isenstrider"
+  accept 2158 -- Accept Rest and Relaxation
+step
+  along until next_34
+  zone map 1429
+  goto 39.49993,60.500185 map 1429 r 200 -- Die and respawn at the Spirit Healer, or run to Goldshire
+step
+  label next_34
+  zone map 1429
+  goto 41.699978,65.899862 map 1429 r 8
+  vendor nearest -- vendor trash, repair
+step
+  zone map 1429
+  note "Talk to Marshal Dughan"
+  turnin 54 -- Turn in Report to Goldshire
+  accept 62 -- Accept The Fargodeep Mine
+step
+  zone map 1429
+  note "On your close left as you go in the Inn"
+  note "Talk to William Pestle"
+  accept 60 -- Accept Kobold Candles
+step
+  zone map 1429
+  note "Talk to Innkeeper Farley"
+  turnin 2158 -- Turn in Rest and Relaxation
+  sethome "Goldshire" @43.77095,65.803084 map 1429 -- Set your Hearthstone to Goldshire
+step
+  level 6 -- Grind to 6
+step
+  zone map 1429
+  goto 43.700073,66.400168 map 1429 r 12 optional
+  goto 43.199905,66.200132 map 1429 r 8 optional
+  train class -- Go Upstairs. Train your class spells
+step
+  zone map 1429
+  note "Talk to Remy \"Two Times\""
+  accept 47 -- Accept Gold Dust Exchange
+step
+  along until BoarMeat1
+  zone map 1429
+  note "Start killing some boars you see for Boar Meat"
+  collect 769 x4 @42.099881,67.300114 map 1429 -- Collect Chunk of Boar Meat (x4)
+step
+  zone map 1429
+  note "Talk to \"Auntie\" Bernice Stonefield"
+  accept 85 -- Accept Lost Necklace
+  note "Talk to Ma Stonefield"
+  accept 88 -- Accept Princess Must Die!
+step
+  along until Candles
+  zone map 1429
+  note "Get some Candles from nearby Kobolds"
+  collect 772 x8 quest 60.1 @34.659883,84.482043 map 1429 -- Collect Kobold Candle (x8)
+step
+  label Candles
+  along until Dust
+  zone map 1429
+  note "Get some Gold Dust from nearby Kobolds"
+  collect 773 x10 quest 47.1 @34.659883,84.482043 map 1429 -- Collect Gold Dust (x10)
+step
+  label Dust
+  zone map 1429
+  note "Grind mobs east through the outside of the mine"
+  note "Talk to Billy Maclure"
+  turnin 85 -- Turn in Lost Necklace
+  accept 86 -- Accept Pie for Billy
+step
+  label BoarMeat1
+  zone map 1429
+  note "Talk to Maybell Maclure"
+  accept 106 -- Accept Young Lovers
+step
+  zone map 1429
+  goto 42.400097,89.399991 map 1429 r 8
+  vendor nearest -- Vendor, buy as much milk as you can
+step
+  along until next_49
+  zone map 1429
+  note "Kill boars you see for Boar Meat"
+  collect 769 x4 @42.400097,89.399991 map 1429 -- Collect Chunk of Boar Meat (x4)
+step
+  label next_49
+  zone map 1429
+  note "Talk to Tommy Joe Stonefield"
+  turnin 106 -- Turn in Young Lovers
+  accept 111 -- Accept Speak with Gramma
+step
+  zone map 1429
+  note "Finish off getting the Boar Meat"
+  collect 769 x4 quest 86.1 @32.499883,85.499937 map 1429 -- Collect Chunk of Boar Meat (x4)
+step
+  zone map 1429
+  note "Talk to \"Auntie\" Bernice Stonefield"
+  turnin 86 -- Turn in Pie for Billy
+  accept 84 -- Accept Back to Billy
+step
+  zone map 1429
+  note "Talk to Gramma Stonefield"
+  turnin 111 -- Turn in Speak with Gramma
+  accept 107 -- Accept Note to William
+step
+  label KoboldCandles
+  along
+  zone map 1429
+  note "Get some Candles from nearby Kobolds"
+  collect 772 x8 quest 60.1 @34.945,83.855 map 1429 -- Collect Kobold Candle (x8)
+step
+  label GoldDust
+  along
+  zone map 1429
+  note "Get some Gold Dust from nearby Kobolds"
+  collect 773 x10 quest 47.1 @34.945,83.855 map 1429 -- Collect Gold Dust (x10)
+step
+  zone map 1429
+  note "Grind mobs east through the outside of the mine"
+  note "Talk to Billy Maclure"
+  turnin 84 -- Turn in Back to Billy
+  accept 87 -- Accept Goldtooth
+step
+  zone map 1429
+  note "Go into the mine"
+  goto 40.499978,82.300224 map 1429 r 8
+  complete 62 -- Scout Through the Fargodeep Mine
+step
+  zone map 1429
+  note "Kill Goldtooth for Bernice's Necklace"
+  collect 981 x1 quest 87.1 -- Collect Bernice's Necklace (x1)
+step
+  level 7+1600 -- Grind until 1600+/4500xp
+step
+  zone map 1429
+  note "Get some Candles from nearby Kobolds"
+  collect 772 x8 quest 60.1 @34.945,83.855 map 1429 -- Collect Kobold Candle (x8)
+step
+  zone map 1429
+  note "Get some Gold Dust from nearby Kobolds"
+  collect 773 x10 quest 47.1 @34.945,83.855 map 1429 -- Collect Gold Dust (x10)
+step
+  label Goldtooth
+  zone map 1429
+  note "Talk to \"Auntie\" Bernice Stonefield"
+  turnin 87 -- Turn in Goldtooth
+step
+  zone map 1429
+  note "Grind some mobs back to Goldshire"
+  level 7+2690 -- Grind until 2690+/4500xp
+  goto 42.099881,67.300114 map 1429 r 8
+step
+  zone map 1429
+  note "Talk to Remy \"Two Times\""
+  turnin 47 -- Turn in Gold Dust Exchange
+  accept 40 -- Accept A Fishy Peril
+step
+  zone map 1429
+  goto 41.699978,65.899862 map 1429 r 8
+  vendor nearest -- vendor trash, repair
+step
+  zone map 1429
+  note "Talk to Marshal Dughan"
+  turnin 40 -- Turn in A Fishy Peril
+  accept 35 -- Accept Further Concerns
+  turnin 62 -- Turn in The Fargodeep Mine
+  accept 76 -- Accept The Jasperlode Mine
+step
+  zone map 1429
+  goto 41.699978,65.899862 map 1429 r 8
+  vendor nearest -- vendor trash, repair
+step
+  zone map 1429
+  note "Talk to William Pestle"
+  turnin 60 -- Turn in Kobold Candles
+  accept 61 -- Accept Shipment to Stormwind
+  turnin 107 -- Turn in Note to William
+  accept 112 -- Collecting Kelp
+step
+  level 8 -- Grind to 8
+step
+  zone map 1429
+  goto 44.000001,65.899862 map 1429 r 8 optional
+  vendor nearest -- Buy a 6 slot bag from Brog
+step
+  zone map 1429
+  goto 43.700073,66.400168 map 1429 r 12 optional
+  goto 43.199905,66.200132 map 1429 r 8 optional
+  train class -- Go Upstairs. Train your class spells
+step
+  zone map 1429
+  goto 43.77095,65.803084 map 1429 r 8
+  vendor nearest -- Buy level 5 Water up to 40
+step
+  zone map 1429
+  note "Grind Murlocs toward the east and loot them for Kelp Frond. kill mobs on the island if you still need some"
+  collect 1256 x4 quest 112.1 @53.799951,66.80024 map 1429 -- Collect Crystal Kelp Frond (x4)
+step
+  zone map 1429
+  note "Go in the mine, and keep following the middle path"
+  goto 61.800046,54.000094 map 1429 r 60 optional
+  goto 60.400094,50.199842 map 1429 r 8
+  complete 76 -- Scout through the Jasperlode Mine
+step
+  zone map 1429
+  note "Talk to Guard Thomas"
+  turnin 35 -- Turn in Further Concerns
+  accept 37 -- Accept Find the Lost Guards
+  accept 52 -- Accept Protect the Frontier
+step
+  along until Prowlers
+  zone map 1429
+  note "Kill Prowlers as you do other quests"
+  kill 118 x8 quest 52.1 @73.972913,72.179179 map 1429 -- Kill Prowler (x8)
+step
+  along until Bears
+  zone map 1429
+  note "Kill Bears as you do other quests. Kill any you see"
+  kill 822 x5 quest 52.2 @73.972913,72.179179 map 1429 -- Kill Young Forest Bear (x5)
+step
+  zone map 1429
+  turnin 37 -- Turn in Find the Lost Guards
+  accept 45 -- Accept Discover Rolf's Fate
+step
+  zone map 1429
+  note "Talk to Supervisor Raelen"
+  accept 5545 -- Accept A Bundle of Trouble
+step
+  zone map 1429
+  goto 83.300066,66.099898 map 1429 r 8
+  vendor nearest -- vendor trash, repair
+step
+  along until Bundles
+  zone map 1429
+  note "Keep an eye out for the bundles of logs at the base of the trees"
+  collect 13872 x8 @83.300066,66.099898 map 1429 -- Collect Bundle of Wood (x8)
+step
+  label Bundles
+  zone map 1429
+  goto 79.800042,55.500148 map 1429 r 60 -- Go toward the guard's corpse
+step
+  zone map 1429
+  note "Kill mobs surrounding the corpse. Pull the 2 mobs in front of the huts, move away and sheep one whilst killing the other, then kill the sheeped mob. Loot the carcass on the ground"
+  note "Be careful as this quest can be difficult"
+  turnin 45 -- Turn in Discover Rolf's Fate
+  accept 71 -- Accept Report to Thomas
+step
+  zone map 1429
+  note "Start running back, finish off the bundles"
+  collect 13872 x8 @83.69997,59.400203 map 1429 -- Collect Bundle of Wood (x8)
+step
+  label Bundles2
+  zone map 1429
+  note "Talk to Supervisor Raelen"
+  turnin 5545 -- Turn in A Bundle of Trouble
+step
+  label Prowlers
+  level 9 -- Grind to 9
+step
+  label Bears
+  zone map 1429
+  note "Talk to Sara Timberlain"
+  accept 83 -- Accept Red Linen Goods
+step
+  zone map 1429
+  note "Kill the last mobs for Protect the Frontier"
+  kill 118 x8 quest 52.1 @82.00009,76.799881 map 1429 -- Kill Prowler (x8)
+  kill 822 x5 quest 52.2 @82.00009,76.799881 map 1429 -- Kill Young Forest Bear (x5)
+step
+  zone map 1429
+  note "Talk to Guard Thomas"
+  turnin 52 -- Turn in Protect the Frontier
+  turnin 71 -- Turn in Report to Thomas
+  accept 39 -- Accept Deliver Thomas' Report
+  note "Talk to Farmer Saldean"
+  accept 109 -- Accept Report to Gryan Stoutmantle
+step
+  along until Princess
+  zone map 1429
+  note "Keep an eye out for Westfall Deed from the Defias (lucky drop)"
+  collect 1972 x1 @73.972913,72.179179 map 1429 optional -- Collect Westfall Deed (x1)
+  accept 184 -- Accept Furlbrow's Deed
+step
+  when onquest 83
+  zone map 1429
+  note "Start circling the farm, killing Defias and looting them for Bandanas"
+  collect 1019 x6 quest 83.1 @70.7999,80.899972 map 1429 -- Collect Red Linen Bandana (x6)
+step
+  label Princess
+  zone map 1429
+  note "Kill Princess. Use a Lesser Heal Potion from before if needed. Loot her for the Collar"
+  note "You can also jump back and forth between the fences on the edge of the farm to kill Princess and her guards"
+  collect 1006 x1 quest 88.1 -- Collect Brass Collar (x1)
+step
+  along until next_92
+  zone map 1429
+  goto 83.599994,69.700114 map 1429 r 120 -- Die and respawn at the Spirit Healer if you're low health, otherwise just run back and handin
+step
+  when complete 83
+  label next_92
+  zone map 1429
+  note "Talk to Sara Timberlain"
+  turnin 83 -- Turn in Red Linen Goods
+step
+  zone map 1433
+  goto 7.8701089,73.850279 map 1433 r 8
+step
+  along until next_95
+  zone map 1433
+  note "Die to the mobs here"
+  goto 11.200165,78.400266 map 1433 r 8
+step
+  label next_95
+  zone map 1433
+  note "Respawn at the Spirit Healer"
+  goto 20.800163,56.599969 map 1433 r 100 -- Respawn at the Spirit Healer
+step
+  zone map 1433
+  getfp "Redridge Mountains" @30.600083,59.399855 map 1433 -- Get the Redridge Mountains flight path
+step
+  hearth "Goldshire" optional -- Hearth to Goldshire
+step
+  zone map 1429
+  note "Don't wait for his rp event"
+  note "Talk to William Pestle"
+  turnin 112 -- Turn in Collecting Kelp
+step
+  zone map 1429
+  note "Talk to Marshal Dughan"
+  turnin 39 -- Turn in Deliver Thomas' Report
+  turnin 76 -- Turn in The Jasperlode Mine
+  accept 239 -- Accept Westbrook Garrison Needs Help!
+step
+  zone map 1429
+  note "Talk to Verner Osgood"
+  accept 1097 -- Accept Elmore's Task
+step
+  zone map 1429
+  goto 41.699978,65.899862 map 1429 r 8
+  vendor nearest -- vendor trash, repair
+step
+  zone map 1429
+  note "Talk to William Pestle"
+  accept 114 -- Accept The Escape
+step
+  zone map 1429
+  note "Run out of the inn and go south"
+  note "Talk to Maybell Maclure"
+  turnin 114 -- Turn in The Escape
+step
+  zone map 1429
+  note "Talk to Ma Stonefield"
+  turnin 88 -- Turn in Princess Must Die!
+step
+  zone map 1429
+  note "Talk to Deputy Rainer"
+  turnin 239 -- Turn in Westbrook Garrison Needs Help!
+step
+  accept 184 -- Accept Furlbrow's Deed
+step
+  when onquest 184
+  zone map 1436
+  note "Talk to Farmer Furlbrow"
+  turnin 184 -- Turn in Furlbrow's Deed
+step
+  zone map 1436
+  note "Talk to Verna Furlbrow"
+  accept 36 -- Accept Westfall Stew
+step
+  zone map 1436
+  note "Talk to Salma Saldean"
+  turnin 36 -- Turn in Westfall Stew
+step
+  along until next_111
+  zone map 1436
+  goto 51.699914,49.40015 map 1436 r 150 -- Die and respawn at the Spirit Healer, or run to Sentinel Hill
+step
+  label next_111
+  zone map 1436
+  note "Talk to Gryan Stoutmantle"
+  turnin 109 -- Turn in Report to Gryan Stoutmantle
+step
+  zone map 1436
+  vendor 491 -- vendor trash
+  note "Talk to Quartermaster Lewis"
+  accept 6181 -- Accept A Swift Message
+step
+  zone map 1436
+  goto 56.415914,30.519004 map 1436 r 8
+  level 11+3750 -- Grind to 3750+/8800xp
+step
+  zone map 1436
+  goto 56.599914,52.599865 map 1436 r 8 optional
+  getfp "Sentinel Hill" @56.599914,52.599865 map 1436 -- Get the Sentinel Hill flight path
+  note "Talk to Thor"
+  turnin 6181 -- Turn in A Swift Message
+  accept 6281 -- Accept Continue To Stormwind
+  fly "Stormwind" -- Fly to Stormwind
+step
+  zone map 1453
+  note "Choose rockets. These have very good damage, and can be used for splitpulling"
+  note "Talk to Morgan Pestle"
+  turnin 61 -- Turn in Shipment to Stormwind
+step
+  zone map 1453
+  goto 57.100211,57.700306 map 1453 r 8
+  train class -- Train 1h Swords
+step
+  zone map 1453
+  note "Talk to Osric Strang"
+  turnin 6281 -- Turn in Continue to Stormwind
+  note "Vendor and Repair"
+step
+  along until next_119
+  zone map 1453
+  note "Talk to Grimand Elmore"
+  turnin 1097 -- Turn in Elmore's Task
+step
+  label next_119
+  zone map 1453
+  note "Talk to Grimand Elmore"
+  accept 353 -- Accept Stormpike's Delivery
+step
+  along until next_121
+  zone map 1453
+  goto 63.900184,8.3001805 map 1453 r 20 -- Enter the Deeprun Tram
+step
+  label next_121
+  zone map 1453
+  note "Take the tram when it arrives, then get off when it arrives on the other side"
+  note "Talk to Monty"
+  accept 6661 @63.900184,8.3001805 map 1453 -- Accept Deeprun Rat Roundup
+step
+  zone map 1453
+  note "Use your flute on the rats scattered around"
+  kill 13016 x5 quest 6661.1 @63.900184,8.3001805 map 1453 -- Rats Captured (x5)
+step
+  zone map 1453
+  note "Talk to Monty"
+  turnin 6661 @63.900184,8.3001805 map 1453 -- Turn in Deeprun Rat Roundup
+step
+  zone map 1455
+  goto 76.999715,51.000085 map 1455 r 30 -- Enter Ironforge
+step
+  zone map 1455
+  getfp "Ironforge" @55.501534,47.741966 map 1455 -- Get the Ironforge flight path
+step
+  zone map 1455
+  goto 27.169518,8.5706163 map 1455 r 8
+  train class -- Train your class spells
+step
+  along until next_128
+  zone map 1426
+  goto 53.499959,34.900105 map 1426 r 100 -- Run out of Ironforge
+step
+  label next_128
+  zone map 1426
+  note "Talk to Rudra Amberstill"
+  accept 314 -- Accept Protecting the Herd
+step
+  along until next_130
+  zone map 1426
+  goto 62.299959,50.3 map 1426 r 14 optional
+  goto 62.200061,49.4 map 1426 r 12 optional -- Run up this part of the mountain
+step
+  label next_130
+  zone map 1426
+  note "Kill Vagash. Loot him for his Fang"
+  note "Kite him to the guard south of the ranch. Make sure you do 51%+ damage to him"
+  note "Be careful as this quest can be difficult"
+  goto 62.600061,46.100001 map 1426 r 8 optional
+  goto 62.779959,54.599898 map 1426 r 1
+  collect 3627 x1 quest 314.1 -- Collect Fang of Vagash (1)
+step
+  zone map 1426
+  note "Talk to Rudra Amberstill"
+  turnin 314 -- Turn in Protecting the Herd
+step
+  zone map 1426
+  note "Grind a little en route"
+  goto 68.600061,54.700101 map 1426 r 8
+  vendor nearest -- Vendor, buy food+water
+step
+  zone map 1426
+  note "Talk to Senator Mehr Stonehallow"
+  accept 433 -- Accept The Public Servant
+step
+  zone map 1426
+  note "Talk to Foreman Stonebrow"
+  accept 432 -- Accept Those Blasted Troggs!
+step
+  zone map 1426
+  note "Kill Troggs in the cave"
+  kill 1115 x6 quest 432.1 @72.899959,53.099898 map 1426 -- Kill Rockjaw Skullthumper (6)
+  kill 1117 x10 quest 433.1 @72.899959,53.099898 map 1426 -- Kill Rockjaw Bonesnapper (10)
+step
+  level 10+6350 -- Grind until 6350+/7600
+step
+  zone map 1426
+  note "Talk to Foreman Stonebrow"
+  turnin 432 -- Turn in Those Blasted Troggs!
+step
+  along until next_139
+  zone map 1426
+  goto 68.899959,55.9001 map 1426 r 8
+  vendor nearest -- vendor trash, repair
+step
+  label next_139
+  zone map 1426
+  note "Talk to Senator Mehr Stonehallow"
+  turnin 433 -- Turn in The Public Servant
+step
+  level 11
+step
+  zone map 1426
+  goto 68.600061,54.700101 map 1426 r 8
+  vendor nearest -- vendor trash, buy x30 level 5 drink from Kazan
+  train class -- Train Cooking from Ghilm. You'll need this to pick up 2 extra quests later
+step
+  zone map 1426
+  note "Talk to Pilot Hammerfoot"
+  accept 419 -- Accept The Lost Pilot
+step
+  zone map 1426
+  turnin 419 -- Turn in The Lost Pilot
+  accept 417 -- Accept A Pilot's Revenge
+step
+  zone map 1426
+  note "Kill Mangeclaw. Loot him for his Claw"
+  collect 3183 x1 quest 417.1 -- Collect Mangy Claw (x1)
+step
+  zone map 1426
+  note "Talk to Pilot Hammerfoot"
+  turnin 417 -- Turn in A Pilot's Revenge
+step
+  zone map 1426
+  goto 84.400061,31.100004 map 1426 r 25 -- Go through the tunnel to Loch Modan

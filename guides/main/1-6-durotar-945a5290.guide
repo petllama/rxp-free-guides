@@ -1,0 +1,1192 @@
+guide rxp-free/1-6-durotar-945a5290
+title "1-6 Durotar"
+levels 1-6
+zone map 1411
+coords era
+faction Horde
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+next rxp-free/6-10-durotar-c60d9b04
+step
+  only Human,Dwarf,Gnome,NightElf,Tauren,Undead,Skyborne
+  along until next_1
+  note "You have selected a guide meant for Orcs and Trolls. You should choose the same starter zone that you start in"
+step
+  label next_1
+  zone map 1411
+  note "Talk to Kaltunk"
+  accept 4641 -- Accept Your Place In The World
+step
+  along until next_3
+  zone map 1411
+  note "Kill Mottled Boars. Loot them until you have 35 copper worth of vendor items (including your armor)" only Warlock
+  note "Kill Mottled Boars. Loot them until you have 50 copper worth of vendor items (including your armor)" only Priest
+  note "Kill Mottled Boars. Loot them until you have 10 copper worth of vendor items (including your armor)" only Warrior
+  note "Kill Mottled Boars. Loot them until you have 10 copper worth of vendor items (including your armor)" only Shaman
+  goto 43.850024,71.730014 map 1411 r 30 optional only Warlock
+  goto 43.850024,71.730014 map 1411 r 30 optional only Mage
+  goto 43.850024,71.730014 map 1411 r 30 optional only Priest
+  goto 44.190071,65.339943 map 1411 r 30 optional only Warrior
+  goto 44.190071,65.339943 map 1411 r 30 optional only Shaman
+step
+  only Warlock
+  label next_3
+  note "Talk to Ruzan"
+  accept 1485 -- Accept Vile Familiars
+step
+  only Warrior
+  zone map 1411
+  note "Talk to Duokna"
+  vendor 3158 -- Vendor Trash
+step
+  only Shaman
+  zone map 1411
+  note "Talk to Duokna"
+  vendor 3158 -- Vendor Trash
+step
+  zone map 1411
+  goto 42.279905,68.480085 map 1411 r 12 optional only !Warrior,!Shaman
+  goto 42.289929,68.389872 map 1411 r 12 optional only Warrior
+  goto 42.289929,68.389872 map 1411 r 12 optional only Shaman
+  note "Talk to Gornek"
+  turnin 4641 -- Turn in Your Place In The World
+  accept 788 -- Accept Cutting Teeth
+step
+  only Warrior
+  zone map 1411
+  goto 42.279905,68.480085 map 1411 r 10 optional
+  goto 42.890024,69.440085 map 1411 r 8 optional only Warrior
+  goto 42.389976,69.000085 map 1411 r 8 only Shaman
+  note "Talk to Frang" only Warrior
+  note "Talk to Shikrik" only Shaman
+  learn 6673 "Battle Shout" only Warrior
+  learn 8017 "Rockbiter Weapon" only Shaman
+step
+  only Shaman
+  zone map 1411
+  goto 42.279905,68.480085 map 1411 r 10 optional
+  goto 42.890024,69.440085 map 1411 r 8 optional only Warrior
+  goto 42.389976,69.000085 map 1411 r 8 only Shaman
+  note "Talk to Frang" only Warrior
+  note "Talk to Shikrik" only Shaman
+  learn 6673 "Battle Shout" only Warrior
+  learn 8017 "Rockbiter Weapon" only Shaman
+step
+  only Warlock
+  along until Nartok
+  zone map 1411
+  goto 41.52,68.360085 map 1411 r 12 optional
+  goto 41.239905,68.160085 map 1411 r 12 optional
+  goto 40.820047,68.029872 map 1411 r 12 optional
+  goto 40.650024,68.520085 map 1411 r 12 optional -- Travel toward Nartok
+step
+  only Warlock
+  along until next_10
+  zone map 1411
+  goto 41.52,68.360085 map 1411 r 12 optional
+  goto 41.239905,68.160085 map 1411 r 12 optional
+  goto 40.820047,68.029872 map 1411 r 12 optional
+  goto 40.56,68.440085 map 1411 r 12 optional -- Travel toward Hraug
+step
+  only Warlock
+  label next_10
+  zone map 1411
+  note "Talk to Hraug"
+  vendor 12776 -- Vendor Trash
+step
+  only Warlock
+  label Nartok
+  zone map 1411
+  goto 40.650024,68.520085 map 1411 r 8
+  note "Talk to Nartok"
+  learn 348 "Immolate"
+step
+  only Hunter
+  when !turnedin 6394
+  zone map 1411
+  goto 42.590071,67.339943 map 1411 r 8
+  note "Talk to Duokna"
+  note "Buy [Refreshing Spring Water] from her" only !Hunter
+  note "Buy [Rough Arrows] from her" only Hunter
+  collect 159 x10 @42.590071,67.339943 map 1411 only !Hunter -- Refreshing Spring Water (10)
+  collect 2512 x1000 @42.590071,67.339943 map 1411 only Hunter -- Rough Arrow (1000)
+step
+  only Mage
+  when !turnedin 6394
+  zone map 1411
+  goto 42.590071,67.339943 map 1411 r 8
+  note "Talk to Duokna"
+  note "Buy [Refreshing Spring Water] from her" only !Hunter
+  note "Buy [Rough Arrows] from her" only Hunter
+  collect 159 x10 @42.590071,67.339943 map 1411 only !Hunter -- Refreshing Spring Water (10)
+  collect 2512 x1000 @42.590071,67.339943 map 1411 only Hunter -- Rough Arrow (1000)
+step
+  only Priest
+  when !turnedin 6394
+  zone map 1411
+  goto 42.590071,67.339943 map 1411 r 8
+  note "Talk to Duokna"
+  note "Buy [Refreshing Spring Water] from her" only !Hunter
+  note "Buy [Rough Arrows] from her" only Hunter
+  collect 159 x10 @42.590071,67.339943 map 1411 only !Hunter -- Refreshing Spring Water (10)
+  collect 2512 x1000 @42.590071,67.339943 map 1411 only Hunter -- Rough Arrow (1000)
+step
+  only Warlock
+  zone map 1411
+  goto 42.590071,67.339943 map 1411 r 8
+  note "Talk to Duokna"
+  note "Buy [Refreshing Spring Water] from her"
+  collect 159 x5 @42.590071,67.339943 map 1411 optional -- Refreshing Spring Water (5)
+step
+  only Warlock
+  along until next_16
+  zone map 1411
+  note "Kill Mottled Boars en route to the Burning Blade Coven"
+  note "Try to get to level 2 before getting there"
+  kill 3098 x10 quest 788.1 @43.569929,67.280085 map 1411 -- Mottled Boar (10)
+step
+  only Warlock
+  when onquest 1485
+  label next_16
+  zone map 1411
+  goto 45.300047,56.419943 map 1411 r 100 -- Travel toward the Burning Blade Coven
+step
+  only Warlock
+  when onquest 1485
+  loop
+  zone map 1411
+  goto 43.870071,58.419943 map 1411 r 1
+  goto 43.870071,58.419943 map 1411 r 40
+  goto 44.529929,58.619943 map 1411 r 40
+  goto 45.179953,58.419943 map 1411 r 40
+  goto 45.829976,58.589872 map 1411 r 40
+  goto 45.790071,57.429872 map 1411 r 40
+  goto 46.459953,57.570014 map 1411 r 40
+  goto 47.189976,57.120085 map 1411 r 40
+  goto 46.209929,56.690014 map 1411 r 40
+  goto 46.279905,56.109872 map 1411 r 40
+  goto 45.649929,56.899943 map 1411 r 40
+  goto 45.349976,56.320085 map 1411 r 40
+  goto 44.769929,56.869872 map 1411 r 40
+  goto 44.580047,56.099943 map 1411 r 40
+  goto 44.270071,56.589872 map 1411 r 40
+  goto 43.850024,55.520085 map 1411 r 40
+  note "Kill Vile Familiars. Loot them for Vile Familiar Heads"
+  collect 6487 x6 quest 1485.1 -- Vile Familiar Head (6)
+step
+  along until Sarkoth
+  zone map 1411
+  goto 43.569929,67.280085 map 1411 r 35 optional only !Warlock
+  goto 43.889929,65.840085 map 1411 r 45 optional only !Warlock
+  note "Kill Mottled Boars"
+  kill 3098 x10 quest 788.1 @43.889929,65.840085 map 1411 -- Mottled Boar (10)
+step
+  zone map 1411
+  note "Talk to Hana'zua"
+  accept 790 -- Accept Sarkoth
+step
+  label Sarkoth
+  zone map 1411
+  note "Kill Sarkoth. Loot him for Sarkoth's Mangled Claw"
+  collect 4905 x1 quest 790.1 -- Sarkoth's Mangled Claw (1)
+step
+  zone map 1411
+  note "Talk to Hana'zua"
+  turnin 790 -- Turn in Sarkoth
+  accept 804 -- Accept Sarkoth
+step
+  loop
+  zone map 1411
+  goto 41.300047,65.029872 map 1411 r 1
+  goto 41.300047,65.029872 map 1411 r 40
+  goto 41.92,64.739943 map 1411 r 40
+  goto 42.660047,64.920085 map 1411 r 40
+  goto 43.310071,65.019943 map 1411 r 40
+  goto 43.899953,65.960085 map 1411 r 40
+  goto 44.539953,65.960085 map 1411 r 40
+  goto 45.159905,65.770014 map 1411 r 40
+  goto 45.719905,65.930014 map 1411 r 40
+  goto 45.719905,65.040085 map 1411 r 40
+  goto 45.210024,63.949872 map 1411 r 40
+  goto 45.829976,63.010014 map 1411 r 40
+  goto 45.809929,62.170014 map 1411 r 40
+  goto 45.780047,61.139943 map 1411 r 40
+  goto 45.150071,60.200085 map 1411 r 40
+  goto 44.500047,59.450014 map 1411 r 40
+  goto 43.860047,60.429872 map 1411 r 40
+  goto 43.070071,60.240085 map 1411 r 40
+  goto 42.580047,60.090014 map 1411 r 40
+  goto 42.020047,61.189872 map 1411 r 40
+  goto 42.020047,62.149872 map 1411 r 40
+  goto 42,62.920085 map 1411 r 40
+  goto 41.989976,64.029872 map 1411 r 40
+  note "Kill Mottled Boars"
+  kill 3098 x10 quest 788.1 -- Mottled Boar (10)
+step
+  only Warlock
+  zone map 1411
+  goto 41.300047,65.029872 map 1411 r 1 optional
+  goto 41.300047,65.029872 map 1411 r 40 optional
+  goto 41.92,64.739943 map 1411 r 40 optional
+  goto 42.660047,64.920085 map 1411 r 40 optional
+  goto 43.310071,65.019943 map 1411 r 40 optional
+  goto 43.899953,65.960085 map 1411 r 40 optional
+  goto 44.539953,65.960085 map 1411 r 40 optional
+  goto 45.159905,65.770014 map 1411 r 40 optional
+  goto 45.719905,65.930014 map 1411 r 40 optional
+  goto 45.719905,65.040085 map 1411 r 40 optional
+  goto 45.210024,63.949872 map 1411 r 40 optional
+  goto 45.829976,63.010014 map 1411 r 40 optional
+  goto 45.809929,62.170014 map 1411 r 40 optional
+  goto 45.780047,61.139943 map 1411 r 40 optional
+  goto 45.150071,60.200085 map 1411 r 40 optional
+  goto 44.500047,59.450014 map 1411 r 40 optional
+  goto 43.860047,60.429872 map 1411 r 40 optional
+  goto 43.070071,60.240085 map 1411 r 40 optional
+  goto 42.580047,60.090014 map 1411 r 40 optional
+  goto 42.020047,61.189872 map 1411 r 40 optional
+  goto 42.020047,62.149872 map 1411 r 40 optional
+  goto 42,62.920085 map 1411 r 40 optional
+  goto 41.989976,64.029872 map 1411 r 40
+  level 3+685 -- Grind to 685+/1400xp
+step
+  label Boars
+  note "Review this source step manually."
+step
+  only Warlock
+  along until Ruzan2
+  note "Grind Mottled Boars. Loot them until you have 1 silver worth of vendor items"
+step
+  only Rogue
+  label Duokna2
+  zone map 1411
+  note "Talk to Duokna"
+  vendor 3158 -- Vendor Trash
+step
+  only Warlock
+  when onquest 1485
+  turnin 1485 -- Turn in Vile Familiars
+step
+  only Warlock
+  label Ruzan2
+  zone map 1411
+  note "Talk to Ruzan"
+  accept 1499 -- Accept Vile Familiars
+step
+  only Warlock
+  along until Gornek2
+  note "Cast [Summon Imp]"
+step
+  only Warlock
+  when onquest 1499
+  turnin 1499 -- Turn in Vile Familiars
+step
+  only Warlock
+  zone map 1411
+  note "Talk to Zureetha"
+  accept 794 -- Accept Burning Blade Medallion
+step
+  label Gornek2
+  zone map 1411
+  goto 42.279905,68.480085 map 1411 r 12 optional only Warlock
+  goto 42.289929,68.389872 map 1411 r 12 optional only !Warlock
+  goto 42.059953,68.320085 map 1411 r 8 optional
+  note "Talk to Gornek"
+  turnin 788 only Shaman -- Turn in Cutting Teeth
+  turnin 788 only !Shaman -- Turn in Cutting Teeth
+  accept 789 -- Accept Sting of the Scorpid
+  accept 2383 only Orc,Warrior -- Accept Simple Parchment
+  accept 3065 only Troll,Warrior -- Accept Simple Tablet
+  accept 3082 only Troll,Hunter -- Accept Etched Tablet
+  accept 3083 only Troll,Rogue -- Accept Encrypted Tablet
+  accept 3084 only Troll,Shaman -- Accept Rune-Inscribed Tablet
+  accept 3085 only Troll,Priest -- Accept Hallowed Tablet
+  accept 3086 only Troll,Mage -- Accept Glyphic Tablet
+  accept 98575 only Troll,Warlock -- Accept Tainted Tablet
+  accept 3087 only Orc,Hunter -- Accept Etched Parchment
+  accept 3088 only Orc,Rogue -- Accept Encrypted Parchment
+  accept 3089 only Orc,Shaman -- Accept Rune-Inscribed Parchment
+  accept 3090 only Orc,Warlock -- Accept Tainted Parchment
+  accept 98576 only Orc,Mage -- Accept Glyphic Parchment
+  turnin 804 only Shaman -- Turn in Sarkoth
+  turnin 804 only !Shaman -- Turn in Sarkoth
+step
+  only Rogue
+  along until Rwag
+  zone map 1411
+  goto 41.52,68.360085 map 1411 r 12 optional
+  goto 41.269976,68.000085 map 1411 r 12 optional -- Travel toward Rwag
+step
+  only Rogue
+  when level>=4
+  zone map 1411
+  goto 41.269976,68.000085 map 1411 r 8 optional
+  note "Talk to Rwag"
+  turnin 3083 only Troll,Rogue -- Turn in Encrypted Tablet
+  turnin 3088 only Orc,Rogue -- Turn in Encrypted Parchment
+  learn 53 "Backstab"
+step
+  only Rogue
+  label Rwag
+  zone map 1411
+  goto 41.269976,68.000085 map 1411 r 8
+  note "Talk to Rwag"
+step
+  only Rogue
+  when onquest 3083
+  turnin 3083 only Troll,Rogue -- Turn in Encrypted Tablet
+step
+  only Rogue
+  when onquest 3088
+  turnin 3088 only Orc,Rogue -- Turn in Encrypted Parchment
+step
+  when complete 97279
+  when onquest 97279
+  zone map 1411
+  note "Talk to Kzan Thornslash in the back of the cave"
+  turnin 97279 -- Turn in Wayward Weapons
+step
+  only Shaman
+  zone map 1411
+  note "Talk to Kzan"
+  vendor 3159 -- Vendor trash. Sell your weapon if it gives you enough money for a [Short Staff] (97c)
+step
+  only Shaman
+  zone map 1411
+  goto 40.474704,68.003773 map 1411 r 8
+  note "Talk to Kzan"
+  note "Buy a [Short Staff] from him"
+  collect 2132 x1 @40.474704,68.003773 map 1411 optional -- Collect Short Staff (1)
+step
+  only Rogue
+  when !turnedin 792
+  zone map 1411
+  note "Talk to Norzsh"
+  note "Buy a [Mining Pick] from him"
+  learn 2575 "Mining"
+  collect 2901 x1 @40.539007,68.13427 map 1411 -- Mining Pick (1)
+  note "This will allow you to find [Rough Stones] from nodes in order to craft [Sharpening Stones] (+2 Weapon Damage for 30 minutes)"
+step
+  only Warrior
+  when !turnedin 792
+  zone map 1411
+  note "Talk to Norzsh"
+  note "Buy a [Mining Pick] from him"
+  learn 2575 "Mining"
+  collect 2901 x1 @40.539007,68.13427 map 1411 -- Mining Pick (1)
+  note "This will allow you to find [Rough Stones] from nodes in order to craft [Sharpening Stones] (+2 Weapon Damage for 30 minutes)"
+step
+  only Warlock
+  zone map 1411
+  note "Talk to Hraug"
+  vendor 12776 -- Vendor Trash
+step
+  only Warlock
+  label Nartok2
+  zone map 1411
+  goto 40.650024,68.520085 map 1411 r 8
+  note "Talk to Nartok"
+  learn 172 "Corruption"
+step
+  only Warlock
+  when onquest 3090
+  turnin 3090 only Orc,Warlock -- Turn in Tainted Parchment
+step
+  only Warlock
+  when onquest 98575
+  turnin 98575 only Troll,Warlock -- Turn in Tainted Tablet
+step
+  label Galgar
+  zone map 1411
+  note "Talk to Galgar"
+  accept 4402 -- Accept Galgar's Cactus Apple Surprise
+step
+  only Warrior,Paladin,Hunter,Priest,Mage,Warlock,Druid
+  zone map 1411
+  goto 42.590071,67.339943 map 1411 r 8
+  note "Talk to Duokna"
+  note "Buy [Refreshing Spring Water] from her" only !Rogue,!Warrior,!Hunter,!Shaman
+  note "Buy [Rough Arrows] from her" only Hunter
+  collect 159 x15 @42.590071,67.339943 map 1411 optional only !Rogue,!Warrior,!Hunter,!Shaman -- Refreshing Spring Water (15)
+  collect 2512 x1000 @42.590071,67.339943 map 1411 optional only Hunter -- Rough Arrow (1000)
+  vendor 3158 -- Vendor Trash
+step
+  only Shaman
+  zone map 1411
+  goto 42.389976,69.000085 map 1411 r 8
+  note "Talk to Shikrik"
+step
+  only Shaman
+  when onquest 3084
+  turnin 3084 only Troll -- Turn in Rune-Inscribed Tablet
+step
+  only Shaman
+  when onquest 3089
+  turnin 3089 only Orc -- Turn in Rune-Inscribed Parchment
+step
+  only Mage
+  zone map 1411
+  goto 42.510071,69.040085 map 1411 r 8
+  note "Talk to Mai'ah"
+  learn 1459 "Arcane Intellect"
+step
+  only Mage
+  when onquest 3086
+  turnin 3086 only Troll,Mage -- Turn in Glyphic Tablet
+step
+  only Mage
+  when onquest 98576
+  turnin 98576 only Orc,Mage -- Turn in Glyphic Parchment
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  zone map 1411
+  note "Talk to Zureetha"
+  accept 792 -- Accept Vile Familiars
+step
+  only Hunter
+  zone map 1411
+  goto 42.839905,69.320085 map 1411 r 8
+  note "Talk to Jen'shan"
+step
+  only Hunter
+  when onquest 3082
+  turnin 3082 only Troll -- Turn in Etched Tablet
+step
+  only Hunter
+  when onquest 3087
+  turnin 3087 only Orc -- Turn in Etched Parchment
+step
+  only Warrior
+  zone map 1411
+  goto 42.890024,69.440085 map 1411 r 8
+  note "Talk to Frang"
+step
+  only Warrior
+  when onquest 2383
+  turnin 2383 only Orc -- Turn in Simple Parchment
+step
+  only Warrior
+  when onquest 3065
+  turnin 3065 only Troll -- Turn in Simple Tablet
+step
+  zone map 1411
+  note "Talk to Thazz'ril"
+  accept 5441 -- Accept Lazy Peons
+step
+  along until Sting
+  zone map 1411
+  note "Loot the Cactus Apples near the Cacti"
+  collect 11583 x10 quest 4402.1 @44.629976,68.650014 map 1411 -- Cactus Apple (10)
+step
+  along until Tails
+  zone map 1411
+  note "Use the [Foreman's Blackjack] on sleeping Lazy Peons"
+  kill 10556 x5 quest 5441.1 @47.370024,65.669872 map 1411 -- Peons Awoken (5)
+  use 16114 @47.370024,65.669872 map 1411
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  along until Imps
+  zone map 1411
+  note "Kill Scorpid Workers. Loot them for Scorpid Worker Tails"
+  collect 4862 x10 quest 789.1 @47.370024,65.669872 map 1411 -- Scorpid Worker Tail (10)
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  when onquest 792
+  label Imps
+  loop
+  zone map 1411
+  goto 43.870071,58.419943 map 1411 r 1
+  goto 43.870071,58.419943 map 1411 r 40
+  goto 44.529929,58.619943 map 1411 r 40
+  goto 45.179953,58.419943 map 1411 r 40
+  goto 45.829976,58.589872 map 1411 r 40
+  goto 45.790071,57.429872 map 1411 r 40
+  goto 46.459953,57.570014 map 1411 r 40
+  goto 47.189976,57.120085 map 1411 r 40
+  goto 46.209929,56.690014 map 1411 r 40
+  goto 46.279905,56.109872 map 1411 r 40
+  goto 45.649929,56.899943 map 1411 r 40
+  goto 45.349976,56.320085 map 1411 r 40
+  goto 44.769929,56.869872 map 1411 r 40
+  goto 44.580047,56.099943 map 1411 r 40
+  goto 44.270071,56.589872 map 1411 r 40
+  goto 43.850024,55.520085 map 1411 r 40
+  note "Kill Vile Familiars"
+  kill 3101 x12 quest 792.1 -- Vile Familiar (12)
+step
+  label Tails
+  loop
+  zone map 1411
+  goto 43.259953,58.280085 map 1411 r 1
+  goto 43.259953,58.280085 map 1411 r 40
+  goto 42.810024,58.410014 map 1411 r 40
+  goto 41.899953,58.349872 map 1411 r 40
+  goto 41.969929,59.200085 map 1411 r 40
+  goto 41.36,60.349872 map 1411 r 40
+  goto 40.660047,61.269872 map 1411 r 40
+  goto 40.069976,61.349872 map 1411 r 40
+  goto 39.419953,61.290014 map 1411 r 40
+  goto 39.460047,62.170014 map 1411 r 40
+  goto 39.550071,63.099943 map 1411 r 40
+  goto 40.129929,64.040085 map 1411 r 40
+  goto 40.839905,64.059943 map 1411 r 40
+  goto 40.740047,65.859943 map 1411 r 40
+  goto 39.930024,66.029872 map 1411 r 40
+  goto 40.039905,66.989872 map 1411 r 40
+  goto 40.090024,67.659943 map 1411 r 40
+  goto 40.129929,68.499943 map 1411 r 40
+  goto 40.72,68.549872 map 1411 r 40
+  goto 41.300047,67.840085 map 1411 r 40
+  goto 41.370024,66.720085 map 1411 r 40
+  goto 41.889929,66.050014 map 1411 r 40
+  goto 41.269976,65.709872 map 1411 r 40
+  goto 41.36,64.069872 map 1411 r 40
+  goto 41.329929,63.120085 map 1411 r 40
+  goto 41.349976,61.979943 map 1411 r 40
+  goto 41.489929,61.250014 map 1411 r 40
+  goto 41.899953,60.240085 map 1411 r 40
+  goto 42.510071,59.339943 map 1411 r 40
+  goto 43.079905,59.619943 map 1411 r 40
+  goto 43.909976,59.330014 map 1411 r 40
+  goto 45.150071,59.459943 map 1411 r 40
+  goto 45.809929,59.299943 map 1411 r 40
+  goto 45.850024,60.339943 map 1411 r 40
+  goto 46.459953,61.109872 map 1411 r 40
+  goto 47.089929,62.240085 map 1411 r 40
+  goto 47.079905,63.149872 map 1411 r 40
+  goto 47.140047,64.080085 map 1411 r 40
+  goto 47.579953,64.040085 map 1411 r 40
+  goto 47.079905,63.149872 map 1411 r 40
+  goto 47.089929,62.240085 map 1411 r 40
+  goto 46.900047,61.149872 map 1411 r 40
+  goto 46.980047,60.179943 map 1411 r 40
+  goto 47.070071,59.339943 map 1411 r 40
+  goto 46.469976,58.280085 map 1411 r 40
+  goto 45.809929,59.299943 map 1411 r 40
+  goto 45.150071,59.459943 map 1411 r 40
+  goto 43.909976,59.330014 map 1411 r 40
+  note "Kill Scorpid Workers. Loot them for Scorpid Worker Tails"
+  collect 4862 x10 quest 789.1 -- Scorpid Worker Tail (10)
+step
+  loop
+  zone map 1411
+  goto 44.980047,69.130014 map 1411 r 1
+  goto 44.980047,69.130014 map 1411 r 25
+  goto 45.639905,65.699943 map 1411 r 25
+  goto 47.370024,65.669872 map 1411 r 25
+  goto 46.740047,60.659943 map 1411 r 25
+  goto 47.089929,57.899943 map 1411 r 25
+  goto 43.899953,57.789872 map 1411 r 25
+  goto 42.699953,57.250014 map 1411 r 25
+  goto 41.269976,58.949872 map 1411 r 25
+  goto 40.910071,60.410014 map 1411 r 25
+  goto 38.830071,61.840085 map 1411 r 25
+  note "Use the [Foreman's Blackjack] on sleeping Lazy Peons"
+  kill 10556 x5 quest 5441.1 -- Peons Awoken (5)
+  use 16114 @38.830071,61.840085 map 1411
+step
+  zone map 1411
+  goto 41.300047,65.029872 map 1411 r 1 optional
+  goto 41.300047,65.029872 map 1411 r 40 optional
+  goto 41.92,64.739943 map 1411 r 40 optional
+  goto 42.660047,64.920085 map 1411 r 40 optional
+  goto 43.310071,65.019943 map 1411 r 40 optional
+  goto 43.899953,65.960085 map 1411 r 40 optional
+  goto 44.539953,65.960085 map 1411 r 40 optional
+  goto 45.159905,65.770014 map 1411 r 40 optional
+  goto 45.719905,65.930014 map 1411 r 40 optional
+  goto 45.719905,65.040085 map 1411 r 40 optional
+  goto 45.210024,63.949872 map 1411 r 40 optional
+  goto 45.829976,63.010014 map 1411 r 40 optional
+  goto 45.809929,62.170014 map 1411 r 40 optional
+  goto 45.780047,61.139943 map 1411 r 40 optional
+  goto 45.150071,60.200085 map 1411 r 40 optional
+  goto 44.500047,59.450014 map 1411 r 40 optional
+  goto 43.860047,60.429872 map 1411 r 40 optional
+  goto 43.070071,60.240085 map 1411 r 40 optional
+  goto 42.580047,60.090014 map 1411 r 40 optional
+  goto 42.020047,61.189872 map 1411 r 40 optional
+  goto 42.020047,62.149872 map 1411 r 40 optional
+  goto 42,62.920085 map 1411 r 40 optional
+  goto 41.989976,64.029872 map 1411 r 40 optional
+  level 4 -- Grind to level 4
+step
+  when complete 4402
+  zone map 1411
+  note "Talk to Galgar"
+  turnin 4402 -- Turn in Galgar's Cactus Apple Surprise
+step
+  zone map 1411
+  goto 42.590071,67.339943 map 1411 r 8
+  note "Talk to Duokna"
+  note "Buy [Refreshing Spring Water] from her" only !Rogue,!Warrior,!Hunter,!Shaman
+  note "Buy [Rough Arrows] from her" only Hunter
+  collect 159 x5 @42.590071,67.339943 map 1411 optional only !Rogue,!Warrior,!Hunter,!Shaman -- Refreshing Spring Water (5)
+  collect 2512 x1000 @42.590071,67.339943 map 1411 optional only Hunter -- Rough Arrow (1000)
+  vendor 3158 -- Vendor Trash
+step
+  label Sting
+  zone map 1411
+  goto 42.289929,68.389872 map 1411 r 12 optional
+  goto 42.059953,68.320085 map 1411 r 8 optional
+  note "Talk to Gornek"
+  turnin 789 only Shaman -- Turn in Sting of the Scorpid
+  turnin 789 only !Shaman -- Turn in Sting of the Scorpid
+step
+  only Shaman
+  zone map 1411
+  note "Talk to Shikrik and Canaga"
+  learn 8042 "Earth Shock"
+  accept 1516 -- Accept Call of Earth
+  goto 42.4,69.170014 map 1411 r 8 optional
+step
+  only Mage
+  zone map 1411
+  goto 42.510071,69.040085 map 1411 r 8
+  note "Talk to Mai'ah"
+  learn 116 "Frostbolt"
+step
+  only Priest
+  zone map 1411
+  goto 42.359905,68.810014 map 1411 r 8 optional
+  note "Talk to Ken'jai"
+  learn 1243 "Power Word: Fortitude"
+  learn 589 "Shadow Word: Pain"
+step
+  only Priest
+  zone map 1411
+  goto 42.359905,68.810014 map 1411 r 8 optional
+  note "Talk to Ken'jai"
+  learn 589 "Shadow Word: Pain"
+step
+  only Priest
+  zone map 1411
+  goto 42.359905,68.810014 map 1411 r 8 optional
+  note "Talk to Ken'jai"
+  learn 589 "your class spells"
+  turnin 3085 -- Turn in Hallowed Tablet
+step
+  only Priest
+  zone map 1411
+  goto 42.359905,68.810014 map 1411 r 8 optional
+  note "Talk to Ken'jai"
+  learn 1243 "Power Word: Fortitude"
+  learn 589 "Shadow Word: Pain"
+  turnin 3085 -- Turn in Hallowed Tablet
+step
+  only Priest
+  zone map 1411
+  goto 42.359905,68.810014 map 1411 r 8 optional
+  note "Talk to Ken'jai"
+  learn 589 "Shadow Word: Pain"
+  turnin 3085 -- Turn in Hallowed Tablet
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  when onquest 792
+  turnin 792 -- Turn in Vile Familiars
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Mage,Druid
+  zone map 1411
+  note "Talk to Zureetha"
+  accept 794 -- Accept Burning Blade Medallion
+step
+  only Hunter
+  when level>=4
+  zone map 1411
+  goto 42.839905,69.320085 map 1411 r 8 optional
+  note "Talk to Jen'shan"
+  learn 1978 "Serpent Sting"
+step
+  only Warrior
+  zone map 1411
+  goto 42.890024,69.440085 map 1411 r 8 optional
+  note "Talk to Frang"
+  learn 100 "Charge"
+  learn 772 "Rend"
+step
+  only Warrior
+  zone map 1411
+  goto 42.890024,69.440085 map 1411 r 8
+  note "Talk to Frang"
+  learn 772 "Rend"
+step
+  only Warrior
+  zone map 1411
+  goto 42.890024,69.440085 map 1411 r 8 optional
+  note "Talk to Frang"
+  learn 100 "Charge"
+step
+  zone map 1411
+  note "Talk to Thazz'ril"
+  turnin 5441 -- Turn in Lazy Peons
+  accept 6394 -- Accept Thazz'ril's Pick
+step
+  when onquest 4402
+  along until next_73
+  level 4+1720 -- Grind to 1720+/2100xp
+step
+  label next_73
+  loop
+  zone map 1411
+  goto 44.670071,64.920085 map 1411 r 1
+  goto 43.450024,62.960085 map 1411 r 25
+  goto 43.819953,62.720085 map 1411 r 25
+  goto 44.849929,61.539943 map 1411 r 25
+  goto 44.88,59.659943 map 1411 r 25
+  goto 44.609929,58.200085 map 1411 r 25
+  goto 45.460047,58.490014 map 1411 r 25
+  goto 45.930024,60.619943 map 1411 r 25
+  goto 46.869976,60.360085 map 1411 r 25
+  goto 47.28,62.800085 map 1411 r 25
+  goto 46.08,62.979943 map 1411 r 25
+  goto 44.670071,64.920085 map 1411 r 25
+  note "Loot the Cactus Apples near the Cacti"
+  collect 11583 x10 quest 4402.1 -- Cactus Apple (10)
+step
+  only Paladin,Hunter,Priest,Mage,Warlock,Druid
+  when onquest 4402
+  zone map 1411
+  goto 43.870071,58.419943 map 1411 r 1 optional
+  goto 43.870071,58.419943 map 1411 r 40 optional
+  goto 44.529929,58.619943 map 1411 r 40 optional
+  goto 45.179953,58.419943 map 1411 r 40 optional
+  goto 45.829976,58.589872 map 1411 r 40 optional
+  goto 45.790071,57.429872 map 1411 r 40 optional
+  goto 46.459953,57.570014 map 1411 r 40 optional
+  goto 47.189976,57.120085 map 1411 r 40 optional
+  goto 46.209929,56.690014 map 1411 r 40 optional
+  goto 46.279905,56.109872 map 1411 r 40 optional
+  goto 45.649929,56.899943 map 1411 r 40 optional
+  goto 45.349976,56.320085 map 1411 r 40 optional
+  goto 44.769929,56.869872 map 1411 r 40 optional
+  goto 44.580047,56.099943 map 1411 r 40 optional
+  goto 44.270071,56.589872 map 1411 r 40 optional
+  goto 43.850024,55.520085 map 1411 r 40
+  level 4+1720 -- Grind to 1720+/2100xp
+step
+  only Paladin,Hunter,Priest,Mage,Warlock,Druid
+  when turnedin 4402
+  zone map 1411
+  goto 43.870071,58.419943 map 1411 r 40 optional
+  goto 44.529929,58.619943 map 1411 r 40 optional
+  goto 45.179953,58.419943 map 1411 r 40 optional
+  goto 45.829976,58.589872 map 1411 r 40 optional
+  goto 45.790071,57.429872 map 1411 r 40 optional
+  goto 46.459953,57.570014 map 1411 r 40 optional
+  goto 47.189976,57.120085 map 1411 r 40 optional
+  goto 46.209929,56.690014 map 1411 r 40 optional
+  goto 46.279905,56.109872 map 1411 r 40 optional
+  goto 45.649929,56.899943 map 1411 r 40 optional
+  goto 45.349976,56.320085 map 1411 r 40 optional
+  goto 44.769929,56.869872 map 1411 r 40 optional
+  goto 44.580047,56.099943 map 1411 r 40 optional
+  goto 44.270071,56.589872 map 1411 r 40 optional
+  goto 43.850024,55.520085 map 1411 r 40 optional
+  level 5 -- Grind to level 5
+step
+  when onquest 6394
+  label Cave
+  along until Thazz
+  zone map 1411
+  goto 45.349976,56.269872 map 1411 r 30 -- Enter the cave
+step
+  when onquest 6394
+  zone map 1411
+  goto 45.349976,56.269872 map 1411 r 30 -- Enter the cave
+step
+  when onquest 6394
+  along until Thazz
+  zone map 1411
+  goto 45.370024,55.389872 map 1411 r 15 optional
+  goto 44.430071,54.509872 map 1411 r 15 optional
+  goto 43.719905,53.789872 map 1411 r 10 optional -- Travel toward Thazz'ril's Pick
+step
+  when onquest 6394
+  zone map 1411
+  goto 45.349976,56.269872 map 1411 r 30 -- Enter the cave
+step
+  only Shaman
+  when onquest 1516
+  along until Yarrog
+  zone map 1411
+  note "Kill Felstalkers. Loot them for Felstalker Hooves"
+  collect 6640 x2 quest 1516.1 @43.719905,53.789872 map 1411 -- Felstalker Hoof (2)
+step
+  label Thazz
+  zone map 1411
+  note "Loot Thazz'ril's Pick against the wall"
+  collect 16332 x1 quest 6394.1 -- Thazz'ril's Pick (1)
+step
+  when onquest 794
+  label Yarrog
+  zone map 1411
+  note "Kill Yarrog Baneshadow. Loot him for the Burning Blade Medallion"
+  collect 4859 x1 quest 794.1 @42.699953,52.989872 map 1411 -- Burning Blade Medallion (1)
+step
+  only Shaman
+  when onquest 1516
+  loop
+  zone map 1411
+  goto 42.699953,52.989872 map 1411 r 1
+  goto 42.699953,52.989872 map 1411 r 25
+  goto 42.970024,51.139943 map 1411 r 25
+  goto 43.559905,52.050014 map 1411 r 25
+  goto 43.739953,52.650014 map 1411 r 25
+  goto 44.129929,52.850014 map 1411 r 25
+  goto 44.820047,52.509872 map 1411 r 25
+  goto 44.830071,53.400085 map 1411 r 25
+  goto 44.779953,54.570014 map 1411 r 25
+  goto 45.140047,55.019943 map 1411 r 25
+  goto 45.509976,55.229872 map 1411 r 25
+  goto 45.140047,55.019943 map 1411 r 25
+  goto 44.510071,55.029872 map 1411 r 25
+  goto 44.209929,54.120085 map 1411 r 25
+  goto 43.92,54.299943 map 1411 r 25
+  goto 43.870071,55.219943 map 1411 r 25
+  goto 43.460047,55.560085 map 1411 r 25
+  goto 43.050024,55.240085 map 1411 r 25
+  goto 42.379953,54.219943 map 1411 r 25
+  goto 42.529929,53.480085 map 1411 r 25
+  goto 43.269976,53.819943 map 1411 r 25
+  note "Kill Felstalkers. Loot them for Felstalker Hooves"
+  collect 6640 x2 quest 1516.1 -- Felstalker Hoof (2)
+step
+  when turnedin 4402
+  zone map 1411
+  goto 42.699953,52.989872 map 1411 r 25 optional
+  goto 42.970024,51.139943 map 1411 r 25 optional
+  goto 43.559905,52.050014 map 1411 r 25 optional
+  goto 43.739953,52.650014 map 1411 r 25 optional
+  goto 44.129929,52.850014 map 1411 r 25 optional
+  goto 44.820047,52.509872 map 1411 r 25 optional
+  goto 44.830071,53.400085 map 1411 r 25 optional
+  goto 44.779953,54.570014 map 1411 r 25 optional
+  goto 45.140047,55.019943 map 1411 r 25 optional
+  goto 45.509976,55.229872 map 1411 r 25 optional
+  goto 45.140047,55.019943 map 1411 r 25 optional
+  goto 44.510071,55.029872 map 1411 r 25 optional
+  goto 44.209929,54.120085 map 1411 r 25 optional
+  goto 43.92,54.299943 map 1411 r 25 optional
+  goto 43.870071,55.219943 map 1411 r 25 optional
+  goto 43.460047,55.560085 map 1411 r 25 optional
+  goto 43.050024,55.240085 map 1411 r 25 optional
+  goto 42.379953,54.219943 map 1411 r 25 optional
+  goto 42.529929,53.480085 map 1411 r 25 optional
+  goto 43.269976,53.819943 map 1411 r 25
+  level 5+1680 only !Shaman -- Grind to 1680+/2800xp
+  level 5+690 only Shaman -- Grind to 690+/2800xp
+step
+  when onquest 4402
+  zone map 1411
+  goto 42.699953,52.989872 map 1411 r 25 optional
+  goto 42.970024,51.139943 map 1411 r 25 optional
+  goto 43.559905,52.050014 map 1411 r 25 optional
+  goto 43.739953,52.650014 map 1411 r 25 optional
+  goto 44.129929,52.850014 map 1411 r 25 optional
+  goto 44.820047,52.509872 map 1411 r 25 optional
+  goto 44.830071,53.400085 map 1411 r 25 optional
+  goto 44.779953,54.570014 map 1411 r 25 optional
+  goto 45.140047,55.019943 map 1411 r 25 optional
+  goto 45.509976,55.229872 map 1411 r 25 optional
+  goto 45.140047,55.019943 map 1411 r 25 optional
+  goto 44.510071,55.029872 map 1411 r 25 optional
+  goto 44.209929,54.120085 map 1411 r 25 optional
+  goto 43.92,54.299943 map 1411 r 25 optional
+  goto 43.870071,55.219943 map 1411 r 25 optional
+  goto 43.460047,55.560085 map 1411 r 25 optional
+  goto 43.050024,55.240085 map 1411 r 25 optional
+  goto 42.379953,54.219943 map 1411 r 25 optional
+  goto 42.529929,53.480085 map 1411 r 25 optional
+  goto 43.269976,53.819943 map 1411 r 25
+  level 5+1300 only !Shaman -- Grind to 1300+/2800xp
+  level 5+310 only Shaman -- Grind to 310+/2800xp
+step
+  along until RazorHill1
+  zone map 1411
+  goto 44.699953,52.469872 map 1411 r 8
+  note "Die and respawn at the Spirit Healer near the arrow"
+step
+  label Betrayers
+  zone map 1411
+  note "Talk to Gar'thok"
+  note "You can talk to him from outside or on top of the bunker"
+  accept 784 -- Accept Vanquish the Betrayers
+step
+  zone map 1411
+  note "Talk to Cook Torka"
+  accept 96825 -- Accept This Fruit Could Bite Back
+step
+  along until next_88
+  zone map 1411
+  goto 50.219953,43.059943 map 1411 r 12 optional
+  goto 50.090024,42.970014 map 1411 r 8 optional
+  goto 50.199905,42.299943 map 1411 r 12 optional
+  goto 49.959905,40.960085 map 1411 r 12 optional
+  goto 49.669976,40.419943 map 1411 r 10 optional -- Travel toward the tower
+step
+  label next_88
+  along until next_89
+  zone map 1411
+  goto 49.749976,40.379943 map 1411 r 6 optional
+  goto 49.770024,40.240085 map 1411 r 6 optional
+  goto 49.690024,40.210014 map 1411 r 6 optional
+  goto 49.68,40.299943 map 1411 r 6 optional
+  goto 49.780047,40.339943 map 1411 r 6 optional
+  goto 49.790071,39.960085 map 1411 r 6 optional
+  goto 49.6,40.040085 map 1411 r 8 optional -- Travel up the tower toward Furl
+step
+  label next_89
+  zone map 1411
+  note "Talk to Furl"
+  accept 791 -- Accept Carry Your Weight
+step
+  only Warrior
+  zone map 1411
+  goto 51.809929,40.890014 map 1411 r 8
+  note "Talk to Krunn"
+  learn 2575 "Mining"
+  note "This will allow you to find [Rough Stones] from nodes in order to craft [Sharpening Stones] (+2 Weapon Damage for 30 minutes)"
+step
+  only Rogue
+  zone map 1411
+  goto 51.809929,40.890014 map 1411 r 8
+  note "Talk to Krunn"
+  learn 2575 "Mining"
+  note "This will allow you to find [Rough Stones] from nodes in order to craft [Sharpening Stones] (+2 Weapon Damage for 30 minutes)"
+step
+  only Warrior
+  when !turnedin 784
+  zone map 1411
+  note "Talk to Wuark"
+  note "Buy a [Mining Pick] from him"
+  collect 2901 x1 @51.899953,41.139943 map 1411 -- Mining Pick (1)
+step
+  only Rogue
+  when !turnedin 784
+  zone map 1411
+  note "Talk to Wuark"
+  note "Buy a [Mining Pick] from him"
+  collect 2901 x1 @51.899953,41.139943 map 1411 -- Mining Pick (1)
+step
+  only Warrior
+  zone map 1411
+  goto 52.049929,40.730014 map 1411 r 8
+  note "Talk to Dwukk"
+  learn 2018 "Blacksmithing"
+step
+  only Rogue
+  zone map 1411
+  goto 52.049929,40.730014 map 1411 r 8
+  note "Talk to Dwukk"
+  learn 2018 "Blacksmithing"
+step
+  label RazorHill1
+  zone map 1411
+  note "Talk to Turroc"
+  accept 96822 -- Accept For Honor
+step
+  along until next_95
+  zone map 1411
+  hearth "the Valley of Trials" optional -- Hearth to the Valley of Trials
+  use 6948 @53.951773,42.596681 map 1411
+step
+  label next_95
+  zone map 1411
+  note "Talk to Thazz'ril"
+  turnin 6394 -- Turn in Thazz'ril's Pick
+step
+  zone map 1411
+  note "Talk to Galgar"
+  turnin 4402 -- Turn in Galgar's Cactus Apple Surprise
+step
+  when onquest 794
+  zone map 1411
+  note "Talk to Duokna"
+  vendor 3158 -- Vendor Trash
+step
+  only Shaman
+  when level>=6
+  when onquest 1516
+  turnin 1516 -- Turn in Call of Earth
+step
+  only Shaman
+  when level>=6
+  zone map 1411
+  note "Talk to Shikrik and Canaga"
+  learn 332 "Healing Wave"
+  accept 1517 -- Accept Call of Earth
+  goto 42.4,69.170014 map 1411 r 8 optional
+step
+  only Shaman
+  when onquest 1516
+  turnin 1516 -- Turn in Call of Earth
+step
+  only Shaman
+  zone map 1411
+  note "Talk to Canaga"
+  accept 1517 -- Accept Call of Earth
+step
+  when onquest 794
+  turnin 794 -- Turn in Burning Blade Medallion
+step
+  zone map 1411
+  note "Talk to Zureetha"
+  accept 805 -- Accept Report to Sen'jin Village
+step
+  when turnedin 794
+  zone map 1411
+  note "Click the Lost Journal on top of the barrel"
+  accept 96652 -- Accept The Adventurer
+step
+  only Priest
+  zone map 1411
+  note "Talk to Ken'jai"
+  accept 5649 -- Accept In Favor of Spirituality
+  learn 591 "Smite"
+  learn 17 "Power Word: Shield"
+step
+  only Mage
+  zone map 1411
+  goto 42.510071,69.040085 map 1411 r 8
+  note "Talk to Mai'ah"
+  learn 143 "Fireball"
+  learn 2136 "Fire Blast"
+step
+  only Hunter
+  zone map 1411
+  goto 42.839905,69.320085 map 1411 r 8 optional
+  note "Talk to Jen'shan"
+  learn 1130 "Hunter's Mark"
+  learn 3044 "Arcane Shot"
+step
+  only Hunter
+  zone map 1411
+  goto 42.839905,69.320085 map 1411 r 8
+  note "Talk to Jen'shan"
+  learn 3044 "Arcane Shot"
+step
+  only Warrior
+  zone map 1411
+  goto 42.890024,69.440085 map 1411 r 8 optional
+  note "Talk to Frang"
+  learn 3127 "Parry"
+  learn 6343 "Thunder Clap"
+step
+  only Warrior
+  zone map 1411
+  goto 42.890024,69.440085 map 1411 r 8
+  note "Talk to Frang"
+  learn 3127 "Parry"
+step
+  only Rogue
+  along until RogueTraining
+  zone map 1411
+  goto 42.129929,68.410014 map 1411 r 15 optional
+  goto 41.52,68.360085 map 1411 r 12 optional
+  goto 41.269976,68.000085 map 1411 r 12 optional -- Travel toward Rwag
+step
+  only Rogue
+  when level>=6
+  zone map 1411
+  goto 41.269976,68.000085 map 1411 r 8 optional
+  note "Talk to Rwag"
+  learn 1757 "Sinister Strike"
+  learn 1776 "Gouge"
+step
+  only Rogue
+  when level>=6
+  label RogueTraining
+  zone map 1411
+  goto 41.269976,68.000085 map 1411 r 8
+  note "Talk to Rwag"
+  learn 1757 "Sinister Strike"
+step
+  only Warlock
+  along until Hraug3
+  zone map 1411
+  goto 42.129929,68.410014 map 1411 r 15 optional
+  goto 41.52,68.360085 map 1411 r 12 optional
+  goto 41.239905,68.160085 map 1411 r 12 optional
+  goto 40.820047,68.029872 map 1411 r 12 optional
+  goto 40.56,68.440085 map 1411 r 12 optional -- Travel toward Hraug
+step
+  only Warlock
+  label Hraug3
+  zone map 1411
+  goto 40.56,68.440085 map 1411 r 8 optional
+  note "Talk to Hraug"
+  note "Buy the [Grimoire of Blood Pact] from him"
+  collect 16321 x1 @40.56,68.440085 map 1411 optional -- Grimoire of Blood Pact
+  vendor 12776 -- Vendor Trash
+step
+  only Warlock
+  zone map 1411
+  goto 40.650024,68.520085 map 1411 r 8 optional
+  note "Talk to Nartok"
+  learn 695 "Shadow Bolt"
+  learn 1454 "Life Tap"
+step
+  only Warlock
+  zone map 1411
+  goto 40.650024,68.520085 map 1411 r 8
+  note "Talk to Nartok"
+  learn 695 "Shadow Bolt"
+step
+  only Shaman
+  when onquest 1517
+  label Shrine
+  along until CallOE1
+  zone map 1411
+  goto 43.36,69.600085 map 1411 r 25 optional
+  goto 43.179953,70.930014 map 1411 r 25 optional
+  goto 41.310071,73.629872 map 1411 r 12 optional
+  goto 40.820047,74.370014 map 1411 r 8 optional
+  goto 42.709976,75.179943 map 1411 r 10 optional
+  goto 43.569929,75.509872 map 1411 r 15 optional
+  goto 44.129929,76.360085 map 1411 r 25 optional -- Travel toward the Shaman Shrine
+step
+  only Shaman
+  when onquest 1517
+  zone map 1411
+  goto 43.36,69.600085 map 1411 r 25 optional
+  goto 43.179953,70.930014 map 1411 r 25 optional
+  goto 41.310071,73.629872 map 1411 r 12 optional
+  goto 40.820047,74.370014 map 1411 r 8 optional
+  goto 42.709976,75.179943 map 1411 r 10 optional
+  goto 43.569929,75.509872 map 1411 r 15 optional
+  goto 44.129929,76.360085 map 1411 r 25 -- Travel toward the Shaman Shrine
+step
+  only Shaman
+  along until CallOE1
+  zone map 1411
+  note "Use the [Earth Sapta]"
+  use 6635 @44.129929,76.360085 map 1411
+step
+  only Shaman
+  when onquest 1517
+  turnin 1517 -- Turn in Call of Earth
+step
+  only Shaman
+  label CallOE1
+  zone map 1411
+  note "Talk to the Manifestation"
+  accept 1518 -- Accept Call of Earth
+step
+  only Shaman
+  when onquest 1518
+  zone map 1411
+  note "Talk to Canaga"
+  turnin 1518 -- Turn in Call of Earth
+step
+  only Shaman
+  zone map 1411
+  goto 42.389976,69.000085 map 1411 r 8
+  note "Talk to Shikrik"
+  learn 332 "Healing Wave"
+step
+  when onquest 805
+  label Leave
+  zone map 1411
+  goto 47.089929,69.210014 map 1411 r 25 optional
+  goto 49.019953,69.130014 map 1411 r 20 optional
+  goto 49.899953,68.429872 map 1411 r 25 -- Exit the Valley of Trials

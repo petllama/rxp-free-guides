@@ -1,0 +1,256 @@
+guide rxp-free/17-18-hall-of-thanes-d4f5ecd7
+title "17-18 Hall of Thanes"
+levels 17-18
+zone map 1455
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · Dungeon Guide 1-20"
+next rxp-free/18-19-ruins-of-lordaeron-d9b4f925
+step
+  only Skyborne
+  zone map 1455
+  note "Talk to Gryth Thurden"
+  getfp "Ironforge" @55.491,47.751 map 1455 -- Get the Ironforge flight path
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  along until OII
+  note "You will now complete a pre-quest for the Hall of Thanes, then run the dungeon"
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  label QuarryStart
+  zone map 1426
+  note "Talk to Earthseer Farsen"
+  accept 96392 -- Accept Farsen's Watch
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  when onquest 96392
+  zone map 1426
+  goto 64.899959,58.499897 map 1426 r 8
+  note "You can cancel the Farsight once the objective completes"
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  when onquest 96392
+  zone map 1426
+  note "Talk to Earthseer Farsen"
+  note "Press ESCAPE to cancel the Farsight"
+  turnin 96392 -- Turn in Farsen's Watch
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  zone map 1426
+  note "Kill Dark Iron Spies. Loot them for the [Dark Iron Map]"
+  use 274268 @77.899959,62.299998 map 1426 -- Use the [Dark Iron Map] to start the quest
+  collect 274268 x1 @77.899959,62.299998 map 1426 optional -- Dark Iron Map (1)
+  accept 96391 -- Accept Underground Map
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  when onquest 96391
+  turnin 96391 -- Turn in Underground Map
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  label OII
+  zone map 1426
+  note "Talk to Earthseer Farsen"
+  accept 96393 -- Accept Old Ironforge Incursion
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  when complete 96390
+  when onquest 96390
+  zone map 1426
+  note "Talk to Earthseer Farsen"
+  turnin 96390 -- Turn in Nip 'Em in the Bud
+step
+  along until EnterHoT
+  note "Start looking for a group for the Hall of Thanes"
+step
+  label InIronforge
+  along until EnterHoT
+  zone map 1455
+  goto 43.093628,51.92502 map 1455 r 10 optional
+  goto 46.584538,53.232816 map 1455 r 10 optional
+  goto 46.698372,60.037149 map 1455 r 10 optional
+  goto 47.318134,47.887909 map 1455 r 10 optional
+  goto 37.528411,53.384445 map 1455 r 10 optional -- Travel down into Old Ironforge via King Magni's room
+step
+  zone map 1455
+  note "Talk to Afadra Dunwall"
+  accept 96394 -- Accept The Restless Dead
+step
+  along until EnterHoT
+  zone map 1455
+  goto 35.732364,47.755234 map 1455 r 10 optional
+  goto 32.684142,44.305683 map 1455 r 10 optional
+  goto 34.821692,54.04782 map 1455 r 10 optional -- Drop down onto the ramp below
+step
+  zone map 1455
+  note "Talk to Thom Filch"
+  accept 96403 -- Accept Important Heirlooms
+step
+  label EnterHoT
+  zone map 1455
+  goto 27.776632,47.887909 map 1455 r 8
+step
+  along until FaldrimAnvilmar
+  zone map 1455
+  note "Loot the Dwarven Heirlooms on the ground through the Hall of Thanes"
+  note "You can collect plenty of these at the end of the dungeon as well"
+  collect 274289 x8 quest 96403.1 @27.776632,47.887909 map 1455 -- Dwarven Heirloom (8)
+step
+  along until FaldrimAnvilmar
+  zone map 1455
+  note "Kill Enraged Apparitions and Tormented Souls"
+  kill 263389 x15 quest 96394.1 @27.776632,47.887909 map 1455 -- Enraged Apparition slain (15)
+  kill 263390 x10 quest 96394.2 @27.776632,47.887909 map 1455 -- Tormented Soul slain (10)
+step
+  zone map 1455
+  note "Talk to Ghostly Attendant"
+  accept 96395 @27.776632,47.887909 map 1455 -- Accept An Ancient Grudge
+step
+  label FaldrimAnvilmar
+  note "Kill Faldrim Anvilmar"
+  note "Faldrim Anvilmar slain (1)"
+step
+  along until next_22
+  note "Return to the Ghostly Attendant"
+step
+  label next_22
+  zone map 1455
+  note "Talk to Ghostly Attendant"
+  turnin 96395 @27.776632,47.887909 map 1455 -- Turn in An Ancient Grudge
+step
+  zone map 1455
+  note "Kill Enraged Apparitions and Tormented Souls"
+  note "Complete this now as you may not have a chance to finish it later"
+  kill 263389 x15 quest 96394.1 @27.776632,47.887909 map 1455 -- Enraged Apparition slain (15)
+  kill 263390 x10 quest 96394.2 @27.776632,47.887909 map 1455 -- Tormented Soul slain (10)
+step
+  along until ToU
+  zone map 1455
+  note "Loot the Dwarven Heirlooms on the ground through the Hall of Thanes"
+  note "You can collect plenty of these at the end of the dungeon as well"
+  collect 274289 x8 quest 96403.1 @27.776632,47.887909 map 1455 -- Dwarven Heirloom (8)
+step
+  note "Kill Durgen Dirgehammer. Loot him for Durgen Dirgehammer's Head"
+  collect 274286 x1 quest 96393.1 -- Durgen Dirgehammer's Head
+step
+  label ToU
+  note "Click the Treaty of Understanding"
+  accept 98423 -- Accept The Treaty of Understanding
+step
+  zone map 1455
+  note "Loot the Dwarven Heirlooms on the ground through the Hall of Thanes"
+  collect 274289 x8 quest 96403.1 @27.776632,47.887909 map 1455 -- Dwarven Heirloom (8)
+step
+  zone map 1455
+  note "Talk to Thom Filch"
+  turnin 96403 -- Turn in Important Heirlooms
+step
+  along until next_31
+  zone map 1455
+  goto 37.060427,51.621762 map 1455 r 10 optional
+  goto 32.393233,51.602809 map 1455 r 10 optional
+  goto 31.710229,45.158594 map 1455 r 10 optional
+  goto 35.40351,47.072905 map 1455 r 10 optional
+  goto 34.163984,52.796884 map 1455 r 10 optional
+  goto 39.008253,51.71653 map 1455 r 10 optional
+  goto 35.466751,51.906066 map 1455 r 10 optional -- Return to Afadra Dunwall up the ramp
+step
+  label next_31
+  zone map 1455
+  note "Talk to Afadra Dunwall"
+  turnin 96394 -- Turn in The Restless Dead
+step
+  along until next_33
+  zone map 1455
+  goto 40.045407,49.612684 map 1455 r 10 optional
+  goto 47.722877,49.498962 map 1455 r 10 optional
+  goto 46.293628,59.677031 map 1455 r 10 optional
+  goto 43.561613,51.792345 map 1455 r 10 optional -- Travel up to ramp to toward King Magni Bronzebeard
+step
+  when onquest 96393
+  turnin 96393 -- Turn in Old Ironforge Incursion
+step
+  label next_33
+  zone map 1455
+  note "Talk to King Magni Bronzebeard"
+  turnin 98423 -- Turn in The Treaty of Understanding
+step
+  only Shaman
+  zone map 1455
+  goto 47.166356,13.866245 map 1455 r 8
+  note "Talk to Eldrun Stormbreaker::258098"
+  train class -- Train your class spells
+step
+  only Priest
+  zone map 1455
+  note "Talk to Toldren Deepiron" only Priest
+  note "Talk to Brandur Ironhammer" only Paladin
+  note "Talk to Dink" only Mage
+  goto 27.179636,8.600942 map 1455 r 8 optional only Mage
+  goto 25.206514,10.755963 map 1455 r 8 optional only Priest
+  goto 23.141059,6.1483496 map 1455 r 8 optional only Paladin
+  train class -- Train your class spells
+step
+  only Paladin
+  zone map 1455
+  note "Talk to Toldren Deepiron" only Priest
+  note "Talk to Brandur Ironhammer" only Paladin
+  note "Talk to Dink" only Mage
+  goto 27.179636,8.600942 map 1455 r 8 optional only Mage
+  goto 25.206514,10.755963 map 1455 r 8 optional only Priest
+  goto 23.141059,6.1483496 map 1455 r 8 optional only Paladin
+  train class -- Train your class spells
+step
+  only Mage
+  zone map 1455
+  note "Talk to Toldren Deepiron" only Priest
+  note "Talk to Brandur Ironhammer" only Paladin
+  note "Talk to Dink" only Mage
+  goto 27.179636,8.600942 map 1455 r 8 optional only Mage
+  goto 25.206514,10.755963 map 1455 r 8 optional only Priest
+  goto 23.141059,6.1483496 map 1455 r 8 optional only Paladin
+  train class -- Train your class spells
+step
+  only Warlock
+  zone map 1455
+  note "Talk to Briarthorn" only Warlock
+  note "Talk to Fenthwick" only Rogue
+  goto 51.099953,8.6995006 map 1455 r 15 optional only Warlock
+  goto 50.343589,5.6574521 map 1455 r 8 optional only Warlock
+  goto 51.494577,15.32946 map 1455 r 8 optional only Rogue
+  train class -- Train your class spells
+step
+  only Rogue
+  zone map 1455
+  note "Talk to Briarthorn" only Warlock
+  note "Talk to Fenthwick" only Rogue
+  goto 51.099953,8.6995006 map 1455 r 15 optional only Warlock
+  goto 50.343589,5.6574521 map 1455 r 8 optional only Warlock
+  goto 51.494577,15.32946 map 1455 r 8 optional only Rogue
+  train class -- Train your class spells
+step
+  only Warlock
+  zone map 1455
+  note "Talk to Jubahl Corpseseeker"
+  vendor 6382 -- Buy [Grimoire of Sacrifice (Rank 1)]
+step
+  zone map 1455
+  note "Talk to Gerrig Bonegrip"
+  accept 971 -- Accept Knowledge in the Deeps
+step
+  only Warrior
+  zone map 1455
+  note "Talk to Regnus Thundergranite" only Hunter
+  note "Talk to Bilban Tosslespanner" only Warrior
+  goto 69.872443,82.889472 map 1455 r 8 optional only Hunter
+  goto 65.904696,88.404962 map 1455 r 8 optional only Warrior
+  train class -- Train your class spells
+step
+  only Hunter
+  zone map 1455
+  note "Talk to Regnus Thundergranite" only Hunter
+  note "Talk to Bilban Tosslespanner" only Warrior
+  goto 69.872443,82.889472 map 1455 r 8 optional only Hunter
+  goto 65.904696,88.404962 map 1455 r 8 optional only Warrior
+  train class -- Train your class spells

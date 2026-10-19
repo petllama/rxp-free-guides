@@ -1,0 +1,627 @@
+guide rxp-free/16-18-adv-westfall-mage-aoe-80b0adcc
+title "16-18 ADV Westfall Mage AoE"
+levels 16-18
+zone map 1436
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · ADV AoE Alliance Mage"
+class Mage
+next rxp-free/18-20-adv-darkshore-3-mage-aoe-4d6addf6
+step
+  along until JenneaT
+  note "NOTE: You need 12 stacks of each cloth ([Wool Cloth], [Silk Cloth], [Mageweave Cloth], and [Runecloth]) to do the cloth turnins later. You'll get these naturally as you level"
+step
+  label Bank2
+  zone map 1453
+  goto 57.030284,72.969943 map 1453 r 8
+  note "[Murloc Eyes]"
+  note "[Jennea's Flask]" only Gnome
+  note "[Osric's Crate]" only Human
+step
+  note "Talk to Newton"
+  note "[Light Feather]"
+  note "[Letter to Delgren]"
+  note "[Wool Cloth]"
+  note "[Small Egg]"
+step
+  along until JenneaT
+  zone map 1453
+  goto 51.680168,59.860167 map 1453 r 8 optional
+  goto 51.829692,60.410173 map 1453 r 4 optional
+  goto 51.590157,60.150231 map 1453 r 6 optional
+  goto 39.170033,76.580123 map 1453 r 12 optional
+  note "Jump up onto the torch, then drop down to get under Stormwind"
+  note "With Shadows on \"Fair\" or \"Low\", get in the middle of Derek the Dinosaur's feet (the lighter part of the dirt) just before the blue void, then walk straight forward"
+  note "NOTE: There is a small chance of dying using this method. You can also walk to the Mage Tower normally if you wish"
+  goto 38.609877,79.390397 map 1453 r 10 optional -- Travel toward Jennea
+step
+  note "Talk to Newton"
+  note "[Light Feather]"
+  note "[Letter to Delgren]"
+  note "[Wool Cloth]"
+  note "[Small Egg]"
+step
+  label JenneaT
+  zone map 1453
+  note "Talk to Jennea"
+  train 5497 -- Train your class spells (Flamestrike)
+  note "Total Cost: 15s"
+step
+  zone map 1453
+  note "Talk to Keldric through the wall"
+  vendor 1257 -- Buy [Lesser Healing Potions] from him (if they're up)
+step
+  along until next_7
+  zone map 1453
+  goto 56.690323,57.759434 map 1453 r 12 optional
+  goto 57.129966,57.690265 map 1453 r 10 optional -- Travel toward Woo Ping
+step
+  label next_7
+  zone map 1453
+  goto 57.129966,57.690265 map 1453 r 8
+  note "Talk to Woo Ping"
+  learn 1180 "Daggers"
+step
+  along until next_9
+  zone map 1453
+  goto 57.170137,58.83044 map 1453 r 12 optional
+  goto 63.420369,63.750371 map 1453 r 20 optional
+  goto 63.13992,65.249779 map 1453 r 15 optional
+  goto 66.270243,62.120435 map 1453 r 10 optional -- Travel toward Dungar
+step
+  only Human
+  when onquest 6261
+  turnin 6261 -- Turn in Dungar Longdrink
+step
+  only Human
+  label next_9
+  zone map 1453
+  note "Talk to Dungar"
+  accept 6285 -- Accept Return to Lewis
+step
+  zone map 1453
+  goto 66.270243,62.120435 map 1453 r 8
+  note "Talk to Dungar"
+  getfp "Stormwind City" @66.270243,62.120435 map 1453 only Gnome -- Get the Stormwind City flight path
+  fly "Westfall" only Human -- Fly to Westfall
+step
+  only Gnome
+  label Stormwind1
+  along until next_12
+  zone map 1453
+  goto 65.939953,65.479598 map 1453 r 12 optional
+  goto 65.849941,65.999482 map 1453 r 8 optional
+  goto 65.219859,75.579403 map 1453 r 40 optional -- Drop down to the ledge below Dungar
+step
+  only Gnome
+  label next_12
+  along until next_13
+  zone map 1429
+  goto 32.099979,50.31995 map 1429 r 40 -- Exit Stormwind
+step
+  only Gnome
+  label next_13
+  zone map 1429
+  note "Use [Jennea's Flask] at the waterfall"
+  note "This has a 5 second cast time"
+  use 7207 @28.97998,61.499933 map 1429
+  note "Mirror Lake Water Sample (1)"
+step
+  zone map 1436
+  note "Talk to Farmer Furlbrow and Verna"
+  accept 64 -- Accept The Forgotten Heirloom
+  accept 109 -- Accept Report to Gryan Stoutmantle
+  accept 36 -- Accept Westfall Stew
+  accept 151 -- Accept Poor Old Blanchy
+  goto 59.909914,19.410003 map 1436 r 8 optional
+step
+  only Gnome
+  along
+  zone map 1436
+  note "Open the Sacks of Oats on the ground. Loot them for Handfuls of Oats"
+  note "This has a 5 second cast time"
+  collect 1528 x8 quest 151.1 @59.909914,19.410003 map 1436 -- Handful of Oats (8)
+step
+  zone map 1436
+  note "Talk to Farmer Saldean and then Salma inside"
+  accept 9 -- Accept The Killing Fields
+  turnin 36 -- Turn in Westfall Stew
+  accept 38 -- Accept Westfall Stew
+  accept 22 -- Accept Goretusk Liver Pie
+  goto 56.419914,30.519862 map 1436 r 8 optional
+step
+  only Gnome
+  along
+  zone map 1436
+  note "AoE Harvest Watchers and Harvest Golems. Loot them for their Flasks of Oil and Hops"
+  note "Remember to [Flamestrike]/[Arcane Explosion] AoE now"
+  kill 114 x20 quest 9.1 @53.539914,31.719862 map 1436 -- Harvest Watcher (20)
+  collect 814 x5 @53.539914,31.719862 map 1436 optional -- Flask of Oil (5)
+  collect 1274 x5 @53.539914,31.719862 map 1436 optional -- Hops (5)
+step
+  only Gnome
+  along until next_19
+  zone map 1436
+  note "AoE Young Goretusks. Loot them for their Goretusk Livers and Goretusk Snouts"
+  note "AoE Young Fleshrippers. Loot them for their Stringy Vulture Meat"
+  collect 723 x8 @53.539914,31.719862 map 1436 optional -- Goretusk Liver (8)
+  collect 731 x3 @53.539914,31.719862 map 1436 optional -- Goretusk Snout (3)
+  collect 729 x3 @53.539914,31.719862 map 1436 optional -- Stringy Vulture Meat (3)
+step
+  when onquest 6285
+  turnin 6285 only Human -- Turn in Return to Lewis
+step
+  label next_19
+  zone map 1436
+  note "Talk to Gryan and Danuvin" only Gnome
+  note "Talk to Gryan and then Lewis inside" only Human
+  turnin 109 only Gnome -- Turn in Report to Gryan Stoutmantle
+  accept 65 -- Accept The Defias Brotherhood
+  accept 12 only Gnome -- Accept The People's Militia
+  goto 56.329914,47.520007 map 1436 r 8 optional
+  goto 57.001914,47.169007 map 1436 r 8 optional only Human
+  accept 102 only Gnome -- Accept Patrolling Westfall
+  goto 56.419914,47.619864 map 1436 r 8 optional only Gnome
+step
+  zone map 1436
+  note "Talk to Galiaan"
+  accept 153 -- Accept Red Leather Bandanas
+step
+  zone map 1436
+  goto 52.859914,53.720151 map 1436 r 8
+  note "Talk to Heather"
+  note "Buy 45 [Melon Juice] from her"
+  collect 1205 x45 @52.859914,53.720151 map 1436 optional -- Melon Juice (45)
+step
+  zone map 1436
+  goto 52.859914,53.720151 map 1436 r 8
+  note "Talk to Heather"
+  note "Buy 40 [Melon Juice] from her"
+  collect 1205 x40 @52.859914,53.720151 map 1436 optional -- Melon Juice (40)
+step
+  zone map 1436
+  goto 52.859914,53.720151 map 1436 r 8
+  note "Talk to Heather"
+  note "Buy 35 [Melon Juice] from her"
+  collect 1205 x35 @52.859914,53.720151 map 1436 optional -- Melon Juice (35)
+step
+  zone map 1436
+  goto 52.859914,53.720151 map 1436 r 8
+  note "Talk to Heather"
+  note "Buy 30 [Melon Juice] from her"
+  collect 1205 x30 @52.859914,53.720151 map 1436 optional -- Melon Juice (30)
+step
+  zone map 1436
+  goto 52.859914,53.720151 map 1436 r 8
+  note "Talk to Heather"
+  note "Buy 25 [Melon Juice] from her"
+  collect 1205 x25 @52.859914,53.720151 map 1436 optional -- Melon Juice (25)
+step
+  zone map 1436
+  goto 52.859914,53.720151 map 1436 r 8
+  note "Talk to Heather"
+  note "Buy 20 [Melon Juice] from her"
+  collect 1205 x20 @52.859914,53.720151 map 1436 optional -- Melon Juice (20)
+step
+  zone map 1436
+  goto 52.859914,53.720151 map 1436 r 8
+  note "Talk to Heather"
+  note "Buy 15 [Melon Juice] from her"
+  collect 1205 x15 @52.859914,53.720151 map 1436 optional -- Melon Juice (15)
+step
+  zone map 1436
+  goto 52.859914,53.720151 map 1436 r 8
+  note "Talk to Heather"
+  note "Buy 10 [Melon Juice] from her"
+  collect 1205 x10 @52.859914,53.720151 map 1436 optional -- Melon Juice (10)
+step
+  zone map 1436
+  goto 52.859914,53.720151 map 1436 r 8
+  note "Talk to Heather"
+  note "Buy 5 [Melon Juice] from her"
+  collect 1205 x5 @52.859914,53.720151 map 1436 optional -- Melon Juice (5)
+step
+  along until Grayson
+  zone map 1436
+  note "Open the Sacks of Oats on the ground. Loot them for Handfuls of Oats"
+  note "This has a 5 second cast time"
+  collect 1528 x8 quest 151.1 @52.859914,53.720151 map 1436 -- Handful of Oats (8)
+step
+  along until Oil
+  zone map 1436
+  note "AoE Goretusks. Loot them for their Goretusk Livers and Goretusk Snouts"
+  note "AoE Fleshrippers. Loot them for their Stringy Vulture Meat"
+  collect 723 x8 @52.859914,53.720151 map 1436 optional -- Goretusk Liver (8)
+  collect 731 x3 @52.859914,53.720151 map 1436 optional -- Goretusk Snout (3)
+  collect 729 x3 @52.859914,53.720151 map 1436 optional -- Stringy Vulture Meat (3)
+step
+  along until Compass
+  zone map 1436
+  note "AoE Harvest Watchers. Loot them for their Flasks of Oil and Hops"
+  kill 114 x20 quest 9.1 @39.449914,52.34015 map 1436 -- Harvest Watcher (20)
+  collect 814 x5 @39.449914,52.34015 map 1436 optional -- Flask of Oil (5)
+  collect 1274 x5 @39.449914,52.34015 map 1436 optional -- Hops (5)
+step
+  along until Oil
+  zone map 1436
+  note "AoE the Defias. Loot them for their Red Leather Bandanas"
+  collect 829 x15 quest 153.1 @39.449914,52.34015 map 1436 -- Red Leather Bandana (15)
+step
+  label Compass
+  zone map 1436
+  goto 36.239914,54.519865 map 1436 r 8
+  note "Open Alexston's Chest. Loot it for A Simple Compass"
+  note "This has a 5 second cast time"
+  note "A Simple Compass (1)"
+step
+  label Oil
+  zone map 1436
+  goto 37.389914,50.520007 map 1436 r 60 optional
+  goto 35.559914,46.869864 map 1436 r 60 optional
+  goto 33.639914,47.010007 map 1436 r 60 optional
+  goto 32.959914,36.480005 map 1436 r 60 optional
+  goto 39.449914,52.34015 map 1436 r 60 optional
+  goto 37.389914,50.520007 map 1436 r 60 optional
+  goto 35.559914,46.869864 map 1436 r 60 optional
+  goto 33.639914,47.010007 map 1436 r 60 optional
+  goto 32.959914,36.480005 map 1436 r 60 optional
+  goto 39.449914,52.34015 map 1436 r 8
+  note "AoE Harvest Watchers and Harvest Golems. Loot them for their Flasks of Oil and Hops"
+  collect 814 x5 @39.449914,52.34015 map 1436 optional -- Flask of Oil (5)
+  collect 1274 x5 @39.449914,52.34015 map 1436 optional -- Hops (5)
+step
+  along until next_37
+  note "Keep an eye out for Old Murk-Eye. Try to stay close to the edge of the ridge as to not miss him"
+step
+  when onquest 102
+  label next_37
+  zone map 1436
+  note "AoE Riverpaw Herbalists, Riverpaw Mongrels, and Riverpaw Brutes. Loot them for their Gnoll Paws"
+  note "If you find Old Murk-Eye, skip this step"
+  collect 725 x8 quest 102.1 @31.399914,72.290153 map 1436 -- Gnoll Paws (8)
+step
+  along until Grayson
+  note "Find Old Murk-Eye. Kite him toward Grayson"
+step
+  label Grayson
+  zone map 1436
+  note "Talk to Grayson"
+  accept 104 -- Accept The Coastal Menace
+step
+  zone map 1436
+  goto 33.919914,83.880012 map 1436 r 70 optional
+  goto 34.879914,85.820155 map 1436 r 70 optional
+  goto 35.379914,84.630012 map 1436 r 70 optional
+  goto 33.919914,83.880012 map 1436 r 70 optional
+  goto 31.889914,82.280155 map 1436 r 70 optional
+  goto 30.329914,80.750154 map 1436 r 70 optional
+  goto 29.499914,78.699868 map 1436 r 70 optional
+  goto 29.059914,75.450011 map 1436 r 70 optional
+  goto 28.779914,72.579868 map 1436 r 70 optional
+  goto 27.839914,71.330153 map 1436 r 70 optional
+  goto 27.269914,69.96001 map 1436 r 70 optional
+  goto 26.859914,66.819867 map 1436 r 70 optional
+  goto 26.269914,65.760009 map 1436 r 70 optional
+  goto 33.919914,83.880012 map 1436 r 70 optional
+  goto 34.879914,85.820155 map 1436 r 70 optional
+  goto 35.379914,84.630012 map 1436 r 70 optional
+  goto 33.919914,83.880012 map 1436 r 70 optional
+  goto 31.889914,82.280155 map 1436 r 70 optional
+  goto 30.329914,80.750154 map 1436 r 70 optional
+  goto 29.499914,78.699868 map 1436 r 70 optional
+  goto 29.059914,75.450011 map 1436 r 70 optional
+  note "AoE Old Murk-Eye. Loot him for the Scale of Old Murk-Eye"
+  collect 3636 x1 quest 104.1 @26.269914,65.760009 map 1436 -- Scale of Old Murk-Eye
+step
+  zone map 1436
+  note "Talk to Grayson"
+  accept 103 -- Accept Keeper of the Flame
+  turnin 103 -- Turn in Keeper of the Flame
+  turnin 104 -- Turn in The Coastal Menace
+step
+  along until next_43
+  zone map 1436
+  note "AoE Defias Knuckledusters and Defias Highwaymen. Loot them for their Red Leather Bandanas"
+  note "Be careful as the Defias Highwaymen cast [Backstab] (deals double damage from behind)"
+  collect 829 x15 quest 153.1 @30.019914,86.019869 map 1436 -- Red Leather Bandana (15)
+step
+  label next_43
+  zone map 1436
+  note "Talk to Grimbooze"
+  accept 117 -- Accept Thunderbrew
+  turnin 117 -- Turn in Thunderbrew
+step
+  along until next_45
+  zone map 1436
+  note "AoE Defias Knuckledusters and Defias Highwaymen. Loot them for their Red Leather Bandanas"
+  note "Be careful as the Defias Highwaymen cast [Backstab] (deals double damage from behind)"
+  collect 829 x15 quest 153.1 @52.559914,72.87001 map 1436 -- Red Leather Bandana (15)
+step
+  when onquest 153
+  label next_45
+  zone map 1436
+  goto 52.079914,71.94001 map 1436 r 60 -- Travel toward the end of The Dagger Hills
+step
+  along until Footpads
+  zone map 1436
+  note "Open the Sacks of Oats on the ground. Loot them for Handfuls of Oats"
+  note "This has a 5 second cast time"
+  collect 1528 x8 quest 151.1 @52.079914,71.94001 map 1436 -- Handful of Oats (8)
+step
+  along until AoE1
+  zone map 1436
+  note "AoE Goretusks. Loot them for their Goretusk Livers and Goretusk Snouts"
+  note "AoE Fleshrippers. Loot them for their Stringy Vulture Meat"
+  collect 723 x8 @52.079914,71.94001 map 1436 optional -- Goretusk Liver (8)
+  collect 731 x3 @52.079914,71.94001 map 1436 optional -- Goretusk Snout (3)
+  collect 729 x3 @52.079914,71.94001 map 1436 optional -- Stringy Vulture Meat (3)
+step
+  along until AoE1
+  zone map 1436
+  note "AoE Defias Trappers and Defias Smugglers. Loot them for their Red Leather Bandanas"
+  note "Be careful as the Defias Trappers cast [Backstab] (deals double damage from behind) and [Net] (Immobilizes for 9 seconds)"
+  collect 829 x15 quest 153.1 @52.079914,71.94001 map 1436 -- Red Leather Bandana (15)
+step
+  when onquest 153
+  label AoE1
+  zone map 1436
+  goto 46.649914,52.989865 map 1436 r 60 optional
+  goto 48.219914,45.210006 map 1436 r 60 optional
+  goto 45.769914,39.189863 map 1436 r 60 optional
+  goto 46.489914,37.299862 map 1436 r 60 optional
+  goto 44.539914,34.710005 map 1436 r 150 -- Travel toward The Molsen Farm
+step
+  along until Watch
+  zone map 1436
+  note "AoE Harvest Watchers"
+  kill 114 x20 quest 9.1 @44.539914,34.710005 map 1436 -- Harvest Watcher (20)
+step
+  along until Furlbrows
+  zone map 1436
+  note "AoE Young Goretusks. Loot them for their Goretusk Livers and Goretusk Snouts"
+  note "AoE Fleshrippers and Young Fleshrippers. Loot them for their Stringy Vulture Meat"
+  collect 723 x8 @44.539914,34.710005 map 1436 optional -- Goretusk Liver (8)
+  collect 731 x3 @44.539914,34.710005 map 1436 optional -- Goretusk Snout (3)
+  collect 729 x3 @44.539914,34.710005 map 1436 optional -- Stringy Vulture Meat (3)
+step
+  when onquest 12
+  kill 504 x15 quest 12.1 @48.739914,20.790003 map 1436 -- Defias Trapper (15)
+  kill 95 x15 quest 12.2 @48.739914,20.790003 map 1436 -- Defias Smuggler (15)
+step
+  zone map 1436
+  note "AoE Defias Trappers and Defias Smugglers. Loot them for their Red Leather Bandanas"
+  note "Be careful as the Defias Trappers cast [Backstab] and [Net]"
+  note "Skip this step if you're not at least 10/15 on both Defias Trappers and Defias Smugglers"
+  collect 829 x15 quest 153.1 @48.739914,20.790003 map 1436 -- Red Leather Bandana (15)
+step
+  along until Watch
+  zone map 1436
+  note "AoE Defias Trappers and Defias Smugglers. Loot them for their Red Leather Bandanas"
+  note "Be careful as the Defias Trappers cast [Backstab] and [Net]"
+  collect 829 x15 quest 153.1 @48.739914,20.790003 map 1436 -- Red Leather Bandana (15)
+step
+  label Watch
+  zone map 1436
+  note "Open Furlbrow's Wardrobe. Loot it for Furlbrow's Pocket Watch"
+  note "This has a 5 second cast time"
+  collect 841 x1 quest 64.1 -- Furlbrow's Pocket Watch (1)
+step
+  along until Oats
+  zone map 1436
+  note "AoE Harvest Watchers"
+  kill 114 x20 quest 9.1 @51.699914,23.160003 map 1436 -- Harvest Watcher (20)
+step
+  when onquest 102
+  zone map 1436
+  note "AoE Riverpaw Scouts and Riverpaw Gnolls. Loot them for their Gnoll Paws"
+  collect 725 x8 quest 102.1 @56.929914,12.750002 map 1436 -- Gnoll Paws (8)
+step
+  when !turnedin 38
+  zone map 1436
+  note "AoE Murloc Coastrunners and Murloc Raiders. Loot them for their Murloc Eyes"
+  collect 730 x3 @55.959914,8.2200012 map 1436 -- Murloc Eye (3)
+step
+  label Footpads
+  zone map 1436
+  note "AoE Defias Footpads Loot them for their Red Leather Bandanas"
+  note "Be careful as Defias Footpads cast [Backstab]"
+  collect 829 x15 quest 153.1 @56.559914,19.250146 map 1436 -- Red Leather Bandana (15)
+step
+  label Oats
+  zone map 1436
+  note "Open the Sacks of Oats on the ground. Loot them for Handfuls of Oats"
+  note "This has a 5 second cast time"
+  collect 1528 x8 quest 151.1 @56.559914,19.250146 map 1436 -- Handful of Oats (8)
+step
+  label Furlbrows
+  zone map 1436
+  note "Talk to Farmer Furlbrow and Verna"
+  turnin 64 -- Turn in The Forgotten Heirloom
+  turnin 151 -- Turn in Poor Old Blanchy
+  goto 59.909914,19.410003 map 1436 r 8 optional
+step
+  zone map 1436
+  goto 59.719914,34.620005 map 1436 r 80 optional
+  goto 60.239914,47.400007 map 1436 r 8
+  note "AoE Goretusks and Young Goretusks. Loot them for their Goretusk Livers and Goretusk Snouts"
+  note "AoE Fleshrippers and Young Fleshrippers. Loot them for their Stringy Vulture Meat"
+  collect 723 x8 @60.239914,47.400007 map 1436 optional -- Goretusk Liver (8)
+  collect 731 x3 @60.239914,47.400007 map 1436 optional -- Goretusk Snout (3)
+  collect 729 x3 @60.239914,47.400007 map 1436 optional -- Stringy Vulture Meat (3)
+step
+  zone map 1436
+  note "AoE Harvest Watchers"
+  kill 114 x20 quest 9.1 @51.699914,23.160003 map 1436 -- Harvest Watcher (20)
+step
+  when complete 12
+  zone map 1436
+  goto 51.699914,23.160003 map 1436 r 8
+  level 17+11890 -- Grind to 11890+/17700xp
+step
+  zone map 1436
+  goto 51.699914,23.160003 map 1436 r 8
+  note "Skip this step if you've finished the objective of The People's Militia"
+  level 17+12800 -- Grind to 12800+/17700xp
+step
+  zone map 1436
+  note "Talk to Farmer Saldean and then Salma inside"
+  turnin 9 -- Turn in The Killing Fields
+  vendor nearest -- Vendor Trash
+  turnin 22 -- Turn in Goretusk Liver Pie
+  turnin 38 -- Turn in Westfall Stew
+  goto 56.419914,30.519862 map 1436 r 8 optional
+step
+  when complete 12
+  zone map 1436
+  note "Talk to Gryan and Danuvin"
+  goto 56.329914,47.520007 map 1436 r 8 optional
+  goto 56.419914,47.619864 map 1436 r 8
+step
+  when complete 12
+  when onquest 12
+  turnin 12 -- Turn in The People's Militia
+step
+  when complete 12
+  when onquest 102
+  turnin 102 -- Turn in Patrolling Westfall
+step
+  when onquest 102
+  zone map 1436
+  note "Talk to Danuvin"
+  turnin 102 -- Turn in Patrolling Westfall
+step
+  zone map 1436
+  note "Talk to Galiaan"
+  turnin 153 -- Turn in Red Leather Bandanas
+step
+  along until next_70
+  note "Start spam casting [Conjure Water r2] to conjure as much water as possible before taking the flight"
+step
+  label next_70
+  along until next_71
+  zone map 1436
+  goto 56.559914,52.64015 map 1436 r 8
+  note "Talk to Thor"
+  fly "Stormwind" -- Fly to Stormwind
+step
+  label next_71
+  along until next_72
+  zone map 1453
+  goto 51.680168,59.860167 map 1453 r 8 optional
+  goto 51.829692,60.410173 map 1453 r 4 optional
+  goto 51.590157,60.150231 map 1453 r 6 optional
+  goto 39.170033,76.580123 map 1453 r 12 optional
+  note "Jump up onto the torch, then drop down to get under Stormwind"
+  note "With Shadows on \"Fair\" or \"Low\", get in the middle of Derek the Dinosaur's feet (the lighter part of the dirt) just before the blue void, then walk straight forward"
+  note "NOTE: There is a small chance of dying using this method. You can also walk to the Mage Tower normally if you wish"
+  goto 38.609877,79.390397 map 1453 r 10 optional -- Travel toward Jennea
+step
+  when onquest 1861
+  turnin 1861 -- Turn in Mirror Lake
+step
+  label next_72
+  zone map 1453
+  note "Talk to Jennea"
+  train 5497 -- Train your class spells (Fireball r4)
+  note "Total Cost: 18s"
+step
+  along until next_74
+  zone map 1453
+  goto 36.730047,82.439416 map 1453 r 10 optional
+  goto 37.909869,81.919532 map 1453 r 10 optional
+  goto 38.100307,80.929967 map 1453 r 8 optional
+  goto 37.490311,81.349445 map 1453 r 6 optional
+  goto 38.460354,80.609781 map 1453 r 8 optional
+  goto 33.650308,81.58038 map 1453 r 15 optional
+  goto 31.120311,79.419403 map 1453 r 15 optional
+  goto 32.070269,81.500055 map 1453 r 10 optional
+  goto 32.62968,80.619822 map 1453 r 8 optional
+  note "Exit the Mage Tower"
+  goto 32.16028,79.839996 map 1453 r 10 optional -- Travel toward Charys
+step
+  label next_74
+  zone map 1453
+  note "Enter the building"
+  note "Talk to Charys"
+  vendor 1307 -- Buy [Lesser Mana Potions] and [Healing Potions] from her (if they're up)
+step
+  along until next_76
+  zone map 1453
+  goto 31.409687,79.100333 map 1453 r 20 optional
+  goto 32.669851,71.360088 map 1453 r 20 optional
+  goto 34.53034,68.40032 map 1453 r 20 optional
+  goto 32.16028,59.959458 map 1453 r 20 optional
+  goto 32.309804,58.510254 map 1453 r 20 optional
+  goto 30.529656,55.099771 map 1453 r 20 optional
+  goto 26.04023,52.25045 map 1453 r 20 optional
+  goto 24.66997,52.599643 map 1453 r 20 optional
+  goto 21.410208,55.800387 map 1453 r 10 optional -- Travel toward Argos
+step
+  label next_76
+  zone map 1453
+  note "Talk to Argos"
+  accept 3765 -- Accept The Corruption Abroad
+step
+  zone map 1453
+  note "Enter the building"
+  note "Talk to Adair"
+  vendor 1316 -- Buy non-intellect [Scrolls] from him (if they're up)
+step
+  along until next_79
+  zone map 1453
+  goto 53.530243,64.629488 map 1453 r 12 optional
+  goto 52.099727,61.419819 map 1453 r 12 optional
+  goto 49.35995,63.420144 map 1453 r 12 optional
+  goto 51.160184,68.350116 map 1453 r 12 optional
+  goto 52.049886,67.959645 map 1453 r 10 optional -- Travel toward Roberto
+step
+  when !turnedin 116
+  label next_79
+  zone map 1453
+  note "Go inside the building"
+  note "Talk to Roberto"
+  note "Buy a [Cask of Merlot] from him"
+  collect 1941 x1 @52.049886,67.959645 map 1453 -- Cask of Merlot
+step
+  along until next_81
+  zone map 1453
+  goto 52.099727,61.339493 map 1453 r 15 optional
+  goto 55.459915,65.259819 map 1453 r 8 optional -- Travel toward Keldric
+step
+  label next_81
+  zone map 1453
+  note "Talk to Keldric through the wall"
+  vendor 1257 -- Buy [Lesser Healing Potions] from him (if they're up)
+step
+  along until Bank3
+  zone map 1453
+  goto 55.299977,68.160459 map 1453 r 10 -- Enter the Stormwind Bank
+step
+  label Bank3
+  zone map 1453
+  goto 57.030284,72.969943 map 1453 r 8
+  note "Talk to Newton"
+  note "NOTE: You need 12 stacks of each cloth ([Wool Cloth], [Silk Cloth], [Mageweave Cloth], and [Runecloth]) to do the cloth turnins later. You'll get these naturally as you level"
+  note "[Bronze Tube]"
+  note "[Scrolls]"
+  note "[Light Feather]"
+  note "[Wool Cloth]"
+  note "[A Simple Compass]"
+  note "[Cask of Merlot]"
+step
+  along until next_86
+  zone map 1453
+  goto 53.449902,64.919552 map 1453 r 10 optional
+  note "Enter the Inn"
+  goto 52.610041,65.719459 map 1453 r 10 optional -- Travel Toward Allison
+step
+  when !zone "Darkshore"
+  label next_86
+  zone map 1453
+  goto 52.610041,65.719459 map 1453 r 8
+  note "===PAY ATTENTION==="
+  note "Talk to Allison"
+  note "Open the \"Set Hearthstone\" menu, then cast [Hearthstone]"
+  hearth "Auberdine" optional -- Hearthstone BATCH from Stormwind to Auberdine

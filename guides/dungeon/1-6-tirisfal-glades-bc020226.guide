@@ -1,0 +1,958 @@
+guide rxp-free/1-6-tirisfal-glades-bc020226
+title "1-6 Tirisfal Glades"
+levels 1-6
+zone map 1420
+coords era
+faction Horde
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · Dungeon Guide 1-22"
+next rxp-free/6-12-tirisfal-glades-f054af4f
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Skyborne
+  along until next_2
+  note "You have selected a guide meant for Undead. It is recommended you choose the same starter zone that you start in"
+step
+  when has 6948
+  label next_2
+  along until Zombies
+  note "Destroy the [Hearthstone] in your bags, as it's no longer needed"
+step
+  along until next_4
+  zone map 1420
+  goto 30.040011,72.780083 map 1420 r 8 optional
+  goto 30.269942,72.780083 map 1420 r 8 optional
+  goto 30.219928,71.650124 map 1420 r 10 optional -- Run up out of the crypt toward Mordo
+step
+  label next_4
+  zone map 1420
+  note "Talk to Mordo"
+  accept 363 -- Accept Rude Awakening
+step
+  only Warrior
+  along until Vendor
+  zone map 1420
+  goto 30.699928,69.28 map 1420 r 1 optional only Warrior
+  goto 30.699928,69.28 map 1420 r 1 optional only Warlock
+  goto 29.920066,70.300083 map 1420 r 40 optional
+  goto 30.699928,69.28 map 1420 r 40 optional
+  goto 29.180039,68.940083 map 1420 r 40 optional only Priest
+  goto 29.180039,68.940083 map 1420 r 40 optional only Mage
+  goto 29.099928,67.660083 map 1420 r 40 optional only Priest
+  goto 29.099928,67.660083 map 1420 r 40 optional only Mage
+  goto 30.190053,65.320166 map 1420 r 40 optional only Priest
+  goto 30.190053,65.320166 map 1420 r 40 optional only Mage
+  note "Kill Young Scavengers and Duskbats. Loot them until you have 60 copper worth of vendor items (including your armor)" only Mage
+  note "Kill Young Scavengers and Duskbats. Loot them until you have 50 copper worth of vendor items (including your armor)" only Priest
+  note "Kill Young Scavengers and Duskbats. Loot them until you have 10 copper worth of vendor items (including your armor)" only Warrior
+  note "Kill Young Scavengers and Duskbats. Loot them until you have 10 copper worth of vendor items (including your armor)" only Warlock
+step
+  only Warlock
+  along until Vendor
+  zone map 1420
+  goto 30.699928,69.28 map 1420 r 1 optional only Warrior
+  goto 30.699928,69.28 map 1420 r 1 optional only Warlock
+  goto 29.920066,70.300083 map 1420 r 40 optional
+  goto 30.699928,69.28 map 1420 r 40 optional
+  goto 29.180039,68.940083 map 1420 r 40 optional only Priest
+  goto 29.180039,68.940083 map 1420 r 40 optional only Mage
+  goto 29.099928,67.660083 map 1420 r 40 optional only Priest
+  goto 29.099928,67.660083 map 1420 r 40 optional only Mage
+  goto 30.190053,65.320166 map 1420 r 40 optional only Priest
+  goto 30.190053,65.320166 map 1420 r 40 optional only Mage
+  note "Kill Young Scavengers and Duskbats. Loot them until you have 60 copper worth of vendor items (including your armor)" only Mage
+  note "Kill Young Scavengers and Duskbats. Loot them until you have 50 copper worth of vendor items (including your armor)" only Priest
+  note "Kill Young Scavengers and Duskbats. Loot them until you have 10 copper worth of vendor items (including your armor)" only Warrior
+  note "Kill Young Scavengers and Duskbats. Loot them until you have 10 copper worth of vendor items (including your armor)" only Warlock
+step
+  only Priest
+  along until Vendor
+  zone map 1420
+  goto 30.699928,69.28 map 1420 r 1 optional only Warrior
+  goto 30.699928,69.28 map 1420 r 1 optional only Warlock
+  goto 29.920066,70.300083 map 1420 r 40 optional
+  goto 30.699928,69.28 map 1420 r 40 optional
+  goto 29.180039,68.940083 map 1420 r 40 optional only Priest
+  goto 29.180039,68.940083 map 1420 r 40 optional only Mage
+  goto 29.099928,67.660083 map 1420 r 40 optional only Priest
+  goto 29.099928,67.660083 map 1420 r 40 optional only Mage
+  goto 30.190053,65.320166 map 1420 r 40 optional only Priest
+  goto 30.190053,65.320166 map 1420 r 40 optional only Mage
+  note "Kill Young Scavengers and Duskbats. Loot them until you have 60 copper worth of vendor items (including your armor)" only Mage
+  note "Kill Young Scavengers and Duskbats. Loot them until you have 50 copper worth of vendor items (including your armor)" only Priest
+  note "Kill Young Scavengers and Duskbats. Loot them until you have 10 copper worth of vendor items (including your armor)" only Warrior
+  note "Kill Young Scavengers and Duskbats. Loot them until you have 10 copper worth of vendor items (including your armor)" only Warlock
+step
+  only Mage
+  along until Vendor
+  zone map 1420
+  goto 30.699928,69.28 map 1420 r 1 optional only Warrior
+  goto 30.699928,69.28 map 1420 r 1 optional only Warlock
+  goto 29.920066,70.300083 map 1420 r 40 optional
+  goto 30.699928,69.28 map 1420 r 40 optional
+  goto 29.180039,68.940083 map 1420 r 40 optional only Priest
+  goto 29.180039,68.940083 map 1420 r 40 optional only Mage
+  goto 29.099928,67.660083 map 1420 r 40 optional only Priest
+  goto 29.099928,67.660083 map 1420 r 40 optional only Mage
+  goto 30.190053,65.320166 map 1420 r 40 optional only Priest
+  goto 30.190053,65.320166 map 1420 r 40 optional only Mage
+  note "Kill Young Scavengers and Duskbats. Loot them until you have 60 copper worth of vendor items (including your armor)" only Mage
+  note "Kill Young Scavengers and Duskbats. Loot them until you have 50 copper worth of vendor items (including your armor)" only Priest
+  note "Kill Young Scavengers and Duskbats. Loot them until you have 10 copper worth of vendor items (including your armor)" only Warrior
+  note "Kill Young Scavengers and Duskbats. Loot them until you have 10 copper worth of vendor items (including your armor)" only Warlock
+step
+  only Warrior
+  along until Training1
+  zone map 1420
+  goto 32.220039,65.640166 map 1420 r 8 -- Go inside the building
+step
+  only Priest
+  along until Training1
+  zone map 1420
+  goto 32.220039,65.640166 map 1420 r 8 -- Go inside the building
+step
+  only Mage
+  along until Training1
+  zone map 1420
+  goto 32.220039,65.640166 map 1420 r 8 -- Go inside the building
+step
+  only Priest
+  label Vendor
+  zone map 1420
+  note "Talk to Joshua"
+  note "Buy [Refreshing Spring Water] from him"
+  vendor 2115 -- Vendor Trash
+  collect 159 x10 @32.28997,65.44 map 1420 optional -- Collect Refreshing Spring Water (10)
+step
+  only Mage
+  zone map 1420
+  note "Talk to Joshua"
+  note "Buy [Refreshing Spring Water] from him"
+  vendor 2115 -- Vendor Trash
+  collect 159 x10 @32.28997,65.44 map 1420 optional -- Collect Refreshing Spring Water (10)
+step
+  only Warlock
+  label Piercing
+  along
+  zone map 1420
+  note "Talk to Venya and Sarvis" only Warlock
+  note "Talk to Sarvis" only Mage
+  accept 1470 only Warlock -- Accept Piercing the Veil
+  turnin 363 -- Turn in Rude Awakening
+  accept 364 -- Accept The Mindless Ones
+step
+  only Mage
+  along
+  zone map 1420
+  note "Talk to Venya and Sarvis" only Warlock
+  note "Talk to Sarvis" only Mage
+  accept 1470 only Warlock -- Accept Piercing the Veil
+  turnin 363 -- Turn in Rude Awakening
+  accept 364 -- Accept The Mindless Ones
+step
+  only Warlock
+  when level>=2
+  zone map 1420
+  note "Talk to Elreth"
+  accept 376 -- Accept The Damned
+  goto 30.859928,66.050124 map 1420 r 8 optional
+step
+  only Mage
+  when level>=2
+  zone map 1420
+  note "Talk to Elreth"
+  accept 376 -- Accept The Damned
+  goto 30.859928,66.050124 map 1420 r 8 optional
+step
+  only Mage
+  zone map 1420
+  goto 30.940039,66.060083 map 1420 r 8
+  note "Talk to Isabella"
+  learn 1459 "Arcane Intellect"
+step
+  only Warlock
+  label Vendor_2
+  zone map 1420
+  note "Talk to Kayla"
+  vendor 5749 -- Vendor Trash
+step
+  only Warlock
+  zone map 1420
+  goto 30.909942,66.339917 map 1420 r 8
+  note "Talk to Maximillion"
+  learn 348 "Immolate"
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Druid
+  zone map 1420
+  note "Talk to Sarvis"
+  turnin 363 -- Turn in Rude Awakening
+  accept 364 -- Accept The Mindless Ones
+step
+  only Warrior,Paladin,Hunter,Rogue,Priest,Shaman,Druid
+  when level>=2
+  zone map 1420
+  note "Talk to Elreth"
+  accept 376 -- Accept The Damned
+  goto 30.859928,66.050124 map 1420 r 8 optional
+step
+  only Warrior
+  label Vendor_3
+  along until Training1
+  zone map 1420
+  goto 32.420094,65.660083 map 1420 r 8 optional
+  note "Talk to Archibald"
+  vendor 2113 optional -- Vendor Trash
+step
+  only Warrior
+  label Training1
+  zone map 1420
+  goto 32.6799,65.560166 map 1420 r 8
+  note "Talk to Dannal"
+  learn 6673 "Battle Shout"
+step
+  only Warlock
+  zone map 1420
+  note "Talk to Venya and Sarvis" only Warlock
+  note "Talk to Sarvis" only Mage
+  accept 1470 only Warlock -- Accept Piercing the Veil
+  goto 30.980094,66.409959 map 1420 r 8 optional only Warlock
+  turnin 363 -- Turn in Rude Awakening
+  accept 364 -- Accept The Mindless Ones
+  goto 30.840011,66.200166 map 1420 r 8 optional
+step
+  only Mage
+  zone map 1420
+  note "Talk to Venya and Sarvis" only Warlock
+  note "Talk to Sarvis" only Mage
+  accept 1470 only Warlock -- Accept Piercing the Veil
+  goto 30.980094,66.409959 map 1420 r 8 optional only Warlock
+  turnin 363 -- Turn in Rude Awakening
+  accept 364 -- Accept The Mindless Ones
+  goto 30.840011,66.200166 map 1420 r 8 optional
+step
+  only Warlock
+  accept 1470 only Warlock -- Accept Piercing the Veil
+step
+  only Mage
+  accept 1470 only Warlock -- Accept Piercing the Veil
+step
+  only Warlock
+  when onquest 1470
+  loop
+  zone map 1420
+  goto 31.819928,61.480166 map 1420 r 1
+  goto 31.819928,61.480166 map 1420 r 30
+  goto 31.109997,60.710041 map 1420 r 30
+  goto 32.069997,60.169959 map 1420 r 30
+  goto 32.260094,59.209959 map 1420 r 30
+  goto 33.280066,59.529959 map 1420 r 30
+  goto 33.660039,60.760166 map 1420 r 30
+  goto 33.939983,61.810124 map 1420 r 30
+  goto 34.20997,63.049959 map 1420 r 30
+  goto 33.01008,63.010124 map 1420 r 30
+  note "Kill Rattlecage Skeletons. Loot them for their Rattlecage Skulls"
+  collect 6281 x3 quest 1470.1 -- Rattlecage Skull (3)
+step
+  only Warlock
+  along until next_19
+  note "Kill Mindless Zombies and Wretched Zombies. Loot them until you have 25 copper worth of vendor items (including your armor)"
+step
+  only Warlock
+  when onquest 1470
+  when !turnedin 383
+  label next_19
+  zone map 1420
+  note "Talk to Joshua"
+  note "Buy [Refreshing Spring Water] from him"
+  collect 159 x5 @32.28997,65.44 map 1420 -- Collect Refreshing Spring Water (5)
+step
+  only Warlock
+  when onquest 1470
+  zone map 1420
+  note "Talk to Venya"
+  turnin 1470 -- Turn in Piercing the Veil
+step
+  only Warlock
+  along until next_22
+  note "Cast [Summon Imp]"
+step
+  only Priest
+  label next_22
+  along until Zombies
+  note "Save up your [Linen Cloth]. This will allow you to create a wand later"
+step
+  when onquest 364
+  label Zombies
+  loop
+  zone map 1420
+  goto 31.7199,63.980083 map 1420 r 1
+  goto 31.7199,63.980083 map 1420 r 40
+  goto 30.68997,63.880166 map 1420 r 40
+  goto 30.899983,62.200166 map 1420 r 40
+  goto 30.730025,61.660083 map 1420 r 40
+  goto 31.140094,61.410124 map 1420 r 40
+  goto 31.800011,61.830041 map 1420 r 40
+  goto 32.85008,63.020083 map 1420 r 40
+  goto 32.900094,63.539917 map 1420 r 40
+  goto 33.40997,63.059917 map 1420 r 40
+  goto 33.749887,62.860083 map 1420 r 40
+  goto 33.509997,63.820083 map 1420 r 40
+  goto 33.550053,64.569959 map 1420 r 40
+  goto 33.290025,64.96 map 1420 r 40
+  note "Kill Mindless Zombies and Wretched Zombies"
+  kill 1501 x8 quest 364.1 -- Kill Mindless Zombie (x8)
+  kill 1502 x8 quest 364.2 -- Kill Wretched Zombie (x8)
+step
+  only Mage
+  along until Vendor2
+  note "Kill Mindless Zombies and Wretched Zombies. Loot them until you have 33 copper worth of vendor items (including your armor)"
+step
+  only Warlock
+  along until Vendor2
+  note "Kill Mindless Zombies and Wretched Zombies. Loot them until you have 33 copper worth of vendor items (including your armor)"
+step
+  only Priest
+  along until Vendor2
+  note "Kill Mindless Zombies and Wretched Zombies. Loot them until you have 33 copper worth of vendor items (including your armor)"
+step
+  only Mage
+  when !has 159 x10
+  zone map 1420
+  note "Talk to Joshua"
+  note "Buy [Refreshing Spring Water] from him"
+  collect 159 x10 @32.28997,65.44 map 1420 -- Collect Refreshing Spring Water (10)
+  vendor 2115 optional -- Vendor Trash
+step
+  only Warlock
+  when !has 159 x10
+  zone map 1420
+  note "Talk to Joshua"
+  note "Buy [Refreshing Spring Water] from him"
+  collect 159 x10 @32.28997,65.44 map 1420 -- Collect Refreshing Spring Water (10)
+  vendor 2115 optional -- Vendor Trash
+step
+  only Priest
+  when !has 159 x10
+  zone map 1420
+  note "Talk to Joshua"
+  note "Buy [Refreshing Spring Water] from him"
+  collect 159 x10 @32.28997,65.44 map 1420 -- Collect Refreshing Spring Water (10)
+  vendor 2115 optional -- Vendor Trash
+step
+  only Mage
+  label Vendor2
+  zone map 1420
+  goto 32.229997,65.590041 map 1420 r 8 optional
+  goto 32.28997,65.44 map 1420 r 8 optional
+  note "Talk to Joshua"
+  note "Buy [Refreshing Spring Water] from him"
+  collect 159 x5 @32.28997,65.44 map 1420 optional -- Collect Refreshing Spring Water (5)
+  vendor 2115 -- Vendor Trash
+step
+  only Warlock
+  zone map 1420
+  goto 32.229997,65.590041 map 1420 r 8 optional
+  goto 32.28997,65.44 map 1420 r 8 optional
+  note "Talk to Joshua"
+  note "Buy [Refreshing Spring Water] from him"
+  collect 159 x5 @32.28997,65.44 map 1420 optional -- Collect Refreshing Spring Water (5)
+  vendor 2115 -- Vendor Trash
+step
+  only Priest
+  zone map 1420
+  goto 32.229997,65.590041 map 1420 r 8 optional
+  goto 32.28997,65.44 map 1420 r 8 optional
+  note "Talk to Joshua"
+  note "Buy [Refreshing Spring Water] from him"
+  collect 159 x5 @32.28997,65.44 map 1420 optional -- Collect Refreshing Spring Water (5)
+  vendor 2115 -- Vendor Trash
+step
+  when onquest 364
+  turnin 364 -- Turn in The Mindless Ones
+step
+  zone map 1420
+  note "Talk to Sarvis and Elreth" only !Warlock,!Mage,!Priest
+  note "Talk to Sarvis, Elreth, and Maximillion" only Warlock
+  note "Talk to Sarvis, Elreth, and Isabella" only Mage
+  note "Talk to Sarvis, Elreth, and Duesten" only Priest
+  accept 3095 only Warrior -- Accept Simple Scroll
+  accept 3096 only Rogue -- Accept Encrypted Scroll
+  accept 3097 only Priest -- Accept Hallowed Scroll
+  accept 3098 only Mage -- Accept Glyphic Scroll
+  accept 3099 only Warlock -- Accept Tainted Scroll
+  accept 98601 only Paladin -- Accept A Difficult Path
+  accept 3901 -- Accept Rattling the Rattlecages
+  accept 376 -- Accept The Damned
+  goto 30.859928,66.050124 map 1420 r 8 optional
+  goto 30.909942,66.339917 map 1420 r 8 optional only Warlock
+  goto 30.940039,66.060083 map 1420 r 8 optional only Mage
+  goto 31.109997,66.019917 map 1420 r 8 optional only Priest
+step
+  when onquest 3097
+  turnin 3097 only Priest -- Turn in Hallowed Scroll
+step
+  when onquest 3098
+  turnin 3098 only Mage -- Turn in Glyphic Scroll
+step
+  when onquest 3099
+  turnin 3099 only Warlock -- Turn in Tainted Scroll
+step
+  only Paladin
+  when onquest 98601
+  turnin 98601 -- Turn in A Difficult Path
+step
+  only Paladin
+  zone map 1420
+  note "Talk to Aramis Hammerhand"
+  accept 90902 -- Accept Rediscovering the Light
+step
+  only Paladin
+  along until XPcheck
+  note "Cast [Holy Light] on Injured Deathguards"
+  note "Injured Deathguard healed"
+step
+  only Mage
+  when onquest 364
+  when !turnedin 383
+  zone map 1420
+  note "Talk to Joshua"
+  note "Buy [Refreshing Spring Water] from him"
+  collect 159 x10 @32.28997,65.44 map 1420 -- Collect Refreshing Spring Water (10)
+step
+  only Warlock
+  when onquest 364
+  when !turnedin 383
+  zone map 1420
+  note "Talk to Joshua"
+  note "Buy [Refreshing Spring Water] from him"
+  collect 159 x10 @32.28997,65.44 map 1420 -- Collect Refreshing Spring Water (10)
+step
+  only Priest
+  when onquest 364
+  when !turnedin 383
+  zone map 1420
+  note "Talk to Joshua"
+  note "Buy [Refreshing Spring Water] from him"
+  collect 159 x10 @32.28997,65.44 map 1420 -- Collect Refreshing Spring Water (10)
+step
+  along until next_32
+  zone map 1420
+  note "Kill Rattlecage Skeletons"
+  kill 1890 x12 quest 3901.1 @32.28997,65.44 map 1420 -- Kill Rattlecage Skeleton (12)
+step
+  label next_32
+  loop
+  zone map 1420
+  goto 34.319956,56.790041 map 1420 r 1
+  goto 29.209914,66.680166 map 1420 r 40
+  goto 29.4799,65.699917 map 1420 r 40
+  goto 29.600066,64.040166 map 1420 r 40
+  goto 29.669997,63.389876 map 1420 r 40
+  goto 30.090025,61.510041 map 1420 r 40
+  goto 30.969914,59.660083 map 1420 r 40
+  goto 31.609914,58.569959 map 1420 r 40
+  goto 32.069997,57.740083 map 1420 r 40
+  goto 32.85008,58.349876 map 1420 r 40
+  goto 34.319956,56.790041 map 1420 r 40
+  note "Kill Young Scavengers and Ragged Scavengers. Loot them for their Scavenger Paws"
+  note "Kill Duskbats and Mangy Duskbats. Loot them for their Duskbat Wings"
+  note "Try to avoid Mangy Duskbats if you can due to them being much tougher to kill than Duskbats"
+  collect 3265 x6 quest 376.1 -- Collect Scavenger Paw (x6)
+  collect 3264 x6 quest 376.2 -- Collect Duskbat Wing (x6)
+step
+  loop
+  zone map 1420
+  goto 31.819928,61.480166 map 1420 r 1
+  goto 31.819928,61.480166 map 1420 r 30
+  goto 31.109997,60.710041 map 1420 r 30
+  goto 32.069997,60.169959 map 1420 r 30
+  goto 32.260094,59.209959 map 1420 r 30
+  goto 33.280066,59.529959 map 1420 r 30
+  goto 33.660039,60.760166 map 1420 r 30
+  goto 33.939983,61.810124 map 1420 r 30
+  goto 34.20997,63.049959 map 1420 r 30
+  goto 33.01008,63.010124 map 1420 r 30
+  note "Kill Rattlecage Skeletons"
+  kill 1890 x12 quest 3901.1 -- Kill Rattlecage Skeleton (12)
+step
+  label XPcheck
+  zone map 1420
+  goto 31.819928,61.480166 map 1420 r 30 optional
+  goto 31.109997,60.710041 map 1420 r 30 optional
+  goto 32.069997,60.169959 map 1420 r 30 optional
+  goto 32.260094,59.209959 map 1420 r 30 optional
+  goto 33.280066,59.529959 map 1420 r 30 optional
+  goto 33.660039,60.760166 map 1420 r 30 optional
+  goto 33.939983,61.810124 map 1420 r 30 optional
+  goto 34.20997,63.049959 map 1420 r 30 optional
+  goto 33.01008,63.010124 map 1420 r 30
+  level 3+895 only Paladin -- Grind to 895+/1400xp
+  level 3+940 only Warrior -- Grind to 940+/1400xp
+  level 3+940 only Rogue -- Grind to 940+/1400xp
+  level 3+980 only !Warrior,!Rogue,!Paladin -- Grind to 980+/1400xp
+step
+  only Paladin
+  zone map 1420
+  goto 31.863524,65.098755 map 1420 r 8
+  note "Cast [Holy Light] on Injured Deathguards"
+  note "Injured Deathguard healed"
+step
+  only Mage
+  when onquest 3901
+  when !has 159 x20
+  zone map 1420
+  note "Talk to Joshua"
+  note "Buy [Refreshing Spring Water] from him" only !Paladin
+  note "Do NOT go below 1 Silver" only Mage
+  note "Do NOT go below 1 Silver" only Warlock
+  note "Do NOT go below 1 Silver" only Priest
+  vendor 2115 -- Vendor Trash
+step
+  only Warlock
+  when onquest 3901
+  when !has 159 x20
+  zone map 1420
+  note "Talk to Joshua"
+  note "Buy [Refreshing Spring Water] from him" only !Paladin
+  note "Do NOT go below 1 Silver" only Mage
+  note "Do NOT go below 1 Silver" only Warlock
+  note "Do NOT go below 1 Silver" only Priest
+  vendor 2115 -- Vendor Trash
+step
+  only Priest
+  when onquest 3901
+  when !has 159 x20
+  zone map 1420
+  note "Talk to Joshua"
+  note "Buy [Refreshing Spring Water] from him" only !Paladin
+  note "Do NOT go below 1 Silver" only Mage
+  note "Do NOT go below 1 Silver" only Warlock
+  note "Do NOT go below 1 Silver" only Priest
+  vendor 2115 -- Vendor Trash
+step
+  only Paladin
+  when onquest 3901
+  when !has 159 x20
+  zone map 1420
+  note "Talk to Joshua"
+  note "Buy [Refreshing Spring Water] from him" only !Paladin
+  note "Do NOT go below 1 Silver" only Mage
+  note "Do NOT go below 1 Silver" only Warlock
+  note "Do NOT go below 1 Silver" only Priest
+  vendor 2115 -- Vendor Trash
+step
+  zone map 1420
+  note "Talk to Sarvis and Elreth"
+  turnin 3901 -- Turn in Rattling the Rattlecages
+  turnin 376 -- Turn in The Damned
+  accept 6395 -- Accept Marla's Last Wish
+  goto 30.859928,66.050124 map 1420 r 8 optional
+step
+  only Paladin
+  when onquest 90902
+  zone map 1420
+  note "Talk to Archibald"
+  vendor 2113 -- Vendor Trash
+step
+  when onquest 90902
+  turnin 90902 only Paladin -- Turn in Rediscovering the Light
+step
+  zone map 1420
+  goto 31.0934,66.39668 map 1420 r 8 optional
+  note "Talk to Aramis Hammerhand"
+  accept 91208 only Paladin -- Accept Coming to Terms
+  accept 91209 only Paladin -- Accept Continue Your Training
+  accept 98389 -- Accept A Light in the Darkness
+step
+  only Paladin
+  zone map 1420
+  goto 31.0934,66.39668 map 1420 r 8 optional
+  note "Talk to Aramis Hammerhand"
+  learn 20271 "Judgement"
+  learn 19740 "Blessing of Might"
+step
+  only Paladin
+  zone map 1420
+  goto 31.0934,66.39668 map 1420 r 8 optional
+  note "Talk to Aramis Hammerhand"
+  learn 20271 "Judgement"
+step
+  only Priest
+  zone map 1420
+  goto 31.109997,66.019917 map 1420 r 8 optional
+  note "Talk to Duesten"
+  learn 589 "your class spells"
+step
+  only Priest
+  zone map 1420
+  goto 31.109997,66.019917 map 1420 r 8 optional
+  note "Talk to Duesten"
+  learn 2052 "Lesser Heal Rank 2"
+  learn 589 "Shadow Word: Pain"
+step
+  only Priest
+  zone map 1420
+  goto 31.109997,66.019917 map 1420 r 8 optional
+  note "Talk to Duesten"
+  learn 1243 "Power Word: Fortitude"
+  learn 589 "Shadow Word: Pain"
+step
+  only Priest
+  zone map 1420
+  goto 31.109997,66.019917 map 1420 r 8 optional
+  note "Talk to Duesten"
+  learn 589 "Shadow Word: Pain"
+step
+  only Warlock
+  zone map 1420
+  goto 30.909942,66.339917 map 1420 r 8
+  note "Talk to Maximillion"
+  learn 172 "Corruption"
+step
+  only Mage
+  zone map 1420
+  goto 30.940039,66.060083 map 1420 r 8
+  note "Talk to Isabella"
+  learn 116 "Frostbolt"
+step
+  zone map 1420
+  note "Talk to Deathguard Saltain and Executor Arren"
+  accept 3902 -- Accept Scavenging Deathknell
+  accept 380 -- Accept Night Web's Hollow
+  goto 32.149887,66.009959 map 1420 r 8 optional
+step
+  only Rogue
+  zone map 1420
+  note "Talk to Archibald"
+  vendor 2113 -- Vendor Trash
+step
+  only Warrior
+  zone map 1420
+  note "Talk to Archibald"
+  vendor 2113 -- Vendor Trash
+step
+  only Paladin
+  zone map 1420
+  note "Talk to Archibald"
+  vendor 2113 -- Vendor Trash
+step
+  only Warrior
+  zone map 1420
+  note "Talk to Dannal"
+  turnin 3095 -- Turn in Simple Scroll
+  learn 100 "Charge"
+  learn 772 "Rend"
+step
+  only Warrior
+  label Training2
+  zone map 1420
+  note "Talk to Dannal"
+  turnin 3095 -- Turn in Simple Scroll
+  learn 772 "Rend"
+step
+  only Rogue
+  when onquest 3096
+  label Training2_2
+  zone map 1420
+  note "Talk to David"
+  turnin 3096 -- Turn in Encrypted Scroll
+step
+  only Rogue
+  when !turnedin 792
+  zone map 1420
+  note "Talk to Walter Mason upstairs"
+  note "Buy a [Mining Pick] from him"
+  learn 2575 "Mining"
+  collect 2901 x1 @32.226456,65.822407 map 1420 -- Mining Pick (1)
+  note "This will allow you to find [Rough Stones] from nodes in order to craft [Sharpening Stones] (+2 Weapon Damage for 30 minutes)"
+step
+  only Warrior
+  when !turnedin 792
+  zone map 1420
+  note "Talk to Walter Mason upstairs"
+  note "Buy a [Mining Pick] from him"
+  learn 2575 "Mining"
+  collect 2901 x1 @32.226456,65.822407 map 1420 -- Mining Pick (1)
+  note "This will allow you to find [Rough Stones] from nodes in order to craft [Sharpening Stones] (+2 Weapon Damage for 30 minutes)"
+step
+  only Paladin
+  when !turnedin 792
+  zone map 1420
+  note "Talk to Walter Mason upstairs"
+  note "Buy a [Mining Pick] from him"
+  learn 2575 "Mining"
+  collect 2901 x1 @32.226456,65.822407 map 1420 -- Mining Pick (1)
+  note "This will allow you to find [Rough Stones] from nodes in order to craft [Sharpening Stones] (+2 Weapon Damage for 30 minutes)"
+step
+  loop
+  zone map 1420
+  goto 32.37008,64.370124 map 1420 r 1
+  goto 32.37008,64.370124 map 1420 r 12
+  goto 32.810025,64.390041 map 1420 r 12
+  goto 32.889914,64.600166 map 1420 r 12
+  goto 33.01008,65.379917 map 1420 r 12
+  goto 33.789942,64.569959 map 1420 r 12
+  goto 33.130025,63.080166 map 1420 r 12
+  goto 32.789887,63.110041 map 1420 r 12
+  goto 31.859983,61.490124 map 1420 r 12
+  goto 31.749997,61.960166 map 1420 r 12
+  goto 31.699983,62.530124 map 1420 r 12
+  goto 31.339928,62.440166 map 1420 r 12
+  note "Open the Equipment Boxes on the ground. Loot them for the Scavenged Goods"
+  collect 11127 x6 quest 3902.1 -- Collect Scavenged Goods (x6)
+step
+  only Paladin
+  zone map 1420
+  goto 27.683165,63.827386 map 1420 r 8
+  note "Talk to the Frightened Paladin, kill her as she becomes hostile"
+  note "Offer aid to the Frightened Paladin"
+step
+  label NightWebStart
+  loop
+  zone map 1420
+  goto 29.939983,57.330124 map 1420 r 1
+  goto 29.939983,57.330124 map 1420 r 40
+  goto 29.820039,56.029876 map 1420 r 40
+  goto 29.24997,55.769959 map 1420 r 40
+  goto 28.399956,56.509876 map 1420 r 40
+  goto 27.680066,57.100083 map 1420 r 40
+  goto 28.28997,58.310041 map 1420 r 40
+  goto 28.249914,59.410124 map 1420 r 40
+  goto 28.800066,59.529959 map 1420 r 40
+  goto 29.290025,59.400166 map 1420 r 40
+  goto 29.669997,58.530124 map 1420 r 40
+  note "Kill Young Night Web Spiders"
+  kill 1504 x10 quest 380.1 -- Kill Young Night Web Spider (10)
+step
+  loop
+  zone map 1420
+  goto 28.249914,58.269876 map 1420 r 1
+  goto 28.249914,58.269876 map 1420 r 25
+  goto 28.420094,59.069876 map 1420 r 25
+  goto 27.859983,60.569959 map 1420 r 25
+  goto 27.16997,59.180083 map 1420 r 25
+  goto 27.300094,57.970124 map 1420 r 25
+  goto 26.940039,56.419917 map 1420 r 25
+  goto 27.509887,56 map 1420 r 25
+  note "Kill Young Night Web Spiders close to the cave entrance"
+  kill 1504 x10 quest 380.1 -- Kill Young Night Web Spider (10)
+step
+  along until next_59
+  zone map 1420
+  goto 26.799956,59.400166 map 1420 r 15 optional
+  goto 26.309997,59.6 map 1420 r 30 optional -- Go inside the cave
+step
+  label next_59
+  along until next_60
+  note "Attack the Webbed Forsaken"
+  complete 98389 -- Webbed Forsaken freed
+step
+  label next_60
+  loop
+  zone map 1420
+  goto 24.6799,59.539917 map 1420 r 1
+  goto 26.309997,59.6 map 1420 r 30
+  goto 25.610025,59.549876 map 1420 r 20
+  goto 25.109887,60.329959 map 1420 r 20
+  goto 24.179983,60.770124 map 1420 r 20
+  goto 23.229942,59.910041 map 1420 r 20
+  goto 23.89008,58.360166 map 1420 r 20
+  goto 24.6799,59.539917 map 1420 r 20
+  note "Kill Night Web Spiders inside the cave"
+  kill 1505 x8 quest 380.2 -- Kill Night Web Spider (x8)
+step
+  zone map 1420
+  goto 24.60488,59.452282 map 1420 r 8
+  note "Attack the Webbed Forsaken"
+  complete 98389 -- Webbed Forsaken freed
+step
+  along until Scavenging
+  note "Die and respawn at the Spirit Healer"
+step
+  only Warlock
+  along until ScarletC
+  note "Cast [Summon Imp]"
+step
+  label Scavenging
+  zone map 1420
+  note "Talk to Saltain"
+  turnin 3902 -- Turn in Scavenging Deathknell
+step
+  label NightWebH
+  zone map 1420
+  note "Talk to Arren"
+  turnin 380 -- Turn in Night Web's Hollow
+  accept 381 -- Accept The Scarlet Crusade
+step
+  when onquest 91208
+  turnin 91208 only Paladin -- Turn in Coming to Terms
+step
+  zone map 1420
+  note "Talk to Aramis Hammerhand"
+  turnin 98389 -- Turn in A Light in the Darkness
+step
+  only Rogue
+  when onquest 6395
+  zone map 1420
+  note "Talk to Archibald"
+  vendor 2113 -- Vendor Trash
+step
+  only Warrior
+  when onquest 6395
+  zone map 1420
+  note "Talk to Archibald"
+  vendor 2113 -- Vendor Trash
+step
+  only Paladin
+  when onquest 6395
+  zone map 1420
+  note "Talk to Archibald"
+  vendor 2113 -- Vendor Trash
+step
+  only Warlock
+  when onquest 6395
+  when !has 159 x15
+  zone map 1420
+  goto 32.28997,65.44 map 1420 r 8
+  note "Talk to Joshua"
+  note "Buy [Refreshing Spring Water] from him"
+  collect 159 x15 @32.28997,65.44 map 1420 optional only Warlock -- Collect Refreshing Spring Water (15)
+  collect 159 x15 @32.28997,65.44 map 1420 optional only Mage -- Collect Refreshing Spring Water (15)
+  collect 159 x15 @32.28997,65.44 map 1420 optional only Priest -- Collect Refreshing Spring Water (15)
+  vendor 2115 -- Vendor Trash
+step
+  only Mage
+  when onquest 6395
+  when !has 159 x15
+  zone map 1420
+  goto 32.28997,65.44 map 1420 r 8
+  note "Talk to Joshua"
+  note "Buy [Refreshing Spring Water] from him"
+  collect 159 x15 @32.28997,65.44 map 1420 optional only Warlock -- Collect Refreshing Spring Water (15)
+  collect 159 x15 @32.28997,65.44 map 1420 optional only Mage -- Collect Refreshing Spring Water (15)
+  collect 159 x15 @32.28997,65.44 map 1420 optional only Priest -- Collect Refreshing Spring Water (15)
+  vendor 2115 -- Vendor Trash
+step
+  only Priest
+  when onquest 6395
+  when !has 159 x15
+  zone map 1420
+  goto 32.28997,65.44 map 1420 r 8
+  note "Talk to Joshua"
+  note "Buy [Refreshing Spring Water] from him"
+  collect 159 x15 @32.28997,65.44 map 1420 optional only Warlock -- Collect Refreshing Spring Water (15)
+  collect 159 x15 @32.28997,65.44 map 1420 optional only Mage -- Collect Refreshing Spring Water (15)
+  collect 159 x15 @32.28997,65.44 map 1420 optional only Priest -- Collect Refreshing Spring Water (15)
+  vendor 2115 -- Vendor Trash
+step
+  loop
+  zone map 1420
+  goto 36.12997,68.739917 map 1420 r 1
+  goto 36.12997,68.739917 map 1420 r 40
+  goto 36.459928,69.490124 map 1420 r 40
+  goto 36.85008,70.019917 map 1420 r 40
+  goto 37.419928,69.580083 map 1420 r 40
+  goto 38.04997,69.789876 map 1420 r 40
+  goto 37.909887,69.219917 map 1420 r 40
+  goto 38.030053,68.770124 map 1420 r 40
+  goto 38.489914,68.280166 map 1420 r 40
+  goto 38.720066,67.069876 map 1420 r 40
+  goto 38.589942,66.249959 map 1420 r 40
+  goto 38.649914,65.069876 map 1420 r 40
+  goto 37.619983,65.36 map 1420 r 40
+  goto 36.92997,65.379917 map 1420 r 40
+  goto 36.509942,65.420083 map 1420 r 40
+  goto 36.85008,66.589876 map 1420 r 40
+  goto 37.450025,67.949876 map 1420 r 40
+  goto 36.92997,68.16 map 1420 r 40
+  note "Kill Scarlet Initiates and Scarlet Converts. Loot them for their Scarlet Armbands"
+  note "Don't kill Meven Korgal yet"
+  note "Try to avoid Scarlet Initiates if you can as they have [Frost Armor] (slows your attack speed)" only Warrior
+  note "Try to avoid Scarlet Initiates if you can as they have [Frost Armor] (slows your attack speed)" only Rogue
+  collect 3266 x12 quest 381.1 -- Collect Scarlet Armband (12)
+step
+  when !turnedin 6395
+  zone map 1420
+  note "Kill Samuel. Loot him for Samuel's Remains"
+  collect 16333 x1 @36.69008,61.670041 map 1420 -- Collect Samuel's Remains
+step
+  along until next_72
+  note "Die and respawn at the Spirit Healer"
+step
+  label next_72
+  zone map 1420
+  goto 31.16997,65.080166 map 1420 r 8
+  note "Click Marla's Grave on the ground"
+  interact 178090 quest 6395.1 -- Collect Samuel's Remains Buried (1)
+step
+  only Warlock
+  along until ScarletC
+  note "Cast [Summon Imp]"
+step
+  zone map 1420
+  note "Talk to Elreth" only !Priest
+  note "Talk to Elreth and Duesten" only Priest
+  turnin 6395 -- Turn in Marla's Last Wish
+  goto 31.349887,66.210124 map 1420 r 10 optional
+  goto 30.859928,66.050124 map 1420 r 8 optional
+  accept 5651 only Priest -- Accept In Favor of Darkness
+  goto 31.109997,66.019917 map 1420 r 8 optional only Priest
+step
+  label ScarletC
+  along
+  zone map 1420
+  note "Talk to Arren"
+  turnin 381 -- Turn in The Scarlet Crusade
+  accept 382 -- Accept The Red Messenger
+step
+  zone map 1420
+  note "Talk to Archibald"
+  vendor 2113 -- Vendor Trash
+step
+  zone map 1420
+  note "Talk to Arren"
+  turnin 381 -- Turn in The Scarlet Crusade
+  accept 382 -- Accept The Red Messenger
+step
+  zone map 1420
+  note "Kill Meven. Loot him for the Scarlet Crusade Documents"
+  collect 2885 x1 quest 382.1 -- Collect Scarlet Crusade Documents (1)
+step
+  accept 382 -- Accept The Red Messenger
+step
+  zone map 1420
+  note "Talk to Arren"
+  turnin 382 -- Turn in The Red Messenger
+  accept 383 -- Accept Vital Intelligence
+  accept 96656 -- Accept The Adventurer
+step
+  zone map 1420
+  goto 34.080066,59.510041 map 1420 r 50 optional
+  goto 35.339928,56.550041 map 1420 r 50 optional
+  goto 36.829942,56.850124 map 1420 r 50 optional
+  goto 37.760066,59.379917 map 1420 r 50 optional
+  goto 37.509997,62.989876 map 1420 r 50 optional
+  goto 36.12997,68.739917 map 1420 r 50 optional
+  goto 36.459928,69.490124 map 1420 r 50 optional
+  goto 36.85008,70.019917 map 1420 r 50 optional
+  goto 37.419928,69.580083 map 1420 r 50 optional
+  goto 38.04997,69.789876 map 1420 r 50 optional
+  goto 37.909887,69.219917 map 1420 r 50 optional
+  goto 38.030053,68.770124 map 1420 r 50 optional
+  goto 38.489914,68.280166 map 1420 r 50 optional
+  goto 38.720066,67.069876 map 1420 r 50 optional
+  goto 38.589942,66.249959 map 1420 r 50 optional
+  goto 38.649914,65.069876 map 1420 r 50 optional
+  goto 37.619983,65.36 map 1420 r 50 optional
+  goto 36.92997,65.379917 map 1420 r 50 optional
+  goto 36.509942,65.420083 map 1420 r 50 optional
+  goto 36.85008,66.589876 map 1420 r 50 optional
+  goto 37.450025,67.949876 map 1420 r 50 optional
+  goto 36.92997,68.16 map 1420 r 50 optional
+  goto 36.12997,68.739917 map 1420 r 50
+  level 5+1940 only !Paladin -- Grind to 1940+/2800xp
+  level 5+1850 only Paladin -- Grind to 1850+/2800xp
+step
+  zone map 1420
+  note "Talk to Calvin"
+  accept 8 -- Accept A Rogue's Deal

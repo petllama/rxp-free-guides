@@ -1,0 +1,777 @@
+guide rxp-free/1-6-northshire-a51e4475
+title "1-6 Northshire"
+levels 1-6
+zone map 1429
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+next rxp-free/6-11-elwynn-forest-f762eb88
+step
+  only Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Undead,Skyborne
+  along until next_1
+  note "You have selected a guide meant for Humans. You should choose the same starter zone that you start in"
+step
+  only Mage
+  label next_1
+  along until next_2
+  note "Note that you have selected the single target Mage guide. Single target is a lot safer than AoE Mage, but a LOT slower"
+step
+  when has 6948
+  label next_2
+  along until Within
+  note "Delete the [Hearthstone] from your bags, as it's no longer needed"
+step
+  zone map 1429
+  note "Talk to Deputy Willem"
+  accept 783 -- Accept A Threat Within
+step
+  only Warrior
+  zone map 1429
+  goto 46.400001,40.300002 map 1429 r 35 optional
+  note "Kill Young Wolves until you have 10c+ worth of vendor trash"
+  note "You will train [Battle Shout] which increases early leveling speeds"
+  note "Talk to Brother Danil"
+  vendor nearest -- Vendor trash
+  goto 47.485907,41.565889 map 1429 r 8 optional
+  note "Talk to Llane Beshere inside downstairs"
+  learn 6673 "Battle Shout"
+  goto 50.242017,42.286969 map 1429 r 8 optional
+step
+  label Within
+  zone map 1429
+  note "Talk to Marshal McBride"
+  turnin 783 -- Turn in A Threat Within
+  accept 7 -- Accept Kobold Camp Cleanup
+step
+  zone map 1429
+  note "Talk to Deputy Willem"
+  accept 5261 -- Accept Eagan Peltskinner
+step
+  label EaganWolves
+  zone map 1429
+  note "Talk to Eagan Peltskinner"
+  turnin 5261 -- Turn in Eagan Peltskinner
+  accept 33 -- Accept Wolves Across The Border
+step
+  only Priest
+  along until WolfMeatEnd
+  zone map 1429
+  note "Once you have 50c worth of vendor trash:"
+  note "Talk to Brother Danil"
+  note "Vendor Trash"
+  note "Buy 10 [Refreshing Spring Water] from him"
+  collect 159 x10 @47.485907,41.565889 map 1429 -- Collect Refreshing Spring Water (x10)
+step
+  only Mage
+  along until WolfMeatEnd
+  zone map 1429
+  note "Once you have 50c worth of vendor trash:"
+  note "Talk to Brother Danil"
+  note "Vendor Trash"
+  note "Buy 10 [Refreshing Spring Water] from him"
+  collect 159 x10 @47.485907,41.565889 map 1429 -- Collect Refreshing Spring Water (x10)
+step
+  only Warlock
+  along until WolfMeatEnd
+  zone map 1429
+  note "Once you have 50c worth of vendor trash:"
+  note "Talk to Brother Danil"
+  note "Vendor Trash"
+  note "Buy 10 [Refreshing Spring Water] from him"
+  collect 159 x10 @47.485907,41.565889 map 1429 -- Collect Refreshing Spring Water (x10)
+step
+  label WolfMeatEnd
+  along
+  zone map 1429
+  note "Kill Young Wolves and Timber Wolves. Loot them for their Tough Wolf Meat"
+  collect 750 x8 quest 33.1 @47.976,39.422 map 1429 -- Collect Tough Wolf Meat (x8)
+step
+  loop
+  zone map 1429
+  goto 47.601,36.72 map 1429 r 1
+  goto 49.215,37.01 map 1429 r 1
+  goto 47.569,34.967 map 1429 r 1
+  goto 47.601,36.72 map 1429 r 45
+  goto 47.381,36.314 map 1429 r 45
+  goto 47.611,35.863 map 1429 r 45
+  goto 48.314,36.487 map 1429 r 45
+  goto 49.07,36.438 map 1429 r 45
+  goto 49.215,37.01 map 1429 r 45
+  goto 49.838,36.413 map 1429 r 45
+  goto 50.105,35.668 map 1429 r 45
+  goto 49.823,35.161 map 1429 r 45
+  goto 48.845,35.066 map 1429 r 45
+  goto 47.569,34.967 map 1429 r 45
+  note "Kill Kobold Vermins. Loot them for the [Nibbled-On Book]"
+  use 247834 @47.569,34.967 map 1429 -- Use the [Nibbled-On Book] to start the quest
+  note "It is important to turn in this quest as soon as you get the [Nibbled-On Book] drop"
+  collect 247834 x1 optional -- Nibbled-On Book (1)
+  accept 91741 -- Accept Nibbled-On Book
+  kill 6 x10 quest 7.1 -- Kill Kobold Vermin (x10)
+step
+  along until next_12
+  zone map 1429
+  goto 48.181993,42.090389 map 1429 r 10 optional
+  goto 49.308524,40.668967 map 1429 r 10 optional -- Travel toward Brother Paxton in Northshire Abbey. Don't worry about completing Vermins or Wolves straight away
+step
+  label next_12
+  zone map 1429
+  note "Talk to Brother Paxton"
+  turnin 91741 -- Turn in Nibbled-On Book
+  accept 92124 -- Accept Book Inventory
+step
+  zone map 1429
+  note "Talk to Daniel"
+  turnin 92124 -- Turn in Book Inventory
+step
+  zone map 1429
+  note "Talk to Brother Paxton"
+  accept 91743 -- Accept Rascally Rodents
+step
+  loop
+  zone map 1429
+  goto 47.601,36.72 map 1429 r 1
+  goto 49.215,37.01 map 1429 r 1
+  goto 47.569,34.967 map 1429 r 1
+  goto 47.601,36.72 map 1429 r 45
+  goto 47.381,36.314 map 1429 r 45
+  goto 47.611,35.863 map 1429 r 45
+  goto 48.314,36.487 map 1429 r 45
+  goto 49.07,36.438 map 1429 r 45
+  goto 49.215,37.01 map 1429 r 45
+  goto 49.838,36.413 map 1429 r 45
+  goto 50.105,35.668 map 1429 r 45
+  goto 49.823,35.161 map 1429 r 45
+  goto 48.845,35.066 map 1429 r 45
+  goto 47.569,34.967 map 1429 r 45
+  note "Kill Kobold Vermins. Loot them for their Stolen Books"
+  note "Don't go out of your way to loot all Stolen Books yet"
+  kill 6 x10 quest 7.1 -- Kill Kobold Vermin (x10)
+  collect 247839 x8 quest 91743.1 -- Stolen Book (8)
+step
+  zone map 1429
+  note "Kill Young Wolves and Timber Wolves. Loot them for their Tough Wolf Meat"
+  collect 750 x8 quest 33.1 @47.976,39.422 map 1429 -- Collect Tough Wolf Meat (x8)
+step
+  zone map 1429
+  goto 48.940889,40.166069 map 1429 r 8 optional
+  note "Talk to Eagan Peltskinner"
+  turnin 33 only Warrior -- Turn in Wolves Across The Border
+  turnin 33 only Paladin -- Turn in Wolves Across The Border
+  turnin 33 only Rogue -- Turn in Wolves Across The Border
+  turnin 33 only !Warrior,!Paladin,!Rogue -- Turn in Wolves Across The Border
+step
+  only Priest
+  zone map 1429
+  note "Talk to Brother Danil"
+  note "Vendor Trash"
+  note "Buy 10 more [Refreshing Spring Water] from him"
+  note "Make sure you save 10c or more for later" only Priest
+  note "Make sure you save 10c or more for later" only Mage
+  collect 159 x10 @47.485907,41.565889 map 1429 -- Collect Refreshing Spring Water (x10)
+step
+  only Mage
+  zone map 1429
+  note "Talk to Brother Danil"
+  note "Vendor Trash"
+  note "Buy 10 more [Refreshing Spring Water] from him"
+  note "Make sure you save 10c or more for later" only Priest
+  note "Make sure you save 10c or more for later" only Mage
+  collect 159 x10 @47.485907,41.565889 map 1429 -- Collect Refreshing Spring Water (x10)
+step
+  only Warlock
+  zone map 1429
+  note "Talk to Brother Danil"
+  note "Vendor Trash"
+  note "Buy 10 more [Refreshing Spring Water] from him"
+  note "Make sure you save 10c or more for later" only Priest
+  note "Make sure you save 10c or more for later" only Mage
+  collect 159 x10 @47.485907,41.565889 map 1429 -- Collect Refreshing Spring Water (x10)
+step
+  only Warrior,Paladin,Hunter,Shaman,Druid
+  zone map 1429
+  note "Talk to Godric Rothgar"
+  vendor 1213 -- Vendor Trash
+step
+  only Rogue
+  zone map 1429
+  note "Talk to Janos Hammerknuckle"
+  vendor 78 -- Buy a [Dirk] or [Hand Axe] from him if you can afford it
+step
+  only Rogue
+  when has 2139
+  along until CleanupEnd
+  zone map 1429
+  note "Equip the [Dirk]"
+  use 2139 @47.240145,41.899858 map 1429 optional
+step
+  only Rogue
+  when has 2134
+  along until CleanupEnd
+  zone map 1429
+  note "Equip the [Hand Axe]"
+  use 2134 @47.240145,41.899858 map 1429 optional
+step
+  label CleanupEnd
+  zone map 1429
+  note "Talk to Marshal McBride"
+  turnin 7 -- Turn in Kobold Camp Cleanup
+  accept 15 -- Accept Investigate Echo Ridge
+  accept 3100 only Human,Warrior -- Accept Simple Letter
+  accept 3101 only Human,Paladin -- Accept Consecrated Letter
+  accept 3102 only Human,Rogue -- Accept Encrypted Letter
+  accept 3103 only Human,Priest -- Accept Hallowed Letter
+  accept 3104 only Human,Mage -- Accept Glyphic Letter
+  accept 3105 only Human,Warlock -- Accept Tainted Letter
+  accept 92479 only Human,Hunter -- Accept A Scribbled Letter
+step
+  only Warlock
+  zone map 1429
+  note "Talk to Deputy Willem outside"
+  accept 18 -- Accept Brotherhood of Thieves
+step
+  only Warlock
+  when onquest 3105
+  turnin 3105 -- Turn in Tainted Letter
+step
+  only Warlock
+  zone map 1429
+  note "Talk to Drusilla La Salle"
+  accept 1598 -- Accept The Stolen Tome
+  learn 348 "Immolate"
+step
+  only Warlock
+  when onquest 1598
+  zone map 1429
+  note "Open the Stolen Books. Loot it for the Powers of the Void"
+  collect 6785 x1 quest 1598.1 @56.700119,44.000021 map 1429 -- Collect Powers of the Void (x1)
+step
+  only Warlock
+  along until next_28
+  zone map 1429
+  goto 49.527,43.491 map 1429 r 1
+  note "Die and respawn at the Spirit Healer"
+  note "If there are no Defias nearby, run back instead"
+step
+  only Warlock
+  when onquest 1598
+  label next_28
+  zone map 1429
+  note "Talk to Drusilla La Salle"
+  turnin 1598 -- Turn in The Stolen Tome
+step
+  only Warlock
+  along until next_30
+  note "Cast [Summon Imp]"
+step
+  label next_30
+  along until next_31
+  zone map 1429
+  note "Kill Kobolds. Loot them for their Stolen Books"
+  collect 247839 x8 quest 91743.1 @49.872941,42.649021 map 1429 -- Stolen Book (8)
+step
+  label next_31
+  loop
+  zone map 1429
+  goto 47.468,36.298 map 1429 r 1
+  goto 50.224,34.125 map 1429 r 1
+  goto 50.835,38.046 map 1429 r 1
+  goto 47.468,36.298 map 1429 r 45
+  goto 47.247,35.164 map 1429 r 45
+  goto 47.012,33.828 map 1429 r 45
+  goto 46.774,33.271 map 1429 r 45
+  goto 46.271,32.489 map 1429 r 45
+  goto 47.663,32.058 map 1429 r 45
+  goto 48.038,33.075 map 1429 r 45
+  goto 48.795,33.815 map 1429 r 45
+  goto 49.278,34.61 map 1429 r 45
+  goto 50.224,34.125 map 1429 r 45
+  goto 50.245,34.884 map 1429 r 45
+  goto 51.058,35.582 map 1429 r 45
+  goto 52.062,35.801 map 1429 r 45
+  goto 51.505,38.064 map 1429 r 45
+  goto 50.835,38.046 map 1429 r 45
+  note "Kill Kobold Workers"
+  kill 257 x10 quest 15.1 -- Kill Kobold Worker (x10)
+step
+  label xp3
+  loop
+  zone map 1429
+  goto 47.468,36.298 map 1429 r 1
+  goto 50.224,34.125 map 1429 r 1
+  goto 50.835,38.046 map 1429 r 1
+  goto 47.468,36.298 map 1429 r 45
+  goto 47.247,35.164 map 1429 r 45
+  goto 47.012,33.828 map 1429 r 45
+  goto 46.774,33.271 map 1429 r 45
+  goto 46.271,32.489 map 1429 r 45
+  goto 47.663,32.058 map 1429 r 45
+  goto 48.038,33.075 map 1429 r 45
+  goto 48.795,33.815 map 1429 r 45
+  goto 49.278,34.61 map 1429 r 45
+  goto 50.224,34.125 map 1429 r 45
+  goto 50.245,34.884 map 1429 r 45
+  goto 51.058,35.582 map 1429 r 45
+  goto 52.062,35.801 map 1429 r 45
+  goto 51.505,38.064 map 1429 r 45
+  goto 50.835,38.046 map 1429 r 45
+  level 3+1110 -- Grind to 1110+/1400xp
+  note "Kill Kobold Workers for Stolen Books if you still need them"
+  collect 247839 x8 quest 91743.1 -- Stolen Book (8)
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  along until next_34
+  zone map 1429
+  note "Talk to Godric Rothgar"
+  vendor 1213 -- Vendor trash
+step
+  only Hunter
+  label next_34
+  zone map 1429
+  note "Talk to Brother Danil"
+  vendor 152 -- Buy 2 stacks of [Rough Arrows]
+step
+  label Investigate
+  zone map 1429
+  note "Talk to Marshal McBride"
+  turnin 15 -- Turn in Investigate Echo Ridge
+  accept 21 -- Accept Skirmish at Echo Ridge
+step
+  when complete 91743
+  zone map 1429
+  note "Talk to Brother Paxton"
+  turnin 91743 -- Turn in Rascally Rodents
+  accept 91745 -- Accept Mining Consultant
+step
+  when turnedin 91743
+  zone map 1429
+  note "Talk to Brother Paxton"
+  accept 91745 -- Accept Mining Consultant
+step
+  only Mage
+  along until next_39
+  zone map 1429
+  goto 48.79,41.58 map 1429 r 12 optional
+  goto 48.975,41.146 map 1429 r 12 optional
+  goto 49.262,40.633 map 1429 r 12 optional
+  goto 49.51,40.095 map 1429 r 6 optional
+  goto 49.691,40.23 map 1429 r 6 optional
+  goto 49.595,40.673 map 1429 r 6 optional
+  goto 49.324,40.492 map 1429 r 6 optional
+  goto 49.436,39.881 map 1429 r 10 optional
+  goto 49.660888,39.402216 map 1429 r 12 optional -- Travel toward Khelden Bremen upstairs
+step
+  only Mage
+  when onquest 3104
+  turnin 3104 -- Turn in Glyphic Letter
+step
+  only Mage
+  label next_39
+  zone map 1429
+  note "Talk to Khelden Bremen inside upstairs"
+  train 198 -- Train your class spells
+step
+  only Priest
+  along until next_41
+  zone map 1429
+  goto 49.29988,40.700074 map 1429 r 15 optional
+  goto 49.800048,40.2002 map 1429 r 10 optional -- Travel toward Priestess Anetta inside downstairs
+step
+  only Priest
+  when onquest 3103
+  turnin 3103 -- Turn in Hallowed Letter
+step
+  only Priest
+  label next_41
+  zone map 1429
+  note "Talk to Priestess Anetta inside downstairs"
+  train 375 -- Train your class spells
+step
+  only Warrior
+  along until next_43
+  zone map 1429
+  goto 49.600096,41.800056 map 1429 r 15 optional only Warrior -- Travel toward Llane Beshere inside downstairs
+  goto 49.600096,41.800056 map 1429 r 15 optional only Paladin -- Travel toward Brother Sammuel inside downstairs
+step
+  only Paladin
+  along until next_43
+  zone map 1429
+  goto 49.600096,41.800056 map 1429 r 15 optional only Warrior -- Travel toward Llane Beshere inside downstairs
+  goto 49.600096,41.800056 map 1429 r 15 optional only Paladin -- Travel toward Brother Sammuel inside downstairs
+step
+  only Warrior
+  when onquest 3100
+  turnin 3100 -- Turn in Simple Letter
+step
+  only Warrior
+  label next_43
+  zone map 1429
+  note "Talk to Llane Beshere inside downstairs"
+  train 911 -- Train your class spells
+step
+  only Paladin
+  when onquest 3101
+  turnin 3101 -- Turn in Consecrated Letter
+step
+  only Paladin
+  zone map 1429
+  note "Talk to Brother Sammuel"
+  train 925 -- Train your class spells
+step
+  zone map 1429
+  note "Talk to Deputy Willem outside"
+  accept 18 -- Accept Brotherhood of Thieves
+step
+  only Hunter
+  when onquest 92479
+  turnin 92479 -- Turn in A Scribbled Letter
+step
+  only Hunter
+  zone map 1429
+  goto 51.212965,40.811541 map 1429 r 8 optional
+  note "Talk to Tordrin Sternblade::248415"
+  train class -- Train your class spells
+step
+  only Warlock
+  zone map 1429
+  goto 49.872941,42.649021 map 1429 r 8
+  note "Talk to Drusilla La Salle"
+  learn 172 "Corruption"
+step
+  loop
+  zone map 1429
+  goto 52.550108,48.790084 map 1429 r 1
+  goto 55.430107,45.869904 map 1429 r 1
+  goto 52.550108,48.790084 map 1429 r 30
+  goto 53.890131,50.519986 map 1429 r 30
+  goto 55.090131,49.000057 map 1429 r 30
+  goto 55.430107,45.869904 map 1429 r 30
+  goto 53.859879,47.049814 map 1429 r 30
+  note "Kill Defias Thugs. Loot them for their Red Burlap Bandanas"
+  collect 752 x12 quest 18.1 -- Collect Red Burlap Bandana (x12)
+step
+  only Rogue
+  zone map 1429
+  goto 52.550108,48.790084 map 1429 r 1 optional
+  goto 55.430107,45.869904 map 1429 r 1 optional
+  goto 52.550108,48.790084 map 1429 r 30 optional
+  goto 53.890131,50.519986 map 1429 r 30 optional
+  goto 55.090131,49.000057 map 1429 r 30 optional
+  goto 55.430107,45.869904 map 1429 r 30 optional
+  goto 53.859879,47.049814 map 1429 r 30 optional
+  level 4 -- Grind to level 4
+step
+  zone map 1429
+  goto 48.169892,42.940219 map 1429 r 8 optional
+  note "Talk to Deputy Willem"
+  turnin 18 only Rogue -- Turn in Brotherhood of Thieves
+  turnin 18 only Warlock -- Turn in Brotherhood of Thieves
+  turnin 18 only Priest -- Turn in Brotherhood of Thieves
+  turnin 18 only Warrior -- Turn in Brotherhood of Thieves
+  turnin 18 only Paladin -- Turn in Brotherhood of Thieves
+  turnin 18 only Mage -- Turn in Brotherhood of Thieves
+  turnin 18 only !Warrior,!Priest,!Mage,!Rogue,!Warlock,!Paladin -- Turn in Brotherhood of Thieves
+  accept 3903 -- Accept Milly Osworth
+  accept 6 -- Accept Bounty on Garrick Padfoot
+step
+  only Paladin
+  when has 5579
+  along until RestandR
+  zone map 1429
+  note "Equip the [Militia Warhammer]"
+  use 5579 @48.169892,42.940219 map 1429 optional
+step
+  only Rogue
+  when has 2224
+  along until RestandR
+  zone map 1429
+  note "Equip the [Militia Dagger]"
+  use 2224 @48.169892,42.940219 map 1429 optional
+step
+  only Warrior
+  when has 1161
+  along until RestandR
+  zone map 1429
+  note "Equip the [Militia Shortsword]"
+  use 1161 @48.169892,42.940219 map 1429 optional
+step
+  when onquest 91745
+  zone map 1429
+  note "Talk to Kelsey Fargo::247226"
+  turnin 91745 -- Turn in Mining Consultant
+  accept 91752 -- Accept The Big Picture
+step
+  when turnedin 91745
+  zone map 1429
+  note "Talk to Kelsey Fargo::247226"
+  accept 91752 -- Accept The Big Picture
+step
+  along until KoboldLaborers
+  zone map 1429
+  goto 47.629964,32.07001 map 1429 r 20 -- Enter the Echo Ridge Mine
+step
+  when onquest 91752
+  along until KoboldLaborers
+  zone map 1429
+  note "Kill Shinyfinder Narf. Loot him for the Sack of \"Picture\" Books"
+  collect 247886 x1 quest 91752.1 @49.213446,27.997181 map 1429 -- 1/1 Sack of "Picture" Books
+step
+  when onquest 91743
+  along until KoboldLaborers
+  zone map 1429
+  note "Kill Kobold Laborers and Kobold Workers. Loot them for their Stolen Books"
+  collect 247839 x8 quest 91743.1 @49.213446,27.997181 map 1429 -- Stolen Book (8)
+step
+  label KoboldLaborers
+  loop
+  zone map 1429
+  goto 47.784,31.54 map 1429 r 1
+  goto 48.659,29.161 map 1429 r 1
+  goto 50.491,26.867 map 1429 r 1
+  goto 47.784,31.54 map 1429 r 30
+  goto 47.909,30.85 map 1429 r 30
+  goto 48.107,30.271 map 1429 r 30
+  goto 48.428,30.248 map 1429 r 30
+  goto 48.398,29.842 map 1429 r 30
+  goto 48.659,29.161 map 1429 r 30
+  goto 48.245,28.598 map 1429 r 30
+  goto 48.637,27.354 map 1429 r 30
+  goto 48.501,26.7 map 1429 r 30
+  goto 49.979,25.62 map 1429 r 30
+  goto 50.491,26.867 map 1429 r 30
+  note "Kill Kobold Laborers inside Echo Ridge Mine"
+  kill 80 x12 quest 21.1 -- Kill Kobold Laborer (x12)
+step
+  when onquest 91743
+  loop
+  zone map 1429
+  goto 47.784,31.54 map 1429 r 1
+  goto 48.659,29.161 map 1429 r 1
+  goto 50.491,26.867 map 1429 r 1
+  goto 47.784,31.54 map 1429 r 30
+  goto 47.909,30.85 map 1429 r 30
+  goto 48.107,30.271 map 1429 r 30
+  goto 48.428,30.248 map 1429 r 30
+  goto 48.398,29.842 map 1429 r 30
+  goto 48.659,29.161 map 1429 r 30
+  goto 48.245,28.598 map 1429 r 30
+  goto 48.637,27.354 map 1429 r 30
+  goto 48.501,26.7 map 1429 r 30
+  goto 49.979,25.62 map 1429 r 30
+  goto 50.491,26.867 map 1429 r 30
+  note "Kill Kobold Laborers and Kobold Workers. Loot them for their Stolen Books"
+  collect 247839 x8 quest 91743.1 -- Stolen Book (8)
+step
+  when onquest 91752
+  zone map 1429
+  note "Kill Shinyfinder Narf. Loot him for the Sack of \"Picture\" Books"
+  collect 247886 x1 quest 91752.1 @49.213446,27.997181 map 1429 -- 1/1 Sack of "Picture" Books
+step
+  zone map 1429
+  note "Talk to Milly Osworth"
+  note "Skip the followup" only !Priest,!Mage
+  turnin 3903 -- Turn in Milly Osworth
+  accept 3904 only Priest -- Accept Milly's Harvest
+  accept 3904 only Mage -- Accept Milly's Harvest
+step
+  only Rogue
+  when onquest 3102
+  zone map 1429
+  note "Talk to Jorik Kerridan"
+  turnin 3102 -- Turn in Encrypted Letter
+  learn 1784 "Stealth"
+  learn 921 "Pick Pocket"
+step
+  only Priest
+  when onquest 3904
+  loop
+  zone map 1429
+  goto 52.550108,48.790084 map 1429 r 1
+  goto 55.430107,45.869904 map 1429 r 1
+  goto 52.550108,48.790084 map 1429 r 30
+  goto 53.890131,50.519986 map 1429 r 30
+  goto 55.090131,49.000057 map 1429 r 30
+  goto 55.430107,45.869904 map 1429 r 30
+  goto 53.859879,47.049814 map 1429 r 30
+  note "Loot Milly's Harvest on the ground"
+  collect 11119 x8 quest 3904.1 -- Collect Milly's Harvest (x8)
+step
+  only Mage
+  when onquest 3904
+  loop
+  zone map 1429
+  goto 52.550108,48.790084 map 1429 r 1
+  goto 55.430107,45.869904 map 1429 r 1
+  goto 52.550108,48.790084 map 1429 r 30
+  goto 53.890131,50.519986 map 1429 r 30
+  goto 55.090131,49.000057 map 1429 r 30
+  goto 55.430107,45.869904 map 1429 r 30
+  goto 53.859879,47.049814 map 1429 r 30
+  note "Loot Milly's Harvest on the ground"
+  collect 11119 x8 quest 3904.1 -- Collect Milly's Harvest (x8)
+step
+  zone map 1429
+  note "Kill Garrick Padfoot. Loot him for his Head"
+  collect 182 x1 quest 6.1 -- Collect Garrick's Head (x1)
+step
+  zone map 1429
+  goto 52.550108,48.790084 map 1429 r 1 optional
+  goto 55.430107,45.869904 map 1429 r 1 optional
+  goto 52.550108,48.790084 map 1429 r 30 optional
+  goto 53.890131,50.519986 map 1429 r 30 optional
+  goto 55.090131,49.000057 map 1429 r 30 optional
+  goto 55.430107,45.869904 map 1429 r 30 optional
+  goto 53.859879,47.049814 map 1429 r 30 optional
+  level 5 -- Grind to level 5
+step
+  along until next_68
+  note "Die and respawn at the Spirit Healer"
+step
+  only Priest
+  when onquest 3904
+  turnin 3904 -- Turn in Milly's Harvest
+step
+  only Mage
+  when onquest 3904
+  turnin 3904 -- Turn in Milly's Harvest
+step
+  only Priest
+  label next_68
+  zone map 1429
+  note "Talk to Milly Osworth"
+  accept 3905 -- Accept Grape Manifest
+step
+  only Mage
+  zone map 1429
+  note "Talk to Milly Osworth"
+  accept 3905 -- Accept Grape Manifest
+step
+  zone map 1429
+  goto 48.169892,42.940219 map 1429 r 8 optional
+  note "Talk to Deputy Willem"
+  turnin 6 only Warrior -- Turn in Bounty on Garrick Padfoot
+  turnin 6 only Rogue -- Turn in Bounty on Garrick Padfoot
+  turnin 6 only Paladin -- Turn in Bounty on Garrick Padfoot
+  turnin 6 only !Warrior,!Rogue,!Paladin -- Turn in Bounty on Garrick Padfoot
+step
+  when onquest 91752
+  zone map 1429
+  note "Talk to Marshal McBride inside"
+  turnin 91752 -- Turn in The Big Picture
+  accept 91758 -- Accept Follow That Kobold!
+step
+  when turnedin 91752
+  zone map 1429
+  note "Talk to Marshal McBride inside"
+  accept 91758 -- Accept Follow That Kobold!
+step
+  label RestandR
+  zone map 1429
+  goto 48.923025,41.606069 map 1429 r 8 optional
+  note "Talk to Marshal McBride inside"
+  turnin 21 only Rogue -- Turn in Skirmish at Echo Ridge
+  turnin 21 only Warrior -- Turn in Skirmish at Echo Ridge
+  turnin 21 only Paladin -- Turn in Skirmish at Echo Ridge
+  turnin 21 only !Warrior,!Paladin,!Rogue -- Turn in Skirmish at Echo Ridge
+  accept 54 -- Accept Report to Goldshire
+  accept 96627 -- Accept The Adventurer
+step
+  when complete 91743
+  zone map 1429
+  note "Talk to Brother Paxton"
+  turnin 91743 -- Turn in Rascally Rodents
+  accept 91745 -- Accept Mining Consultant
+step
+  when turnedin 91743
+  zone map 1429
+  note "Talk to Brother Paxton"
+  accept 91745 -- Accept Mining Consultant
+step
+  only Priest
+  along until next_76
+  zone map 1429
+  goto 49.600096,41.60002 map 1429 r 15 optional
+  goto 48.899976,41.300182 map 1429 r 10 optional -- Travel upstairs
+step
+  only Mage
+  along until next_76
+  zone map 1429
+  goto 49.600096,41.60002 map 1429 r 15 optional
+  goto 48.899976,41.300182 map 1429 r 10 optional -- Travel upstairs
+step
+  only Priest
+  when onquest 3905
+  label next_76
+  zone map 1429
+  note "Talk to Brother Neals upstairs"
+  turnin 3905 -- Turn in Grape Manifest
+step
+  only Mage
+  when onquest 3905
+  zone map 1429
+  note "Talk to Brother Neals upstairs"
+  turnin 3905 -- Turn in Grape Manifest
+step
+  only Priest
+  zone map 1429
+  note "Talk to Priestess Anetta inside"
+  accept 5623 -- Accept In Favor of the Light
+step
+  when onquest 91745
+  zone map 1429
+  note "Talk to Kelsey Fargo::247226"
+  turnin 91745 -- Turn in Mining Consultant
+  accept 91752 -- Accept The Big Picture
+step
+  when turnedin 91745
+  zone map 1429
+  note "Talk to Kelsey Fargo::247226"
+  accept 91752 -- Accept The Big Picture
+step
+  when onquest 91752
+  zone map 1429
+  note "Kill Shinyfinder Narf. Loot him for the Sack of \"Picture\" Books"
+  collect 247886 x1 quest 91752.1 @49.213446,27.997181 map 1429 -- 1/1 Sack of "Picture" Books
+step
+  along until next_83
+  note "Die and respawn at the Spirit Healer"
+step
+  when onquest 91752
+  label next_83
+  zone map 1429
+  note "Talk to Marshal McBride inside"
+  turnin 91752 -- Turn in The Big Picture
+  accept 91758 -- Accept Follow That Kobold!
+step
+  when turnedin 91752
+  zone map 1429
+  note "Talk to Marshal McBride inside"
+  accept 91758 -- Accept Follow That Kobold!
+step
+  when onquest 91758
+  zone map 1429
+  note "Talk to Tordrin Sternblade::248415 outside the Abbey"
+  turnin 91758 -- Turn in Follow That Kobold!
+  accept 91772 -- Accept Shhh! We're Hunting Kobolds
+step
+  when turnedin 91758
+  zone map 1429
+  note "Talk to Tordrin Sternblade::248415 outside the Abbey"
+  accept 91772 -- Accept Shhh! We're Hunting Kobolds
+step
+  along until RnR
+  zone map 1429
+  note "Use the [Kobold Tracking Kit] to see the Kobold Tracks on your minimap"
+  use 247970 @51.210084,40.815862 map 1429
+step
+  when onquest 91772
+  along until RnR
+  zone map 1429
+  use 247970 @45.563026,47.741947 map 1429
+  interact 563442 quest 91772.1 -- Followed Kobold Tracks 6/6
+step
+  label RnR
+  zone map 1429
+  note "Talk to Falkhaan Isenstrider"
+  accept 2158 -- Accept Rest and Relaxation

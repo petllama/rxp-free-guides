@@ -1,0 +1,479 @@
+guide rxp-free/16-17-ragefire-chasm-efced763
+title "16-17 Ragefire Chasm"
+levels 16-17
+zone map 1454
+coords era
+faction Horde
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · Dungeon Guide 1-22"
+next rxp-free/17-18-ruins-of-lordaeron-a3aa8a28
+step
+  along until EnterRFC
+  note "If possible, have party members share the following quest"
+  note "If needed, ask someone in Undercity for a share"
+  accept 5725 -- Accept The Power to Destroy...
+step
+  along until EnterRFC
+  note "If possible, have party members share the following quests"
+  note "If needed, ask someone in Thunder Bluff for a share"
+  accept 5722 -- Accept Searching for the Lost Satchel
+  accept 5723 -- Accept Testing an Enemy's Strength
+step
+  only Shaman,Tauren
+  along until EnterRFC
+  zone map 1414
+  goto 56.809993,45.470016 map 1414 r 8
+step
+  only Shaman,Orc
+  along until EnterRFC
+  zone map 1414
+  goto 56.809993,45.470016 map 1414 r 8
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Skyborne
+  when !zone "Orgrimmar"
+  along until EnterRFC
+  zone map 1413
+  goto 51.5,30.34 map 1413 r 8
+  note "Talk to Devrak"
+  fly "Orgrimmar" -- Fly to Orgrimmar
+step
+  along until next_6
+  skill "First Aid" 40 -- Create [Linen Bandages] until your skill is 40 or higher
+step
+  label next_6
+  zone map 1454
+  goto 34.179901,84.529985 map 1454 r 8
+  note "Talk to Arnok"
+  note "Skip this step if you did not have enough [Linen Cloth] to reach 40 skill"
+  learn 3276 "Heavy Linen Bandage"
+step
+  along until next_8
+  skill "First Aid" 50 -- Create [Heavy Linen Bandages] until your skill is 50 or higher
+step
+  label next_8
+  zone map 1454
+  goto 34.179901,84.529985 map 1454 r 8
+  note "Talk to Arnok"
+  note "Skip this step if you did not have enough [Linen Cloth] to reach 50 skill"
+  learn 3274 "Journeyman First Aid"
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid,Skyborne
+  when has 814 x5
+  along until EnterRFC
+  note "Make sure you don't sell your [Flask of Oil]"
+step
+  only Priest
+  when level>=16
+  when level<18
+  zone map 1454
+  goto 35.590134,87.800187 map 1454 r 8
+  note "Talk to Ur'kyo"
+  learn 8102 "your class spells"
+step
+  only Priest
+  when level>=18
+  zone map 1454
+  goto 35.590134,87.800187 map 1454 r 8
+  note "Talk to Ur'kyo"
+  learn 970 "your class spells"
+step
+  only Mage
+  when level>=16
+  when level<18
+  zone map 1454
+  goto 38.35998,85.54023 map 1454 r 8
+  note "Talk to Pephredo"
+  learn 2120 "your class spells"
+step
+  only Mage
+  when level>=18
+  zone map 1454
+  goto 38.35998,85.54023 map 1454 r 8
+  note "Talk to Pephredo"
+  learn 3140 "your class spells"
+step
+  only Orc
+  when onquest 6384
+  turnin 6384 -- Turn in Ride to Orgrimmar
+step
+  only Troll
+  when onquest 6384
+  turnin 6384 -- Turn in Ride to Orgrimmar
+step
+  only Orc
+  when onquest 6384
+  zone map 1454
+  note "Talk to Gryshka"
+  accept 6385 -- Accept Doras the Wind Rider Master
+step
+  only Orc
+  when turnedin 6384
+  zone map 1454
+  note "Talk to Gryshka"
+  accept 6385 -- Accept Doras the Wind Rider Master
+step
+  only Troll
+  when onquest 6384
+  zone map 1454
+  note "Talk to Gryshka"
+  accept 6385 -- Accept Doras the Wind Rider Master
+step
+  only Troll
+  when turnedin 6384
+  zone map 1454
+  note "Talk to Gryshka"
+  accept 6385 -- Accept Doras the Wind Rider Master
+step
+  only Orc
+  when onquest 6385
+  turnin 6385 -- Turn in Doras the Wind Rider Master
+step
+  only Troll
+  when onquest 6385
+  turnin 6385 -- Turn in Doras the Wind Rider Master
+step
+  only Orc
+  when onquest 6385
+  zone map 1454
+  note "Talk to Doras"
+  accept 6386 -- Accept Return to the Crossroads
+step
+  only Orc
+  when turnedin 6385
+  zone map 1454
+  note "Talk to Doras"
+  accept 6386 -- Accept Return to the Crossroads
+step
+  only Troll
+  when onquest 6385
+  zone map 1454
+  note "Talk to Doras"
+  accept 6386 -- Accept Return to the Crossroads
+step
+  only Troll
+  when turnedin 6385
+  zone map 1454
+  note "Talk to Doras"
+  accept 6386 -- Accept Return to the Crossroads
+step
+  only Orc
+  when turnedin 6385
+  zone map 1454
+  note "Talk to Doras"
+  accept 6386 -- Accept Return to the Crossroads
+step
+  only Troll
+  when turnedin 6385
+  zone map 1454
+  note "Talk to Doras"
+  accept 6386 -- Accept Return to the Crossroads
+step
+  only Tauren
+  when !turnedin 4921
+  zone map 1454
+  note "Talk to Doras"
+  note "Don't fly anywhere!"
+  getfp "Orgrimmar" @45.13024,63.88997 map 1454 -- Get the Orgrimmar flight path
+step
+  only Undead
+  when !turnedin 4921
+  zone map 1454
+  note "Talk to Doras"
+  note "Don't fly anywhere!"
+  getfp "Orgrimmar" @45.13024,63.88997 map 1454 -- Get the Orgrimmar flight path
+step
+  only Warrior
+  when level>=16
+  when level<18
+  zone map 1454
+  goto 79.909811,31.360058 map 1454 r 8
+  note "Talk to Grezz"
+  learn 285 "your class spells"
+step
+  only Warrior
+  when level>=18
+  zone map 1454
+  goto 79.909811,31.360058 map 1454 r 8
+  note "Talk to Grezz"
+  learn 8198 "your class spells"
+step
+  only Hunter
+  when level>=16
+  when level<18
+  zone map 1454
+  goto 66.049886,18.519782 map 1454 r 8
+  note "Talk to Ormak"
+  learn 13795 "your class spells"
+step
+  only Hunter
+  when level>=18
+  zone map 1454
+  goto 66.049886,18.519782 map 1454 r 8
+  note "Talk to Ormak"
+  learn 2643 "your class spells"
+step
+  only Hunter
+  when level>=18
+  zone map 1454
+  goto 66.34006,14.830514 map 1454 r 8
+  note "Talk to Xao'tsu"
+  learn 24557 "your pet spells"
+step
+  only Hunter,Troll
+  zone map 1454
+  goto 81.519672,19.599515 map 1454 r 8 optional
+  note "Talk to Hanashi"
+  learn 227 "Staves"
+step
+  only Hunter,Tauren
+  zone map 1454
+  goto 81.519672,19.599515 map 1454 r 8
+  note "Talk to Hanashi"
+  learn 264 "Bows"
+step
+  only Warrior,Human,Dwarf,Gnome,NightElf,Orc,Troll,Tauren,Undead
+  zone map 1454
+  goto 81.519672,19.599515 map 1454 r 8 optional
+  note "Talk to Hanashi"
+  learn 197 "Two-Handed Axes"
+  learn 227 "Staves"
+step
+  only Hunter
+  zone map 1454
+  goto 81.170322,18.689759 map 1454 r 8
+  note "Talk to Zendo'jian. Buy a [Reinforced Bow] from him"
+  collect 3026 x1 @81.170322,18.689759 map 1454 optional -- Collect Reinforced Bow (1)
+step
+  only Warrior
+  zone map 1454
+  goto 81.170322,18.689759 map 1454 r 8
+  note "Talk to Zendo'jian. Buy a [Battle Axe] from him"
+  collect 926 x1 @81.170322,18.689759 map 1454 optional -- Collect Battle Axe (1)
+step
+  only Shaman
+  when level>=16
+  when level<18
+  zone map 1454
+  goto 38.819839,36.410217 map 1454 r 8
+  note "Talk to Kardris"
+  learn 8019 "your class spells"
+step
+  only Shaman
+  when level>=18
+  zone map 1454
+  goto 38.819839,36.410217 map 1454 r 8
+  note "Talk to Kardris"
+  learn 913 "your class spells"
+step
+  zone map 1454
+  note "Talk to Thrall"
+  accept 5726 -- Accept Hidden Enemies
+step
+  along until next_36
+  zone map 1454
+  goto 48.970238,92.839656 map 1454 r 50 optional
+step
+  label next_36
+  zone map 1411
+  note "Kill Burning Blade mobs in Skull Rock until Lieutenant's Insignia drops"
+  collect 14544 x1 quest 5726.1 @53.08,9.19 map 1411 -- Lieutenant's Insignia (1)
+step
+  along until next_38
+  zone map 1454
+  goto 48.970238,92.839656 map 1454 r 50 optional
+step
+  label next_38
+  zone map 1454
+  note "Talk to Thrall"
+  turnin 5726 -- Turn in Hidden Enemies
+  accept 5727 -- Accept Hidden Enemies
+step
+  only Rogue
+  zone map 1454
+  note "Talk to Shenthul"
+  learn 1804 "Pick Lock"
+  learn 921 "Pick Pocket"
+  accept 2379 -- Accept Zando'Zan
+step
+  only Rogue,Orc
+  when onquest 1963
+  turnin 1963 -- Turn in The Shattered Hand
+step
+  only Rogue,Orc
+  zone map 1454
+  note "Talk to Therzok"
+  accept 1858 -- Accept The Shattered Hand
+step
+  only Rogue
+  when onquest 2379
+  turnin 2379 -- Turn in Zando'zan
+step
+  only Rogue
+  zone map 1454
+  note "Talk to Zando'zan"
+  accept 2382 -- Accept Wrenix of Ratchet
+step
+  only Rogue,Orc
+  along until next_43
+  zone map 1454
+  goto 42.100164,49.510271 map 1454 r 8 optional
+  note "Talk to Rekkul. Buy a [Thieves' Tools] from him"
+  collect 5060 x1 @42.100164,49.510271 map 1454 optional -- Collect Thieves' Tools (1)
+step
+  only Rogue,Orc
+  label next_43
+  zone map 1454
+  goto 42.739688,53.520252 map 1454 r 8 optional
+  note "Use [Pick Lock] to open [Tazan's Satchel]"
+  collect 7295 x1 quest 1858.1 @42.739688,53.520252 map 1454 -- Tazan's Logbook (1)
+step
+  only Rogue,Orc
+  when onquest 1858
+  zone map 1454
+  note "Talk to Therzok"
+  turnin 1858 -- Turn in The Shattered Hand
+step
+  only Rogue,Orc
+  when onquest 1858
+  when !turnedin 1858
+  zone map 1454
+  note "Use [Pick Pocket] on Gamon in the Inn. Use his key to open [Tazan's Satchel]"
+  collect 7208 x1 @53.990183,68.049616 map 1454 -- Tazan's Key
+  collect 7295 x1 quest 1858.1 -- Tazan's Logbook (1)
+step
+  only Rogue,Orc
+  when onquest 1858
+  zone map 1454
+  note "Talk to Therzok"
+  turnin 1858 -- Turn in The Shattered Hand
+step
+  only Warlock
+  when level>=16
+  when level<18
+  zone map 1454
+  goto 48.620175,46.949913 map 1454 r 8
+  note "Talk to Mirket"
+  learn 1455 "your class spells"
+step
+  only Warlock
+  when level>=18
+  zone map 1454
+  goto 48.620175,46.949913 map 1454 r 8
+  note "Talk to Mirket"
+  learn 1014 "your class spells"
+step
+  only Warlock
+  when level>=16
+  when level<18
+  when !turnedin 896
+  zone map 1454
+  note "Talk to Kurgul and buy [Grimoire of Sacrifice]"
+  collect 16351 x1 @47.540042,46.750002 map 1454 -- Grimoire of Sacrifice (Rank 1) (1)
+step
+  only Warlock
+  when level>=18
+  when !turnedin 896
+  zone map 1454
+  note "Talk to Kurgul and buy [Grimoire of Firebolt (Rank 3)]"
+  collect 16316 x1 @47.540042,46.750002 map 1454 -- Grimoire of Firebolt (Rank 3) (1)
+step
+  zone map 1454
+  note "Talk to Neeru Fireblade"
+  accept 5761 -- Accept Slaying the Beast
+step
+  zone map 1454
+  note "Talk to Neeru Fireblade"
+  kill 3216 x1 quest 5727.1 -- Gauge Neeru Fireblade's reaction to you being a member of the Burning Blade
+step
+  label HiddenEnemiesPickup
+  zone map 1454
+  note "Talk to Thrall"
+  turnin 5727 -- Turn in Hidden Enemies
+  accept 5728 -- Accept Hidden Enemies
+step
+  when has 14544
+  along until EnterRFC
+  note "Destroy [Lieutenant's Insignia] as you no longer need it"
+step
+  label EnterRFC
+  zone map 1454
+  goto 52.77,48.97 map 1454 r 8
+step
+  when onquest 5723
+  along until next_57
+  zone map 1454
+  note "Kill Ragefire Troggs and Ragefire Shamans"
+  kill 11318 x8 quest 5723.1 @52.77,48.97 map 1454 -- Ragefire Trogg (8)
+  kill 11319 x8 quest 5723.2 @52.77,48.97 map 1454 -- Ragefire Shaman (8)
+step
+  accept 5722 -- Accept Searching for the Lost Satchel
+step
+  when onquest 5722
+  label next_57
+  zone map 1454
+  note "Talk to Maur"
+  turnin 5722 @52.77,48.97 map 1454 -- Turn in Searching for the Lost Satchel
+  accept 5724 @52.77,48.97 map 1454 -- Accept Returning the Lost Satchel
+step
+  when turnedin 5722
+  zone map 1454
+  note "Talk to Maur"
+  accept 5724 @52.77,48.97 map 1454 -- Accept Returning the Lost Satchel
+step
+  accept 5723 -- Accept Testing an Enemy's Strength
+step
+  when onquest 5723
+  label TroggsShamans
+  zone map 1454
+  note "Kill Ragefire Troggs and Ragefire Shamans"
+  kill 11318 x8 quest 5723.1 @52.77,48.97 map 1454 -- Ragefire Trogg (8)
+  kill 11319 x8 quest 5723.2 @52.77,48.97 map 1454 -- Ragefire Shaman (8)
+step
+  when onquest 5725
+  along until BazzalanandJergosh
+  note "Kill Searing Blade Cultists and Searing Blade Warlocks. Loot them for the Spells of Shadow and Incantations from the Nether"
+  collect 14395 x1 quest 5725.1 -- Spells of Shadow (1)
+  collect 14396 x1 quest 5725.2 -- Incantations from the Nether (1)
+step
+  when onquest 5761
+  note "Kill Taragaman the Hungerer. Loot him for his Heart"
+  collect 14540 x1 quest 5761.1 -- Taragaman the Hungerer's Heart
+step
+  when onquest 5728
+  label BazzalanandJergosh
+  note "Kill Bazzalan and Jergosh the Invoker"
+  kill 11519 x1 quest 5728.1 -- Bazzalan (1)
+  kill 11518 x1 quest 5728.2 -- Jergosh the Invoker (1)
+step
+  when onquest 5725
+  note "Kill Searing Blade Cultists and Searing Blade Warlocks. Loot them for the Spells of Shadow and Incantations from the Nether"
+  collect 14395 x1 quest 5725.1 -- Spells of Shadow (1)
+  collect 14396 x1 quest 5725.2 -- Incantations from the Nether (1)
+step
+  when complete 5761
+  zone map 1454
+  note "Talk to Neeru Fireblade"
+  turnin 5761 -- Turn in Slaying the Beast
+step
+  when complete 5728
+  zone map 1454
+  note "Talk to Thrall"
+  turnin 5728 -- Turn in Hidden Enemies
+  accept 5729 -- Accept Hidden Enemies
+step
+  when turnedin 5728
+  zone map 1454
+  note "Talk to Thrall"
+  accept 5729 -- Accept Hidden Enemies
+step
+  when turnedin 5728
+  zone map 1454
+  note "Talk to Neeru Fireblade"
+  turnin 5729 -- Turn in Hidden Enemies
+  accept 5730 -- Accept Hidden Enemies
+step
+  when turnedin 5728
+  zone map 1454
+  note "Talk to Thrall"
+  turnin 5730 -- Turn in Hidden Enemies

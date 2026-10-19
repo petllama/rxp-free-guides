@@ -1,0 +1,709 @@
+guide rxp-free/11-13-loch-modan-e2a43473
+title "11-13 Loch Modan"
+levels 11-13
+zone map 1432
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · Dungeon Guide 1-20"
+next rxp-free/13-15-westfall-718b02a6
+step
+  label NormalRouteStart
+  note "Review this source step manually."
+step
+  along until next_2
+  zone map 1432
+  note "Talk to Gothor Brumn"
+  vendor 1362 -- Vendor and Repair
+step
+  when onquest 353
+  turnin 353 -- Turn in Stormpike's Delivery
+step
+  label next_2
+  zone map 1432
+  note "Talk to Mountaineer Stormpike"
+  note "Do not accept Stormpike's Order yet"
+  accept 307 -- Accept Filthy Paws
+step
+  label BoarMeatLoch1
+  along until ThelsamarFirst
+  zone map 1426
+  goto 70.845,51.784 map 1426 r 1 optional
+  goto 73.533,50.85 map 1426 r 1 optional
+  goto 75.353,48.533 map 1426 r 1 optional
+  goto 79.881,46.805 map 1426 r 1 optional
+  goto 81.04,43.456 map 1426 r 1 optional
+  goto 80.583,36.04 map 1426 r 1 optional
+  note "Kill Mountain Boars. Loot them for their [Chunks of Boar Meat]"
+  note "This will be used to level your [Cooking] later"
+  note "You need 10 [Cooking] for a quest in Auberdine later"
+  collect 769 x10 @80.583,36.04 map 1426 optional -- Chunk of Boar Meat (1-10)
+step
+  zone map 1426
+  goto 70.845,51.784 map 1426 r 1 optional
+  goto 73.533,50.85 map 1426 r 1 optional
+  goto 75.353,48.533 map 1426 r 1 optional
+  goto 79.881,46.805 map 1426 r 1 optional
+  goto 81.04,43.456 map 1426 r 1 optional
+  goto 80.583,36.04 map 1426 r 1
+  note "Kill Mountain Boars. Loot them for their [Chunks of Boar Meat]"
+  note "This will be used to level your [Cooking] later"
+  note "You need 10 [Cooking] for a quest in Auberdine later"
+  collect 769 x10 @80.583,36.04 map 1426 optional -- Chunk of Boar Meat (1-10)
+step
+  along until ThelsamarFirst
+  zone map 1426
+  goto 70.845,51.784 map 1426 r 1 optional
+  goto 73.533,50.85 map 1426 r 1 optional
+  goto 75.353,48.533 map 1426 r 1 optional
+  goto 79.881,46.805 map 1426 r 1 optional
+  goto 81.04,43.456 map 1426 r 1 optional
+  goto 80.583,36.04 map 1426 r 1 optional
+  note "Kill Mountain Boars. Loot them for their [Chunks of Boar Meat]"
+  note "This will be used to level your [Cooking] later"
+  note "You need 50 [Cooking] for a quest in Darkshire later"
+  note "Don't go out of your way to farm this now. Simply kill and loot all the boars you're passing by"
+  collect 769 x50 @80.583,36.04 map 1426 optional -- Chunk of Boar Meat (10-50)
+step
+  along until ThelsamarFirst
+  zone map 1426
+  note "Kill Elder Black Bears. Loot them for their Bear Meat"
+  note "Kill Mountain Boars. Loot them for their Boar Intestines"
+  note "Kill Forest Lurkers. Loot them for their Spider Ichor"
+  collect 3172 x3 @80.583,36.04 map 1426 optional -- Collect Boar Intestines (x3)
+  collect 3173 x3 @80.583,36.04 map 1426 optional -- Collect Bear Meat (x3)
+  collect 3174 x3 @80.583,36.04 map 1426 optional -- Collect Spider Ichor (x3)
+step
+  label next_7
+  along until next_8
+  note "Talk to Mountaineer Kadrell"
+  note "Mountaineer Kadrell patrols the road through Thelsamar"
+  accept 416 -- Accept Rat Catching
+  accept 1339 -- Accept Mountaineer Stormpike's Task
+step
+  label next_8
+  zone map 1432
+  note "Talk to Grenhild Darktalon"
+  accept 86667 -- Accept Snowbound
+step
+  label ThelsamarFirst
+  zone map 1432
+  note "Talk to Vidra Hearthstove"
+  accept 418 -- Accept Thelsamar Blood Sausages
+step
+  when complete 418
+  zone map 1432
+  note "Talk to Vidra Hearthstove"
+  turnin 418 -- Turn in Thelsamar Blood Sausages
+step
+  when onquest 1338
+  along until StormpikeO
+  note "Abandon Stormpike's Order. This is to unlock Mountaineer Stormpike's Task which will give a free 550xp turn in"
+step
+  along until next_13
+  zone map 1432
+  note "Talk to Yanni Stoutheart"
+  vendor 1682 -- Buy up to 2 [Small Brown Pouches] from her if needed
+step
+  only Paladin,Priest,Shaman,Mage,Warlock,Druid
+  when level<15
+  label next_13
+  zone map 1432
+  note "Talk to Innkeeper Hearthstove"
+  vendor 6734 -- Buy [Ice Cold Milk]. Aim to have about 20
+step
+  label StormpikeO
+  zone map 1432
+  note "Talk to Mountaineer Kadrell"
+  note "Mountaineer Kadrell patrols the road through Thelsamar"
+  accept 416 -- Accept Rat Catching
+  accept 1339 -- Accept Mountaineer Stormpike's Task
+step
+  zone map 1432
+  note "Talk to Thorgrum Borrelson"
+  getfp "Thelsamar" @33.937889,50.953939 map 1432 -- Get the Thelsamar flight path
+step
+  along until next_17
+  zone map 1432
+  goto 24.779822,70.170251 map 1432 r 10 optional
+  goto 23.729912,75.519832 map 1432 r 15 optional -- Run up the dirt path then drop down into the bunker
+step
+  label next_17
+  zone map 1432
+  note "Talk to Captain Rugelfuss in the bunker"
+  accept 267 -- Accept The Trogg Threat
+step
+  label DefenseStart
+  zone map 1432
+  note "Talk to Mountaineer Cobbleflint"
+  accept 224 -- Accept In Defense of the King's Lands
+step
+  along until next_20
+  zone map 1432
+  goto 19.599882,63.10017 map 1432 r 5 -- Travel to the snowy patch on the ground just outside the South Gate Pass tunnel
+step
+  label next_20
+  zone map 1432
+  use 279380 @19.599882,63.10017 map 1432 -- Use the [Ceramic Jar] while standing on the snowy patch to collect the [Jar of Snow]
+  collect 279379 x1 quest 86667.1 @19.599882,63.10017 map 1432 -- Jar of Snow 1/1
+step
+  label BoarMeatLoch2
+  along until SilverStream
+  zone map 1426
+  goto 70.845,51.784 map 1426 r 1 optional
+  goto 73.533,50.85 map 1426 r 1 optional
+  goto 75.353,48.533 map 1426 r 1 optional
+  goto 79.881,46.805 map 1426 r 1 optional
+  goto 81.04,43.456 map 1426 r 1 optional
+  goto 80.583,36.04 map 1426 r 1 optional
+  note "Kill Mountain Boars. Loot them for their [Chunks of Boar Meat]"
+  collect 769 x10 @80.583,36.04 map 1426 optional -- Chunk of Boar Meat (1-10)
+step
+  zone map 1426
+  goto 70.845,51.784 map 1426 r 1 optional
+  goto 73.533,50.85 map 1426 r 1 optional
+  goto 75.353,48.533 map 1426 r 1 optional
+  goto 79.881,46.805 map 1426 r 1 optional
+  goto 81.04,43.456 map 1426 r 1 optional
+  goto 80.583,36.04 map 1426 r 1
+  note "Kill Mountain Boars. Loot them for their [Chunks of Boar Meat]"
+  collect 769 x10 @80.583,36.04 map 1426 optional -- Chunk of Boar Meat (1-10)
+step
+  along until SilverStream
+  zone map 1426
+  goto 70.845,51.784 map 1426 r 1 optional
+  goto 73.533,50.85 map 1426 r 1 optional
+  goto 75.353,48.533 map 1426 r 1 optional
+  goto 79.881,46.805 map 1426 r 1 optional
+  goto 81.04,43.456 map 1426 r 1 optional
+  goto 80.583,36.04 map 1426 r 1 optional
+  note "Kill Mountain Boars. Loot them for their [Chunks of Boar Meat]"
+  note "Don't go out of your way to farm this now. Simply kill and loot all the boars you're passing by"
+  collect 769 x50 @80.583,36.04 map 1426 optional -- Chunk of Boar Meat (10-50)
+step
+  label BoarBearSpider
+  along
+  zone map 1426
+  note "Kill Elder Black Bears. Loot them for their Bear Meat"
+  note "Kill Mountain Boars. Loot them for their Boar Intestines"
+  note "Kill Forest Lurkers. Loot them for their Spider Ichor"
+  collect 3172 x3 @80.583,36.04 map 1426 optional -- Collect Boar Intestines (x3)
+  collect 3173 x3 @80.583,36.04 map 1426 optional -- Collect Bear Meat (x3)
+  collect 3174 x3 @80.583,36.04 map 1426 optional -- Collect Spider Ichor (x3)
+step
+  along until MinerGear
+  zone map 1426
+  note "Kill Tunnel Rats. Loot them for their Tunnel Rat Ears"
+  collect 3110 x12 quest 416.1 @80.583,36.04 map 1426 -- Collect Tunnel Rat Ear (x12)
+step
+  zone map 1432
+  note "Talk to Norric Lochthane"
+  turnin 86667 -- Turn in Snowbound
+step
+  zone map 1426
+  note "Kill Elder Black Bears. Loot them for their Bear Meat"
+  note "Kill Mountain Boars. Loot them for their Boar Intestines"
+  note "Kill Forest Lurkers. Loot them for their Spider Ichor"
+  collect 3172 x3 @80.583,36.04 map 1426 optional -- Collect Boar Intestines (x3)
+  collect 3173 x3 @80.583,36.04 map 1426 optional -- Collect Bear Meat (x3)
+  collect 3174 x3 @80.583,36.04 map 1426 optional -- Collect Spider Ichor (x3)
+step
+  label SilverStream
+  along until MinerGear
+  zone map 1432
+  goto 35.500065,18.900316 map 1432 r 20 -- Enter the Silver Stream Mine, kill Kobolds for [Ears] on the way
+step
+  label MinerGear
+  zone map 1432
+  note "Open the Miners' League Crates. Loot them for the Miners' Gear"
+  note "The Miners' League Crates can be found all throughout the Mine"
+  note "You will be able to do this quest at a higher level if you wish to skip it for now"
+  collect 2640 x4 quest 307.1 @35.930035,22.550219 map 1432 -- Miners' Gear (4)
+step
+  only Paladin
+  when !has 4778
+  when !has 4777
+  label BuyMace
+  zone map 1432
+  goto 42.866833,9.8848489 map 1432 r 8
+  note "Talk to Nillen Andemar"
+  note "Buy the [Heavy Spiked Mace] OR the [Ironwood Maul] from him (if they're up)"
+  note "If you can't afford this, then grind money from the nearby Tunnel Rats until you have enough"
+  note "Do this quickly as another player may purchase it before you do"
+  note "If you don't wish to do this, skip this step"
+  collect 4778 x1 @42.866833,9.8848489 map 1432 optional -- Heavy Spiked Mace (1)
+  collect 4777 x1 @42.866833,9.8848489 map 1432 optional -- Ironwood Maul (1)
+step
+  only Warrior
+  when !has 4778
+  when !has 4777
+  zone map 1432
+  goto 42.866833,9.8848489 map 1432 r 8
+  note "Talk to Nillen Andemar"
+  note "Buy the [Heavy Spiked Mace] OR the [Ironwood Maul] from him (if they're up)"
+  note "If you can't afford this, then grind money from the nearby Tunnel Rats until you have enough"
+  note "Do this quickly as another player may purchase it before you do"
+  note "If you don't wish to do this, skip this step"
+  collect 4778 x1 @42.866833,9.8848489 map 1432 optional -- Heavy Spiked Mace (1)
+  collect 4777 x1 @42.866833,9.8848489 map 1432 optional -- Ironwood Maul (1)
+step
+  only Paladin
+  when has 4778
+  when level>=14
+  along until StormpikeDelivery
+  zone map 1432
+  note "Equip the [Heavy Spiked Mace]"
+  use 4778 @42.866833,9.8848489 map 1432 optional
+step
+  only Warrior
+  when has 4778
+  when level>=14
+  along until StormpikeDelivery
+  zone map 1432
+  note "Equip the [Heavy Spiked Mace]"
+  use 4778 @42.866833,9.8848489 map 1432 optional
+step
+  only Paladin
+  when has 4777
+  when level>=13
+  along until StormpikeDelivery
+  zone map 1432
+  note "Equip the [Ironwood Maul]"
+  use 4777 @42.866833,9.8848489 map 1432 optional
+step
+  only Warrior
+  when has 4777
+  when level>=13
+  along until StormpikeDelivery
+  zone map 1432
+  note "Equip the [Ironwood Maul]"
+  use 4777 @42.866833,9.8848489 map 1432 optional
+step
+  zone map 1432
+  note "Kill Tunnel Rats. Loot them for their Ears"
+  note "Ensure you have 10 [Linen Cloth] for your upcoming Paladin class quest" only Paladin
+  collect 3110 x12 quest 416.1 @35.480125,16.820116 map 1432 -- Collect Tunnel Rat Ear (x12)
+  collect 2589 x10 @35.480125,16.820116 map 1432 optional only Human,Paladin -- Linen Cloth (10)
+step
+  along until StormpikeDelivery
+  zone map 1432
+  note "Kill Elder Black Bears. Loot them for their Bear Meat"
+  note "Kill Mountain Boars. Loot them for their Boar Intestines"
+  note "Kill Forest Lurkers. Loot them for their Spider Ichor"
+  collect 3172 x3 @35.480125,16.820116 map 1432 optional -- Collect Boar Intestines (x3)
+  collect 3173 x3 @35.480125,16.820116 map 1432 optional -- Collect Bear Meat (x3)
+  collect 3174 x3 @35.480125,16.820116 map 1432 optional -- Collect Spider Ichor (x3)
+step
+  label StormpikeStop
+  along until StormpikeDelivery
+  zone map 1432
+  note "Talk to Gothor Brumn"
+  vendor 1362 -- Vendor and repair if needed
+step
+  only Human
+  label StormpikeDelivery
+  zone map 1432
+  note "Talk to Mountaineer Stormpike"
+  turnin 307 -- Turn in Filthy Paws
+  turnin 1339 -- Turn in Mountaineer Stormpike's Task
+  accept 1338 -- Accept Stormpike's Order
+step
+  label BoarMeatLoch3
+  along until FlintTinder
+  zone map 1426
+  goto 70.845,51.784 map 1426 r 1 optional
+  goto 73.533,50.85 map 1426 r 1 optional
+  goto 75.353,48.533 map 1426 r 1 optional
+  goto 79.881,46.805 map 1426 r 1 optional
+  goto 81.04,43.456 map 1426 r 1 optional
+  goto 80.583,36.04 map 1426 r 1 optional
+  note "Kill Mountain Boars. Loot them for their [Chunks of Boar Meat]"
+  collect 769 x10 @80.583,36.04 map 1426 optional -- Chunk of Boar Meat (1-10)
+step
+  zone map 1426
+  goto 70.845,51.784 map 1426 r 1 optional
+  goto 73.533,50.85 map 1426 r 1 optional
+  goto 75.353,48.533 map 1426 r 1 optional
+  goto 79.881,46.805 map 1426 r 1 optional
+  goto 81.04,43.456 map 1426 r 1 optional
+  goto 80.583,36.04 map 1426 r 1
+  note "Kill Mountain Boars. Loot them for their [Chunks of Boar Meat]"
+  collect 769 x10 @80.583,36.04 map 1426 optional -- Chunk of Boar Meat (1-10)
+step
+  along until FlintTinder
+  zone map 1426
+  goto 70.845,51.784 map 1426 r 1 optional
+  goto 73.533,50.85 map 1426 r 1 optional
+  goto 75.353,48.533 map 1426 r 1 optional
+  goto 79.881,46.805 map 1426 r 1 optional
+  goto 81.04,43.456 map 1426 r 1 optional
+  goto 80.583,36.04 map 1426 r 1 optional
+  note "Kill Mountain Boars. Loot them for their [Chunks of Boar Meat]"
+  note "Don't go out of your way to farm this now. Simply kill and loot all the boars you're passing by"
+  collect 769 x50 @80.583,36.04 map 1426 optional -- Chunk of Boar Meat (10-50)
+step
+  when !turnedin 418
+  loop
+  zone map 1432
+  note "Kill Elder Black Bears. Loot them for their Bear Meat"
+  note "Kill Mountain Boars. Loot them for their Boar Intestines"
+  note "Kill Forest Lurkers. Loot them for their Spider Ichor"
+  collect 3173 x3 -- Collect Bear Meat (x3)
+  goto 26.899943,10.700251 map 1432 r 1
+  goto 28.599883,15.400229 map 1432 r 1
+  goto 39.399884,33.299938 map 1432 r 1
+  goto 26.899943,10.700251 map 1432 r 90
+  goto 30.899822,10.600228 map 1432 r 90
+  goto 28.599883,15.400229 map 1432 r 90
+  goto 30.499943,26.60005 map 1432 r 90
+  goto 33.399883,30.299802 map 1432 r 90
+  goto 39.399884,33.299938 map 1432 r 90
+  collect 3172 x3 -- Collect Boar Intestines (x3)
+  goto 38.000125,34.899757 map 1432 r 1
+  goto 29.799883,35.899984 map 1432 r 1
+  goto 28.599883,22.600231 map 1432 r 1
+  goto 38.000125,34.899757 map 1432 r 90
+  goto 37.099944,39.799781 map 1432 r 90
+  goto 29.799883,35.899984 map 1432 r 90
+  goto 27.700064,25.299755 map 1432 r 90
+  goto 28.599883,22.600231 map 1432 r 90
+  collect 3174 x3 -- Collect Spider Ichor (x3)
+  goto 31.900064,16.399912 map 1432 r 1
+  goto 33.800125,40.499939 map 1432 r 1
+  goto 39.000005,32.10021 map 1432 r 1
+  goto 31.900064,16.399912 map 1432 r 90
+  goto 27.999883,20.599777 map 1432 r 90
+  goto 33.800125,40.499939 map 1432 r 90
+  goto 36.200125,30.899938 map 1432 r 90
+  goto 39.000005,32.10021 map 1432 r 90
+step
+  when complete 416
+  along until FlintTinder
+  note "Talk to Mountaineer Kadrell"
+  note "Mountaineer Kadrell patrols the road through Thelsamar"
+  turnin 416 -- Turn in Rat Catching
+step
+  along until FlintTinder
+  zone map 1432
+  goto 35.273,47.75 map 1432 r 10 optional
+  goto 35.433,48.243 map 1432 r 12 optional -- Enter the Stoutlager Inn
+step
+  when complete 418
+  label FlintTinder
+  zone map 1432
+  note "Talk to Vidra Hearthstove"
+  turnin 418 -- Turn in Thelsamar Blood Sausages
+step
+  when complete 416
+  zone map 1432
+  note "Talk to Mountaineer Kadrell"
+  note "Mountaineer Kadrell patrols the road through Thelsamar"
+  turnin 416 -- Turn in Rat Catching
+step
+  zone map 1432
+  note "Kill Stonesplinter Troggs and Stonesplinter Scouts. Loot them for their Teeth"
+  note "Be careful as Stonesplinter Scouts cast [Shoot] (Ranged Cast: Deals 14-20 damage)"
+  note "This is a hyperspawn area. You should not need to move from here"
+  note "Ensure you have 10 [Linen Cloth] for your upcoming Paladin class quest" only Paladin
+  kill 1161 x10 quest 224.1 @27.329913,56.699806 map 1432 -- Kill Stonesplinter Trogg (x10)
+  kill 1162 x10 quest 224.2 @27.329913,56.699806 map 1432 -- Kill Stonesplinter Scout (x10)
+  collect 2536 x8 quest 267.1 @27.329913,56.699806 map 1432 -- Collect Trogg Stone Tooth (x8)
+  collect 2589 x10 @27.329913,56.699806 map 1432 optional only Human,Paladin -- Linen Cloth (10)
+step
+  along until next_45
+  zone map 1432
+  goto 24.779822,70.170251 map 1432 r 10 optional
+  goto 23.729912,75.519832 map 1432 r 15 optional -- Run up the dirt path then drop down into the bunker
+step
+  when complete 267
+  label next_45
+  zone map 1432
+  note "Talk to Captain Rugelfuss"
+  turnin 267 -- Turn in The Trogg Threat
+step
+  when complete 224
+  zone map 1432
+  note "Talk to Mountaineer Cobbleflint"
+  turnin 224 -- Turn in In Defense of the King's Lands
+step
+  only Warlock
+  along until next_48
+  zone map 1432
+  goto 27.329913,56.699806 map 1432 r 1 optional
+  note "Grind Troggs until you have 75s 79c worth of vendor trash/money"
+step
+  only Warlock
+  label next_48
+  zone map 1432
+  goto 27.329913,56.699806 map 1432 r 8
+  level 14 -- Grind to 14
+  note "Fly to Ironforge and skip this step if you're planning on running the Hall of Thanes dungeon in Ironforge"
+step
+  only Paladin,Hunter,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  zone map 1432
+  goto 27.329913,56.699806 map 1432 r 8
+  note "Continue grinding Troggs until your [Hearthstone] is ready"
+step
+  only Warrior,Human
+  zone map 1455
+  goto 62.00019,89.599037 map 1455 r 8
+  note "Talk to Bixi Wobblebonk"
+  learn 2567 "Thrown"
+step
+  only Warrior,Human
+  when zone "Ironforge"
+  zone map 1455
+  note "Talk to Bilban Tosslespanner"
+  train 5114 -- Train your class spells
+step
+  when !zone "Stormwind City"
+  when !zone "Darkshore"
+  when !zone "Westfall"
+  hearth "Stormwind City" optional -- Hearth to Stormwind City
+step
+  only Hunter
+  zone map 1453
+  note "Talk to Thurman Mullby"
+  note "Buy a [Simple Wood] and a [Flint and Tinder] from him"
+  note "This is used to make [Basic Campfires] on Boats to level your [Cooking] skill without losing time"
+  note "You need 50 [Cooking] for a quest in Duskwood later"
+  collect 4470 x1 @58.364094,61.677529 map 1453 -- Simple Wood (1)
+  collect 4471 x1 @58.364094,61.677529 map 1453 -- Flint and Tinder (1)
+step
+  only Hunter
+  zone map 1453
+  goto 53.612072,59.764223 map 1453 r 8
+  note "Talk to Auctioneer Jaxon"
+  note "Buy [Chunks of Boar Meat] and/or [Stringy Wolf Meat] to level your [Cooking] with later"
+  note "You need 50 [Cooking] for a quest in Darkshire later"
+  note "If you don't want to or can't do this, skip this step"
+  note "Buy the following items for faster turn ins at Westfall and Darkshore shortly:"
+  note "[Strider Meat]"
+  note "[Darkshore Grouper]"
+  note "[Chunks of Boar Meat]"
+  note "[Stringy Wolf Meat]"
+  collect 5469 x5 @53.612072,59.764223 map 1453 optional -- Strider Meat (5)
+  collect 12238 x6 @53.612072,59.764223 map 1453 optional -- Darkshore Grouper (6)
+  collect 769 x50 @53.612072,59.764223 map 1453 optional -- Chunk of Boar Meat (1-50)
+  collect 2672 x50 @53.612072,59.764223 map 1453 optional -- Stringy Wolf Meat (1-50)
+step
+  only Hunter
+  zone map 1453
+  goto 53.612072,59.764223 map 1453 r 8
+  note "Talk to Auctioneer Jaxon"
+  note "If you don't want to or can't do this, skip this step"
+  note "Buy the following items for faster turn ins at Westfall and Darkshore shortly:"
+  note "[Strider Meat]"
+  note "[Darkshore Grouper]"
+  collect 5469 x5 @53.612072,59.764223 map 1453 optional -- Strider Meat (5)
+  collect 12238 x6 @53.612072,59.764223 map 1453 optional -- Darkshore Grouper (6)
+step
+  zone map 1453
+  goto 57.129223,57.698075 map 1453 r 8
+  note "Talk to Woo Ping"
+  learn 201 "1h Swords" only Warlock
+  learn 201 "1h Swords" only Mage
+  learn 201 "1h Swords" only Rogue
+  learn 227 "Staves" only Warlock
+  learn 227 "Staves" only Mage
+  learn 227 "Staves" only Priest
+  learn 202 "2h Swords" only Warrior
+  learn 202 "2h Swords" only Paladin
+step
+  when onquest 6261
+  when level>=15
+  zone map 1453
+  note "Talk to Dungar Longdrink"
+  turnin 6261 -- Turn in Dungar Longdrink
+step
+  only Warlock
+  zone map 1453
+  note "Talk to Ardwyn Cailen"
+  note "Buy a [Smoldering Wand] from her or check the Auction House for a [Greater Magic Wand]"
+  goto 42.649988,67.159738 map 1453 r 14 optional
+  goto 42.879853,65.110325 map 1453 r 8
+  collect 5208 x1 @42.879853,65.110325 map 1453 optional -- Smoldering Wand (1)
+step
+  only Priest
+  zone map 1453
+  note "Talk to Ardwyn Cailen"
+  note "Buy a [Smoldering Wand] from her or check the Auction House for a [Greater Magic Wand]"
+  goto 42.649988,67.159738 map 1453 r 14 optional
+  goto 42.879853,65.110325 map 1453 r 8
+  collect 5208 x1 @42.879853,65.110325 map 1453 optional -- Smoldering Wand (1)
+step
+  only Warlock
+  when has 5208
+  when level>=15
+  along until next_61
+  zone map 1453
+  note "Equip the [Smoldering Wand]"
+  use 5208 @42.879853,65.110325 map 1453 optional
+step
+  only Priest
+  when has 5208
+  when level>=15
+  along until next_61
+  zone map 1453
+  note "Equip the [Smoldering Wand]"
+  use 5208 @42.879853,65.110325 map 1453 optional
+step
+  only Warlock
+  when has 5208
+  when level<15
+  label next_61
+  along until next_62
+  zone map 1453
+  note "Remember to equip the [Smoldering Wand] later when you reach level 15"
+  use 5208 @42.879853,65.110325 map 1453 optional
+step
+  only Priest
+  when has 5208
+  when level<15
+  along until next_62
+  zone map 1453
+  note "Remember to equip the [Smoldering Wand] later when you reach level 15"
+  use 5208 @42.879853,65.110325 map 1453 optional
+step
+  only Warlock
+  label next_62
+  along until next_63
+  zone map 1453
+  goto 29.200309,73.99967 map 1453 r 20 optional
+  goto 27.199967,78.099612 map 1453 r 15 optional -- Travel to The Slaughtered Lamb and go downstairs
+step
+  only Warlock
+  label next_63
+  zone map 1453
+  note "Talk to Ursula Deline"
+  train 5495 -- Train your class spells
+step
+  only Warlock
+  zone map 1453
+  note "Talk to Spackle Thornberry"
+  vendor 5520 -- Buy [Grimoire of Consume Shadows (Rank 1)] and [Grimoire of Sacrifice (Rank 1)] if you can afford them. If not you can buy them later
+step
+  only Mage
+  along until next_66
+  zone map 1453
+  goto 37.689675,82.090223 map 1453 r 10 -- Travel to the Mage Tower
+step
+  only Mage
+  label next_66
+  zone map 1453
+  note "Talk to Elsharin"
+  train 5498 -- Train your class spells
+step
+  only Priest
+  along until next_68
+  zone map 1453
+  goto 42.510136,33.510086 map 1453 r 20 -- Travel to the Stormwind Cathedral
+step
+  only Paladin
+  along until next_68
+  zone map 1453
+  goto 42.510136,33.510086 map 1453 r 20 -- Travel to the Stormwind Cathedral
+step
+  only Paladin,Human
+  label next_68
+  zone map 1453
+  note "Talk to Duthorian Rall"
+  accept 1641 -- Accept The Tome of Divinity
+step
+  only Paladin,Human
+  when onquest 1641
+  turnin 1641 -- Turn in The Tome of Divinity
+step
+  only Paladin,Human
+  zone map 1453
+  note "Use the [The Tome of Divinity] to start the quest"
+  accept 1642 @39.800115,29.770492 map 1453 -- Accept The Tome of Divinity
+  use 6775 @39.800115,29.770492 map 1453
+step
+  only Paladin,Human
+  when onquest 1642
+  turnin 1642 -- Turn in The Tome of Divinity
+step
+  only Paladin,Human
+  zone map 1453
+  note "Talk to Duthorian Rall"
+  accept 1643 -- Accept The Tome of Divinity
+step
+  only Paladin
+  zone map 1453
+  note "Talk to Arthur the Faithful"
+  train 5491 -- Train your class spells
+step
+  only Priest
+  zone map 1453
+  note "Talk to Brother Joshua"
+  train 5489 -- Train your class spells
+step
+  only Warrior,Paladin,Rogue,Priest,Shaman,Mage,Warlock,Druid
+  when level<15
+  label HumbleBeginnings
+  zone map 1453
+  note "Talk to Baros Alexston"
+  accept 399 -- Accept Humble Beginnings
+step
+  when onquest 1338
+  zone map 1453
+  note "Talk to Furen Longbeard"
+  turnin 1338 -- Turn in Stormpike's Order
+step
+  only Hunter
+  zone map 1453
+  note "Talk to Einris Brightspear"
+  train 5515 -- Train your class spells
+step
+  only Hunter
+  zone map 1453
+  note "Talk to Karrina Mekenda"
+  train 2879 -- Train your pet spells
+step
+  only Rogue
+  zone map 1453
+  note "Talk to Osborne"
+  train 918 -- Train your class spells
+step
+  only Warrior
+  zone map 1453
+  note "Talk to Wu or Ilsa"
+  goto 76.080029,50.139677 map 1453 r 15 optional
+  goto 80.219822,45.370356 map 1453 r 15 optional
+  goto 78.679953,45.789833 map 1453 r 8 optional
+  train class -- Train your class spells
+step
+  only Paladin,Human
+  when onquest 1643
+  turnin 1643 -- Turn in The Tome of Divinity
+step
+  only Paladin,Human
+  zone map 1453
+  note "Talk to Stephanie Turner"
+  accept 1644 -- Accept The Tome of Divinity
+  accept 1780 -- Accept The Tome of Divinity
+step
+  only Paladin,Human
+  when onquest 1644
+  turnin 1644 -- Turn in The Tome of Divinity
+step
+  only Rogue
+  zone map 1453
+  goto 57.379916,56.76987 map 1453 r 8
+  note "Talk to Marda Weller"
+  note "Buy up to 2 [Scimitars] from her if you can afford it, or you can buy something better/cheaper from the Auction House"
+  note "Equip them both once you're level 14"
+  collect 2027 x2 @57.379916,56.76987 map 1453 optional -- Scimitar
+step
+  only Rogue
+  when has 2027
+  when level>=14
+  along until NormalRouteEnd
+  zone map 1453
+  note "Equip the [Scimitar]"
+  use 2027 @57.379916,56.76987 map 1453 optional
+step
+  label NormalRouteEnd
+  note "Review this source step manually."

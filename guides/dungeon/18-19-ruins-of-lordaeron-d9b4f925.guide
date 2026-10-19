@@ -1,0 +1,293 @@
+guide rxp-free/18-19-ruins-of-lordaeron-d9b4f925
+title "18-19 Ruins of Lordaeron"
+levels 18-19
+zone map 1453
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · Dungeon Guide 1-20"
+next rxp-free/19-20-deadmines-089ed7e3
+step
+  along until EnterRoL
+  note "You will now run Ruins of Lordaeron"
+  note "All the quests are picked up inside the dungeon"
+step
+  when zone "Ironforge"
+  zone map 1455
+  goto 55.501534,47.73628 map 1455 r 8
+  note "Talk to Gryth Thurden"
+  note "If you do not have the Wetlands flight path, skip this step"
+  fly "Wetlands" -- Fly to Wetlands
+step
+  when !zone "Wetlands"
+  when !zone "Hillsbrad Foothills"
+  zone map 1426
+  goto 53.370213,35.025891 map 1426 r 30 optional
+  goto 51.248386,36.603556 map 1426 r 30 optional
+  goto 45.250416,39.7132 map 1426 r 70 optional
+  goto 41.26869,38.909139 map 1426 r 80 optional
+  goto 37.910315,37.703048 map 1426 r 100 -- Exit Ironforge. Travel to the Dun Morogh -> Wetlands deathskip location
+step
+  when !zone "Hillsbrad Foothills"
+  zone map 1426
+  zone map 1415
+  goto 30.741,34.269 map 1426 r 15 optional
+  goto 30.812,33.548 map 1426 r 15 optional
+  goto 31.06,32.543 map 1426 r 15 optional
+  goto 31.439,32.356 map 1426 r 15 optional
+  goto 31.675,29.636 map 1426 r 15 optional
+  goto 32.209,28.777 map 1426 r 15 optional
+  goto 32.645,27.74 map 1426 r 15 optional
+  goto 44.91,52.022 map 1415 r 15 optional
+  goto 44.91,52.03 map 1415 r 8
+step
+  when !zone "Hillsbrad Foothills"
+  zone map 1415
+  zone map 1437
+  goto 44.733001,51.882001 map 1415 r 1 optional
+  goto 11.730788,43.300971 map 1437 r 1
+  note "Jump off the mountain toward the north or north-west"
+  note "Die and respawn at the Baradin Bay Spirit Healer"
+step
+  when !zone "Hillsbrad Foothills"
+  along until next_6
+  zone map 1437
+  goto 10.886859,54.783964 map 1437 r 8 optional
+step
+  when !zone "Hillsbrad Foothills"
+  label next_6
+  zone map 1437
+  goto 9.4891761,59.692807 map 1437 r 8
+  note "Talk to Shellei Brondir"
+  getfp "Menethil Harbor" @9.4891761,59.692807 map 1437 optional -- Get the Wetlands flight path
+step
+  zone map 1437
+  goto 4.6480681,57.1241 map 1437 r 8
+step
+  zone map 1424
+  goto 49.338031,52.272196 map 1424 r 8
+  note "Talk to Darla Harris"
+  getfp "Southshore" @49.338031,52.272196 map 1424 optional -- Get the Southshore flight path
+step
+  label EnterRoL
+  zone map 1424
+  zone map 1416
+  zone map 1420
+  zone map 1458
+  goto 41.833344,36.646881 map 1424 r 100 optional
+  goto 34.814594,30.44063 map 1424 r 100 optional
+  goto 25.533321,82.832128 map 1416 r 130 optional
+  goto 26.358321,66.583917 map 1416 r 150 optional
+  goto 29.92975,36.824993 map 1416 r 100 optional
+  goto 66.959513,76.580913 map 1420 r 70 optional
+  goto 67.610136,71.99668 map 1420 r 20 optional
+  goto 68.38026,71.219917 map 1420 r 10 optional
+  goto 68.349278,68.312033 map 1420 r 15 optional
+  goto 66.988282,67.917012 map 1420 r 25 optional
+  goto 67.032542,66.058091 map 1420 r 10 optional
+  goto 66.167349,0.8975104 map 1458 r 20 optional
+  goto 73.224026,11.442672 map 1458 r 20 -- Travel to the Ruins of Lordaeron in Undercity. Enter the dungeon
+  note "Be careful of higher level Cats, Bears, Spiders or Murlocs as you run over. Run through the Hillsbrad fields if needed instead"
+  note "As soon as you enter Undercity you will be automatically PVP flagged, becoming attackable by Horde"
+step
+  zone map 1458
+  note "Talk to Captain Truman"
+  accept 95250 @73.224026,11.442672 map 1458 -- Accept Abominable Creatures
+step
+  label BaronHead
+  along
+  zone map 1458
+  note "Kill The Baron. Loot him for the Head of the Baron"
+  collect 268518 x1 quest 95250.1 @73.224026,11.442672 map 1458 -- Head of the Baron (1)
+step
+  zone map 1458
+  note "Loot all mobs for the [Bloodied Insignia]"
+  use 268535 @73.224026,11.442672 map 1458 -- Use the [Bloodied Insignia] to start the quest
+  collect 268535 x1 @73.224026,11.442672 map 1458 optional -- Bloodied Insignia (1)
+  accept 95195 -- Accept Bloodied Insignia
+step
+  label BloodiedInsignia
+  along
+  zone map 1458
+  note "Loot all mobs for their Bloodied Insignias"
+  collect 268535 x10 quest 95195.1 @73.224026,11.442672 map 1458 -- Bloodied Insignia (10)
+step
+  label CrestofLordaeron
+  along
+  zone map 1458
+  note "Loot the [Crest of Lordaeron] on the ground or hanging on a wall"
+  note "Keep an eye out for this. It can spawn in many different locations and be hard to see"
+  note "Use the [Crest of Lordaeron] to start the quest"
+  collect 268579 x1 @73.224026,11.442672 map 1458 optional -- Crest of Lordaeron (1)
+  accept 95189 -- Accept Crest of Lordaeron
+step
+  label CrumpledPaper
+  along
+  zone map 1458
+  note "Click the Crumpled Paper on the ground near Rath'mael"
+  note "You can do this after you've killed him"
+  accept 92415 @73.224026,11.442672 map 1458 -- Accept Remember That I Love You
+step
+  zone map 1458
+  note "Kill The Baron. Loot him for the Head of the Baron"
+  collect 268518 x1 quest 95250.1 @73.224026,11.442672 map 1458 -- Head of the Baron (1)
+step
+  note "Review this source step manually."
+step
+  zone map 1458
+  note "Loot all mobs for their Bloodied Insignias"
+  collect 268535 x10 quest 95195.1 @73.224026,11.442672 map 1458 -- Bloodied Insignia (10)
+step
+  note "Review this source step manually."
+step
+  zone map 1458
+  note "Loot the [Crest of Lordaeron] on the ground or hanging on a wall"
+  note "Keep an eye out for this. It can spawn in many different locations and be hard to see"
+  use 268579 @73.224026,11.442672 map 1458 -- Use the [Crest of Lordaeron] to start the quest
+  collect 268579 x1 @73.224026,11.442672 map 1458 optional -- Crest of Lordaeron (1)
+  accept 95189 -- Accept Crest of Lordaeron
+step
+  note "Review this source step manually."
+step
+  zone map 1458
+  note "Click the Crumpled Paper on the ground near Rath'mael"
+  note "You can do this after you've killed him"
+  accept 92415 @73.224026,11.442672 map 1458 -- Accept Remember That I Love You
+step
+  note "Review this source step manually."
+step
+  zone map 1458
+  note "Talk to Captain Truman"
+  note "Captain Truman is back at the start of the dungeon"
+  turnin 95250 @73.224026,11.442672 map 1458 -- Turn in Abominable Creatures
+step
+  when !zone "Stormwind City"
+  hearth "Stormwind" optional -- Hearth to Stormwind
+step
+  when !zone "Ironforge"
+  when !zone "Stormwind City"
+  hearth "Ironforge" optional -- Hearth to Ironforge
+step
+  when zone "Ironforge"
+  zone map 1455
+  goto 76.61,51.28 map 1455 r 10
+step
+  accept 92415 @73.224026,11.442672 map 1458 -- Accept Remember That I Love You
+step
+  when onquest 92415
+  label next_25
+  zone map 1453
+  note "Talk to Orphan Matron Nightingale"
+  turnin 92415 -- Turn in Remember That I Love You
+  accept 95161 -- Accept Remember That I Love You
+step
+  when turnedin 92415
+  zone map 1453
+  note "Talk to Orphan Matron Nightingale"
+  accept 95161 -- Accept Remember That I Love You
+step
+  zone map 1453
+  note "Talk to Shoni the Shilent"
+  accept 2040 -- Accept Underground Assault
+step
+  zone map 1453
+  note "Talk to Wilder Thistlenettle"
+  accept 167 -- Accept Oh Brother. . .
+  accept 168 -- Accept Collecting Memories
+step
+  along until next_30
+  zone map 1453
+  goto 70.177197,27.405355 map 1453 r 20 optional
+  goto 72.371696,22.273454 map 1453 r 15 optional
+  goto 65.319541,8.9193555 map 1453 r 15 optional -- Travel to the Stormwind Library
+step
+  accept 95189 -- Accept Crest of Lordaeron
+step
+  when onquest 95189
+  label next_30
+  zone map 1453
+  note "Talk to Lady Dena Kennedy"
+  note "She walks around slightly in the Royal Gallery"
+  turnin 95189 @63.229188,4.8584599 map 1453 -- Turn in Crest of Lordaeron
+step
+  when onquest 95195
+  zone map 1453
+  note "Talk to General Marcus Jonathan"
+  turnin 95195 -- Turn in Bloodied Insignia
+step
+  only Rogue
+  when level>=20
+  zone map 1453
+  note "Talk to Osborne"
+  train 918 -- Train your class spells
+step
+  only Warrior
+  when level>=20
+  zone map 1453
+  note "Talk to Wu or Ilsa"
+  goto 76.080029,50.139677 map 1453 r 15 optional
+  goto 80.219822,45.370356 map 1453 r 15 optional
+  goto 78.679953,45.789833 map 1453 r 8 optional
+  train class -- Train your class spells
+step
+  only Hunter
+  when level>=20
+  zone map 1453
+  note "Talk to Einris Brightspear inside"
+  train 5515 -- Train your class spells
+step
+  only Druid
+  when level>=20
+  zone map 1453
+  goto 2.4810343,34.848486 map 1453 r 8
+  note "Talk to Theridran"
+  train 5505 -- Train your class spells
+step
+  only Warlock
+  along until next_37
+  zone map 1453
+  goto 29.200309,73.99967 map 1453 r 20 optional
+  goto 27.199967,78.099612 map 1453 r 15 optional -- Travel to The Slaughtered Lamb and go downstairs
+step
+  only Warlock
+  when level>=20
+  label next_37
+  zone map 1453
+  note "Talk to Ursula Deline"
+  train 5495 -- Train your class spells
+step
+  only Mage
+  along until next_39
+  zone map 1453
+  goto 37.689675,82.090223 map 1453 r 10 -- Travel to the Mage Tower
+step
+  only Mage
+  when level>=20
+  label next_39
+  zone map 1453
+  note "Talk to Elsharin"
+  train 5498 -- Train your class spells
+step
+  only Priest
+  along until next_41
+  zone map 1453
+  goto 42.510136,33.510086 map 1453 r 20 -- Travel to the Stormwind Cathedral
+step
+  only Paladin
+  along until next_41
+  zone map 1453
+  goto 42.510136,33.510086 map 1453 r 20 -- Travel to the Stormwind Cathedral
+step
+  only Paladin
+  when level>=20
+  label next_41
+  zone map 1453
+  note "Talk to Arthur the Faithful"
+  train 5491 -- Train your class spells
+step
+  only Priest
+  when level>=20
+  zone map 1453
+  note "Talk to Brother Joshua"
+  train 5489 -- Train your class spells

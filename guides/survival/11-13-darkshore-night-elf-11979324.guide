@@ -1,0 +1,534 @@
+guide rxp-free/11-13-darkshore-night-elf-11979324
+title "11-13 Darkshore (Night Elf)"
+levels 11-13
+zone map 1439
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · RXP Survival Guide 1-20"
+next rxp-free/13-13-loch-modan-night-elf-90fe2434
+step
+  only NightElf
+  when onquest 6344
+  turnin 6344 -- Turn in Nessa Shadowsong
+step
+  only NightElf
+  zone map 1438
+  note "Talk to Nessa Shadowsong"
+  accept 6341 -- Accept The Bounty of Teldrassil
+step
+  only NightElf
+  when onquest 6341
+  turnin 6341 -- Turn in The Bounty of Teldrassil
+step
+  only NightElf
+  zone map 1438
+  note "Talk to Vesprystus"
+  accept 6342 -- Accept Flight to Auberdine
+step
+  only NightElf
+  along until WashedA
+  zone map 1438
+  goto 58.39,94.01 map 1438 r 8
+  note "Talk to Vesprystus"
+  fly "Auberdine" -- Fly to Darkshore
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  along until WashedA
+  zone map 1439
+  zone map 1448
+  goto 36.71,44.98 map 1439 r 5 optional
+  note "Talk to Gwennyth Bly'Leggonde"
+  getfp "Auberdine" @19.1,20.63 map 1448 -- Get the Auberdine flight path
+step
+  only NightElf
+  label WashedA
+  zone map 1448
+  goto 19.1,20.63 map 1448 r 8 optional
+  note "Talk to Gwennyth Bly'Leggonde"
+  accept 3524 -- Accept Washed Ashore
+step
+  only Human,Dwarf,Gnome,Orc,Troll,Tauren,Undead,Skyborne
+  label WashedA_2
+  zone map 1439
+  zone map 1448
+  goto 36.71,44.98 map 1439 r 5 optional
+  goto 19.1,20.63 map 1448 r 8 optional
+  note "Talk to Gwennyth Bly'Leggonde"
+  accept 3524 -- Accept Washed Ashore
+step
+  only NightElf
+  when onquest 6342
+  zone map 1448
+  goto 19.27,19.14 map 1448 r 8 optional
+  note "Talk to Laird"
+  turnin 6342 -- Turn in Flight to Auberdine
+step
+  along until next_8
+  zone map 1448
+  goto 19.27,19.14 map 1448 r 8
+  note "Talk to Laird"
+  note "Buy food if needed"
+  vendor 4200 -- [Longjaw Mud Snapper] is very cheap
+step
+  label next_8
+  along until next_9
+  zone map 1439
+  goto 36.7,43.78 map 1439 r 5 -- Travel up stairs toward Wizbang Cranktoggle
+step
+  label next_9
+  zone map 1448
+  goto 19.51,18.97 map 1448 r 8 optional
+  note "Talk to Wizbang Cranktoggle"
+  accept 983 -- Accept Buzzbox 827
+step
+  only Paladin,Hunter,Priest,Shaman,Mage,Warlock,Druid
+  along until next_11
+  zone map 1439
+  goto 37.12,43.616 map 1439 r 8
+  note "Talk to Allyndia"
+  note "Buy water if needed"
+step
+  label next_11
+  along until BigThreat
+  zone map 1439
+  note "Talk to Shaussiy"
+  sethome "Auberdine" @37.04,44.13 map 1439 -- Set your Hearthstone to Auberdine
+step
+  only Warrior
+  zone map 1439
+  goto 38.25,41.008 map 1439 r 8
+  note "Talk to Kurdram Stonehammer"
+  learn 2581 "Mining, cast Find Minerals"
+step
+  only Rogue
+  zone map 1439
+  goto 38.25,41.008 map 1439 r 8
+  note "Talk to Kurdram Stonehammer"
+  learn 2581 "Mining, cast Find Minerals"
+step
+  only Paladin
+  zone map 1439
+  goto 38.25,41.008 map 1439 r 8
+  note "Talk to Kurdram Stonehammer"
+  learn 2581 "Mining, cast Find Minerals"
+step
+  only Warrior
+  zone map 1439
+  goto 38.191,40.934 map 1439 r 8
+  note "Talk to Delfrum Flintbeard"
+  learn 2020 "Blacksmithing. This will allow you to make +2 damage sharpening stones for your weapon which are very strong." only Warrior
+  learn 2020 "Blacksmithing. This will allow you to make +2 damage sharpening stones for your weapon which are very strong." only Rogue
+  learn 2020 "This will allow you to make +2 damage weightstones for your weapon which are very strong." only Paladin
+step
+  only Rogue
+  zone map 1439
+  goto 38.191,40.934 map 1439 r 8
+  note "Talk to Delfrum Flintbeard"
+  learn 2020 "Blacksmithing. This will allow you to make +2 damage sharpening stones for your weapon which are very strong." only Warrior
+  learn 2020 "Blacksmithing. This will allow you to make +2 damage sharpening stones for your weapon which are very strong." only Rogue
+  learn 2020 "This will allow you to make +2 damage weightstones for your weapon which are very strong." only Paladin
+step
+  only Paladin
+  zone map 1439
+  goto 38.191,40.934 map 1439 r 8
+  note "Talk to Delfrum Flintbeard"
+  learn 2020 "Blacksmithing. This will allow you to make +2 damage sharpening stones for your weapon which are very strong." only Warrior
+  learn 2020 "Blacksmithing. This will allow you to make +2 damage sharpening stones for your weapon which are very strong." only Rogue
+  learn 2020 "This will allow you to make +2 damage weightstones for your weapon which are very strong." only Paladin
+step
+  only Warrior
+  when !turnedin 9144
+  zone map 1439
+  note "Talk to Thelgrum Stonehammer"
+  note "Buy a [Mining Pick] from Thelgrum Stonehammer"
+  collect 2901 x1 @38.225,41.199 map 1439 -- Mining Pick (1)
+step
+  only Rogue
+  when !turnedin 9144
+  zone map 1439
+  note "Talk to Thelgrum Stonehammer"
+  note "Buy a [Mining Pick] from Thelgrum Stonehammer"
+  collect 2901 x1 @38.225,41.199 map 1439 -- Mining Pick (1)
+step
+  only Paladin
+  when !turnedin 9144
+  zone map 1439
+  note "Talk to Thelgrum Stonehammer"
+  note "Buy a [Mining Pick] from Thelgrum Stonehammer"
+  collect 2901 x1 @38.225,41.199 map 1439 -- Mining Pick (1)
+step
+  zone map 1439
+  note "Talk to Tharnariun Treetender"
+  accept 2118 -- Accept Plagued Lands
+step
+  label BigThreat
+  zone map 1448
+  goto 22.24,18.22 map 1448 r 8 optional
+  note "Talk to Terenthis"
+  accept 984 -- Accept How Big a Threat?
+step
+  when has 12238 x6
+  zone map 1439
+  note "Talk to Gubber Blump"
+  accept 1141 -- Accept The Family and the Fishing Pole
+  turnin 1141 -- Turn in The Family and the Fishing Pole
+step
+  along until RabidThistle
+  zone map 1439
+  note "Kill Pygmy Tide Crawlers and Young Reef Crawlers. Loot them for their Legs"
+  note "You may need to go in the water for them"
+  collect 5385 x6 quest 983.1 @35.72,55.84 map 1439
+step
+  zone map 1448
+  goto 18.81,26.69 map 1448 r 8
+  note "Loot the Beached Sea Creature for the Sea Creature Bones"
+  collect 12242 x1 quest 3524.1
+step
+  only Druid
+  along until end
+  zone map 1448
+  note "Level [Herbalism] to 15. Collect 5 [Earthroot] for a future quest"
+  collect 2449 x5 @18.81,26.69 map 1448 optional
+step
+  zone map 1448
+  goto 22.39,29.45 map 1448 r 8
+  note "Discover the Furbolg Camp (Run to the totem then run away)"
+  complete 984 -- Find a corrupt furbolg camp
+step
+  label RabidThistle
+  zone map 1439
+  use 7586 @38.47,57.92 map 1439 -- Use [Tharnariun's Hope] on a Rabid Thistle Bear
+  kill 2164 x1 quest 2118.1 @38.47,57.92 map 1439
+step
+  zone map 1439
+  note "Kill Pygmy Tide Crawlers and Young Reef Crawlers. Loot them for their Legs"
+  note "You may need to go in the water for them"
+  collect 5385 x6 quest 983.1 @36.53,53.39 map 1439
+step
+  note "XP checkpoint: 12-3550 Grind until you are 3550xp away from level 12 (5250+/8800xp)"
+step
+  zone map 1448
+  goto 19.13,21.39 map 1448 r 8 optional
+  note "Click the Buzzbox 827 on the ground"
+  turnin 983 -- Turn in Buzzbox 827
+step
+  zone map 1448
+  goto 19.13,21.39 map 1448 r 8 optional
+  note "Click the Buzzbox 827 on the ground"
+  accept 1001 -- Accept Buzzbox 411
+step
+  when onquest 3524
+  turnin 3524 -- Turn in Washed Ashore
+step
+  zone map 1439
+  zone map 1448
+  goto 36.71,44.98 map 1439 r 10 optional
+  goto 19.1,20.63 map 1448 r 8 optional
+  note "Talk to Gwennyth Bly'Leggonde"
+  accept 4681 -- Accept Washed Ashore
+step
+  zone map 1448
+  goto 21.63,18.15 map 1448 r 8 optional
+  note "Talk to Tharnariun Treetender"
+  turnin 2118 -- Turn in Plagued Lands
+  accept 2138 -- Accept Cleansing of the Infected
+step
+  zone map 1448
+  goto 22.24,18.22 map 1448 r 8 optional
+  note "Talk to Terenthis"
+  turnin 984 -- Turn in How Big a Threat?
+  accept 985 -- Accept How Big a Threat?
+  accept 4761 -- Accept Thundris Windweaver
+step
+  only Paladin,Hunter,Priest,Shaman,Mage,Warlock,Druid
+  along until next_31
+  zone map 1439
+  note "Talk to Dalmond"
+  vendor 4182 -- Buy as many [Small Brown Pouches] as you need
+  note "Buy [Sharp Arrows] or [Heavy Shots]" only Hunter
+step
+  label next_31
+  zone map 1448
+  goto 19.98,14.4 map 1448 r 8 optional
+  note "Talk to Thundris Windweaver"
+  turnin 4761 -- Turn in Thundris Windweaver
+  accept 958 -- Accept Tools of the Highborne
+  accept 954 -- Accept Bashal'Aran
+step
+  only Druid
+  along until next_33
+  zone map 1439
+  note "Enter the Moonkin Cave"
+  note "Use the [Cenarion Moondust] at the Moonkin Stone inside the cave to summon Lunaclaw"
+  use 15208 @43.5,45.97 map 1439
+step
+  only Druid
+  label next_33
+  zone map 1439
+  use 15208 @43.5,45.97 map 1439 -- Kill Lunaclaw. Talk to the Lunaclaw Spirit
+  note "Defeat Lunaclaw (x1)"
+step
+  only NightElf
+  zone map 1448
+  goto 19.27,19.14 map 1448 r 8 optional
+  note "Talk to Laird"
+  accept 6343 -- Accept Return to Nessa
+step
+  only NightElf
+  along until next_36
+  zone map 1439
+  goto 36.71,44.98 map 1439 r 5 optional
+  goto 36.336,45.574 map 1439 r 8 optional
+  note "Talk to Caylais Moonfeather"
+  fly "Teldrassil" -- Fly to Teldrassil --Train 12
+step
+  only NightElf
+  when onquest 6343
+  label next_36
+  zone map 1438
+  note "Talk to Nessa Shadowsong"
+  turnin 6343 -- Turn in Return to Nessa
+step
+  only NightElf
+  along until next_38
+  zone map 1438
+  goto 55.889,89.456 map 1438 r 8
+step
+  only Druid
+  when onquest 6001
+  turnin 6001 -- Turn in Body and Heart
+step
+  only Druid
+  label next_38
+  zone map 1457
+  note "Talk to Mathrengyl Bearwalker"
+  train 4217 -- Train your class spells
+step
+  only Warrior,NightElf
+  along until next_40
+  zone map 1457
+  note "Talk to Arias'ta Bladesinger"
+  train 4087 -- Train your class spells
+step
+  only Warrior,NightElf
+  label next_40
+  zone map 1457
+  note "Talk to Ilyenia Moonfire"
+  note "11866,1"
+  goto 57.56,46.72 map 1457 r 8
+  learn 2567 "Thrown"
+step
+  only Warrior,NightElf
+  along until next_42
+  zone map 1457
+  note "Talk to Ariyell Skyshadow"
+  note "Buy a stack of [Keen Throwing Knives]"
+  collect 3107 x200 @58.765,44.494 map 1457
+step
+  only Priest,NightElf
+  label next_42
+  zone map 1457
+  note "Talk to Jandria"
+  train 4091 -- Train your class spells
+step
+  only Rogue,NightElf
+  zone map 1457
+  note "Enter the Cenarion Enclave"
+  note "Talk to Syurna"
+  train 4163 -- Train your class spells
+step
+  only Hunter,NightElf
+  along
+  zone map 1457
+  note "Talk to Jocaste"
+  train 4146 -- Train your class spells
+step
+  along until next_46
+  hearth "Auberdine" optional -- Hearth to Auberdine
+step
+  label next_46
+  along until next_47
+  zone map 1439
+  goto 36.88,44.1 map 1439 r 8 optional
+  goto 36.01,43.77 map 1439 r 10 optional -- Travel toward Cerellean Whiteclaw on the dock
+step
+  label next_47
+  zone map 1439
+  note "Talk to Cerellean Whiteclaw"
+  accept 963 -- Accept For Love Eternal
+step
+  along until next_49
+  zone map 1439
+  goto 32.432,43.744 map 1439 r 15 -- Travel to the end of the dock then jump into the water
+step
+  label next_49
+  zone map 1448
+  note "Loot the Skeletal Sea Turtle for the Sea Turtle Remains"
+  collect 12289 x1 quest 4681.1 @13.63,21.44 map 1448 -- Turtle Remains
+step
+  zone map 1439
+  zone map 1448
+  goto 36.71,44.98 map 1439 r 10 optional
+  goto 19.1,20.63 map 1448 r 8 optional
+  note "Talk to Gwennyth Bly'Leggonde"
+  turnin 4681 -- Turn in Washed Ashore
+step
+  only Warrior
+  along until next_52
+  zone map 1448
+  goto 19.27,19.14 map 1448 r 8
+  note "Talk to Laird"
+  vendor 4200 -- Buy 40 [Longjaw Mud Snapper]
+step
+  only Rogue
+  along until next_52
+  zone map 1448
+  goto 19.27,19.14 map 1448 r 8
+  note "Talk to Laird"
+  vendor 4200 -- Buy 40 [Longjaw Mud Snapper]
+step
+  label next_52
+  zone map 1439
+  note "Talk to Sentinel Glynda Nal'Shea"
+  accept 4811 -- Accept The Red Crystal
+step
+  label Bashal1
+  zone map 1448
+  goto 27.7,10.03 map 1448 r 8 optional
+  note "Talk to Asterion"
+  note "Follow the road to Bashal'Aran"
+  note "Avoid killing Wild Grells and Vile Sprites en-route"
+  turnin 954 -- Turn in Bashal'Aran
+  accept 955 -- Accept Bashal'Aran
+step
+  zone map 1439
+  note "Kill Wild Grells and Vile Sprites. Loot them for their Earrings"
+  collect 5336 x8 quest 955.1 @46.3,39.01 map 1439
+step
+  zone map 1448
+  goto 27.7,10.03 map 1448 r 8 optional
+  note "Talk to Asterion"
+  turnin 955 -- Turn in Bashal'Aran
+  accept 956 -- Accept Bashal'Aran
+step
+  zone map 1439
+  note "Kill Deth'ryll Satyr. Loot them for the Moonstone Seal"
+  collect 5338 x1 quest 956.1 @45.07,36.76 map 1439
+step
+  zone map 1448
+  goto 27.7,10.03 map 1448 r 8 optional
+  note "Talk to Asterion"
+  turnin 956 -- Turn in Bashal'Aran
+  accept 957 -- Accept Bashal'Aran
+step
+  along until Tysha
+  zone map 1448
+  note "Follow the road south and look for nearby Foreststrider Fledglings"
+  note "Kill Foreststrider Fledgling. Loot them for their Strider Meat"
+  collect 5469 x5 @27.7,10.03 map 1448
+step
+  label Tysha
+  zone map 1439
+  note "Talk to Sentinel Tysha Moonblade"
+  accept 953 -- Accept The Fall of Ameth'Aran
+step
+  along until TheLay
+  zone map 1439
+  note "Kill Cursed Highbornes, Writhing Highbornes, and Wailing Highbornes. Loot them for their Relics"
+  collect 5360 x7 quest 958.1 @40.3,59.7 map 1439
+step
+  zone map 1439
+  goto 43.3,58.7 map 1439 r 8
+  note "Click the The Lay of Ameth'Aran"
+  interact 17188 quest 953.1 -- The Lay of Ameth'Aran
+step
+  zone map 1448
+  goto 25.66,39.11 map 1448 r 8
+  note "Click the Ancient Flame"
+  interact 16393 quest 957.1 -- Ancient Moonstone Destroyed
+step
+  label TheLay
+  zone map 1448
+  goto 25.98,40.62 map 1448 r 8
+  note "Click the The Fall of Ameth'Aran"
+  interact 17189 quest 953.2 -- The Fall of Ameth'Aran
+step
+  zone map 1439
+  note "Kill Cursed Highbornes, Writhing Highbornes and Wailing Highbornes. Loot them for their Relics"
+  collect 5360 x7 quest 958.1 @43.3,58.7 map 1439
+step
+  zone map 1448
+  goto 23.29,36.73 map 1448 r 8 optional
+  note "Talk to Sentinel Tysha Moonblade"
+  turnin 953 -- Turn in The Fall of Ameth'Aran
+step
+  along until BashalFinal
+  zone map 1448
+  note "Follow the road north and look for nearby Foreststrider Fledglings"
+  note "Kill Foreststrider Fledgling. Loot them for their Strider Meat"
+  collect 5469 x5 @23.29,36.73 map 1448
+step
+  along until BashalFinal
+  zone map 1448
+  goto 27.7,10.03 map 1448 r 60 -- Travel to Bashal'Aran
+step
+  label BashalFinal
+  zone map 1448
+  goto 27.7,10.03 map 1448 r 8 optional
+  note "Talk to Asterion"
+  turnin 957 -- Turn in Bashal'Aran
+step
+  when !turnedin 2178
+  zone map 1439
+  note "Kill Moonkins. Loot them for their [Small Eggs]"
+  note "You will level [Cooking] to 10 later using [Small Eggs]"
+  collect 6889 x10 @42.73,45.67 map 1439 -- Small Egg
+step
+  zone map 1439
+  note "Be careful of Thistle Bears they stun"
+  note "Kill Foreststrider Fledglings. Loot them for their Strider Meat"
+  collect 5469 x5 @46.254,42.955 map 1439
+step
+  zone map 1439
+  goto 38.109,41.17 map 1439 r 5 optional
+  goto 37.512,41.674 map 1439 r 8
+  note "Talk to Gorbold Steelhand"
+  note "Buy [Mild Spices]"
+  note "Use the [Mild Spices] and your [Small Eggs] to make Herb Baked Eggs. Do this until your Cooking has reached level 10"
+step
+  zone map 1439
+  note "Talk to Alanndarian Nightsong"
+  accept 2178 -- Accept Easy Strider Living
+  turnin 2178 -- Turn in Easy Strider Living
+step
+  label ToolsTurnin
+  zone map 1448
+  goto 19.98,14.4 map 1448 r 8 optional
+  note "Talk to Thundris Windweaver"
+  turnin 958 -- Turn in Tools of the Highborne
+step
+  label end
+  zone map 1439
+  goto 32.417,43.809 map 1439 r 15 optional
+  goto 32.417,43.809 map 1439 r 1
+  note "Level your [First Aid]while waiting for the boat to Menethil Harbor"
+step
+  zone map 1437
+  note "Talk to Shellei Brondir"
+  getfp "Menethil Harbor" @9.49,59.694 map 1437 -- Get the Menethil Harbor flight path
+step
+  along until next_77
+  zone map 1437
+  goto 5.485,64.156 map 1437 r 40 -- Jump off the end of the dock and swim to the waypoint
+step
+  when !zone "Elwynn Forest"
+  when !zone "Stormwind City"
+  when !zone "Ironforge"
+  when !zone "Westfall"
+  label next_77
+  zone map 1437
+  zone map 1455
+  goto 2.433,78.689 map 1437 r 1 optional
+  goto 17.089,83.373 map 1455 r 1

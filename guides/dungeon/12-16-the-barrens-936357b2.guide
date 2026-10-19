@@ -1,0 +1,2064 @@
+guide rxp-free/12-16-the-barrens-936357b2
+title "12-16 The Barrens"
+levels 12-16
+zone map 1413
+coords era
+faction Horde
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · Dungeon Guide 1-22"
+next rxp-free/16-17-ragefire-chasm-efced763
+step
+  only Shaman,Tauren
+  zone map 1411
+  note "Talk to Takrin"
+  accept 840 -- Accept Conscript of the Horde
+step
+  only Shaman,Tauren
+  along until next_2
+  zone map 1411
+  goto 54.309976,39.440085 map 1411 r 30 optional
+  goto 52.8,28.699943 map 1411 r 20 optional -- Go into Dustwind Cave
+step
+  only Shaman,Tauren
+  when onquest 1525
+  label next_2
+  loop
+  zone map 1411
+  goto 51.899953,25.699943 map 1411 r 1
+  goto 53.179953,29.149872 map 1411 r 20
+  goto 52.699953,27.970014 map 1411 r 12
+  goto 53.050024,27.869872 map 1411 r 12
+  goto 53.140047,27.240085 map 1411 r 12
+  goto 52.839905,26.800085 map 1411 r 12
+  goto 52.069976,26.850014 map 1411 r 12
+  goto 51.899953,25.699943 map 1411 r 12
+  note "Kill Cultists. Loot them for a Reagent Pouch"
+  collect 6652 x1 quest 1525.2 -- Reagent Pouch (1)
+step
+  only Shaman,Tauren
+  when onquest 840
+  turnin 840 -- Turn in Conscript of the Horde
+step
+  only Shaman,Tauren
+  zone map 1413
+  note "Talk to Kargal"
+  accept 842 -- Accept Crossroads Conscription
+step
+  only Warrior,Tauren
+  along until next_5
+  zone map 1413
+  goto 54.53,27.960037 map 1413 r 30 optional
+  goto 55.529967,28.280037 map 1413 r 30 optional
+  goto 56.579967,28.609954 map 1413 r 30 optional -- Travel to the top of the mountain
+step
+  only Warrior,Tauren
+  when onquest 1502
+  turnin 1502 -- Turn in Thun'grim Firegaze
+step
+  only Warrior,Tauren
+  label next_5
+  zone map 1413
+  note "Talk to Thun'grim"
+  accept 1503 -- Accept Forged Steel
+step
+  only Warrior,Tauren
+  when onquest 1503
+  zone map 1413
+  note "Loot the Stolen Iron Chest for its Forged Steel Bars"
+  collect 6534 x1 quest 1503.1 @55.049967,26.649991 map 1413 -- Forged Steel Bars (1)
+step
+  only Warrior,Tauren
+  along until next_8
+  zone map 1413
+  goto 54.53,27.960037 map 1413 r 30 optional
+  goto 55.529967,28.280037 map 1413 r 30 optional
+  goto 56.579967,28.609954 map 1413 r 30 optional -- Travel to the top of the mountain
+step
+  only Warrior,Tauren
+  when onquest 1503
+  label next_8
+  zone map 1413
+  note "Talk to Thun'grim"
+  turnin 1503 -- Turn in Forged Steel
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Undead,Skyborne
+  when level<15
+  along until ThievesPickup
+  zone map 1413
+  goto 50.72,32.609954 map 1413 r 8
+  note "Die and respawn at the Spirit Healer"
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Undead,Skyborne
+  zone map 1413
+  note "Talk to Tonga"
+  accept 870 -- Accept The Forgotten Pools
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Undead,Skyborne
+  when onquest 842
+  turnin 842 only !Druid -- Turn in Crossroads Conscription
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Undead,Skyborne
+  when onquest 842
+  zone map 1413
+  note "Talk to Sergra"
+  accept 844 -- Accept Plainstrider Menace
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Undead,Skyborne
+  when turnedin 842
+  zone map 1413
+  note "Talk to Sergra"
+  accept 844 -- Accept Plainstrider Menace
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Undead,Skyborne
+  zone map 1413
+  note "Talk to Sergra"
+  accept 844 -- Accept Plainstrider Menace
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Undead,Skyborne
+  when level<=15
+  when onquest 98024
+  turnin 98024 only Skyborne -- Turn in Journey to the Crossroads
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Undead,Skyborne
+  when level<=15
+  zone map 1413
+  note "Talk to Thork"
+  accept 871 -- Accept Disrupt the Attacks
+  accept 5041 -- Accept Supplies for the Crossroads
+step
+  only Skyborne
+  when level<=15
+  when onquest 98024
+  zone map 1413
+  note "Talk to Thork"
+  turnin 98024 -- Turn in Journey to the Crossroads
+step
+  only Undead
+  when !turnedin 1492
+  zone map 1413
+  goto 51.5,30.340056 map 1413 r 8
+  note "Talk to Devrak"
+  note "Get the The Crossroads flight path"
+step
+  only Skyborne
+  when !turnedin 1492
+  zone map 1413
+  goto 51.5,30.340056 map 1413 r 8
+  note "Talk to Devrak"
+  note "Get the The Crossroads flight path"
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Undead,Skyborne
+  when onquest 1358
+  turnin 1358 -- Turn in Sample for Helbrim
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Undead,Skyborne
+  when onquest 1358
+  zone map 1413
+  note "Talk to Helbrim"
+  accept 1492 -- Accept Wharfmaster Dizzywig
+  accept 848 -- Accept Fungal Spores
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Undead,Skyborne
+  when turnedin 1358
+  zone map 1413
+  note "Talk to Helbrim"
+  accept 1492 -- Accept Wharfmaster Dizzywig
+  accept 848 -- Accept Fungal Spores
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Undead,Skyborne
+  zone map 1413
+  note "Talk to Helbrim"
+  accept 1492 -- Accept Wharfmaster Dizzywig
+  accept 848 -- Accept Fungal Spores
+step
+  only Hunter,Orc
+  zone map 1413
+  goto 51.11,29.069972 map 1413 r 8
+  note "Talk to Uthrok. Buy a [Laminated Recurve Bow] from him"
+  collect 2507 x1 @51.11,29.069972 map 1413 optional -- Collect Laminated Recurve Bow (1)
+step
+  only Hunter,Orc
+  when has 2507
+  along until DisruptTheAttacks
+  zone map 1413
+  note "Equip the [Laminated Recurve Bow]"
+  use 2507 @51.11,29.069972 map 1413 optional
+step
+  only Hunter,Tauren
+  zone map 1413
+  goto 51.11,29.069972 map 1413 r 8
+  note "Talk to Uthrok. Buy a [Hunter's Boomstick] from him"
+  collect 2511 x1 @51.11,29.069972 map 1413 optional -- Collect Hunter's Boomstick (1)
+step
+  only Hunter,Tauren
+  when has 2511
+  along until DisruptTheAttacks
+  zone map 1413
+  note "Equip the [Hunter's Boomstick]"
+  use 2511 @51.11,29.069972 map 1413 optional
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Undead,Skyborne
+  label ThievesPickup
+  zone map 1413
+  note "Talk to Gazrog"
+  accept 869 -- Accept Raptor Thieves
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Undead,Skyborne
+  when !turnedin 1492
+  zone map 1413
+  note "Talk to Innkeeper Boorand"
+  sethome "Crossroads" @51.989967,29.889954 map 1413 -- Set your Hearthstone to Crossroads
+step
+  only Orc
+  zone map 1413
+  note "Talk to Zargh"
+  accept 6365 -- Accept Meats to Orgrimmar
+step
+  only Troll
+  zone map 1413
+  note "Talk to Zargh"
+  accept 6365 -- Accept Meats to Orgrimmar
+step
+  when onquest 869
+  along until DisruptTheAttacks
+  zone map 1413
+  note "Kill every Raptor you see. Loot them for their Heads"
+  collect 5062 x12 quest 869.1 @52.619967,29.840074 map 1413 -- Raptor Head (12)
+step
+  when onquest 844
+  along until DisruptTheAttacks
+  zone map 1413
+  note "Kill Plainstriders. Loot them for their Beaks"
+  collect 5087 x7 quest 844.1 @52.619967,29.840074 map 1413 -- Plainstrider Beak (7)
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll
+  when onquest 924
+  label DemonMountain
+  along until DemonSeed
+  zone map 1413
+  goto 51.089967,22.680037 map 1413 r 40 optional
+  goto 50.33,21.849991 map 1413 r 40 optional
+  goto 49.210033,20.420056 map 1413 r 40 optional
+  goto 47.650033,19.210065 map 1413 r 100 optional -- Travel to the top of the mountain
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll
+  when onquest 924
+  zone map 1413
+  goto 51.089967,22.680037 map 1413 r 40 optional
+  goto 50.33,21.849991 map 1413 r 40 optional
+  goto 49.210033,20.420056 map 1413 r 40 optional
+  goto 47.650033,19.210065 map 1413 r 100 -- Travel to the top of the mountain
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll
+  when onquest 924
+  along until DemonSeed
+  zone map 1413
+  goto 47.650033,19.210065 map 1413 r 15 -- Go inside Dreadmist Den
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll
+  when onquest 924
+  when !turnedin 924
+  label DemonSeed
+  zone map 1413
+  note "Right click the Altar"
+  note "Make sure you have a [Flawed Power Stone] (30 minute duration) on you"
+  collect 4986 x1 @47.969967,19.070046 map 1413 -- Collect Flawed Power Stone
+  note "Destroy the Demon Seed (1)"
+step
+  only Shaman,Orc
+  when onquest 1525
+  label FireTar2
+  along
+  zone map 1413
+  note "Kill a Razormane Water Seeker or Razormane Thornweaver. Loot them for a Fire Tar"
+  collect 5026 x1 quest 1525.1 @53.57,25.510009 map 1413 -- Fire Tar (1)
+step
+  when onquest 871
+  along until next_37
+  zone map 1413
+  note "Kill Water Seekers, Thornweavers and Hunters"
+  kill 3267 x8 quest 871.1 @53.57,25.510009 map 1413 -- Razormane Water Seeker (8)
+  kill 3268 x8 quest 871.2 @53.57,25.510009 map 1413 -- Razormane Thornweaver (8)
+  kill 3265 x3 quest 871.3 @53.57,25.510009 map 1413 -- Razormane Hunter (3)
+step
+  when onquest 871
+  label next_37
+  zone map 1413
+  use 4926 @55.7,27.300056 map 1413 -- Loot Chen's Empty Keg from the ground and start the quest
+  note "You can get it later if it's not there"
+  collect 4926 x1 @55.7,27.300056 map 1413 optional -- Collect Chen's Empty Keg
+  accept 819 -- Accept Chen's Empty Keg
+step
+  when onquest 871
+  label DisruptTheAttacks
+  loop
+  zone map 1413
+  goto 53.63,24.499981 map 1413 r 1
+  goto 53.63,24.499981 map 1413 r 50
+  goto 54.26,24.64 map 1413 r 50
+  goto 54.809967,25.190009 map 1413 r 50
+  goto 55.499967,25.610065 map 1413 r 50
+  goto 55.859967,26.299944 map 1413 r 50
+  goto 55.829967,27.149972 map 1413 r 50
+  goto 55.409967,27.410028 map 1413 r 50
+  goto 54.5,26.969991 map 1413 r 50
+  goto 54.05,26.110046 map 1413 r 50
+  goto 53.51,25.240037 map 1413 r 50
+  note "Kill Water Seekers, Thornweavers and Hunters"
+  kill 3267 x8 quest 871.1 -- Razormane Water Seeker (8)
+  kill 3268 x8 quest 871.2 -- Razormane Thornweaver (8)
+  kill 3265 x3 quest 871.3 -- Razormane Hunter (3)
+step
+  when onquest 869
+  along until next_40
+  zone map 1413
+  note "Kill every Raptor you see. Loot them for their Heads"
+  collect 5062 x12 quest 869.1 @53.51,25.240037 map 1413 -- Raptor Head (12)
+step
+  when onquest 844
+  label next_40
+  loop
+  zone map 1413
+  goto 53.710033,29.190009 map 1413 r 1
+  goto 53.36,26.279963 map 1413 r 80
+  goto 53.230033,28.409991 map 1413 r 80
+  goto 53.57,29.580019 map 1413 r 80
+  goto 52.91,32.900056 map 1413 r 80
+  goto 51.310033,32.909972 map 1413 r 80
+  goto 50.500033,31.050065 map 1413 r 80
+  goto 50.050033,29.770065 map 1413 r 80
+  goto 50.93,27.719963 map 1413 r 80
+  goto 52.829967,27.910009 map 1413 r 80
+  goto 53.710033,29.190009 map 1413 r 80
+  note "Kill Plainstriders. Loot them for their Beaks"
+  collect 5087 x7 quest 844.1 -- Plainstrider Beak (7)
+step
+  when onquest 842
+  turnin 842 only Tauren,Shaman -- Turn in Crossroads Conscription
+step
+  when onquest 844
+  turnin 844 -- Turn in Plainstrider Menace
+step
+  zone map 1413
+  note "Talk to Sergra"
+  accept 845 -- Accept The Zhevra
+step
+  only Shaman,Tauren
+  when onquest 844
+  turnin 844 -- Turn in Plainstrider Menace
+step
+  only Shaman,Tauren
+  zone map 1413
+  note "Talk to Sergra"
+  accept 845 -- Accept The Zhevra
+step
+  when complete 871
+  when onquest 871
+  turnin 871 -- Turn in Disrupt the Attacks
+step
+  when complete 871
+  zone map 1413
+  note "Talk to Thork"
+  accept 872 -- Accept The Disruption Ends
+step
+  when turnedin 871
+  zone map 1413
+  note "Talk to Thork"
+  accept 872 -- Accept The Disruption Ends
+step
+  only Shaman,Tauren
+  zone map 1413
+  note "Talk to Darsok"
+  note "He is at the top of the tower"
+  accept 867 -- Accept Harpy Raiders
+step
+  only Shaman,Orc
+  zone map 1413
+  note "Talk to Darsok"
+  note "He is at the top of the tower"
+  accept 867 -- Accept Harpy Raiders
+step
+  only Orc
+  when onquest 6365
+  turnin 6365 -- Turn in Meats to Orgrimmar
+step
+  only Troll
+  when onquest 6365
+  turnin 6365 -- Turn in Meats to Orgrimmar
+step
+  only Orc
+  zone map 1413
+  note "Talk to Devrak"
+  note "Do NOT fly to Orgrimmar!"
+  accept 6384 -- Accept Ride to Orgrimmar
+step
+  only Troll
+  zone map 1413
+  note "Talk to Devrak"
+  note "Do NOT fly to Orgrimmar!"
+  accept 6384 -- Accept Ride to Orgrimmar
+step
+  only Hunter,Orc
+  zone map 1413
+  goto 51.11,29.069972 map 1413 r 8
+  note "Talk to Uthrok. Buy a [Laminated Recurve Bow] from him"
+  collect 2507 x1 @51.11,29.069972 map 1413 optional -- Collect Laminated Recurve Bow (1)
+step
+  only Hunter,Tauren
+  zone map 1413
+  goto 51.11,29.069972 map 1413 r 8
+  note "Talk to Uthrok. Buy a [Hunter's Boomstick] from him"
+  collect 2511 x1 @51.11,29.069972 map 1413 optional -- Collect Hunter's Boomstick (1)
+step
+  only Warrior,Orc
+  along until KreenigSnarlsnout
+  zone map 1413
+  goto 52.499967,30.700019 map 1413 r 1 optional
+  vendor nearest optional -- Check if Lizzarik is in the Crossroads. He sells potions and [Heavy Spiked Mace] which is a limited supply item
+step
+  when onquest 872,5041,845
+  zone map 1413
+  goto 51.989967,29.889954 map 1413 r 8
+  note "Talk to Innkeeper Boorand"
+  vendor 3934 only !Rogue,!Warrior -- Stock up on food and water
+  vendor 3934 only Rogue -- Stock up on food
+  vendor 3934 only Warrior -- Stock up on food
+step
+  when onquest 872
+  zone map 1413
+  goto 55.7,27.300056 map 1413 r 20 optional
+  use 4926 @55.780033,20 map 1413 -- Loot Chen's Empty Keg from the ground and start the quest
+  note "Wait for the respawn if it's not up"
+  collect 4926 x1 @55.780033,20 map 1413 optional -- Collect Chen's Empty Keg
+  accept 819 -- Accept Chen's Empty Keg
+step
+  when onquest 872
+  along until KreenigSnarlsnout
+  zone map 1413
+  note "Kill Razormane Geomancers and Razormane Defenders"
+  kill 3269 x8 quest 872.1 @59.260032,24.670046 map 1413 -- Razormane Geomancer (8)
+  kill 3266 x8 quest 872.2 @59.260032,24.670046 map 1413 -- Razormane Defender (8)
+step
+  when onquest 872
+  along until KreenigSnarlsnout
+  note "Loot the Crossroads' Supply Crates"
+  note "It has multiple spawn locations"
+  collect 12708 x1 quest 5041.1 -- Crossroads' Supply Crates (1)
+step
+  when onquest 872
+  label KreenigSnarlsnout
+  zone map 1413
+  note "Kill Kreenig Snarlsnout. Loot him for his Tusk"
+  collect 5063 x1 quest 872.3 -- Kreenig Snarlsnout's Tusk (1)
+step
+  when onquest 872
+  along until next_56
+  zone map 1413
+  note "Kill Razormane Geomancers and Razormane Defenders"
+  kill 3269 x8 quest 872.1 @59.260032,24.670046 map 1413 -- Razormane Geomancer (8)
+  kill 3266 x8 quest 872.2 @59.260032,24.670046 map 1413 -- Razormane Defender (8)
+step
+  when onquest 872
+  label next_56
+  loop
+  zone map 1413
+  goto 58.379967,27.009954 map 1413 r 30
+  goto 59.459966,24.580056 map 1413 r 30
+  goto 58.379967,27.009954 map 1413 r 1
+  goto 59.459966,24.580056 map 1413 r 1
+  note "Loot the Crossroads' Supply Crates"
+  note "It has multiple spawn locations"
+  collect 12708 x1 quest 5041.1 -- Crossroads' Supply Crates (1)
+step
+  when onquest 872
+  loop
+  zone map 1413
+  goto 58.900032,25.369991 map 1413 r 1
+  goto 59.369966,25.380056 map 1413 r 50
+  goto 59.629999,24.460019 map 1413 r 50
+  goto 59.629999,23.879963 map 1413 r 50
+  goto 59.059999,23.890028 map 1413 r 50
+  goto 58.619967,23.980019 map 1413 r 50
+  goto 57.829999,24.280037 map 1413 r 50
+  goto 56.87,24.550009 map 1413 r 50
+  goto 56.740032,25.369991 map 1413 r 50
+  goto 57.250032,25.459981 map 1413 r 50
+  goto 57.520032,25.630046 map 1413 r 50
+  goto 57.649999,25.080037 map 1413 r 50
+  goto 58.240032,24.979981 map 1413 r 50
+  goto 58.900032,25.369991 map 1413 r 50
+  note "Kill Razormane Geomancers and Razormane Defenders"
+  kill 3269 x8 quest 872.1 -- Razormane Geomancer (8)
+  kill 3266 x8 quest 872.2 -- Razormane Defender (8)
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll
+  when complete 924
+  along until next_59
+  zone map 1413
+  note "Kill any Zhevra you see. Loot them for their Hooves"
+  collect 5086 x4 quest 845.1 @58.900032,25.369991 map 1413 -- Zhevra Hooves (4)
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll
+  when complete 924
+  when onquest 924
+  label next_59
+  zone map 1413
+  note "Talk to Ak'Zeloth"
+  turnin 924 -- Turn in The Demon Seed
+step
+  only Shaman,Orc
+  when onquest 869
+  along until ShamanDurotar
+  zone map 1413
+  note "Kill every Raptor you see. Loot them for their Heads"
+  collect 5062 x12 quest 869.1 @62.339966,20.070009 map 1413 -- Raptor Head (12)
+step
+  only Shaman,Orc
+  along until ShamanDurotar
+  zone map 1413
+  note "Kill any Zhevra you see. Loot them for their Hooves"
+  collect 5086 x4 quest 845.1 @62.339966,20.070009 map 1413 -- Zhevra Hooves (4)
+step
+  only Shaman,Orc
+  when onquest 1525
+  label ShamanDurotar
+  along until CallofFire3
+  zone map 1411
+  goto 36.740047,57.779943 map 1411 r 8
+step
+  only Shaman,Orc
+  when onquest 1525
+  zone map 1411
+  goto 36.740047,57.779943 map 1411 r 8
+step
+  only Shaman,Orc
+  along until CallofFire3
+  zone map 1411
+  goto 36.740047,57.779943 map 1411 r 10 optional
+  goto 36.629976,58.149872 map 1411 r 8 optional
+  goto 36.629976,58.149872 map 1411 r 8 optional
+  goto 36.769929,58.979943 map 1411 r 8 optional
+  goto 36.849929,58.320085 map 1411 r 8 optional
+  goto 37.239905,58.130014 map 1411 r 8 optional
+  goto 37.860047,58.179943 map 1411 r 8 optional
+  goto 38.049929,57.789872 map 1411 r 8 optional
+  goto 38.929929,57.539943 map 1411 r 8 optional
+  goto 39.189976,57.899943 map 1411 r 8 optional
+  goto 39.159905,58.560085 map 1411 r 10 optional -- Travel the path up the mountain toward Telf
+step
+  only Shaman,Orc
+  when onquest 1525
+  zone map 1411
+  goto 36.740047,57.779943 map 1411 r 8
+step
+  only Shaman,Orc
+  when onquest 1525
+  turnin 1525 -- Turn in Call of Fire
+step
+  only Shaman,Orc
+  label CallofFire3
+  zone map 1411
+  note "Talk to Telf"
+  accept 1526 -- Accept Call of Fire
+step
+  only Shaman,Orc
+  along until next_66
+  zone map 1411
+  note "Use the [Fire Sapta]"
+  use 6636 @38.180047,58.579943 map 1411
+step
+  only Shaman,Orc
+  when onquest 1526
+  label next_66
+  zone map 1411
+  note "Kill the Minor Manifestation of Fire. Loot him for a Glowing Ember"
+  collect 6655 x1 quest 1526.1 @38.96,58.219943 map 1411 -- Glowing Ember (1)
+step
+  only Shaman,Orc
+  when onquest 1526
+  turnin 1526 -- Turn in Call of Fire
+step
+  only Shaman,Orc
+  zone map 1411
+  note "Click the Brazier on the ground"
+  accept 1527 -- Accept Call of Fire
+step
+  only Shaman,Orc
+  when onquest 869
+  along until FireEnd
+  zone map 1411
+  note "Kill every Raptor you see. Loot them for their Heads"
+  collect 5062 x12 quest 869.1 @38.96,58.219943 map 1411 -- Raptor Head (12)
+step
+  only Shaman,Orc
+  along until FireEnd
+  zone map 1411
+  note "Kill any Zhevra you see. Loot them for their Hooves"
+  collect 5086 x4 quest 845.1 @38.96,58.219943 map 1411 -- Zhevra Hooves (4)
+step
+  only Shaman,Orc
+  when onquest 1527
+  label FireEnd
+  zone map 1413
+  note "Talk to Kranal"
+  turnin 1527 -- Turn in Call of Fire
+step
+  only Shaman,Orc
+  zone map 1413
+  use 4926 @55.780033,20 map 1413 -- Loot Chen's Empty Keg from the ground and start the quest
+  note "Wait for the respawn if it's not up"
+  collect 4926 x1 @55.780033,20 map 1413 optional -- Collect Chen's Empty Keg
+  accept 819 -- Accept Chen's Empty Keg
+step
+  when onquest 869
+  along until RatchetEnter
+  zone map 1413
+  note "Kill Raptors. Loot them for their Heads"
+  collect 5062 x12 quest 869.1 @55.780033,20 map 1413 -- Raptor Head (12)
+step
+  when onquest 872
+  along until next_74
+  zone map 1413
+  note "Kill Zhevra Runners. Loot them for their Hooves"
+  collect 5086 x4 quest 845.1 @63.889999,31.660019 map 1413 -- Zhevra Hooves (4)
+step
+  when !onquest 872
+  label next_74
+  along until RatchetEnter
+  zone map 1413
+  note "Kill Zhevra Runners. Loot them for their Hooves"
+  collect 5086 x4 quest 845.1 @63.889999,31.660019 map 1413 -- Zhevra Hooves (4)
+step
+  when onquest 845
+  label RatchetEnter
+  zone map 1413
+  goto 62.680032,36.230009 map 1413 r 8
+step
+  zone map 1413
+  note "Talk to Wrenix"
+  accept 97253 -- Accept Parts and Pieces
+step
+  zone map 1413
+  note "Talk to Gazlowe"
+  accept 887 -- Accept Southsea Freebooters
+step
+  along until next_79
+  zone map 1413
+  note "Talk to Bragok"
+  getfp "Ratchet" @63.089966,37.159963 map 1413 -- Get the Ratchet flight path
+step
+  label next_79
+  zone map 1413
+  note "Talk to Sputtervalve and the Wanted Poster"
+  accept 894 -- Accept Samophlange
+  accept 895 -- Accept WANTED: Baron Longshore
+  goto 62.590032,37.470046 map 1413 r 8 optional
+step
+  only Warrior,Undead
+  zone map 1413
+  goto 62.239999,37.479963 map 1413 r 8
+  note "Talk to Ironzar. Buy a [Espadon] from him"
+  collect 2024 x1 @62.239999,37.479963 map 1413 optional -- Collect Espadon (1)
+step
+  only Warrior,Undead
+  when has 2024
+  when level<16
+  along until BaronLongshore
+  zone map 1413
+  note "Equip the [Espadon] when you are level 16"
+  use 2024 @62.239999,37.479963 map 1413 optional
+step
+  only Warrior,Undead
+  when has 2024
+  when level>=16
+  along until BaronLongshore
+  zone map 1413
+  note "Equip the [Espadon]"
+  use 2024 @62.239999,37.479963 map 1413 optional
+step
+  only Warrior,Troll
+  zone map 1413
+  goto 62.239999,37.479963 map 1413 r 8
+  note "Talk to Ironzar. Buy a [Gnarled Staff] from him"
+  collect 2030 x1 @62.239999,37.479963 map 1413 optional -- Collect Gnarled Staff (1)
+step
+  only Warrior,Troll
+  when has 2030
+  along until BaronLongshore
+  zone map 1413
+  note "Equip the [Gnarled Staff]"
+  use 2030 @62.239999,37.479963 map 1413 optional
+step
+  only Warrior,Orc
+  zone map 1413
+  goto 62.239999,37.479963 map 1413 r 8
+  note "Talk to Ironzar. Buy a [Bearded Axe] from him"
+  collect 2025 x1 @62.239999,37.479963 map 1413 optional -- Collect Bearded Axe (1)
+step
+  only Warrior,Orc
+  when has 2025
+  along until BaronLongshore
+  zone map 1413
+  note "Equip the [Bearded Axe]"
+  use 2025 @62.239999,37.479963 map 1413 optional
+step
+  only Warrior,Tauren
+  zone map 1413
+  goto 62.239999,37.479963 map 1413 r 8
+  note "Talk to Ironzar. Buy a [Rock Hammer] from him"
+  collect 2026 x1 @62.239999,37.479963 map 1413 optional -- Collect Rock Hammer (1)
+step
+  only Warrior,Tauren
+  when has 2026
+  when level<16
+  along until BaronLongshore
+  zone map 1413
+  note "Equip the [Rock Hammer] when you are level 16"
+  use 2026 @62.239999,37.479963 map 1413 optional
+step
+  only Warrior,Tauren
+  when has 2026
+  when level>=16
+  along until BaronLongshore
+  zone map 1413
+  note "Equip the [Rock Hammer]"
+  use 2026 @62.239999,37.479963 map 1413 optional
+step
+  only Shaman
+  zone map 1413
+  goto 62.239999,37.479963 map 1413 r 8
+  note "Talk to Ironzar. Buy a [Gnarled Staff] from him"
+  collect 2030 x1 @62.239999,37.479963 map 1413 optional -- Collect Gnarled Staff (1)
+step
+  only Shaman
+  when has 2030
+  along until BaronLongshore
+  zone map 1413
+  note "Equip the [Gnarled Staff]"
+  use 2030 @62.239999,37.479963 map 1413 optional
+step
+  only Rogue
+  zone map 1413
+  goto 62.239999,37.479963 map 1413 r 8
+  note "Talk to Ironzar. Buy a [Scimitar] from him"
+  collect 2027 x1 @62.239999,37.479963 map 1413 optional -- Collect Scimitar (1)
+step
+  only Rogue
+  when has 2027
+  along until BaronLongshore
+  zone map 1413
+  note "Equip the [Scimitar]"
+  use 2027 @62.239999,37.479963 map 1413 optional
+step
+  only Rogue
+  zone map 1413
+  goto 62.239999,37.479963 map 1413 r 8
+  note "Talk to Ironzar. Buy a second [Scimitar] from him for your off-hand"
+  collect 2027 x2 @62.239999,37.479963 map 1413 optional -- Collect Scimitar(1)
+step
+  when onquest 819
+  zone map 1413
+  note "Talk to Drohn"
+  turnin 819 -- Turn in Chen's Empty Keg
+  accept 821 -- Accept Chen's Empty Keg
+step
+  when turnedin 819
+  zone map 1413
+  note "Talk to Drohn"
+  accept 821 -- Accept Chen's Empty Keg
+step
+  zone map 1413
+  note "Talk to Innkeeper Wiley"
+  note "Buy [Melon Juice] from him" only Mage
+  note "Buy [Melon Juice] from him" only Warlock
+  note "Buy [Melon Juice] from him" only Priest
+  note "Buy [Melon Juice] from him" only Shaman
+  note "Buy [Melon Juice] from him" only Druid
+  vendor 6791 -- Vendor Trash
+  collect 1205 x10 @62.050032,39.410028 map 1413 optional only Mage -- Melon Juice (10)
+  collect 1205 x10 @62.050032,39.410028 map 1413 optional only Warlock -- Melon Juice (10)
+  collect 1205 x10 @62.050032,39.410028 map 1413 optional only Priest -- Melon Juice (10)
+  collect 1205 x10 @62.050032,39.410028 map 1413 optional only Shaman -- Melon Juice (10)
+  collect 1205 x10 @62.050032,39.410028 map 1413 optional only Druid -- Melon Juice (10)
+step
+  when has 5088
+  along until BaronLongshore
+  note "Delete the [Control Console Operating Manual] from your bags, as it's no longer needed"
+step
+  along until BaronLongshore
+  zone map 1413
+  note "Kill Southsea Brigands and Southsea Cannoneers"
+  kill 3381 x12 quest 887.1 @62.050032,39.410028 map 1413 -- Southsea Brigand (12)
+  kill 3382 x6 quest 887.2 @62.050032,39.410028 map 1413 -- Southsea Cannoneer (6)
+step
+  only Rogue,Orc
+  along until SouthSea
+  note "Kill Tazan. Loot him for his Satchel"
+  note "He spawns at the first camp and patrols up the hill"
+  note "Tazan's Satchel (1)"
+step
+  label BaronLongshore
+  loop
+  zone map 1413
+  goto 64.210032,47.140056 map 1413 r 1
+  goto 63.569966,49.139981 map 1413 r 1
+  goto 62.639966,49.720037 map 1413 r 1
+  goto 64.210032,47.140056 map 1413 r 50
+  goto 63.569966,49.139981 map 1413 r 50
+  goto 62.639966,49.720037 map 1413 r 50
+  note "Kill Baron Longshore. Loot him for his Head"
+  note "He can be found in one of the camps"
+  collect 5084 x1 quest 895.1 -- Baron Longshore's Head (1)
+step
+  loop
+  zone map 1413
+  goto 64.229966,47.099944 map 1413 r 1
+  goto 64.399999,44.089991 map 1413 r 50
+  goto 63.619999,46.259981 map 1413 r 50
+  goto 64.229966,47.099944 map 1413 r 50
+  note "Kill Southsea Brigands and Southsea Cannoneers"
+  kill 3381 x12 quest 887.1 -- Southsea Brigand (12)
+  kill 3382 x6 quest 887.2 -- Southsea Cannoneer (6)
+step
+  when onquest 97253
+  label SouthSea
+  loop
+  zone map 1413
+  goto 61.979769,45.113784 map 1413 r 1
+  goto 62.151479,44.056984 map 1413 r 40
+  goto 61.399506,44.274561 map 1413 r 40
+  goto 61.979769,45.113784 map 1413 r 40
+  goto 61.952137,45.807956 map 1413 r 40
+  goto 62.200822,47.444958 map 1413 r 40
+  goto 61.556414,48.034043 map 1413 r 40
+  goto 61.523848,48.917669 map 1413 r 40
+  note "Loot the Handful of Complicated Parts on the ground"
+  collect 277331 x5 quest 97253.1 -- 5/5 Handful of Complicated Parts
+step
+  only Rogue,Orc
+  zone map 1413
+  goto 64.327466,44.070305 map 1413 r 1 optional
+  goto 62.179999,44.469935 map 1413 r 50 optional
+  goto 64.327466,44.070305 map 1413 r 50 optional
+  goto 63.643585,45.880481 map 1413 r 50
+  note "Kill Tazan. Loot him for his Satchel"
+  note "He spawns at the first camp and patrols up the hill"
+  note "Tazan's Satchel (1)"
+step
+  zone map 1413
+  note "Talk to Gazlowe"
+  turnin 887 -- Turn in Southsea Freebooters
+  turnin 895 -- Turn in WANTED: Baron Longshore
+  accept 890 -- Accept The Missing Shipment
+step
+  when complete 97253
+  zone map 1413
+  note "Talk to Wrenix"
+  turnin 97253 -- Turn in Parts and Pieces
+step
+  when onquest 1492
+  turnin 1492 -- Turn in Wharfmaster Dizzywig
+step
+  zone map 1413
+  note "Talk to Dizzywig"
+  turnin 890 -- Turn in The Missing Shipment
+  accept 892 -- Accept The Missing Shipment
+  accept 896 -- Accept Miner's Fortune
+step
+  zone map 1413
+  note "Talk to Gazlowe"
+  turnin 892 -- Turn in The Missing Shipment
+  accept 888 -- Accept Stolen Booty
+step
+  only Warrior,Undead
+  zone map 1413
+  goto 62.239999,37.479963 map 1413 r 8
+  note "Talk to Ironzar. Buy a [Espadon] from him"
+  collect 2024 x1 @62.239999,37.479963 map 1413 optional -- Collect Espadon (1)
+step
+  only Warrior,Undead
+  when has 2024
+  when level<16
+  along until FlyToXroads1
+  zone map 1413
+  note "Equip the [Espadon] when you are level 16"
+  use 2024 @62.239999,37.479963 map 1413 optional
+step
+  only Warrior,Undead
+  when has 2024
+  when level>=16
+  along until FlyToXroads1
+  zone map 1413
+  note "Equip the [Espadon]"
+  use 2024 @62.239999,37.479963 map 1413 optional
+step
+  only Warrior,Troll
+  zone map 1413
+  goto 62.239999,37.479963 map 1413 r 8
+  note "Talk to Ironzar. Buy a [Gnarled Staff] from him"
+  collect 2030 x1 @62.239999,37.479963 map 1413 optional -- Collect Gnarled Staff (1)
+step
+  only Warrior,Troll
+  when has 2030
+  along until FlyToXroads1
+  zone map 1413
+  note "Equip the [Gnarled Staff]"
+  use 2030 @62.239999,37.479963 map 1413 optional
+step
+  only Warrior,Orc
+  zone map 1413
+  goto 62.239999,37.479963 map 1413 r 8
+  note "Talk to Ironzar. Buy a [Bearded Axe] from him"
+  collect 2025 x1 @62.239999,37.479963 map 1413 optional -- Collect Bearded Axe (1)
+step
+  only Warrior,Orc
+  when has 2025
+  along until FlyToXroads1
+  zone map 1413
+  note "Equip the [Bearded Axe]"
+  use 2025 @62.239999,37.479963 map 1413 optional
+step
+  only Warrior,Tauren
+  zone map 1413
+  goto 62.239999,37.479963 map 1413 r 8
+  note "Talk to Ironzar. Buy a [Rock Hammer] from him"
+  collect 2026 x1 @62.239999,37.479963 map 1413 optional -- Collect Rock Hammer (1)
+step
+  only Warrior,Tauren
+  when has 2026
+  when level<16
+  along until FlyToXroads1
+  zone map 1413
+  note "Equip the [Rock Hammer] when you are level 16"
+  use 2026 @62.239999,37.479963 map 1413 optional
+step
+  only Warrior,Tauren
+  when has 2026
+  when level>=16
+  along until FlyToXroads1
+  zone map 1413
+  note "Equip the [Rock Hammer]"
+  use 2026 @62.239999,37.479963 map 1413 optional
+step
+  only Shaman
+  zone map 1413
+  goto 62.239999,37.479963 map 1413 r 8
+  note "Talk to Ironzar. Buy a [Gnarled Staff] from him"
+  collect 2030 x1 @62.239999,37.479963 map 1413 optional -- Collect Gnarled Staff (1)
+step
+  only Rogue
+  zone map 1413
+  goto 62.239999,37.479963 map 1413 r 8
+  note "Talk to Ironzar. Buy a [Scimitar] from him"
+  collect 2027 x1 @62.239999,37.479963 map 1413 optional -- Collect Scimitar (1)
+step
+  only Rogue
+  when has 2027
+  along until FlyToXroads1
+  zone map 1413
+  note "Equip the [Scimitar]"
+  use 2027 @62.239999,37.479963 map 1413 optional
+step
+  only Rogue
+  zone map 1413
+  goto 62.239999,37.479963 map 1413 r 8
+  note "Talk to Ironzar. Buy a second [Scimitar] from him for your off-hand"
+  collect 2027 x2 @62.239999,37.479963 map 1413 optional -- Collect Scimitar (1)
+step
+  only Human,Dwarf,Gnome,NightElf,Orc,Troll,Undead,Skyborne
+  when complete 845
+  label FlyToXroads1
+  along until XroadsTurnins3
+  zone map 1413
+  goto 63.089966,37.159963 map 1413 r 8 optional
+  note "Talk to Bragok"
+  fly "Crossroads" optional -- Fly to The Crossroads
+step
+  when onquest 869
+  along until next_126
+  zone map 1413
+  note "Kill every Raptor you see. Loot them for their Heads"
+  collect 5062 x12 quest 869.1 @63.089966,37.159963 map 1413 -- Raptor Head (12)
+step
+  label next_126
+  loop
+  zone map 1413
+  goto 55.270033,37.819944 map 1413 r 1
+  goto 48.329967,36.749972 map 1413 r 1
+  goto 55.270033,37.819944 map 1413 r 80
+  goto 53.84,38.520037 map 1413 r 80
+  goto 52.630033,38.069935 map 1413 r 80
+  goto 49.49,37.200074 map 1413 r 80
+  goto 48.329967,36.749972 map 1413 r 80
+  note "Finish killing Zhevras. Loot them for their Hooves"
+  collect 5086 x4 quest 845.1 -- Zhevra Hooves (4)
+step
+  only Druid,Tauren
+  when !zone "Moonglade"
+  along until DruidTraining1
+  note "Cast [Teleport: Moonglade]"
+step
+  only Druid,Tauren
+  when level>=14
+  when level<16
+  zone map 1450
+  goto 52.530116,40.580209 map 1450 r 8 optional
+  note "Talk to Loganaar"
+  learn 782 "your class spells"
+step
+  only Druid,Tauren
+  when level>=16
+  label DruidTraining1
+  zone map 1450
+  goto 52.530116,40.580209 map 1450 r 8 optional
+  note "Talk to Loganaar"
+  learn 8925 "your class spells"
+step
+  only Tauren
+  when !zone "Thunder Bluff"
+  along until FlyXroads2
+  zone map 1450
+  hearth "Thunder Bluff" optional -- Hearth to Thunder Bluff
+  use 6948 @52.530116,40.580209 map 1450 optional
+step
+  only Tauren
+  when onquest 6362
+  turnin 6362 -- Turn in Ride to Thunder Bluff
+step
+  only Tauren
+  zone map 1456
+  note "Talk to Ahanu"
+  accept 6363 -- Accept Tal the Wind Rider Master
+step
+  only Shaman,Tauren
+  when level>=14
+  when level<16
+  zone map 1456
+  goto 23.640431,18.740129 map 1456 r 8
+  note "Talk to Tigor"
+  learn 2645 "your class spells"
+step
+  only Shaman,Tauren
+  when level>=16
+  zone map 1456
+  goto 23.640431,18.740129 map 1456 r 8
+  note "Talk to Tigor"
+  learn 8498 "your class spells"
+step
+  only Warrior,Tauren
+  zone map 1456
+  goto 61.310371,78.250097 map 1456 r 60 -- Travel to the Hunter Rise
+step
+  only Hunter,Tauren
+  when level>=16
+  label HunterTraining1
+  zone map 1456
+  goto 59.129772,86.910221 map 1456 r 8
+  note "Talk to Urek"
+  learn 13795 "your class spells"
+step
+  only Hunter,Tauren
+  zone map 1456
+  goto 54.070132,84.02016 map 1456 r 8
+  note "Talk to Hesuwa"
+  learn 24556 "your pet spells"
+step
+  only Warrior,Tauren
+  when level>=14
+  when level<16
+  zone map 1456
+  goto 57.270132,87.339922 map 1456 r 8
+  note "Talk to Torm"
+  learn 1160 "your class spells"
+step
+  only Warrior,Tauren
+  when level>=16
+  label WarriorTraining1
+  zone map 1456
+  goto 57.270132,87.339922 map 1456 r 8
+  note "Talk to Torm"
+  learn 285 "your class spells"
+step
+  only Tauren
+  when onquest 6363
+  turnin 6363 -- Turn in Tal the Wind Rider Master
+step
+  only Tauren
+  zone map 1456
+  note "Talk to Tal"
+  accept 6364 -- Accept Return to Jahan
+step
+  only Tauren
+  when !zone "The Barrens"
+  label FlyXroads2
+  along until HidesTurnIn
+  zone map 1456
+  goto 47.000431,49.819425 map 1456 r 8
+  note "Talk to Tal"
+  fly "Crossroads" -- Fly to Crossroads
+step
+  only Tauren
+  when !turnedin 903
+  zone map 1413
+  note "Talk to Innkeeper Boorand"
+  sethome "Crossroads" @51.989967,29.889954 map 1413 -- Set your Hearthstone to Crossroads
+step
+  only Tauren
+  when !turnedin 850
+  zone map 1413
+  note "Talk to Innkeeper Boorand"
+  sethome "Crossroads" @51.989967,29.889954 map 1413 -- Set your Hearthstone to Crossroads
+step
+  only Tauren
+  when !turnedin 867
+  zone map 1413
+  note "Talk to Innkeeper Boorand"
+  sethome "Crossroads" @51.989967,29.889954 map 1413 -- Set your Hearthstone to Crossroads
+step
+  only Tauren
+  when !turnedin 901
+  zone map 1413
+  note "Talk to Innkeeper Boorand"
+  sethome "Crossroads" @51.989967,29.889954 map 1413 -- Set your Hearthstone to Crossroads
+step
+  when turnedin 871
+  when onquest 5041
+  turnin 5041 -- Turn in Supplies for the Crossroads
+step
+  when turnedin 871
+  zone map 1413
+  note "Talk to Thork"
+  turnin 872 -- Turn in The Disruption Ends
+step
+  label XroadsTurnins3
+  zone map 1413
+  note "Talk to Sergra"
+  turnin 845 -- Turn in The Zhevra
+  accept 903 -- Accept Prowlers of the Barrens
+step
+  only Tauren
+  when onquest 6364
+  label HidesTurnIn
+  zone map 1413
+  note "Talk to Jahan"
+  turnin 6364 -- Turn in Return to Jahan
+step
+  only Hunter,Troll
+  when !turnedin 850
+  zone map 1413
+  goto 51.670033,29.950046 map 1413 r 8
+  note "Talk to Barg"
+  note "Buy [Sharp Arrows] from him"
+  collect 2515 x1200 @51.670033,29.950046 map 1413 only Hunter -- Sharp Arrow (1200)
+step
+  only Hunter,Tauren
+  when !turnedin 850
+  zone map 1413
+  goto 51.670033,29.950046 map 1413 r 8
+  note "Talk to Barg"
+  note "Buy [Heavy Shots] from him"
+  collect 2519 x1000 @51.670033,29.950046 map 1413 only Hunter -- Heavy Shot (1000)
+step
+  only Hunter,Troll
+  when onquest 903
+  zone map 1413
+  note "Talk to Uthrok"
+  vendor 3488 -- Buy a [Fine Longbow] from him if it's available and stock up on arrows
+  note "If it's not up, buy a [Reinforced Bow] instead"
+  collect 2515 x1200 @51.11,29.069972 map 1413 optional only Hunter -- Sharp Arrow (1200)
+step
+  only Hunter,Tauren
+  zone map 1413
+  goto 51.11,29.069972 map 1413 r 8
+  note "Talk to Uthrok. Buy a [Hunter's Boomstick] from him"
+  collect 2511 x1 @51.11,29.069972 map 1413 optional -- Collect Hunter's Boomstick (1)
+step
+  when turnedin 819
+  along until RegtharDeathgate1
+  zone map 1413
+  note "Kill Plainstriders. Loot them for their Kidneys"
+  collect 4894 x5 quest 821.2 @51.11,29.069972 map 1413 -- Plainstrider Kidney (5)
+step
+  when onquest 869
+  along until next_151
+  zone map 1413
+  note "Kill every Raptor you see. Loot them for their Heads"
+  collect 5062 x12 quest 869.1 @51.11,29.069972 map 1413 -- Raptor Head (12)
+step
+  label next_151
+  zone map 1413
+  note "Talk to Regthar"
+  accept 850 -- Accept Kolkar Leaders
+  accept 855 -- Accept Centaur Bracers
+step
+  label RegtharDeathgate1
+  zone map 1413
+  note "Talk to Regthar"
+  accept 850 -- Accept Kolkar Leaders
+step
+  when onquest 855
+  along until KodobaneTurnin
+  zone map 1413
+  note "Kill Kolkar Wranglers and Kolkar Stormers. Loot them for their Bracers"
+  note "This quest does not have to be completed now"
+  collect 5030 x15 quest 855.1 @45.35,28.409991 map 1413 -- Centaur Bracers (15)
+step
+  when onquest 848
+  along until Barak
+  zone map 1413
+  note "Collect Laden Mushrooms around The Forgotten Pools"
+  note "This quest does not have to be completed now"
+  collect 5012 x4 quest 848.1 @45.35,28.409991 map 1413 -- Collect Fungal Spores (x4)
+step
+  zone map 1413
+  goto 45.059967,22.540019 map 1413 r 8
+  note "Dive underwater to the Bubbling Fissure"
+  complete 870 -- Explore the waters of the Forgotten Pools
+step
+  label Barak
+  zone map 1413
+  note "Kill Barak Kodobane. Loot him for his Head"
+  note "Be careful as Barak Kodobane's melee hits deal a LOT of damage and he is protected by a Kolkar Wrangler. They can net you and shoot at you from ranged distance"
+  collect 5022 x1 quest 850.1 -- Kodobane's Head (1)
+step
+  when complete 855
+  zone map 1413
+  note "Talk to Regthar"
+  turnin 850 -- Turn in Kolkar Leaders
+  accept 851 -- Accept Verog the Dervish
+  turnin 855 -- Turn in Centaur Bracers
+step
+  label KodobaneTurnin
+  zone map 1413
+  note "Talk to Regthar"
+  turnin 850 -- Turn in Kolkar Leaders
+  accept 851 -- Accept Verog the Dervish
+step
+  when turnedin 850
+  zone map 1413
+  note "Talk to Regthar"
+  accept 851 -- Accept Verog the Dervish
+step
+  when onquest 869
+  along until HarpyTalons
+  zone map 1413
+  note "Kill every Raptor you see. Loot them for their Heads"
+  collect 5062 x12 quest 869.1 @45.35,28.409991 map 1413 -- Raptor Head (12)
+step
+  when turnedin 819
+  loop
+  zone map 1413
+  goto 41.620033,23.419944 map 1413 r 1
+  goto 41.620033,23.419944 map 1413 r 50
+  goto 41.300001,24.309935 map 1413 r 50
+  goto 40.520001,22.88 map 1413 r 50
+  goto 41.000001,21.190009 map 1413 r 50
+  goto 40.319968,20.690028 map 1413 r 50
+  note "Kill Savannah Prowlers. Loot them for their Claws and Tusks"
+  collect 5096 x7 quest 903.1 -- Prowler Claws (7)
+  collect 4893 x5 quest 821.1 -- Savannah Lion Tusk (5)
+step
+  when !turnedin 819
+  loop
+  zone map 1413
+  goto 41.620033,23.419944 map 1413 r 1
+  goto 41.620033,23.419944 map 1413 r 50
+  goto 41.300001,24.309935 map 1413 r 50
+  goto 40.520001,22.88 map 1413 r 50
+  goto 41.000001,21.190009 map 1413 r 50
+  goto 40.319968,20.690028 map 1413 r 50
+  note "Kill Savannah Prowlers. Loot them for their Claws"
+  collect 5096 x7 quest 903.1 -- Prowler Claws (7)
+step
+  only Shaman,Tauren
+  when onquest 867
+  loop
+  zone map 1413
+  goto 41.840001,14.809991 map 1413 r 1
+  goto 41.510001,19.090028 map 1413 r 60
+  goto 40.820001,18.229935 map 1413 r 60
+  goto 40.949968,16.8 map 1413 r 60
+  goto 41.230033,15.789972 map 1413 r 60
+  goto 41.210001,14.750046 map 1413 r 60
+  goto 41.840001,14.809991 map 1413 r 60
+  note "Kill Witchwing Harpies and Witchwing Roguefeathers. Loot them for their Talons"
+  collect 5064 x8 quest 867.1 -- Witchwing Talon (8)
+step
+  only Shaman,Orc
+  when onquest 867
+  loop
+  zone map 1413
+  goto 41.840001,14.809991 map 1413 r 1
+  goto 41.510001,19.090028 map 1413 r 60
+  goto 40.820001,18.229935 map 1413 r 60
+  goto 40.949968,16.8 map 1413 r 60
+  goto 41.230033,15.789972 map 1413 r 60
+  goto 41.210001,14.750046 map 1413 r 60
+  goto 41.840001,14.809991 map 1413 r 60
+  note "Kill Witchwing Harpies and Witchwing Roguefeathers. Loot them for their Talons"
+  collect 5064 x8 quest 867.1 -- Witchwing Talon (8)
+step
+  label HarpyTalons
+  note "Review this source step manually."
+step
+  only Shaman,Tauren
+  when level<17
+  along until Samophlange
+  note "Be careful of Sunscale Scytheclaws in the area. They are up to level 18 and can [Thrash]"
+step
+  only Shaman,Orc
+  when level<17
+  along until Samophlange
+  note "Be careful of Sunscale Scytheclaws in the area. They are up to level 18 and can [Thrash]"
+step
+  only Shaman,Tauren
+  when turnedin 819
+  along until Samophlange
+  zone map 1413
+  note "Kill Plainstriders. Loot them for their Kidneys"
+  collect 4894 x5 quest 821.2 @41.840001,14.809991 map 1413 -- Plainstrider Kidney (5)
+step
+  only Shaman,Orc
+  when turnedin 819
+  along until Samophlange
+  zone map 1413
+  note "Kill Plainstriders. Loot them for their Kidneys"
+  collect 4894 x5 quest 821.2 @41.840001,14.809991 map 1413 -- Plainstrider Kidney (5)
+step
+  only Shaman,Tauren
+  zone map 1413
+  note "Talk to Vrang"
+  accept 95494 -- Accept Bruised Pride and Lion Hides
+  accept 95507 -- Accept Vrang's Game
+step
+  only Shaman,Orc
+  zone map 1413
+  note "Talk to Vrang"
+  accept 95494 -- Accept Bruised Pride and Lion Hides
+  accept 95507 -- Accept Vrang's Game
+step
+  only Shaman,Tauren
+  when !turnedin 95494
+  zone map 1413
+  goto 43.799968,12.219944 map 1413 r 8
+  note "Talk to Vrang"
+  note "Vrang sells [Heavy Spiked Mace] which is a limited supply item" only Tauren,Shaman
+  note "Vrang sells [Heavy Spiked Mace] which is a limited supply item" only Tauren,Druid
+  note "Vendor trash and repair"
+step
+  only Shaman,Tauren
+  when !turnedin 95507
+  zone map 1413
+  goto 43.799968,12.219944 map 1413 r 8
+  note "Talk to Vrang"
+  note "Vrang sells [Heavy Spiked Mace] which is a limited supply item" only Tauren,Shaman
+  note "Vrang sells [Heavy Spiked Mace] which is a limited supply item" only Tauren,Druid
+  note "Vendor trash and repair"
+step
+  only Shaman,Orc
+  when !turnedin 95494
+  zone map 1413
+  goto 43.799968,12.219944 map 1413 r 8
+  note "Talk to Vrang"
+  note "Vrang sells [Heavy Spiked Mace] which is a limited supply item" only Tauren,Shaman
+  note "Vrang sells [Heavy Spiked Mace] which is a limited supply item" only Tauren,Druid
+  note "Vendor trash and repair"
+step
+  only Shaman,Orc
+  when !turnedin 95507
+  zone map 1413
+  goto 43.799968,12.219944 map 1413 r 8
+  note "Talk to Vrang"
+  note "Vrang sells [Heavy Spiked Mace] which is a limited supply item" only Tauren,Shaman
+  note "Vrang sells [Heavy Spiked Mace] which is a limited supply item" only Tauren,Druid
+  note "Vendor trash and repair"
+step
+  only Shaman,Tauren
+  when onquest 95507
+  along until next_170
+  zone map 1413
+  note "Loot the Sprung Traps on the ground"
+  collect 269719 x8 quest 95507.1 @43.799968,12.219944 map 1413 -- 8/8 Trapped Game
+step
+  only Shaman,Orc
+  when onquest 95507
+  along until next_170
+  zone map 1413
+  note "Loot the Sprung Traps on the ground"
+  collect 269719 x8 quest 95507.1 @43.799968,12.219944 map 1413 -- 8/8 Trapped Game
+step
+  only Shaman,Tauren
+  when turnedin 819
+  when onquest 95494
+  collect 269715 x6 quest 95494.1 -- 6/6 Savannah Lion Hide
+step
+  only Shaman,Orc
+  when turnedin 819
+  when onquest 95494
+  collect 269715 x6 quest 95494.1 -- 6/6 Savannah Lion Hide
+step
+  only Shaman,Tauren
+  when turnedin 819
+  label next_170
+  loop
+  zone map 1413
+  goto 44.122862,16.66013 map 1413 r 1
+  goto 44.122862,16.66013 map 1413 r 50
+  goto 45.004112,16.762257 map 1413 r 50
+  goto 45.454112,15.286586 map 1413 r 50
+  goto 45.232073,14.191304 map 1413 r 50
+  goto 44.353783,14.191304 map 1413 r 50
+  goto 42.953454,15.098612 map 1413 r 50
+  note "Kill Savannah Patriarchs. Loot them for their Hides and Tusks"
+  note "If there is too much competition and you cannot complete this quest quickly, feel free to skip this step"
+  collect 4893 x5 quest 821.1 -- Savannah Lion Tusk (5)
+step
+  only Shaman,Orc
+  when turnedin 819
+  loop
+  zone map 1413
+  goto 44.122862,16.66013 map 1413 r 1
+  goto 44.122862,16.66013 map 1413 r 50
+  goto 45.004112,16.762257 map 1413 r 50
+  goto 45.454112,15.286586 map 1413 r 50
+  goto 45.232073,14.191304 map 1413 r 50
+  goto 44.353783,14.191304 map 1413 r 50
+  goto 42.953454,15.098612 map 1413 r 50
+  note "Kill Savannah Patriarchs. Loot them for their Hides and Tusks"
+  note "If there is too much competition and you cannot complete this quest quickly, feel free to skip this step"
+  collect 4893 x5 quest 821.1 -- Savannah Lion Tusk (5)
+step
+  only Shaman,Tauren
+  when !turnedin 819
+  when onquest 95494
+  loop
+  zone map 1413
+  goto 44.122862,16.66013 map 1413 r 1
+  goto 44.122862,16.66013 map 1413 r 50
+  goto 45.004112,16.762257 map 1413 r 50
+  goto 45.454112,15.286586 map 1413 r 50
+  goto 45.232073,14.191304 map 1413 r 50
+  goto 44.353783,14.191304 map 1413 r 50
+  goto 42.953454,15.098612 map 1413 r 50
+  note "Kill Savannah Patriarchs. Loot them for their Hides"
+  note "If there is too much competition and you cannot complete this quest quickly, feel free to skip this step"
+  collect 269715 x6 quest 95494.1 -- 6/6 Savannah Lion Hide
+step
+  only Shaman,Orc
+  when !turnedin 819
+  when onquest 95494
+  loop
+  zone map 1413
+  goto 44.122862,16.66013 map 1413 r 1
+  goto 44.122862,16.66013 map 1413 r 50
+  goto 45.004112,16.762257 map 1413 r 50
+  goto 45.454112,15.286586 map 1413 r 50
+  goto 45.232073,14.191304 map 1413 r 50
+  goto 44.353783,14.191304 map 1413 r 50
+  goto 42.953454,15.098612 map 1413 r 50
+  note "Kill Savannah Patriarchs. Loot them for their Hides"
+  note "If there is too much competition and you cannot complete this quest quickly, feel free to skip this step"
+  collect 269715 x6 quest 95494.1 -- 6/6 Savannah Lion Hide
+step
+  only Shaman,Tauren
+  when onquest 95507
+  loop
+  zone map 1413
+  goto 45.232073,14.191304 map 1413 r 1
+  goto 44.122862,16.66013 map 1413 r 50
+  goto 45.004112,16.762257 map 1413 r 50
+  goto 45.454112,15.286586 map 1413 r 50
+  goto 45.232073,14.191304 map 1413 r 50
+  goto 44.353783,14.191304 map 1413 r 50
+  goto 42.953454,15.098612 map 1413 r 50
+  note "Loot the Sprung Traps on the ground"
+  collect 269719 x8 quest 95507.1 -- 8/8 Trapped Game
+step
+  only Shaman,Orc
+  when onquest 95507
+  loop
+  zone map 1413
+  goto 45.232073,14.191304 map 1413 r 1
+  goto 44.122862,16.66013 map 1413 r 50
+  goto 45.004112,16.762257 map 1413 r 50
+  goto 45.454112,15.286586 map 1413 r 50
+  goto 45.232073,14.191304 map 1413 r 50
+  goto 44.353783,14.191304 map 1413 r 50
+  goto 42.953454,15.098612 map 1413 r 50
+  note "Loot the Sprung Traps on the ground"
+  collect 269719 x8 quest 95507.1 -- 8/8 Trapped Game
+step
+  only Shaman,Tauren
+  when complete 95494
+  when onquest 95494
+  turnin 95494 -- Turn in Bruised Pride and Lion Hides
+step
+  only Shaman,Orc
+  when complete 95494
+  when onquest 95494
+  turnin 95494 -- Turn in Bruised Pride and Lion Hides
+step
+  only Shaman,Tauren
+  when complete 95494
+  when onquest 95507
+  turnin 95507 -- Turn in Vrang's Game
+step
+  only Shaman,Orc
+  when complete 95494
+  when onquest 95507
+  turnin 95507 -- Turn in Vrang's Game
+step
+  only Shaman,Tauren
+  when complete 95494
+  zone map 1413
+  note "Talk to Vrang Wildgore"
+  accept 95495 -- Accept The Hermit Tanner
+step
+  only Shaman,Orc
+  when complete 95494
+  zone map 1413
+  note "Talk to Vrang Wildgore"
+  accept 95495 -- Accept The Hermit Tanner
+step
+  only Shaman,Tauren
+  along until next_175
+  zone map 1413
+  goto 43.431086,13.73987 map 1413 r 25 optional
+  goto 43.071875,13.189269 map 1413 r 25 optional
+  goto 42.106744,12.233117 map 1413 r 25 optional
+  goto 41.725823,11.755042 map 1413 r 20 optional -- Travel up the mountain
+step
+  only Shaman,Orc
+  along until next_175
+  zone map 1413
+  goto 43.431086,13.73987 map 1413 r 25 optional
+  goto 43.071875,13.189269 map 1413 r 25 optional
+  goto 42.106744,12.233117 map 1413 r 25 optional
+  goto 41.725823,11.755042 map 1413 r 20 optional -- Travel up the mountain
+step
+  only Shaman,Tauren
+  when turnedin 95494
+  when onquest 95495
+  turnin 95495 -- Turn in The Hermit Tanner
+step
+  only Shaman,Orc
+  when turnedin 95494
+  when onquest 95495
+  turnin 95495 -- Turn in The Hermit Tanner
+step
+  only Shaman,Tauren
+  when turnedin 95494
+  label next_175
+  zone map 1413
+  note "Talk to Walton"
+  accept 95621 -- Accept Trouble in the Valley
+step
+  only Shaman,Orc
+  when turnedin 95494
+  zone map 1413
+  note "Talk to Walton"
+  accept 95621 -- Accept Trouble in the Valley
+step
+  only Shaman,Tauren
+  when turnedin 95494
+  zone map 1413
+  note "Kill Corporal Adamore"
+  note "Be careful! You may aggro 2-3 mobs at the same time"
+  collect 270151 x1 quest 95621.1 -- Learn why the Kul Tirans are here
+step
+  only Shaman,Orc
+  when turnedin 95494
+  zone map 1413
+  note "Kill Corporal Adamore"
+  note "Be careful! You may aggro 2-3 mobs at the same time"
+  collect 270151 x1 quest 95621.1 -- Learn why the Kul Tirans are here
+step
+  only Shaman,Tauren
+  along until next_178
+  zone map 1413
+  goto 43.024507,14.241628 map 1413 r 25 optional
+  goto 43.071875,13.189269 map 1413 r 25 optional
+  goto 42.106744,12.233117 map 1413 r 25 optional
+  goto 41.725823,11.755042 map 1413 r 20 optional -- Travel up the mountain
+step
+  only Shaman,Orc
+  along until next_178
+  zone map 1413
+  goto 43.024507,14.241628 map 1413 r 25 optional
+  goto 43.071875,13.189269 map 1413 r 25 optional
+  goto 42.106744,12.233117 map 1413 r 25 optional
+  goto 41.725823,11.755042 map 1413 r 20 optional -- Travel up the mountain
+step
+  only Shaman,Tauren
+  when turnedin 95494
+  when onquest 95621
+  turnin 95621 -- Turn in Trouble in the Valley
+step
+  only Shaman,Orc
+  when turnedin 95494
+  when onquest 95621
+  turnin 95621 -- Turn in Trouble in the Valley
+step
+  only Shaman,Tauren
+  when turnedin 95494
+  label next_178
+  zone map 1413
+  note "Talk to Walton"
+  accept 95508 -- Accept Unwelcome Guests
+step
+  only Shaman,Orc
+  when turnedin 95494
+  zone map 1413
+  note "Talk to Walton"
+  accept 95508 -- Accept Unwelcome Guests
+step
+  only Shaman,Tauren
+  when turnedin 95494
+  when onquest 95508
+  zone map 1413
+  note "Move behind the house as you wait for the RP to finish to avoid getting aggro by all mobs at once"
+  note "You don't actually need to assist Walton, he will survive with the help of Vrang Wildgore"
+  kill 261367 x1 quest 95508.1 @41.961678,11.498982 map 1413 -- 1/1 Assist Walton
+step
+  only Shaman,Orc
+  when turnedin 95494
+  when onquest 95508
+  zone map 1413
+  note "Move behind the house as you wait for the RP to finish to avoid getting aggro by all mobs at once"
+  note "You don't actually need to assist Walton, he will survive with the help of Vrang Wildgore"
+  kill 261367 x1 quest 95508.1 @41.961678,11.498982 map 1413 -- 1/1 Assist Walton
+step
+  only Shaman,Tauren
+  when turnedin 95494
+  when onquest 95508
+  zone map 1413
+  note "Talk to Walton"
+  turnin 95508 -- Turn in Unwelcome Guests
+step
+  only Shaman,Orc
+  when turnedin 95494
+  when onquest 95508
+  zone map 1413
+  note "Talk to Walton"
+  turnin 95508 -- Turn in Unwelcome Guests
+step
+  along until EcheyakeePickup
+  zone map 1413
+  hearth "The Crossroads" optional -- Hearth to The Crossroads
+  use 6948 @42.022862,11.451619 map 1413 optional
+step
+  when !turnedin 901
+  label FoodandWater2
+  zone map 1413
+  goto 51.989967,29.889954 map 1413 r 8
+  note "Talk to Innkeeper Boorand"
+  vendor 3934 only !Rogue,!Warrior -- Sell your junk, then restock on food and water if necessary
+  vendor 3934 only Rogue -- Sell your junk, then restock on food if necessary
+  vendor 3934 only Warrior -- Sell your junk, then restock on food if necessary
+step
+  when !turnedin 881
+  zone map 1413
+  goto 51.989967,29.889954 map 1413 r 8
+  note "Talk to Innkeeper Boorand"
+  vendor 3934 only !Rogue,!Warrior -- Sell your junk, then restock on food and water if necessary
+  vendor 3934 only Rogue -- Sell your junk, then restock on food if necessary
+  vendor 3934 only Warrior -- Sell your junk, then restock on food if necessary
+step
+  when complete 869
+  when onquest 869
+  turnin 869 -- Turn in Raptor Thieves
+step
+  when complete 869
+  zone map 1413
+  note "Talk to Gazrog"
+  accept 3281 -- Accept Stolen Silver
+step
+  when turnedin 869
+  zone map 1413
+  note "Talk to Gazrog"
+  accept 3281 -- Accept Stolen Silver
+step
+  when complete 848
+  when onquest 848
+  zone map 1413
+  note "Talk to Helbrim"
+  turnin 848 -- Turn in Fungal Spores
+step
+  only Shaman,Tauren
+  when onquest 867
+  zone map 1413
+  note "Talk to Darsok"
+  turnin 867 -- Turn in Harpy Raiders
+step
+  only Shaman,Orc
+  when onquest 867
+  zone map 1413
+  note "Talk to Darsok"
+  turnin 867 -- Turn in Harpy Raiders
+step
+  zone map 1413
+  note "Talk to Mankrik"
+  accept 899 -- Accept Consumed by Hatred
+  accept 4921 -- Accept Lost in Battle
+step
+  when onquest 870
+  turnin 870 -- Turn in The Forgotten Pools
+step
+  zone map 1413
+  note "Talk to Tonga"
+  accept 877 -- Accept The Stagnant Oasis
+step
+  label EcheyakeePickup
+  zone map 1413
+  note "Talk to Sergra"
+  turnin 903 -- Turn in Prowlers of the Barrens
+  accept 881 -- Accept Echeyakee
+step
+  only Shaman,Tauren
+  when onquest 869
+  along until SamophlangeComplete
+  zone map 1413
+  note "Kill every Raptor you see. Loot them for their Heads"
+  collect 5062 x12 quest 869.1 @52.240033,31.009954 map 1413 -- Raptor Head (12)
+step
+  only Shaman,Orc
+  when onquest 869
+  along until SamophlangeComplete
+  zone map 1413
+  note "Kill every Raptor you see. Loot them for their Heads"
+  collect 5062 x12 quest 869.1 @52.240033,31.009954 map 1413 -- Raptor Head (12)
+step
+  only Shaman,Tauren
+  zone map 1413
+  note "Use the [Horn of Echeyakee] to summon Echeyakee"
+  note "Kill Echeyakee. Loot him for Echeyakee's Hide"
+  note "If Echeyakee doesn't spawn after using the [Horn of Echeyakee] or you didn't get the tag when it did spawn, skip this step"
+  collect 5100 x1 quest 881.1 -- Echeyakee's Hide (1)
+  use 10327 @55.799967,17.030009 map 1413
+step
+  only Shaman,Orc
+  zone map 1413
+  note "Use the [Horn of Echeyakee] to summon Echeyakee"
+  note "Kill Echeyakee. Loot him for Echeyakee's Hide"
+  note "If Echeyakee doesn't spawn after using the [Horn of Echeyakee] or you didn't get the tag when it did spawn, skip this step"
+  collect 5100 x1 quest 881.1 -- Echeyakee's Hide (1)
+  use 10327 @55.799967,17.030009 map 1413
+step
+  only Shaman,Tauren
+  when !has 5100
+  zone map 1413
+  note "Talk to Sergra"
+  accept 881 -- Accept Echeyakee
+step
+  only Shaman,Orc
+  when !has 5100
+  zone map 1413
+  note "Talk to Sergra"
+  accept 881 -- Accept Echeyakee
+step
+  only Shaman,Tauren
+  zone map 1413
+  note "Use the [Horn of Echeyakee] to summon Echeyakee"
+  note "Kill Echeyakee. Loot him for Echeyakee's Hide"
+  collect 5100 x1 quest 881.1 -- Echeyakee's Hide (1)
+  use 10327 @55.799967,17.030009 map 1413
+step
+  only Shaman,Orc
+  zone map 1413
+  note "Use the [Horn of Echeyakee] to summon Echeyakee"
+  note "Kill Echeyakee. Loot him for Echeyakee's Hide"
+  collect 5100 x1 quest 881.1 -- Echeyakee's Hide (1)
+  use 10327 @55.799967,17.030009 map 1413
+step
+  only Shaman,Tauren
+  label Samophlange
+  zone map 1413
+  note "Click on the Control Console"
+  turnin 894 -- Turn in Samophlange
+  accept 900 -- Accept Samophlange
+step
+  only Shaman,Orc
+  zone map 1413
+  note "Click on the Control Console"
+  turnin 894 -- Turn in Samophlange
+  accept 900 -- Accept Samophlange
+step
+  only Shaman,Tauren
+  zone map 1413
+  goto 52.4,11.399963 map 1413 r 8
+  note "Click the Valve"
+  note "Be careful! Two mobs will spawn after you shut off the Valve"
+  interact 4072 quest 900.1 -- Shut off Main Control Valve (1)
+step
+  only Shaman,Orc
+  zone map 1413
+  goto 52.4,11.399963 map 1413 r 8
+  note "Click the Valve"
+  note "Be careful! Two mobs will spawn after you shut off the Valve"
+  interact 4072 quest 900.1 -- Shut off Main Control Valve (1)
+step
+  only Shaman,Tauren
+  zone map 1413
+  goto 52.289967,11.399963 map 1413 r 8
+  note "Click the Valve"
+  note "One mob will spawn after you shut off the Valve"
+  interact 61935 quest 900.3 -- Shut off Regulator Valve (1)
+step
+  only Shaman,Orc
+  zone map 1413
+  goto 52.289967,11.399963 map 1413 r 8
+  note "Click the Valve"
+  note "One mob will spawn after you shut off the Valve"
+  interact 61935 quest 900.3 -- Shut off Regulator Valve (1)
+step
+  only Shaman,Tauren
+  zone map 1413
+  goto 52.330033,11.570028 map 1413 r 8
+  note "Click the Valve"
+  interact 61936 quest 900.2 -- Shut off Fuel Control Valve (1)
+step
+  only Shaman,Orc
+  zone map 1413
+  goto 52.330033,11.570028 map 1413 r 8
+  note "Click the Valve"
+  interact 61936 quest 900.2 -- Shut off Fuel Control Valve (1)
+step
+  only Shaman,Tauren
+  when onquest 900
+  turnin 900 -- Turn in Samophlange
+step
+  only Shaman,Orc
+  when onquest 900
+  turnin 900 -- Turn in Samophlange
+step
+  only Shaman,Tauren
+  zone map 1413
+  note "Click the Control Console"
+  accept 901 -- Accept Samophlange
+step
+  only Shaman,Orc
+  zone map 1413
+  note "Click the Control Console"
+  accept 901 -- Accept Samophlange
+step
+  only Shaman,Tauren
+  when onquest 901
+  zone map 1413
+  note "Kill Tinkerer Sniggles in the building. Loot him for his Console Key"
+  collect 5089 x1 quest 901.1 @52.840033,10.4 map 1413 -- Console Key (1)
+step
+  only Shaman,Orc
+  when onquest 901
+  zone map 1413
+  note "Kill Tinkerer Sniggles in the building. Loot him for his Console Key"
+  collect 5089 x1 quest 901.1 @52.840033,10.4 map 1413 -- Console Key (1)
+step
+  only Shaman,Tauren
+  when onquest 901
+  turnin 901 -- Turn in Samophlange
+step
+  only Shaman,Orc
+  when onquest 901
+  turnin 901 -- Turn in Samophlange
+step
+  only Shaman,Tauren
+  label SamophlangeComplete
+  zone map 1413
+  note "Click the Control Console"
+  accept 902 -- Accept Samophlange
+step
+  only Shaman,Orc
+  zone map 1413
+  note "Click the Control Console"
+  accept 902 -- Accept Samophlange
+step
+  only Shaman,Tauren
+  when onquest 869
+  loop
+  zone map 1413
+  goto 54.299967,12.300019 map 1413 r 1
+  goto 54.299967,12.300019 map 1413 r 90
+  goto 54.599967,16.699944 map 1413 r 90
+  goto 52.198191,13.215911 map 1413 r 90
+  goto 55.147862,8.9309898 map 1413 r 90
+  note "Kill Raptors. Loot them for their Heads"
+  collect 5062 x12 quest 869.1 -- Raptor Head (12)
+step
+  only Shaman,Orc
+  when onquest 869
+  loop
+  zone map 1413
+  goto 54.299967,12.300019 map 1413 r 1
+  goto 54.299967,12.300019 map 1413 r 90
+  goto 54.599967,16.699944 map 1413 r 90
+  goto 52.198191,13.215911 map 1413 r 90
+  goto 55.147862,8.9309898 map 1413 r 90
+  note "Kill Raptors. Loot them for their Heads"
+  collect 5062 x12 quest 869.1 -- Raptor Head (12)
+step
+  only Shaman,Tauren
+  zone map 1413
+  goto 56.500032,7.5000185 map 1413 r 8
+  note "Grinding to level 16 here is important, due to the next 3 quests being quite hard"
+  level 16
+step
+  only Shaman,Orc
+  zone map 1413
+  goto 56.500032,7.5000185 map 1413 r 8
+  note "Grinding to level 16 here is important, due to the next 3 quests being quite hard"
+  level 16
+step
+  only Shaman,Tauren
+  label Ignition
+  zone map 1413
+  note "Talk to Wizzlecrank's Shredder in The Sludge Fen"
+  note "Wizzlecrank's Shredder has a long respawn timer. Consider skipping this quest if there is a lot of competition"
+  accept 858 -- Accept Ignition
+step
+  only Shaman,Orc
+  zone map 1413
+  note "Talk to Wizzlecrank's Shredder in The Sludge Fen"
+  note "Wizzlecrank's Shredder has a long respawn timer. Consider skipping this quest if there is a lot of competition"
+  accept 858 -- Accept Ignition
+step
+  only Shaman,Tauren
+  along until next_206
+  note "Be careful if Foreman Grills or Sludge Beast is up. They are strong level 19 rare mobs"
+step
+  only Shaman,Orc
+  along until next_206
+  note "Be careful if Foreman Grills or Sludge Beast is up. They are strong level 19 rare mobs"
+step
+  only Shaman,Tauren
+  when onquest 858
+  label next_206
+  zone map 1413
+  note "Kill Supervisor Lugwizzle. Loot him for his Key"
+  note "He patrols up and down the platform"
+  collect 5050 x1 quest 858.1 @56.339967,8.240074 map 1413 -- Ignition Key (1)
+step
+  only Shaman,Orc
+  when onquest 858
+  zone map 1413
+  note "Kill Supervisor Lugwizzle. Loot him for his Key"
+  note "He patrols up and down the platform"
+  collect 5050 x1 quest 858.1 @56.339967,8.240074 map 1413 -- Ignition Key (1)
+step
+  only Shaman,Tauren
+  when complete 858
+  when onquest 858
+  zone map 1413
+  note "Talk to Wizzlecrank's Shredder"
+  note "Wizzlecrank's Shredder has a long respawn timer. Consider skipping this quest if there is a lot of competition"
+  note "This will begin an escort. Make sure you're at full health"
+  turnin 858 -- Turn in Ignition
+  accept 863 optional -- Accept The Escape
+step
+  only Shaman,Orc
+  when complete 858
+  when onquest 858
+  zone map 1413
+  note "Talk to Wizzlecrank's Shredder"
+  note "Wizzlecrank's Shredder has a long respawn timer. Consider skipping this quest if there is a lot of competition"
+  note "This will begin an escort. Make sure you're at full health"
+  turnin 858 -- Turn in Ignition
+  accept 863 optional -- Accept The Escape
+step
+  only Shaman,Tauren
+  when turnedin 858
+  zone map 1413
+  goto 56.519967,7.4499907 map 1413 r 8
+  note "Talk to Wizzlecrank's Shredder"
+  note "Wizzlecrank's Shredder has a long respawn timer. Consider skipping this quest if there is a lot of competition"
+  note "This will begin an escort. Make sure you're at full health"
+  accept 863 optional -- Accept The Escape
+step
+  only Shaman,Orc
+  when turnedin 858
+  zone map 1413
+  goto 56.519967,7.4499907 map 1413 r 8
+  note "Talk to Wizzlecrank's Shredder"
+  note "Wizzlecrank's Shredder has a long respawn timer. Consider skipping this quest if there is a lot of competition"
+  note "This will begin an escort. Make sure you're at full health"
+  accept 863 optional -- Accept The Escape
+step
+  only Shaman,Tauren
+  when onquest 863
+  label Slugs
+  zone map 1413
+  goto 55.799967,7.760074 map 1413 r 30 optional
+  goto 55.510033,7.1299907 map 1413 r 8
+  note "Two Venture Co. Mercenaries will spawn when the shredder moves onto the higher ground. Kill them then wait for his RP event at the end"
+  complete 863 optional -- Escort Wizzlecrank out of the Venture Co. drill site (1)
+step
+  only Shaman,Orc
+  when onquest 863
+  zone map 1413
+  goto 55.799967,7.760074 map 1413 r 30 optional
+  goto 55.510033,7.1299907 map 1413 r 8
+  note "Two Venture Co. Mercenaries will spawn when the shredder moves onto the higher ground. Kill them then wait for his RP event at the end"
+  complete 863 optional -- Escort Wizzlecrank out of the Venture Co. drill site (1)
+step
+  only Shaman,Tauren
+  when turnedin 819
+  along until CatsEye
+  zone map 1413
+  note "Kill Plainstriders. Loot them for their Kidneys"
+  collect 4894 x5 quest 821.2 @55.510033,7.1299907 map 1413 -- Plainstrider Kidney (5)
+step
+  only Shaman,Orc
+  when turnedin 819
+  along until CatsEye
+  zone map 1413
+  note "Kill Plainstriders. Loot them for their Kidneys"
+  collect 4894 x5 quest 821.2 @55.510033,7.1299907 map 1413 -- Plainstrider Kidney (5)
+step
+  only Shaman,Tauren
+  label CatsEye
+  loop
+  zone map 1413
+  goto 61.510032,4.4299722 map 1413 r 1
+  goto 61.459999,4.4999815 map 1413 r 40
+  goto 61.060032,3.6299722 map 1413 r 40
+  goto 61.630032,3.3700648 map 1413 r 40
+  goto 62.140032,3.52 map 1413 r 40
+  goto 61.939999,4.5300278 map 1413 r 40
+  goto 61.849999,5.3699907 map 1413 r 40
+  goto 61.439966,5.560037 map 1413 r 40
+  goto 61.169966,5.0499907 map 1413 r 40
+  goto 61.510032,4.4299722 map 1413 r 40
+  note "Kill Venture Co. Enforcers and Venture Co. Overseers. Loot them for Cats Eye Emerald"
+  note "If it hasn't dropped after 25+ mobs, feel free to skip this quest"
+  collect 5097 x1 quest 896.1 -- Cats Eye Emerald (1)
+step
+  only Shaman,Orc
+  loop
+  zone map 1413
+  goto 61.510032,4.4299722 map 1413 r 1
+  goto 61.459999,4.4999815 map 1413 r 40
+  goto 61.060032,3.6299722 map 1413 r 40
+  goto 61.630032,3.3700648 map 1413 r 40
+  goto 62.140032,3.52 map 1413 r 40
+  goto 61.939999,4.5300278 map 1413 r 40
+  goto 61.849999,5.3699907 map 1413 r 40
+  goto 61.439966,5.560037 map 1413 r 40
+  goto 61.169966,5.0499907 map 1413 r 40
+  goto 61.510032,4.4299722 map 1413 r 40
+  note "Kill Venture Co. Enforcers and Venture Co. Overseers. Loot them for Cats Eye Emerald"
+  note "If it hasn't dropped after 25+ mobs, feel free to skip this quest"
+  collect 5097 x1 quest 896.1 -- Cats Eye Emerald (1)
+step
+  only Shaman,Tauren
+  when !turnedin 103
+  zone map 1413
+  note "Kill Venture Co. Overseers. Loot them for their [Flask of Oil]"
+  note "You could also buy them from the auction house instead"
+  collect 814 x5 @61.510032,4.4299722 map 1413 -- Flask of Oil (5)
+step
+  only Shaman,Orc
+  when !turnedin 103
+  zone map 1413
+  note "Kill Venture Co. Overseers. Loot them for their [Flask of Oil]"
+  note "You could also buy them from the auction house instead"
+  collect 814 x5 @61.510032,4.4299722 map 1413 -- Flask of Oil (5)

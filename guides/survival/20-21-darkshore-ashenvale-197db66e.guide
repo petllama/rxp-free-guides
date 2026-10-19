@@ -1,0 +1,402 @@
+guide rxp-free/20-21-darkshore-ashenvale-197db66e
+title "20-21 Darkshore/Ashenvale"
+levels 20-21
+zone map 1439
+coords era
+faction Alliance
+author RestedXP
+pitch "RestedXP's free route, converted for Polestar (unofficial)."
+folder "RestedXP · RXP Survival Guide 1-20"
+step
+  only Druid
+  when !zone "Moonglade"
+  along until next_1
+  note "Cast Teleport: Moonglade"
+step
+  only Druid
+  label next_1
+  zone map 1450
+  note "Go to Moonglade"
+  note "Talk to Loganaar"
+  train 12042 -- Train your class spells
+step
+  zone map 1439
+  note "Click on The Wanted Poster"
+  accept 4740 -- Accept WANTED: Murkdeep!
+step
+  zone map 1448
+  note "Talk to Barithras Moonshade"
+  goto 19.9,18.4 map 1448 r 8 optional
+  accept 947 -- Accept Cave Mushrooms
+step
+  zone map 1439
+  note "Talk to Archaeologist Hollee"
+  accept 729 -- Accept The Absent Minded Prospector
+step
+  zone map 1448
+  note "Talk to Thundris Windweaver"
+  goto 19.98,14.4 map 1448 r 8 optional
+  accept 4763 -- Accept The Blackwood Corrupted
+step
+  zone map 1439
+  use 12346 @37.78,44.06 map 1439 -- Use the [Empty Cleansing Bowl] in the Auberdine Moonwell
+  collect 12347 x1 @37.78,44.06 map 1439 optional
+step
+  when onquest 3765
+  zone map 1439
+  note "Talk to Gershala Nightwhisper"
+  turnin 3765 -- Turn in The Corruption Abroad
+step
+  zone map 1448
+  note "Talk to Tharnariun Treetender"
+  goto 21.63,18.15 map 1448 r 8 optional
+  accept 2139 -- Accept Tharnariun's Hope
+step
+  when !turnedin 4763
+  zone map 1439
+  note "Open the Blackwood Grain Stores. Loot it for the Blackwood Grain Sample"
+  note "Looting this will spawn 2 Blackwood Furbolgs that will aggro and run at you. Be ready to fight them or reset them"
+  collect 12342 x1 @50.66,34.94 map 1439 -- Blackwood Grain Stores (1)
+step
+  zone map 1439
+  note "Kill Den Mother"
+  note "Be careful as the Thistle Cubs can cast [Ravage], a melee instant attack which stuns you for 2 seconds"
+  kill 6788 x1 quest 2139.1 -- Den Mother (1)
+step
+  when !turnedin 4763
+  zone map 1439
+  note "Open the Blackwood Nut Stores. Loot it for the Blackwood Nut Sample"
+  note "Looting this will spawn 2 Blackwood Furbolgs that will aggro and run at you. Be ready to fight them or reset them"
+  collect 12343 x1 @51.83,33.5 map 1439 -- Blackwood Nut Sample (1)
+step
+  when !turnedin 4763
+  label Fruit
+  zone map 1439
+  note "Open the Blackwood Fruit Stores. Loot it for the Blackwood Fruit Sample"
+  note "Looting this will spawn 2 Blackwood Furbolgs that will aggro and run at you. Be ready to fight them or reset them"
+  collect 12341 x1 @52.86,33.41 map 1439 -- Blackwood Fruit Sample (1)
+step
+  along until next_15
+  zone map 1439
+  note "Use the [Filled Cleansing Bowl] at the Bonfire to summon Xabraxxis"
+  use 12347 @52.38,33.39 map 1439
+step
+  label next_15
+  zone map 1439
+  note "Kill Xabraxxis. Open the Xabraxxis' Demon Bag he drops on the ground. Loot it for the Talisman of Corruption"
+  use 12347 @52.38,33.39 map 1439
+  collect 12355 x1 quest 4763.1 @52.38,33.39 map 1439 -- Talisman of Corruption (1)
+step
+  zone map 1439
+  note "Loot the Scaber Stalks and Death Cap on the ground"
+  note "Stay on the upper section. If the Death Cap is not at the end of the top side, drop down and get one from below"
+  note "Don't face your back to the center! Stormscale Wave Rider's can knock you back!"
+  collect 5271 x5 quest 947.1 @55.66,34.89 map 1439 -- Scaber Stalk (5)
+  collect 5270 x1 quest 947.2 @55.66,34.89 map 1439 -- Death Cap (1)
+step
+  zone map 1448
+  note "Talk to Thundris Windweaver"
+  goto 19.98,14.4 map 1448 r 8 optional
+  turnin 4763 -- Turn in The Blackwood Corrupted
+step
+  zone map 1448
+  note "Talk to Barithras Moonshade"
+  goto 19.9,18.4 map 1448 r 8 optional
+  turnin 947 -- Turn in Cave Mushrooms
+  accept 948 -- Accept Onu
+step
+  zone map 1448
+  note "Talk to Tharnariun Treetender"
+  goto 21.63,18.15 map 1448 r 8 optional
+  turnin 2139 -- Turn in Tharnariun's Hope
+step
+  zone map 1439
+  note "Talk to Terenthis"
+  accept 986 -- Accept A Lost Master
+step
+  along until moonstalkers
+  zone map 1439
+  note "Kill Moonstalker Sires and Moonstalker Matriarchs. Loot them for their Pelts and Fangs"
+  note "Be aware of Moonstalker Matriarchs. They always attack with a Moonstalker Runt by their side"
+  note "Moonstalker Sires can cast [Exploit Weakness] a backstab attack dealing 20-40 damage if you turn your back to them"
+  collect 5386 x5 quest 986.1 @39.37,43.48 map 1439 -- Fine Moonstalker Pelt (5)
+step
+  when onquest 1003
+  along until Murkdeep
+  zone map 1439
+  note "Kill Grizzled Thistle Bears. Loot them for their Scalps"
+  note "Be careful as they cast [Ravage] an instant attack dealing 20-40 damage and knocking you down for 2s"
+  collect 5414 x4 quest 1003.1 @40.23,81.28 map 1439
+step
+  along until OnuGrove
+  zone map 1448
+  goto 27,55.59 map 1448 r 80 -- Travel to the Grove of the Ancients
+step
+  when onquest 952
+  turnin 952 only NightElf -- Turn in Grove of the Ancients
+step
+  label OnuGrove
+  zone map 1448
+  goto 27,55.59 map 1448 r 8 optional
+  note "Talk to Onu"
+  turnin 948 -- Turn in Onu
+  accept 944 -- Accept The Master's Glaive
+step
+  label MasterG
+  along until moonstalkers
+  zone map 1439
+  goto 38.54,86.05 map 1439 r 60 -- Travel to The Master's Glaive
+step
+  label moonstalkers
+  zone map 1439
+  goto 38.54,86.05 map 1439 r 8
+  note "Discover The Master's Glaive"
+  note "Twilight Thugs can [Disarm] you for 6 seconds" only Rogue
+  note "Twilight Thugs can [Disarm] you for 6 seconds" only Paladin
+  note "Twilight Thugs can [Disarm] you for 6 seconds" only Warrior
+  note "Twilight Disciples cast [Renew] and a 3 second [Heal]"
+  complete 944
+step
+  along until next_28
+  zone map 1439
+  note "Use the [Phial of Scrying] and place it on the ground"
+  use 5251 @38.54,86.05 map 1439
+step
+  label next_28
+  zone map 1439
+  use 5251 @38.54,86.05 map 1439 -- Click the Scrying Bowl
+  turnin 944 -- Turn in The Master's Glaive
+  accept 949 -- Accept The Twilight Camp
+  note "Twilight Thugs can [Disarm] you for 6 seconds" only Rogue
+  note "Twilight Thugs can [Disarm] you for 6 seconds" only Paladin
+  note "Twilight Thugs can [Disarm] you for 6 seconds" only Warrior
+  note "Twilight Disciples cast [Renew] and a 3 second [Heal]"
+step
+  zone map 1440
+  goto 22.24,2.52 map 1440 r 8 optional
+  note "Click the Twilight Tome"
+  turnin 949 -- Turn in The Twilight Camp
+  accept 950 -- Accept Return to Onu
+  note "Twilight Thugs can [Disarm] you for 6 seconds" only Rogue
+  note "Twilight Thugs can [Disarm] you for 6 seconds" only Paladin
+  note "Twilight Thugs can [Disarm] you for 6 seconds" only Warrior
+  note "Twilight Disciples cast [Renew] and a 3 second [Heal]"
+step
+  zone map 1440
+  goto 22.36,3.98 map 1440 r 8 optional
+  note "Talk to Therylune. This will start an escort"
+  note "Skip this step if she is not there"
+  note "Twilight Thugs can [Disarm] you for 6 seconds" only Rogue
+  note "Twilight Thugs can [Disarm] you for 6 seconds" only Paladin
+  note "Twilight Thugs can [Disarm] you for 6 seconds" only Warrior
+  note "Twilight Disciples cast [Renew] and a 3 second [Heal]"
+  accept 945 -- Accept Therylune's Escape
+step
+  when onquest 945
+  zone map 1439
+  goto 40.51,87.09 map 1439 r 8
+  note "Escort Therylune out of The Masters Glaive"
+  note "Twilight Thugs can [Disarm] you for 6 seconds" only Rogue
+  note "Twilight Thugs can [Disarm] you for 6 seconds" only Paladin
+  note "Twilight Thugs can [Disarm] you for 6 seconds" only Warrior
+  note "Twilight Disciples cast [Renew] and a 3 second [Heal]"
+  complete 945 -- Escort Therylune
+step
+  zone map 1439
+  note "Kill Moonstalker Sires and Moonstalker Matriarchs. Loot them for their Pelts and Fangs"
+  note "Be aware of Moonstalker Matriarchs. They always attack with a Moonstalker Runt by their side"
+  note "Moonstalker Sires can cast [Exploit Weakness] a backstab attack dealing 20-40 damage if you turn your back to them"
+  collect 5386 x5 quest 986.1 @39.3,91.8 map 1439 -- Fine Moonstalker Pelt (5)
+step
+  label prospector
+  along
+  zone map 1448
+  note "Talk to Prospector Remtravel"
+  turnin 729 -- Turn in The Absent Minded Prospector
+step
+  zone map 1439
+  goto 35.72,83.69 map 1439 r 8
+  note "Talk to Prospector Remtravel"
+  note "This will start an escort"
+  accept 731 optional -- Accept The Absent Minded Prospector
+  note "This quest is VERY difficult. Skip this step if you're unable to find a group or solo it"
+step
+  zone map 1448
+  goto 18.08,64.03 map 1448 r 8 optional
+  note "Talk to Prospector Remtravel"
+  turnin 729 -- Turn in The Absent Minded Prospector
+step
+  when onquest 731
+  note "Escort Prospector Remtravel through the Excavation"
+  note "This quest is VERY difficult. Skip this step if you're unable to find a group or solo it"
+  complete 731 optional
+step
+  zone map 1440
+  goto 13.97,4.1 map 1440 r 8 optional
+  note "Click the Beached Sea Creature"
+  accept 4733 -- Accept Beached Sea Creature
+  note "This quest can be VERY difficult. Engage the Murlocs 1 by 1, otherwise you may aggro multiple at the same time"
+step
+  zone map 1440
+  goto 13.93,2.01 map 1440 r 8 optional
+  note "Click the Beached Sea Turtle"
+  accept 4732 -- Accept Beached Sea Turtle
+step
+  zone map 1448
+  goto 13.47,64.01 map 1448 r 8 optional
+  note "Click the Beached Sea Turtle"
+  accept 4731 -- Accept Beached Sea Turtle
+step
+  zone map 1448
+  goto 14.62,60.72 map 1448 r 8 optional
+  note "Click the Beached Sea Creature"
+  accept 4730 -- Accept Beached Sea Creature
+step
+  label Murkdeep
+  zone map 1439
+  note "Kill Greymist Warriors and Greymist Hunters at the camp"
+  note "Move to the Bonfire in the center of the camp to summon Murkdeep"
+  note "Kill Murkdeep. He will run in from the water"
+  kill 10323 x1 quest 4740.1
+step
+  when onquest 1003
+  zone map 1439
+  note "Kill Grizzled Thistle Bears. Loot them for their Scalps"
+  note "Be careful as they cast [Ravage] an instant attack dealing 20-40 damage and knocking you down for 2s"
+  collect 5414 x4 quest 1003.1 @38,83.55 map 1439 -- Grizzled Scalp (4)
+step
+  when onquest 1003
+  zone map 1439
+  note "Click the Buzzbox 525 on the ground"
+  turnin 1003 -- Turn in Buzzbox 525
+step
+  when complete 951
+  when onquest 951
+  label next_45
+  zone map 1448
+  goto 27,55.59 map 1448 r 8 optional
+  note "Talk to Onu"
+  turnin 951 -- Turn in Mathystra Relics
+step
+  zone map 1448
+  goto 27,55.59 map 1448 r 8 optional
+  note "Talk to Onu"
+  turnin 950 -- Turn in Return to Onu
+step
+  zone map 1448
+  goto 27.96,55.76 map 1448 r 8 optional
+  note "Talk to Kerlonian Evershade to start the escort"
+  note "Skip this step if he is not there. It can take up to 25 minutes for him to respawn"
+  accept 5321 -- Accept The Sleeper Has Awakened
+step
+  when onquest 5321
+  zone map 1439
+  note "Open Kerlonian's Chest. Loot it for the [Horn of Awakening]"
+  collect 13536 x1 quest 5321.1 -- Horn of Awakening (1)
+step
+  along until tower
+  zone map 1440
+  goto 29.7,13.6 map 1440 r 8
+step
+  when onquest 5321
+  zone map 1440
+  note "Escort Kerlonian to Maestra's Post in Ashenvale"
+  use 13536 @27.26,35.58 map 1440 -- Use the [Horn of Awakening] whenever Kerlonian falls asleep next to him
+  note "Avoid running on the main road as much as possible. Enemies will only spawn if you're on the road"
+  note "Escort Kerlonian Evershade to Maestra's Post"
+step
+  when complete 5321
+  zone map 1440
+  note "Talk to Liladris Moonriver"
+  turnin 5321 -- Turn in The Sleeper Has Awakened
+step
+  when onquest 967
+  label tower
+  zone map 1440
+  note "Talk to Delgren the Purifier"
+  turnin 967 -- Turn in The Tower of Althalaxx
+step
+  zone map 1440
+  note "Talk to Delgren the Purifier"
+  accept 970 -- Accept The Tower of Althalaxx
+step
+  when level>=20
+  zone map 1440
+  note "Talk to Orendil Broadleaf"
+  accept 1010 -- Accept Bathran's Hair
+step
+  zone map 1440
+  note "Kill Dark Strand Cultists, Dark Strand Adepts, Dark Strand Enforcers and Dark Strand Excavators. Loot them for the Glowing Soul Gem"
+  collect 5366 x1 quest 970.1 @31.25,30.7 map 1440
+step
+  when onquest 1010
+  zone map 1440
+  note "Open the Plant Bundles on the ground. Loot them for Bathran's Hairs"
+  note "They look like small brown sacks. They can be hard to see"
+  collect 5437 x5 quest 1010.1 @31.89,22.53 map 1440
+step
+  zone map 1440
+  note "Talk to Delgren the Purifier"
+  turnin 970 -- Turn in The Tower of Althalaxx
+  accept 973 -- Accept The Tower of Althalaxx
+step
+  zone map 1440
+  goto 31.89,22.53 map 1440 r 8
+  level 20 -- Grind to level 20
+step
+  zone map 1440
+  note "Talk to Orendil Broadleaf"
+  accept 1010 -- Accept Bathran's Hair
+step
+  when onquest 1010
+  zone map 1440
+  note "Open the Plant Bundles on the ground. Loot them for Bathran's Hairs"
+  note "They look like small brown sacks. They can be hard to see"
+  collect 5437 x5 quest 1010.1 @31.89,22.53 map 1440
+step
+  zone map 1440
+  note "Talk to Orendil Broadleaf"
+  turnin 1010 -- Turn in Bathran's Hair
+  accept 1020 -- Accept Orendil's Cure
+step
+  zone map 1440
+  note "Talk to Delgren the Purifier"
+  turnin 970 -- Turn in The Tower of Althalaxx
+  accept 973 -- Accept The Tower of Althalaxx
+step
+  along until next_66
+  zone map 1440
+  goto 25.49,39.59 map 1440 r 25 optional
+  goto 25.98,41.72 map 1440 r 25 optional
+  goto 26.88,44.47 map 1440 r 30 optional
+  goto 28.16,47.68 map 1440 r 60 optional
+  goto 34.4,48 map 1440 r 8 optional
+step
+  label next_66
+  zone map 1440
+  note "Talk to Daelyshia"
+  getfp "Astranaar" @34.4,48 map 1440 -- Get the Astranaar Flight Path
+step
+  zone map 1440
+  note "Talk to Shindrell Swiftfire"
+  accept 1008 -- Accept The Zoram Strand
+step
+  zone map 1440
+  note "Talk to Sentinel Thenysil"
+  accept 1070 -- Accept On Guard in Stonetalon
+step
+  zone map 1440
+  note "Talk to Faldreas Goeth'Shael"
+  accept 1056 -- Accept Journey to Stonetalon Peak
+step
+  zone map 1440
+  note "Talk to Raene Wolfrunner"
+  accept 991 -- Accept Raene's Cleansing
+step
+  zone map 1440
+  note "Talk to Innkeeper Kimlya"
+  sethome "Astranaar" @36.99,49.22 map 1440 -- Set your Hearthstone to Astranaar
+step
+  zone map 1440
+  note "Talk to Pelturas Whitemoon"
+  turnin 1020 -- Turn in Orendil's Cure
